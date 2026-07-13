@@ -1,0 +1,18 @@
+# Copyrighted source material: cited by page, never redistributed.
+# Mark Bishop, Okinawan Karate: Teachers, Styles and Secret Techniques.
+*.pdf
+
+# The Netlify Drop folder: byte-identical to docs/, which is what GitHub Pages
+# serves. Kept on disk by the build, but no need for two copies in the repo.
+website/
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Python
+__pycache__/
+*.pyc
+.venv/

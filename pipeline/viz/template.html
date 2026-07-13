@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Lineage of Karate &amp; Taekwondo</title>
+<style>
+/*__STYLE__*/
+</style>
+</head>
+<body>
+<div id="app" class="viz-root">
+  <header id="topbar">
+    <div id="titleblock">
+      <h1>The Lineage of Karate &amp; Taekwondo</h1>
+      <div id="subtitle">Instructor-to-student cladogram · compiled from primary and published
+        sources, every link source-checked</div>
+    </div>
+    <div id="controls">
+      <div id="searchwrap">
+        <input id="search" type="search" placeholder="Find a person…" autocomplete="off"
+               aria-label="Search for a person">
+        <div id="searchresults" role="listbox" hidden></div>
+      </div>
+      <div id="focusmode" hidden>
+        <span id="focusname"></span>
+        <select id="focusdir" aria-label="Lineage direction">
+          <option value="both">Teachers &amp; students</option>
+          <option value="up">Teachers (ancestors)</option>
+          <option value="down">Students (descendants)</option>
+        </select>
+        <button id="isolate" class="btn" title="Re-lay out only this lineage">Isolate</button>
+        <button id="clearfocus" class="btn" title="Clear focus">✕</button>
+      </div>
+      <select id="stylefilter" aria-label="Filter by style">
+        <option value="">All styles</option>
+      </select>
+      <button id="stylesbtn" class="btn" title="Browse the family / style / sub-style tree">Styles ▾</button>
+      <label id="conf-toggle"><input type="checkbox" id="hidelow"> hide low-confidence</label>
+      <button id="editmode" class="btn" title="Edit names; export corrections for the pipeline">
+        Edits <span id="editcount" hidden></span></button>
+      <button id="addperson" class="btn" title="Add a person; export rows for the pipeline">
+        ＋ Add <span id="addcount" hidden></span></button>
+      <div id="exportwrap">
+        <button id="exportbtn" class="btn">Export ▾</button>
+        <div id="exportmenu" hidden>
+          <button data-x="svg">SVG (vector, for print)</button>
+          <button data-x="png2">PNG (2×)</button>
+          <button data-x="png4">PNG (4×)</button>
+          <button data-x="csv">CSV (visible people)</button>
+          <button data-x="json">JSON (visible sub-graph)</button>
+          <button data-x="edits">Expert corrections → CSVs</button>
+          <button data-x="adds">Added people → additions .csv</button>
+        </div>
+      </div>
+      <button id="listview" class="btn" title="Table of visible people">Table</button>
+      <button id="storybtn" class="btn" title="A guided tour through three centuries of lineage">▶ Story</button>
+      <div id="zoomctl">
+        <button id="zoomout" class="btn" aria-label="Zoom out">−</button>
+        <button id="zoomfit" class="btn" aria-label="Fit to screen">Fit</button>
+        <button id="zoomin" class="btn" aria-label="Zoom in">+</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="stage">
+    <svg id="canvas" role="img" aria-label="Karate lineage cladogram"></svg>
+    <div id="genruler" aria-hidden="true"></div>
+    <div id="minimap" aria-label="Overview map"><svg id="minisvg"></svg></div>
+    <div id="hint" hidden>Scroll to pan &nbsp;·&nbsp; pinch or ⌘-scroll to zoom &nbsp;·&nbsp; click any name &nbsp;·&nbsp; press <b>▶ Story</b> for a guided tour</div>
+    <div id="tourcard" hidden>
+      <div id="tourprogress"></div>
+      <h3 id="tourtitle"></h3>
+      <p id="tourblurb"></p>
+      <div id="tournav">
+        <button id="tourprev" class="btn">← Back</button>
+        <button id="tournext" class="btn">Next →</button>
+        <button id="tourend" class="btn">End tour</button>
+      </div>
+    </div>
+    <div id="tooltip" hidden></div>
+    <aside id="detail" hidden aria-label="Person details"></aside>
+    <aside id="tablepanel" hidden aria-label="Table of visible people"></aside>
+    <div id="footer">
+      <span id="stamp"></span>
+      <span>* trained-from dates estimated (birth + 25) &nbsp;·&nbsp; “c. … (est.)” = no recorded dates, cohort estimated from teachers and students</span>
+      <button id="orphanbtn" class="linklike"></button>
+    </div>
+    <aside id="orphanpanel" hidden aria-label="People not yet linked"></aside>
+    <aside id="addpanel" hidden aria-label="Add a person"></aside>
+    <aside id="stylepanel" hidden aria-label="Style tree"></aside>
+  </main>
+</div>
+<script id="data" type="application/json">__DATA_JSON__</script>
+<script>
+/*__APP__*/
+</script>
+</body>
+</html>

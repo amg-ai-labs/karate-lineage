@@ -1,0 +1,170 @@
+survivor_id,merged_ids,reason,status
+,,"[bobby lowe] Different people, but one is a wrong entity: Q221797 (1929-2011) is Bobby Lowe the Kyokushin karateka, Mas Oyama's first uchi-deshi, and is correct. Q4935308 (1865-1951) is verified on Wikidata as Robert Lincoln 'Link' Lowe, the American baseball player; its Mas Oyama teacher edge is spurious. Recommend deleting Q4935308 from the dataset rather than keeping it as a distinct karate node. [RESOLVED: not a merge; wrong-entity QID dropped via node_verdicts.csv instead.]",rejected
+,,"[hideo yamamoto] Different people, but one is a wrong entity: Q15987804 (b. 1955, Tokyo) is verified on Wikidata as the karateka and is the correct node (JKA lineage under Masatoshi Nakayama). Q605735 (b. 1968) is verified as Hideo Yamamoto the manga artist (Ichi the Killer, Homunculus); its Nakayama teacher edge is spurious. Recommend deleting Q605735 from the dataset rather than keeping it as a distinct karate node. [RESOLVED: not a merge; wrong-entity QID dropped via node_verdicts.csv instead.]",rejected
+C00020,C00029,"Two manual C-ids, identical name and style: duplicate entry of one Motobu family figure.",proposed
+C00021,C00030,"Two manual C-ids, identical name and style: duplicate entry of one Motobu family figure.",proposed
+C00031,C00048,"Two manual C-ids, identical name including the 'Dr' honorific: duplicate entry.",proposed
+C00032,C00049,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00033,C00051,"Two manual C-ids, identical name: duplicate entry. Note: this group and the 'eizo shimabukuro' group are romanisation variants of the same person, Eizo Shimabukuro (1925-2017), Shorin-Ryu Shobayashi grandmaster and brother of Tatsuo Shimabuku; a cross-group merge with C00034/C00052 is warranted.",proposed
+C00034,C00052,"Two manual C-ids, identical name: duplicate entry. Note: same historical person as the 'eizo shimabuku' group (spelling variant); recommend a cross-group merge with C00033/C00051 as well.",proposed
+C00035,C00050,Identical C-id pair. Eisuke Akamine (1925-1999) is the Ryukyu kobudo master who succeeded Taira Shinken; only one such person.,proposed
+C00036,C00053,"Two manual C-ids, identical distinctive Western name and style: duplicate entry.",proposed
+C00039,C00058,"Two manual C-ids, identical unusual name form 'Franklin DR Hargrove': duplicate entry.",proposed
+C00040,C00062,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00041,C00063,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00045,C00071,"Two manual C-ids, identical name: duplicate entry of the Ryuei-Ryu family figure Genkai Nakaima.",proposed
+C00074,C00115,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00075,C00224,Kenchu Nakaima is a single figure in the Ryuei-Ryu Nakaima family lineage; two bare C-ids are a double entry.,proposed
+C00077,C00116,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00078,C00121,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00079,C00122,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00080,C00123,"Two manual C-ids, identical name, same generic style, no distinguishing data: double entry of one person.",proposed
+C00081,C00124,"Two manual C-ids, identical name and style, no conflicting data: same person entered twice.",proposed
+C00089,C00140,"Two manual C-ids, identical name and style, no conflicting data: same person entered twice.",proposed
+C00094,C00154,"Two manual C-ids, identical name and style, no conflicting data: same person entered twice.",proposed
+C00095,C00155,"Two manual C-ids, identical name and style, no conflicting data: same person entered twice.",proposed
+C00098,C00158,"Joen Nakazato is a single well-known figure (Okinawan Shorinji-ryu founder, student of Chotoku Kyan); two bare C-ids are a double entry.",proposed
+C00099,C00161,"Two manual C-ids, identical rare Okinawan name, same style: same person entered twice.",proposed
+C00100,C00160,"Two manual C-ids, identical rare name, same style: same person entered twice.",proposed
+C00101,C00163,"Two manual C-ids, identical name and style, no conflicting data: same person entered twice.",proposed
+C00102,C00166,"Two manual C-ids, identical rare name, same style: same person entered twice.",proposed
+C00103,C00167,"Two manual C-ids, identical rare name, same style: same person entered twice.",proposed
+C00104,C00168,"Two manual C-ids, identical rare name, same style: same person entered twice.",proposed
+C00105,C00203,"Two manual C-ids, identical name and style, no conflicting data: same person entered twice.",proposed
+C00106,C00204,Kaoru Kojo belongs to the Kojo-ryu family lineage; two bare C-ids are a double entry of one person.,proposed
+C00107,C00171,Kafu Kojo is a single figure in the Kojo-ryu family lineage; two bare C-ids are a double entry.,proposed
+C00108,C00172,Kaho Kojo is a single figure in the Kojo-ryu family lineage; two bare C-ids are a double entry.,proposed
+C00111,C00175,"Two manual C-ids, identical rare Okinawan lineage name, same style: same person entered twice.",proposed
+C00117,C00065|C00186,"Three unconnected C-ids for one person (Kanmei Uechi, son of Kanei Uechi in the Uechi-Ryu line); C00065 is the same name in Japanese surname-first order. Survivor C00117 carries the canonical name order.",proposed
+C00133,C00215,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00147,C00237,"Two manual C-ids, identical name and style, no conflicting data: same person entered twice.",proposed
+C00165,C00264,"Two manual C-ids, identical Okinawan name and style, no conflicting data: same person entered twice.",proposed
+C00178,C00288,Oyadomari is a Tomari-te lineage family; identical rare name on two bare C-ids is a double entry of one person.,proposed
+C00179,C00289,"Two manual C-ids, identical rare Okinawan name, same style: same person entered twice.",proposed
+C00182,C00299,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00183,C00300,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00187,C00302,Oyadomari Kotsu is a single Tomari-te lineage figure; two bare C-ids are a double entry.,proposed
+C00188,C00305,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00189,C00306,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00190,C00307,"Two manual C-ids, identical name and style, no conflicting data: same person entered twice.",proposed
+C00191,C00303,"Two manual C-ids, identical name and style, no conflicting data: same person entered twice.",proposed
+C00192,C00311,"Two manual C-ids, identical rare name, same style: same person entered twice.",proposed
+C00193,C00312,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00194,C00314,Lu Ta-ting is a single Chinese master appearing in Okinawan (Kojo family) lineage charts; two bare C-ids are a double entry.,proposed
+C00195,C00316,Maeda Pechin is a single Tomari-te era figure (Pechin is a rank title); two bare C-ids are a double entry.,proposed
+C00196,C00318,"Identical manual entries from the double ingest. Makabe Udun (Makabe Choken, 'Tobi Makabe') is a single historical 18th-century Shuri-te figure; there is only one such person in karate history.",proposed
+C00200,C00324,Identical manual entries from the double ingest; Mario Topolsek is a single Croatian karate figure. Same person entered twice.,proposed
+C00201,C00326,Identical manual entries from the double ingest. Masahiro Nakamoto (b. 1938) is the well-known Okinawan kobudo hanshi (Bunbukan); a single person.,proposed
+C00228,C00367,"Two manual C-ids, identical name and style, no conflicting data: same person entered twice.",proposed
+C00238,C00389,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00239,C00391,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00240,C00392,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00241,C00393,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00242,C00394,"Two manual C-ids, identical name and style, no conflicting data: same person entered twice.",proposed
+C00243,C00395,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00244,C00396,"Identical manual entries from the double ingest. Norisato Nakaima, founder of the Ryuei-Ryu lineage (studied under Ryu Ryu Ko in Fuzhou), is a single historical person.",proposed
+C00249,C00429,"Two manual C-ids, identical name (including the same 'Donnely' spelling) and style: duplicate entry.",proposed
+C00259,C00442,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00260,C00443,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00263,C00447,Saikyo Kojo belongs to the Kojo-ryu family lineage; two bare C-ids are a double entry of one person.,proposed
+C00271,C00465,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00272,C00466,"Two manual C-ids, identical rare name, same style: same person entered twice.",proposed
+C00273,C00468,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00274,C00469,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00275,C00467,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00276,C00470,"Two manual C-ids, identical name and style, no conflicting data: same person entered twice.",proposed
+C00277,C00472,"Identical manual entries (same name, same generic Karate style, both disconnected); part of a systematic double ingest of the manual list (C003xx range duplicated into C004xx-C006xx range). Same person entered twice.",proposed
+C00278,C00473,Identical manual entries from the double ingest. Seiken Tamanaha (Shorin-Ryu line) is a single person.,proposed
+C00279,C00474,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00280,C00479,"Two manual C-ids, identical rare Okinawan name, same style: same person entered twice.",proposed
+C00290,C00496,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00291,C00497,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00292,C00498,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00293,C00500,"Identical manual entries from the double ingest. Seiyu Nakasone, the Tomari-te master, is a single historical person.",proposed
+C00294,C00499,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00295,C00502,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00330,C00551,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00331,C00552,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00332,C00553,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00333,C00554,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00334,C00555,"Identical manual entries from the double ingest. Tadahiko Otsuka (Goju-kensha founder, Goju-Ryu) is a single person.",proposed
+C00335,C00556,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00348,C00571,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00349,C00576,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00350,C00577,"Identical manual entries from the double ingest. Taro Shimabuku (elder brother of Isshin-Ryu founder Tatsuo Shimabuku, appears in early Isshin-Ryu lineage accounts) is a single person.",proposed
+C00351,C00578,"Two manual C-ids, identical rare Okinawan lineage name, same style: same person entered twice.",proposed
+C00352,C00579,Tatsumi Kojo belongs to the Kojo-ryu family lineage; two bare C-ids are a double entry of one person.,proposed
+C00353,C00580,"Identical manual entries (same name, style, both disconnected) from the double ingest. Same person entered twice.",proposed
+C00354,C00581,"Identical manual entries from the double ingest. Tawata Pechin, the 19th-century Shuri figure known in kobudo (sai) lineage, is a single historical person.",proposed
+C00355,C00583,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00356,C00584,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00357,C00585,"Identical manual entries from the double ingest, so they are the same record and should merge. Note: 'Ten Senshi' does not look like a real Japanese personal name and is probably a garbled scrape artifact; flag the merged node for a later name-validity review.",proposed
+C00361,C00590,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00372,C00620,"Two manual C-ids, identical name and style, no conflicting data: duplicate entry.",proposed
+C00399,C00661,Identical manual entries from the double ingest. Same person entered twice.,proposed
+C00400,C00662,Identical manual entries from the double ingest. Same person entered twice.,proposed
+Q2149940,Q7327071,"Q2149940 is the karate master Richard Kim (1917-2001, student of Ankichi Arakaki and Kanken Toyama). Q7327071 is verified on Wikidata as a Wikimedia disambiguation page, not a person; the scraper attached identical karate lineage and the same Wikipedia link to it with spurious 1932-2009 dates. Both nodes represent the same karateka in this graph, so merge into the real person QID.",proposed
+Q28466388,C00008,"C00008 duplicates the QID. Brian Fitkin (b. 1946) is the Kyokushin pioneer (student of Mas Oyama, brought Kyokushin to Sweden); QID carries the correct lineage edge.",proposed
+Q4340863,C00647,"C-id manual entry duplicating a connected QID with the same name and compatible lineage: Yasuhiko 'Yasu' Oyama (b. 1942), Kyokushin uchi-deshi under Mas Oyama and founder of World Oyama Karate. Survivor is the connected Wikidata node.",proposed
+Q4763171,C00004,C00004 duplicates the QID. Angi Uezu (b. 1935) is the Isshin-Ryu master and son-in-law of Tatsuo Shimabuku; the QID already carries the Shimabuku teacher edge. Note the QID's death=1935 is a data error (he died 2024).,proposed
+Q48762989,Q105016253,"Both QIDs verify on Wikidata as the same person: Shingo Hayashi, Japanese equestrian (dressage), born 25 January 1985, same English Wikipedia article; duplicate Wikidata items. Merge, but flag for removal: this person is an equestrian, not a karateka, so the merged node is likely a wrong entity in the karate dataset (neither node has any lineage connection).",proposed
+Q706955,Q1040902,"Verified on Wikidata: Q706955 is the karateka Tadashi Nakamura b. 1942-02-22 (Seido Juku founder, Kyokushin under Mas Oyama; no death date on Wikidata, the 2019 death in the dataset is contamination). Q1040902 is a Wikimedia disambiguation page mis-ingested as a person; its 1929/2019 dates are spurious and its edges (teacher Mas Oyama, same Wikipedia URL) duplicate the karateka's. Not a second person, so merge into the real QID.",proposed
+Q7446770,C00477,Seikichi Iha (b. 1932) is the Shorin-ryu Shido-kan master under Katsuya Miyahira; the bare C-id duplicates the connected Wikidata node. Survivor is the QID.,proposed
+Q8021897,Q1493062,"Verified on Wikidata: Q8021897 is the American karateka and professional wrestler Willie Williams (1951-07-14 to 2019-06-08), the Kyokushin heavyweight who trained under Kenji Kurosaki. Q1493062 is a Wikimedia disambiguation page mis-ingested as a person; its 1925/2011 dates are spurious and its edges (teacher Kenji Kurosaki, same Wikipedia URL) duplicate the karateka's. Not a second person, so merge into the real QID.",proposed
+Q99517310,C00019,C00019 duplicates the QID. Chofu Kyan (1839-1910) was the father and first teacher of Chotoku Kyan and a student of Matsumura Sokon; the QID carries both lineage edges.,proposed
+C00623,C00143,[panel] 'Isugio Yonezawa' is an OCR corruption of Tsugio Yonezawa (C00623).,proposed
+C00261,C00262,"[panel] 'Kodatsu Tha' is a garble of Kodatsu Iha (C00261), Tomari-te student of Kosaku Matsumora.",proposed
+Q1147708,C00376,[panel] 'Motobu no Saru' (Motobu the Monkey) is the nickname of Choki Motobu; merge into his main node.,proposed
+C00179,C00014,"[panel] 'Chikin Kuragwa' is the Okinawan-dialect rendering of Tsuken Kuragwa (Koragwa Tsuken, C00179).",proposed
+Q1728269,C00177,"[panel] 'Kanbun Uechi Jnr' denotes Kanei Uechi (1911-1991), Kanbun's son; a proper node already exists.",proposed
+A0017,C00603,"[reconciliation, revised] 'Tode Sakugawa' is the sobriquet of the elder Sakugawa (Kangi, c.1733-1815) in the two-Sakugawa model adopted from the sources; merged into the Kangi node.",proposed
+Q18230165,C00073,"[lineage completion] 'George E Mattson' (C00073) is the same person as George Mattson (Q18230165, b. 1937), the first American Uechi-ryu black belt; the middle initial E appears on his own site uechi-ryu.com ('George E. Mattson').",proposed
+Q1728269,C00199,"[lineage completion] 'Kanyei Uechi' is an older romanisation of Kan'ei (Kanei) Uechi: a consulted biography (usjjf.org/alexander-velaquez.html) describes training at the Uechi-ryu honbu dojo 'under the Founders' son, Sensei Kanyei Uechi', i.e. Q1728269; no sepa",proposed
+C00087,C00088,[lineage completion] 'Gushikawa Tiragwa' (C00088) duplicates 'Gushikawa no Tiragwa' (C00087): identical Okinawan epithet ('Tiragwa of Gushikawa') with and without the genitive particle.,proposed
+Q16006586,C00184,"[lineage completion] 'Kanichi Izumigawa' (C00184, described in Goju histories as Seiko Higa's student) is the same person as Kanki Izumigawa (Q16006586, 1908-1967, Senbukan founder, Seiko Higa's student who spread Goju-ryu in the Kawasaki area). 'Kanichi' is a ",proposed
+Q862634,C00644,"[lineage completion] Obvious duplicate outside my core area, flagged in passing: 'William Bill Wallace' (C00644) duplicates the existing Bill Wallace entry (Q862634); 'Bill' is the standard nickname for William and both denote the American karate/kickboxing cha",proposed
+C00034,C00033,[lineage completion] 'Eizo Shimabuku' and 'Eizo Shimabukuro' are alternate romanisations of the same Okinawan shorin-ryu master; Shimabukuro is the fuller standard form.,proposed
+C00625,C00624,[lineage completion] 'Tsugo Sakumoto' is a misspelling of 'Tsuguo Sakumoto' (Ryuei-ryu master); same person entered twice.,proposed
+C00087,C00088,[lineage completion] 'Gushikawa no Tiragwa' and 'Gushikawa Tiragwa' are the same traditional name with and without the particle; clearly one person.,proposed
+C00087,C00088,[lineage completion] 'Gushikawa no Tiragwa' and 'Gushikawa Tiragwa' are the same name with and without the Okinawan genitive particle 'no'; clearly one person entered twice.,proposed
+C00034,C00033,"[lineage completion] 'Eizo Shimabukuro' and 'Eizo Shimabuku' are the two standard romanisations of the same Shorin-ryu master (Eizo Shimabukuro, 1925-2017, brother of Tatsuo Shimabuku); one person entered under both spellings. Note: I did NOT merge C00026 'Chok",proposed
+C00034,C00033,"[lineage completion] 'Eizo Shimabuku' and 'Eizo Shimabukuro' are the same person (Shobayashi Shorin-ryu grandmaster, 1925-2017) under variant romanisations of the same surname; both entries sit unwired in the orphan list. Flagged in passing while checking Toma/",proposed
+Q862634,C00644,"[lineage completion] C00644 'William Bill Wallace' duplicates Q862634 Bill 'Superfoot' Wallace, the American karate/kickboxing champion; same person entered manually under his full name.",proposed
+Q18230165,C00073,"[lineage completion] C00073 'George E Mattson' duplicates Q18230165 George Mattson (b. 1937), the Uechi-ryu pioneer who introduced the style to the United States.",proposed
+C00034,C00033,[lineage completion] 'Eizo Shimabuku' and 'Eizo Shimabukuro' are alternative romanisations of the same Shorin-ryu (Shobayashi) grandmaster Eizo Shimabukuro.,proposed
+C00625,C00624,"[lineage completion] 'Tsugo Sakumoto' is a misspelling of Tsuguo Sakumoto, the Ryuei-ryu master and world kata champion; same person entered twice.",proposed
+C00034,C00033,"[lineage completion] 'Eizo Shimabuku' and 'Eizo Shimabukuro' are romanisation variants of the same person, the Shobayashi Shorin-ryu head (1925-2017); sources use both spellings interchangeably (https://en.wikipedia.org/wiki/Sh%C5%8Dbayashi_Sh%C5%8Drin-ry%C5%AB",proposed
+Q1963468,C00530,"[lineage completion] 'Shosin Nagamine' (C00530) is a spelling variant duplicating the connected Shoshin Nagamine (Q1963468), founder of Matsubayashi-ryu.",proposed
+Q862634,C00644,"[lineage completion] 'William Bill Wallace' (C00644) duplicates Bill 'Superfoot' Wallace (Q862634); same person, full-name variant.",proposed
+C00625,C00624,"[lineage completion] 'Tsugo Sakumoto' and 'Tsuguo Sakumoto' are spelling variants of the same Ryuei-ryu kata champion, Tsuguo Sakumoto.",proposed
+C00088,C00087,"[lineage completion] 'Gushikawa no Tiragwa' and 'Gushikawa Tiragwa' are the same nickname-style entry for one historical figure ('Tiragwa of Gushikawa'), with and without the Okinawan possessive particle.",proposed
+C00087,C00088,"[lineage completion] 'Gushikawa no Tiragwa' and 'Gushikawa Tiragwa' are the same nickname entry for Agena Chokuho of Gushikawa, Matayoshi Shinko's kobudo teacher.",proposed
+C00625,C00624,"[lineage completion] 'Tsugo Sakumoto' is a misspelling of Tsuguo Sakumoto, the Ryuei-ryu world kata champion; identical person.",proposed
+C00639,C00640,"[lineage completion] 'Wai Shin Zan' and 'Wan Shin Zan' are variant romanisations of Wai Xinxian, the Fuzhou master associated with Ryu Ryu Ko's school; same figure.",proposed
+Q5661611,C00091,"[lineage completion] Orphan 'Harold Mitchum' duplicates connected Harold M Mitchum (Q5661611), the isshin-ryu pioneer.",proposed
+C00033,C00034,[lineage completion] 'Eizo Shimabuku' and 'Eizo Shimabukuro' are the same Shobayashi Shorin-ryu master under two romanisations.,proposed
+Q18230165,C00073,"[lineage completion] Orphan 'George E Mattson' duplicates George Mattson (Q18230165), the Uechi-ryu pioneer.",proposed
+Q862634,C00644,[lineage completion] 'William Bill Wallace' duplicates Bill Wallace (Q862634).,proposed
+Q1963468,C00530,"[lineage completion] Orphan 'Shosin Nagamine' duplicates connected Shoshin Nagamine (Q1963468), Matsubayashi-ryu founder.",proposed
+C00033,C00034,[lineage completion] 'Eizo Shimabuku' and 'Eizo Shimabukuro' are romanisation variants of the same Shobayashi Shorin-ryu founder (1925-2017).,proposed
+Q18230165,C00073,"[lineage completion] 'George E Mattson' duplicates George Mattson (Q18230165, b.1937), the first American Uechi-ryu black belt.",proposed
+Q5661611,C00091,"[lineage completion] 'Harold Mitchum' duplicates Harold M Mitchum (Q5661611, b.1933), the Isshin-ryu pioneer already in the tree.",proposed
+Q862634,C00644,"[lineage completion] 'William Bill Wallace' duplicates Bill Wallace (Q862634), the American full-contact champion.",proposed
+Q1963468,C00530,"[lineage completion] 'Shosin Nagamine' is a spelling variant of Shoshin Nagamine (Q1963468), Matsubayashi-ryu founder, already connected.",proposed
+C00625,C00624,"[lineage completion] 'Tsugo Sakumoto' is a truncated spelling of Tsuguo Sakumoto (C00625), the Ryuei-ryu world kata champion.",proposed
+Q1147708,C00027,"[lineage completion] 'Chokki Motobu' is a period romanisation of Motobu Choki (Q1147708), used in 1920s-30s publications; not a separate member of the Motobu family.",proposed
+Q11470681,Q2943981,"[lineage completion] Roster rows share name 'Tatsuo Yamada' and birth 1905; the martial artist is the connected Q11470681. Wikidata Q2943981 is actually an actor born 1956 (https://www.wikidata.org/wiki/Q2943981), so the orphan row is a mis-scrape duplicating t",proposed
+Q3772405,Q295085,"[lineage completion] Q295085 'Toyama' is a Wikidata disambiguation page, not a person (https://www.wikidata.org/wiki/Q295085); the roster row's birth 1888 matches Kanken Toyama (Q3772405), the Shudokan founder, so it is a scrape artefact of him.",proposed
+C00087,C00088,[lineage completion] 'Gushikawa Tiragwa' and 'Gushikawa no Tiragwa' are the same traditional Okinawan name with/without the particle 'no'.,proposed
+C00327,C00328,[lineage completion] 'Masakatsu Inezuka' and 'Masakazu Inezuka' differ by a single kana romanisation; almost certainly the same person entered twice.,proposed
+C00639,C00640,[lineage completion] 'Wai Shin Zan' and 'Wan Shin Zan' are romanisation variants of the same Chinese master (Waishinzan) credited in Okinawan tradition.,proposed
+C00034,C00033,[anchor research] 'Eizo Shimabuku' (C00033) and 'Eizo Shimabukuro' (C00034) are variant romanisations of the same Shobayashi Shorin-ryu founder.,proposed
+Q921673,A0017,"[branch completion] Both entries are Sakugawa Kanga (Tode Sakugawa): Q921673 'Kanga Sakukawa' (b. 1786, Wikidata-backed) and A0017 'Sakugawa Kangi' (te|shuri-te|chuan-fa) are name variants of the same historical figure; keeping the Wikidata-linked record.",proposed
+A0007,C00547,"[branch completion] A0007 'Shu Shiwa (Zhou Zihe)' (b. 1874) and C00547 'Shu Shi Wa' are the same person, the Chinese teacher of Kanbun Uechi; A0007 carries the birth year and Chinese name.",proposed
+C00044,C00043,"[branch completion] 'Choyu Kiyuna' (C00044, connected) and 'Choyo Kiyuna' (C00043, orphan) are romanisation variants of the same student of Seko Higa (Kiyuna Choyu), listed on the Seko Higa Wikipedia page and the Seiko Higa lineage history. Note also: C00184 K",proposed
+C00009,C00011,[branch completion] 'Bunei Okuhira' and 'Bunyei Okuhara' are romanisation variants of the same Okinawan name appearing adjacently in the same scraped source list; no evidence exists of two distinct karateka with these near-identical names.,proposed
+C00148,A0163,"[audit:shorin-kobayashi] 'Jinan Shinzato' (C00148, 新里仁安) and 'Jin'an Shinzato' (A0163) are the same person: the Goju-ryu senior disciple of Chojun Miyagi (1901-1945) who taught Yuchoku Higa. Both IDs carry an identical teacher edge to Yuchoku Higa (C00148 cited to ",proposed
+A0163,C00148,"[audit:goju-okinawa] A0163 'Jin'an Shinzato' (新里仁安, d.1945) and C00148 'Jinan Shinzato' are the same person: Miyagi Chojun's senior student and intended successor, killed in the Battle of Okinawa in 1945. Both appear as students of Chojun Miyagi in duplicate ed",proposed
+C00450,A0164,"[audit:kobudo-systems] 'Kinjo Ufuchiku' (A0164) and 'Sanda Kanagusuku' (C00450) are the same person: Kanagusuku Sanda (1841-1921), the police official (ufuchiku) who founded Ufuchiku kobudo. Kinjo and Kanagusuku are the Japanese and Okinawan readings of the same ",proposed
+C00148,A0163,"[audit:duplicate-hunt (whole-dataset name deduplication)] Jin'an Shinzato (A0163) and Jinan Shinzato (C00148) are the same person: Shinzato Jin'an (new-1901?-1945), Chojun Miyagi's senior student and intended successor, who demonstrated for Miyagi in Tokyo in 1930 and was killed in the Battle of O",proposed
+Q3772405,C00185,"[audit:duplicate-hunt (whole-dataset name deduplication)] Kanken Oyadomari (C00185) is the birth name of Kanken Toyama (Q3772405, 1888-1966, Shudokan founder): he was born Oyadomari Kanken in Shuri and later adopted the Japanese surname Toyama (kanji 遠山寛賢, original family name 親泊). The distinctive",proposed

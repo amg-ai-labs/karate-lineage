@@ -1,0 +1,245 @@
+node_id,name,verdict,category,reason,status
+Q1336547,Peichin Takahara,legendary,,"Takahara Peichin (traditional dates 1683-1760), teacher of Sakugawa in the early Shuri-te line; known almost entirely through oral tradition, so semi-legendary but belongs in the lineage.",proposed
+Q1929108,Kusanku,legendary,,"18th-century Chinese envoy/martial artist in Okinawa (traditional dates c. 1670-1762), teacher of Sakugawa; semi-legendary figure known through oral tradition, with the Kusanku kata named for him. Belongs in the lineage flagged as such.",proposed
+Q542989,Chatan Yara,legendary,,Early Okinawan master (circa 1668-1756) credited with transmitting Chinese arts and the Chatan Yara kata line; documentation is thin and semi-legendary. Belongs in the lineage flagged as such.,proposed
+Q8031976,Wong Chung-Yoh,legendary,,Fuzhou-based Chinese martial artist attested only through Okinawan lineage tradition (claimed as Tatsuo Shimabuku's kung fu teacher in Isshin-Ryu histories); Wikidata lists as human but with no dates or independent documentation; keep in lineage flagged as poorly documented,proposed
+Q921673,Kanga Sakukawa,legendary,,Sakugawa Kanga is a Kusanku/Chatan Yara-era figure whose dates are disputed across traditions (1733-1815 vs 1786-1867 as here); historicity accepted but details semi-legendary. Belongs in the lineage flagged as such.,proposed
+Q954330,Ryu Ryu Ko,legendary,,"Ryu Ryu Ko, Higaonna Kanryo's teacher in Fuzhou, is a semi-legendary figure whose identity is disputed (often hypothesised as Xie Zhongxiang, 1852-1930, whence these dates). Belongs in the lineage flagged as such.",proposed
+C00046,Chubu Shorin,non_person,organisation,"'Central (Chubu) Shorin[-ryu]' style/branch fragment, not a person",proposed
+C00054,Enlightened Spirit,non_person,concept,"English translation of a term/dojo name, not a person",proposed
+C00056,Eyed Toguchi,non_person,other,Broken fragment of the nickname 'One-Eyed Toguchi' (see C00404); artefact,proposed
+C00059,Free Sparring,non_person,concept,"Training concept (jiyu kumite), not a person",proposed
+C00060,Fukien Shaolin,non_person,place,"Fujian Shaolin temple/tradition (Chinese antecedent of Okinawan karate), not a person",proposed
+C00061,Fukyu Ichi,non_person,kata,"Kata name (Fukyugata Ichi, Nagamine/Miyagi beginner kata), not a person",proposed
+C00070,Gekisai Ichi,non_person,kata,"Kata name (Gekisai Dai Ichi, Goju-Ryu), not a person",proposed
+C00082,Ginowan City,non_person,place,"Okinawan city, not a person",proposed
+C00090,Hakutsuru Kamae,non_person,technique,"White Crane posture/stance (kamae), a technique term, not a person",proposed
+C00096,Heiwa Road,non_person,place,"Heiwa-dori street in Naha, a place, not a person",proposed
+C00109,Higashi Machi,non_person,place,"Higashimachi district of Naha, a place, not a person",proposed
+C00110,Hija Bridge,non_person,place,"Hija bridge in Okinawa, a place, not a person",proposed
+C00125,His Sanchin,non_person,other,Prose fragment referencing the Sanchin kata ('his Sanchin'); extraction artefact,proposed
+C00127,Honan Chuan,non_person,other,"Chinese boxing style (Henan quan), not a person",proposed
+C00128,Horizontal White,non_person,other,Prose fragment (likely describing a belt or crane technique); artefact,proposed
+C00132,Hung Chia,non_person,other,"Chinese style (Hung Gar / Hongjia quan), not a person",proposed
+C00134,Ichi Elementary,non_person,place,"School name fragment ('...Dai Ichi Elementary'), not a person",proposed
+C00138,Inside Nakazato,non_person,other,Prose fragment ('inside Nakazato['s dojo]'); artefact,proposed
+C00144,Itoman High,non_person,place,"Itoman High School, not a person",proposed
+C00149,Jinpu Kamae,non_person,technique,"Kamae = stance/posture; technique term, not a person",proposed
+C00164,Jumonji Kamae,non_person,technique,"Cross-shaped stance (jumonji kamae), a technique, not a person",proposed
+C00169,Kadena Air,non_person,place,"Fragment of 'Kadena Air Base', not a person",proposed
+C00170,Kadena Teachers,non_person,organisation,"Fragment of a Kadena teachers' school/institution, not a person",proposed
+C00234,Kenkyu Sho,non_person,organisation,"Kenkyusho = research institute (Karate Kenkyusho), not a person",proposed
+C00235,Kenpo Haku,non_person,media,"Kenpo Hakku, the eight precepts poem from the Bubishi, not a person",proposed
+C00308,Kunyonto Order,non_person,concept,"Award: Kun Yonto = Order of the Sacred Treasure 4th class, not a person",proposed
+C00309,Kusanku Dai,non_person,kata,"Kata name (Kusanku Dai), not a person",proposed
+C00310,Kusanku Sho,non_person,kata,"Kata name (Kusanku Sho), not a person",proposed
+C00313,Lohan Chuan,non_person,other,"Chinese style (Luohan quan, Monk Fist boxing), not a person",proposed
+C00323,Marine Base,non_person,place,"US military base reference, not a person",proposed
+C00360,Matsumura Orthodox,non_person,other,"Style name (Matsumura Seito/Orthodox Shorin-ryu), not a person",proposed
+C00377,Nago High,non_person,place,"Nago High School, not a person",proposed
+C00378,Naha Area,non_person,place,"Geographic descriptor, not a person",proposed
+C00379,Naha Courthouse,non_person,place,"Building in Naha, not a person",proposed
+C00380,Naha Municipal,non_person,place,"Fragment of a Naha municipal institution name, not a person",proposed
+C00381,Naihanchi Ichi,non_person,kata,"Kata name (Naihanchi 1), not a person",proposed
+C00382,Naihanchi Nidan,non_person,kata,"Kata name, not a person",proposed
+C00383,Naihanchi Sandan,non_person,kata,"Kata name, not a person",proposed
+C00384,Naihanchi Shodan,non_person,kata,"Kata name, not a person",proposed
+C00386,Nansoye Shaolin,non_person,other,"Garbled reference to Southern Shaolin, a place/tradition, not a person",proposed
+C00398,Nowadays Higa,non_person,other,"Prose fragment ('Nowadays Higa...'); artefact, referent is a Higa",proposed
+C00401,Okinawa Kenpo,non_person,other,"Style name (Okinawa Kenpo, Nakamura Shigeru lineage), not a person",proposed
+C00402,Okinawa Prefectural,non_person,organisation,"Fragment of a prefectural institution name, not a person",proposed
+C00403,Okinawa Shorin,non_person,other,"Style fragment (Okinawa Shorin-ryu), not a person",proposed
+C00406,Onna Village,non_person,place,"Okinawan village, not a person",proposed
+C00407,Open Freesparring,non_person,concept,"Training/competition concept, not a person",proposed
+C00408,Orthodox Shorin,non_person,other,"Style descriptor fragment (orthodox Shorin-ryu), not a person",proposed
+C00410,Passai Dai,non_person,kata,"Kata name (Passai Dai), not a person",proposed
+C00411,Passai Sho,non_person,kata,"Kata name (Passai Sho), not a person",proposed
+C00412,Pinan Godan,non_person,kata,"Kata name (Pinan Godan), not a person",proposed
+C00413,Pinan Ichi,non_person,kata,"Kata name (Pinan 1), not a person",proposed
+C00414,Pinan Nidan,non_person,kata,"Kata name (Pinan Nidan), not a person",proposed
+C00415,Pinan San,non_person,kata,"Kata name (Pinan 3), not a person",proposed
+C00416,Pinan Sandan,non_person,kata,"Kata name (Pinan Sandan), not a person",proposed
+C00417,Pinan Yon,non_person,kata,"Kata name (Pinan 4), not a person",proposed
+C00418,Pinan Yondan,non_person,kata,"Kata name (Pinan Yondan), not a person",proposed
+C00419,Popularisation Society,non_person,organisation,"Fragment of a karate popularisation society name, not a person",proposed
+C00420,Prefectural Agricultural,non_person,organisation,"Fragment of 'Prefectural Agricultural School' (where Miyagi/Kyan taught), not a person",proposed
+C00421,Prefectural Dai,non_person,organisation,"Fragment of 'Prefectural Dai Ichi Middle School', not a person",proposed
+C00422,Prefectural Education,non_person,organisation,"Fragment of a prefectural education body, not a person",proposed
+C00423,Prefectural Office,non_person,organisation,"Government building/office, not a person",proposed
+C00424,Prefectural Teachers,non_person,organisation,"Fragment of 'Prefectural Teachers College' (Shihan Gakko), not a person",proposed
+C00425,Preservation Society,non_person,organisation,"Fragment of a preservation society name (e.g. Ryukyu Kobudo Hozon Shinkokai), not a person",proposed
+C00428,Research Club,non_person,organisation,"Fragment of 'Karate Research Club' (Kenkyukai), not a person",proposed
+C00439,Ryukyu Shorin,non_person,other,"Style fragment (Ryukyu Shorin-ryu), not a person",proposed
+C00445,Sacred Treasure,non_person,concept,"Award: Order of the Sacred Treasure, not a person",proposed
+C00453,Schilling Recreation,non_person,place,"Fragment of a recreation centre name on a US base, not a person",proposed
+C00526,Shorin Kan,non_person,organisation,"Shorinkan, a dojo/association (Nakazato lineage), not a person",proposed
+C00543,Shuri Dai,non_person,place,"Fragment of a Shuri school name (e.g. Shuri Dai Ichi), not a person",proposed
+C00544,Shuri High,non_person,place,"Shuri High School, not a person",proposed
+C00545,Shuri Jinjo,non_person,place,"Shuri Jinjo (elementary) school, not a person",proposed
+C00548,Siamese Highlands,non_person,place,"Geographic region (Siam/Thailand highlands), not a person",proposed
+C00591,The Chibana,non_person,other,Prose fragment ('the Chibana [lineage/dojo]'); extraction artefact,proposed
+C00592,The Eighteen,non_person,other,Prose fragment (likely 'the eighteen hands'/Seipai reference); artefact,proposed
+C00593,The Greater,non_person,other,Prose fragment; extraction artefact,proposed
+C00594,The Kodokan,non_person,organisation,"The Kodokan (judo institution), not a person",proposed
+C00595,The Kushin,non_person,other,Fragment (likely Kushin-ryu style); not a person,proposed
+C00596,The Matsumura,non_person,other,"Prose fragment ('the Matsumura [lineage]'); artefact, not a distinct person",proposed
+C00597,The Oyadomaris,non_person,other,"Plural family reference ('the Oyadomaris'); prose fragment, not a single person",proposed
+C00598,The Ryukyuan,non_person,other,Prose fragment; extraction artefact,proposed
+C00600,The Shorin,non_person,other,Prose fragment ('the Shorin [ryu]'); artefact,proposed
+C00602,Tode Research,non_person,organisation,"Fragment of 'Tode Kenkyukai' (Tode Research Club), not a person",proposed
+C00621,Totori Budokan,non_person,place,"Tottori Budokan, a martial arts hall, not a person",proposed
+C00622,Totori City,non_person,place,"Tottori City, Japan; a place, not a person",proposed
+C00642,Whereas Chokki,non_person,other,"Prose fragment ('Whereas Chokki [Motobu]...'); artefact, referent is Motobu Choki",proposed
+C00643,Whilst Asato,non_person,other,"Prose fragment ('Whilst Asato [Anko]...'); artefact, referent is Asato Anko",proposed
+C00673,Zenyei OshiroAkio Kinjo,non_person,artefact,Two names concatenated (Zenyei Oshiro + Akio Kinjo). Dropped; re-add as two separate rows in nodes.csv if wanted.,confirmed
+Q11064618,bo,non_person,weapon,"Okinawan staff weapon (bo), Wikidata P31 confirms staff weapon; birth 2015 is nonsense",proposed
+Q117604,Nago,non_person,place,"City in northern Okinawa; the 'Aji Ryukyu' tag reflects Ryukyuan history context, not a person.",proposed
+Q1206086,Kumejima,non_person,place,"Island/town in Okinawa Prefecture, not a person.",proposed
+Q1206796,Nishihara,non_person,place,"Town in Okinawa Prefecture, not a person",proposed
+Q1207591,dharma transmission,non_person,concept,"Zen Buddhist concept of lineage transmission, not a person; birth 2012 is nonsense",proposed
+Q124378342,The Three,non_person,other,Wikimedia disambiguation page; not a person.,proposed
+Q127513,Kanagawa Prefecture,non_person,place,Japanese prefecture; the 2024 'birth' year is spurious.,proposed
+Q128059,Kata guruma,non_person,technique,Judo shoulder-wheel throw; the 2022 'birth' year is spurious.,proposed
+Q128133,Niagara Falls,non_person,place,Waterfall on the US-Canada border; birth year 4384 is nonsense,proposed
+Q131295,brothel,non_person,concept,"Type of establishment, not a person; birth 2020 is nonsense",proposed
+Q131359,professional wrestling,non_person,concept,"Performance combat-sport genre, not a person.",proposed
+Q1317686,Pechin,non_person,concept,"Social rank/class in the Ryukyu Kingdom, not an individual",proposed
+Q132720,Yamanashi Prefecture,non_person,place,Japanese prefecture; birth 2023 is nonsense,proposed
+Q1344988,Expo 67,non_person,event,"1967 Montreal world's fair, not a person",proposed
+Q1351759,Chatan,non_person,place,"Town in Okinawa (home of Chatan Yara, but this entity is the place)",proposed
+Q1465287,Pinan,non_person,kata,"Pinan is the series of five kata developed by Anko Itosu, taught across Shorin-ryu, Shito-ryu, Shotokan (as Heian) and Wado-ryu; 'birth' 1870 is not a human date.",proposed
+Q148,Peoples Republic of China,non_person,place,"Country; low QID Q148 is China, years 2016/5886 are nonsense",proposed
+Q1490,Tokyo,non_person,place,"Q1490 is the city of Tokyo; 1868/1943 are the renaming and Tokyo City abolition dates, not lifespan. Low-QID major entity.",proposed
+Q1493305,firefighters carry,non_person,technique,Fireman's carry lifting/throwing technique; birth year 0112 is spurious.,proposed
+Q1493578,Chinto,non_person,kata,"Chinto is a Shuri-te/Tomari-te lineage kata (named after the shipwrecked Chinese sailor); this QID is the kata article, not the semi-legendary man.",proposed
+Q157763,Prunus mume,non_person,other,"Prunus mume is the Japanese apricot/plum tree, a plant species; likely leaked via a kung fu 'plum blossom' reference.",proposed
+Q16552,San Diego,non_person,place,San Diego is a US city; 1985-2007 are not human dates for any lineage figure.,proposed
+Q17,Japan,non_person,place,Country; Q17 is the Wikidata item for Japan,proposed
+Q174,Sao Paulo,non_person,place,"Q174 is the city of Sao Paulo, Brazil (very low QID = major entity).",proposed
+Q179743,Bringing Up Baby,non_person,media,"1938 American screwball comedy film, not a martial artist",proposed
+Q181966,Naha,non_person,place,"Naha is the capital city of Okinawa (cradle of Naha-te); style field includes a bank and a video game, confirming a city article.",proposed
+Q182634,rickshaw,non_person,other,Human-pulled vehicle; the 2019 'birth' year is spurious. Not a person.,proposed
+Q1898583,marine force,non_person,concept,Entity is the generic 'Marines' concept (type of military force); style field contains 'counter-terrorism'. Not a person.,proposed
+Q192660,Battle of Okinawa,non_person,event,"1945 Second World War battle; leaked via Okinawan karate history context, not a person.",proposed
+Q193428,Sakai,non_person,place,"Sakai is a city in Osaka Prefecture; no dates, generic style tags.",proposed
+Q199889,Kumamoto,non_person,place,"Kumamoto is a Japanese city/prefecture; 'death' 1611 is a historical date (likely Kato Kiyomasa era), not a lifespan.",proposed
+Q200333,hapkido,non_person,other,"Korean martial art (style-as-entity), not a person; birth 2015 is nonsense",proposed
+Q2074666,Machado family,non_person,other,"Wikidata P31 = family (Q8436): the Machado BJJ family as a group, not an individual; split into individual members if needed",proposed
+Q21491914,Maekawa,non_person,other,"Enwiki 'Maekawa' is a surname/disambiguation page, and this QID range corresponds to a Wikidata family-name entity, not a specific person; the attached 1912-2010 dates indicate a bad merge with an unidentified individual.",proposed
+Q2304626,Southeast,non_person,other,"'Southeast' is a compass-direction disambiguation page; 1920-1924 are stray dates, not a lifespan.",proposed
+Q23666,Great Britain,non_person,place,"Q23666 is the island of Great Britain; 'birth' 2012 and 'death' 1625 are nonsense. A place, not a martial artist.",proposed
+Q2408025,catch wrestling,non_person,concept,Grappling style as an entity; the 2011 'birth' year is spurious.,proposed
+Q30,United States,non_person,place,Q30 is the country United States; years 2009/8418 are nonsensical for a person. Classic low-QID major entity leak.,proposed
+Q3210517,Shaolin Mantis,non_person,media,"Shaolin Mantis is a 1978 Shaw Brothers kung fu film (wiki URL points to the 1978 film article); a media work, not a person.",proposed
+Q3274794,Camp Zama,non_person,place,"US Army post in Kanagawa, Japan; venue where servicemen trained, not a person.",proposed
+Q328615,Okinawa,non_person,place,"Okinawa City (formerly Koza), a municipality in Okinawa Prefecture; style field contains US military administration entities, confirming a city article.",proposed
+Q340,Montreal,non_person,place,"Canadian city; very low QID typical of major entities, birth 1960 is nonsense",proposed
+Q348957,White tiger,non_person,other,"Animal/disambiguation entry for 'white tiger'; likely leaked via a style name or fighter nickname, not a person.",proposed
+Q363025,The American,non_person,media,Wikidata disambiguation page for creative works titled 'The American'; not a person.,proposed
+Q373498,dan,non_person,concept,"Rank/grade concept in martial arts, not a person",proposed
+Q38283,Yokohama,non_person,place,Japanese city; birth 2024 is nonsense,proposed
+Q403803,Number One,non_person,other,"'Number One' is a disambiguation/concept page (likely scraped from a ranking or nickname phrase), not a person; no dates.",proposed
+Q40795,kata,non_person,concept,"Generic concept of kata (forms) in Japanese/Okinawan martial arts, not a person.",proposed
+Q41705,Fujian,non_person,place,"Fujian is the Chinese province (origin region of White Crane and other karate antecedents), not a person; Q41705 is the province and the birth year '0229' is nonsense. Leaked into the person table as a lineage antecedent.",proposed
+Q42530280,Wamp 2 Dem,non_person,media,"Mixtape by British rapper Giggs; the 2016 'birth' year is a release-era date, not a person.",proposed
+Q4539628,The Okinawa Times,non_person,organisation,"The Okinawa Times is a newspaper, likely scraped because it reported on karate figures.",proposed
+Q47146337,alcohol,non_person,other,"Chemical substance/beverage class, not a person",proposed
+Q478958,Western culture,non_person,concept,Cultural concept; years 0743-1900 are nonsense,proposed
+Q49,North America,non_person,place,Q49 is the continent North America; style field contains 'Basse-Terre'. 'Death' 2004 is garbage.,proposed
+Q4935308,Bobby Lowe,non_person,wrong_entity,"Wikidata-verified as Robert Lincoln ""Link"" Lowe (1865-1951), American baseball player wrongly matched; the karateka Bobby Lowe is Q221797, which already carries the Mas Oyama edge.",proposed
+Q525270,American Kenpo,non_person,concept,"American Kenpo is a martial art style (Ed Parker's system), not a person; 'birth' 2015 is nonsense for a human and confirms a style/article entity.",proposed
+Q53842,Kuroshio Current,non_person,other,"The Kuroshio is an ocean current in the western Pacific, a geographic/oceanographic feature; 1476-2007 are not human dates.",proposed
+Q60,New York City,non_person,place,"Q60 is New York City; low-QID major entity, not a person.",proposed
+Q605735,Hideo Yamamoto,non_person,wrong_entity,"Wikidata-verified as the manga artist Hideo Yamamoto (b. 1968, Ichi the Killer) wrongly matched; the karateka is Q15987804, which already carries the Masatoshi Nakayama edge.",proposed
+Q608415,Shuri,non_person,place,"Former Okinawan royal capital (now district of Naha), origin of Shuri-te but a place; birth 1989 is nonsense",proposed
+Q65,Los Angeles,non_person,place,"Q65 is the city of Los Angeles (very low QID = major entity); style field contains a newspaper and a college, confirming a city page.",proposed
+Q664,New Zealand,non_person,place,Q664 is the country New Zealand (very low QID = major entity); 'death' 5886 is garbage data.,proposed
+Q68481,Fuzhou,non_person,place,Chinese city in Fujian (cradle of White Crane antecedents but a place); birth 2262 is nonsense,proposed
+Q6960159,Nakahara,non_person,other,"Enwiki 'Nakahara' is a surname/place disambiguation page, not a specific person; no dates, no specific style.",proposed
+Q7129609,Caucasian race,non_person,concept,Obsolete anthropological classification; birth year 3589 is spurious. Not a person.,proposed
+Q713750,West Germany,non_person,place,Former country (Federal Republic of Germany); years 1912-1959 are nonsense scrape artefacts,proposed
+Q714329,Hirara,non_person,place,"Hirara is a former city on Miyako Island, Okinawa (merged into Miyakojima 2005); 'birth' 2006 is an administrative date, not a lifespan.",proposed
+Q7385615,Ryu-te,non_person,concept,Ryu-te is the style founded by Taika Seiyu Oyata; the 1928-2012 dates are Oyata's own lifespan attached to the style entity. The style QID has displaced the man; the person node should be Seiyu Oyata.,proposed
+Q7561025,Song Moo Kwan,non_person,organisation,"One of the original Korean taekwondo kwans (school founded 1944); the row dates 1919-2015 are those of its founder Ro Byung-jik, confirming the QID is the school, not the man.",proposed
+Q766445,Okinawa Prefecture,non_person,place,"Japanese prefecture, not a person",proposed
+Q7953,Zen,non_person,concept,"School of Mahayana Buddhism; very low QID major topic, not a person.",proposed
+Q7972225,Washington State,non_person,place,"US state / place-name disambiguation entity, not a person.",proposed
+Q845354,sai,non_person,weapon,"The sai, an Okinawan kobudo truncheon weapon (entity may be a Sai disambiguation page); dates 1944/1884 are spurious.",proposed
+Q847709,Red Beard,non_person,media,Red Beard is the 1965 Kurosawa film; the 'Chishu Ryu' style tag is actually the actor Chishu Ryu's name mis-parsed as a ryu (style).,proposed
+Q849649,wisdom in Buddhism,non_person,concept,"Prajna, a Buddhist concept; birth 2012 is nonsense",proposed
+Q907052,Shuri Castle,non_person,place,"Ryukyuan royal castle in Naha; 1958 is a reconstruction date, not a birth year.",proposed
+Q932795,kumite,non_person,concept,"Sparring component of karate training, a practice not a person",proposed
+Q961126,Bojutsu,non_person,technique,"Japanese/Okinawan staff fighting art, a discipline not a person",proposed
+C00014,Chikin Kuraka,person,other,"[panel, medium confidence] Okinawan-dialect rendering (Chikin = Tsuken) of Tsuken Kuragwa, a kobudo figure attested in Ryukyu kobudo lineage literature (Tsuken no kun / Tsuken sunakake no eku tradition). Surname-first in the entry; Western order is Kuragwa Tsuken. Same referent as existing nodes C00179/C00289 (Koragwa Tsuken), so flag as duplicate of those.",proposed
+C00039,Franklin DR Hargrove,person,other,"[panel, high confidence] Real American Shorin-ryu Shorinkan teacher (student of Shugoro Nakazato, Hampton, Virginia, author on karate history). The embedded 'DR' is a displaced doctoral title from the source text; conventional form is Frank Hargrove.",proposed
+C00058,Franklin DR Hargrove,person,other,"[panel, high confidence] Exact duplicate of C00039, same malformed 'DR' title; same real Shorin-ryu teacher Frank Hargrove. Keep as person but merge with C00039.",proposed
+C00067,Gabi Haka,non_person,other,"[panel, medium confidence] No attestation in any karate/kobudo lineage source found by web search, and neither token is a plausible Japanese/Okinawan surname ('haka' = grave, 'gabi' matches no Okinawan name or nickname pattern). Reads as scrape garbage rather than a truncated real name.",proposed
+C00126,Hoa Funsai,non_person,other,"[panel, low confidence] Zero web presence in karate lineage sources; 'funsai' is the ordinary Japanese noun for pulverisation and 'Hoa' is not a Japanese/Okinawan/Chinese surname romanisation. Does not match any known Chinese antecedent figure (Ason, Iwah, Waishinzan, Anan etc.); most likely a garbled fragment. Low confidence only because a badly romanised Chinese name cannot be fully excluded.",proposed
+C00131,Hsiao Yao,person,other,"[panel, low confidence] Wade-Giles 'Hsiao Yao' is a coherent Chinese personal name (Xiao is a common surname), the kind of Chinese teacher name that appears on kenpo/karate antecedent charts. No specific individual verifiable by search, and 'xiaoyao' is also a Daoist term, but per keep-bias for coherent Chinese names it is retained as a person, low confidence.",proposed
+C00143,Isugio Yonezawa,person,other,"[panel, high confidence] 'Isugio' is an OCR/typo corruption of Tsugio (I/T confusion); same person as existing node C00623 Tsugio Yonezawa. Keep as person and merge as duplicate.",proposed
+C00156,Jitude Moshigwa Ire,person,other,"[panel, low confidence] 'Moshigwa' fits the genuine Uchinaaguchi nickname pattern (Mōshi + diminutive -gwa; cf. Motobu Choki's childhood name Mōshi) and Ire/Irei is a real Okinawan surname, so 'Moshigwa Ire' is a plausible dojo-chart figure. The leading token 'Jitude' is an unexplained scrape artefact and is dropped in the corrected name. No web attestation; kept under the keep-plausible-people rule.",proposed
+C00157,Jizen,non_person,other,"[panel, low confidence] Single token with no surname; not a recognisable karateka in any lineage source. 'Jizen' is an ordinary Japanese word (charity) and may be a garbled kata name (Jion) or prose fragment. No basis to reconstruct a person from it.",proposed
+C00177,Kanbun Uechi Jnr,person,other,"[panel, medium confidence] 'Kanbun Uechi Jnr' is a malformed reference to Kanbun Uechi's son and successor as head of Uechi-ryu, Kanei Uechi (1911-1991), a well-documented real person. Correct to Kanei Uechi and check for merger with any existing Kanei Uechi node.",proposed
+C00196,Makabe UDUN,person,other,"[panel, medium confidence] In Okinawan te literature 'Makabe Udun' denotes the individual noble of the Makabe princely house, the late-18th-century te expert Makabe Chōken/Chokufu, nicknamed Makabe Chān (famed for jumping kicks), attested in Tomari-te/Shuri-te histories and in accounts of the Kojo dojo in Fuzhou. Keep as person; identification with Makabe Chōken is probable but not certain, so no corrected_name is imposed.",proposed
+C00208,Kata Yamashiro,person,other,"[panel, low confidence] Yamashiro is a genuine Okinawan karate surname (e.g. Okinawa Kenpo's Yamashiro line) but 'Kata' is not a credible given name; the given name is most likely truncated or contaminated by the word kata in the source text. No specific Yamashiro identifiable by search. Kept as a person node under the keep-bias, flagged low confidence for manual review of the given name.",proposed
+C00251,Ki Teruya,person,other,"[panel, medium confidence] Almost certainly truncated 'Kishin Teruya' (1804-1864), the documented Tomari-te master who taught Kosaku Matsumora and Kokan Oyadomari (Passai, Rohai, Wanshu); Teruya Kishin has his own Wikipedia coverage (pt-wiki) and appears throughout Tomari-te histories. Fits the dataset's Okinawan lineage context far better than modern Teruyas.",proposed
+C00262,Kodatsu Tha,person,other,"[panel, high confidence] 'Tha' is a clear garble of 'Iha' (capital I read as T); Kodatsu Iha (1873-1928), Tomari-te student of Kosaku Matsumora, is a documented figure. Duplicate of existing node C00261; keep as person and merge.",proposed
+C00285,Kokuba,person,other,"[panel, low confidence] Bare surname, but in a karate lineage chart 'Kokuba' most plausibly denotes Kosei Kokuba (Kuniba, 1900-1959), student of Choki Motobu and founder of Seishin-kai, rather than the Naha district. Kept as person under the keep-bias; low confidence because the given name is absent and the district reading cannot be excluded.",proposed
+C00318,Makabe UDUN,person,other,"[panel, medium confidence] Exact duplicate of C00196: Makabe Udun, the Makabe-house noble te expert (Makabe Chōken/Chokufu, 'Makabe Chān') attested in Okinawan te literature. Keep as person and merge with C00196.",proposed
+C00321,Mamori Kama,non_person,other,"[panel, low confidence] Neither token is a surname: 'mamori' is the common noun 'protection/guard' and 'kama' is the sickle weapon (also an Okinawan given name, but a given name alone with a common noun is not a person entry). No attestation in any lineage source; reads as a weapons-text fragment. Low confidence because an Okinawan nickname reading is conceivable.",proposed
+C00357,Ten Senshi,non_person,other,"[panel, low confidence] 'Ten senshi' reads as a prose fragment ('ten warriors/senshi'), not a personal name: no Japanese/Okinawan/Chinese surname present and no attestation in lineage sources. Appears twice in the dataset (C00585), consistent with a repeated scrape artefact rather than a person.",proposed
+C00366,Miinshiin Higa,person,other,"[panel, low confidence] Higa is one of the commonest Okinawan karate surnames and 'Miinshiin' matches Uchinaaguchi nickname romanisation (long doubled vowels), the pattern used for obscure te men in dojo lineage charts and in Bishop/Nagamine-type sources. No web attestation, but the name is structurally plausible; kept under the keep-plausible-people rule for manual review.",proposed
+C00376,Motobu Saru,person,other,"[panel, high confidence] 'Motobu no Saru' (Motobu the Monkey) is the well-documented nickname of Choki Motobu (1870-1944). Real person, but this node duplicates the existing Choki Motobu node and should be merged into it.",proposed
+C00385,Nanko Mine,person,other,"[panel, medium confidence] Matches Nanko Minei, a real and currently active Okinawan Goju-ryu 10th dan from Nanjo City (Minei Dojo, opened 1973; senior student of Miyasato in the OGKK line). 'Mine' is a truncation of the surname Minei; not a place-name fragment.",proposed
+C00404,One-Eyed Toguchi,person,other,"[panel, high confidence] Nickname entry for Seijin 'One-Eyed' Toguchi (1895-1937), attested in Tomari-te lineage literature as a successor of Kodatsu Iha, who also appears in this dataset (C00261/C00262). Real person; flag as possible duplicate of any existing Seijin Toguchi node.",proposed
+C00405,Oni Bucho,non_person,other,"[panel, low confidence] No attestation anywhere in karate or kobudo lineage sources. 'Oni bucho' is a generic Japanese epithet (demon + section chief, a common workplace trope), not an Okinawan name pattern; nickname-only lineage figures exist (cf. C00404) but this one resolves to no known referent, so treated as a prose/scrape fragment.",proposed
+C00432,Ryoichi Onis,person,other,"[panel, low confidence] 'Onis' is a truncated surname; 'Ryoichi Onishi' is a coherent Japanese name and a martial artist of that name (karate background, later Systema Osaka founder) exists. Whether that specific individual is the intended lineage entry is unverified, but the name is plausibly real, so kept per the keep-plausible-people rule.",proposed
+C00452,Sazan Kozan,non_person,other,"[panel, medium confidence] Zero attestation as a person in any karate source; only web hits are unrelated Turkish/Albanian toponyms. Neither token works as an Okinawan/Japanese surname or given name; most consistent with garbled kata or place terms (Sesan, Kozan/Kusanku), as the panel suspected.",proposed
+C00516,Shinto Shizen,non_person,concept,"[panel, high confidence] Garbled style name, not a person: Shindo Jinen-ryu (the characters for 'jinen' are also read 'shizen'), the karate style founded by Yasuhiro Konishi. A style-name fragment that leaked into the person list.",proposed
+C00522,Shoi Sai,person,other,"[panel, low confidence] No web attestation, but 'Sai' is the standard Ryukyuan reading of the Kume-village Chinese clan surname Cai (cf. Sai On, Sai Taku), and 'Shoi' is a plausible Sino-Ryukyuan given-name reading; parses as a coherent Kume/Chinese lineage name in the dataset's given-name-first order. Kept per the keep-plausible-people rule; the weapon-word coincidence with 'sai' is not disqualifying.",proposed
+C00582,Teamaai Uehara,person,other,"[panel, low confidence] Uehara is a common real Okinawan martial-arts surname (Seikichi, Saburo Uehara etc.) and 'Teamaai' reads like a romanised Okinawan nickname of the '-maai/-me' diminutive type seen elsewhere in this dataset (cf. Moshigwa Ire). No web attestation found, but consistent with an obscure dojo-chart practitioner; kept per the keep-plausible-people rule. No confident correction available.",proposed
+C00585,Ten Senshi,non_person,other,"[panel, medium confidence] Duplicate of C00357. 'Ten senshi' parses as Japanese prose ('ten warriors/masters'), not as a surname-plus-given-name in any relevant naming system, and no lineage source attests such a person. Treated as a scraped prose fragment.",proposed
+C00634,Tung Chin,person,other,"[panel, low confidence] Coherent Wade-Giles Chinese name (Tung/Dong + Chin/Jin), and Chinese antecedent teachers are in scope for this dataset; real masters named Tung Chin- (e.g. Tung Chin-Lung) exist, so it may also be a truncation of a longer given name. No karate-specific attestation found, but plausible as an obscure Chinese lineage teacher; kept per the keep-plausible-people rule.",proposed
+C00641,Wan Shu,legendary,kata,"[panel, medium confidence] As a lineage node this denotes Wanshu / Wang Ji, the 1683 Qing sapposhi envoy traditionally credited with teaching in Tomari and as namesake of the Wanshu kata. The envoy is historical but his martial teaching is semi-legendary lineage tradition, so keep flagged as legendary rather than delete as a kata name.",proposed
+C00657,Yoshimura UDUN,person,other,"[panel, medium confidence] 'Udun' designates the Yoshimura princely house, but in karate lineage charts 'Yoshimura Udun' conventionally denotes the house's karate figure Yoshimura Chogi (1866-1945), a student of Matsumura-line masters and well attested in Okinawan karate literature. Keep as a person under the conventional individual, consistent with the Makabe Udun entries.",proposed
+Q105016253,Shingo Hayashi,non_person,other,"[panel, high confidence] Wrong entity: Wikidata Q105016253 is Shingo Hayashi the Japanese Olympic dressage equestrian (b. 25 Jan 1985, Sapporo), matching the node's 1985 birth year. Not a martial artist; the lone generic 'Te' tag is scrape noise. Remove.",proposed
+Q1126552,Jesus Martinez,non_person,other,"[panel, high confidence] Wikidata Q1126552 is a Wikimedia disambiguation page for the common name Jesus Martinez, not any individual; the 1934-2025 dates were spuriously attached. Pure scrape artefact with only the generic 'Te' tag. Remove.",proposed
+Q11476774,Hiroshi Shima,non_person,other,"[panel, high confidence] Wrong entity: Wikidata Q11476774 is Hiroshi Shima (Shima Hiroshi, 1918-2003), a Japanese novelist from Kagawa Prefecture; dates match the node exactly. No karateka of this identity exists; 'Te' tag is scrape noise. Remove.",proposed
+Q15987804,Hideo Yamamoto,person,,"[panel, high confidence] Wikidata Q15987804 is explicitly a Japanese karateka: Hideo Yamamoto, b. 1955 Tokyo, Kokushikan University, student of Masatoshi Nakayama (JKA Shotokan line). Correct entity for a karate lineage dataset; the enwiki cinematographer/manga artist articles the panel worried about are different people.",proposed
+Q21491858,Akamine,non_person,other,"[panel, high confidence] Wikidata Q21491858 is the family-name item 'Akamine' (a surname record with phonetic codes), not a person; the birth year 1962 is spurious. If a kobudo Akamine (Eisuke or Hiroshi, Ryukyu Kobudo Shimbukan) is needed, that must be a separate correctly linked node. Remove this artefact.",proposed
+Q3048317,Muqi,non_person,out_of_scope,"Tang/Song-dynasty Zen figure, out of scope for the karate lineage. Removed per Ahmad, 2026-07-09.",confirmed
+Q3118758,Guan Xiu,non_person,out_of_scope,"Tang/Song-dynasty Zen figure, out of scope for the karate lineage. Removed per Ahmad, 2026-07-09.",confirmed
+Q345012,Huineng,non_person,out_of_scope,"Tang/Song-dynasty Zen figure, out of scope for the karate lineage. Removed per Ahmad, 2026-07-09.",confirmed
+Q48762989,Shingo Hayashi,non_person,other,"[panel, high confidence] Same wrong entity as Q105016253: resolves to Shingo Hayashi the Japanese dressage equestrian, b. 25 Jan 1985, Sapporo (2020 Olympics). Not a martial artist; duplicate scrape artefact. Remove.",proposed
+Q6766745,Mark Bishop,person,,"[panel, medium confidence] The name in a te-lineage dataset denotes the real karate/kobudo researcher-practitioner Mark Bishop, author of 'Okinawan Karate: Teachers, Styles and Secret Techniques' and a student of Okinawan teachers including Seikichi Uehara; he belongs in the lineage. However, Wikidata Q6766745 is Thomas Mark Bishop, an Australian Labor senator b. 29 Jun 1954: the QID link and the 1954 birth year are a wrong-entity reconciliation and should be stripped while keeping the person node.",proposed
+Q935081,Robert John Burke,person,,"[panel, high confidence] Entity match is correct and he is a real martial artist: Robert John Burke, American actor b. 12 Sep 1960, holds a second-degree black belt in Matsubayashi Shorin-ryu per Wikipedia, which matches the node's Shorin-Ryu style tag. He is alive; the death year 2013 is erroneous and must be deleted.",proposed
+Q1040902,Tadashi Nakamura,wrong_entity_suspected,,"The famous karate Tadashi Nakamura (Kyokushin, founder of World Seido Karate) was born 1942 and is living; 1929-2019 matches a different Tadashi Nakamura. QID mismatch.",proposed
+Q10899651,Henry Liu,non_person,wrong_entity,"[entity audit] Wikidata Q10899651 with dates 1932-1984 is Henry Liu (Liu Yiliang / 'Jiang Nan'), the Taiwanese-American journalist assassinated in Daly City in 1984. He was a writer, not a martial artist. Web search finds no notable karateka named Henry Liu (only a child tou",proposed
+Q11755899,Henry Cook,non_person,wrong_entity,"[entity audit] Q11755899 is not a person at all: it is a Wikimedia disambiguation page for the name 'Henry Cook'. The dataset dates 1886-1939 match no documented karateka. The only notable karate figure with this name is Harry Cook (born Henry Wilson Cook, 1949), the British",proposed
+Q1192158,Yasunori Matsumoto,non_person,wrong_entity,"[entity audit] Q1192158 (b. 7 Feb 1960, matching the dataset) is Yasunori Matsumoto the Japanese voice actor (Chuo University, career from 1987). His Wikipedia article mentions no martial arts (only university cycle racing). The 'kudo' style tag is a scrape artefact (the ent",proposed
+Q1493062,Willie Williams,wrong_entity_suspected,,"The Kyokushin fighter Willie Williams (famous for the bear fight) lived 1951-2019. Dates 1925-2011 match a different Willie Williams, so the wrong entity was linked.",proposed
+Q16797282,Noel Smith,non_person,wrong_entity,"[entity audit] Q16797282 is a Wikimedia disambiguation page for 'Noel Smith', not a person; the dataset dates 1895-1955 correspond to no karateka (they fit the American film director Noel M. Smith, 1895-1955, listed on that disambiguation page). The only martial-arts Noel Sm",proposed
+Q1691502,Joe Lewis,wrong_entity_suspected,,The karate/kickboxing legend Joe Lewis lived 1944-2012; 1895-1986 matches an unrelated Joe Lewis on enwiki. Clear QID mismatch. [RESOLVED by entity audit: wrong_entity],rejected
+Q18230165,George Mattson,wrong_entity_suspected,,"George E. Mattson, the American Uechi-Ryu pioneer, was born 1937 and is not deceased on these dates. Dates 1908-1997 match a different George Mattson (likely the American football player), so the wrong entity was linked. [RESOLVED by entity audit: wrong_entity]",rejected
+Q18783605,David Scot,non_person,wrong_entity,"[entity audit] Q18783605 is David Scot (c. 1770-1834), a Scottish orientalist and writer; the dataset dates match him exactly. Wikidata records no martial-arts connection whatsoever, and no karateka named David Scot exists in any lineage source consulted. A 1770-1834 Scottis",proposed
+Q226474,Campbell,non_person,wrong_entity,"[entity audit] Q226474 is a Wikimedia disambiguation page for the surname/given name 'Campbell', not a person, with no martial-arts content. The dataset dates 1870-1938 cannot be attributed to any identifiable karate or taekwondo figure named only 'Campbell'; a bare surname ",proposed
+Q251784,Anan,wrong_entity_suspected,place,"The lineage node intends the semi-legendary Chinese sailor/teacher Anan of Tomari-te legend (also a Ryuei-Ryu kata name), but low QID Q251784 with no dates almost certainly resolves to the Japanese city Anan (Tokushima) or a disambiguation page. If re-pointed to the man, flag him as legendary. [RESOLVED by entity audit: wrong_entity]",rejected
+Q2632773,Shingo Araki,non_person,wrong_entity,"[entity audit] Q2632773 is Shingo Araki (1 Jan 1939 - 1 Dec 2011), the Japanese anime character designer famous for Saint Seiya; the dataset dates match him exactly. He was never a martial artist. Searches find no karateka named Shingo Araki (the only martial-arts 'Araki' hi",proposed
+Q2943981,Tatsuo Yamada,wrong_entity_suspected,,"The karate/kickboxing pioneer Tatsuo Yamada (founder of Nihon Kempo Karate-do) lived 1905-1967. Dates 1956-2009 exactly match the Japanese actor Tatsuo Yamada (1956-2009), so the wrong Wikidata entity was linked. [RESOLVED by entity audit: wrong_entity]",rejected
+Q295085,Toyama,wrong_entity_suspected,,"Q295085 is a Wikimedia disambiguation page (Toyama place name), not a person. The Toyama-ryu style tag suggests the intended node is Kanken Toyama (1888-1966, Shudokan founder) or the Toyama military academy sword line; either way the matched QID is wrong. [RESOLVED by entity audit: wrong_entity]",rejected
+Q3518915,Terry ONeill,wrong_entity_suspected,,"Q3518915 is a Wikimedia disambiguation page, not a person. Row dates 1938-2019 match the photographer Terry O'Neill; the intended lineage figure is the British Shotokan (KUGB) karateka Terry O'Neill, born 1948, editor of Fighting Arts International. [RESOLVED by entity audit: wrong_entity]",rejected
+Q3857461,Mike Stone,wrong_entity_suspected,,"The karate champion Mike Stone (associate of Elvis Presley) was born 1943 and did not die in 2002. Dates 1951-2002 exactly match Mike Stone the English record producer (Queen), so the wrong entity was linked. [RESOLVED by entity audit: wrong_entity]",rejected
+Q4807592,Ason,wrong_entity_suspected,concept,"The lineage node intends the semi-legendary Chinese military attache Ason, an early Naha-te teacher named in 19th-century accounts, but the English Wikipedia article 'Ason' is about the ancient Japanese hereditary court title (asomi), a concept not a person. If re-pointed to the man, flag him as legendary. [RESOLVED by entity audit: wrong_entity]",rejected
+Q6119718,Steve Armstrong,non_person,wrong_entity,"[entity audit] Q6119718 is Steve Armstrong the American professional wrestler (born 16 March 1965, son of Bob Armstrong), matching the dataset's 1965 birth; the death 1987 matches nothing and is itself an artefact. The intended karate figure is Steve Armstrong (born 22 Septe",proposed
+Q6183244,Jerry Bell,non_person,wrong_entity,"[entity audit] Q6183244 is a Wikimedia disambiguation page; the dataset birth 1959 belongs to Jerry Bell the American football tight end listed there. The intended person is 'Jerry Bell (karate)', an American singer-karateka whose English Wikipedia article was deleted and no",proposed
+Q6227103,John Corcoran,wrong_entity_suspected,,"John Corcoran the martial arts author/editor was born circa 1946. Dates 1842-1919 match a 19th-century John Corcoran (politician or similar), so the wrong entity was linked. [RESOLVED by entity audit: wrong_entity]",rejected
+Q6739958,Makoto Nakamura,wrong_entity_suspected,,The Kyokushin two-time World Open champion Makoto Nakamura was born 1953; birth 1970 matches a different Makoto Nakamura on enwiki (likely an athlete in another sport). [RESOLVED by entity audit: wrong_entity],rejected
+Q7147128,Patrick McCarthy,wrong_entity_suspected,,The karate researcher Patrick McCarthy (Bubishi translator) was born 1954; 1848-1921 matches an unrelated Patrick McCarthy on enwiki (politician/mayor era). Clear QID mismatch. [RESOLVED by entity audit: wrong_entity],rejected
+Q7327071,Richard Kim,wrong_entity_suspected,,"The karate master and historian Richard Kim (Dai Nippon Butoku Kai) lived 1917-2001. Dates 1932-2009 do not match him, suggesting a different Richard Kim was linked.",proposed
+Q7446703,Seiichi Iju,wrong_entity_suspected,,Birth year 2011 is impossible for a Shorin-ryu Shorinkan master; either the QID captured a different entity (organisation/dojo) or the date field was polluted. Needs re-matching. [RESOLVED by entity audit: correct_entity],rejected
+Q7614246,Steve Waters,non_person,wrong_entity,"[entity audit] Q7614246 is Steve Waters the British playwright, screenwriter and university teacher, born 1965 in Coventry, which matches the dataset's 1965. He has no martial-arts connection, and searches found no documented karateka named Steve Waters anywhere (Wikipedia's",proposed
+Q845437,Masanori Ishikawa,non_person,wrong_entity,"[entity audit] Q845437 is Masanori Ishikawa the Japanese baseball pitcher (born 22 January 1980, Akita; Tokyo Yakult Swallows, 2000 Olympics), matching the dataset's 1980. Searches found no notable karateka named Masanori Ishikawa (only unrelated instructors surnamed Ishikaw",proposed
+Q862634,Bill Wallace,wrong_entity_suspected,,"'Superfoot' Bill Wallace, the karate/kickboxing champion, was born 1945 and is still alive. Dates 1924-2012 match a different Bill Wallace, so the wrong entity was linked. [RESOLVED by entity audit: wrong_entity]",rejected
+Q922328,Masahiko Tanaka,wrong_entity_suspected,,"Style field contains 'Ryu Shaman King': this QID is the Japanese voice actor Masahiko Tanaka (b. 1954, voices Ryunosuke in Shaman King), not the JKA kumite champion Masahiko Tanaka (b. 1940). [RESOLVED by entity audit: wrong_entity]",rejected
+Q1372130,Sho Hashi,non_person,out_of_scope,"[island research] First Sho dynasty king of Ryukyu, not a martial artist; both verifiers concur the pair is out of scope.",proposed
+Q1060301,Sho Chu,non_person,out_of_scope,"[island research] First Sho dynasty king of Ryukyu, not a martial artist; both verifiers concur the pair is out of scope.",proposed

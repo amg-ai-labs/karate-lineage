@@ -1,0 +1,236 @@
+node_id,field,old,new,reason,status
+Q1691502,birth_year,1895,1944,[entity audit] correct person: Joe Lewis,proposed
+Q1691502,death_year,1986,2012,[entity audit] correct person: Joe Lewis,proposed
+Q18230165,birth_year,1908,1937,[entity audit] correct person: George E. Mattson,proposed
+Q18230165,death_year,1997,,[entity audit] wrong-entity death date removed,proposed
+Q2943981,birth_year,1956,1905,[entity audit] correct person: Tatsuo Yamada,proposed
+Q2943981,death_year,2009,1967,[entity audit] correct person: Tatsuo Yamada,proposed
+Q295085,birth_year,,1888,[entity audit] correct person: Kanken Toyama,proposed
+Q295085,death_year,,1966,[entity audit] correct person: Kanken Toyama,proposed
+Q3518915,birth_year,1938,1948,[entity audit] correct person: Terry O'Neill,proposed
+Q3518915,death_year,2019,,[entity audit] wrong-entity death date removed,proposed
+Q3857461,birth_year,1951,1943,[entity audit] years belonged to the wrong entity; [wave4] en-wiki: born 29 Jun 1943,proposed
+Q3857461,death_year,2002,,[entity audit] years belonged to the wrong entity,proposed
+Q6227103,birth_year,1842,,[entity audit] years belonged to the wrong entity,proposed
+Q6227103,death_year,1919,,[entity audit] years belonged to the wrong entity,proposed
+Q6739958,birth_year,1970,,[entity audit] years belonged to the wrong entity,proposed
+Q7147128,birth_year,1848,,[entity audit] years belonged to the wrong entity,proposed
+Q7147128,death_year,1921,,[entity audit] years belonged to the wrong entity,proposed
+Q862634,birth_year,1924,1945,[entity audit] years belonged to the wrong entity; [wave4] en-wiki: born 1 Dec 1945,proposed
+Q862634,death_year,2012,,[entity audit] years belonged to the wrong entity,proposed
+Q922328,birth_year,1954,,[entity audit] years belonged to the wrong entity,proposed
+Q542989,birth_year,1668,1740,[wave4] ja.wikipedia (Kyan Chotoku article) gives Chatan Yara 1740-1812; en-wiki 1668-1756 is internally inconsistent and makes him older than his teacher Kusanku | REJECTED by Ahmad 2026-07-13: keep the traditional 1668-1756 dating so Yara precedes his student Takahara Peichin (1683-1760); the ja-wiki 1740-1812 dates likely belong to the later Yomitan-line Yara (Toshimasa),rejected
+Q542989,death_year,1756,1812,[wave4] ja.wikipedia (Kyan Chotoku article) gives Chatan Yara 1740-1812; en-wiki 1668-1756 is internally inconsistent and makes him older than his teacher Kusanku | REJECTED by Ahmad 2026-07-13: keep the traditional 1668-1756 dating so Yara precedes his student Takahara Peichin (1683-1760); the ja-wiki 1740-1812 dates likely belong to the later Yomitan-line Yara (Toshimasa),rejected
+C00034,birth_year,,1925,[wave4] USAdojo biography + Shobayashi Shorin-ryu wiki: 1925-2017,proposed
+C00034,death_year,,2017,[wave4] USAdojo biography + Shobayashi Shorin-ryu wiki: 1925-2017,proposed
+A0161,birth_year,,1931,[wave4] Hawaiian Memorial Park Mortuary obituary: 3 May 1931 - 31 Dec 2022,proposed
+A0161,death_year,,2022,[wave4] Hawaiian Memorial Park Mortuary obituary: 3 May 1931 - 31 Dec 2022,proposed
+C00657,birth_year,,1866,[wave4] ja-wiki: Yoshimura Chogi 1866-1945,proposed
+C00657,death_year,,1945,[wave4] ja-wiki: Yoshimura Chogi 1866-1945,proposed
+C00251,birth_year,,1804,[wave4] ja-wiki Tomari-te: Teruya Kishin 1804-1864,proposed
+C00251,death_year,,1864,[wave4] ja-wiki Tomari-te: Teruya Kishin 1804-1864,proposed
+C00527,birth_year,,1882,[wave4] Motobu-ryu honbu notes: Kina Shosei 1882-1981,proposed
+C00527,death_year,,1981,[wave4] Motobu-ryu honbu notes: Kina Shosei 1882-1981,proposed
+C00072,birth_year,,1895,[wave4] ja-wiki: Nakasone Genwa 1895-1978,proposed
+C00072,death_year,,1978,[wave4] ja-wiki: Nakasone Genwa 1895-1978,proposed
+C00586,birth_year,,1924,[wave4] Hayashi-ha Shito-ryu federation biography: 1924-2004,proposed
+C00586,death_year,,2004,[wave4] Hayashi-ha Shito-ryu federation biography: 1924-2004,proposed
+C00440,birth_year,,1915,[wave4] ja-wiki: Sakagami Ryusho 1915-1993,proposed
+C00440,death_year,,1993,[wave4] ja-wiki: Sakagami Ryusho 1915-1993,proposed
+Q954330,birth_year,1852,1793,[wave4] zh sources + quality pass: Ryu Ryu Ko kept distinct from Xie Zongxiang; c.1793-1882 is the better-supported range and restores chronology with students Arakaki (b.1840) and Higaonna,proposed
+Q954330,death_year,1930,1882,[wave4] zh sources + quality pass: Ryu Ryu Ko kept distinct from Xie Zongxiang; c.1793-1882 is the better-supported range and restores chronology with students Arakaki (b.1840) and Higaonna,proposed
+C00244,birth_year,,1819,[wave4] en-wiki Ryu Ryu Ko: Nakaima Norisato 1819-1879,proposed
+C00244,death_year,,1879,[wave4] en-wiki Ryu Ryu Ko: Nakaima Norisato 1819-1879,proposed
+C00252,birth_year,,1830,[wave4] en-wiki Ryu Ryu Ko: Sakiyama Kitoku 1830-1914,proposed
+C00252,death_year,,1914,[wave4] en-wiki Ryu Ryu Ko: Sakiyama Kitoku 1830-1914,proposed
+C00427,birth_year,,1838,[wave4] en-wiki Ryu Ryu Ko: Maezato Ranpo 1838-1904,proposed
+C00427,death_year,,1904,[wave4] en-wiki Ryu Ryu Ko: Maezato Ranpo 1838-1904,proposed
+C00605,birth_year,,1877,[wave4] en-wiki Ryu Ryu Ko: Matsuda Tokusaburo 1877-1931,proposed
+C00605,death_year,,1931,[wave4] en-wiki Ryu Ryu Ko: Matsuda Tokusaburo 1877-1931,proposed
+C00141,birth_year,,1832,[wave4] ja-wiki Kojo-ryu: Kojo Isei 1832-1891,proposed
+C00141,death_year,,1891,[wave4] ja-wiki Kojo-ryu: Kojo Isei 1832-1891,proposed
+C00564,birth_year,,1837,[wave4] ja-wiki Kojo-ryu: Kojo Taitei 1837-1917,proposed
+C00564,death_year,,1917,[wave4] ja-wiki Kojo-ryu: Kojo Taitei 1837-1917,proposed
+C00108,birth_year,,1849,[wave4] ja-wiki Kojo-ryu: Kojo Kaho 1849-1925,proposed
+C00108,death_year,,1925,[wave4] ja-wiki Kojo-ryu: Kojo Kaho 1849-1925,proposed
+C00263,birth_year,,1873,[wave4] ja-wiki Kojo-ryu: Kojo Saikyo 1873-1941,proposed
+C00263,death_year,,1941,[wave4] ja-wiki Kojo-ryu: Kojo Saikyo 1873-1941,proposed
+C00542,birth_year,,1883,[wave4] ja-wiki Kojo-ryu: Kojo Shuren 1883-1945,proposed
+C00542,death_year,,1945,[wave4] ja-wiki Kojo-ryu: Kojo Shuren 1883-1945,proposed
+C00107,birth_year,,1909,[wave4] ja-wiki Kojo-ryu: Kojo Kafu 1909-1996,proposed
+C00107,death_year,,1996,[wave4] ja-wiki Kojo-ryu: Kojo Kafu 1909-1996,proposed
+C00506,birth_year,,1934,[wave4] ja-wiki Kojo-ryu: Kojo Shigeru b.1934,proposed
+C00625,birth_year,,1947,[wave4] ja-wiki: Sakumoto Tsuguo b. 13 Dec 1947,proposed
+C00117,birth_year,,1941,[wave4] Uechi-ryu federation obituary + Wikipedia: 1941-2015,proposed
+C00117,death_year,,2015,[wave4] Uechi-ryu federation obituary + Wikipedia: 1941-2015,proposed
+C00672,birth_year,,1943,[wave4] Seibukan profile: Zenpo Shimabukuro b. 11 Oct 1943,proposed
+C00361,birth_year,,1926,[wave4] Jundokan NZ biography: Yasuda b.1926 (single organisational source),proposed
+Q7446703,birth_year,2011,,[wave4] b.2011 is a scrape artefact; Wikidata holds no date of birth for Seiichi Iju (fl. 1935-1940); nulled so his position is estimated from his students,proposed
+Q1929108,birth_year,1670,,[wave4] Kusanku's birth is unrecorded; the only documented anchor is his 1756 arrival (Oshima Hikki). Birth nulled so his position is estimated; commonly cited death c.1762 kept,proposed
+Q921673,birth_year,1786,1733,[wave4] quality pass: b.1786 impossible against teachers Takahara/Kusanku; classical dates c.1733-1815 for Tode Sakugawa adopted (the later Sakugawa Kangi A0017 carries 1786-1867),proposed
+Q921673,death_year,1867,1815,[wave4] quality pass: b.1786 impossible against teachers Takahara/Kusanku; classical dates c.1733-1815 for Tode Sakugawa adopted (the later Sakugawa Kangi A0017 carries 1786-1867),proposed
+C00020,birth_year,,1741,"[motobu genealogy] ja-wiki: Motobu Aji Chokyu (向国珍), 6th head, celebrated Ryukyuan poet, 1741-1814",proposed
+C00020,death_year,,1814,[motobu genealogy] ja-wiki: 1741-1814,proposed
+C00021,birth_year,,1885,"[motobu genealogy] 12th family head Motobu Chomei, eldest son of Choyu, 1885-1956",proposed
+C00021,death_year,,1956,[motobu genealogy] 1885-1956,proposed
+C00037,death_year,,1945,"[motobu genealogy] Motobu Chomo, second son of Choyu, killed in the 1945 Osaka air raid",proposed
+C00478,birth_year,,1904,"[motobu genealogy] Seikichi Uehara, 13th soke of Motobu Udundi, 1904-2004 (motobu-ryu.org)",proposed
+C00478,death_year,,2004,[motobu genealogy] 1904-2004,proposed
+Q1929108,death_year,1762,,"[audit:chinese-antecedents] The file's death year 1762 is spurious: 1762 is the year of the Oshima Hikki incident and Tobe Ryoen's record of the interview about Kusanku's demonstration, not a documented death date. En.wikipedia explicitly gives bot",proposed
+Q4340844,birth_year,1892,1893,[audit:chinese-antecedents] Standard modern (New Style) birth date is 6 January 1893 (25 December 1892 Old Style); en.wikipedia gives 1893-1937. The file's 1892 reflects the Julian calendar date and should be normalised to 1893.,proposed
+Q4763171,death_year,1935,2024,"[audit:early-shuri-tomari] File has death 1935 (equal to birth), clearly a data error. Uezu was born 3 January 1935 and died 11 September 2024, aged 89.",proposed
+Q706955,death_year,2019,,"[audit:early-shuri-tomari] Death 2019 is wrong: Kaicho Tadashi Nakamura (b. 22 February 1942), founder of World Seido Karate, is alive and still teaching at Seido Honbu in New York. Remove death year.",proposed
+Q7850204,death_year,1997,,"[audit:early-shuri-tomari] Death 1997 is wrong: Ando Tsuneo (b. 1956), Yoshinkan aikido 9th dan, founded his Ryu dojo in 1996 and remains active; Wikipedia records no death. Remove death year.",proposed
+Q7151260,death_year,1983,,"[audit:early-shuri-tomari] Death 1983 is impossible with birth 1974 and belongs to a different Paul Herbert. The Shotokan karateka, Enoeda's last senior student, is alive, currently 6th/7th dan, still teaching courses in England. Remove death year",proposed
+Q7173266,death_year,1985,,"[audit:early-shuri-tomari] Identity conflation: death 1985 belongs to Peter Chong the Chinese-American actor (1898-1985) on the disambiguation page. The Kyokushin karateka (Mas Oyama's student, Singapore pioneer, b. 1941) is living per his Wikiped",proposed
+Q6832665,death_year,2024,,"[audit:early-shuri-tomari] Death 2024 not supported: Wikipedia (updated 2026) describes the Canadian kickboxer 'The Black Sniper' (b. 6 February 1965) as retired, with no death recorded. Remove death year.",proposed
+C00510,birth_year,,1848,"[audit:early-shuri-tomari] Missing years: Kuniyoshi Shinkichi (国吉真吉), 'Tomari Bushi Kuniyoshi', 1848-1926, per the official Okinawa Kenpo lineage history.",proposed
+C00510,death_year,,1926,"[audit:early-shuri-tomari] Missing years: Kuniyoshi Shinkichi (国吉真吉), 'Tomari Bushi Kuniyoshi', 1848-1926, per the official Okinawa Kenpo lineage history.",proposed
+C00550,birth_year,,1862,"[audit:early-shuri-tomari] Missing years: Kishimoto Soko (岸本祖孝), 1862-1945 (some sources give 1868 for birth; Higa Seitoku's 1966 primary account, giving Kishimoto's age as 65-66 around 1933, favours c. 1867-68). Killed in the Battle of Okinawa, 1",proposed
+C00550,death_year,,1945,"[audit:early-shuri-tomari] Missing years: Kishimoto Soko (岸本祖孝), 1862-1945 (some sources give 1868 for birth; Higa Seitoku's 1966 primary account, giving Kishimoto's age as 65-66 around 1933, favours c. 1867-68). Killed in the Battle of Okinawa, 1",proposed
+C00494,birth_year,,1921,"[audit:early-shuri-tomari] Missing years: Higa Seitoku (比嘉清徳), Bugeikan founder and president of the Okinawa Kobudo Association, 1921-2006 (some Western sources give 1920).",proposed
+C00494,death_year,,2006,"[audit:early-shuri-tomari] Missing years: Higa Seitoku (比嘉清徳), Bugeikan founder and president of the Okinawa Kobudo Association, 1921-2006 (some Western sources give 1920).",proposed
+C00438,birth_year,,1928,"[audit:early-shuri-tomari] Missing years: Tomoyose Ryuko, Uechi-ryu grandmaster, born 10 December 1928, died 9 April 2019.",proposed
+C00438,death_year,,2019,"[audit:early-shuri-tomari] Missing years: Tomoyose Ryuko, Uechi-ryu grandmaster, born 10 December 1928, died 9 April 2019.",proposed
+C00436,birth_year,,1853,"[audit:early-shuri-tomari] Missing birth year: Kuwae Ryosei (桑江良正), recipient of Matsumura's 1882 handwritten precepts (the only surviving Matsumura autograph document), was born 1853 per Motobu Naoki's research on the Kuwae family documents.",proposed
+Q721201,birth_year,1827,1828,"[audit:early-shuri-tomari] Disputed dates flagged for review: English Wikipedia gives 1827-1906, but the authoritative Okinawa Karate Kobudo Encyclopedia (2008) gives 1828-1914, and Motobu Naoki's source research shows the 1906 death date is unsup",proposed
+Q721201,death_year,1906,1914,"[audit:early-shuri-tomari] Disputed dates flagged for review: English Wikipedia gives 1827-1906, but the authoritative Okinawa Karate Kobudo Encyclopedia (2008) gives 1828-1914, and Motobu Naoki's source research shows the 1906 death date is unsup",proposed
+Q3482635,birth_year,1919,1920,"[audit:shorin-kobayashi] Wikipedia gives born 14 August 1920, died 24 June/August 2016 aged 96; the d3b Okinawa karate column also gives 1920-2016. File has 1919.",proposed
+Q935081,death_year,2013,,"[audit:shorin-kobayashi] The actor Robert John Burke (born 12 September 1960) is alive (Wikipedia 'Living people', age 65); the recorded death year 2013 is spurious. He holds a black belt in Matsubayashi Shorin-ryu, so the identity is otherwise ",proposed
+A0024,death_year,,2012,[audit:shorin-kobayashi] Born 7 December 1941 in Chinen; died 28 August 2012 per the Butokukan memorial and Shoryukan history. File has death missing.,proposed
+A0031,birth_year,,1920,[audit:shorin-kobayashi] Uema Joki (上間上輝) lived 1920-2011 per the d3b Okinawa karate column and the JKFan Shubukan 50th anniversary notice. File has both years missing.,proposed
+A0031,death_year,,2011,[audit:shorin-kobayashi] Uema Joki (上間上輝) lived 1920-2011 per the d3b Okinawa karate column and the JKFan Shubukan 50th anniversary notice. File has both years missing.,proposed
+A0032,birth_year,,1945,"[audit:shorin-kobayashi] Okinawa Times obituary: Uema Yasuhiro, head of the Shuri Karate Kobudo Preservation Society, died 2 January 2025 aged 79 (hence born 1945). File has both years missing.",proposed
+A0032,death_year,,2025,"[audit:shorin-kobayashi] Okinawa Times obituary: Uema Yasuhiro, head of the Shuri Karate Kobudo Preservation Society, died 2 January 2025 aged 79 (hence born 1945). File has both years missing.",proposed
+A0041,birth_year,,1927,"[audit:shorin-kobayashi] Spanish Wikipedia and Shinshukan organisation history: born 15 March 1927 in Haebaru, Okinawa; died 13 January 2008 in Santos, Brazil. File has both years missing.",proposed
+A0041,death_year,,2008,"[audit:shorin-kobayashi] Spanish Wikipedia and Shinshukan organisation history: born 15 March 1927 in Haebaru, Okinawa; died 13 January 2008 in Santos, Brazil. File has both years missing.",proposed
+C00148,birth_year,,1901,"[audit:shorin-kobayashi] Shinzato Jin'an (新里仁安), Miyagi Chojun's senior disciple whose 1930 Meiji Shrine demonstration prompted the naming of Goju-ryu, lived 1901-1945 (killed in the Battle of Okinawa) per Japanese Wikipedia. File has both years",proposed
+C00148,death_year,,1945,"[audit:shorin-kobayashi] Shinzato Jin'an (新里仁安), Miyagi Chojun's senior disciple whose 1930 Meiji Shrine demonstration prompted the naming of Goju-ryu, lived 1901-1945 (killed in the Battle of Okinawa) per Japanese Wikipedia. File has both years",proposed
+A0036,birth_year,,1937,[audit:shorin-kobayashi] Born Marshall Douglas Tuttle on 15 June 1937 per the Legends of Carolina Martial Arts hall-of-fame biography and Finding Karate profile. File has birth missing.,proposed
+A0055,birth_year,,1943,"[audit:shorin-matsubayashi] WMKA-affiliated official pages title him 'Taira Yoshitaka Hanshi, 10.Dan 1943 -'. File has no birth year.",proposed
+A0059,birth_year,,1938,"[audit:shorin-matsubayashi] Ueshiro Shorin-Ryu Karate USA official biography: born 1938 in Brooklyn, New York. File has no birth year.",proposed
+A0064,birth_year,,1945,"[audit:shorin-matsubayashi] Born 23 May 1945 on Yaeyama per his organisation's biography material (mirrored on EverybodyWiki); moved to the US in 1969. Weaker sourcing (org bio), flag as medium reliability but clearly better than the current null.",proposed
+C00261,birth_year,,1873,"[audit:shorin-matsubayashi] Tomari-te scholarship consistently gives Iha Kodatsu 1873-1928, student of Kosaku Matsumora (Caile/FightingArts, Gohakukai-derived histories). File has no years.",proposed
+C00261,death_year,,1928,"[audit:shorin-matsubayashi] Tomari-te scholarship consistently gives Iha Kodatsu 1873-1928, student of Kosaku Matsumora (Caile/FightingArts, Gohakukai-derived histories). File has no years.",proposed
+C00024,birth_year,,1904,"[audit:shorin-matsubayashi] Tomari-te successor lists give Kuba Chojin 1904-1989 among Iha Kodatsu's students; chronologically consistent with him teaching the teenage Nagamine in the 1920s. Secondary sourcing only, treat as medium reliability.",proposed
+C00024,death_year,,1989,"[audit:shorin-matsubayashi] Tomari-te successor lists give Kuba Chojin 1904-1989 among Iha Kodatsu's students; chronologically consistent with him teaching the teenage Nagamine in the 1920s. Secondary sourcing only, treat as medium reliability.",proposed
+C00066,birth_year,,1935,"[audit:matsumura-seito] Birth and death are both missing in the file. Kise was born 4 May 1935 (Kenshin-kan official timeline; shuriway). No obituary or death notice found in English or Japanese as of July 2026, and his federation's pages treat",proposed
+A0071,birth_year,,1943,"[audit:matsumura-seito] Birth year missing. The Tales from the Western Generation interview (Matthew Apsokardu) records Coffman as born in 1943, consistent with his Air Force service on Okinawa in the early 1960s.",proposed
+A0046,death_year,,2000,"[audit:shorinji-lines] Death year missing. The Renshinkan honbu history records the founder as born 1919 (Amami, Kagoshima) and dying 31 May 2000, aged 80; Japanese Wikipedia (保勇) agrees.",proposed
+A0047,birth_year,,1948,"[audit:shorinji-lines] Birth year missing. Japanese Wikipedia (保巖) gives born 6 November 1948 in Naze City, died 29 November 2016 (age 68); death confirmed by WEB Hiden obituary and honbu history.",proposed
+A0048,birth_year,,1957,"[audit:shorinji-lines] Birth year missing. Official Renshinkan branch pages record the 3rd soke born 1957 (Showa 32) in Kagoshima City, third son of founder Tamotsu Isamu.",proposed
+C00098,birth_year,,1922,"[audit:shorinji-lines] Both years missing. Nakazato Joen was born 1922 in Chinen village, Okinawa, and died in 2010; designated Intangible Cultural Asset holder in 2000.",proposed
+C00098,death_year,,2010,"[audit:shorinji-lines] Both years missing. Nakazato Joen was born 1922 in Chinen village, Okinawa, and died in 2010; designated Intangible Cultural Asset holder in 2000.",proposed
+Q7808402,birth_year,1942,1941,[audit:goju-okinawa] File has 1942-1989. Ceberano was born 24 September 1941 and is alive: no obituary exists and he was reported actively teaching as of January 2026. The 1989 death year appears to be Gogen Yamaguchi's death year misattribu,proposed
+Q7808402,death_year,1989,,[audit:goju-okinawa] File has 1942-1989. Ceberano was born 24 September 1941 and is alive: no obituary exists and he was reported actively teaching as of January 2026. The 1989 death year appears to be Gogen Yamaguchi's death year misattribu,proposed
+Q3272171,death_year,1995,,"[audit:goju-okinawa] File records death 1995; Oshima is alive. Born 31 December 1963, she resides in Fukuoka where she promotes city tourism. 1995 is roughly when her Hong Kong film career wound down, not a death year.",proposed
+C00296,birth_year,,1925,[audit:goju-okinawa] Missing years. Iha Koshin was born 24 November 1925 and died 28 January 2012 (farewell service 31 January); he headed the OGKK and founded the Shodokan in Tomari in 1971.,proposed
+C00296,death_year,,2012,[audit:goju-okinawa] Missing years. Iha Koshin was born 24 November 1925 and died 28 January 2012 (farewell service 31 January); he headed the OGKK and founded the Shodokan in Tomari in 1971.,proposed
+C00334,birth_year,,1940,[audit:goju-okinawa] Missing years. Otsuka Tadahiko (Gojukensha) was born 10 June 1940 in Tokyo and died 27 November 2012.,proposed
+C00334,death_year,,2012,[audit:goju-okinawa] Missing years. Otsuka Tadahiko (Gojukensha) was born 10 June 1940 in Tokyo and died 27 November 2012.,proposed
+C00518,birth_year,,1912,"[audit:goju-okinawa] Missing years. Kyan Shinei was born 25 July 1912 and died 16 July 1997; educator, Diet member ('Mr Okinawa') and sai master of the Ufuchiku line.",proposed
+C00518,death_year,,1997,"[audit:goju-okinawa] Missing years. Kyan Shinei was born 25 July 1912 and died 16 July 1997; educator, Diet member ('Mr Okinawa') and sai master of the Ufuchiku line.",proposed
+C00475,birth_year,,1927,"[audit:goju-okinawa] Missing years. Higa Seikichi, son and successor of Higa Seko, lived 1927-1999 per the Okinawa Karate Information Center's record of the Higa father-and-son commemorative monument.",proposed
+C00475,death_year,,1999,"[audit:goju-okinawa] Missing years. Higa Seikichi, son and successor of Higa Seko, lived 1927-1999 per the Okinawa Karate Information Center's record of the Higa father-and-son commemorative monument.",proposed
+A0163,birth_year,,1901,"[audit:goju-okinawa] Birth year missing. Shinzato Jin'an, Miyagi's designated successor killed in the Battle of Okinawa, was born in 1901; 1901-1945 is consistently given across Goju-ryu lineage records.",proposed
+C00664,birth_year,,1940,"[audit:goju-okinawa] Birth year missing. Okinawa Times profile of July 2021 gives his age as 81, placing his birth in 1940 (also stated as 1940 in the Okinawa karate interview site); he was alive at that date.",proposed
+C00045,birth_year,,1908,"[audit:goju-okinawa] Missing years. Nakaima Genkai, senior Miyagi student and co-founder of the 1952 Goju-ryu Shinkokai, lived 1908-1984 as given in the published translation of his memoir of Miyagi.",proposed
+C00045,death_year,,1984,"[audit:goju-okinawa] Missing years. Nakaima Genkai, senior Miyagi student and co-founder of the 1952 Goju-ryu Shinkokai, lived 1908-1984 as given in the published translation of his memoir of Miyagi.",proposed
+C00085,birth_year,,1935,"[audit:goju-japan-world] Born Norimi Yamaguchi on 29 June 1935 in Kyoto, eldest son of Gogen Yamaguchi; birth year currently missing.",proposed
+A0136,birth_year,,1940,"[audit:goju-japan-world] Gosen Kishio Yamaguchi, second son of Gogen, born 1940, died 1990; birth year currently missing (death 1990 confirmed).",proposed
+C00086,birth_year,,1942,"[audit:goju-japan-world] Born Hirofumi (Koshi) Yamaguchi on 28 September 1942 in Manchuria, third son of Gogen; birth year currently missing.",proposed
+C00001,birth_year,,1861,"[audit:uechi-ryu] Japanese Wikipedia on Kojo-ryu gives 湖城鳳鳴 (Kojo Homei, the master nicknamed Akahige) as 1861-1919; the file has no years.",proposed
+C00001,death_year,,1919,"[audit:uechi-ryu] Japanese Wikipedia on Kojo-ryu gives 湖城鳳鳴 (Kojo Homei, the master nicknamed Akahige) as 1861-1919; the file has no years.",proposed
+A0010,birth_year,,1939,"[audit:uechi-ryu] Born 25 May 1939, died 21 November 2012 (Find a Grave memorial and Rose Hills obituary, Whittier CA; his organisation Ryukokaku gives the same). File has birth missing.",proposed
+C00628,birth_year,,1933,"[audit:uechi-ryu] Born 25 November 1933 (Okikukai/UechiRyu.eu biography; Classical Fighting Arts noted him as 85 in 2018, consistent). File has birth missing.",proposed
+C00507,birth_year,,1935,"[audit:uechi-ryu] Born 1935 in Chatan, died 17 October 2014 aged 79 (Okinawa Traditional Karate Liaison Bureau obituary; uechi-ryu.com notice). File has no years.",proposed
+C00507,death_year,,2014,"[audit:uechi-ryu] Born 1935 in Chatan, died 17 October 2014 aged 79 (Okinawa Traditional Karate Liaison Bureau obituary; uechi-ryu.com notice). File has no years.",proposed
+C00480,birth_year,,1915,"[audit:uechi-ryu] Born 20 November 1915 in Nishihara, died 2006; founder of Konan-ryu, designated intangible cultural asset holder of Okinawa Prefecture in 1997. File has no years.",proposed
+C00480,death_year,,2006,"[audit:uechi-ryu] Born 20 November 1915 in Nishihara, died 2006; founder of Konan-ryu, designated intangible cultural asset holder of Okinawa Prefecture in 1997. File has no years.",proposed
+C00064,birth_year,,1908,"[audit:uechi-ryu] Born 10 June 1908 on Ie island, died 5 March 1976 (Kenyukai North America, the Shinjo family organisation's genealogy pages). File has no years.",proposed
+C00064,death_year,,1976,"[audit:uechi-ryu] Born 10 June 1908 on Ie island, died 5 March 1976 (Kenyukai North America, the Shinjo family organisation's genealogy pages). File has no years.",proposed
+C00075,birth_year,,1856,"[audit:ryuei-kojo] Missing years. Ryuei-ryu genealogy gives 1856/8/10 to 1953/9/20 for the third-generation head Nakaima Kenchu (衛武仁), corroborated by search results aggregating the lineage sites.",proposed
+C00075,death_year,,1953,"[audit:ryuei-kojo] Missing years. Ryuei-ryu genealogy gives 1856/8/10 to 1953/9/20 for the third-generation head Nakaima Kenchu (衛武仁), corroborated by search results aggregating the lineage sites.",proposed
+C00232,birth_year,,1911,[audit:ryuei-kojo] Missing years. Ryuei-ryu genealogy gives 1911/12/23 to 1989/9/21; the Okinawa Times kobudo series headline gives 仲井間憲孝（１９１１～８９年）.,proposed
+C00232,death_year,,1989,[audit:ryuei-kojo] Missing years. Ryuei-ryu genealogy gives 1911/12/23 to 1989/9/21; the Okinawa Times kobudo series headline gives 仲井間憲孝（１９１１～８９年）.,proposed
+C00229,birth_year,,1934,[audit:ryuei-kojo] Missing birth year. Ryuei-ryu genealogy gives 1934/5/4 for the fifth-generation head Nakaima Kenji; no death recorded (still listed as current soke).,proposed
+C00174,birth_year,,1905,[audit:motobu-udun] Higaonna (Higashionna) Kamesuke lived 1905-1968; documented in the Shudokan heritage archive (Toyama Kanken awarded him Hanshi Shihan) and consistent with Henning Wittwer's source study of his karate writings. File curre,proposed
+C00174,death_year,,1968,[audit:motobu-udun] Higaonna (Higashionna) Kamesuke lived 1905-1968; documented in the Shudokan heritage archive (Toyama Kanken awarded him Hanshi Shihan) and consistent with Henning Wittwer's source study of his karate writings. File curre,proposed
+A0113,birth_year,,1942,"[audit:okinawa-kenpo-ryute] Missing in file. Nitta's biography gives born 5 April 1942 in Chatan, Okinawa, died 4 July 2012 in Okinawa (cancer); usadojo carries the same biography.",proposed
+A0113,death_year,,2012,"[audit:okinawa-kenpo-ryute] Missing in file. Nitta's biography gives born 5 April 1942 in Chatan, Okinawa, died 4 July 2012 in Okinawa (cancer); usadojo carries the same biography.",proposed
+Q5661611,death_year,,2016,"[audit:isshin-ryu] Death year missing in file. Obituary: born 17 December 1933 in Stiefeltown, SC; died 11 June 2016 in Fort Walton Beach, FL. Birth 1933 confirmed correct.",proposed
+C00247,birth_year,,1939,"[audit:isshin-ryu] Birth year missing. Isshin-ryu sources give 15 February 1939; corroborated by an Okinawa Times profile of 島袋吉郎 as Isshin-ryu Kokusai Karate-do Renmei president, hanshi 10th dan, aged 81 at publication (c. 2020). Still li",proposed
+A0131,birth_year,,1914,[audit:isshin-ryu] Birth year missing but findable: Advincula's documented December 1984 interview material with Shimabuku's first-generation Okinawan students records Kaneshi Eiko born 13 October 1914. Advincula is the recognised Isshin-r,proposed
+C00450,birth_year,,1841,"[audit:kobudo-systems] Wikipedia's Ufuchiku Kobudo article gives Kanagusuku Sanda (Kinjo Ufuchiku) 1841-1921; the merged duplicate record carried 1834-1916, which matches no published source. Some secondary sources give death as 1926, but 1841",proposed
+C00450,death_year,,1921,"[audit:kobudo-systems] Wikipedia's Ufuchiku Kobudo article gives Kanagusuku Sanda (Kinjo Ufuchiku) 1841-1921; the merged duplicate record carried 1834-1916, which matches no published source. Some secondary sources give death as 1926, but 1841",proposed
+C00035,birth_year,,1925,"[audit:kobudo-systems] Missing in file. Wikipedia's Ryukyu Kobudo article gives 1 May 1925 to 13 January 1999, consistent with Shimbukan records.",proposed
+C00035,death_year,,1999,"[audit:kobudo-systems] Missing in file. Wikipedia's Ryukyu Kobudo article gives 1 May 1925 to 13 January 1999, consistent with Shimbukan records.",proposed
+C00373,birth_year,,1878,[audit:kobudo-systems] Missing in file. Yabiku Moden was born 1878 and died 1941; standard dating in Ryukyu kobudo lineage literature.,proposed
+C00373,death_year,,1941,[audit:kobudo-systems] Missing in file. Yabiku Moden was born 1878 and died 1941; standard dating in Ryukyu kobudo lineage literature.,proposed
+C00449,birth_year,,1842,"[audit:kobudo-systems] Missing in file. Chinen Sanda (Sanra), the Yamane-ryu bojutsu master, is dated 1842-1925 in Wikipedia's Yamanni-ryu article and McCarthy's Yamane-ryu material.",proposed
+C00449,death_year,,1925,"[audit:kobudo-systems] Missing in file. Chinen Sanda (Sanra), the Yamane-ryu bojutsu master, is dated 1842-1925 in Wikipedia's Yamanni-ryu article and McCarthy's Yamane-ryu material.",proposed
+C00084,birth_year,,1886,"[audit:kobudo-systems] Missing in file. Go Kenki (Wu Xianhui), the Fujian White Crane teacher and tea merchant in Naha, lived 1886-1940; consistently dated across the Gokenki scholarship.",proposed
+C00084,death_year,,1940,"[audit:kobudo-systems] Missing in file. Go Kenki (Wu Xianhui), the Fujian White Crane teacher and tea merchant in Naha, lived 1886-1940; consistently dated across the Gokenki scholarship.",proposed
+C00025,birth_year,,1887,"[audit:kobudo-systems] Missing in file. Oshiro Chojo, direct student of Chinen Sanda and noted rokushaku-bo exponent, is dated 1887-1935 (McCarthy, Ryukyu Bugei).",proposed
+C00025,death_year,,1935,"[audit:kobudo-systems] Missing in file. Oshiro Chojo, direct student of Chinen Sanda and noted rokushaku-bo exponent, is dated 1887-1935 (McCarthy, Ryukyu Bugei).",proposed
+C00201,birth_year,,1938,[audit:kobudo-systems] Missing in file. Nakamoto Masahiro was born 15 January 1938 in Shuri; first kobudo hanshi 10th dan and intangible cultural asset holder.,proposed
+C00245,birth_year,,1944,[audit:kobudo-systems] Missing in file. Chinen Kenyu was born in 1944 in Okinawa per Polish Wikipedia and Oshukai biographies.,proposed
+C00260,birth_year,,1877,[audit:kobudo-systems] Missing in file. Wikipedia's Ufuchiku Kobudo article dates Tokashiki Saburo 1877-1967.,proposed
+C00260,death_year,,1967,[audit:kobudo-systems] Missing in file. Wikipedia's Ufuchiku Kobudo article dates Tokashiki Saburo 1877-1967.,proposed
+Q723832,birth_year,1898,1897,"[audit:kobudo-systems] File has birth 1898; Wikipedia and the standard biographies (born Maezato Shinken, 12 June 1897, Kume Island; died September 1970) give 1897.",proposed
+C00319,birth_year,,1896,[audit:shotokan] Gima Shinkin was born 28 September 1896 in Okinawa and died in 1989 aged 93; both years currently missing.,proposed
+C00319,death_year,,1989,[audit:shotokan] Gima Shinkin was born 28 September 1896 in Okinawa and died in 1989 aged 93; both years currently missing.,proposed
+C00409,birth_year,,1925,"[audit:shotokan] Born 25 November 1925 in Kobe; died 14 April 1998 in Las Vegas, two days after his annual tournament. Both years currently missing.",proposed
+C00409,death_year,,1998,"[audit:shotokan] Born 25 November 1925 in Kobe; died 14 April 1998 in Las Vegas, two days after his annual tournament. Both years currently missing.",proposed
+C00342,birth_year,,1945,"[audit:shotokan] Born 13 June 1945 (family from Saga, born in Japanese-occupied Korea); birth year currently missing.",proposed
+Q628761,birth_year,1907,1906,"[audit:shotokan] English Wikipedia gives 1906 - 24 November 1945 (aged 39, tuberculosis); the file's 1907 conflicts with the cited article. Death year 1945 is correct.",proposed
+C00246,birth_year,,1927,"[audit:shito-ryu] Both years missing but well documented: born 30 May 1927 in Shuri, Okinawa; died 26 June 2005. Second son of Kenwa Mabuni and 2nd Soke of Seito Shito-ryu (Shito-ryu International Karate-do Kai).",proposed
+C00246,death_year,,2005,"[audit:shito-ryu] Both years missing but well documented: born 30 May 1927 in Shuri, Okinawa; died 26 June 2005. Second son of Kenwa Mabuni and 2nd Soke of Seito Shito-ryu (Shito-ryu International Karate-do Kai).",proposed
+C00285,birth_year,,1900,"[audit:shito-ryu] Both years missing: Kokuba Kosei was born in 1900 in Kokuba village (now part of Naha), Okinawa, and died in 1959, after which Shogo Kuniba became 3rd Soke of Motobu-ha. (IKKU alone gives 1901; the ITKKA and Seishinkai l",proposed
+C00285,death_year,,1959,"[audit:shito-ryu] Both years missing: Kokuba Kosei was born in 1900 in Kokuba village (now part of Naha), Okinawa, and died in 1959, after which Shogo Kuniba became 3rd Soke of Motobu-ha. (IKKU alone gives 1901; the ITKKA and Seishinkai l",proposed
+A0086,birth_year,,1936,"[audit:shito-ryu] Birth year missing but findable: Seiko-kai organisational histories record Suzuki born 1936 in Chiba-ken; he began under Sakagami in 1954, ran the Tokyo dojo from 1957, and founded Suzuki-ha Shito-ryu Seiko-kai after Sak",proposed
+Q18413638,birth_year,1892,,[audit:wado-chito-shudokan] The 1892-1982 dates are unsupported: fr-wiki has no dates and Wikidata Q18413638 carries no date-of-birth or date-of-death statements. They exactly duplicate Hironori Otsuka's dates and were almost certainly copied in er,proposed
+Q18413638,death_year,1982,,[audit:wado-chito-shudokan] The 1892-1982 dates are unsupported: fr-wiki has no dates and Wikidata Q18413638 carries no date-of-birth or date-of-death statements. They exactly duplicate Hironori Otsuka's dates and were almost certainly copied in er,proposed
+Q16266721,death_year,,2019,[audit:wado-chito-shudokan] Ohgami died in October 2019 after a long illness; JKF Wadokai-affiliated obituary published 11 October 2019 and memorial pages by his own Swedish organisations. File currently lists him as living.,proposed
+Q4023282,death_year,2011,,[audit:wado-chito-shudokan] Death year 2011 is unsupported: fr-wiki treats him as living (born 30 January 1938) and Wikidata Q4023282 has no death statement; no obituary found. Remove the death year.,proposed
+A0097,death_year,,2022,"[audit:wado-chito-shudokan] Ajari (b. 1933, Minato Mura) died on Sunday 2 January 2022, announced by his own East Bay Wado Kai dojo. File currently lists no death year.",proposed
+Q920672,death_year,1994,,[audit:kyokushin-lines] Death year 1994 is a scrape artefact (Mas Oyama's death year). Royama is alive (born 31 March 1948); he founded Kyokushin-kan in 2003 and handed the kancho role to Okazaki in 2022.,proposed
+Q2664662,death_year,1994,,"[audit:kyokushin-lines] Death year 1994 is a scrape artefact (the year Matsui became IKO1 kancho on Oyama's death). Matsui is alive, born 15 January 1963.",proposed
+Q11472844,death_year,1994,,[audit:kyokushin-lines] Death year 1994 is a scrape artefact. Okazaki is alive (born April 1961) and became second kancho of Kyokushin-kan on 17 April 2022.,proposed
+Q64929894,death_year,2017,,"[audit:kyokushin-lines] Death year 2017 is wrong: Leona Pettas (Reona Kato, born 29 April 1992) is alive and won the K-1 super featherweight title in 2021.",proposed
+Q7535789,birth_year,1945,1946,"[audit:korean-arts] File has 1945; his funeral-home obituary (Dignity Memorial, Dallas) and memorial record give born 25 April 1946, died 15 May 2020. The 1945 figure circulating on Wikipedia/press headlines is contradicted by the primary o",proposed
+A0155,birth_year,,1921,[audit:korean-arts] Birth missing in file; Seo Sung-won's documented research series on the Chosun Yeonmugwan Kwon Bop Bu gives 1921. Death should remain empty: he was abducted/went missing during the Korean War (1950) and his fate is unkno,proposed
+A0174,birth_year,,1933,"[audit:korean-arts] Birth missing in file. Contemporaneous mookas obituary: died 2 April 2016 aged 83 (hyangnyeon), giving birth c. 1933; Korean accounts state '1933년 생' (kangdukwon.org gives 1932 and misdates the death as 2015, contradicte",proposed
+Q352678,death_year,2010,,"[audit:judo-aikido-koryu] Bregy is alive. Wikipedia gives born 30 September 1974 and describes him as living (age 51); 2010 is the end of his K-1 competitive career (1999-2010), evidently misread as a death year.",proposed
+A0206,birth_year,,1956,"[audit:judo-aikido-koryu] Russian Wikipedia: born 20 May 1956 in Baku, died 27 January 2026 in Baku. Both years currently missing from the node.",proposed
+A0206,death_year,,2026,"[audit:judo-aikido-koryu] Russian Wikipedia: born 20 May 1956 in Baku, died 27 January 2026 in Baku. Both years currently missing from the node.",proposed
+C00202,birth_year,,1849,"[audit:orphans-1] This record is Higaonna Kanyu (Higaonna of the East), 1849-1922, cousin/relative and frequent confusion-partner of Kanryo Higaonna. Years per the English Wikipedia article (titled 'Higaonna Kanryu', a documented misspell",proposed
+C00202,death_year,,1922,"[audit:orphans-1] This record is Higaonna Kanyu (Higaonna of the East), 1849-1922, cousin/relative and frequent confusion-partner of Kanryo Higaonna. Years per the English Wikipedia article (titled 'Higaonna Kanryu', a documented misspell",proposed
+C00200,birth_year,,1942,"[audit:orphans-1] Mario Topolsek, European Uechi-ryu pioneer, born 12 September 1942, died 21 January 2021, per Czech Wikipedia and the European Uechi-ryu federation obituary.",proposed
+C00200,death_year,,2021,"[audit:orphans-1] Mario Topolsek, European Uechi-ryu pioneer, born 12 September 1942, died 21 January 2021, per Czech Wikipedia and the European Uechi-ryu federation obituary.",proposed
+C00002,birth_year,,1936,"[audit:orphans-1] Kinjo Akio (Kinjo Akio, karate researcher, founder of the Kensei Budokan, author of Karate-den Shinroku) was born 1936 in Hirara, Miyako, Okinawa, per his WEB Hiden (Budo magazine) master profile. No reliable death recor",proposed
+C00641,birth_year,,1636,"[audit:orphans-2] Wang Ji (汪楫) is the Qing investiture envoy (sapposhi) who led the 1683 mission to Ryukyu and is traditionally associated with the kata Wanshu. Chinese Wikipedia, citing period records, gives 1636 (Chongzhen 9) to 1699 (K",proposed
+C00641,death_year,,1699,"[audit:orphans-2] Wang Ji (汪楫) is the Qing investiture envoy (sapposhi) who led the 1683 mission to Ryukyu and is traditionally associated with the kata Wanshu. Chinese Wikipedia, citing period records, gives 1636 (Chongzhen 9) to 1699 (K",proposed
+C00018,birth_year,,1908,[book:Bishop p.198-199] Bishop gives birth 1908 for Choboku Takamine; dataset had none,proposed
+C00627,birth_year,,1829,[book:Bishop p.61] Bishop gives birth 1829 for Tsuken Hantaka; dataset had none,proposed
+C00627,death_year,,1898,[book:Bishop p.61] Bishop gives death 1898 for Tsuken Hantaka; dataset had none,proposed
+C00291,birth_year,,1894,[book:Bishop p.113-114] Bishop gives birth 1894 for Seiyei Miyahira; dataset had none,proposed
+C00291,death_year,,1958,[book:Bishop p.113-114] Bishop gives death 1958 for Seiyei Miyahira; dataset had none,proposed
+C00574,birth_year,,1934,[book:Bishop p.203-204] Bishop gives birth 1934 for Taketo Nakamura; dataset had none,proposed
+C00508,birth_year,,1868,[book:Bishop p.63] Bishop gives birth 1868 for Shinbi Kaneshima; dataset had none,proposed
+C00508,death_year,,1921,[book:Bishop p.63] Bishop gives death 1921 for Shinbi Kaneshima; dataset had none,proposed
+C00221,death_year,,1904,[book:Bishop p.147] Bishop gives death 1904 for Keikichi Nakamura; dataset had none,proposed
+C00363,birth_year,,1879,[book:Bishop p.104-105] Bishop gives birth 1879 for Matsutaro Ire; dataset had none,proposed
+C00363,death_year,,1971,[book:Bishop p.104-105] Bishop gives death 1971 for Matsutaro Ire; dataset had none,proposed
+C00515,birth_year,,1913,[book:Bishop p.203] Bishop gives birth 1913 for Shintaro Yoshizato; dataset had none,proposed
+C00329,birth_year,,1921,[book:Bishop p.204] Bishop gives birth 1921 for Masakazu Miyagi; dataset had none,proposed
+C00522,birth_year,,1816,[book:Bishop p.46-47] Bishop gives birth 1816 for Shoi Sai; dataset had none,proposed
+C00522,death_year,,1906,[book:Bishop p.46-47] Bishop gives death 1906 for Shoi Sai; dataset had none,proposed
+C00514,birth_year,,1902,[book:Bishop p.127] Bishop gives birth 1902 for Shinsuke Kaneshima; dataset had none,proposed
+C00660,birth_year,,1896,[book:Bishop p.199] Bishop gives birth 1896 for Yoshio Itokazu; dataset had none,proposed
+C00003,birth_year,,1886,"[book:Bishop p.109, 111] Bishop gives birth 1886 for Anbun Tokuda; dataset had none",proposed
+C00003,death_year,,1945,"[book:Bishop p.109, 111] Bishop gives death 1945 for Anbun Tokuda; dataset had none",proposed
+C00476,birth_year,,1896,[book:Bishop p.83-84] Bishop gives birth 1896 for Seikichi Hokama; dataset had none,proposed
+Q715769,death_year,1899,1901,"[CONTESTED: Bishop, Okinawan Karate p.55-58 gives 1901; dataset holds 1899 (Wikidata/Wikipedia consensus). Bishop is a primary source but these dates are disputed in the literature; set status=proposed to adopt Bishop, or rejected to keep the current value.]",needs_decision
+Q1147708,birth_year,1870,1871,"[CONTESTED: Bishop, Okinawan Karate p.86 gives 1871; dataset holds 1870 (Wikidata/Wikipedia consensus). Bishop is a primary source but these dates are disputed in the literature; set status=proposed to adopt Bishop, or rejected to keep the current value.]",needs_decision
+Q38585428,birth_year,1894,1892,"[CONTESTED: Bishop, Okinawan Karate p.147 gives 1892; dataset holds 1894 (Wikidata/Wikipedia consensus). Bishop is a primary source but these dates are disputed in the literature; set status=proposed to adopt Bishop, or rejected to keep the current value.]",needs_decision

@@ -1,0 +1,471 @@
+﻿source,target,interaction,evidence,confidence,source_name_unicode,source_name_ascii,target_name_unicode,target_name_ascii
+Q1336547,Q921673,teacher_of,wikidata:P802,high,Peichin Takahara,Peichin Takahara,Kanga Sakukawa,Kanga Sakukawa
+Q5104212,Q6378081,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Chokei Kishaba,Chokei Kishaba,Katsuhiko Shinzato,Katsuhiko Shinzato
+Q1147708,Q2943981,teacher_of,infobox:students,medium,Motobu Chōki,Motobu Choki,Tatsuo Yamada,Tatsuo Yamada
+Q1246030,Q3317210,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Shigeru Egami,Shigeru Egami,Mitsusuke Harada,Mitsusuke Harada
+Q6078918,Q1246030,teacher_of,infobox:students | infobox:teacher,medium,Isao Obata,Isao Obata,Shigeru Egami,Shigeru Egami
+Q1246030,Q3519204,teacher_of,infobox:students,medium,Shigeru Egami,Shigeru Egami,Tetsuji Murakami,Tetsuji Murakami
+Q6078918,Q6381580,teacher_of,infobox:students,medium,Isao Obata,Isao Obata,Kazumi Tabata,Kazumi Tabata
+Q294548,Q221797,teacher_of,wikidata:P802,high,Mas Oyama,Mas Oyama,Bobby Lowe,Bobby Lowe
+Q294548,Q706955,teacher_of,wikidata:P802,high,Mas Oyama,Mas Oyama,Tadashi Nakamura,Tadashi Nakamura
+Q182130,Q706726,teacher_of,infobox:teacher | wikidata:P1066,high,Morihei Ueshiba,Morihei Ueshiba,Gozo Shioda,Gozo Shioda
+Q706726,Q4467319,teacher_of,infobox:students | wikidata:P802,high,Gozo Shioda,Gozo Shioda,Terada Kiyoyuki,Terada Kiyoyuki
+Q706726,Q6212631,teacher_of,wikidata:P802,high,Gozo Shioda,Gozo Shioda,Joe Thambu,Joe Thambu
+Q706726,Q7677342,teacher_of,infobox:students,medium,Gozo Shioda,Gozo Shioda,Takashi Kushida,Takashi Kushida
+Q706726,Q13424717,teacher_of,infobox:students,medium,Gozo Shioda,Gozo Shioda,Kyoichi Inoue,Kyoichi Inoue
+Q706726,Q7790297,teacher_of,infobox:students,medium,Gozo Shioda,Gozo Shioda,Thomas H. Makiyama,Thomas H Makiyama
+Q706726,Q4457146,teacher_of,infobox:students,medium,Gozo Shioda,Gozo Shioda,Tsutomu Chida,Tsutomu Chida
+Q706726,Q7850204,teacher_of,infobox:students,medium,Gozo Shioda,Gozo Shioda,Tsuneo Ando,Tsuneo Ando
+Q706726,Q21482428,teacher_of,infobox:students,medium,Gozo Shioda,Gozo Shioda,Jacques Payet,Jacques Payet
+Q706726,Q8049998,teacher_of,infobox:students,medium,Gozo Shioda,Gozo Shioda,Yasuhisa Shioda,Yasuhisa Shioda
+Q706726,Q16187228,teacher_of,infobox:students,medium,Gozo Shioda,Gozo Shioda,Robert Mustard,Robert Mustard
+Q7446692,Q2869852,teacher_of,infobox:students,medium,Seigo Tada,Seigo Tada,Atsuko Wakai,Atsuko Wakai
+Q7446692,Q3272171,teacher_of,infobox:students,medium,Seigo Tada,Seigo Tada,Yukari Oshima,Yukari Oshima
+Q557301,Q7327071,teacher_of,infobox:students,medium,Ankichi Arakaki,Ankichi Arakaki,Richard Kim,Richard Kim
+Q1620643,Q6519507,teacher_of,infobox:students | wikidata:P802,high,Kōri Hisataka,Kori Hisataka,Shunji Watanabe,Shunji Watanabe
+Q16006586,Q106695378,teacher_of,infobox:students,medium,Kanki Izumigawa,Kanki Izumigawa,Sosui Ichikawa,Sosui Ichikawa
+Q5103850,Q6378081,teacher_of,infobox:teacher,medium,Chogi Kishaba,Chogi Kishaba,Katsuhiko Shinzato,Katsuhiko Shinzato
+Q3772405,Q7327071,teacher_of,wikidata:P802,high,Kanken Tōyama,Kanken Toyama,Richard Kim,Richard Kim
+Q15987564,Q15845016,teacher_of,wikidata:P1066,high,Masaaki Ueki,Masaaki Ueki,Koji Chubachi,Koji Chubachi
+Q15987564,Q15845021,teacher_of,wikidata:P1066,high,Masaaki Ueki,Masaaki Ueki,Kazuaki Kurihara,Kazuaki Kurihara
+Q1738762,Q1493062,teacher_of,infobox:students,medium,Kenji Kurosaki,Kenji Kurosaki,Willie Williams,Willie Williams
+Q11557545,Q4701154,teacher_of,wikidata:P1066,high,Noriyasu Hamai,Noriyasu Hamai,Akira Masuda,Akira Masuda
+Q3519204,Q19325706,teacher_of,infobox:students,medium,Tetsuji Murakami,Tetsuji Murakami,Vernon Bell,Vernon Bell
+Q3519204,Q1335481,teacher_of,infobox:students,medium,Tetsuji Murakami,Tetsuji Murakami,Henry Plée,Henry Plee
+Q15987564,Q15845024,teacher_of,wikidata:P1066,high,Masaaki Ueki,Masaaki Ueki,Keisuke Nemoto,Keisuke Nemoto
+Q386415,Q476441,teacher_of,infobox:teacher,medium,Hironori Ōtsuka,Hironori Otsuka,Seiji Nishimura,Seiji Nishimura
+Q15987564,Q15845028,teacher_of,wikidata:P1066,high,Masaaki Ueki,Masaaki Ueki,Koji Ogata,Koji Ogata
+Q15987564,Q15845023,teacher_of,wikidata:P1066,high,Masaaki Ueki,Masaaki Ueki,Satomi Okuie,Satomi Okuie
+Q2636225,Q11383484,teacher_of,wikidata:P1066,high,Kazuyoshi Ishii,Kazuyoshi Ishii,Masaaki Satake,Masaaki Satake
+Q15987564,Q15845014,teacher_of,wikidata:P1066,high,Masaaki Ueki,Masaaki Ueki,Mai Shiina,Mai Shiina
+Q15987564,Q15845020,teacher_of,wikidata:P1066,high,Masaaki Ueki,Masaaki Ueki,Ryosuke Shimizu,Ryosuke Shimizu
+Q3984847,Q2664662,teacher_of,infobox:students,medium,Terutomo Yamazaki,Terutomo Yamazaki,Shokei Matsui,Shokei Matsui
+Q3984847,Q6378060,teacher_of,infobox:students,medium,Terutomo Yamazaki,Terutomo Yamazaki,Katsuaki Satō,Katsuaki Sato
+Q3984847,Q780966,teacher_of,infobox:students,medium,Terutomo Yamazaki,Terutomo Yamazaki,Seiji Isobe,Seiji Isobe
+Q3984847,Q5610965,teacher_of,infobox:students,medium,Terutomo Yamazaki,Terutomo Yamazaki,Howard Collins,Howard Collins
+Q41105,Q16089695,teacher_of,infobox:teacher,medium,Gichin Funakoshi,Gichin Funakoshi,Saitō Satoshi,Saito Satoshi
+Q7446788,Q16089695,teacher_of,infobox:teacher,medium,Seiko Fujita,Seiko Fujita,Saitō Satoshi,Saito Satoshi
+Q15987727,Q7364578,teacher_of,infobox:teacher | wikidata:P1066,high,Moses Powell,Moses Powell,Ron van Clief,Ron van Clief
+Q1335481,Q19325706,teacher_of,infobox:teacher | wikidata:P1066,high,Henry Plée,Henry Plee,Vernon Bell,Vernon Bell
+Q1739011,Q19325706,teacher_of,infobox:teacher,medium,Kenshiro Abbe,Kenshiro Abbe,Vernon Bell,Vernon Bell
+Q6139856,Q8014128,teacher_of,infobox:students | wikidata:P802,high,James Mitose,James Mitose,William Kwai Sun Chow,William Kwai Sun Chow
+Q8014128,Q653633,teacher_of,infobox:teacher | wikidata:P1066,high,William Kwai Sun Chow,William Kwai Sun Chow,Ed Parker,Ed Parker
+Q653633,Q730348,teacher_of,infobox:students | wikidata:P802,high,Ed Parker,Ed Parker,Benny Urquidez,Benny Urquidez
+Q653633,Q5335255,teacher_of,wikidata:P802,high,Ed Parker,Ed Parker,Ed Parker Jr.,Ed Parker Jr
+Q653633,Q6167244,teacher_of,wikidata:P802,high,Ed Parker,Ed Parker,Jay T. Will,Jay T Will
+Q6139856,Q653633,teacher_of,infobox:teacher,medium,James Mitose,James Mitose,Ed Parker,Ed Parker
+Q653633,Q550492,teacher_of,infobox:students,medium,Ed Parker,Ed Parker,Dan Inosanto,Dan Inosanto
+Q653633,Q303,teacher_of,infobox:students,medium,Ed Parker,Ed Parker,Elvis Presley,Elvis Presley
+Q653633,Q1052982,teacher_of,infobox:students,medium,Ed Parker,Ed Parker,Jeff Speakman,Jeff Speakman
+Q653633,Q2673,teacher_of,infobox:students,medium,Ed Parker,Ed Parker,Chuck Norris,Chuck Norris
+Q653633,Q369949,teacher_of,infobox:students,medium,Ed Parker,Ed Parker,Robert Culp,Robert Culp
+Q912181,Q6426232,teacher_of,infobox:students | wikidata:P802,high,Nicholas Pettas,Nicholas Pettas,Koichi Pettas,Koichi Pettas
+Q912181,Q64929894,teacher_of,infobox:students,medium,Nicholas Pettas,Nicholas Pettas,Leona Pettas,Leona Pettas
+Q384558,Q15987804,teacher_of,infobox:students | wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Hideo Yamamoto,Hideo Yamamoto
+Q1046410,Q4731883,teacher_of,infobox:teacher | wikidata:P1066,high,Jhoon Rhee,Jhoon Rhee,Allen Steen,Allen Steen
+Q4731883,Q7535789,teacher_of,infobox:students | wikidata:P802,high,Allen Steen,Allen Steen,Skipper Mullins,Skipper Mullins
+Q4731883,Q7373041,teacher_of,infobox:students,medium,Allen Steen,Allen Steen,Roy Kurban,Roy Kurban
+Q123398,Q539362,teacher_of,infobox:students | wikidata:P802,high,Andy Hug,Andy Hug,Xhavit Bajrami,Xhavit Bajrami
+Q123398,Q352678,teacher_of,infobox:students,medium,Andy Hug,Andy Hug,Björn Bregy,Bjorn Bregy
+Q123398,Q7171725,teacher_of,infobox:students,medium,Andy Hug,Andy Hug,Petar Majstorović,Petar Majstorovic
+Q123398,Q6832665,teacher_of,infobox:students,medium,Andy Hug,Andy Hug,Michael McDonald,Michael McDonald
+Q3482287,Q557301,teacher_of,infobox:teacher | wikidata:P1066 | wikidata:P802,high,Shinpan Gusukuma,Shinpan Gusukuma,Ankichi Arakaki,Ankichi Arakaki
+Q705617,Q557301,teacher_of,infobox:students | infobox:teacher | text_context:teacher_keyword | wikidata:P1066 | wikidata:P802,high,Chōmo Hanashiro,Chomo Hanashiro,Ankichi Arakaki,Ankichi Arakaki
+Q1071733,Q557301,teacher_of,infobox:students | infobox:teacher | text_context:teacher_keyword | text_pattern:learned_from | wikidata:P1066 | wikidata:P802,high,Chōshin Chibana,Choshin Chibana,Ankichi Arakaki,Ankichi Arakaki
+Q557301,Q1963468,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Ankichi Arakaki,Ankichi Arakaki,Shōshin Nagamine,Shoshin Nagamine
+Q2393877,Q557301,teacher_of,infobox:students | infobox:teacher,medium,Chōtoku Kyan,Chotoku Kyan,Ankichi Arakaki,Ankichi Arakaki
+Q557301,Q2149940,teacher_of,infobox:students,medium,Ankichi Arakaki,Ankichi Arakaki,Richard Kim,Richard Kim
+Q715769,Q721201,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Matsumura Sōkon,Matsumura Sokon,Ankō Azato,Anko Azato
+Q721201,Q41105,teacher_of,infobox:students | infobox:teacher | text_pattern:taught | wikidata:P1066 | wikidata:P802,high,Ankō Azato,Anko Azato,Gichin Funakoshi,Gichin Funakoshi
+Q715769,Q527422,teacher_of,infobox:students | infobox:teacher | text_context:teacher_keyword | wikidata:P1066 | wikidata:P802,high,Matsumura Sōkon,Matsumura Sokon,Ankō Itosu,Anko Itosu
+Q527422,Q706389,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Ankō Itosu,Anko Itosu,Motobu Chōyū,Motobu Choyu
+Q527422,Q453505,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Ankō Itosu,Anko Itosu,Kenwa Mabuni,Kenwa Mabuni
+Q527422,Q705617,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Ankō Itosu,Anko Itosu,Chōmo Hanashiro,Chomo Hanashiro
+Q527422,Q1071733,teacher_of,infobox:students | infobox:teacher | text_pattern:learned_from | wikidata:P1066 | wikidata:P802,high,Ankō Itosu,Anko Itosu,Chōshin Chibana,Choshin Chibana
+Q527422,Q3482287,teacher_of,infobox:students | infobox:teacher | text_pattern:learned_from | wikidata:P1066 | wikidata:P802,high,Ankō Itosu,Anko Itosu,Shinpan Gusukuma,Shinpan Gusukuma
+Q527422,Q1147708,teacher_of,infobox:students | infobox:teacher,medium,Ankō Itosu,Anko Itosu,Motobu Chōki,Motobu Choki
+Q527422,Q722028,teacher_of,infobox:students | infobox:teacher,medium,Ankō Itosu,Anko Itosu,Kentsū Yabu,Kentsu Yabu
+Q527422,Q41105,teacher_of,infobox:students | infobox:teacher | wikidata:P1066,high,Ankō Itosu,Anko Itosu,Gichin Funakoshi,Gichin Funakoshi
+Q527422,Q3772405,teacher_of,infobox:students | infobox:teacher,medium,Ankō Itosu,Anko Itosu,Kanken Tōyama,Kanken Toyama
+Q8031976,Q542989,teacher_of,wikidata:P1066,high,Wong Chung-Yoh,Wong Chung-Yoh,Chatan Yara,Chatan Yara
+Q1929108,Q542989,teacher_of,infobox:teacher | wikidata:P1066,high,Kūsankū,Kusanku,Chatan Yara,Chatan Yara
+Q542989,Q1336547,teacher_of,infobox:students | wikidata:P802,high,Chatan Yara,Chatan Yara,Peichin Takahara,Peichin Takahara
+Q1351759,Q542989,teacher_of,text_context:teacher_keyword,low,Chatan,Chatan,Chatan Yara,Chatan Yara
+Q542989,Q1351759,teacher_of,text_context:student_keyword,low,Chatan Yara,Chatan Yara,Chatan,Chatan
+Q11064618,Q542989,teacher_of,text_context:teacher_keyword,low,bō,bo,Chatan Yara,Chatan Yara
+Q845354,Q542989,teacher_of,text_context:teacher_keyword,low,sai,sai,Chatan Yara,Chatan Yara
+Q221121,Q5103850,teacher_of,infobox:teacher | wikidata:P1066 | wikidata:P802,high,Chōjun Miyagi,Chojun Miyagi,Chogi Kishaba,Chogi Kishaba
+Q6782517,Q5103850,teacher_of,infobox:teacher | text_context:student_keyword | wikidata:P1066 | wikidata:P802,high,Masami Chinen,Masami Chinen,Chogi Kishaba,Chogi Kishaba
+Q5103850,Q7827674,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Chogi Kishaba,Chogi Kishaba,Toshihiro Oshiro,Toshihiro Oshiro
+Q699236,Q221121,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Higaonna Kanryō,Higaonna Kanryo,Chōjun Miyagi,Chojun Miyagi
+Q221121,Q3984846,teacher_of,infobox:students | wikidata:P1066 | wikidata:P802,high,Chōjun Miyagi,Chojun Miyagi,Teruo Chinen,Teruo Chinen
+Q221121,Q5349190,teacher_of,infobox:students | infobox:teacher | text_context:student_keyword | text_pattern:learned_from | wikidata:P1066 | wikidata:P802,high,Chōjun Miyagi,Chojun Miyagi,Eiichi Miyazato,Eiichi Miyazato
+Q221121,Q268880,teacher_of,infobox:students | infobox:teacher | wikidata:P1066,high,Chōjun Miyagi,Chojun Miyagi,Gōgen Yamaguchi,Gogen Yamaguchi
+Q221121,Q7447367,teacher_of,infobox:students | infobox:teacher | text_context:student_keyword,medium,Chōjun Miyagi,Chojun Miyagi,Sekō Higa,Seko Higa
+Q221121,Q3954660,teacher_of,infobox:students | text_context:teacher_keyword,medium,Chōjun Miyagi,Chojun Miyagi,Seikichi Toguchi,Seikichi Toguchi
+Q221121,Q27363,teacher_of,infobox:students | infobox:teacher | text_context:teacher_keyword,medium,Chōjun Miyagi,Chojun Miyagi,Tatsuo Shimabuku,Tatsuo Shimabuku
+Q221121,Q16016038,teacher_of,infobox:students,medium,Chōjun Miyagi,Chojun Miyagi,Meitoku Yagi,Meitoku Yagi
+Q221121,Q7446692,teacher_of,infobox:students,medium,Chōjun Miyagi,Chojun Miyagi,Seigo Tada,Seigo Tada
+Q715769,Q1147708,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Matsumura Sōkon,Matsumura Sokon,Motobu Chōki,Motobu Choki
+Q3028499,Q1147708,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Kōsaku Matsumora,Kosaku Matsumora,Motobu Chōki,Motobu Choki
+Q1147708,Q7418861,teacher_of,infobox:students | wikidata:P1066 | wikidata:P802,high,Motobu Chōki,Motobu Choki,Sannosuke Ueshima,Sannosuke Ueshima
+Q1147708,Q386415,teacher_of,infobox:students | infobox:teacher | text_pattern:learned_from | wikidata:P1066 | wikidata:P802,high,Motobu Chōki,Motobu Choki,Hironori Ōtsuka,Hironori Otsuka
+Q1317686,Q1147708,teacher_of,infobox:teacher,medium,Pechin,Pechin,Motobu Chōki,Motobu Choki
+Q1147708,Q11470681,teacher_of,infobox:students,medium,Motobu Chōki,Motobu Choki,Tatsuo Yamada,Tatsuo Yamada
+Q1147708,Q27363,teacher_of,infobox:students | infobox:teacher | text_context:teacher_keyword,medium,Motobu Chōki,Motobu Choki,Tatsuo Shimabuku,Tatsuo Shimabuku
+Q1147708,Q1963468,teacher_of,infobox:students | infobox:teacher | wikidata:P1066,high,Motobu Chōki,Motobu Choki,Shōshin Nagamine,Shoshin Nagamine
+Q1147708,Q3194253,teacher_of,infobox:students | infobox:teacher,medium,Motobu Chōki,Motobu Choki,Katsuya Miyahira,Katsuya Miyahira
+Q705617,Q7446702,teacher_of,wikidata:P802,high,Chōmo Hanashiro,Chomo Hanashiro,Seiichi Akamine,Seiichi Akamine
+Q715769,Q705617,teacher_of,infobox:students | infobox:teacher,medium,Matsumura Sōkon,Matsumura Sokon,Chōmo Hanashiro,Chomo Hanashiro
+Q705617,Q15987278,teacher_of,infobox:students,medium,Chōmo Hanashiro,Chomo Hanashiro,Seikichi Odo,Seikichi Odo
+Q705617,Q15987180,teacher_of,infobox:students,medium,Chōmo Hanashiro,Chomo Hanashiro,Nakama Chozo,Nakama Chozo
+Q705617,Q189805,teacher_of,infobox:students,medium,Chōmo Hanashiro,Chomo Hanashiro,Zenryō Shimabukuro,Zenryo Shimabukuro
+Q1071733,Q705617,teacher_of,text_pattern:learned_from,medium,Chōshin Chibana,Choshin Chibana,Chōmo Hanashiro,Chomo Hanashiro
+Q1071733,Q3194253,teacher_of,infobox:students | infobox:teacher | text_context:teacher_keyword | wikidata:P1066 | wikidata:P802,high,Chōshin Chibana,Choshin Chibana,Katsuya Miyahira,Katsuya Miyahira
+Q1071733,Q3482635,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Chōshin Chibana,Choshin Chibana,Shūgorō Nakazato,Shugoro Nakazato
+Q1071733,Q15987180,teacher_of,infobox:students | wikidata:P802,high,Chōshin Chibana,Choshin Chibana,Nakama Chozo,Nakama Chozo
+Q1071733,Q15987228,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Chōshin Chibana,Choshin Chibana,Higa Yuchoku,Higa Yuchoku
+Q1071733,Q130739281,teacher_of,infobox:students,medium,Chōshin Chibana,Choshin Chibana,Ahagon Naonobu,Ahagon Naonobu
+Q715769,Q2393877,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Matsumura Sōkon,Matsumura Sokon,Chōtoku Kyan,Chotoku Kyan
+Q6426547,Q2393877,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Kōkan Oyadomari,Kokan Oyadomari,Chōtoku Kyan,Chotoku Kyan
+Q99517310,Q2393877,teacher_of,wikidata:P1066,high,Chōfu Kyan,Chofu Kyan,Chōtoku Kyan,Chotoku Kyan
+Q2393877,Q27363,teacher_of,infobox:students | infobox:teacher | text_context:teacher_keyword | wikidata:P1066 | wikidata:P802,high,Chōtoku Kyan,Chotoku Kyan,Tatsuo Shimabuku,Tatsuo Shimabuku
+Q2393877,Q1620643,teacher_of,infobox:students | wikidata:P802,high,Chōtoku Kyan,Chotoku Kyan,Kōri Hisataka,Kori Hisataka
+Q3028499,Q2393877,teacher_of,infobox:students | infobox:teacher | text_pattern:taught,medium,Kōsaku Matsumora,Kosaku Matsumora,Chōtoku Kyan,Chotoku Kyan
+Q2393877,Q189805,teacher_of,infobox:students,medium,Chōtoku Kyan,Chotoku Kyan,Zenryō Shimabukuro,Zenryo Shimabukuro
+Q2393877,Q1963468,teacher_of,infobox:students | infobox:teacher | wikidata:P1066,high,Chōtoku Kyan,Chotoku Kyan,Shōshin Nagamine,Shoshin Nagamine
+Q1490,Q2393877,teacher_of,text_context:teacher_keyword,low,Tokyo,Tokyo,Chōtoku Kyan,Chotoku Kyan
+Q2393877,Q131295,teacher_of,text_context:student_keyword,low,Chōtoku Kyan,Chotoku Kyan,brothel,brothel
+Q2393877,Q47146337,teacher_of,text_context:student_keyword,low,Chōtoku Kyan,Chotoku Kyan,alcohol,alcohol
+Q715769,Q706389,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Matsumura Sōkon,Matsumura Sokon,Motobu Chōyū,Motobu Choyu
+Q3028499,Q706389,teacher_of,infobox:teacher | text_pattern:learned_from,medium,Kōsaku Matsumora,Kosaku Matsumora,Motobu Chōyū,Motobu Choyu
+Q1678211,Q2673,teacher_of,infobox:teacher | wikidata:P1066,high,Shin Jae Chul,Shin Jae Chul,Chuck Norris,Chuck Norris
+Q5042308,Q2673,teacher_of,wikidata:P1066,high,Carlos Machado,Carlos Machado,Chuck Norris,Chuck Norris
+Q2673,Q2079584,teacher_of,wikidata:P802,high,Chuck Norris,Chuck Norris,Robert Wall,Robert Wall
+Q2673,Q6266828,teacher_of,wikidata:P802,high,Chuck Norris,Chuck Norris,Johnny Gyro,Johnny Gyro
+Q2673,Q7143413,teacher_of,wikidata:P802,high,Chuck Norris,Chuck Norris,Pat E. Johnson,Pat E Johnson
+Q2074666,Q2673,teacher_of,infobox:teacher,medium,Machado family,Machado family,Chuck Norris,Chuck Norris
+Q1335481,Q3035513,teacher_of,wikidata:P1066,high,Henry Plée,Henry Plee,Dominique Valera,Dominique Valera
+Q27363,Q5294533,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Tatsuo Shimabuku,Tatsuo Shimabuku,Donald Hugh Nagle,Donald Hugh Nagle
+Q5349190,Q3984846,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Eiichi Miyazato,Eiichi Miyazato,Teruo Chinen,Teruo Chinen
+Q5349190,Q6782405,teacher_of,infobox:students | wikidata:P802,high,Eiichi Miyazato,Eiichi Miyazato,Masaji Taira,Masaji Taira
+Q5349190,Q2599967,teacher_of,infobox:students,medium,Eiichi Miyazato,Eiichi Miyazato,Morio Higaonna,Morio Higaonna
+Q699236,Q5349190,teacher_of,text_pattern:learned_from,medium,Higaonna Kanryō,Higaonna Kanryo,Eiichi Miyazato,Eiichi Miyazato
+Q5349190,Q699236,teacher_of,text_context:student_keyword,low,Eiichi Miyazato,Eiichi Miyazato,Higaonna Kanryō,Higaonna Kanryo
+Q723832,Q1473967,teacher_of,infobox:teacher | wikidata:P1066 | wikidata:P802,high,Taira Shinken,Taira Shinken,Fumio Demura,Fumio Demura
+Q41105,Q386415,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Gichin Funakoshi,Gichin Funakoshi,Hironori Ōtsuka,Hironori Otsuka
+Q41105,Q124766,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Gichin Funakoshi,Gichin Funakoshi,Hidetaka Nishiyama,Hidetaka Nishiyama
+Q41105,Q384558,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Gichin Funakoshi,Gichin Funakoshi,Masatoshi Nakayama,Masatoshi Nakayama
+Q41105,Q471629,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Gichin Funakoshi,Gichin Funakoshi,Hirokazu Kanazawa,Hirokazu Kanazawa
+Q41105,Q628761,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Gichin Funakoshi,Gichin Funakoshi,Gigō Funakoshi,Gigo Funakoshi
+Q41105,Q709520,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Gichin Funakoshi,Gichin Funakoshi,Tetsuhiko Asai,Tetsuhiko Asai
+Q41105,Q1246030,teacher_of,infobox:students | wikidata:P802,high,Gichin Funakoshi,Gichin Funakoshi,Shigeru Egami,Shigeru Egami
+Q41105,Q1335481,teacher_of,wikidata:P802,high,Gichin Funakoshi,Gichin Funakoshi,Henry Plée,Henry Plee
+Q41105,Q1360025,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Gichin Funakoshi,Gichin Funakoshi,Taiji Kase,Taiji Kase
+Q41105,Q2619054,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Gichin Funakoshi,Gichin Funakoshi,Tsutomu Ohshima,Tsutomu Ohshima
+Q41105,Q2915906,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Gichin Funakoshi,Gichin Funakoshi,Teruyuki Okazaki,Teruyuki Okazaki
+Q41105,Q4351940,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Gichin Funakoshi,Gichin Funakoshi,Yasuhiro Konishi,Yasuhiro Konishi
+Q41105,Q6078918,teacher_of,infobox:students | wikidata:P802,high,Gichin Funakoshi,Gichin Funakoshi,Isao Obata,Isao Obata
+Q41105,Q8062088,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Gichin Funakoshi,Gichin Funakoshi,Yutaka Yaguchi,Yutaka Yaguchi
+Q41105,Q9096235,teacher_of,infobox:students | wikidata:P802,high,Gichin Funakoshi,Gichin Funakoshi,Won Kuk Lee,Won Kuk Lee
+Q715769,Q41105,teacher_of,infobox:students | infobox:teacher | wikidata:P802,high,Matsumura Sōkon,Matsumura Sokon,Gichin Funakoshi,Gichin Funakoshi
+Q584466,Q41105,teacher_of,infobox:students | infobox:teacher,medium,Arakaki Seishō,Arakaki Seisho,Gichin Funakoshi,Gichin Funakoshi
+Q41105,Q3317210,teacher_of,infobox:students,medium,Gichin Funakoshi,Gichin Funakoshi,Mitsusuke Harada,Mitsusuke Harada
+Q41105,Q294548,teacher_of,infobox:students | wikidata:P1066,high,Gichin Funakoshi,Gichin Funakoshi,Mas Oyama,Mas Oyama
+Q41105,Q3519204,teacher_of,infobox:students,medium,Gichin Funakoshi,Gichin Funakoshi,Tetsuji Murakami,Tetsuji Murakami
+Q41105,Q7561025,teacher_of,infobox:students,medium,Gichin Funakoshi,Gichin Funakoshi,Song Moo Kwan,Song Moo Kwan
+Q41105,Q356335,teacher_of,infobox:students,medium,Gichin Funakoshi,Gichin Funakoshi,Choi Hong-hi,Choi Hong-hi
+Q41105,Q716133,teacher_of,infobox:students | infobox:teacher,medium,Gichin Funakoshi,Gichin Funakoshi,Keinosuke Enoeda,Keinosuke Enoeda
+Q628761,Q3317210,teacher_of,infobox:students | wikidata:P802,high,Gigō Funakoshi,Gigo Funakoshi,Mitsusuke Harada,Mitsusuke Harada
+Q628761,Q1360025,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Gigō Funakoshi,Gigo Funakoshi,Taiji Kase,Taiji Kase
+Q628761,Q9096235,teacher_of,infobox:students,medium,Gigō Funakoshi,Gigo Funakoshi,Won Kuk Lee,Won Kuk Lee
+Q628761,Q294548,teacher_of,infobox:students | infobox:teacher,medium,Gigō Funakoshi,Gigo Funakoshi,Mas Oyama,Mas Oyama
+Q628761,Q1246030,teacher_of,infobox:students,medium,Gigō Funakoshi,Gigo Funakoshi,Shigeru Egami,Shigeru Egami
+Q628761,Q384558,teacher_of,infobox:students | infobox:teacher,medium,Gigō Funakoshi,Gigo Funakoshi,Masatoshi Nakayama,Masatoshi Nakayama
+Q628761,Q124766,teacher_of,infobox:students | infobox:teacher,medium,Gigō Funakoshi,Gigo Funakoshi,Hidetaka Nishiyama,Hidetaka Nishiyama
+Q268880,Q3898157,teacher_of,infobox:students | wikidata:P802,high,Gōgen Yamaguchi,Gogen Yamaguchi,Paul Starling,Paul Starling
+Q268880,Q7040172,teacher_of,wikidata:P802,high,Gōgen Yamaguchi,Gogen Yamaguchi,Nisar Smiler,Nisar Smiler
+Q268880,Q7808402,teacher_of,wikidata:P802,high,Gōgen Yamaguchi,Gogen Yamaguchi,Tino Ceberano,Tino Ceberano
+Q268880,Q294548,teacher_of,infobox:students | infobox:teacher,medium,Gōgen Yamaguchi,Gogen Yamaguchi,Mas Oyama,Mas Oyama
+Q268880,Q1738762,teacher_of,infobox:students | infobox:teacher,medium,Gōgen Yamaguchi,Gogen Yamaguchi,Kenji Kurosaki,Kenji Kurosaki
+Q268880,Q115091,teacher_of,infobox:students,medium,Gōgen Yamaguchi,Gogen Yamaguchi,Peter Urban,Peter Urban
+Q294548,Q5361556,teacher_of,wikidata:P1066 | wikidata:P802,high,Mas Oyama,Mas Oyama,Hajime Kazumi,Hajime Kazumi
+Q11486455,Q5361556,teacher_of,infobox:teacher | wikidata:P1066,high,Tsuyoshi Hiroshige,Tsuyoshi Hiroshige,Hajime Kazumi,Hajime Kazumi
+Q11449231,Q5361556,teacher_of,wikidata:P1066,high,Kenji Ushiro,Kenji Ushiro,Hajime Kazumi,Hajime Kazumi
+Q3115887,Q5361556,teacher_of,text_context:teacher_keyword,low,Kenji Midori,Kenji Midori,Hajime Kazumi,Hajime Kazumi
+Q294548,Q920672,teacher_of,infobox:teacher | wikidata:P1066 | wikidata:P802,high,Mas Oyama,Mas Oyama,Hatsuo Royama,Hatsuo Royama
+Q11365653,Q920672,teacher_of,wikidata:P1066,high,Hideo Nakamura,Hideo Nakamura,Hatsuo Royama,Hatsuo Royama
+Q1494112,Q920672,teacher_of,infobox:teacher,medium,Ken'ichi Sawai,Kenichi Sawai,Hatsuo Royama,Hatsuo Royama
+Q920672,Q11472844,teacher_of,text_context:student_keyword,low,Hatsuo Royama,Hatsuo Royama,Hiroto Okazaki,Hiroto Okazaki
+Q124766,Q348074,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Hidetaka Nishiyama,Hidetaka Nishiyama,Hiroshi Shirai,Hiroshi Shirai
+Q6078918,Q124766,teacher_of,infobox:teacher,medium,Isao Obata,Isao Obata,Hidetaka Nishiyama,Hidetaka Nishiyama
+Q384558,Q124766,teacher_of,infobox:students | infobox:teacher,medium,Masatoshi Nakayama,Masatoshi Nakayama,Hidetaka Nishiyama,Hidetaka Nishiyama
+Q124766,Q15987280,teacher_of,infobox:students,medium,Hidetaka Nishiyama,Hidetaka Nishiyama,James Yabe,James Yabe
+Q124766,Q6183244,teacher_of,infobox:students,medium,Hidetaka Nishiyama,Hidetaka Nishiyama,Jerry Bell,Jerry Bell
+Q124766,Q179743,teacher_of,infobox:students,medium,Hidetaka Nishiyama,Hidetaka Nishiyama,Bringing Up Baby,Bringing Up Baby
+Q124766,Q470591,teacher_of,infobox:students,medium,Hidetaka Nishiyama,Hidetaka Nishiyama,John Saxon,John Saxon
+Q294548,Q919033,teacher_of,infobox:teacher | wikidata:P1066 | wikidata:P802,high,Mas Oyama,Mas Oyama,Hideyuki Ashihara,Hideyuki Ashihara
+Q919033,Q2636225,teacher_of,infobox:students | wikidata:P802,high,Hideyuki Ashihara,Hideyuki Ashihara,Kazuyoshi Ishii,Kazuyoshi Ishii
+Q919033,Q562887,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Hideyuki Ashihara,Hideyuki Ashihara,Jōkō Ninomiya,Joko Ninomiya
+Q560761,Q919033,teacher_of,infobox:teacher,medium,Jon Bluming,Jon Bluming,Hideyuki Ashihara,Hideyuki Ashihara
+Q15987228,Q6869269,teacher_of,wikidata:P802,high,Higa Yuchoku,Higa Yuchoku,Minoru Higa,Minoru Higa
+Q221121,Q15987228,teacher_of,infobox:teacher,medium,Chōjun Miyagi,Chojun Miyagi,Higa Yuchoku,Higa Yuchoku
+Q471629,Q6742556,teacher_of,wikidata:P802,high,Hirokazu Kanazawa,Hirokazu Kanazawa,Malcolm Phipps,Malcolm Phipps
+Q384558,Q471629,teacher_of,infobox:students | infobox:teacher,medium,Masatoshi Nakayama,Masatoshi Nakayama,Hirokazu Kanazawa,Hirokazu Kanazawa
+Q453505,Q386415,teacher_of,infobox:teacher | wikidata:P1066 | wikidata:P802,high,Kenwa Mabuni,Kenwa Mabuni,Hironori Ōtsuka,Hironori Otsuka
+Q30928815,Q386415,teacher_of,wikidata:P1066,high,Tatsusaburo Nakayama,Tatsusaburo Nakayama,Hironori Ōtsuka,Hironori Otsuka
+Q386415,Q97666381,teacher_of,wikidata:P802,high,Hironori Ōtsuka,Hironori Otsuka,Tatsuo Suzuki,Tatsuo Suzuki
+Q386415,Q957513,teacher_of,wikidata:P802,high,Hironori Ōtsuka,Hironori Otsuka,Teruo Kono,Teruo Kono
+Q386415,Q4023282,teacher_of,wikidata:P802,high,Hironori Ōtsuka,Hironori Otsuka,Yutaka Toyama,Yutaka Toyama
+Q386415,Q18414412,teacher_of,wikidata:P802,high,Hironori Ōtsuka,Hironori Otsuka,Kazuo Sakura,Kazuo Sakura
+Q386415,Q18413638,teacher_of,wikidata:P802,high,Hironori Ōtsuka,Hironori Otsuka,Atsuo Yamashita,Atsuo Yamashita
+Q386415,Q16648173,teacher_of,wikidata:P802,high,Hironori Ōtsuka,Hironori Otsuka,Kazuo Sakai,Kazuo Sakai
+Q386415,Q16266721,teacher_of,wikidata:P802,high,Hironori Ōtsuka,Hironori Otsuka,Shingo Ohgami,Shingo Ohgami
+Q386415,Q23688927,teacher_of,infobox:students | wikidata:P802,high,Hironori Ōtsuka,Hironori Otsuka,Masaru Shintani,Masaru Shintani
+Q386415,Q21503589,teacher_of,infobox:teacher | wikidata:P1066 | wikidata:P802,high,Hironori Ōtsuka,Hironori Otsuka,Tōru Arakawa,Toru Arakawa
+Q386415,Q3136331,teacher_of,wikidata:P802,high,Hironori Ōtsuka,Hironori Otsuka,Hironori Ōtsuka II,Hironori Otsuka II
+Q386415,Q136799394,teacher_of,text_context:student_keyword,low,Hironori Ōtsuka,Hironori Otsuka,Robert Heisner,Robert Heisner
+Q386415,Q128133,teacher_of,text_context:student_keyword,low,Hironori Ōtsuka,Hironori Otsuka,Niagara Falls,Niagara Falls
+Q384558,Q348074,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Hiroshi Shirai,Hiroshi Shirai
+Q348074,Q3840266,teacher_of,infobox:students | wikidata:P802,high,Hiroshi Shirai,Hiroshi Shirai,Luigi Zoia,Luigi Zoia
+Q348074,Q110022261,teacher_of,wikidata:P802,high,Hiroshi Shirai,Hiroshi Shirai,Paolo Biotti Natoli,Paolo Biotti Natoli
+Q1360025,Q348074,teacher_of,infobox:students | infobox:teacher,medium,Taiji Kase,Taiji Kase,Hiroshi Shirai,Hiroshi Shirai
+Q348074,Q72716,teacher_of,infobox:students,medium,Hiroshi Shirai,Hiroshi Shirai,Pino Presti,Pino Presti
+Q6956791,Q3139173,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Nabe Matsumura,Nabe Matsumura,Hohan Sōken,Hohan Soken
+Q3139173,Q7373534,teacher_of,infobox:students | wikidata:P802,high,Hohan Sōken,Hohan Soken,Roy Y. Suenaka,Roy Y Suenaka
+Q3139173,Q276730,teacher_of,infobox:students | wikidata:P802,high,Hohan Sōken,Hohan Soken,Nishihira Kosei,Nishihira Kosei
+Q3139173,Q5104212,teacher_of,infobox:students | wikidata:P802,high,Hohan Sōken,Hohan Soken,Chokei Kishaba,Chokei Kishaba
+Q294548,Q5610965,teacher_of,infobox:teacher | wikidata:P1066 | wikidata:P802,high,Mas Oyama,Mas Oyama,Howard Collins,Howard Collins
+Q294548,Q562887,teacher_of,wikidata:P1066 | wikidata:P802,high,Mas Oyama,Mas Oyama,Jōkō Ninomiya,Joko Ninomiya
+Q294548,Q560761,teacher_of,wikidata:P1066,high,Mas Oyama,Mas Oyama,Jon Bluming,Jon Bluming
+Q560761,Q3357770,teacher_of,infobox:students,medium,Jon Bluming,Jon Bluming,Otti Roethof,Otti Roethof
+Q560761,Q200333,teacher_of,text_pattern:taught,medium,Jon Bluming,Jon Bluming,hapkido,hapkido
+Q4992635,Q560761,teacher_of,text_context:teacher_keyword,low,Toshirō Daigo,Toshiro Daigo,Jon Bluming,Jon Bluming
+Q4992628,Q560761,teacher_of,text_context:teacher_keyword,low,Yoshimi Ōsawa,Yoshimi Osawa,Jon Bluming,Jon Bluming
+Q2473562,Q1728269,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Kanbun Uechi,Kanbun Uechi,Kanei Uechi,Kanei Uechi
+Q1728269,Q328615,teacher_of,text_context:student_keyword,low,Kanei Uechi,Kanei Uechi,Okinawa,Okinawa
+Q921673,Q715769,teacher_of,infobox:students | infobox:teacher | wikidata:P802,high,Kanga Sakukawa,Kanga Sakukawa,Matsumura Sōkon,Matsumura Sokon
+Q1929108,Q921673,teacher_of,infobox:teacher,medium,Kūsankū,Kusanku,Kanga Sakukawa,Kanga Sakukawa
+Q3772405,Q2149940,teacher_of,wikidata:P802,high,Kanken Tōyama,Kanken Toyama,Richard Kim,Richard Kim
+Q766445,Q3772405,teacher_of,text_context:teacher_keyword,low,Okinawa Prefecture,Okinawa Prefecture,Kanken Tōyama,Kanken Toyama
+Q17,Q3772405,teacher_of,text_context:teacher_keyword,low,Japan,Japan,Kanken Tōyama,Kanken Toyama
+Q22124384,Q190141,teacher_of,wikidata:P1066,high,Fukuda Hachinosuke,Fukuda Hachinosuke,Kanō Jigorō,Kano Jigoro
+Q190141,Q2672426,teacher_of,infobox:students | wikidata:P802,high,Kanō Jigorō,Kano Jigoro,Tomita Tsunejirō,Tomita Tsunejiro
+Q190141,Q460890,teacher_of,infobox:students | wikidata:P802,high,Kanō Jigorō,Kano Jigoro,Keiko Fukuda,Keiko Fukuda
+Q190141,Q982540,teacher_of,infobox:students | wikidata:P802,high,Kanō Jigorō,Kano Jigoro,Kotani Sumiyuki,Kotani Sumiyuki
+Q190141,Q2453372,teacher_of,infobox:students | wikidata:P802,high,Kanō Jigorō,Kano Jigoro,Kyuzo Mifune,Kyuzo Mifune
+Q190141,Q2456537,teacher_of,infobox:students | wikidata:P802,high,Kanō Jigorō,Kano Jigoro,Mitsuyo Maeda,Mitsuyo Maeda
+Q190141,Q3236604,teacher_of,infobox:students | wikidata:P802,high,Kanō Jigorō,Kano Jigoro,Yoshitsugu Yamashita,Yoshitsugu Yamashita
+Q190141,Q3276775,teacher_of,infobox:students | wikidata:P802,high,Kanō Jigorō,Kano Jigoro,Sakujiro Yokoyama,Sakujiro Yokoyama
+Q190141,Q6389379,teacher_of,wikidata:P802,high,Kanō Jigorō,Kano Jigoro,Kenji Tomiki,Kenji Tomiki
+Q190141,Q1937662,teacher_of,infobox:students,medium,Kanō Jigorō,Kano Jigoro,Minoru Mochizuki,Minoru Mochizuki
+Q190141,Q2637587,teacher_of,infobox:students,medium,Kanō Jigorō,Kano Jigoro,Shiro Saigo,Shiro Saigo
+Q190141,Q4340844,teacher_of,infobox:students,medium,Kanō Jigorō,Kano Jigoro,Vasili Oshchepkov,Vasili Oshchepkov
+Q190141,Q5618841,teacher_of,infobox:students,medium,Kanō Jigorō,Kano Jigoro,Gunji Koizumi,Gunji Koizumi
+Q190141,Q17225688,teacher_of,infobox:students,medium,Kanō Jigorō,Kano Jigoro,Kenji Kanō,Kenji Kano
+Q190141,Q40795,teacher_of,text_context:student_keyword,low,Kanō Jigorō,Kano Jigoro,kata,kata
+Q1493305,Q190141,teacher_of,text_context:teacher_keyword,low,firefighter's carry,firefighters carry,Kanō Jigorō,Kano Jigoro
+Q2408025,Q190141,teacher_of,text_context:teacher_keyword,low,catch wrestling,catch wrestling,Kanō Jigorō,Kano Jigoro
+Q128059,Q190141,teacher_of,text_context:teacher_keyword,low,Kata guruma,Kata guruma,Kanō Jigorō,Kano Jigoro
+Q182634,Q190141,teacher_of,text_context:teacher_keyword,low,rickshaw,rickshaw,Kanō Jigorō,Kano Jigoro
+Q584466,Q699236,teacher_of,infobox:students | infobox:teacher | text_pattern:taught | wikidata:P1066 | wikidata:P802,high,Arakaki Seishō,Arakaki Seisho,Higaonna Kanryō,Higaonna Kanryo
+Q954330,Q699236,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Ryū Ryū Ko,Ryu Ryu Ko,Higaonna Kanryō,Higaonna Kanryo
+Q16907056,Q699236,teacher_of,wikidata:P1066,high,Xie Zongxiang,Xie Zongxiang,Higaonna Kanryō,Higaonna Kanryo
+Q699236,Q7447367,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Higaonna Kanryō,Higaonna Kanryo,Sekō Higa,Seko Higa
+Q699236,Q453505,teacher_of,infobox:students | infobox:teacher,medium,Higaonna Kanryō,Higaonna Kanryo,Kenwa Mabuni,Kenwa Mabuni
+Q699236,Q3482287,teacher_of,infobox:students | infobox:teacher | text_pattern:learned_from,medium,Higaonna Kanryō,Higaonna Kanryo,Shinpan Gusukuma,Shinpan Gusukuma
+Q699236,Q68481,teacher_of,text_context:student_keyword,low,Higaonna Kanryō,Higaonna Kanryo,Fuzhou,Fuzhou
+Q699236,Q328615,teacher_of,text_context:student_keyword,low,Higaonna Kanryō,Higaonna Kanryo,Okinawa,Okinawa
+Q3194253,Q7446770,teacher_of,wikidata:P802,high,Katsuya Miyahira,Katsuya Miyahira,Seikichi Iha,Seikichi Iha
+Q373498,Q3194253,teacher_of,text_context:teacher_keyword,low,dan,dan,Katsuya Miyahira,Katsuya Miyahira
+Q384558,Q1737900,teacher_of,infobox:students | infobox:teacher | text_pattern:learned_from | wikidata:P1066 | wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Keigo Abe,Keigo Abe
+Q384558,Q716133,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Keinosuke Enoeda,Keinosuke Enoeda
+Q1360025,Q716133,teacher_of,infobox:students | infobox:teacher | text_pattern:taught | wikidata:P1066 | wikidata:P802,high,Taiji Kase,Taiji Kase,Keinosuke Enoeda,Keinosuke Enoeda
+Q716133,Q5228927,teacher_of,infobox:students | wikidata:P802,high,Keinosuke Enoeda,Keinosuke Enoeda,Dave Hazard,Dave Hazard
+Q716133,Q5668035,teacher_of,wikidata:P802,high,Keinosuke Enoeda,Keinosuke Enoeda,Harry Cook,Harry Cook
+Q716133,Q7151260,teacher_of,wikidata:P802,high,Keinosuke Enoeda,Keinosuke Enoeda,Paul Herbert,Paul Herbert
+Q716133,Q5485463,teacher_of,infobox:students,medium,Keinosuke Enoeda,Keinosuke Enoeda,Frank Brennan,Frank Brennan
+Q716133,Q527659,teacher_of,infobox:students,medium,Keinosuke Enoeda,Keinosuke Enoeda,Andy Sherry,Andy Sherry
+Q716133,Q29043185,teacher_of,infobox:students,medium,Keinosuke Enoeda,Keinosuke Enoeda,Norman Robinson,Norman Robinson
+Q453505,Q727360,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Kenwa Mabuni,Kenwa Mabuni,Mabuni Kenei,Mabuni Kenei
+Q4351940,Q727360,teacher_of,infobox:teacher,medium,Yasuhiro Konishi,Yasuhiro Konishi,Mabuni Kenei,Mabuni Kenei
+Q7446788,Q727360,teacher_of,infobox:teacher,medium,Seiko Fujita,Seiko Fujita,Mabuni Kenei,Mabuni Kenei
+Q294548,Q1738762,teacher_of,infobox:teacher | wikidata:P1066 | wikidata:P802,high,Mas Oyama,Mas Oyama,Kenji Kurosaki,Kenji Kurosaki
+Q1738762,Q3532632,teacher_of,infobox:students | wikidata:P802,high,Kenji Kurosaki,Kenji Kurosaki,Toshio Fujiwara,Toshio Fujiwara
+Q1738762,Q11436963,teacher_of,wikidata:P802,high,Kenji Kurosaki,Kenji Kurosaki,Noboru Ōsawa,Noboru Osawa
+Q1738762,Q3984847,teacher_of,infobox:students,medium,Kenji Kurosaki,Kenji Kurosaki,Terutomo Yamazaki,Terutomo Yamazaki
+Q1738762,Q6130268,teacher_of,infobox:students,medium,Kenji Kurosaki,Kenji Kurosaki,Yoshiji Soeno,Yoshiji Soeno
+Q1738762,Q320773,teacher_of,infobox:students,medium,Kenji Kurosaki,Kenji Kurosaki,Shigeru Ōyama,Shigeru Oyama
+Q1738762,Q920672,teacher_of,infobox:students,medium,Kenji Kurosaki,Kenji Kurosaki,Hatsuo Royama,Hatsuo Royama
+Q1738762,Q919033,teacher_of,infobox:students,medium,Kenji Kurosaki,Kenji Kurosaki,Hideyuki Ashihara,Hideyuki Ashihara
+Q1738762,Q6149743,teacher_of,infobox:students,medium,Kenji Kurosaki,Kenji Kurosaki,Jan Plas,Jan Plas
+Q1738762,Q3161686,teacher_of,infobox:students,medium,Kenji Kurosaki,Kenji Kurosaki,Jan Kallenbach,Jan Kallenbach
+Q1738762,Q3257815,teacher_of,infobox:students,medium,Kenji Kurosaki,Kenji Kurosaki,Loek Hollander,Loek Hollander
+Q1738762,Q8021897,teacher_of,infobox:students,medium,Kenji Kurosaki,Kenji Kurosaki,Willie Williams,Willie Williams
+Q1738762,Q1082144,teacher_of,infobox:students,medium,Kenji Kurosaki,Kenji Kurosaki,Christian Tissier,Christian Tissier
+Q294548,Q3115887,teacher_of,infobox:teacher | text_pattern:learned_from | wikidata:P1066 | wikidata:P802,high,Mas Oyama,Mas Oyama,Kenji Midori,Kenji Midori
+Q11486455,Q3115887,teacher_of,infobox:teacher | wikidata:P1066,high,Tsuyoshi Hiroshige,Tsuyoshi Hiroshige,Kenji Midori,Kenji Midori
+Q715769,Q722028,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Matsumura Sōkon,Matsumura Sokon,Kentsū Yabu,Kentsu Yabu
+Q3028499,Q722028,teacher_of,infobox:teacher,medium,Kōsaku Matsumora,Kosaku Matsumora,Kentsū Yabu,Kentsu Yabu
+Q722028,Q3772405,teacher_of,infobox:students,medium,Kentsū Yabu,Kentsu Yabu,Kanken Tōyama,Kanken Toyama
+Q453505,Q6753487,teacher_of,infobox:students | infobox:teacher,medium,Kenwa Mabuni,Kenwa Mabuni,Manzo Iwata,Manzo Iwata
+Q148,Q453505,teacher_of,text_context:teacher_keyword,low,People's Republic of China,Peoples Republic of China,Kenwa Mabuni,Kenwa Mabuni
+Q3028499,Q715769,teacher_of,text_context:student_keyword,low,Kōsaku Matsumora,Kosaku Matsumora,Matsumura Sōkon,Matsumura Sokon
+Q3028499,Q1317686,teacher_of,text_context:student_keyword,low,Kōsaku Matsumora,Kosaku Matsumora,Pechin,Pechin
+Q3257815,Q3182349,teacher_of,infobox:students,medium,Loek Hollander,Loek Hollander,John Reeberg,John Reeberg
+Q182130,Q6753487,teacher_of,infobox:teacher | wikidata:P1066,high,Morihei Ueshiba,Morihei Ueshiba,Manzo Iwata,Manzo Iwata
+Q7446788,Q6753487,teacher_of,infobox:teacher,medium,Seiko Fujita,Seiko Fujita,Manzo Iwata,Manzo Iwata
+Q6782517,Q5104212,teacher_of,infobox:students | wikidata:P802,high,Masami Chinen,Masami Chinen,Chokei Kishaba,Chokei Kishaba
+Q6782517,Q3482635,teacher_of,infobox:students | infobox:teacher,medium,Masami Chinen,Masami Chinen,Shūgorō Nakazato,Shugoro Nakazato
+Q6782517,Q961126,teacher_of,text_context:student_keyword | text_pattern:taught,medium,Masami Chinen,Masami Chinen,Bōjutsu,Bojutsu
+Q6782517,Q608415,teacher_of,text_context:student_keyword,low,Masami Chinen,Masami Chinen,Shuri,Shuri
+Q6782517,Q7827674,teacher_of,text_context:student_keyword | text_pattern:learned_from,medium,Masami Chinen,Masami Chinen,Toshihiro Oshiro,Toshihiro Oshiro
+Q384558,Q1937515,teacher_of,infobox:students | wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Minoru Kawawada,Minoru Kawawada
+Q384558,Q2911640,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Takayuki Mikami,Takayuki Mikami
+Q384558,Q5490474,teacher_of,wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Frank Woon-a-tai,Frank Woon-a-tai
+Q384558,Q7366021,teacher_of,wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Ronnie Watt,Ronnie Watt
+Q384558,Q922328,teacher_of,infobox:students | wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Masahiko Tanaka,Masahiko Tanaka
+Q384558,Q15845026,teacher_of,wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Koichiro Okuma,Koichiro Okuma
+Q384558,Q15845027,teacher_of,wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Yuko Hirayama,Yuko Hirayama
+Q384558,Q15845030,teacher_of,wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Satoshi Takahashi,Satoshi Takahashi
+Q384558,Q15845032,teacher_of,wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Takuya Taniyama,Takuya Taniyama
+Q384558,Q15845033,teacher_of,infobox:students | wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Yasuo Hanzaki,Yasuo Hanzaki
+Q384558,Q15845034,teacher_of,infobox:students | wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Seizo Izumiya,Seizo Izumiya
+Q384558,Q15845035,teacher_of,infobox:students | wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Katsutoshi Shiina,Katsutoshi Shiina
+Q384558,Q15845038,teacher_of,infobox:students | wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Yasunori Ogura,Yasunori Ogura
+Q384558,Q15845041,teacher_of,infobox:students | wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Takenori Imura,Takenori Imura
+Q384558,Q15845047,teacher_of,infobox:students | wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Toshihiro Mori,Toshihiro Mori
+Q384558,Q15845053,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Yoshiharu Osaka,Yoshiharu Osaka
+Q384558,Q15987564,teacher_of,wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Masaaki Ueki,Masaaki Ueki
+Q384558,Q15987736,teacher_of,infobox:students | wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Shigeru Takashina,Shigeru Takashina
+Q384558,Q605735,teacher_of,infobox:students | wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Hideo Yamamoto,Hideo Yamamoto
+Q384558,Q15987806,teacher_of,infobox:students | wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Tomio Imamura,Tomio Imamura
+Q384558,Q8062088,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Masatoshi Nakayama,Masatoshi Nakayama,Yutaka Yaguchi,Yutaka Yaguchi
+Q6078918,Q384558,teacher_of,infobox:teacher,medium,Isao Obata,Isao Obata,Masatoshi Nakayama,Masatoshi Nakayama
+Q384558,Q709520,teacher_of,infobox:students | infobox:teacher,medium,Masatoshi Nakayama,Masatoshi Nakayama,Tetsuhiko Asai,Tetsuhiko Asai
+Q384558,Q381799,teacher_of,infobox:students,medium,Masatoshi Nakayama,Masatoshi Nakayama,Cary-Hiroyuki Tagawa,Cary-Hiroyuki Tagawa
+Q384558,Q2915906,teacher_of,infobox:students | infobox:teacher,medium,Masatoshi Nakayama,Masatoshi Nakayama,Teruyuki Okazaki,Teruyuki Okazaki
+Q384558,Q1360025,teacher_of,infobox:students | infobox:teacher,medium,Masatoshi Nakayama,Masatoshi Nakayama,Taiji Kase,Taiji Kase
+Q384558,Q896129,teacher_of,infobox:students,medium,Masatoshi Nakayama,Masatoshi Nakayama,Hideo Ochi,Hideo Ochi
+Q384558,Q29043333,teacher_of,infobox:students,medium,Masatoshi Nakayama,Masatoshi Nakayama,Stan Schmidt,Stan Schmidt
+Q384558,Q7397534,teacher_of,infobox:students,medium,Masatoshi Nakayama,Masatoshi Nakayama,Sadamu Uriu,Sadamu Uriu
+Q1620643,Q1584213,teacher_of,wikidata:P1066,high,Kōri Hisataka,Kori Hisataka,Masayuki Hisataka,Masayuki Hisataka
+Q1584213,Q60,teacher_of,text_context:student_keyword,low,Masayuki Hisataka,Masayuki Hisataka,New York City,New York City
+Q1584213,Q340,teacher_of,text_context:student_keyword,low,Masayuki Hisataka,Masayuki Hisataka,Montreal,Montreal
+Q1584213,Q1344988,teacher_of,text_context:student_keyword,low,Masayuki Hisataka,Masayuki Hisataka,Expo 67,Expo 67
+Q294548,Q562024,teacher_of,infobox:teacher | wikidata:P1066 | wikidata:P802,high,Mas Oyama,Mas Oyama,Steve Arneil,Steve Arneil
+Q294548,Q4935308,teacher_of,wikidata:P802,high,Mas Oyama,Mas Oyama,Bobby Lowe,Bobby Lowe
+Q294548,Q1040902,teacher_of,wikidata:P802,high,Mas Oyama,Mas Oyama,Tadashi Nakamura,Tadashi Nakamura
+Q294548,Q2664662,teacher_of,infobox:teacher | wikidata:P1066 | wikidata:P802,high,Mas Oyama,Mas Oyama,Shokei Matsui,Shokei Matsui
+Q294548,Q4701154,teacher_of,wikidata:P802,high,Mas Oyama,Mas Oyama,Akira Masuda,Akira Masuda
+Q294548,Q6378060,teacher_of,wikidata:P802,high,Mas Oyama,Mas Oyama,Katsuaki Satō,Katsuaki Sato
+Q294548,Q6884566,teacher_of,infobox:teacher | wikidata:P1066 | wikidata:P802,high,Mas Oyama,Mas Oyama,Miyuki Miura,Miyuki Miura
+Q294548,Q7173266,teacher_of,wikidata:P802,high,Mas Oyama,Mas Oyama,Peter Chong,Peter Chong
+Q294548,Q28466388,teacher_of,wikidata:P802,high,Mas Oyama,Mas Oyama,Brian Fitkin,Brian Fitkin
+Q294548,Q4057557,teacher_of,wikidata:P802,high,Mas Oyama,Mas Oyama,Takashi Azuma,Takashi Azuma
+Q294548,Q320773,teacher_of,infobox:teacher | wikidata:P1066 | wikidata:P802,high,Mas Oyama,Mas Oyama,Shigeru Ōyama,Shigeru Oyama
+Q294548,Q4340863,teacher_of,wikidata:P802,high,Mas Oyama,Mas Oyama,Yasuhiko Ōyama,Yasuhiko Oyama
+Q294548,Q11436963,teacher_of,wikidata:P802,high,Mas Oyama,Mas Oyama,Noboru Ōsawa,Noboru Osawa
+Q294548,Q11474560,teacher_of,wikidata:P802,high,Mas Oyama,Mas Oyama,Tatsuya Iwasaki,Tatsuya Iwasaki
+Q294548,Q11557545,teacher_of,wikidata:P802,high,Mas Oyama,Mas Oyama,Noriyasu Hamai,Noriyasu Hamai
+Q294548,Q11258528,teacher_of,wikidata:P802,high,Mas Oyama,Mas Oyama,Kenji Yamaki,Kenji Yamaki
+Q294548,Q2636225,teacher_of,wikidata:P802,high,Mas Oyama,Mas Oyama,Kazuyoshi Ishii,Kazuyoshi Ishii
+Q294548,Q11428483,teacher_of,wikidata:P802,high,Mas Oyama,Mas Oyama,Norichika Tsukamoto,Norichika Tsukamoto
+Q294548,Q132720,teacher_of,text_context:student_keyword,low,Mas Oyama,Mas Oyama,Yamanashi Prefecture,Yamanashi Prefecture
+Q16016038,Q1206086,teacher_of,text_context:student_keyword,low,Meitoku Yagi,Meitoku Yagi,Kumejima,Kumejima
+Q6130268,Q6884566,teacher_of,infobox:students | infobox:teacher | text_pattern:learned_from | wikidata:P1066 | wikidata:P802,high,Yoshiji Soeno,Yoshiji Soeno,Miyuki Miura,Miyuki Miura
+Q3984847,Q6884566,teacher_of,infobox:teacher,medium,Terutomo Yamazaki,Terutomo Yamazaki,Miyuki Miura,Miyuki Miura
+Q2599967,Q7614483,teacher_of,wikidata:P802,high,Morio Higaonna,Morio Higaonna,Steven Bellamy,Steven Bellamy
+Q715769,Q6956791,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Matsumura Sōkon,Matsumura Sokon,Nabe Matsumura,Nabe Matsumura
+Q7350475,Q7924865,teacher_of,wikidata:P802,high,Robert Trias,Robert Trias,Vic Moore,Vic Moore
+Q7350475,Q5176649,teacher_of,infobox:students,medium,Robert Trias,Robert Trias,Count Dante,Count Dante
+Q954330,Q584466,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Ryū Ryū Ko,Ryu Ryu Ko,Arakaki Seishō,Arakaki Seisho
+Q1963468,Q7446670,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Shōshin Nagamine,Shoshin Nagamine,Seigi Nakamura,Seigi Nakamura
+Q7446670,Q5104212,teacher_of,infobox:students | wikidata:P802,high,Seigi Nakamura,Seigi Nakamura,Chokei Kishaba,Chokei Kishaba
+Q7446670,Q6378081,teacher_of,infobox:students,medium,Seigi Nakamura,Seigi Nakamura,Katsuhiko Shinzato,Katsuhiko Shinzato
+Q7446670,Q7827674,teacher_of,infobox:students | infobox:teacher,medium,Seigi Nakamura,Seigi Nakamura,Toshihiro Oshiro,Toshihiro Oshiro
+Q3482287,Q7446703,teacher_of,infobox:students | infobox:teacher | text_pattern:learned_from | wikidata:P1066 | wikidata:P802,high,Shinpan Gusukuma,Shinpan Gusukuma,Seiichi Iju,Seiichi Iju
+Q7446703,Q3482635,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Seiichi Iju,Seiichi Iju,Shūgorō Nakazato,Shugoro Nakazato
+Q1071733,Q7446703,teacher_of,text_pattern:learned_from,medium,Chōshin Chibana,Choshin Chibana,Seiichi Iju,Seiichi Iju
+Q117604,Q15987278,teacher_of,text_context:teacher_keyword,low,Nago,Nago,Seikichi Odo,Seikichi Odo
+Q7447367,Q3954660,teacher_of,text_context:teacher_keyword,low,Sekō Higa,Seko Higa,Seikichi Toguchi,Seikichi Toguchi
+Q7447367,Q16006586,teacher_of,infobox:students,medium,Sekō Higa,Seko Higa,Kanki Izumigawa,Kanki Izumigawa
+Q584466,Q2473562,teacher_of,infobox:students,medium,Arakaki Seishō,Arakaki Seisho,Kanbun Uechi,Kanbun Uechi
+Q584466,Q3772405,teacher_of,infobox:students,medium,Arakaki Seishō,Arakaki Seisho,Kanken Tōyama,Kanken Toyama
+Q584466,Q453505,teacher_of,infobox:students,medium,Arakaki Seishō,Arakaki Seisho,Kenwa Mabuni,Kenwa Mabuni
+Q584466,Q221121,teacher_of,text_context:student_keyword,low,Arakaki Seishō,Arakaki Seisho,Chōjun Miyagi,Chojun Miyagi
+Q3482287,Q7446770,teacher_of,wikidata:P802,high,Shinpan Gusukuma,Shinpan Gusukuma,Seikichi Iha,Seikichi Iha
+Q3482287,Q8056246,teacher_of,wikidata:P802,high,Shinpan Gusukuma,Shinpan Gusukuma,Yoshio Nakamura,Yoshio Nakamura
+Q3482287,Q907052,teacher_of,text_context:student_keyword,low,Shinpan Gusukuma,Shinpan Gusukuma,Shuri Castle,Shuri Castle
+Q3482287,Q1206796,teacher_of,text_context:student_keyword,low,Shinpan Gusukuma,Shinpan Gusukuma,Nishihara,Nishihara
+Q3482287,Q192660,teacher_of,text_context:student_keyword,low,Shinpan Gusukuma,Shinpan Gusukuma,Battle of Okinawa,Battle of Okinawa
+Q453505,Q3959901,teacher_of,infobox:teacher,medium,Kenwa Mabuni,Kenwa Mabuni,Shōgō Kuniba,Shogo Kuniba
+Q1372130,Q1060301,teacher_of,infobox:successor,medium,Shō Hashi,Sho Hashi,Shō Chū,Sho Chu
+Q11399569,Q2664662,teacher_of,wikidata:P1066,high,Shigeo Katō,Shigeo Kato,Shokei Matsui,Shokei Matsui
+Q2664662,Q11258528,teacher_of,wikidata:P802,high,Shokei Matsui,Shokei Matsui,Kenji Yamaki,Kenji Yamaki
+Q1963468,Q5104212,teacher_of,wikidata:P802,high,Shōshin Nagamine,Shoshin Nagamine,Chokei Kishaba,Chokei Kishaba
+Q1963468,Q4770567,teacher_of,wikidata:P802,high,Shōshin Nagamine,Shoshin Nagamine,Ansei Ueshiro,Ansei Ueshiro
+Q1963468,Q6378081,teacher_of,infobox:students | wikidata:P802,high,Shōshin Nagamine,Shoshin Nagamine,Katsuhiko Shinzato,Katsuhiko Shinzato
+Q1963468,Q7677484,teacher_of,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802,high,Shōshin Nagamine,Shoshin Nagamine,Takayoshi Nagamine,Takayoshi Nagamine
+Q1963468,Q715769,teacher_of,text_context:student_keyword,low,Shōshin Nagamine,Shoshin Nagamine,Matsumura Sōkon,Matsumura Sokon
+Q3482635,Q2025214,teacher_of,infobox:students | infobox:teacher | text_context:teacher_keyword | text_pattern:learned_from,medium,Shūgorō Nakazato,Shugoro Nakazato,Tadashi Yamashita,Tadashi Yamashita
+Q715769,Q99517310,teacher_of,wikidata:P802,high,Matsumura Sōkon,Matsumura Sokon,Chōfu Kyan,Chofu Kyan
+Q1493578,Q715769,teacher_of,infobox:teacher,medium,Chintō,Chinto,Matsumura Sōkon,Matsumura Sokon
+Q715769,Q961126,teacher_of,text_context:student_keyword,low,Matsumura Sōkon,Matsumura Sokon,Bōjutsu,Bojutsu
+Q2025214,Q7328577,teacher_of,wikidata:P802,high,Tadashi Yamashita,Tadashi Yamashita,Richard Rabago,Richard Rabago
+Q1908090,Q2025214,teacher_of,infobox:teacher,medium,Matayoshi Shinpō,Matayoshi Shinpo,Tadashi Yamashita,Tadashi Yamashita
+Q2025214,Q3482635,teacher_of,text_context:student_keyword,low,Tadashi Yamashita,Tadashi Yamashita,Shūgorō Nakazato,Shugoro Nakazato
+Q6078918,Q1360025,teacher_of,infobox:teacher,medium,Isao Obata,Isao Obata,Taiji Kase,Taiji Kase
+Q1360025,Q932795,teacher_of,text_context:student_keyword,low,Taiji Kase,Taiji Kase,kumite,kumite
+Q1360025,Q896129,teacher_of,text_context:student_keyword,low,Taiji Kase,Taiji Kase,Hideo Ochi,Hideo Ochi
+Q1360025,Q471629,teacher_of,text_context:student_keyword,low,Taiji Kase,Taiji Kase,Hirokazu Kanazawa,Hirokazu Kanazawa
+Q1360025,Q713750,teacher_of,text_context:student_keyword,low,Taiji Kase,Taiji Kase,West Germany,West Germany
+Q598665,Q95043,teacher_of,infobox:students | wikidata:P802,high,Takayuki Kubota,Takayuki Kubota,James Caan,James Caan
+Q598665,Q2673,teacher_of,infobox:students,medium,Takayuki Kubota,Takayuki Kubota,Chuck Norris,Chuck Norris
+Q598665,Q131359,teacher_of,text_context:student_keyword | text_pattern:taught,medium,Takayuki Kubota,Takayuki Kubota,professional wrestling,professional wrestling
+Q598665,Q3274794,teacher_of,text_context:student_keyword,low,Takayuki Kubota,Takayuki Kubota,Camp Zama,Camp Zama
+Q598665,Q127513,teacher_of,text_context:student_keyword,low,Takayuki Kubota,Takayuki Kubota,Kanagawa Prefecture,Kanagawa Prefecture
+Q598665,Q38283,teacher_of,text_context:student_keyword,low,Takayuki Kubota,Takayuki Kubota,Yokohama,Yokohama
+Q27363,Q4763171,teacher_of,wikidata:P802,high,Tatsuo Shimabuku,Tatsuo Shimabuku,Angi Uezu,Angi Uezu
+Q27363,Q5661611,teacher_of,wikidata:P802,high,Tatsuo Shimabuku,Tatsuo Shimabuku,Harold M. Mitchum,Harold M Mitchum
+Q723832,Q27363,teacher_of,infobox:teacher,medium,Taira Shinken,Taira Shinken,Tatsuo Shimabuku,Tatsuo Shimabuku
+Q27363,Q4785266,teacher_of,infobox:students,medium,Tatsuo Shimabuku,Tatsuo Shimabuku,Arcenio James Advincula,Arcenio James Advincula
+Q11064618,Q27363,teacher_of,text_context:teacher_keyword,low,bō,bo,Tatsuo Shimabuku,Tatsuo Shimabuku
+Q3984846,Q40795,teacher_of,text_context:student_keyword,low,Teruo Chinen,Teruo Chinen,kata,kata
+Q2915906,Q709520,teacher_of,infobox:teacher | wikidata:P1066 | wikidata:P802,high,Teruyuki Okazaki,Teruyuki Okazaki,Tetsuhiko Asai,Tetsuhiko Asai
+Q2915906,Q5490474,teacher_of,infobox:students,medium,Teruyuki Okazaki,Teruyuki Okazaki,Frank Woon-a-tai,Frank Woon-a-tai
+Q709520,Q7397534,teacher_of,infobox:students,medium,Tetsuhiko Asai,Tetsuhiko Asai,Sadamu Uriu,Sadamu Uriu
+Q97666381,Q7800728,teacher_of,wikidata:P1066,high,Tatsuo Suzuki,Tatsuo Suzuki,Ticky Donovan,Ticky Donovan
+Q471629,Q7800728,teacher_of,infobox:teacher,medium,Hirokazu Kanazawa,Hirokazu Kanazawa,Ticky Donovan,Ticky Donovan
+Q716133,Q7800728,teacher_of,infobox:teacher,medium,Keinosuke Enoeda,Keinosuke Enoeda,Ticky Donovan,Ticky Donovan
+Q294548,Q7800728,teacher_of,infobox:teacher,medium,Mas Oyama,Mas Oyama,Ticky Donovan,Ticky Donovan
+Q6078918,Q2619054,teacher_of,wikidata:P1066,high,Isao Obata,Isao Obata,Tsutomu Ohshima,Tsutomu Ohshima
+Q1246030,Q2619054,teacher_of,infobox:teacher,medium,Shigeru Egami,Shigeru Egami,Tsutomu Ohshima,Tsutomu Ohshima
+Q584466,Q135222893,teacher_of,infobox:teacher,medium,Arakaki Seishō,Arakaki Seisho,Tsuyoshi Chitose,Tsuyoshi Chitose
+Q699236,Q135222893,teacher_of,infobox:teacher,medium,Higaonna Kanryō,Higaonna Kanryo,Tsuyoshi Chitose,Tsuyoshi Chitose
+Q2393877,Q135222893,teacher_of,infobox:teacher,medium,Chōtoku Kyan,Chotoku Kyan,Tsuyoshi Chitose,Tsuyoshi Chitose
+Q705617,Q135222893,teacher_of,infobox:teacher,medium,Chōmo Hanashiro,Chomo Hanashiro,Tsuyoshi Chitose,Tsuyoshi Chitose
+Q706389,Q135222893,teacher_of,infobox:teacher,medium,Motobu Chōyū,Motobu Choyu,Tsuyoshi Chitose,Tsuyoshi Chitose
+Q135222893,Q6782529,teacher_of,infobox:students,medium,Tsuyoshi Chitose,Tsuyoshi Chitose,Masami Tsuruoka,Masami Tsuruoka
+Q135222893,Q5728406,teacher_of,infobox:students,medium,Tsuyoshi Chitose,Tsuyoshi Chitose,Henry Slomanski,Henry Slomanski
+Q135222893,Q478958,teacher_of,text_context:student_keyword,low,Tsuyoshi Chitose,Tsuyoshi Chitose,Western culture,Western culture
+Q135222893,Q7129609,teacher_of,text_context:student_keyword,low,Tsuyoshi Chitose,Tsuyoshi Chitose,Caucasian race,Caucasian race
+Q135222893,Q6830460,teacher_of,text_context:student_keyword,low,Tsuyoshi Chitose,Tsuyoshi Chitose,Michael G. Foster,Michael G Foster
+Q1147708,Q4351940,teacher_of,infobox:teacher,medium,Motobu Chōki,Motobu Choki,Yasuhiro Konishi,Yasuhiro Konishi
+Q453505,Q4351940,teacher_of,infobox:teacher,medium,Kenwa Mabuni,Kenwa Mabuni,Yasuhiro Konishi,Yasuhiro Konishi
+Q182130,Q4351940,teacher_of,infobox:teacher | text_pattern:learned_from,medium,Morihei Ueshiba,Morihei Ueshiba,Yasuhiro Konishi,Yasuhiro Konishi
+Q221121,Q4351940,teacher_of,infobox:teacher,medium,Chōjun Miyagi,Chojun Miyagi,Yasuhiro Konishi,Yasuhiro Konishi
+Q1071733,Q4351940,teacher_of,infobox:teacher,medium,Chōshin Chibana,Choshin Chibana,Yasuhiro Konishi,Yasuhiro Konishi
+Q4351940,Q535906,teacher_of,infobox:students,medium,Yasuhiro Konishi,Yasuhiro Konishi,Sho Kosugi,Sho Kosugi
+Q4351940,Q716152,teacher_of,infobox:students,medium,Yasuhiro Konishi,Yasuhiro Konishi,Shoji Nishio,Shoji Nishio
+Q1465287,Q4351940,teacher_of,text_context:teacher_keyword,low,Pinan,Pinan,Yasuhiro Konishi,Yasuhiro Konishi
+Q6130268,Q703827,teacher_of,wikidata:P802,high,Yoshiji Soeno,Yoshiji Soeno,Mitsuharu Misawa,Mitsuharu Misawa
+Q6130268,Q3025412,teacher_of,wikidata:P802,high,Yoshiji Soeno,Yoshiji Soeno,Toshiaki Kawada,Toshiaki Kawada
+Q6130268,Q1192158,teacher_of,infobox:students,medium,Yoshiji Soeno,Yoshiji Soeno,Yasunori Matsumoto,Yasunori Matsumoto
+Q6130268,Q11263313,teacher_of,infobox:students,medium,Yoshiji Soeno,Yoshiji Soeno,Makoto Uehara,Makoto Uehara
+Q345012,Q7953,teacher_of,text_pattern:learned_from,medium,Huineng,Huineng,Zen,Zen
+Q7953,Q7953,teacher_of,text_context:student_keyword,low,Zen,Zen,Zen,Zen
+Q7953,Q849649,teacher_of,text_context:student_keyword,low,Zen,Zen,wisdom in Buddhism,wisdom in Buddhism
+Q7953,Q3118758,teacher_of,text_context:student_keyword,low,Zen,Zen,Guan Xiu,Guan Xiu
+Q7953,Q3048317,teacher_of,text_context:student_keyword,low,Zen,Zen,Muqi,Muqi
+Q1207591,Q7953,teacher_of,text_context:teacher_keyword,low,dharma transmission,dharma transmission,Zen,Zen

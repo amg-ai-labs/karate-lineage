@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "The Lineage of Karate and Taekwondo"
+message: "If you use this dataset or visualisation, please cite it."
+type: dataset
+authors:
+  - family-names: Guni
+    given-names: Ahmad
+    affiliation: "Institute of Global Health Innovation, Imperial College London"
+abstract: >-
+  A source-checked instructor-to-student cladogram of karate, kobudo and
+  taekwondo: 973 people, 1,264 links and 187 styles across seventeen
+  generations. Every link is graded by evidence strength and carries its
+  sources; contested claims are recorded as contested.
+keywords:
+  - karate
+  - taekwondo
+  - kobudo
+  - lineage
+  - martial arts history
+  - Okinawa
+license: CC-BY-4.0
+repository-code: "https://github.com/amg-ai-labs/karate-lineage"
+date-released: 2026-07-13

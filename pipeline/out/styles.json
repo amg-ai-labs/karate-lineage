@@ -1,0 +1,2485 @@
+{
+ "styles": [
+  {
+   "aliases": [
+    "Aikikai",
+    "Dan Aikikai"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "aikido",
+   "label": "Aikido",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "American Karate"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "american-karate",
+   "label": "American Karate",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "American Kenpo",
+    "American Kenpo Karate",
+    "american-kenpo",
+    "ed-parker-kenpo",
+    "kenpo-karate"
+   ],
+   "family": "kenpo",
+   "founded": 1954,
+   "founder": "Ed Parker",
+   "id": "american-kenpo",
+   "label": "American Kenpo",
+   "parent": "kara-ho-kempo"
+  },
+  {
+   "aliases": [
+    "Ashihara Karate",
+    "Ashihara kaikan",
+    "New International Karate Organization"
+   ],
+   "family": "kyokushin",
+   "founded": 1980,
+   "founder": "Hideyuki Ashihara",
+   "id": "ashihara",
+   "label": "Ashihara Karate",
+   "parent": "kyokushin"
+  },
+  {
+   "aliases": [
+    "Bugeikan",
+    "bugeikan"
+   ],
+   "family": "te",
+   "founded": 1951,
+   "founder": "Higa Seitoku",
+   "id": "bugeikan",
+   "label": "Bugeikan",
+   "parent": "te"
+  },
+  {
+   "aliases": [
+    "Okinawa Dentō Kobudō Hozonkai Bunbukan"
+   ],
+   "family": "kobudo",
+   "founded": 1982,
+   "founder": "Nakamoto Masahiro",
+   "id": "bunbukan",
+   "label": "Okinawa Dentō Kobudō Hozonkai Bunbukan",
+   "parent": "ryukyu-kobudo"
+  },
+  {
+   "aliases": [
+    "Bushido Kai Karate"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "bushido-kai",
+   "label": "Bushido Kai Karate",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Chang Moo Kwan",
+    "Changmookwan",
+    "YMCA Kwon Bup Bu"
+   ],
+   "family": "korean",
+   "founded": 1946,
+   "founder": "Yoon Byung-in",
+   "id": "chang-moo-kwan",
+   "label": "Chang Moo Kwan",
+   "parent": "taekwondo"
+  },
+  {
+   "aliases": [
+    "Chinese Gōjū",
+    "chinese-goju"
+   ],
+   "family": "naha-te",
+   "founded": 1971,
+   "founder": "Ron Van Clief",
+   "id": "chinese-goju",
+   "label": "Chinese Gōjū",
+   "parent": "usa-goju"
+  },
+  {
+   "aliases": [
+    "Chinese Martial Arts"
+   ],
+   "family": "chinese",
+   "founded": null,
+   "founder": null,
+   "id": "chinese-martial-arts",
+   "label": "Chinese Martial Arts",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Chito-Ryu",
+    "Chito-kai",
+    "Chitoryu",
+    "chitoryu"
+   ],
+   "family": "japanese",
+   "founded": 1946,
+   "founder": "Tsuyoshi Chitose",
+   "id": "chito-ryu",
+   "label": "Chito-Ryu",
+   "parent": "shuri-te"
+  },
+  {
+   "aliases": [
+    "Ch'uan Fa",
+    "Chuan Fa",
+    "Quan Fa"
+   ],
+   "family": "chinese",
+   "founded": null,
+   "founder": null,
+   "id": "chuan-fa",
+   "label": "Chuan Fa",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Chuck Norris Syste",
+    "Chun Kuk Do was renamed to the Chuck Norris Syste",
+    "chuck-norris-system",
+    "chun-kuk-do"
+   ],
+   "family": "korean",
+   "founded": 1990,
+   "founder": "Chuck Norris",
+   "id": "chun-kuk-do",
+   "label": "Chun Kuk Do",
+   "parent": "tang-soo-do"
+  },
+  {
+   "aliases": [
+    "Chung Do Kwan",
+    "Chungdokwan"
+   ],
+   "family": "korean",
+   "founded": 1944,
+   "founder": "Won Kuk Lee",
+   "id": "chung-do-kwan",
+   "label": "Chung Do Kwan",
+   "parent": "taekwondo"
+  },
+  {
+   "aliases": [
+    "Dai Nippon Butokukai"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "dai-nippon-butokukai",
+   "label": "Dai Nippon Butokukai",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Daito-ryu",
+    "Daito-ryu Aiki-jujutsu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "daito-ryu",
+   "label": "Daito-Ryu Aiki-jujutsu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Enshin Karate",
+    "Sabaki Challenge"
+   ],
+   "family": "kyokushin",
+   "founded": 1988,
+   "founder": "Jōkō Ninomiya",
+   "id": "enshin",
+   "label": "Enshin Karate",
+   "parent": "ashihara"
+  },
+  {
+   "aliases": [
+    "Fujian White",
+    "Fujian White Crane",
+    "White Crane"
+   ],
+   "family": "chinese",
+   "founded": null,
+   "founder": null,
+   "id": "fujian-white-crane",
+   "label": "Fujian White Crane",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Full contact karate",
+    "Knockdown karate"
+   ],
+   "family": "kyokushin",
+   "founded": null,
+   "founder": null,
+   "id": "full-contact-karate",
+   "label": "Full Contact Karate",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Demura-ha Shitō-ryū Genbu-kai",
+    "Genbu-Kai",
+    "Shito-Ryu Karate-Do Genbu-Kai International"
+   ],
+   "family": "japanese",
+   "founded": 1999,
+   "founder": "Fumio Demura",
+   "id": "genbu-kai",
+   "label": "Demura-ha Shitō-ryū Genbu-kai",
+   "parent": "itosu-ryu"
+  },
+  {
+   "aliases": [
+    "Gensei-ryu",
+    "Genseiryū",
+    "gensei-ryu"
+   ],
+   "family": "shuri-te",
+   "founded": 1953,
+   "founder": "Shukumine Seiken",
+   "id": "genseiryu",
+   "label": "Genseiryū",
+   "parent": "shuri-te"
+  },
+  {
+   "aliases": [
+    "Goju-Kai",
+    "Gojukai",
+    "IKGA",
+    "JKGA",
+    "goju-kai",
+    "gojukai",
+    "剛柔会"
+   ],
+   "family": "naha-te",
+   "founded": 1950,
+   "founder": "Gogen Yamaguchi",
+   "id": "goju-kai",
+   "label": "Goju-Kai",
+   "parent": "goju-ryu"
+  },
+  {
+   "aliases": [
+    "Gōjū-Kai Karate-dō USA",
+    "goju-kai-usa"
+   ],
+   "family": "naha-te",
+   "founded": 1964,
+   "founder": "Gosei Yamaguchi",
+   "id": "goju-kai-usa",
+   "label": "Gōjū-Kai Karate-dō USA",
+   "parent": "goju-kai"
+  },
+  {
+   "aliases": [
+    "Gōjū Kensha",
+    "goju-kensha",
+    "gojukensha",
+    "剛柔拳舎"
+   ],
+   "family": "naha-te",
+   "founded": 1970,
+   "founder": "Tadahiko Otsuka",
+   "id": "goju-kensha",
+   "label": "Gōjū Kensha",
+   "parent": "senbukan"
+  },
+  {
+   "aliases": [
+    "Goju Kan",
+    "Goju Ryu",
+    "Goju-Ryu",
+    "Goju-Ryu Karate-do Kyokai",
+    "Goju-ryu karate",
+    "Gojuryu",
+    "International Okinawan Goju-Ryu Karate-do Federation",
+    "goju-ryu",
+    "gojukan",
+    "gojuryu",
+    "gojuryukenkyukai",
+    "kenshikai",
+    "nisei-goju",
+    "shobukan",
+    "剛柔流"
+   ],
+   "family": "naha-te",
+   "founded": 1930,
+   "founder": "Chojun Miyagi",
+   "id": "goju-ryu",
+   "label": "Goju-Ryu",
+   "parent": "naha-te"
+  },
+  {
+   "aliases": [
+    "Goshukan",
+    "goshukan"
+   ],
+   "family": "naha-te",
+   "founded": 2007,
+   "founder": "Stacey Karetsian",
+   "id": "goshukan",
+   "label": "Goshukan",
+   "parent": "seiwakai"
+  },
+  {
+   "aliases": [
+    "Gosoku Ryu",
+    "Gosoku RyuBackground",
+    "Gosoku-ryu",
+    "Gosoku-ryuBackground",
+    "International Karate Association"
+   ],
+   "family": "japanese",
+   "founded": 1953,
+   "founder": "Takayuki Kubota",
+   "id": "gosoku-ryu",
+   "label": "Gosoku-Ryu",
+   "parent": "shotokan"
+  },
+  {
+   "aliases": [
+    "Han Moo Kwan",
+    "Hanmookwan"
+   ],
+   "family": "korean",
+   "founded": 1954,
+   "founder": "Lee Kyo-yoon",
+   "id": "han-moo-kwan",
+   "label": "Han Moo Kwan",
+   "parent": "ji-do-kwan"
+  },
+  {
+   "aliases": [
+    "Hayashi-Ha Shitoryu-Kai",
+    "hayashi-ha-shito-ryu"
+   ],
+   "family": "japanese",
+   "founded": 1970,
+   "founder": "Teruo Hayashi",
+   "id": "hayashi-ha-shito-ryu",
+   "label": "Hayashi-ha Shitō-ryū",
+   "parent": "shito-ryu"
+  },
+  {
+   "aliases": [
+    "Hokushin Itto-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "hokushin-itto-ryu",
+   "label": "Hokushin Itto-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Hozoin-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "hozoin-ryu",
+   "label": "Hozoin-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Inoue-ha Shito-ryu",
+    "Inoue-ha Shitō-ryū Keishin-kai",
+    "Keishin-kai"
+   ],
+   "family": "japanese",
+   "founded": 2004,
+   "founder": "Yoshimi Inoue",
+   "id": "inoue-ha-shito-ryu",
+   "label": "Inoue-ha Shitō-ryū Keishin-kai",
+   "parent": "hayashi-ha-shito-ryu"
+  },
+  {
+   "aliases": [
+    "IOGKF (International Okinawan Gōjū-ryū Karate-dō Federation)",
+    "iogkf"
+   ],
+   "family": "naha-te",
+   "founded": 1979,
+   "founder": "Morio Higaonna",
+   "id": "iogkf",
+   "label": "IOGKF (International Okinawan Gōjū-ryū Karate-dō Federation)",
+   "parent": "goju-ryu"
+  },
+  {
+   "aliases": [
+    "ISSHINRYU",
+    "Isshin-Ryu",
+    "Isshinkai",
+    "Isshinryu",
+    "isshinkai",
+    "isshinryu"
+   ],
+   "family": "shuri-te",
+   "founded": 1956,
+   "founder": "Tatsuo Shimabuku",
+   "id": "isshin-ryu",
+   "label": "Isshin-Ryu",
+   "parent": "shorin-ryu"
+  },
+  {
+   "aliases": [
+    "Isshin-ryū Kobudō"
+   ],
+   "family": "kobudo",
+   "founded": null,
+   "founder": "Shimabuku Tatsuo",
+   "id": "isshin-ryu-kobudo",
+   "label": "Isshin-ryū Kobudō",
+   "parent": "ryukyu-kobudo"
+  },
+  {
+   "aliases": [
+    "Chang Hon taekwondo",
+    "ITF Taekwon-Do",
+    "International Taekwon-Do Federation"
+   ],
+   "family": "korean",
+   "founded": 1966,
+   "founder": "Choi Hong-hi",
+   "id": "itf-taekwondo",
+   "label": "ITF Taekwon-Do",
+   "parent": "taekwondo"
+  },
+  {
+   "aliases": [
+    "Itosu Ryu",
+    "Itosu-kai",
+    "Japan Karatedo Itosu-kai"
+   ],
+   "family": "japanese",
+   "founded": 1969,
+   "founder": "Ryusho Sakagami",
+   "id": "itosu-ryu",
+   "label": "Itosu-Ryu",
+   "parent": "shito-ryu"
+  },
+  {
+   "aliases": [
+    "Japanese Karate"
+   ],
+   "family": "japanese",
+   "founded": null,
+   "founder": null,
+   "id": "japanese-karate-generic",
+   "label": "Japanese Karate",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Ji Do Kwan",
+    "Jidokwan",
+    "Yun Mu Kwan"
+   ],
+   "family": "korean",
+   "founded": 1946,
+   "founder": "Chun Sang-sup (as Chosun Yun Mu Kwan Kwon Bup Bu; renamed Jidokwan under Yun Kwae-byung, 1953)",
+   "id": "ji-do-kwan",
+   "label": "Ji Do Kwan",
+   "parent": "taekwondo"
+  },
+  {
+   "aliases": [
+    "Jigen-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "jigen-ryu",
+   "label": "Jigen-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Kodokan",
+    "Kodokan Judo"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "judo",
+   "label": "Judo",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Jundokan",
+    "jundokan",
+    "順道館"
+   ],
+   "family": "naha-te",
+   "founded": 1957,
+   "founder": "Eiichi Miyazato",
+   "id": "jundokan",
+   "label": "Jundokan",
+   "parent": "goju-ryu"
+  },
+  {
+   "aliases": [
+    "Jung Do Kwan",
+    "Jungdokwan"
+   ],
+   "family": "korean",
+   "founded": 1956,
+   "founder": "Lee Yong-woo",
+   "id": "jung-do-kwan",
+   "label": "Jung Do Kwan",
+   "parent": "chung-do-kwan"
+  },
+  {
+   "aliases": [
+    "Kajukenbo",
+    "kajukembo",
+    "kajukenbo"
+   ],
+   "family": "kenpo",
+   "founded": 1947,
+   "founder": "Adriano Emperado (with Peter Y. Y. Choo, Joseph Holck, Frank Ordonez, Clarence Chang)",
+   "id": "kajukenbo",
+   "label": "Kajukenbo",
+   "parent": "kara-ho-kempo"
+  },
+  {
+   "aliases": [
+    "Kang Duk Won",
+    "Kangdukwon"
+   ],
+   "family": "korean",
+   "founded": 1956,
+   "founder": "Park Chul-hee and Hong Jong-pyo",
+   "id": "kang-duk-won",
+   "label": "Kang Duk Won",
+   "parent": "chang-moo-kwan"
+  },
+  {
+   "aliases": [
+    "Kara-Ho Kempo",
+    "chinese-kara-ho-kempo",
+    "kara-ho-kempo"
+   ],
+   "family": "kenpo",
+   "founded": 1944,
+   "founder": "William Kwai Sun Chow",
+   "id": "kara-ho-kempo",
+   "label": "Kara-Ho Kempo",
+   "parent": "kosho-shorei-ryu"
+  },
+  {
+   "aliases": [
+    "Brazilian Association of Karate",
+    "Dan Karate",
+    "Dan karate",
+    "Karate"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "karate-generic",
+   "label": "Karate",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Katori Shinto-ryu",
+    "Tenshin Shoden Katori Shinto-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "katori-shinto-ryu",
+   "label": "Tenshin Shoden Katori Shinto-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Kawata-ha Seikukai Karate",
+    "Kawata-ha Seikūkai",
+    "Seikukai"
+   ],
+   "family": "japanese",
+   "founded": 1998,
+   "founder": "Shigemasa Kawata",
+   "id": "kawata-ha-seikukai",
+   "label": "Kawata-ha Seikūkai",
+   "parent": "shukokai"
+  },
+  {
+   "aliases": [
+    "Keijutsukai",
+    "Keijutsukai Aikido"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "keijutsukai-aikido",
+   "label": "Keijutsukai Aikido",
+   "parent": "aikido"
+  },
+  {
+   "aliases": [
+    "Kempo",
+    "Kempo Karate",
+    "Kenpo",
+    "Kenpo Karate",
+    "Kenpo-Shotokan"
+   ],
+   "family": "kenpo",
+   "founded": null,
+   "founder": null,
+   "id": "kenpo",
+   "label": "Kenpo",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Kenshikai",
+    "kenshi-kai",
+    "研心会"
+   ],
+   "family": "naha-te",
+   "founded": 1978,
+   "founder": "Tetsuhiro Hokama",
+   "id": "kenshikai",
+   "label": "Kenshikai",
+   "parent": "goju-ryu"
+  },
+  {
+   "aliases": [
+    "Kenshin Kan",
+    "Shōrin-ryū Kenshin-kan"
+   ],
+   "family": "shuri-te",
+   "founded": 1977,
+   "founder": "Fusei Kise",
+   "id": "kenshinkan",
+   "label": "Shōrin-ryū Kenshin-kan",
+   "parent": "matsumura-seito"
+  },
+  {
+   "aliases": [
+    "Kenyū-ryū",
+    "賢友流空手道"
+   ],
+   "family": "japanese",
+   "founded": 1939,
+   "founder": "Takamasa Tomoyose",
+   "id": "kenyu-ryu",
+   "label": "Kenyū-ryū",
+   "parent": "shito-ryu"
+  },
+  {
+   "aliases": [
+    "KSI",
+    "Kimura Shukokai International",
+    "Kimura Shūkōkai"
+   ],
+   "family": "japanese",
+   "founded": 1996,
+   "founder": "Shigeru Kimura",
+   "id": "kimura-shukokai",
+   "label": "Kimura Shūkōkai",
+   "parent": "shukokai"
+  },
+  {
+   "aliases": [
+    "Kingai-ryū"
+   ],
+   "family": "kobudo",
+   "founded": null,
+   "founder": "Matayoshi Shinkō (from his teacher, the monk Kingai of Fuzhou)",
+   "id": "kingai-ryu",
+   "label": "Kingai-ryū",
+   "parent": "matayoshi-kobudo"
+  },
+  {
+   "aliases": [
+    "KishimotoDi",
+    "Tachimura-ha Shuri-te",
+    "kishimoto-di"
+   ],
+   "family": "shuri-te",
+   "founded": null,
+   "founder": "Kishimoto Sōkō (lineage from Tachimura no Pēchin)",
+   "id": "kishimoto-di",
+   "label": "KishimotoDi",
+   "parent": "shuri-te"
+  },
+  {
+   "aliases": [
+    "Kito-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "kito-ryu",
+   "label": "Kito-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Kobayashi Shorin-Ryu",
+    "Kobayashi Shorin-ryu Karate",
+    "Kobayashi-ryu",
+    "KobayashiShorin-ryu",
+    "Shorin-ryu Kobayashi"
+   ],
+   "family": "shuri-te",
+   "founded": 1933,
+   "founder": "Chōshin Chibana",
+   "id": "kobayashi-shorin-ryu",
+   "label": "Kobayashi Shorin-Ryu",
+   "parent": "shorin-ryu"
+  },
+  {
+   "aliases": [
+    "Koeikan Karate-do",
+    "koei-kan"
+   ],
+   "family": "japanese",
+   "founded": 1952,
+   "founder": "Eizo Onishi",
+   "id": "koei-kan",
+   "label": "Kōei-kan",
+   "parent": "shudokan"
+  },
+  {
+   "aliases": [
+    "Koga-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "koga-ryu",
+   "label": "Koga-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Kojo-ryu",
+    "Kojō-ryū",
+    "Koshokan"
+   ],
+   "family": "te",
+   "founded": 1700,
+   "founder": "Kojō Uēkata (Cai Zhaogong, 1656–1737)",
+   "id": "kojo-ryu",
+   "label": "Kojō-ryū",
+   "parent": "te"
+  },
+  {
+   "aliases": [
+    "Kōnan-ryū",
+    "Pangainoon-ryu (Itokazu)"
+   ],
+   "family": "uechi-ryu",
+   "founded": 1978,
+   "founder": "Itokazu Seiki (with Kinjō Takashi)",
+   "id": "konan-ryu",
+   "label": "Kōnan-ryū",
+   "parent": "uechi-ryu"
+  },
+  {
+   "aliases": [
+    "Korean Martial Arts"
+   ],
+   "family": "korean",
+   "founded": null,
+   "founder": null,
+   "id": "korean-martial-arts",
+   "label": "Korean Martial Arts",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "James MitoseKosho Shorei-Ryu Kenpo",
+    "Kosho Shorei-Ryu Kenpo",
+    "Kosho Shorei-ryu",
+    "kenpo-jiu-jitsu",
+    "kosho-ryu-kenpo",
+    "kosho-shorei-ryu"
+   ],
+   "family": "kenpo",
+   "founded": 1936,
+   "founder": "James Mitose",
+   "id": "kosho-shorei-ryu",
+   "label": "Kosho Shorei-Ryu Kenpo",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "International Karate Federation (Hawaii)",
+    "Kotaka-ha Shitō-ryū"
+   ],
+   "family": "japanese",
+   "founded": 1966,
+   "founder": "Chuzo Kotaka",
+   "id": "kotaka-ha-shito-ryu",
+   "label": "Kotaka-ha Shitō-ryū",
+   "parent": "motobu-ha-shito-ryu"
+  },
+  {
+   "aliases": [
+    "Daido Juku",
+    "Daido Juku Kudo",
+    "Kakuto Karate",
+    "Kudo"
+   ],
+   "family": "kyokushin",
+   "founded": 1981,
+   "founder": "Takashi Azuma",
+   "id": "kudo",
+   "label": "Kudo",
+   "parent": "kyokushin"
+  },
+  {
+   "aliases": [
+    "Kukki Taekwondo (WT)",
+    "Kukkiwon taekwondo",
+    "WTF taekwondo",
+    "World Taekwondo"
+   ],
+   "family": "korean",
+   "founded": 1972,
+   "founder": "Korea Taekwondo Association kwans (collective); Kukkiwon established 1972",
+   "id": "kukki-taekwondo",
+   "label": "Kukki Taekwondo (WT)",
+   "parent": "taekwondo"
+  },
+  {
+   "aliases": [
+    "Kung Fu"
+   ],
+   "family": "chinese",
+   "founded": null,
+   "founder": null,
+   "id": "kung-fu",
+   "label": "Kung Fu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Kuniba-ha Shitō-ryū (Kuniba-kai)",
+    "Kuniba-ryu Karate-Do",
+    "Nihon Karate-do Kuniba-kai"
+   ],
+   "family": "japanese",
+   "founded": 1992,
+   "founder": "Shogo Kuniba",
+   "id": "kuniba-ha",
+   "label": "Kuniba-ha Shitō-ryū (Kuniba-kai)",
+   "parent": "motobu-ha-shito-ryu"
+  },
+  {
+   "aliases": [
+    "Kushin Ryu M Karate Do",
+    "Kushin-Ryu"
+   ],
+   "family": "japanese",
+   "founded": 1932,
+   "founder": "Sannosuke Ueshima",
+   "id": "kushin-ryu",
+   "label": "Kushin-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Kuyūkai",
+    "ku-yu-kai",
+    "kuyukai"
+   ],
+   "family": "naha-te",
+   "founded": 1985,
+   "founder": "Osamu Hirano",
+   "id": "kuyukai",
+   "label": "Kuyūkai",
+   "parent": "goju-kai"
+  },
+  {
+   "aliases": [
+    "Dan Black Belt in Kyokushin Karate",
+    "IKO",
+    "KYOKUSHINKAI",
+    "KYOKUSHINKAIKAN",
+    "Kazumi Karate",
+    "Kyokushin",
+    "Kyokushin Kaikan",
+    "Kyokushin Karate",
+    "Kyokushin kaikan",
+    "Kyokushin karate",
+    "Kyokushin-kai",
+    "Kyokushinkai",
+    "Kyokushinkaikan",
+    "kyokushinkai",
+    "kyokushinkaikan"
+   ],
+   "family": "kyokushin",
+   "founded": 1964,
+   "founder": "Masutatsu (Mas) Ōyama",
+   "id": "kyokushin",
+   "label": "Kyokushin",
+   "parent": "shotokan"
+  },
+  {
+   "aliases": [
+    "IBK",
+    "International Budo Kaikan",
+    "International Kyokushin Budokai",
+    "Kyokushin Budokai"
+   ],
+   "family": "kyokushin",
+   "founded": null,
+   "founder": "Jon Bluming",
+   "id": "kyokushin-budokai",
+   "label": "Kyokushin Budokai",
+   "parent": "kyokushin"
+  },
+  {
+   "aliases": [
+    "Kyokushin-kan",
+    "Kyokushin-kan Inte",
+    "Kyokushin-kan Karate",
+    "Kyokushinkan",
+    "Kyokushinkan International",
+    "kyokushinkan"
+   ],
+   "family": "kyokushin",
+   "founded": 2003,
+   "founder": "Hatsuo Royama (with Tsuyoshi Hiroshige)",
+   "id": "kyokushin-kan",
+   "label": "Kyokushin-kan",
+   "parent": "kyokushin"
+  },
+  {
+   "aliases": [
+    "Matayoshi Kobudo",
+    "matayoshi-kobudo"
+   ],
+   "family": "kobudo",
+   "founded": 1960,
+   "founder": "Matayoshi Shinkō",
+   "id": "matayoshi-kobudo",
+   "label": "Matayoshi Kobudo",
+   "parent": "okinawan-kobudo"
+  },
+  {
+   "aliases": [
+    "Matsubayashi-Ryu",
+    "World Matsubayashi-ryu",
+    "shogen-ryu"
+   ],
+   "family": "shuri-te",
+   "founded": 1947,
+   "founder": "Shōshin Nagamine",
+   "id": "matsubayashi-ryu",
+   "label": "Matsubayashi-Ryu",
+   "parent": "shorin-ryu"
+  },
+  {
+   "aliases": [
+    "Kenshinkan",
+    "Konan-ryu",
+    "Matsumura Kenpo Shorin-ryu",
+    "Matsumura Seito Shorin-ryu",
+    "Shorin Ryu Matsumura Seito Karate"
+   ],
+   "family": "shuri-te",
+   "founded": 1952,
+   "founder": "Hōhan Sōken",
+   "id": "matsumura-seito",
+   "label": "Matsumura Seito Shorin-Ryu",
+   "parent": "shorin-ryu"
+  },
+  {
+   "aliases": [
+    "Meibukan",
+    "meibukan",
+    "明武舘"
+   ],
+   "family": "naha-te",
+   "founded": 1952,
+   "founder": "Meitoku Yagi",
+   "id": "meibukan",
+   "label": "Meibukan",
+   "parent": "goju-ryu"
+  },
+  {
+   "aliases": [
+    "Moo Duk Kwan (Taekwondo)",
+    "Mudukkwan"
+   ],
+   "family": "korean",
+   "founded": 1945,
+   "founder": "Hwang Kee",
+   "id": "moo-duk-kwan",
+   "label": "Moo Duk Kwan (Taekwondo)",
+   "parent": "taekwondo"
+  },
+  {
+   "aliases": [
+    "Kuniba-Kai",
+    "Motobu-Ha Shito-Ryu",
+    "Seishin-kai",
+    "Seishin-kan",
+    "Seishinkai",
+    "kuniba-ryu"
+   ],
+   "family": "japanese",
+   "founded": 1943,
+   "founder": "Kosei Kuniba",
+   "id": "motobu-ha-shito-ryu",
+   "label": "Motobu-ha Shito-Ryu",
+   "parent": "shito-ryu"
+  },
+  {
+   "aliases": [
+    "Motobu-Ryu",
+    "Motoburyu",
+    "Nihon Denryu Hyoho Motobu Kenpo",
+    "motobu-ryu",
+    "motoburyu"
+   ],
+   "family": "tomari-te",
+   "founded": 1922,
+   "founder": "Motobu Chōki",
+   "id": "motobu-ryu",
+   "label": "Motobu-Ryu",
+   "parent": "tomari-te"
+  },
+  {
+   "aliases": [
+    "Moidi",
+    "Motobu Udundi",
+    "Motobu-ryu Udundi",
+    "motobu-udundi"
+   ],
+   "family": "tomari-te",
+   "founded": null,
+   "founder": "Motobu Chōhei (1st sōke, 17th century)",
+   "id": "motobu-udundi",
+   "label": "Motobu Udundi",
+   "parent": "te"
+  },
+  {
+   "aliases": [
+    "Mugai-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "mugai-ryu",
+   "label": "Mugai-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Muso Jikiden Eishin-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "muso-jikiden-eishin-ryu",
+   "label": "Muso Jikiden Eishin-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Muso Shinden Ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "muso-shinden-ryu",
+   "label": "Muso Shinden-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Naha-te"
+   ],
+   "family": "naha-te",
+   "founded": null,
+   "founder": null,
+   "id": "naha-te",
+   "label": "Naha-te",
+   "parent": "te"
+  },
+  {
+   "aliases": [
+    "Nanban Satto-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "nanban-satto-ryu",
+   "label": "Nanban Satto-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Nanbudo",
+    "nanbudo"
+   ],
+   "family": "japanese",
+   "founded": 1978,
+   "founder": "Yoshinao Nanbu",
+   "id": "nanbudo",
+   "label": "Nanbudo",
+   "parent": "sankukai"
+  },
+  {
+   "aliases": [
+    "Negishi-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "negishi-ryu",
+   "label": "Negishi-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Japan Kobudo",
+    "Japanese Kobudo",
+    "Japanese kobudo",
+    "Nihon Kobudo"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "nihon-kobudo",
+   "label": "Nihon Kobudo",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Nisei Gōjū",
+    "nisei-goju-ryu"
+   ],
+   "family": "naha-te",
+   "founded": 1969,
+   "founder": "Frank Ruiz",
+   "id": "nisei-goju",
+   "label": "Nisei Gōjū",
+   "parent": "usa-goju"
+  },
+  {
+   "aliases": [
+    "Gosho-ha Hyoho Niten Ichi-ryu",
+    "Niten Ichi-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "niten-ichi-ryu",
+   "label": "Niten Ichi-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Nobukawa-ha Shito-Ryu Kai",
+    "Nobukawa-ha Shitō-ryū"
+   ],
+   "family": "japanese",
+   "founded": null,
+   "founder": "Kuniaki Nobukawa",
+   "id": "nobukawa-ha-shito-ryu",
+   "label": "Nobukawa-ha Shitō-ryū",
+   "parent": "shito-ryu"
+  },
+  {
+   "aliases": [
+    "Japan Kenshukai Karate Association",
+    "Kenshukai Shito-ryu",
+    "Ogasahara-ha Shitō-ryū (Kenshukai)"
+   ],
+   "family": "japanese",
+   "founded": null,
+   "founder": "Eiji Ogasahara",
+   "id": "ogasahara-ha-shito-ryu",
+   "label": "Ogasahara-ha Shitō-ryū (Kenshukai)",
+   "parent": "shito-ryu"
+  },
+  {
+   "aliases": [
+    "Oh Do Kwan",
+    "Ohdokwan"
+   ],
+   "family": "korean",
+   "founded": 1954,
+   "founder": "Choi Hong-hi and Nam Tae-hi",
+   "id": "oh-do-kwan",
+   "label": "Oh Do Kwan",
+   "parent": "taekwondo"
+  },
+  {
+   "aliases": [
+    "Okinawa Kenpo",
+    "Okinawan Kenpo",
+    "okinawa-kenpo",
+    "ryukyu-kempo"
+   ],
+   "family": "shuri-te",
+   "founded": 1953,
+   "founder": "Shigeru Nakamura",
+   "id": "okinawa-kenpo",
+   "label": "Okinawa Kenpō",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Okinawan Karate",
+    "Okinawan karate",
+    "Ryukyu Bujutsu Kenkyu Doyukai"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "okinawan-karate-generic",
+   "label": "Okinawan Karate",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Karate Kobudo",
+    "Karatedo Kobudo",
+    "Kobudo",
+    "Kyu Kobudo",
+    "Okinawa Kobudo",
+    "Okinawan Kobudo",
+    "Okinawan kobudo",
+    "Okinawan kobudoNunti Bo",
+    "Ryukyu kobujutsu (generic)",
+    "and Kobudo",
+    "and kobudo",
+    "detailing Kobudo",
+    "do Kobudo",
+    "from kobudo",
+    "illustrious kobudo",
+    "in Kobudo",
+    "in kobudo",
+    "incorporated Kobudo",
+    "jiku Kobudo",
+    "kobudo",
+    "okinawan-kobudo",
+    "the Kobudo",
+    "the kobudo",
+    "und Kobudo"
+   ],
+   "family": "kobudo",
+   "founded": null,
+   "founder": "traditional (multiple lineages, no single founder)",
+   "id": "okinawan-kobudo",
+   "label": "Okinawan Kobudo",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Pangai-noon",
+    "Pangainoon-ryu",
+    "Pangainun",
+    "Pwangainoon"
+   ],
+   "family": "uechi-ryu",
+   "founded": 1900,
+   "founder": "Zhou Zihe (Shū Shiwa)",
+   "id": "pangai-noon",
+   "label": "Pangai-noon",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Ryoi-shito-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "ryoi-shinto-ryu",
+   "label": "Ryoi Shinto-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "RyuTe",
+    "Ryukyu Kempo (Oyata)",
+    "ryu-te"
+   ],
+   "family": "shuri-te",
+   "founded": 1995,
+   "founder": "Seiyū Oyata",
+   "id": "ryu-te",
+   "label": "Ryū-te",
+   "parent": "okinawa-kenpo"
+  },
+  {
+   "aliases": [
+    "Ryuei-Ryu",
+    "Ryueiryu",
+    "ryuei-ryu"
+   ],
+   "family": "naha-te",
+   "founded": 1971,
+   "founder": "Nakaima Norisato",
+   "id": "ryuei-ryu",
+   "label": "Ryuei-Ryu",
+   "parent": "naha-te"
+  },
+  {
+   "aliases": [
+    "Okinawa Kenpo Karate Kobudo",
+    "Ryukyu Hon Kenpo",
+    "Ryūkyū Hon Kenpō Kobujutsu"
+   ],
+   "family": "shuri-te",
+   "founded": 1998,
+   "founder": "Seikichi Odo",
+   "id": "ryukyu-hon-kenpo",
+   "label": "Ryūkyū Hon Kenpō Kobujutsu",
+   "parent": "okinawa-kenpo"
+  },
+  {
+   "aliases": [
+    "Ryukyo Kobudo",
+    "Ryukyu Kobudo",
+    "Ryukyu Kobudo Hozon Shinkokai",
+    "ryukyu-kobudo",
+    "yuishinkai"
+   ],
+   "family": "kobudo",
+   "founded": 1955,
+   "founder": "Taira Shinken",
+   "id": "ryukyu-kobudo",
+   "label": "Ryukyu Kobudo",
+   "parent": "okinawan-kobudo"
+  },
+  {
+   "aliases": [
+    "Ryūkyū Kobudō Hozon Shinkō Kai (Akamine line / Shinbukan)"
+   ],
+   "family": "kobudo",
+   "founded": 1970,
+   "founder": "Akamine Eisuke",
+   "id": "ryukyu-kobudo-akamine",
+   "label": "Ryūkyū Kobudō Hozon Shinkō Kai (Akamine line / Shinbukan)",
+   "parent": "ryukyu-kobudo"
+  },
+  {
+   "aliases": [
+    "Ryūkyū Kobudō Tesshinkan"
+   ],
+   "family": "kobudo",
+   "founded": 1999,
+   "founder": "Tamayose Hidemi",
+   "id": "ryukyu-kobudo-tesshinkan",
+   "label": "Ryūkyū Kobudō Tesshinkan",
+   "parent": "ryukyu-kobudo-akamine"
+  },
+  {
+   "aliases": [
+    "Ryūkyū Kobujutsu Hozon Shinkō Kai (Inoue line / Yuishinkai)",
+    "Yuishinkai"
+   ],
+   "family": "kobudo",
+   "founded": 1970,
+   "founder": "Inoue Motokatsu (Gansho)",
+   "id": "ryukyu-kobujutsu-hozon-shinko-kai",
+   "label": "Ryūkyū Kobujutsu Hozon Shinkō Kai (Inoue line / Yuishinkai)",
+   "parent": "ryukyu-kobudo"
+  },
+  {
+   "aliases": [
+    "Sankukai",
+    "Sankukai Karate",
+    "sankukai",
+    "sankukai-karate"
+   ],
+   "family": "japanese",
+   "founded": 1971,
+   "founder": "Yoshinao Nanbu",
+   "id": "sankukai",
+   "label": "Sankukai",
+   "parent": "shukokai"
+  },
+  {
+   "aliases": [
+    "Odo karate",
+    "Sato Juku",
+    "Satojuku Karate"
+   ],
+   "family": "kyokushin",
+   "founded": 1977,
+   "founder": "Katsuaki Satō",
+   "id": "satojuku",
+   "label": "Satojuku",
+   "parent": "kyokushin"
+  },
+  {
+   "aliases": [
+    "Aji Ryukyu",
+    "Anji Ryukyu",
+    "Appointe",
+    "Australasia official site",
+    "Bakuryu Sentai Abaranger",
+    "Bank of the Ryukyus",
+    "Basse-Terre",
+    "Bill Ryusaki",
+    "Chishu Ryu",
+    "Cite",
+    "Complete",
+    "Disposition of Ryukyu",
+    "FileHuineng-tearing-sutrassvg",
+    "FilePort-authority-terminaljpg",
+    "Grand Maste",
+    "Grandmaste",
+    "Hao Taikei Ryu Knight",
+    "Headmaste",
+    "History of the Ryukyus",
+    "Inte",
+    "Invasion of Ryukyu",
+    "Karyu Uku",
+    "King of Ryukyu",
+    "Kyokugenryu",
+    "Kyoryu Boukenki Jura Tripper",
+    "Kyu-Iwasaki-tei Garden",
+    "Long Beach Press-Telegram",
+    "Los Angeles Trade-Technical College",
+    "Menkyo kai",
+    "Menkyo kaiden",
+    "MenkyoMenkyo Kaiden",
+    "Merited Maste",
+    "Ryu Mi-yong",
+    "Ryu Ryu Ko",
+    "Ryu Shaman King",
+    "Ryu ga Gotoku 3",
+    "Ryu school",
+    "Self-test of Intelligence",
+    "Shunryu Suzuki",
+    "Tenryu Saburo",
+    "The A-Team",
+    "Udun Ryukyu",
+    "United States Civil Administration of the Ryukyu Islands",
+    "United States Military Government of the Ryukyu Islands",
+    "University of the Ryukyus",
+    "Volcano and Ryukyu Islands campaign",
+    "all-terrain vehicle",
+    "counter-terrorism",
+    "inta-netsutoa-kaibu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "scrape-artefact",
+   "label": "Scrape artefact",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Seido Karate",
+    "Seidō Juku",
+    "World Seido Karate Organization"
+   ],
+   "family": "kyokushin",
+   "founded": 1976,
+   "founder": "Tadashi Nakamura",
+   "id": "seido-juku",
+   "label": "Seidō Juku",
+   "parent": "kyokushin"
+  },
+  {
+   "aliases": [
+    "Seido Kaikan",
+    "Seidokaikan",
+    "Seidokaikan Karate"
+   ],
+   "family": "kyokushin",
+   "founded": 1980,
+   "founder": "Kazuyoshi Ishii",
+   "id": "seidokaikan",
+   "label": "Seidokaikan",
+   "parent": "ashihara"
+  },
+  {
+   "aliases": [
+    "Dentokan",
+    "Seidokan"
+   ],
+   "family": "shuri-te",
+   "founded": 1984,
+   "founder": "Shian Toma",
+   "id": "seidokan",
+   "label": "Seidokan",
+   "parent": "shorin-ryu"
+  },
+  {
+   "aliases": [
+    "Seigokan",
+    "seigokan",
+    "正剛館"
+   ],
+   "family": "naha-te",
+   "founded": 1945,
+   "founder": "Seigo Tada",
+   "id": "seigokan",
+   "label": "Seigokan",
+   "parent": "goju-ryu"
+  },
+  {
+   "aliases": [
+    "Seiko-Kai",
+    "Suzuki-Ha Shito-Ryu Nihon Karatedo Seiko-Kai",
+    "Suzuki-ha Shitō-ryū Seikō-kai"
+   ],
+   "family": "japanese",
+   "founded": 1994,
+   "founder": "Seiko Suzuki",
+   "id": "seiko-kai",
+   "label": "Suzuki-ha Shitō-ryū Seikō-kai",
+   "parent": "itosu-ryu"
+  },
+  {
+   "aliases": [
+    "Nippon Karate-do Kai",
+    "Seito Shito-ryu",
+    "Seitō Shitō-ryū",
+    "Shito-Ryu International Karate-Do Kai"
+   ],
+   "family": "japanese",
+   "founded": 1952,
+   "founder": "Kenzo Mabuni",
+   "id": "seito-shito-ryu",
+   "label": "Seitō Shitō-ryū",
+   "parent": "shito-ryu"
+  },
+  {
+   "aliases": [
+    "Seiwakai",
+    "seiwakai",
+    "誠和会"
+   ],
+   "family": "naha-te",
+   "founded": 1972,
+   "founder": "Shuji Tasaki",
+   "id": "seiwakai",
+   "label": "Seiwakai",
+   "parent": "goju-kai"
+  },
+  {
+   "aliases": [
+    "Sekiguchi-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "sekiguchi-ryu",
+   "label": "Sekiguchi-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Senbukan",
+    "Senbukan Dojo",
+    "senbukan",
+    "泉武館"
+   ],
+   "family": "naha-te",
+   "founded": 1939,
+   "founder": "Kanki Izumigawa",
+   "id": "senbukan",
+   "label": "Senbukan",
+   "parent": "goju-ryu"
+  },
+  {
+   "aliases": [
+    "Shidokan Karate",
+    "World Karate Association Shidokan"
+   ],
+   "family": "kyokushin",
+   "founded": 1981,
+   "founder": "Yoshiji Soeno",
+   "id": "shidokan",
+   "label": "Shidokan",
+   "parent": "kyokushin"
+  },
+  {
+   "aliases": [
+    "Ryobu-kai",
+    "Shindo Jinen Ryu",
+    "Shindo jinen-ryu"
+   ],
+   "family": "japanese",
+   "founded": 1933,
+   "founder": "Yasuhiro Konishi",
+   "id": "shindo-jinen-ryu",
+   "label": "Shindo Jinen-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Shindo Yoshin-ryu",
+    "Shinto-Yoshin-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "shindo-yoshin-ryu",
+   "label": "Shindo Yoshin-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Shingetsu-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "shingetsu-ryu",
+   "label": "Shingetsu-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Shinkage-ryu",
+    "Yagyu Shinkage-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "shinkage-ryu",
+   "label": "Shinkage-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Shinkyokushin",
+    "Shinkyokushinkai",
+    "Shinkyokushinkai Karate",
+    "World Karate Organization (WKO)"
+   ],
+   "family": "kyokushin",
+   "founded": 2003,
+   "founder": "Kenji Midori",
+   "id": "shinkyokushin",
+   "label": "Shinkyokushin",
+   "parent": "kyokushin"
+  },
+  {
+   "aliases": [
+    "Kasumi Shinto-ryu Kenjutsu",
+    "Shindo Muso-ryu",
+    "Shinto Muso-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "shinto-muso-ryu",
+   "label": "Shinto Muso-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Shirai-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "shirai-ryu",
+   "label": "Shirai-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "All Japan Karatedo Shito-kai",
+    "Higashi-Nihon Shito-kai",
+    "Japan Karatedo Kai",
+    "Nishi-Nihon Shito-kai",
+    "Shitō-kai Shitō-ryū",
+    "World Shitoryu Karatedo Federation"
+   ],
+   "family": "japanese",
+   "founded": 1964,
+   "founder": "Manzo Iwata",
+   "id": "shito-kai",
+   "label": "Shitō-kai Shitō-ryū",
+   "parent": "shito-ryu"
+  },
+  {
+   "aliases": [
+    "Shito Ryu",
+    "Shito-Kai",
+    "Shito-Ryu",
+    "Shitokai",
+    "Shitoryu",
+    "kotaka-ha-shito-ryu",
+    "seito-shito-ryu",
+    "shitokai",
+    "shitoryu"
+   ],
+   "family": "japanese",
+   "founded": 1934,
+   "founder": "Kenwa Mabuni",
+   "id": "shito-ryu",
+   "label": "Shito-Ryu",
+   "parent": "shuri-te"
+  },
+  {
+   "aliases": [
+    "Shobayashi Shorin-ryu",
+    "Shorin-ryu (Sukunai Hayashi)"
+   ],
+   "family": "shuri-te",
+   "founded": null,
+   "founder": "Eizō Shimabukuro (lineage of Chōtoku Kyan)",
+   "id": "shobayashi-shorin-ryu",
+   "label": "Shobayashi Shorin-Ryu",
+   "parent": "shorin-ryu"
+  },
+  {
+   "aliases": [
+    "Shōbukan",
+    "尚武館"
+   ],
+   "family": "naha-te",
+   "founded": 1963,
+   "founder": "Masanobu Shinjo",
+   "id": "shobukan",
+   "label": "Shōbukan",
+   "parent": "goju-ryu"
+  },
+  {
+   "aliases": [
+    "Shodokan Aikido"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "shodokan-aikido",
+   "label": "Shodokan Aikido",
+   "parent": "aikido"
+  },
+  {
+   "aliases": [
+    "FileSeko Higa - Shodokan Goju-Ryujpg",
+    "Shodokan",
+    "Shodokan Goju-Ryu",
+    "shodokan",
+    "shodokan-goju-ryu",
+    "尚道館"
+   ],
+   "family": "naha-te",
+   "founded": 1960,
+   "founder": "Seko Higa",
+   "id": "shodokan-goju-ryu",
+   "label": "Shodokan Goju-Ryu",
+   "parent": "goju-ryu"
+  },
+  {
+   "aliases": [
+    "Shogen-Ryu Karate-Do",
+    "Shōgen-ryū"
+   ],
+   "family": "shuri-te",
+   "founded": 2000,
+   "founder": "Kensei Taba",
+   "id": "shogen-ryu",
+   "label": "Shōgen-ryū",
+   "parent": "matsubayashi-ryu"
+  },
+  {
+   "aliases": [
+    "Okikukai",
+    "Okinawa Karate-do Kyokai",
+    "Shōhei-ryū (Okikukai)"
+   ],
+   "family": "uechi-ryu",
+   "founded": 1991,
+   "founder": "senior students of Uechi Kan'ei (including Tomoyose Ryūkō)",
+   "id": "shohei-ryu",
+   "label": "Shōhei-ryū (Okikukai)",
+   "parent": "uechi-ryu"
+  },
+  {
+   "aliases": [
+    "Shorei-ryu"
+   ],
+   "family": "naha-te",
+   "founded": null,
+   "founder": null,
+   "id": "shorei-ryu",
+   "label": "Shorei-Ryu",
+   "parent": "naha-te"
+  },
+  {
+   "aliases": [
+    "Shoreikan",
+    "shoreikan",
+    "尚礼館"
+   ],
+   "family": "naha-te",
+   "founded": 1954,
+   "founder": "Seikichi Toguchi",
+   "id": "shoreikan",
+   "label": "Shoreikan",
+   "parent": "goju-ryu"
+  },
+  {
+   "aliases": [
+    "Jindokai",
+    "Shorin-Ryu",
+    "Shorin-ryu",
+    "Shorin-ryu Shinkokai",
+    "shorinryu",
+    "tozan-ryu"
+   ],
+   "family": "shuri-te",
+   "founded": 1933,
+   "founder": "Chōshin Chibana (named the style 1933; lineage of Sokon Matsumura's Shuri-te)",
+   "id": "shorin-ryu",
+   "label": "Shorin-Ryu",
+   "parent": "shuri-te"
+  },
+  {
+   "aliases": [
+    "Shorin-ryu Kishaba Juku"
+   ],
+   "family": "shuri-te",
+   "founded": 1998,
+   "founder": "Chōkei Kishaba",
+   "id": "shorin-ryu-kishaba-juku",
+   "label": "Shorin-Ryu Kishaba Juku",
+   "parent": "matsubayashi-ryu"
+  },
+  {
+   "aliases": [
+    "Kaicho of Kyudokan",
+    "Shorin Ryu Kyudokan",
+    "Shorin-ryu Kyudokan"
+   ],
+   "family": "shuri-te",
+   "founded": 1947,
+   "founder": "Yūchoku Higa",
+   "id": "shorin-ryu-kyudokan",
+   "label": "Shorin-Ryu Kyudokan",
+   "parent": "kobayashi-shorin-ryu"
+  },
+  {
+   "aliases": [
+    "Shorin-Ryu Reihokan"
+   ],
+   "family": "shuri-te",
+   "founded": null,
+   "founder": "Naonobu Ahagon",
+   "id": "shorin-ryu-reihokan",
+   "label": "Shorin-Ryu Reihokan",
+   "parent": "kobayashi-shorin-ryu"
+  },
+  {
+   "aliases": [
+    "Seibukan Shorin-Ryu",
+    "Shorin-ryu Seibukan",
+    "Sukunaihayashi"
+   ],
+   "family": "shuri-te",
+   "founded": 1962,
+   "founder": "Zenryō Shimabukuro (lineage of Chōtoku Kyan)",
+   "id": "shorin-ryu-seibukan",
+   "label": "Shorin-Ryu Seibukan",
+   "parent": "shorin-ryu"
+  },
+  {
+   "aliases": [
+    "Shorin-ryu Shido-kan"
+   ],
+   "family": "shuri-te",
+   "founded": 1948,
+   "founder": "Katsuya Miyahira",
+   "id": "shorin-ryu-shidokan",
+   "label": "Shorin-Ryu Shido-kan",
+   "parent": "kobayashi-shorin-ryu"
+  },
+  {
+   "aliases": [
+    "First member dojo of Shorin-ryu Shorinkan",
+    "List of Shorin-ryu Shorinkan",
+    "Shorin-ryu Shorinkan",
+    "Shorinkan",
+    "shorinkan",
+    "shorinryushorinkan"
+   ],
+   "family": "shuri-te",
+   "founded": 1975,
+   "founder": "Shūgorō Nakazato",
+   "id": "shorin-ryu-shorinkan",
+   "label": "Shorin-Ryu Shorinkan",
+   "parent": "kobayashi-shorin-ryu"
+  },
+  {
+   "aliases": [
+    "Shorin Ryu Shubukan"
+   ],
+   "family": "shuri-te",
+   "founded": 1962,
+   "founder": "Jōki Uema",
+   "id": "shorin-ryu-shubukan",
+   "label": "Shorin-Ryu Shubukan",
+   "parent": "kobayashi-shorin-ryu"
+  },
+  {
+   "aliases": [
+    "Shorinji-Ryu",
+    "Shorinji-ryu",
+    "Shorinjiryu",
+    "shorinjiryu"
+   ],
+   "family": "shuri-te",
+   "founded": 1954,
+   "founder": "Jōen Nakazato (lineage of Chōtoku Kyan)",
+   "id": "shorinji-ryu",
+   "label": "Shorinji-Ryu",
+   "parent": "shorin-ryu"
+  },
+  {
+   "aliases": [
+    "Shorinji-ryu Renshinkan"
+   ],
+   "family": "shuri-te",
+   "founded": 1955,
+   "founder": "Isamu Tamotsu",
+   "id": "shorinji-ryu-renshinkan",
+   "label": "Shorinji-Ryu Renshinkan",
+   "parent": "shorinji-ryu"
+  },
+  {
+   "aliases": [
+    "Shorinjiryu Kenkokan",
+    "Shorinjiryu Kenkokan Karate"
+   ],
+   "family": "shuri-te",
+   "founded": 1945,
+   "founder": "Kōri Hisataka (Kudaka)",
+   "id": "shorinjiryu-kenkokan",
+   "label": "Shorinjiryu Kenkokan",
+   "parent": "shorin-ryu"
+  },
+  {
+   "aliases": [
+    "Shorinjiryu Kenyukai Watanabe Ha Karate"
+   ],
+   "family": "shuri-te",
+   "founded": 1973,
+   "founder": "Shunji Watanabe",
+   "id": "shorinjiryu-kenyukai",
+   "label": "Shorinjiryu Kenyukai",
+   "parent": "shorinjiryu-kenkokan"
+  },
+  {
+   "aliases": [
+    "Dai Nihon Karate-do Shotokai",
+    "Shoto-kai",
+    "Shotokai"
+   ],
+   "family": "japanese",
+   "founded": 1957,
+   "founder": "Shigeru Egami",
+   "id": "shotokai",
+   "label": "Shotokai",
+   "parent": "shotokan"
+  },
+  {
+   "aliases": [
+    "JKA karate",
+    "Karatenomichi World Federation",
+    "SKIF",
+    "Shoto-ryu",
+    "Shotokan",
+    "Shotokan Karate",
+    "Shotokan Karate of America",
+    "Shotokan Ryu",
+    "Shotokan-Ryu",
+    "Shotokan-ryu",
+    "Shotoryu",
+    "shotokanryu",
+    "shotoryu"
+   ],
+   "family": "japanese",
+   "founded": 1936,
+   "founder": "Gichin Funakoshi",
+   "id": "shotokan",
+   "label": "Shotokan",
+   "parent": "shuri-te"
+  },
+  {
+   "aliases": [
+    "Shudokan",
+    "Shudokan Karate",
+    "Toyama-ryu karate"
+   ],
+   "family": "shuri-te",
+   "founded": 1930,
+   "founder": "Kanken Tōyama",
+   "id": "shudokan",
+   "label": "Shudokan",
+   "parent": "shuri-te"
+  },
+  {
+   "aliases": [
+    "Shudokan Aikido"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "shudokan-aikido",
+   "label": "Shudokan Aikido",
+   "parent": "aikido"
+  },
+  {
+   "aliases": [
+    "Shukokai",
+    "Tani-ha Shito-ryu",
+    "tani-ha-shito-ryu"
+   ],
+   "family": "japanese",
+   "founded": 1946,
+   "founder": "Chojiro Tani",
+   "id": "shukokai",
+   "label": "Shukokai",
+   "parent": "shito-ryu"
+  },
+  {
+   "aliases": [
+    "Shuri-ryu",
+    "Shuri-ryu Karate",
+    "USKA karate"
+   ],
+   "family": "shuri-te",
+   "founded": 1946,
+   "founder": "Robert Trias",
+   "id": "shuri-ryu",
+   "label": "Shuri-Ryu",
+   "parent": "shuri-te"
+  },
+  {
+   "aliases": [
+    "Okinawan martial artsShuri-te",
+    "Shuri-te"
+   ],
+   "family": "shuri-te",
+   "founded": null,
+   "founder": null,
+   "id": "shuri-te",
+   "label": "Shuri-te",
+   "parent": "te"
+  },
+  {
+   "aliases": [
+    "Song Moo Kwan",
+    "Songmookwan"
+   ],
+   "family": "korean",
+   "founded": 1944,
+   "founder": "Byung Jick Ro",
+   "id": "song-moo-kwan",
+   "label": "Song Moo Kwan",
+   "parent": "taekwondo"
+  },
+  {
+   "aliases": [
+    "Soo Bahk Do",
+    "Soo Bahk Do Moo Duk Kwan"
+   ],
+   "family": "korean",
+   "founded": 1960,
+   "founder": "Hwang Kee",
+   "id": "soo-bahk-do",
+   "label": "Soo Bahk Do",
+   "parent": "tang-soo-do"
+  },
+  {
+   "aliases": [
+    "Korean Taekwondo",
+    "Tae Kwon Do",
+    "Taekwon-Do",
+    "Taekwon-do",
+    "Taekwondo"
+   ],
+   "family": "korean",
+   "founded": 1955,
+   "founder": "Collective (kwan founders); name adopted 1955, championed by Choi Hong-hi",
+   "id": "taekwondo",
+   "label": "Taekwondo",
+   "parent": "shotokan"
+  },
+  {
+   "aliases": [
+    "taido"
+   ],
+   "family": "shuri-te",
+   "founded": 1965,
+   "founder": "Shukumine Seiken",
+   "id": "taido",
+   "label": "Taidō",
+   "parent": "genseiryu"
+  },
+  {
+   "aliases": [
+    "Takenouchi-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "takenouchi-ryu",
+   "label": "Takenouchi-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Korean Tang Soo Do",
+    "Korean karate",
+    "Tang Soo Do",
+    "Tang Soo Do Moo Duk Kwan",
+    "soo-bahk-do"
+   ],
+   "family": "korean",
+   "founded": 1945,
+   "founder": "Hwang Kee",
+   "id": "tang-soo-do",
+   "label": "Tang Soo Do",
+   "parent": "shotokan"
+  },
+  {
+   "aliases": [
+    "Okinawa-te",
+    "Te",
+    "Tode",
+    "Tote"
+   ],
+   "family": "te",
+   "founded": null,
+   "founder": null,
+   "id": "te",
+   "label": "Te",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Tendo-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "tendo-ryu",
+   "label": "Tendo-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Tenjin Shinyo ryu",
+    "Tenjin Shinyo-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "tenjin-shinyo-ryu",
+   "label": "Tenjin Shinyo-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Matsumora-type Tomari-te",
+    "Tomari-te",
+    "tomarite"
+   ],
+   "family": "tomari-te",
+   "founded": null,
+   "founder": null,
+   "id": "tomari-te",
+   "label": "Tomari-te",
+   "parent": "te"
+  },
+  {
+   "aliases": [
+    "To'on-ryu",
+    "Toon-Ryu",
+    "toon-ryu"
+   ],
+   "family": "naha-te",
+   "founded": 1934,
+   "founder": "Kyoda Jūhatsu",
+   "id": "toon-ryu",
+   "label": "Toon-Ryu",
+   "parent": "naha-te"
+  },
+  {
+   "aliases": [
+    "Toshin-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "toshin-ryu",
+   "label": "Toshin-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Toyama-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "toyama-ryu",
+   "label": "Toyama-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Tracy Kenpo",
+    "tracy-kenpo",
+    "tracy-system",
+    "tracys-kenpo-karate"
+   ],
+   "family": "kenpo",
+   "founded": 1962,
+   "founder": "Al Tracy and Jim Tracy",
+   "id": "tracy-kenpo",
+   "label": "Tracy Kenpo",
+   "parent": "american-kenpo"
+  },
+  {
+   "aliases": [
+    "Kenyukai Uechi-Ryu",
+    "Uechi Kan",
+    "Uechi-Ryu",
+    "Uechiryu",
+    "pangai-noon",
+    "uechi-ryu",
+    "uechiryu"
+   ],
+   "family": "uechi-ryu",
+   "founded": 1932,
+   "founder": "Uechi Kanbun",
+   "id": "uechi-ryu",
+   "label": "Uechi-Ryu",
+   "parent": "pangai-noon"
+  },
+  {
+   "aliases": [
+    "International Kenyukai Association",
+    "Kenyukai",
+    "Uechi-ryū Kenyūkai"
+   ],
+   "family": "uechi-ryu",
+   "founded": 1981,
+   "founder": "Shinjō Kiyohide",
+   "id": "uechi-ryu-kenyukai",
+   "label": "Uechi-ryū Kenyūkai",
+   "parent": "uechi-ryu"
+  },
+  {
+   "aliases": [
+    "Kanagusuku Kasshin Ryukyu Kobujutsu",
+    "Ufuchiku Kobudo",
+    "ufuchiku-kobujutsu"
+   ],
+   "family": "kobudo",
+   "founded": null,
+   "founder": "Kanagusuku Sanda (Ufuchiku)",
+   "id": "ufuchiku-kobujutsu",
+   "label": "Ufuchiku Kobujutsu",
+   "parent": "okinawan-kobudo"
+  },
+  {
+   "aliases": [
+    "USA Gōjū (American Gōjū)",
+    "american-goju",
+    "urban-goju",
+    "usa-goju",
+    "usa-goju-ryu"
+   ],
+   "family": "naha-te",
+   "founded": 1967,
+   "founder": "Peter Urban",
+   "id": "usa-goju",
+   "label": "USA Gōjū (American Gōjū)",
+   "parent": "goju-kai"
+  },
+  {
+   "aliases": [
+    "CategorieWado-ryu",
+    "JKF Wadokai",
+    "WADOKAI",
+    "Wado Kokusai (WIKF)",
+    "Wado-Kai",
+    "Wado-Ryu",
+    "Wado-kai",
+    "Wado-ryu Karate-do Renmei",
+    "WadoKai",
+    "Wadokai",
+    "wadokai",
+    "wadoryu"
+   ],
+   "family": "japanese",
+   "founded": 1934,
+   "founder": "Hironori Ōtsuka",
+   "id": "wado-ryu",
+   "label": "Wado-Ryu",
+   "parent": "shotokan"
+  },
+  {
+   "aliases": [
+    "Washin-Ryu Karate",
+    "Washin-Ryu karate"
+   ],
+   "family": "japanese",
+   "founded": 1966,
+   "founder": "Hidy Ochiai",
+   "id": "washin-ryu",
+   "label": "Washin-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Oyama Karate (USA)",
+    "World Oyama Karate"
+   ],
+   "family": "kyokushin",
+   "founded": 1985,
+   "founder": "Shigeru Ōyama",
+   "id": "world-oyama",
+   "label": "World Oyama Karate",
+   "parent": "kyokushin"
+  },
+  {
+   "aliases": [
+    "Yagyu Shingan-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "yagyu-shingan-ryu",
+   "label": "Yagyu Shingan-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Shito-ryu Shukokai Union",
+    "Yamada-ha Shito-ryu Shukokai Karatedo World Union",
+    "Yamada-ha Shitō-ryū Shukokai"
+   ],
+   "family": "japanese",
+   "founded": 1998,
+   "founder": "Haruyoshi Yamada",
+   "id": "yamada-ha-shito-ryu-shukokai",
+   "label": "Yamada-ha Shitō-ryū Shukokai",
+   "parent": "shukokai"
+  },
+  {
+   "aliases": [
+    "Kuwana Han-den Yamamoto-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "yamamoto-ryu",
+   "label": "Kuwana Han-den Yamamoto-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Yamane-ryu",
+    "Yamanni Chinen-ryu",
+    "Yamanni-Ryu",
+    "yamanni-ryu"
+   ],
+   "family": "kobudo",
+   "founded": null,
+   "founder": "Chinen Masami (named the style; Chinen family lineage from Chinen Umikana)",
+   "id": "yamanni-ryu",
+   "label": "Yamanni-Ryu",
+   "parent": "okinawan-kobudo"
+  },
+  {
+   "aliases": [
+    "Yoseikan",
+    "Yoseikan Budo",
+    "Yoseikan Karate"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "yoseikan-budo",
+   "label": "Yoseikan Budo",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Yoshin-ryu"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "yoshin-ryu",
+   "label": "Yoshin-Ryu",
+   "parent": null
+  },
+  {
+   "aliases": [
+    "Yoshinkan",
+    "Yoshinkan Aikido"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "yoshinkan-aikido",
+   "label": "Yoshinkan Aikido",
+   "parent": "aikido"
+  },
+  {
+   "aliases": [
+    "Aikido Yoshokai",
+    "Yoshokai"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "yoshokai-aikido",
+   "label": "Yoshokai Aikido",
+   "parent": "yoshinkan-aikido"
+  },
+  {
+   "aliases": [
+    "Yoshukai Karate"
+   ],
+   "family": "japanese",
+   "founded": 1963,
+   "founder": "Katsuoh Yamamoto",
+   "id": "yoshukai",
+   "label": "Yoshukai",
+   "parent": "chito-ryu"
+  }
+ ]
+}
