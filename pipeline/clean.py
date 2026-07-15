@@ -115,6 +115,7 @@ def main():
     ovr_node_add = read_csv(OVR / "node_additions.csv")
     ovr_edge_add = read_csv(OVR / "edge_additions.csv")
     ovr_style_assign = read_csv(OVR / "style_assignments.csv")
+    ovr_honours = read_csv(OVR / "honours.csv")
 
     # ---------- 1. build node table ----------
     nodes = {}
@@ -170,6 +171,15 @@ def main():
         }
         applied.append({"kind": "node_addition", "what": f"{r['name']} ({r['node_id']})",
                         "reason": r.get("reason", ""), "override_file": "node_additions.csv"})
+
+    # honours: verified rank/recognition rows (e.g. the Okinawa 10th-dan register)
+    for r in ovr_honours:
+        if r.get("status") not in APPLY or r["node_id"] not in nodes:
+            continue
+        node = nodes[r["node_id"]]
+        node.setdefault("honours", []).append(r["honour"])
+        applied.append({"kind": "honour", "what": f"{node['name_ascii']}: {r['honour']}",
+                        "reason": r.get("source", ""), "override_file": "honours.csv"})
 
     # ---------- 2. year fixes (explicit overrides first, then range check) ----------
     for r in ovr_years:
@@ -661,6 +671,7 @@ def main():
                       "needs_review": n["needs_review"],
                       "added_by_research": n["flags"].get("added_by_research", False)},
             "wikipedia_url": n["wikipedia_url"],
+            "honours": sorted(set(n.get("honours", []))),
         })
     out_edges = sorted(edges, key=lambda e: (e["source"], e["target"]))
     for e in out_edges:

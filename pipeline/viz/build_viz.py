@@ -379,6 +379,8 @@ def layout_component(comp_ids, nodes, edges):
 def main():
     lineage = json.load(open(OUT / "lineage.json", encoding="utf-8"))
     styles = json.load(open(OUT / "styles.json", encoding="utf-8"))["styles"]
+    kata_path = OUT / "kata.json"
+    kata = json.load(open(kata_path, encoding="utf-8")) if kata_path.exists() else []
     style_by_id = {s["id"]: s for s in styles}
     colours = build_style_colours(styles)
 
@@ -494,6 +496,7 @@ def main():
                     [{"id": k, "label": lb, "light": l, "dark": d}
                      for k, lb, l, d in (NEUTRAL_TE, NEUTRAL_OTHER)],
         "styleColours": colours,
+        "kata": kata,
         "styles": [{"id": s["id"], "label": s["label"], "parent": s["parent"],
                     "famRaw": raw_family.get(s["id"], "other"),
                     "founder": s.get("founder") or "", "founded": s.get("founded") or "",
@@ -518,6 +521,8 @@ def main():
             "lw": round(label_width(n), 1), "kob": n["kobudo"],
             "famInherited": n["family_inherited"],
         }
+        if n.get("honours"):
+            row["hon"] = n["honours"]
         if nid in placed:
             row["x"] = round(placed[nid]["x"], 1)
             row["y"] = placed[nid]["y"]

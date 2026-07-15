@@ -350,10 +350,21 @@ svg.addEventListener("wheel", ev => {
   const r = svg.getBoundingClientRect();
   if (ev.ctrlKey || ev.metaKey) {
     zoomAt(ev.clientX - r.left, ev.clientY - r.top, Math.exp(-ev.deltaY * 0.011));
+  } else if (ev.shiftKey) {
+    // shift + scroll wheel moves along the timeline (left–right)
+    view.x -= (ev.deltaY || ev.deltaX); applyView();
   } else {
     view.x -= ev.deltaX; view.y -= ev.deltaY; applyView();
   }
 }, { passive: false });
+/* Curator mode: the evidence layer (source links, citations) is visible only to the
+   site's curator. Open the page with #curator to switch it on for this browser
+   (persists), #public to switch it off. The data itself is identical either way. */
+const CURATOR_KEY = "karate-curator";
+if (location.hash.indexOf("curator") >= 0) localStorage.setItem(CURATOR_KEY, "1");
+if (location.hash.indexOf("public") >= 0) localStorage.removeItem(CURATOR_KEY);
+function curator() { return localStorage.getItem(CURATOR_KEY) === "1"; }
+
 let pan = null, pendingSel = null, pendingEdge = null;
 svg.addEventListener("pointerdown", ev => {
   if (ev.button !== 0) return;
@@ -567,7 +578,28 @@ addEventListener("keydown", ev => {
     hideMenus();
     if (state.isolated) document.getElementById("clearfocus").click();
     else clearSelection();
+    return;
   }
+  // keyboard navigation: arrows pan, +/− zoom, F fits, Home returns to the left edge
+  const tag = (ev.target && ev.target.tagName) || "";
+  if (tag === "INPUT" || tag === "SELECT" || tag === "TEXTAREA") return;
+  if (typeof tourIdx !== "undefined" && tourIdx !== null) return;   // tour owns the arrows
+  const step = ev.shiftKey ? 400 : 140;
+  const r = stage.getBoundingClientRect();
+  const acts = {
+    ArrowLeft: () => { view.x += step; applyView(); },
+    ArrowRight: () => { view.x -= step; applyView(); },
+    ArrowUp: () => { view.y += step; applyView(); },
+    ArrowDown: () => { view.y -= step; applyView(); },
+    "+": () => zoomAt(r.width / 2, r.height / 2, 1.35),
+    "=": () => zoomAt(r.width / 2, r.height / 2, 1.35),
+    "-": () => zoomAt(r.width / 2, r.height / 2, 1 / 1.35),
+    f: () => fit(state.isolated ? new Set(state.isolated) : null),
+    "0": () => fit(state.isolated ? new Set(state.isolated) : null),
+    Home: () => openLeft(400),
+  };
+  const act = acts[ev.key];
+  if (act) { ev.preventDefault(); stopCamera(); userMoved(); act(); }
 });
 
 /* ============ isolate mode (client-side re-layout) ============ */
@@ -824,23 +856,152 @@ sInput.addEventListener("keydown", ev => {
 });
 document.addEventListener("click", ev => { if (!ev.target.closest("#searchwrap")) sBox.hidden = true; });
 
-/* ============ style filter dropdown ============ */
+/* ============ style filter dropdown: originating group → style → sub-style → … ============ */
+// Canonical order of originating groups, kobudō distinct as requested.
+const FAM_ORDER = [
+  ["shuri-te", "Shuri-te"], ["naha-te", "Naha-te"], ["tomari-te", "Tomari-te"],
+  ["uechi-ryu", "Uechi-Ryū"], ["kobudo", "Kobudō"],
+  ["japanese", "Japanese karate"], ["kyokushin", "Kyokushin & offshoots"],
+  ["korean", "Korean arts (Taekwondo & Tang Soo Do)"], ["kenpo", "Kenpō lines"],
+  ["te", "Te (antecedents)"], ["chinese", "Chinese antecedents"], ["other", "Other"],
+];
+const styleByIdEarly = new Map(DATA.styles.map(s => [s.id, s]));
+// depth-first walk of one originating group's styles, alphabetical among siblings
+function familyStyleTree(fid) {
+  const kids = new Map();
+  for (const s of DATA.styles) {
+    const p = s.parent && styleByIdEarly.has(s.parent) ? s.parent : "";
+    if (!kids.has(p)) kids.set(p, []);
+    kids.get(p).push(s);
+  }
+  for (const l of kids.values()) l.sort((a, b) => a.label.localeCompare(b.label));
+  const out = [];
+  const walk = (s, depth) => {
+    out.push([s, depth]);
+    for (const k of kids.get(s.id) || []) walk(k, depth + 1);
+  };
+  for (const s of kids.get("") || []) if (s.famRaw === fid) walk(s, 0);
+  return out;
+}
 (function () {
   const sel = document.getElementById("stylefilter");
-  const byFam = {};
-  for (const s of DATA.styles) (byFam[s.family] = byFam[s.family] || []).push(s);
-  for (const f of DATA.families) {
-    const list = (byFam[f.id] || []).sort((a, b) => a.label.localeCompare(b.label));
-    if (!list.length) continue;
-    const og = document.createElement("optgroup"); og.label = f.label;
-    for (const s of list) {
-      const o = document.createElement("option"); o.value = s.id; o.textContent = s.label;
+  for (const [fid, flabel] of FAM_ORDER) {
+    const rows = familyStyleTree(fid);
+    if (!rows.length) continue;
+    const og = document.createElement("optgroup"); og.label = flabel;
+    for (const [s, depth] of rows) {
+      const o = document.createElement("option"); o.value = s.id;
+      o.textContent = " ".repeat(depth) + (depth ? "· " : "") + s.label;
       og.appendChild(o);
     }
     sel.appendChild(og);
   }
   sel.onchange = () => setStyleFilter(sel.value);
 })();
+
+/* ============ kata & forms browser ============ */
+const kataPanel = document.getElementById("katapanel");
+const kataBtn = document.getElementById("katabtn");
+const KATA = DATA.kata || [];
+if (KATA.length) kataBtn.hidden = false;
+let kataOpen = new Set(), kataQuery = "";
+kataBtn.onclick = () => {
+  if (!kataPanel.hidden) { kataPanel.hidden = true; return; }
+  renderKataPanel();
+};
+function kataPersonBtn(nm) {
+  const hit = placed.find(n => n.name === nm) || DATA.nodes.find(n => n.name === nm);
+  const b = document.createElement("button"); b.className = "linklike";
+  b.textContent = nm;
+  if (hit) b.onclick = () => { kataPanel.hidden = true; if (pos.has(hit.id)) clickSelect(hit.id); else openDetail(hit.id); };
+  else b.disabled = true;
+  return b;
+}
+function renderKataPanel() {
+  kataPanel.innerHTML = ""; kataPanel.hidden = false;
+  kataPanel.appendChild(panelCloseBtn(kataPanel));
+  const h = document.createElement("h3");
+  h.textContent = "Kata & forms (" + KATA.length + ")"; kataPanel.appendChild(h);
+  const note = document.createElement("div"); note.className = "edit-note";
+  note.textContent = "Every kata with its meaning, origin and era, and who created, brought or "
+    + "standardised it. Click a name to open that person on the canvas.";
+  kataPanel.appendChild(note);
+  const inp = document.createElement("input"); inp.type = "search";
+  inp.placeholder = "Find a kata…"; inp.value = kataQuery; inp.className = "kata-search";
+  inp.oninput = () => { kataQuery = inp.value; renderList(); };
+  kataPanel.appendChild(inp);
+  const list = document.createElement("div"); kataPanel.appendChild(list);
+  const famLabel = Object.fromEntries(FAM_ORDER);
+  function renderList() {
+    list.textContent = "";
+    const q = kataQuery.trim().toLowerCase();
+    const match = k => !q || k.name.toLowerCase().includes(q)
+      || (k.native || "").includes(kataQuery.trim())
+      || (k.variants || []).some(v => v.toLowerCase().includes(q));
+    for (const [fid] of FAM_ORDER) {
+      const rows = KATA.filter(k => k.family === fid && match(k))
+        .sort((a, b) => a.name.localeCompare(b.name));
+      if (!rows.length) continue;
+      const fh = document.createElement("div"); fh.className = "st-fam";
+      const dot = document.createElement("span"); dot.className = "dot";
+      dot.style.background = famColour(fid);
+      fh.append(dot, document.createTextNode(" " + (famLabel[fid] || fid) + " · " + rows.length));
+      list.appendChild(fh);
+      for (const k of rows) {
+        const row = document.createElement("div"); row.className = "kata-row";
+        const head = document.createElement("button"); head.className = "linklike kata-name";
+        head.textContent = (kataOpen.has(k.name) ? "▾ " : "▸ ") + k.name
+          + (k.native ? "  " + k.native : "");
+        head.onclick = () => {
+          kataOpen.has(k.name) ? kataOpen.delete(k.name) : kataOpen.add(k.name);
+          renderList();
+        };
+        row.appendChild(head);
+        if (kataOpen.has(k.name)) {
+          const d = document.createElement("div"); d.className = "kata-detail";
+          const add = (lbl, txt) => {
+            if (!txt) return;
+            const e = document.createElement("div");
+            const b = document.createElement("b"); b.textContent = lbl + " ";
+            e.append(b, document.createTextNode(txt)); d.appendChild(e);
+          };
+          add("Meaning:", k.meaning);
+          add("Era:", k.era);
+          add("Origin:", [k.origin_person, k.origin_place].filter(Boolean).join(" · "));
+          if ((k.variants || []).length) add("Also known as:", k.variants.join(", "));
+          if ((k.introduced_by || []).length) {
+            const e = document.createElement("div");
+            const b = document.createElement("b"); b.textContent = "Lineage: "; e.appendChild(b);
+            k.introduced_by.forEach((p, i) => {
+              if (i) e.appendChild(document.createTextNode(" · "));
+              e.appendChild(kataPersonBtn(p.name));
+              e.appendChild(document.createTextNode(" (" + p.role + ")"));
+            });
+            d.appendChild(e);
+          }
+          add("", k.note);
+          if (curator() && (k.sources || []).length) {
+            const e = document.createElement("div"); e.className = "evrow";
+            for (const u of k.sources) {
+              const a = document.createElement("a"); a.href = u; a.target = "_blank";
+              a.rel = "noopener"; a.textContent = "source ↗"; a.style.marginRight = "8px";
+              e.appendChild(a);
+            }
+            d.appendChild(e);
+          }
+          row.appendChild(d);
+        }
+        list.appendChild(row);
+      }
+    }
+    if (!list.children.length) {
+      const d = document.createElement("div"); d.className = "edit-note";
+      d.textContent = "No kata match “" + kataQuery + "”.";
+      list.appendChild(d);
+    }
+  }
+  renderList();
+}
 
 /* ============ style-tree browser: family → style → sub-style → … ============ */
 const stylePanel = document.getElementById("stylepanel");
@@ -863,14 +1024,15 @@ function renderStylePanel() {
     if (!counts.has(id)) counts.set(id, styleMembers(id).length);
     return counts.get(id);
   };
+  const label = sid => { const s = styleByIdMap.get(sid); return s ? s.label : sid; };
   const addRow = (sid, depth) => {
     const c = count(sid);
-    if (!c) return;
-    const s = styleByIdMap.get(sid);
     const row = document.createElement("div");
-    row.className = "st-row" + (state.style === sid ? " on" : "");
+    row.className = "st-row" + (state.style === sid ? " on" : "") + (c ? "" : " st-empty");
     row.style.paddingLeft = (depth * 14) + "px";
-    const kids = (styleKids.get(sid) || []).filter(k => count(k));
+    // every documented style is listed, practised or not; siblings alphabetical
+    const kids = (styleKids.get(sid) || []).slice()
+      .sort((a, b) => label(a).localeCompare(label(b)));
     const chev = document.createElement("button"); chev.className = "linklike st-chev";
     chev.textContent = kids.length ? (styleOpen.has(sid) ? "▾" : "▸") : "·";
     if (kids.length) chev.onclick = () => {
@@ -878,37 +1040,38 @@ function renderStylePanel() {
       renderStylePanel();
     };
     const nameB = document.createElement("button"); nameB.className = "linklike st-name";
-    nameB.textContent = s ? s.label : sid;
-    nameB.title = styleProvenance(sid) || "Filter the canvas to this style and its sub-styles";
-    nameB.onclick = () => { setStyleFilter(state.style === sid ? "" : sid); renderStylePanel(); };
+    nameB.textContent = label(sid);
+    nameB.title = styleProvenance(sid)
+      || (c ? "Filter the canvas to this style and its sub-styles"
+            : "Documented style; no practitioners linked in the dataset yet");
+    if (c) nameB.onclick = () => { setStyleFilter(state.style === sid ? "" : sid); renderStylePanel(); };
     const meta = document.createElement("span"); meta.className = "st-meta";
     meta.textContent = styleProvenance(sid);
-    const cnt = document.createElement("span"); cnt.className = "st-count"; cnt.textContent = c;
-    const dl = document.createElement("button"); dl.className = "linklike st-dl"; dl.textContent = "⬇";
-    dl.title = "Export a publishable poster of this style and its sub-styles (vector SVG)";
-    dl.onclick = () => exportClade(styleMembers(sid), "The " + (s ? s.label : sid) + " clade", "svg",
-                                  styleProvenance(sid));
-    row.append(chev, nameB, meta, cnt, dl);
+    const cnt = document.createElement("span"); cnt.className = "st-count";
+    cnt.textContent = c || "–";
+    row.append(chev, nameB, meta, cnt);
+    if (c > 1) {
+      const dl = document.createElement("button"); dl.className = "linklike st-dl"; dl.textContent = "⬇";
+      dl.title = "Export a publishable poster of this style and its sub-styles (vector SVG)";
+      dl.onclick = () => exportClade(styleMembers(sid), "The " + label(sid) + " clade", "svg",
+                                    styleProvenance(sid));
+      row.appendChild(dl);
+    }
     stylePanel.appendChild(row);
-    if (styleOpen.has(sid))
-      for (const k of kids.sort((a, b) => count(b) - count(a))) addRow(k, depth + 1);
+    if (styleOpen.has(sid)) for (const k of kids) addRow(k, depth + 1);
   };
-  const famMeta = [...DATA.families.map(f => [f.id, f.label]),
-                   ["kobudo", "Kobudō systems"], ["chinese", "Chinese antecedents"]];
-  const seenFam = new Set();
-  for (const [fid, flabel] of famMeta) {
-    if (seenFam.has(fid)) continue;
-    seenFam.add(fid);
+  for (const [fid, flabel] of FAM_ORDER) {
     const tops = DATA.styles
       .filter(s => s.famRaw === fid && (!s.parent || !styleByIdMap.has(s.parent)))
-      .map(s => s.id).filter(id => count(id));
+      .map(s => s.id)
+      .sort((a, b) => label(a).localeCompare(label(b)));
     if (!tops.length) continue;
     const fh = document.createElement("div"); fh.className = "st-fam";
     const dot = document.createElement("span"); dot.className = "dot";
     dot.style.background = famColour(fid);
     fh.append(dot, document.createTextNode(" " + flabel));
     stylePanel.appendChild(fh);
-    for (const t of tops.sort((a, b) => count(b) - count(a))) addRow(t, 1);
+    for (const t of tops) addRow(t, 1);
   }
 }
 
@@ -1048,10 +1211,15 @@ function openDetail(id) {
     panel.appendChild(addRow);
   }
 
-  if (n.wiki) {
-    const h4 = document.createElement("h4"); h4.textContent = "Source"; panel.appendChild(h4);
+  if (n.wiki && curator()) {
+    const h4 = document.createElement("h4"); h4.textContent = "Source (curator)"; panel.appendChild(h4);
     const a = document.createElement("a"); a.href = n.wiki; a.target = "_blank"; a.rel = "noopener";
     a.textContent = "Wikipedia article ↗"; panel.appendChild(a);
+  }
+  if (n.hon && n.hon.length) {
+    const d = document.createElement("div"); d.className = "d-flag";
+    d.textContent = n.hon.join(" · ");
+    panel.appendChild(d);
   }
   const fl = n.flags || {};
   if (fl.legendary || fl.needs_review || fl.wrong_entity) {
@@ -1130,7 +1298,8 @@ function openDetail(id) {
   if (pos.has(id) && n.connected) {
     const h4p = document.createElement("h4"); h4p.textContent = "Publish"; panel.appendChild(h4p);
     const wrap = document.createElement("div"); wrap.style.display = "flex"; wrap.style.gap = "6px";
-    for (const [lbl, fmt] of [["⬇ Clade poster (SVG, print)", "svg"], ["PNG", "png"]]) {
+    for (const [lbl, fmt] of [["⬇ SVG", "svg"], ["PDF", "pdf"], ["PNG", "png"],
+                              ["JPG", "jpg"], ["TIFF", "tiff"]]) {
       const b = document.createElement("button"); b.className = "btn"; b.textContent = lbl;
       b.onclick = () => exportClade([...lineageSet(id, state.dir)],
                                     "The lineage of " + eff(n).name, fmt);
@@ -1201,28 +1370,30 @@ function openEdgeDetail(e) {
   }
   panel.appendChild(nav);
 
-  const h4 = document.createElement("h4"); h4.textContent = "Evidence"; panel.appendChild(h4);
-  const evs = e.evidence || [];
-  if (!evs.length) {
-    const d = document.createElement("div"); d.className = "edit-note";
-    d.textContent = "No source recorded for this link.";
-    panel.appendChild(d);
-  }
-  for (const tok of evs) {
-    const { url, label } = evidenceLink(tok, e);
-    const row = document.createElement("div"); row.className = "evrow";
-    if (url) {
-      const a = document.createElement("a"); a.href = url; a.target = "_blank"; a.rel = "noopener";
-      a.textContent = label + " ↗"; row.appendChild(a);
-    } else row.textContent = label;
-    panel.appendChild(row);
-  }
-  for (const [p, lbl] of [[s, "teacher"], [t, "student"]]) {
-    if (!p.wiki) continue;
-    const row = document.createElement("div"); row.className = "evrow";
-    const a = document.createElement("a"); a.href = p.wiki; a.target = "_blank"; a.rel = "noopener";
-    a.textContent = "Wikipedia: " + eff(p).name + " (" + lbl + ") ↗"; row.appendChild(a);
-    panel.appendChild(row);
+  if (curator()) {
+    const h4 = document.createElement("h4"); h4.textContent = "Evidence (curator)"; panel.appendChild(h4);
+    const evs = e.evidence || [];
+    if (!evs.length) {
+      const d = document.createElement("div"); d.className = "edit-note";
+      d.textContent = "No source recorded for this link.";
+      panel.appendChild(d);
+    }
+    for (const tok of evs) {
+      const { url, label } = evidenceLink(tok, e);
+      const row = document.createElement("div"); row.className = "evrow";
+      if (url) {
+        const a = document.createElement("a"); a.href = url; a.target = "_blank"; a.rel = "noopener";
+        a.textContent = label + " ↗"; row.appendChild(a);
+      } else row.textContent = label;
+      panel.appendChild(row);
+    }
+    for (const [p, lbl] of [[s, "teacher"], [t, "student"]]) {
+      if (!p.wiki) continue;
+      const row = document.createElement("div"); row.className = "evrow";
+      const a = document.createElement("a"); a.href = p.wiki; a.target = "_blank"; a.rel = "noopener";
+      a.textContent = "Wikipedia: " + eff(p).name + " (" + lbl + ") ↗"; row.appendChild(a);
+      panel.appendChild(row);
+    }
   }
 
   const key = e.source + ">" + e.target;
@@ -1334,6 +1505,7 @@ function hideMenus() { expMenu.hidden = true; sBox.hidden = true; }
 expMenu.addEventListener("click", ev => {
   const b = ev.target.closest("button"); if (!b) return;
   ({ png2: () => exportPNG(2), png4: () => exportPNG(4), svg: exportSVG,
+     jpg4: () => exportJPG(4), tiff: () => exportTIFF(), pdf: () => exportPDF(),
      csv: exportCSV, json: exportJSON, edits: exportEdits, adds: exportAdds })[b.dataset.x]();
 });
 function download(name, blob) {
@@ -1371,7 +1543,7 @@ function buildExportSVG(opts) {
   title.textContent = opts.title || "The Lineage of Karate & Taekwondo";
   const sub = el("text", { x: PAD, y: 68, "font-size": 13, fill: cssVar("--ink-2") }, out);
   sub.textContent = opts.subtitle
-    || ("Instructor-to-student cladogram · compiled from primary and published sources"
+    || ("Instructor-to-student cladogram"
         + (state.focus && !opts.title ? " · focussed on " + eff(byId.get(state.focus)).name : ""));
   const clone = world.cloneNode(true);
   clone.setAttribute("transform", `translate(${PAD - b.x0},${TITLE_H + PAD - b.y0})`);
@@ -1456,38 +1628,136 @@ const MAX_DIM = 16000, MAX_AREA = 40e6;
 function fitScale(W, H, want) {
   return Math.min(want, MAX_DIM / W, MAX_DIM / H, Math.sqrt(MAX_AREA / (W * H)));
 }
-function exportPNG(scale, opts) {
+const pxStr = (w, h) => Math.round(w) + " × " + Math.round(h) + " px";
+// Render the export SVG to a canvas at the largest scale the browser can hold
+// (raster formats only; the vector SVG has no such limit).
+function rasterise(opts, scale, maxArea, cb) {
   const { out, W, H } = buildExportSVG(opts);
-  const px = (w, h) => Math.round(w) + " × " + Math.round(h) + " px";
-  const fit = fitScale(W, H, scale);
-  if (fit < 1) {
-    toast("This chart is " + px(W, H) + " — larger than any PNG a browser can make. "
-          + "Exported as SVG instead: vector, so it prints at any size.");
-    return exportSVG(opts);
-  }
-  const s = Math.min(scale, Math.max(1, Math.floor(fit * 2) / 2));   // 4x, 3.5x, 3x...
+  const fit = fitScale(W, H, Math.min(scale, Math.sqrt(maxArea / (W * H)) + 1));
+  const s = Math.max(0.5, Math.min(scale, Math.floor(Math.min(fit, Math.sqrt(maxArea / (W * H))) * 2) / 2));
   const str = new XMLSerializer().serializeToString(out);
   const img = new Image();
-  img.onerror = () => toast("The PNG could not be rendered. Use the SVG export instead.");
+  img.onerror = () => toast("The image could not be rendered. Use the SVG export instead.");
   img.onload = () => {
     const c = document.createElement("canvas");
     c.width = Math.round(W * s); c.height = Math.round(H * s);
     const ctx = c.getContext("2d");
+    ctx.fillStyle = cssVar("--surface") || "#ffffff";   // JPEG/TIFF have no transparency
+    ctx.fillRect(0, 0, c.width, c.height);
     ctx.scale(s, s);
     ctx.drawImage(img, 0, 0);
-    c.toBlob(bl => {
-      if (!bl) {
-        toast("This chart is too large for a PNG on this browser. Use the SVG export.");
-        return;
-      }
-      download(((opts && opts.fname) || "karate-cladogram") + `@${s}x.png`, bl);
-      toast(s < scale
-        ? "Exported at " + s + "× (" + px(W * s, H * s) + "). The browser caps PNG size; "
-          + "the SVG export has no limit and is the better format for print."
-        : "Exported " + px(W * s, H * s) + " at " + s + "×.");
-    }, "image/png");
+    cb(c, s, W, H);
   };
   img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(str);
+}
+function exportPNG(scale, opts) {
+  const { W, H } = buildExportSVG(opts);
+  if (fitScale(W, H, scale) < 1) {
+    toast("This chart is " + pxStr(W, H) + " — larger than any PNG a browser can make. "
+          + "Exported as SVG instead: vector, so it prints at any size.");
+    return exportSVG(opts);
+  }
+  rasterise(opts, scale, MAX_AREA, (c, s) => {
+    c.toBlob(bl => {
+      download(((opts && opts.fname) || "karate-cladogram") + `@${s}x.png`, bl);
+      toast("Exported PNG " + pxStr(c.width, c.height) + " at " + s + "×"
+        + (s < scale ? " (browser canvas cap; SVG has no limit)." : "."));
+    }, "image/png");
+  });
+}
+function exportJPG(scale, opts) {
+  rasterise(opts, scale, MAX_AREA, (c, s) => {
+    c.toBlob(bl => {
+      download(((opts && opts.fname) || "karate-cladogram") + `@${s}x.jpg`, bl);
+      toast("Exported high-resolution JPG, " + pxStr(c.width, c.height) + " at " + s + "×.");
+    }, "image/jpeg", 0.92);
+  });
+}
+// Uncompressed baseline TIFF (RGB, 300 dpi) written directly from canvas pixels —
+// no library, so it works offline in the single-file app.
+function tiffEncode(imgData, dpi) {
+  const w = imgData.width, h = imgData.height, n = w * h;
+  const strip = new Uint8Array(n * 3), d = imgData.data;
+  for (let i = 0, j = 0; j < strip.length; i += 4, j += 3) {
+    strip[j] = d[i]; strip[j + 1] = d[i + 1]; strip[j + 2] = d[i + 2];
+  }
+  const N_TAGS = 12, ifdOff = 8;
+  const bitsOff = ifdOff + 2 + N_TAGS * 12 + 4, xresOff = bitsOff + 6, yresOff = xresOff + 8;
+  const stripOff = yresOff + 8;
+  const buf = new ArrayBuffer(stripOff + strip.length);
+  const v = new DataView(buf);
+  v.setUint16(0, 0x4949);                       // 'II' little-endian
+  v.setUint16(2, 42, true); v.setUint32(4, ifdOff, true);
+  let o = ifdOff;
+  v.setUint16(o, N_TAGS, true); o += 2;
+  const tag = (id, type, count, val) => {
+    v.setUint16(o, id, true); v.setUint16(o + 2, type, true);
+    v.setUint32(o + 4, count, true); v.setUint32(o + 8, val, true); o += 12;
+  };
+  tag(256, 4, 1, w); tag(257, 4, 1, h);         // width, height
+  tag(258, 3, 3, bitsOff);                      // 8,8,8 bits per sample
+  tag(259, 3, 1, 1); tag(262, 3, 1, 2);         // uncompressed, RGB
+  tag(273, 4, 1, stripOff);                     // strip offset
+  tag(277, 3, 1, 3); tag(278, 4, 1, h);         // samples/px, rows per strip
+  tag(279, 4, 1, strip.length);                 // strip byte count
+  tag(282, 5, 1, xresOff); tag(283, 5, 1, yresOff); tag(296, 3, 1, 2);   // 300 dpi
+  v.setUint32(o, 0, true);                      // no next IFD
+  v.setUint16(bitsOff, 8, true); v.setUint16(bitsOff + 2, 8, true); v.setUint16(bitsOff + 4, 8, true);
+  v.setUint32(xresOff, dpi, true); v.setUint32(xresOff + 4, 1, true);
+  v.setUint32(yresOff, dpi, true); v.setUint32(yresOff + 4, 1, true);
+  new Uint8Array(buf).set(strip, stripOff);
+  return new Blob([buf], { type: "image/tiff" });
+}
+function exportTIFF(opts) {
+  rasterise(opts, 4, 28e6, (c, s) => {          // uncompressed: keep the buffer sane
+    const ctx = c.getContext("2d");
+    const bl = tiffEncode(ctx.getImageData(0, 0, c.width, c.height), 300);
+    download(((opts && opts.fname) || "karate-cladogram") + ".tif", bl);
+    toast("Exported TIFF, " + pxStr(c.width, c.height) + " at 300 dpi ("
+          + Math.round(bl.size / 1048576) + " MB, uncompressed).");
+  });
+}
+// Print PDF: the chart as a full-page 300 dpi image, sized in real print units.
+function pdfFromJPEG(jpeg, wPx, hPx, dpi) {
+  const wPt = wPx * 72 / dpi, hPt = hPx * 72 / dpi;
+  const enc = s => new TextEncoder().encode(s);
+  const parts = [], offsets = [];
+  let pos = 0;
+  const push = b => { parts.push(b); pos += b.length; };
+  push(enc("%PDF-1.4\n"));
+  const obj = (n, body, stream) => {
+    offsets[n] = pos;
+    push(enc(n + " 0 obj\n" + body + "\n"));
+    if (stream) { push(enc("stream\n")); push(stream); push(enc("\nendstream\n")); }
+    push(enc("endobj\n"));
+  };
+  obj(1, "<< /Type /Catalog /Pages 2 0 R >>");
+  obj(2, "<< /Type /Pages /Kids [3 0 R] /Count 1 >>");
+  obj(3, "<< /Type /Page /Parent 2 0 R /MediaBox [0 0 " + wPt.toFixed(2) + " " + hPt.toFixed(2)
+       + "] /Resources << /XObject << /Im0 4 0 R >> >> /Contents 5 0 R >>");
+  obj(4, "<< /Type /XObject /Subtype /Image /Width " + wPx + " /Height " + hPx
+       + " /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length "
+       + jpeg.length + " >>", jpeg);
+  const content = enc("q " + wPt.toFixed(2) + " 0 0 " + hPt.toFixed(2) + " 0 0 cm /Im0 Do Q");
+  obj(5, "<< /Length " + content.length + " >>", content);
+  const xrefPos = pos;
+  let xref = "xref\n0 6\n0000000000 65535 f \n";
+  for (let i = 1; i <= 5; i++) xref += String(offsets[i]).padStart(10, "0") + " 00000 n \n";
+  push(enc(xref + "trailer\n<< /Size 6 /Root 1 0 R >>\nstartxref\n" + xrefPos + "\n%%EOF"));
+  return new Blob(parts, { type: "application/pdf" });
+}
+function exportPDF(opts) {
+  rasterise(opts, 4, MAX_AREA, (c, s) => {
+    c.toBlob(bl => {
+      bl.arrayBuffer().then(ab => {
+        const pdf = pdfFromJPEG(new Uint8Array(ab), c.width, c.height, 300);
+        download(((opts && opts.fname) || "karate-cladogram") + ".pdf", pdf);
+        toast("Exported print PDF: " + pxStr(c.width, c.height) + " at 300 dpi = "
+              + (c.width / 300 * 2.54).toFixed(0) + " × " + (c.height / 300 * 2.54).toFixed(0)
+              + " cm on the page. Drops straight into a PDF book.");
+      });
+    }, "image/jpeg", 0.92);
+  });
 }
 
 /* ============ clade posters: one click → publishable lineage chart ============ */
@@ -1516,6 +1786,7 @@ function exportClade(idArr, title, format, credit) {
   // and a style filter would dim everyone outside it
   state.focus = null;
   state.styleSet = null;
+  world.classList.add("poster");    // print styling: stronger lines, bolder names
   applyFilters();
   updateEdgePaths();
   layoutLabels();
@@ -1525,12 +1796,13 @@ function exportClade(idArr, title, format, credit) {
   }
   try {
     const opts = { title, subtitle: (credit ? credit + " · " : "") + ids.length
-                   + " people · instructor-to-student clade · compiled from published histories, "
-                   + "style-organisation records and Bishop, Okinawan Karate; every link source-checked",
+                   + " people · instructor-to-student clade",
                    fname: "lineage-" + slugify(title) };
-    if (format === "svg") exportSVG(opts);
-    else exportPNG(4, opts);       // serialised synchronously; safe to restore after
+    ({ svg: () => exportSVG(opts), png: () => exportPNG(4, opts),
+       jpg: () => exportJPG(4, opts), tiff: () => exportTIFF(opts),
+       pdf: () => exportPDF(opts) }[format] || (() => exportSVG(opts)))();
   } finally {
+    world.classList.remove("poster");
     state.isolated = savedIso;
     state.focus = savedFocus;
     state.styleSet = savedStyle;
