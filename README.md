@@ -92,4 +92,4 @@ Guni, A. (2026). The Lineage of Karate and Taekwondo: a source-checked instructo
 cladogram. https://github.com/amg-ai-labs/karate-lineage
 ```
 
-Built by [Ahmad Guni](https://github.com/amg-ai-labs). With thanks to Professor Hutan Ashrafian, for whom it was made.
+Built by Ahmad Guni and Hutan Ashrafian
