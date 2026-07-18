@@ -74,7 +74,7 @@ The source CSVs are never edited. Every change is a row in an override file with
 Stated plainly, because a lineage dataset that claims certainty is lying:
 
 - **69 people are not linked** to the main tree. Where no reliable chain exists, none is invented.
-- **Eight dates are contested** between primary sources (Bishop; Quast's documentary work) and the Wikidata consensus. They are flagged for a ruling, not silently resolved. See `pipeline/review/02_needs_your_decision.csv`.
+- **Eight dates were contested** between primary sources (Bishop; Quast's documentary work) and the Wikidata consensus. Each carries a recorded ruling with its rationale in `pipeline/overrides/year_fixes.csv` (two adopted, six kept), reversible like every other decision.
 - **Around 470 people have no recorded birth year.** Where they can be placed from their teachers and students, the chart shows an estimated cohort, marked "c. 1890 (est.)".
 - **The early lineages are oral tradition.** Kūsankū, Chatan Yara and their contemporaries are recorded as they are transmitted, at low confidence, not as established fact.
 - "Trained from" dates are birth + 25 estimates and are marked with an asterisk throughout.

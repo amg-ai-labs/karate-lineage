@@ -16041,11 +16041,11 @@
    "connected": 959,
    "edges": 1367,
    "nodes": 1050,
-   "open_review_items": 8,
+   "open_review_items": 0,
    "orphans": 91
   },
   "pipeline_version": "1.0.0",
-  "source_hash": "a214e86ff1e635aa"
+  "source_hash": "bcc84b034ef25e47"
  },
  "nodes": [
   {
@@ -41408,7 +41408,7 @@
    "active_from_estimated": true,
    "birth_year": 1908,
    "connected": true,
-   "death_year": 1969,
+   "death_year": 1967,
    "flags": {
     "added_by_research": false,
     "legendary": false,
@@ -48419,7 +48419,7 @@
    "active_from_estimated": true,
    "birth_year": 1853,
    "connected": true,
-   "death_year": 1916,
+   "death_year": 1915,
    "flags": {
     "added_by_research": false,
     "legendary": false,
