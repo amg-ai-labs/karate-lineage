@@ -145,6 +145,28 @@
    "target": "C00628"
   },
   {
+   "confidence": "medium",
+   "evidence": [
+    "research:http://karate-k.ru/yoshitsune-senaga-1"
+   ],
+   "id": "A0008->J0039",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "A0008",
+   "target": "J0039"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:http://web.archive.org/web/20221128154023/http://okinawakaratenews.com/eng/hanshi.php"
+   ],
+   "id": "A0008->J0041",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "A0008",
+   "target": "J0041"
+  },
+  {
    "confidence": "high",
    "evidence": [
     "research:https://en.wikipedia.org/wiki/Kiyohide_Shinjo",
@@ -166,6 +188,17 @@
    "is_primary": false,
    "source": "A0009",
    "target": "C00628"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://iogkf.com/2021/09/in-memory-of-aragaki-shuichi-sensei/"
+   ],
+   "id": "A0011->J0001",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "A0011",
+   "target": "J0001"
   },
   {
    "confidence": "high",
@@ -320,6 +353,17 @@
    "is_primary": true,
    "source": "A0020",
    "target": "A0111"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "research:https://www.okinawakaratekobudo.com/about.html"
+   ],
+   "id": "A0020->J0029",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "A0020",
+   "target": "J0029"
   },
   {
    "confidence": "medium",
@@ -536,6 +580,17 @@
   {
    "confidence": "high",
    "evidence": [
+    "research:https://medium.com/@motobu715/self-introduction-9c4fb4e44e5a"
+   ],
+   "id": "A0028->A0220",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "A0028",
+   "target": "A0220"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
     "research:https://en.wikipedia.org/wiki/Motobu_Ch%C5%8Dy%C5%AB",
     "research:https://en.wikipedia.org/wiki/House_of_Motobu"
    ],
@@ -623,6 +678,17 @@
    "is_primary": true,
    "source": "A0053",
    "target": "A0061"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:shogenryu.com/lineage/: long-time senior student of Kensei Taba (1933-2012, founder of Shogen-ryu, himself a student of Nagamine Shoshin from 1948, Chibana Choshin from 1951 and Soken Hohan from 1952), who awarded Maeda 10th dan in 2012 and chose him as successor"
+   ],
+   "id": "A0054->J0049",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "A0054",
+   "target": "J0049"
   },
   {
    "confidence": "high",
@@ -895,6 +961,28 @@
   {
    "confidence": "medium",
    "evidence": [
+    "research:OKIC official Okinawa dojo register lists 仲本英征 (furigana ヒデユキ, Hideyuki) as head of the Ginowan branch dojo of the Goju-ryu Okinawakan Karate-do Association, Nakamoto Kiichi's organisation; Yushikan blog names Hideyuki Nakamoto among Kiichi Nakamoto's senior kobudo students"
+   ],
+   "id": "A0128->J0047",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "A0128",
+   "target": "J0047"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://sites.google.com/tsuzukete.com/home/knowledge/history/kotaro-iha"
+   ],
+   "id": "A0129->J0036",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "A0129",
+   "target": "J0036"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
     "research:https://historyandstoriesofgojuryu.blogspot.com/2020/10/kanki-izumikawa-pioneer-of-goju-ryu-in.html",
     "research:https://shuriway.com/izumigawa.html"
    ],
@@ -919,14 +1007,14 @@
   {
    "confidence": "high",
    "evidence": [
-    "research:https://sites.google.com/site/worldmartialartsstyles/karate/gohaku-kai",
-    "research:https://historyandstoriesofgojuryu.blogspot.com/2021/07/iken-tokashiki-okinawa-times-july-4th.html"
+    "research:https://historyandstoriesofgojuryu.blogspot.com/2021/07/iken-tokashiki-okinawa-times-july-4th.html",
+    "research:https://sites.google.com/site/worldmartialartsstyles/karate/gohaku-kai"
    ],
-   "id": "A0132->C00664",
+   "id": "A0132->A0212",
    "inferred_flip": false,
-   "is_primary": true,
+   "is_primary": false,
    "source": "A0132",
-   "target": "C00664"
+   "target": "A0212"
   },
   {
    "confidence": "high",
@@ -950,6 +1038,50 @@
    "is_primary": true,
    "source": "A0138",
    "target": "A0140"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://budojapan.com/karate/dm05e/"
+   ],
+   "id": "A0138->J0009",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "A0138",
+   "target": "J0009"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://www.sakuratakekan.org/escuelas/okinawa-karate-do-goju-ryu-seibukan/ (affiliated with Shinjo Masanobu's Shobukan from 1980; became its president in 1994 after Shinjo's death)"
+   ],
+   "id": "A0138->J0016",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "A0138",
+   "target": "J0016"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://okinawa-karate-navi.com/en/dojo/detail/24/"
+   ],
+   "id": "A0138->J0037",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "A0138",
+   "target": "J0037"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:sakuratakekan.org: trained under Masanobu Shinjo (1938-1993, founder of the Goju-ryu Shobukan, student of Yagi Meitoku) from 1963"
+   ],
+   "id": "A0138->J0050",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "A0138",
+   "target": "J0050"
   },
   {
    "confidence": "high",
@@ -1376,6 +1508,17 @@
   {
    "confidence": "medium",
    "evidence": [
+    "research:http://takakarate.com/index/?page_id=5 (became a student of Sensei Iken Tokashiki in Okinawa in 1968; teaches Gohakukai karate)"
+   ],
+   "id": "A0212->J0020",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "A0212",
+   "target": "J0020"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
     "research:https://seidokankarate.org/shian-toma-biography",
     "research:https://en.wikipedia.org/wiki/Okinawa_Seidokan"
    ],
@@ -1684,6 +1827,17 @@
   {
    "confidence": "high",
    "evidence": [
+    "research:https://hakushinkan.sakura.ne.jp/history.html (from 26 June 1934 studied under 久場長仁 in Naha, receiving the orthodox Matsumora-ryu Tomari-te)"
+   ],
+   "id": "C00024->J0014",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "C00024",
+   "target": "J0014"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
     "research:https://en.wikipedia.org/wiki/Sh%C5%8Dshin_Nagamine"
    ],
    "id": "C00024->Q1963468",
@@ -1702,6 +1856,39 @@
    "is_primary": false,
    "source": "C00025",
    "target": "C00232"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://ryukyu-bugei.com/?p=3954"
+   ],
+   "id": "C00025->Q6782517",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "C00025",
+   "target": "Q6782517"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://ryukyu-bugei.com/?p=9879"
+   ],
+   "id": "C00025->W0001",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "C00025",
+   "target": "W0001"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://ryukyu-bugei.com/?p=3954"
+   ],
+   "id": "C00025->W0025",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "C00025",
+   "target": "W0025"
   },
   {
    "confidence": "low",
@@ -1820,6 +2007,17 @@
   {
    "confidence": "high",
    "evidence": [
+    "research:https://www.okinawakaratekobudo.com/about.html"
+   ],
+   "id": "C00034->J0029",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "C00034",
+   "target": "J0029"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
     "research:https://en.wikipedia.org/wiki/Joe_Lewis_(martial_artist)",
     "research:https://joelewisassociation.com/joe-lewis-story/"
    ],
@@ -1896,7 +2094,7 @@
    ],
    "id": "C00035->C00040",
    "inferred_flip": false,
-   "is_primary": true,
+   "is_primary": false,
    "source": "C00035",
    "target": "C00040"
   },
@@ -1932,6 +2130,17 @@
    "is_primary": false,
    "source": "C00035",
    "target": "C00294"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://www.seiryukan.fr/"
+   ],
+   "id": "C00035->J0042",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "C00035",
+   "target": "J0042"
   },
   {
    "confidence": "low",
@@ -2200,6 +2409,17 @@
    "target": "C00565"
   },
   {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://www.kiyobukan.com/about-us/hanshi-judan-nakaza-seiei"
+   ],
+   "id": "C00098->J0011",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "C00098",
+   "target": "J0011"
+  },
+  {
    "confidence": "low",
    "evidence": [
     "research:https://historyandstoriesofgojuryu.blogspot.com/2020/12/dojo-of-seiko-higa-lineage.html"
@@ -2209,6 +2429,17 @@
    "is_primary": false,
    "source": "C00101",
    "target": "C00176"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://historyandstoriesofgojuryu.blogspot.com/2020/12/dojo-of-seiko-higa-lineage.html"
+   ],
+   "id": "C00101->J0002",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "C00101",
+   "target": "J0002"
   },
   {
    "confidence": "high",
@@ -2320,6 +2551,17 @@
   {
    "confidence": "medium",
    "evidence": [
+    "research:https://sites.google.com/tsuzukete.com/home/knowledge/history/kotaro-iha"
+   ],
+   "id": "C00129->J0036",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "C00129",
+   "target": "J0036"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
     "book:Bishop p.20"
    ],
    "id": "C00131->C00634",
@@ -2423,6 +2665,17 @@
    "is_primary": false,
    "source": "C00148",
    "target": "Q15987228"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "research:https://ryukyu-bugei.com/?p=1783"
+   ],
+   "id": "C00150->Q723832",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "C00150",
+   "target": "Q723832"
   },
   {
    "confidence": "high",
@@ -2581,7 +2834,7 @@
    ],
    "id": "C00206->Q3028499",
    "inferred_flip": false,
-   "is_primary": false,
+   "is_primary": true,
    "source": "C00206",
    "target": "Q3028499"
   },
@@ -2592,7 +2845,7 @@
    ],
    "id": "C00206->Q6426547",
    "inferred_flip": false,
-   "is_primary": true,
+   "is_primary": false,
    "source": "C00206",
    "target": "Q6426547"
   },
@@ -2741,9 +2994,20 @@
    ],
    "id": "C00251->Q3028499",
    "inferred_flip": false,
-   "is_primary": true,
+   "is_primary": false,
    "source": "C00251",
    "target": "Q3028499"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://ryukyu-bugei.com/?p=7351"
+   ],
+   "id": "C00251->Q6426547",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "C00251",
+   "target": "Q6426547"
   },
   {
    "confidence": "high",
@@ -2813,6 +3077,17 @@
    "is_primary": true,
    "source": "C00261",
    "target": "C00293"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://ryukyu-bugei.com/?p=6630"
+   ],
+   "id": "C00261->C00350",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "C00261",
+   "target": "C00350"
   },
   {
    "confidence": "high",
@@ -2959,6 +3234,28 @@
   {
    "confidence": "medium",
    "evidence": [
+    "research:https://okic.okinawa/en/archives/news/p5602 (studied under Iha Koshin before being entrusted with the Shodokan school)"
+   ],
+   "id": "C00296->J0022",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "C00296",
+   "target": "J0022"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:Budo Japan 'Exploring the spirit of the Ryukyu' series 13 (Hiden 05/2024): joined Yonamine Kosuke's Uechi-ryu dojo at age 21; roster node C00301 is a generic 'Kosuke Yonamine' entry, assumed to be the same Uechi-ryu master (register no. 87)"
+   ],
+   "id": "C00301->J0048",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "C00301",
+   "target": "J0048"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
     "book:Bishop p.153"
    ],
    "id": "C00329->B0029",
@@ -2990,6 +3287,17 @@
    "target": "C00188"
   },
   {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://kyudomugen.com/karateka/"
+   ],
+   "id": "C00350->J0006",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "C00350",
+   "target": "J0006"
+  },
+  {
    "confidence": "high",
    "evidence": [
     "research:https://en.wikipedia.org/wiki/Sh%C5%8Dshin_Nagamine"
@@ -3012,7 +3320,7 @@
    "target": "C00373"
   },
   {
-   "confidence": "low",
+   "confidence": "medium",
    "evidence": [
     "research:https://www.usadojo.com/shigeru-nakamura/"
    ],
@@ -3215,6 +3523,17 @@
    "is_primary": false,
    "source": "C00444",
    "target": "C00348"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:http://karate-k.ru/yoshitsune-senaga-1"
+   ],
+   "id": "C00444->J0039",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "C00444",
+   "target": "J0039"
   },
   {
    "confidence": "high",
@@ -3492,6 +3811,28 @@
    "target": "C00663"
   },
   {
+   "confidence": "high",
+   "evidence": [
+    "research:https://asatodojo.com/introducing-shiroma-ha-moidi-motoburyu/"
+   ],
+   "id": "C00478->J0028",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "C00478",
+   "target": "J0028"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://www.okinawakaratekobudo.com/about.html"
+   ],
+   "id": "C00478->J0029",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "C00478",
+   "target": "J0029"
+  },
+  {
    "confidence": "low",
    "evidence": [
     "research:https://www.dragon-tsunami.org/Dtimes/Pages/articleg.htm"
@@ -3532,7 +3873,7 @@
    ],
    "id": "C00494->C00253",
    "inferred_flip": false,
-   "is_primary": true,
+   "is_primary": false,
    "source": "C00494",
    "target": "C00253"
   },
@@ -3863,6 +4204,17 @@
    "target": "C00107"
   },
   {
+   "confidence": "high",
+   "evidence": [
+    "research:Budo Japan dm13e: long-term teacher at the Uechi-ryu Aja Shubukan dojo, who certified his karate 10th dan"
+   ],
+   "id": "C00546->J0048",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "C00546",
+   "target": "J0048"
+  },
+  {
    "confidence": "medium",
    "evidence": [
     "book:Bishop p.96"
@@ -3935,6 +4287,17 @@
    "is_primary": false,
    "source": "C00564",
    "target": "Q699236"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://sites.google.com/tsuzukete.com/home/knowledge/history/kotaro-iha"
+   ],
+   "id": "C00566->J0036",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "C00566",
+   "target": "J0036"
   },
   {
    "confidence": "high",
@@ -4371,7 +4734,7 @@
    ],
    "id": "Q1071733->C00236",
    "inferred_flip": false,
-   "is_primary": true,
+   "is_primary": false,
    "source": "Q1071733",
    "target": "C00236"
   },
@@ -4398,6 +4761,50 @@
    "is_primary": true,
    "source": "Q1071733",
    "target": "C00623"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://beisho.org/historical_12.html"
+   ],
+   "id": "Q1071733->J0005",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q1071733",
+   "target": "J0005"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://kyudomugen.com/karateka/"
+   ],
+   "id": "Q1071733->J0006",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q1071733",
+   "target": "J0006"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://www.facebook.com/groups/709248329841056/posts/1742438559855356/ (described as a student of Chibana Chosin, later Higa Yuchoku)"
+   ],
+   "id": "Q1071733->J0023",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q1071733",
+   "target": "J0023"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://sites.google.com/tsuzukete.com/home/knowledge/history/kotaro-iha"
+   ],
+   "id": "Q1071733->J0036",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q1071733",
+   "target": "J0036"
   },
   {
    "confidence": "high",
@@ -4550,6 +4957,17 @@
    "is_primary": true,
    "source": "Q1147708",
    "target": "A0028"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://medium.com/motobu-ryu-blog/why-i-was-taught-motobu-udund%C4%AB-b927598a3453"
+   ],
+   "id": "Q1147708->A0219",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q1147708",
+   "target": "A0219"
   },
   {
    "confidence": "medium",
@@ -4728,6 +5146,28 @@
    "is_primary": true,
    "source": "Q1147708",
    "target": "Q7418861"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://medium.com/@motobu715/motobu-ch%C5%8Dkis-kata-0d96d24afd6e"
+   ],
+   "id": "Q1147708->W0004",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q1147708",
+   "target": "W0004"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://medium.com/@motobu715/the-secretiveness-of-motobu-ch%C5%8Dki-95db4441cd04"
+   ],
+   "id": "Q1147708->W0019",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q1147708",
+   "target": "W0019"
   },
   {
    "confidence": "high",
@@ -5307,6 +5747,39 @@
    "target": "C00349"
   },
   {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://chibanaproject.blogspot.com/2012/01/chibana-stories.html (student of Higa Yuchoku; relayed Chibana stories told to him by Higa)"
+   ],
+   "id": "Q15987228->J0023",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q15987228",
+   "target": "J0023"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://okinawate.com.ar/nuestraescuela/"
+   ],
+   "id": "Q15987228->J0027",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q15987228",
+   "target": "J0027"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://sites.google.com/tsuzukete.com/home/knowledge/history/kotaro-iha"
+   ],
+   "id": "Q15987228->J0036",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q15987228",
+   "target": "J0036"
+  },
+  {
    "confidence": "high",
    "evidence": [
     "book:Bishop p.116"
@@ -5329,6 +5802,17 @@
    "is_primary": true,
    "source": "Q15987228",
    "target": "Q6869269"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:http://okkb.org/category/recent-news"
+   ],
+   "id": "Q15987228->Q8056246",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q15987228",
+   "target": "Q8056246"
   },
   {
    "confidence": "low",
@@ -5494,6 +5978,17 @@
    "evidence": [
     "book:Bishop p.36"
    ],
+   "id": "Q16016038->A0212",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q16016038",
+   "target": "A0212"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "book:Bishop p.36"
+   ],
    "id": "Q16016038->C00137",
    "inferred_flip": false,
    "is_primary": true,
@@ -5578,15 +6073,15 @@
    "target": "C00490"
   },
   {
-   "confidence": "medium",
+   "confidence": "high",
    "evidence": [
-    "book:Bishop p.36"
+    "research:https://karatedeokinawa.com/sensei-mauricio-3/ (direct student of Dai Sensei Meitoku Yagi); Bishop, Okinawan Karate (1989), Yagi Meitoku lineage chart lists 'Iko Yonamine (Sao Paulo)'"
    ],
-   "id": "Q16016038->C00664",
+   "id": "Q16016038->J0046",
    "inferred_flip": false,
-   "is_primary": false,
+   "is_primary": true,
    "source": "Q16016038",
-   "target": "C00664"
+   "target": "J0046"
   },
   {
    "confidence": "medium",
@@ -5830,7 +6325,7 @@
    ],
    "id": "Q1728269->C00211",
    "inferred_flip": false,
-   "is_primary": true,
+   "is_primary": false,
    "source": "Q1728269",
    "target": "C00211"
   },
@@ -6232,6 +6727,61 @@
    "is_primary": true,
    "source": "Q1728269",
    "target": "C00651"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://kyudomugen.com/karateka/"
+   ],
+   "id": "Q1728269->J0007",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q1728269",
+   "target": "J0007"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "research:Inferred only: the Yafuso Shubukan is a branch dojo in the Uechi soke Shubukan (修武館) line and Matsuda's generation of Uechi-ryu 10th dans were Kanei Uechi's students; no source names his teacher explicitly"
+   ],
+   "id": "Q1728269->J0013",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q1728269",
+   "target": "J0013"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://shogunmartialarts.org.uk/karate/okikukai-on-okinawa-mainland-japan-masters/ (born February 15, 1933, Hanshi 10 Dan, student of Uechi Kanei, adviser of the Okikukai)"
+   ],
+   "id": "Q1728269->J0025",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q1728269",
+   "target": "J0025"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://shogunmartialarts.org.uk/karate/okikukai-on-okinawa-mainland-japan-masters/"
+   ],
+   "id": "Q1728269->J0035",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q1728269",
+   "target": "J0035"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:http://karate-k.ru/yoshitsune-senaga-1"
+   ],
+   "id": "Q1728269->J0039",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q1728269",
+   "target": "J0039"
   },
   {
    "confidence": "high",
@@ -6743,6 +7293,17 @@
    "target": "Q982540"
   },
   {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://sites.google.com/site/shinghikai/il-kobudo"
+   ],
+   "id": "Q1908088->J0034",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q1908088",
+   "target": "J0034"
+  },
+  {
    "confidence": "high",
    "evidence": [
     "research:https://en.wikipedia.org/wiki/Matayoshi_Kobudo",
@@ -6962,6 +7523,39 @@
    "is_primary": true,
    "source": "Q1908090",
    "target": "C00653"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://en.wikipedia.org/wiki/Zen_Okinawan_Kobudo_Renmei"
+   ],
+   "id": "Q1908090->J0004",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q1908090",
+   "target": "J0004"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:http://karate-k.ru/yoshitsune-senaga-1"
+   ],
+   "id": "Q1908090->J0039",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q1908090",
+   "target": "J0039"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:Budo Japan dm13e: kobudo instruction under Matayoshi Shinpo (1921-1997); kobudo hanshi 10th dan later certified by Nakamoto Masahiro (roster C00201)"
+   ],
+   "id": "Q1908090->J0048",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q1908090",
+   "target": "J0048"
   },
   {
    "confidence": "high",
@@ -7369,6 +7963,39 @@
    "target": "C00666"
   },
   {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://hakushinkan.sakura.ne.jp/history.html (chronology: in 1953 he took a place in Nagamine Shoshin's dojo in Naha; secondary influence rather than main teacher)"
+   ],
+   "id": "Q1963468->J0014",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q1963468",
+   "target": "J0014"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "research:Inferred: a Matsubayashi-ryu hanshi 10th dan of his generation performing at the official 2009 Okinawa tournament would have trained in Nagamine Shoshin's line; no source names his teacher explicitly"
+   ],
+   "id": "Q1963468->J0015",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q1963468",
+   "target": "J0015"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "research:https://matsumura-kai.com/okinawa-shorin-ryu-shobu-kan-association/ says he 'received karate lessons from many masters including Grand Master Nagamine and Nakahara'; which Nagamine is not specified"
+   ],
+   "id": "Q1963468->J0017",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q1963468",
+   "target": "J0017"
+  },
+  {
    "confidence": "low",
    "evidence": [
     "research:https://www.amazon.com/Secrets-Okinawan-Karate-Techniques-Bushido/dp/4770027591"
@@ -7620,6 +8247,28 @@
   {
    "confidence": "high",
    "evidence": [
+    "research:https://iogkf.com/2021/09/in-memory-of-aragaki-shuichi-sensei/"
+   ],
+   "id": "Q221121->J0001",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q221121",
+   "target": "J0001"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://historyandstoriesofgojuryu.blogspot.com/2021/06/who-were-senior-students-of-chojun.html (main pre-war student; dojo in Izumizaki-cho visited by Miyagi)"
+   ],
+   "id": "Q221121->J0021",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q221121",
+   "target": "J0021"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
     "infobox:teacher"
    ],
    "id": "Q221121->Q15987228",
@@ -7831,7 +8480,7 @@
    ],
    "id": "Q2393877->C00350",
    "inferred_flip": false,
-   "is_primary": true,
+   "is_primary": false,
    "source": "Q2393877",
    "target": "C00350"
   },
@@ -9017,6 +9666,17 @@
   {
    "confidence": "high",
    "evidence": [
+    "research:https://ryukyu-bugei.com/?p=7351"
+   ],
+   "id": "Q3028499->W0018",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q3028499",
+   "target": "W0018"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
     "wikidata:P1066"
    ],
    "id": "Q30928815->Q386415",
@@ -9173,6 +9833,17 @@
   {
    "confidence": "high",
    "evidence": [
+    "research:https://medium.com/@motobu715/sh%C5%8D-sanchin-matsumuras-sanchin-b529b7383e97"
+   ],
+   "id": "Q3139173->C00002",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q3139173",
+   "target": "C00002"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
     "research:https://www.kenshin-kan.com/hanshi-fusei-kise/",
     "research:http://www.geocities.ws/karatejmh/fuseikise.htm"
    ],
@@ -9225,6 +9896,17 @@
    "is_primary": true,
    "source": "Q3139173",
    "target": "C00370"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://ja.wikipedia.org/wiki/%E5%AE%AE%E5%9F%8E%E9%A9%8D"
+   ],
+   "id": "Q3139173->J0008",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q3139173",
+   "target": "J0008"
   },
   {
    "confidence": "high",
@@ -9444,6 +10126,61 @@
    "target": "C00521"
   },
   {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://beisho.org/historical_12.html"
+   ],
+   "id": "Q3194253->J0005",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q3194253",
+   "target": "J0005"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://ja.wikipedia.org/wiki/%E5%AE%AE%E5%9F%8E%E9%A9%8D"
+   ],
+   "id": "Q3194253->J0008",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q3194253",
+   "target": "J0008"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://travel67.com/2014/06/06/seiyu-nakamura-10th-dan-okinawa-dentou-shidokan-karate-and-kobujutsu/"
+   ],
+   "id": "Q3194253->J0010",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q3194253",
+   "target": "J0010"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://www.karatedohshudokanmx.com/or%C3%ADgenes/yoshiki-tokuyama (trained under Miyahira from 1975; awarded 9th dan hanshi in Okinawa Shorin-ryu on 12 December 2004)"
+   ],
+   "id": "Q3194253->J0019",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q3194253",
+   "target": "J0019"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://virginiadojo.com/okinawan-shidokan-karate-10th-dans-who-is-who/"
+   ],
+   "id": "Q3194253->J0030",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q3194253",
+   "target": "J0030"
+  },
+  {
    "confidence": "high",
    "evidence": [
     "research:https://en.wikipedia.org/wiki/Beikoku_Shidokan",
@@ -9544,6 +10281,17 @@
    "is_primary": false,
    "source": "Q3482287",
    "target": "C00514"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://kyudomugen.com/karateka/"
+   ],
+   "id": "Q3482287->J0006",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q3482287",
+   "target": "J0006"
   },
   {
    "confidence": "high",
@@ -9904,6 +10652,50 @@
    "target": "C00669"
   },
   {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://www.kiyobukan.com/about-us/hanshi-judan-nakaza-seiei"
+   ],
+   "id": "Q3482635->J0011",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q3482635",
+   "target": "J0011"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://matsumura-kai.com/okinawa-shorin-ryu-shobu-kan-association/ (promoted to 9th dan in 2005 by Shugoro Nakazato, Shorinkan president; Gibo was Chief Advisor of the Shorinkan South Asia federation)"
+   ],
+   "id": "Q3482635->J0017",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q3482635",
+   "target": "J0017"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://www.sanchinbushi.com/news-archive/43-shorinkan-midwest-okinawan-connection-camp-may-20-21-a-22"
+   ],
+   "id": "Q3482635->J0044",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q3482635",
+   "target": "J0044"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://travel67.com/2023/06/16/sensei-masters-of-okinawan-karate-s23-yoshimasa-matsuda/"
+   ],
+   "id": "Q3482635->J0045",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q3482635",
+   "target": "J0045"
+  },
+  {
    "confidence": "high",
    "evidence": [
     "research:https://en.wikipedia.org/wiki/Ahagon_Naonobu"
@@ -10068,6 +10860,17 @@
    "is_primary": true,
    "source": "Q3772405",
    "target": "A0227"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://www.karatedohshudokanmx.com/or%C3%ADgenes/yoshiki-tokuyama (became a disciple of Toyama Kanken in 1963 until Toyama's death in 1966; note the roster row Q3772405 carries the romaji 'Kanken Oyadomari' but its kanji 遠山寛賢 is Toyama Kanken, the Shudokan founder)"
+   ],
+   "id": "Q3772405->J0019",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q3772405",
+   "target": "J0019"
   },
   {
    "confidence": "high",
@@ -10965,6 +11768,39 @@
    "target": "A0138"
   },
   {
+   "confidence": "high",
+   "evidence": [
+    "research:https://www.sakuratakekan.org/escuelas/okinawa-karate-do-goju-ryu-seibukan/ (began August 1956 aged 20 under Toguchi Seikichi of the Shoreikan; opened his own Shoreikan dojo in Kin in 1962)"
+   ],
+   "id": "Q3954660->J0016",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q3954660",
+   "target": "J0016"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://m.facebook.com/shinjikangojuryu/photos/477121374423731/ and https://historyandstoriesofgojuryu.blogspot.com/2020/10/zenshu-toyama-sensei-from-okinawa-times.html (direct senior deshi of Toguchi Seikichi, Shoreikan)"
+   ],
+   "id": "Q3954660->J0026",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q3954660",
+   "target": "J0026"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://ja.wikipedia.org/wiki/%E4%B9%85%E5%A0%B4%E8%89%AF%E7%94%B7"
+   ],
+   "id": "Q3954660->J0031",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q3954660",
+   "target": "J0031"
+  },
+  {
    "confidence": "medium",
    "evidence": [
     "research:https://www.usadojo.com/chuzo-kotaka-kotaka-ha-shito-ryu/",
@@ -11537,6 +12373,17 @@
   {
    "confidence": "high",
    "evidence": [
+    "research:https://medium.com/motobu-ryu-blog/motobu-ch%C5%8Dy%C5%ABs-goj%C5%ABshiho-ec8332145ab1"
+   ],
+   "id": "Q453505->C00236",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q453505",
+   "target": "C00236"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
     "research:http://findingkarate.com/wordpress/kenzo-mabuni/",
     "research:https://www.seitoshitoryu.com/soke.php"
    ],
@@ -11902,6 +12749,17 @@
   {
    "confidence": "high",
    "evidence": [
+    "research:shogenryu.com/lineage/: trained under Chogi Kishaba in Yamane-ryu (Yamanni-ryu) kobudo, in which he holds 9th dan"
+   ],
+   "id": "Q5103850->J0049",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q5103850",
+   "target": "J0049"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
     "infobox:teacher"
    ],
    "id": "Q5103850->Q6378081",
@@ -12149,6 +13007,28 @@
   {
    "confidence": "high",
    "evidence": [
+    "research:https://ryukyu-bugei.com/?p=7432"
+   ],
+   "id": "Q527422->W0016",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q527422",
+   "target": "W0016"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:http://web.archive.org/web/20240225020323/https://ryukyu-bugei.com/?p=5016"
+   ],
+   "id": "Q527422->W0021",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q527422",
+   "target": "W0021"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
     "research:https://en.wikipedia.org/wiki/Terry_O%27Neill_(martial_artist)",
     "research:https://kugb.org/instructors/8th-dan/terry-oneill/"
    ],
@@ -12332,6 +13212,28 @@
   {
    "confidence": "high",
    "evidence": [
+    "research:https://goyukan-france.com/shinjo-anyu-sensei/"
+   ],
+   "id": "Q5349190->J0003",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q5349190",
+   "target": "J0003"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://okic.okinawa/en/archives/news/p5602 (studied karate under Goju-ryu masters Miyazato Eiichi and Iha Koshin)"
+   ],
+   "id": "Q5349190->J0022",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q5349190",
+   "target": "J0022"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
     "infobox:students",
     "research:https://en.wikipedia.org/wiki/Eiichi_Miyazato",
     "research:https://en.wikipedia.org/wiki/Morio_Higaonna"
@@ -12391,6 +13293,17 @@
    "is_primary": true,
    "source": "Q542989",
    "target": "Q1336547"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:http://web.archive.org/web/20240224182119/https://ryukyu-bugei.com/?p=3104"
+   ],
+   "id": "Q557301->C00350",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q557301",
+   "target": "C00350"
   },
   {
    "confidence": "high",
@@ -12944,6 +13857,17 @@
   {
    "confidence": "high",
    "evidence": [
+    "research:https://ryukyu-bugei.com/?p=11688"
+   ],
+   "id": "Q6782517->C00253",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q6782517",
+   "target": "C00253"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
     "research:https://en.wikipedia.org/wiki/Yamanni_ryu"
    ],
    "id": "Q6782517->C00494",
@@ -13190,6 +14114,28 @@
    "target": "Q7447367"
   },
   {
+   "confidence": "high",
+   "evidence": [
+    "research:https://ryukyu-bugei.com/?p=7324"
+   ],
+   "id": "Q699236->W0022",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q699236",
+   "target": "W0022"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://ryukyu-bugei.com/?p=7324"
+   ],
+   "id": "Q705617->C00003",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q705617",
+   "target": "C00003"
+  },
+  {
    "confidence": "low",
    "evidence": [
     "research:https://simonechierchini.com/2020/04/29/kojo-ryu-karate-lo-stile-fantasma-di-okinawa/"
@@ -13279,7 +14225,7 @@
    ],
    "id": "Q706389->A0219",
    "inferred_flip": false,
-   "is_primary": true,
+   "is_primary": false,
    "source": "Q706389",
    "target": "A0219"
   },
@@ -13294,6 +14240,17 @@
    "is_primary": true,
    "source": "Q706389",
    "target": "C00037"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "research:https://medium.com/motobu-ryu-blog/motobu-ch%C5%8Dy%C5%ABs-goj%C5%ABshiho-ec8332145ab1"
+   ],
+   "id": "Q706389->C00236",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q706389",
+   "target": "C00236"
   },
   {
    "confidence": "high",
@@ -13566,6 +14523,17 @@
    "target": "Q2393877"
   },
   {
+   "confidence": "low",
+   "evidence": [
+    "research:https://ryukyu-bugei.com/?p=4123"
+   ],
+   "id": "Q715769->Q3028499",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q715769",
+   "target": "Q3028499"
+  },
+  {
    "confidence": "medium",
    "evidence": [
     "infobox:students",
@@ -13781,6 +14749,17 @@
    "target": "Q7800728"
   },
   {
+   "confidence": "low",
+   "evidence": [
+    "research:https://medium.com/@motobu715/motobu-ch%C5%8Dki-is-tomari-te-1c70d1dc4e2c"
+   ],
+   "id": "Q721201->Q1147708",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q721201",
+   "target": "Q1147708"
+  },
+  {
    "confidence": "high",
    "evidence": [
     "infobox:students",
@@ -13844,6 +14823,17 @@
   {
    "confidence": "high",
    "evidence": [
+    "research:https://ryukyu-bugei.com/?p=7432"
+   ],
+   "id": "Q722028->W0016",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q722028",
+   "target": "W0016"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
     "research:https://www.itosu-ryu.net/soke"
    ],
    "id": "Q723832->A0085",
@@ -13880,6 +14870,17 @@
   {
    "confidence": "high",
    "evidence": [
+    "research:https://ryukyu-bugei.com/?p=5186"
+   ],
+   "id": "Q723832->C00040",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q723832",
+   "target": "C00040"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
     "research:https://www.karatebyjesse.com/gendai-no-bushi-nakamoto-masahiro-pt-1/",
     "research:https://budojapan.com/guide/post_251/"
    ],
@@ -13888,6 +14889,17 @@
    "is_primary": false,
    "source": "Q723832",
    "target": "C00201"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://ryukyu-bugei.com/?p=5186"
+   ],
+   "id": "Q723832->C00211",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q723832",
+   "target": "C00211"
   },
   {
    "confidence": "high",
@@ -13917,7 +14929,7 @@
    "target": "Q1473967"
   },
   {
-   "confidence": "low",
+   "confidence": "medium",
    "evidence": [
     "research:https://ja.wikipedia.org/wiki/%E5%B9%B3%E4%BF%A1%E8%B3%A2"
    ],
@@ -13949,6 +14961,17 @@
    "is_primary": true,
    "source": "Q723832",
    "target": "Q6918025"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://ryukyu-bugei.com/?p=9238"
+   ],
+   "id": "Q723832->W0008",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q723832",
+   "target": "W0008"
   },
   {
    "confidence": "high",
@@ -14172,7 +15195,7 @@
    ],
    "id": "Q7447367->C00002",
    "inferred_flip": false,
-   "is_primary": true,
+   "is_primary": false,
    "source": "Q7447367",
    "target": "C00002"
   },
@@ -14418,6 +15441,61 @@
    "is_primary": true,
    "source": "Q7447367",
    "target": "C00668"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://en.wikipedia.org/wiki/Sek%C5%8D_Higa"
+   ],
+   "id": "Q7447367->J0002",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q7447367",
+   "target": "J0002"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://www.kiyobukan.com/about-us/hanshi-judan-nakaza-seiei"
+   ],
+   "id": "Q7447367->J0011",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q7447367",
+   "target": "J0011"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://xn--dsseldorf-karate-jzb.de/kata-seisan/ (after WWII one of the senior students at Higa Seiko's Itoman dojo)"
+   ],
+   "id": "Q7447367->J0021",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q7447367",
+   "target": "J0021"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:https://ryukyu-bugei.com/?p=6892 and https://yamada-san.blogspot.com/2007/12/oral-history-about-kanryo-higaonna.html (first-rate disciple of Higa Seiko, devoted his youth to training under him)"
+   ],
+   "id": "Q7447367->J0024",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q7447367",
+   "target": "J0024"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "research:http://karate-k.ru/yoshitsune-senaga-1"
+   ],
+   "id": "Q7447367->J0039",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q7447367",
+   "target": "J0039"
   },
   {
    "confidence": "high",
@@ -14901,18 +15979,73 @@
    "is_primary": false,
    "source": "Q99517310",
    "target": "Q2393877"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://medium.com/@motobu715/self-introduction-9c4fb4e44e5a"
+   ],
+   "id": "W0012->A0220",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "W0012",
+   "target": "A0220"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://ryukyu-bugei.com/?p=4123"
+   ],
+   "id": "W0015->Q527422",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "W0015",
+   "target": "Q527422"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://medium.com/@motobu715/motobu-ch%C5%8Dkis-kata-0d96d24afd6e"
+   ],
+   "id": "W0019->A0028",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "W0019",
+   "target": "A0028"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:http://web.archive.org/web/20240225020323/https://ryukyu-bugei.com/?p=5016"
+   ],
+   "id": "W0021->C00034",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "W0021",
+   "target": "C00034"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "research:https://ryukyu-bugei.com/?p=3954"
+   ],
+   "id": "W0025->C00201",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "W0025",
+   "target": "C00201"
   }
  ],
  "meta": {
   "counts": {
-   "connected": 904,
-   "edges": 1264,
-   "nodes": 973,
-   "open_review_items": 6,
-   "orphans": 69
+   "connected": 959,
+   "edges": 1367,
+   "nodes": 1050,
+   "open_review_items": 8,
+   "orphans": 91
   },
   "pipeline_version": "1.0.0",
-  "source_hash": "1dc427a40223c06b"
+  "source_hash": "a214e86ff1e635aa"
  },
  "nodes": [
   {
@@ -15013,7 +16146,8 @@
     "tang-soo-do",
     "korean-martial-arts",
     "itf-taekwondo",
-    "oh-do-kwan"
+    "oh-do-kwan",
+    "chung-do-kwan"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Nam_Tae-hi"
   },
@@ -15136,7 +16270,7 @@
    "honours": [],
    "id": "A0007",
    "locality": null,
-   "n_descendants": 55,
+   "n_descendants": 62,
    "n_students": 1,
    "name": "Shu Shiwa (Zhou Zihe)",
    "name_alt": [
@@ -15172,8 +16306,8 @@
    "honours": [],
    "id": "A0008",
    "locality": null,
-   "n_descendants": 3,
-   "n_students": 3,
+   "n_descendants": 5,
+   "n_students": 5,
    "name": "Seiyu Shinjo",
    "name_alt": [],
    "name_ascii": "Seiyu Shinjo",
@@ -15201,7 +16335,9 @@
     "years_nulled": []
    },
    "generation": 7,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0009",
    "locality": null,
    "n_descendants": 1,
@@ -15214,7 +16350,8 @@
    "primary_style": "uechi-ryu",
    "qid": null,
    "styles": [
-    "uechi-ryu"
+    "uechi-ryu",
+    "uechi-ryu-zankai"
    ],
    "wikipedia_url": null
   },
@@ -15233,7 +16370,9 @@
     "years_nulled": []
    },
    "generation": 8,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0010",
    "locality": null,
    "n_descendants": 0,
@@ -15265,11 +16404,13 @@
     "years_nulled": []
    },
    "generation": 9,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0011",
    "locality": null,
-   "n_descendants": 6,
-   "n_students": 1,
+   "n_descendants": 7,
+   "n_students": 2,
    "name": "An'ichi Miyagi",
    "name_alt": [],
    "name_ascii": "An'ichi Miyagi",
@@ -15278,7 +16419,8 @@
    "primary_style": "goju-ryu",
    "qid": null,
    "styles": [
-    "goju-ryu"
+    "goju-ryu",
+    "iogkf"
    ],
    "wikipedia_url": null
   },
@@ -15497,7 +16639,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0019",
    "locality": null,
    "n_descendants": 0,
@@ -15534,8 +16678,8 @@
    "honours": [],
    "id": "A0020",
    "locality": null,
-   "n_descendants": 8,
-   "n_students": 8,
+   "n_descendants": 9,
+   "n_students": 9,
    "name": "Shian Toma",
    "name_alt": [],
    "name_ascii": "Shian Toma",
@@ -15566,10 +16710,12 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0021",
    "locality": null,
-   "n_descendants": 13,
+   "n_descendants": 14,
    "n_students": 6,
    "name": "Seiki Toma",
    "name_alt": [],
@@ -15664,7 +16810,9 @@
     "years_nulled": []
    },
    "generation": 11,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0024",
    "locality": null,
    "n_descendants": 1,
@@ -15795,12 +16943,12 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "A0028",
    "locality": null,
-   "n_descendants": 0,
-   "n_students": 0,
+   "n_descendants": 1,
+   "n_students": 1,
    "name": "Chosei Motobu",
    "name_alt": [],
    "name_ascii": "Chosei Motobu",
@@ -15833,7 +16981,7 @@
    "honours": [],
    "id": "A0029",
    "locality": null,
-   "n_descendants": 217,
+   "n_descendants": 242,
    "n_students": 1,
    "name": "Motobu Choshin",
    "name_alt": [],
@@ -15866,7 +17014,7 @@
    "honours": [],
    "id": "A0030",
    "locality": null,
-   "n_descendants": 199,
+   "n_descendants": 214,
    "n_students": 1,
    "name": "Sakuma Pechin",
    "name_alt": [],
@@ -15896,7 +17044,9 @@
     "years_nulled": []
    },
    "generation": 7,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0031",
    "locality": null,
    "n_descendants": 2,
@@ -16226,7 +17376,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0041",
    "locality": null,
    "n_descendants": 0,
@@ -16386,7 +17538,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 8,
+   "generation": 9,
    "honours": [],
    "id": "A0046",
    "locality": null,
@@ -16418,7 +17570,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 9,
+   "generation": 10,
    "honours": [],
    "id": "A0047",
    "locality": null,
@@ -16450,7 +17602,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 9,
+   "generation": 10,
    "honours": [],
    "id": "A0048",
    "locality": null,
@@ -16482,7 +17634,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 8,
+   "generation": 9,
    "honours": [],
    "id": "A0049",
    "locality": null,
@@ -16643,11 +17795,13 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0054",
    "locality": null,
-   "n_descendants": 0,
-   "n_students": 0,
+   "n_descendants": 1,
+   "n_students": 1,
    "name": "Kensei Taba",
    "name_alt": [],
    "name_ascii": "Kensei Taba",
@@ -16675,7 +17829,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0055",
    "locality": null,
    "n_descendants": 0,
@@ -16707,7 +17863,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0056",
    "locality": null,
    "n_descendants": 0,
@@ -16816,7 +17974,8 @@
    "primary_style": "matsubayashi-ryu",
    "qid": null,
    "styles": [
-    "matsubayashi-ryu"
+    "matsubayashi-ryu",
+    "ueshiro-shorin-ryu"
    ],
    "wikipedia_url": null
   },
@@ -16963,7 +18122,9 @@
     "years_nulled": []
    },
    "generation": 14,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0064",
    "locality": null,
    "n_descendants": 0,
@@ -17044,7 +18205,8 @@
    "styles": [
     "matsumura-seito",
     "okinawa-kenpo",
-    "okinawan-kobudo"
+    "okinawan-kobudo",
+    "matsumura-kenpo"
    ],
    "wikipedia_url": null
   },
@@ -17077,7 +18239,8 @@
    "qid": null,
    "styles": [
     "matsumura-seito",
-    "okinawan-kobudo"
+    "okinawan-kobudo",
+    "matsumura-kenpo"
    ],
    "wikipedia_url": null
   },
@@ -17656,7 +18819,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "A0085",
    "locality": null,
@@ -17690,7 +18853,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "A0086",
    "locality": null,
@@ -17723,7 +18886,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "A0087",
    "locality": null,
@@ -17836,7 +18999,8 @@
    "primary_style": "shito-ryu",
    "qid": null,
    "styles": [
-    "shito-ryu"
+    "shito-ryu",
+    "dento-shito-ryu"
    ],
    "wikipedia_url": null
   },
@@ -18001,7 +19165,8 @@
    "primary_style": "wado-ryu",
    "qid": null,
    "styles": [
-    "wado-ryu"
+    "wado-ryu",
+    "wado-ryu-karate-do-renmei"
    ],
    "wikipedia_url": null
   },
@@ -18033,7 +19198,8 @@
    "primary_style": "wado-ryu",
    "qid": null,
    "styles": [
-    "wado-ryu"
+    "wado-ryu",
+    "wado-kai"
    ],
    "wikipedia_url": null
   },
@@ -18131,7 +19297,8 @@
    "primary_style": "wado-ryu",
    "qid": null,
    "styles": [
-    "wado-ryu"
+    "wado-ryu",
+    "wado-kokusai"
    ],
    "wikipedia_url": null
   },
@@ -18379,7 +19546,9 @@
     "years_nulled": []
    },
    "generation": 15,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0107",
    "locality": null,
    "n_descendants": 0,
@@ -18573,7 +19742,9 @@
     "years_nulled": []
    },
    "generation": 14,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0113",
    "locality": null,
    "n_descendants": 1,
@@ -18705,7 +19876,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "A0117",
    "locality": null,
@@ -18739,8 +19910,10 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
-   "honours": [],
+   "generation": 12,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0118",
    "locality": null,
    "n_descendants": 0,
@@ -18772,7 +19945,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "A0119",
    "locality": null,
@@ -18905,7 +20078,9 @@
     "years_nulled": []
    },
    "generation": 11,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0123",
    "locality": null,
    "n_descendants": 0,
@@ -18951,7 +20126,8 @@
    "primary_style": "matayoshi-kobudo",
    "qid": null,
    "styles": [
-    "matayoshi-kobudo"
+    "matayoshi-kobudo",
+    "matayoshi-kodokan"
    ],
    "wikipedia_url": null
   },
@@ -18973,7 +20149,7 @@
    "honours": [],
    "id": "A0125",
    "locality": null,
-   "n_descendants": 133,
+   "n_descendants": 147,
    "n_students": 1,
    "name": "Chinen Umikana",
    "name_alt": [],
@@ -19070,11 +20246,13 @@
     "years_nulled": []
    },
    "generation": 14,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0128",
    "locality": null,
-   "n_descendants": 0,
-   "n_students": 0,
+   "n_descendants": 1,
+   "n_students": 1,
    "name": "Kiichi Nakamoto",
    "name_alt": [],
    "name_ascii": "Kiichi Nakamoto",
@@ -19106,8 +20284,8 @@
    "honours": [],
    "id": "A0129",
    "locality": null,
-   "n_descendants": 6,
-   "n_students": 1,
+   "n_descendants": 7,
+   "n_students": 2,
    "name": "Kantoku Izumikawa",
    "name_alt": [],
    "name_ascii": "Kantoku Izumikawa",
@@ -19135,7 +20313,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "A0130",
    "locality": null,
@@ -19202,10 +20380,12 @@
     "years_nulled": []
    },
    "generation": 10,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0132",
    "locality": null,
-   "n_descendants": 2,
+   "n_descendants": 3,
    "n_students": 2,
    "name": "Seiko Fukuchi",
    "name_alt": [],
@@ -19235,7 +20415,9 @@
     "years_nulled": []
    },
    "generation": 10,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0133",
    "locality": null,
    "n_descendants": 0,
@@ -19267,7 +20449,9 @@
     "years_nulled": []
    },
    "generation": 10,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0134",
    "locality": null,
    "n_descendants": 0,
@@ -19314,7 +20498,8 @@
    "qid": null,
    "styles": [
     "goju-ryu",
-    "meibukan"
+    "meibukan",
+    "imgka"
    ],
    "wikipedia_url": null
   },
@@ -19402,8 +20587,8 @@
    "honours": [],
    "id": "A0138",
    "locality": null,
-   "n_descendants": 2,
-   "n_students": 2,
+   "n_descendants": 6,
+   "n_students": 6,
    "name": "Masanobu Shinjo",
    "name_alt": [],
    "name_ascii": "Masanobu Shinjo",
@@ -19877,7 +21062,8 @@
     "shudokan",
     "shito-ryu",
     "korean-martial-arts",
-    "ji-do-kwan"
+    "ji-do-kwan",
+    "renbukai"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Yun_Kwae-byung"
   },
@@ -19910,7 +21096,8 @@
    "qid": null,
    "styles": [
     "tang-soo-do",
-    "korean-martial-arts"
+    "korean-martial-arts",
+    "moo-duk-kwan"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Hwang_Hyun-chul"
   },
@@ -20083,7 +21270,8 @@
    "primary_style": "isshin-ryu",
    "qid": null,
    "styles": [
-    "isshin-ryu"
+    "isshin-ryu",
+    "isshin-ryu-aoka"
    ],
    "wikipedia_url": null
   },
@@ -20187,7 +21375,7 @@
   {
    "active_from": null,
    "active_from_estimated": false,
-   "birth_year": null,
+   "birth_year": 1710,
    "connected": true,
    "death_year": null,
    "flags": {
@@ -20234,7 +21422,7 @@
    "honours": [],
    "id": "A0165",
    "locality": null,
-   "n_descendants": 220,
+   "n_descendants": 245,
    "n_students": 1,
    "name": "Choei Motobu",
    "name_alt": [],
@@ -20266,7 +21454,7 @@
    "honours": [],
    "id": "A0166",
    "locality": null,
-   "n_descendants": 219,
+   "n_descendants": 244,
    "n_students": 1,
    "name": "Chotoku Inohama",
    "name_alt": [],
@@ -20677,7 +21865,8 @@
    "styles": [
     "taekwondo",
     "korean-martial-arts",
-    "itf-taekwondo"
+    "itf-taekwondo",
+    "chung-do-kwan"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Han_Cha-kyo"
   },
@@ -20779,7 +21968,8 @@
    "styles": [
     "taekwondo",
     "korean-martial-arts",
-    "itf-taekwondo"
+    "itf-taekwondo",
+    "gtf"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Park_Jung-tae"
   },
@@ -20869,7 +22059,7 @@
    "honours": [],
    "id": "A0184",
    "locality": null,
-   "n_descendants": 479,
+   "n_descendants": 515,
    "n_students": 1,
    "name": "Fang Zhong",
    "name_alt": [],
@@ -20901,7 +22091,7 @@
    "honours": [],
    "id": "A0185",
    "locality": null,
-   "n_descendants": 478,
+   "n_descendants": 514,
    "n_students": 2,
    "name": "Fang Qiniang",
    "name_alt": [],
@@ -20933,7 +22123,7 @@
    "honours": [],
    "id": "A0186",
    "locality": null,
-   "n_descendants": 477,
+   "n_descendants": 513,
    "n_students": 1,
    "name": "Zeng Si",
    "name_alt": [],
@@ -20965,7 +22155,7 @@
    "honours": [],
    "id": "A0187",
    "locality": null,
-   "n_descendants": 476,
+   "n_descendants": 512,
    "n_students": 1,
    "name": "Zheng Li",
    "name_alt": [],
@@ -20997,7 +22187,7 @@
    "honours": [],
    "id": "A0188",
    "locality": null,
-   "n_descendants": 475,
+   "n_descendants": 511,
    "n_students": 1,
    "name": "Lin Shixian",
    "name_alt": [],
@@ -21029,7 +22219,7 @@
    "honours": [],
    "id": "A0189",
    "locality": null,
-   "n_descendants": 474,
+   "n_descendants": 510,
    "n_students": 1,
    "name": "Pan Yuba (Lin Dachong)",
    "name_alt": [
@@ -21063,7 +22253,7 @@
    "honours": [],
    "id": "A0190",
    "locality": null,
-   "n_descendants": 55,
+   "n_descendants": 62,
    "n_students": 1,
    "name": "Zheng Bugong",
    "name_alt": [],
@@ -21166,7 +22356,8 @@
    "primary_style": "shotokan",
    "qid": null,
    "styles": [
-    "shotokan"
+    "shotokan",
+    "asai-ryu"
    ],
    "wikipedia_url": "https://ja.wikipedia.org/wiki/%E9%A6%99%E5%B7%9D%E6%94%BF%E5%A4%AB"
   },
@@ -21198,7 +22389,8 @@
    "primary_style": "shotokan",
    "qid": null,
    "styles": [
-    "shotokan"
+    "shotokan",
+    "skif"
    ],
    "wikipedia_url": null
   },
@@ -21230,7 +22422,8 @@
    "primary_style": "shotokan",
    "qid": null,
    "styles": [
-    "shotokan"
+    "shotokan",
+    "skif"
    ],
    "wikipedia_url": null
   },
@@ -21607,7 +22800,7 @@
    "honours": [],
    "id": "A0207",
    "locality": null,
-   "n_descendants": 226,
+   "n_descendants": 251,
    "n_students": 1,
    "name": "Motobu Chohei",
    "name_alt": [],
@@ -21639,7 +22832,7 @@
    "honours": [],
    "id": "A0208",
    "locality": null,
-   "n_descendants": 225,
+   "n_descendants": 250,
    "n_students": 1,
    "name": "Motobu Chokan",
    "name_alt": [],
@@ -21671,7 +22864,7 @@
    "honours": [],
    "id": "A0209",
    "locality": null,
-   "n_descendants": 224,
+   "n_descendants": 249,
    "n_students": 1,
    "name": "Motobu Chochi",
    "name_alt": [],
@@ -21703,7 +22896,7 @@
    "honours": [],
    "id": "A0210",
    "locality": null,
-   "n_descendants": 223,
+   "n_descendants": 248,
    "n_students": 1,
    "name": "Motobu Choryu",
    "name_alt": [],
@@ -21760,27 +22953,35 @@
    "flags": {
     "added_by_research": true,
     "legendary": false,
-    "merged_from": [],
+    "merged_from": [
+     "C00664"
+    ],
     "needs_review": true,
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 4,
-   "honours": [],
+   "generation": 11,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "A0212",
    "locality": null,
-   "n_descendants": 0,
-   "n_students": 0,
+   "n_descendants": 1,
+   "n_students": 1,
    "name": "Tokashiki Iken",
-   "name_alt": [],
+   "name_alt": [
+    "Yuken Tokashiki"
+   ],
    "name_ascii": "Tokashiki Iken",
    "name_native": "渡嘉敷唯賢",
    "name_romaji": null,
-   "primary_style": "tomari-te",
+   "primary_style": "gohakukai",
    "qid": null,
    "styles": [
+    "gohakukai",
     "tomari-te",
-    "goju-ryu"
+    "goju-ryu",
+    "karate-generic"
    ],
    "wikipedia_url": null
   },
@@ -21802,7 +23003,7 @@
    "honours": [],
    "id": "A0213",
    "locality": null,
-   "n_descendants": 9,
+   "n_descendants": 10,
    "n_students": 1,
    "name": "Sokishi Shinzato",
    "name_alt": [],
@@ -21862,7 +23063,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 8,
+   "generation": 9,
    "honours": [],
    "id": "A0215",
    "locality": null,
@@ -21983,9 +23184,9 @@
   {
    "active_from": null,
    "active_from_estimated": false,
-   "birth_year": null,
+   "birth_year": 1890,
    "connected": true,
-   "death_year": null,
+   "death_year": 1945,
    "flags": {
     "added_by_research": true,
     "legendary": false,
@@ -22016,7 +23217,7 @@
    "active_from": null,
    "active_from_estimated": false,
    "birth_year": null,
-   "connected": false,
+   "connected": true,
    "death_year": null,
    "flags": {
     "added_by_research": true,
@@ -22026,7 +23227,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": null,
+   "generation": 14,
    "honours": [],
    "id": "A0220",
    "locality": null,
@@ -22073,7 +23274,8 @@
    "primary_style": "okinawan-kobudo",
    "qid": null,
    "styles": [
-    "okinawan-kobudo"
+    "okinawan-kobudo",
+    "ryu-te"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Ry%C5%AB-te"
   },
@@ -22268,7 +23470,8 @@
    "primary_style": "shudokan",
    "qid": null,
    "styles": [
-    "shudokan"
+    "shudokan",
+    "doshinkan"
    ],
    "wikipedia_url": null
   },
@@ -22560,7 +23763,8 @@
    "primary_style": "shuri-te",
    "qid": null,
    "styles": [
-    "shuri-te"
+    "shuri-te",
+    "ishimine-ryu"
    ],
    "wikipedia_url": null
   },
@@ -22612,7 +23816,9 @@
     "years_nulled": []
    },
    "generation": 11,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "B0002",
    "locality": null,
    "n_descendants": 0,
@@ -22929,7 +24135,7 @@
    "honours": [],
    "id": "B0012",
    "locality": null,
-   "n_descendants": 507,
+   "n_descendants": 540,
    "n_students": 1,
    "name": "Shiroma (Gusukuma) of Tomari",
    "name_alt": [],
@@ -23030,9 +24236,11 @@
    "name_ascii": "Heisaburo Nakamura",
    "name_native": null,
    "name_romaji": null,
-   "primary_style": null,
+   "primary_style": "honshin-ryu",
    "qid": null,
-   "styles": [],
+   "styles": [
+    "honshin-ryu"
+   ],
    "wikipedia_url": null
   },
   {
@@ -23612,11 +24820,11 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 6,
+   "generation": 7,
    "honours": [],
    "id": "C00003",
    "locality": null,
-   "n_descendants": 19,
+   "n_descendants": 25,
    "n_students": 3,
    "name": "Anbun Tokuda",
    "name_alt": [],
@@ -23644,7 +24852,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "C00005",
    "locality": null,
@@ -23677,7 +24885,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00006",
    "locality": null,
    "n_descendants": 0,
@@ -23969,7 +25179,9 @@
     "years_nulled": []
    },
    "generation": 10,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00018",
    "locality": null,
    "n_descendants": 0,
@@ -24006,7 +25218,7 @@
    "honours": [],
    "id": "C00020",
    "locality": null,
-   "n_descendants": 221,
+   "n_descendants": 246,
    "n_students": 1,
    "name": "Chokyu Motobu",
    "name_alt": [],
@@ -24040,7 +25252,7 @@
    "honours": [],
    "id": "C00021",
    "locality": null,
-   "n_descendants": 1,
+   "n_descendants": 2,
    "n_students": 1,
    "name": "Chomei Motobu",
    "name_alt": [],
@@ -24068,12 +25280,12 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 3,
+   "generation": 7,
    "honours": [],
    "id": "C00024",
    "locality": null,
-   "n_descendants": 70,
-   "n_students": 1,
+   "n_descendants": 76,
+   "n_students": 2,
    "name": "Chojin Kuba",
    "name_alt": [],
    "name_ascii": "Chojin Kuba",
@@ -24104,8 +25316,8 @@
    "honours": [],
    "id": "C00025",
    "locality": null,
-   "n_descendants": 20,
-   "n_students": 1,
+   "n_descendants": 99,
+   "n_students": 4,
    "name": "Chojo Oshiro",
    "name_alt": [],
    "name_ascii": "Chojo Oshiro",
@@ -24168,7 +25380,7 @@
    "honours": [],
    "id": "C00028",
    "locality": null,
-   "n_descendants": 222,
+   "n_descendants": 247,
    "n_students": 1,
    "name": "Choko Motobu",
    "name_alt": [],
@@ -24270,11 +25482,13 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00034",
    "locality": null,
-   "n_descendants": 10,
-   "n_students": 10,
+   "n_descendants": 11,
+   "n_students": 11,
    "name": "Eizo Shimabukuro",
    "name_alt": [
     "Eizo Shimabuku"
@@ -24282,10 +25496,11 @@
    "name_ascii": "Eizo Shimabukuro",
    "name_native": "島袋永三",
    "name_romaji": null,
-   "primary_style": "karate-generic",
+   "primary_style": "shobayashi-shorin-ryu",
    "qid": null,
    "styles": [
-    "karate-generic"
+    "karate-generic",
+    "shobayashi-shorin-ryu"
    ],
    "wikipedia_url": null
   },
@@ -24305,12 +25520,14 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
-   "honours": [],
+   "generation": 11,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00035",
    "locality": null,
-   "n_descendants": 10,
-   "n_students": 9,
+   "n_descendants": 11,
+   "n_students": 10,
    "name": "Eisuke Akamine",
    "name_alt": [],
    "name_ascii": "Eisuke Akamine",
@@ -24474,7 +25691,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "C00040",
    "locality": null,
@@ -24544,7 +25761,7 @@
    "honours": [],
    "id": "C00042",
    "locality": null,
-   "n_descendants": 218,
+   "n_descendants": 243,
    "n_students": 1,
    "name": "Chosho Motobu",
    "name_alt": [],
@@ -24575,7 +25792,9 @@
     "years_nulled": []
    },
    "generation": 10,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00044",
    "locality": null,
    "n_descendants": 0,
@@ -24744,7 +25963,7 @@
    "honours": [],
    "id": "C00064",
    "locality": null,
-   "n_descendants": 4,
+   "n_descendants": 6,
    "n_students": 1,
    "name": "Seiryo Shinjo",
    "name_alt": [],
@@ -24774,7 +25993,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00066",
    "locality": null,
    "n_descendants": 6,
@@ -24784,10 +26005,12 @@
    "name_ascii": "Fusei Kise",
    "name_native": "喜瀬富盛",
    "name_romaji": "Fusei Kise",
-   "primary_style": "karate-generic",
+   "primary_style": "kenshinkan",
    "qid": null,
    "styles": [
-    "karate-generic"
+    "karate-generic",
+    "kenshinkan",
+    "matsumura-seito"
    ],
    "wikipedia_url": null
   },
@@ -25108,7 +26331,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00080",
    "locality": null,
    "n_descendants": 0,
@@ -25173,7 +26398,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 3,
+   "generation": 7,
    "honours": [],
    "id": "C00083",
    "locality": null,
@@ -25209,7 +26434,7 @@
    "honours": [],
    "id": "C00084",
    "locality": null,
-   "n_descendants": 390,
+   "n_descendants": 420,
    "n_students": 3,
    "name": "Gokenki",
    "name_alt": [],
@@ -25285,7 +26510,8 @@
    "qid": null,
    "styles": [
     "karate-generic",
-    "goju-kai"
+    "goju-kai",
+    "ikga"
    ],
    "wikipedia_url": null
   },
@@ -25309,7 +26535,7 @@
    "honours": [],
    "id": "C00087",
    "locality": null,
-   "n_descendants": 31,
+   "n_descendants": 36,
    "n_students": 2,
    "name": "Gushikawa no Tiragwa",
    "name_alt": [
@@ -25443,7 +26669,7 @@
    "honours": [],
    "id": "C00094",
    "locality": null,
-   "n_descendants": 20,
+   "n_descendants": 24,
    "n_students": 1,
    "name": "Jiro Shiroma",
    "name_alt": [],
@@ -25539,21 +26765,24 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 7,
-   "honours": [],
+   "generation": 8,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00098",
    "locality": null,
-   "n_descendants": 7,
-   "n_students": 5,
+   "n_descendants": 8,
+   "n_students": 6,
    "name": "Joen Nakazato",
    "name_alt": [],
    "name_ascii": "Joen Nakazato",
    "name_native": "仲里常延",
    "name_romaji": null,
-   "primary_style": "karate-generic",
+   "primary_style": "shorinji-ryu",
    "qid": null,
    "styles": [
-    "karate-generic"
+    "karate-generic",
+    "shorinji-ryu"
    ],
    "wikipedia_url": null
   },
@@ -25607,7 +26836,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "C00100",
    "locality": null,
@@ -25628,9 +26857,9 @@
   {
    "active_from": null,
    "active_from_estimated": false,
-   "birth_year": null,
+   "birth_year": 1905,
    "connected": true,
-   "death_year": null,
+   "death_year": 1997,
    "flags": {
     "added_by_research": false,
     "legendary": false,
@@ -25645,8 +26874,8 @@
    "honours": [],
    "id": "C00101",
    "locality": null,
-   "n_descendants": 1,
-   "n_students": 1,
+   "n_descendants": 2,
+   "n_students": 2,
    "name": "Juei Tamaki",
    "name_alt": [],
    "name_ascii": "Juei Tamaki",
@@ -25884,7 +27113,7 @@
    "honours": [],
    "id": "C00108",
    "locality": null,
-   "n_descendants": 62,
+   "n_descendants": 69,
    "n_students": 5,
    "name": "Kaho Kojo",
    "name_alt": [],
@@ -26047,7 +27276,9 @@
     "years_nulled": []
    },
    "generation": 7,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00117",
    "locality": null,
    "n_descendants": 0,
@@ -26063,7 +27294,8 @@
    "qid": null,
    "styles": [
     "karate-generic",
-    "uechi-ryu"
+    "uechi-ryu",
+    "uechi-ryu-karate-do-kyokai"
    ],
    "wikipedia_url": null
   },
@@ -26149,8 +27381,8 @@
    "honours": [],
    "id": "C00129",
    "locality": null,
-   "n_descendants": 0,
-   "n_students": 0,
+   "n_descendants": 1,
+   "n_students": 1,
    "name": "Horoku Ishikawa",
    "name_alt": [],
    "name_ascii": "Horoku Ishikawa",
@@ -26407,7 +27639,7 @@
    "honours": [],
    "id": "C00141",
    "locality": null,
-   "n_descendants": 63,
+   "n_descendants": 70,
    "n_students": 1,
    "name": "Isei Kojo",
    "name_alt": [],
@@ -26472,7 +27704,7 @@
    "honours": [],
    "id": "C00145",
    "locality": null,
-   "n_descendants": 724,
+   "n_descendants": 786,
    "n_students": 6,
    "name": "Iwah",
    "name_alt": [],
@@ -26572,7 +27804,7 @@
    "honours": [],
    "id": "C00148",
    "locality": null,
-   "n_descendants": 20,
+   "n_descendants": 24,
    "n_students": 1,
    "name": "Jinan Shinzato",
    "name_alt": [
@@ -26593,9 +27825,9 @@
   {
    "active_from": null,
    "active_from_estimated": false,
-   "birth_year": null,
+   "birth_year": 1894,
    "connected": true,
-   "death_year": null,
+   "death_year": 1964,
    "flags": {
     "added_by_research": false,
     "legendary": false,
@@ -26608,8 +27840,8 @@
    "honours": [],
    "id": "C00150",
    "locality": null,
-   "n_descendants": 0,
-   "n_students": 0,
+   "n_descendants": 69,
+   "n_students": 1,
    "name": "Jinsei Kamiya",
    "name_alt": [],
    "name_ascii": "Jinsei Kamiya",
@@ -26636,7 +27868,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 8,
+   "generation": 9,
    "honours": [],
    "id": "C00151",
    "locality": null,
@@ -26736,7 +27968,7 @@
    "honours": [],
    "id": "C00156",
    "locality": null,
-   "n_descendants": 25,
+   "n_descendants": 30,
    "n_students": 1,
    "name": "Moshigwa Ire",
    "name_alt": [
@@ -26864,7 +28096,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 2,
+   "generation": 6,
    "honours": [],
    "id": "C00173",
    "locality": null,
@@ -27033,7 +28265,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 8,
+   "generation": 9,
    "honours": [],
    "id": "C00182",
    "locality": null,
@@ -27169,7 +28401,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "C00189",
    "locality": null,
@@ -27373,11 +28605,11 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 2,
+   "generation": 6,
    "honours": [],
    "id": "C00195",
    "locality": null,
-   "n_descendants": 174,
+   "n_descendants": 187,
    "n_students": 2,
    "name": "Maeda Pechin",
    "name_alt": [],
@@ -27411,7 +28643,7 @@
    "honours": [],
    "id": "C00196",
    "locality": null,
-   "n_descendants": 55,
+   "n_descendants": 62,
    "n_students": 1,
    "name": "Makabe UDUN",
    "name_alt": [],
@@ -27476,7 +28708,7 @@
    "honours": [],
    "id": "C00198",
    "locality": null,
-   "n_descendants": 55,
+   "n_descendants": 62,
    "n_students": 1,
    "name": "Kantoku Uechi",
    "name_alt": [],
@@ -27540,8 +28772,10 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
-   "honours": [],
+   "generation": 12,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00201",
    "locality": null,
    "n_descendants": 1,
@@ -27596,9 +28830,9 @@
   {
    "active_from": null,
    "active_from_estimated": false,
-   "birth_year": null,
+   "birth_year": 1800,
    "connected": true,
-   "death_year": null,
+   "death_year": 1850,
    "flags": {
     "added_by_research": false,
     "legendary": false,
@@ -27611,7 +28845,7 @@
    "honours": [],
    "id": "C00206",
    "locality": null,
-   "n_descendants": 293,
+   "n_descendants": 327,
    "n_students": 2,
    "name": "Karyu Uku",
    "name_alt": [],
@@ -27640,7 +28874,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00207",
    "locality": null,
    "n_descendants": 0,
@@ -27703,7 +28939,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 8,
+   "generation": 9,
    "honours": [],
    "id": "C00209",
    "locality": null,
@@ -27714,10 +28950,11 @@
    "name_ascii": "Katsuhide Kochi",
    "name_native": null,
    "name_romaji": null,
-   "primary_style": "karate-generic",
+   "primary_style": "chubu-shorin-ryu",
    "qid": null,
    "styles": [
-    "karate-generic"
+    "karate-generic",
+    "chubu-shorin-ryu"
    ],
    "wikipedia_url": null
   },
@@ -27767,7 +29004,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "C00211",
    "locality": null,
@@ -27960,7 +29197,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "C00218",
    "locality": null,
@@ -28060,7 +29297,7 @@
    "honours": [],
    "id": "C00221",
    "locality": null,
-   "n_descendants": 37,
+   "n_descendants": 38,
    "n_students": 1,
    "name": "Keikichi Nakamura",
    "name_alt": [],
@@ -28089,7 +29326,9 @@
     "years_nulled": []
    },
    "generation": 10,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00222",
    "locality": null,
    "n_descendants": 0,
@@ -28124,7 +29363,7 @@
    "honours": [],
    "id": "C00223",
    "locality": null,
-   "n_descendants": 70,
+   "n_descendants": 76,
    "n_students": 1,
    "name": "Keisei Okamoto",
    "name_alt": [],
@@ -28185,7 +29424,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00226",
    "locality": null,
    "n_descendants": 0,
@@ -28380,7 +29621,9 @@
     "years_nulled": []
    },
    "generation": 10,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00232",
    "locality": null,
    "n_descendants": 19,
@@ -28394,7 +29637,8 @@
    "qid": null,
    "styles": [
     "karate-generic",
-    "ryuei-ryu"
+    "ryuei-ryu",
+    "ryuei-ryu-hozonkai"
    ],
    "wikipedia_url": null
   },
@@ -28433,7 +29677,7 @@
   {
    "active_from": null,
    "active_from_estimated": false,
-   "birth_year": null,
+   "birth_year": 1900,
    "connected": true,
    "death_year": null,
    "flags": {
@@ -28444,7 +29688,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 9,
+   "generation": 11,
    "honours": [],
    "id": "C00236",
    "locality": null,
@@ -28648,7 +29892,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "C00243",
    "locality": null,
@@ -28729,7 +29973,8 @@
    "qid": null,
    "styles": [
     "karate-generic",
-    "matayoshi-kobudo"
+    "matayoshi-kobudo",
+    "world-oshukai"
    ],
    "wikipedia_url": null
   },
@@ -28781,7 +30026,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00247",
    "locality": null,
    "n_descendants": 0,
@@ -28791,10 +30038,12 @@
    "name_ascii": "Kichiro Shimabuku",
    "name_native": "島袋吉郎",
    "name_romaji": null,
-   "primary_style": "karate-generic",
+   "primary_style": "isshin-ryu",
    "qid": null,
    "styles": [
-    "karate-generic"
+    "karate-generic",
+    "isshin-ryu",
+    "isshin-ryu-iwka"
    ],
    "wikipedia_url": null
   },
@@ -28882,7 +30131,7 @@
    "honours": [],
    "id": "C00250",
    "locality": null,
-   "n_descendants": 11,
+   "n_descendants": 12,
    "n_students": 1,
    "name": "Kisuke Higa",
    "name_alt": [],
@@ -28914,8 +30163,8 @@
    "honours": [],
    "id": "C00251",
    "locality": null,
-   "n_descendants": 289,
-   "n_students": 1,
+   "n_descendants": 327,
+   "n_students": 2,
    "name": "Kishin Teruya",
    "name_alt": [
     "Ki Teruya"
@@ -28948,7 +30197,7 @@
    "honours": [],
    "id": "C00252",
    "locality": null,
-   "n_descendants": 43,
+   "n_descendants": 44,
    "n_students": 1,
    "name": "Kitoku Sakiyama",
    "name_alt": [],
@@ -28977,7 +30226,9 @@
     "years_nulled": []
    },
    "generation": 14,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00253",
    "locality": null,
    "n_descendants": 2,
@@ -29110,7 +30361,7 @@
    "honours": [],
    "id": "C00257",
    "locality": null,
-   "n_descendants": 21,
+   "n_descendants": 25,
    "n_students": 1,
    "name": "Kiyuna Pechin",
    "name_alt": [],
@@ -29240,12 +30491,12 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 2,
+   "generation": 6,
    "honours": [],
    "id": "C00261",
    "locality": null,
-   "n_descendants": 74,
-   "n_students": 4,
+   "n_descendants": 83,
+   "n_students": 5,
    "name": "Kodatsu Iha",
    "name_alt": [
     "Kodatsu Tha"
@@ -29253,10 +30504,11 @@
    "name_ascii": "Kodatsu Iha",
    "name_native": "伊波興達",
    "name_romaji": null,
-   "primary_style": "karate-generic",
+   "primary_style": "tomari-te",
    "qid": null,
    "styles": [
-    "karate-generic"
+    "karate-generic",
+    "tomari-te"
    ],
    "wikipedia_url": null
   },
@@ -29310,7 +30562,9 @@
     "years_nulled": []
    },
    "generation": 10,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00265",
    "locality": null,
    "n_descendants": 0,
@@ -29409,7 +30663,7 @@
    "honours": [],
    "id": "C00268",
    "locality": null,
-   "n_descendants": 638,
+   "n_descendants": 679,
    "n_students": 1,
    "name": "Kojo PECHIN",
    "name_alt": [],
@@ -29427,9 +30681,9 @@
   {
    "active_from": null,
    "active_from_estimated": false,
-   "birth_year": null,
+   "birth_year": 1656,
    "connected": true,
-   "death_year": null,
+   "death_year": 1737,
    "flags": {
     "added_by_research": false,
     "legendary": false,
@@ -29442,7 +30696,7 @@
    "honours": [],
    "id": "C00269",
    "locality": null,
-   "n_descendants": 639,
+   "n_descendants": 680,
    "n_students": 1,
    "name": "Kojo UEKATA",
    "name_alt": [],
@@ -29506,7 +30760,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00271",
    "locality": null,
    "n_descendants": 0,
@@ -29645,7 +30901,7 @@
    "honours": [],
    "id": "C00275",
    "locality": null,
-   "n_descendants": 11,
+   "n_descendants": 12,
    "n_students": 1,
    "name": "Seiichiro Higa",
    "name_alt": [],
@@ -29876,7 +31132,9 @@
     "years_nulled": []
    },
    "generation": 11,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00282",
    "locality": null,
    "n_descendants": 0,
@@ -30109,7 +31367,7 @@
    "honours": [],
    "id": "C00291",
    "locality": null,
-   "n_descendants": 20,
+   "n_descendants": 24,
    "n_students": 1,
    "name": "Seiyei Miyahira",
    "name_alt": [],
@@ -30160,9 +31418,9 @@
   {
    "active_from": null,
    "active_from_estimated": false,
-   "birth_year": null,
+   "birth_year": 1893,
    "connected": true,
-   "death_year": null,
+   "death_year": 1983,
    "flags": {
     "added_by_research": false,
     "legendary": false,
@@ -30173,21 +31431,22 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 3,
+   "generation": 7,
    "honours": [],
    "id": "C00293",
    "locality": null,
-   "n_descendants": 1,
+   "n_descendants": 2,
    "n_students": 1,
    "name": "Seiyu Nakasone",
    "name_alt": [],
    "name_ascii": "Seiyu Nakasone",
    "name_native": "仲宗根正侑",
    "name_romaji": null,
-   "primary_style": "karate-generic",
+   "primary_style": "tomari-te",
    "qid": null,
    "styles": [
-    "karate-generic"
+    "karate-generic",
+    "tomari-te"
    ],
    "wikipedia_url": null
   },
@@ -30241,7 +31500,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "C00295",
    "locality": null,
@@ -30274,11 +31533,13 @@
     "years_nulled": []
    },
    "generation": 10,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00296",
    "locality": null,
-   "n_descendants": 0,
-   "n_students": 0,
+   "n_descendants": 1,
+   "n_students": 1,
    "name": "Koshin Iha",
    "name_alt": [],
    "name_ascii": "Koshin Iha",
@@ -30370,11 +31631,13 @@
     "years_nulled": []
    },
    "generation": 7,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00301",
    "locality": null,
-   "n_descendants": 0,
-   "n_students": 0,
+   "n_descendants": 1,
+   "n_students": 1,
    "name": "Kosuke Yonamine",
    "name_alt": [],
    "name_ascii": "Kosuke Yonamine",
@@ -30402,7 +31665,9 @@
     "years_nulled": []
    },
    "generation": 10,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00304",
    "locality": null,
    "n_descendants": 0,
@@ -30498,7 +31763,9 @@
     "years_nulled": []
    },
    "generation": 7,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00319",
    "locality": null,
    "n_descendants": 0,
@@ -30510,10 +31777,11 @@
    "name_ascii": "Makoto Gima",
    "name_native": "儀間真謹",
    "name_romaji": "Gima Shinkin",
-   "primary_style": "karate-generic",
+   "primary_style": "gima-ha",
    "qid": null,
    "styles": [
-    "karate-generic"
+    "karate-generic",
+    "gima-ha"
    ],
    "wikipedia_url": null
   },
@@ -30768,7 +32036,9 @@
     "years_nulled": []
    },
    "generation": 7,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00333",
    "locality": null,
    "n_descendants": 0,
@@ -31060,7 +32330,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 8,
+   "generation": 9,
    "honours": [],
    "id": "C00345",
    "locality": null,
@@ -31159,7 +32429,9 @@
     "years_nulled": []
    },
    "generation": 8,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00348",
    "locality": null,
    "n_descendants": 0,
@@ -31193,7 +32465,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00349",
    "locality": null,
    "n_descendants": 0,
@@ -31226,12 +32500,12 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 7,
+   "generation": 10,
    "honours": [],
    "id": "C00350",
    "locality": null,
-   "n_descendants": 70,
-   "n_students": 1,
+   "n_descendants": 77,
+   "n_students": 2,
    "name": "Taro Shimabuku",
    "name_alt": [],
    "name_ascii": "Taro Shimabuku",
@@ -31367,17 +32641,18 @@
    "honours": [],
    "id": "C00354",
    "locality": null,
-   "n_descendants": 63,
+   "n_descendants": 70,
    "n_students": 1,
    "name": "Tawata Pechin",
    "name_alt": [],
    "name_ascii": "Tawata PECHIN",
    "name_native": "多和田親雲上",
    "name_romaji": null,
-   "primary_style": "karate-generic",
+   "primary_style": "okinawan-kobudo",
    "qid": null,
    "styles": [
-    "karate-generic"
+    "karate-generic",
+    "okinawan-kobudo"
    ],
    "wikipedia_url": null
   },
@@ -31401,7 +32676,7 @@
    "honours": [],
    "id": "C00355",
    "locality": null,
-   "n_descendants": 37,
+   "n_descendants": 38,
    "n_students": 1,
    "name": "Teiichi Nakamura",
    "name_alt": [],
@@ -31530,7 +32805,9 @@
     "years_nulled": []
    },
    "generation": 10,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00361",
    "locality": null,
    "n_descendants": 0,
@@ -31722,7 +32999,9 @@
     "years_nulled": []
    },
    "generation": 11,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00368",
    "locality": null,
    "n_descendants": 0,
@@ -31732,10 +33011,11 @@
    "name_ascii": "Minoru Nakazato",
    "name_native": "仲里稔",
    "name_romaji": null,
-   "primary_style": "karate-generic",
+   "primary_style": "shorin-ryu-shorinkan",
    "qid": null,
    "styles": [
-    "karate-generic"
+    "karate-generic",
+    "shorin-ryu-shorinkan"
    ],
    "wikipedia_url": null
   },
@@ -31817,7 +33097,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "C00371",
    "locality": null,
@@ -31887,17 +33167,18 @@
    "honours": [],
    "id": "C00373",
    "locality": null,
-   "n_descendants": 62,
+   "n_descendants": 69,
    "n_students": 2,
    "name": "Moden Yabiku",
    "name_alt": [],
    "name_ascii": "Moden Yabiku",
    "name_native": "屋比久孟伝",
    "name_romaji": null,
-   "primary_style": "karate-generic",
+   "primary_style": "ryukyu-kobujutsu-kenkyukai",
    "qid": null,
    "styles": [
-    "karate-generic"
+    "karate-generic",
+    "ryukyu-kobujutsu-kenkyukai"
    ],
    "wikipedia_url": null
   },
@@ -31948,7 +33229,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00375",
    "locality": null,
    "n_descendants": 0,
@@ -31980,7 +33263,9 @@
     "years_nulled": []
    },
    "generation": 10,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00385",
    "locality": null,
    "n_descendants": 0,
@@ -32534,7 +33819,9 @@
     "years_nulled": []
    },
    "generation": 7,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00438",
    "locality": null,
    "n_descendants": 1,
@@ -32566,7 +33853,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 11,
    "honours": [],
    "id": "C00440",
    "locality": null,
@@ -32636,8 +33923,8 @@
    "honours": [],
    "id": "C00444",
    "locality": null,
-   "n_descendants": 3,
-   "n_students": 3,
+   "n_descendants": 4,
+   "n_students": 4,
    "name": "Saburo Uehara",
    "name_alt": [],
    "name_ascii": "Saburo Uehara",
@@ -32664,7 +33951,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "C00446",
    "locality": null,
@@ -32732,7 +34019,7 @@
    "honours": [],
    "id": "C00449",
    "locality": null,
-   "n_descendants": 132,
+   "n_descendants": 146,
    "n_students": 6,
    "name": "Sanda Chinen",
    "name_alt": [],
@@ -32767,7 +34054,7 @@
    "honours": [],
    "id": "C00450",
    "locality": null,
-   "n_descendants": 79,
+   "n_descendants": 87,
    "n_students": 3,
    "name": "Sanda Kanagusuku",
    "name_alt": [
@@ -32928,7 +34215,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 3,
+   "generation": 7,
    "honours": [],
    "id": "C00476",
    "locality": null,
@@ -32961,11 +34248,13 @@
     "years_nulled": []
    },
    "generation": 11,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00478",
    "locality": null,
-   "n_descendants": 36,
-   "n_students": 14,
+   "n_descendants": 39,
+   "n_students": 16,
    "name": "Seikichi Uehara",
    "name_alt": [],
    "name_ascii": "Seikichi Uehara",
@@ -32994,7 +34283,9 @@
     "years_nulled": []
    },
    "generation": 7,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00480",
    "locality": null,
    "n_descendants": 1,
@@ -33059,7 +34350,9 @@
     "years_nulled": []
    },
    "generation": 11,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00483",
    "locality": null,
    "n_descendants": 0,
@@ -33126,7 +34419,7 @@
    "honours": [],
    "id": "C00485",
    "locality": null,
-   "n_descendants": 53,
+   "n_descendants": 61,
    "n_students": 1,
    "name": "Seiro Tonaki",
    "name_alt": [],
@@ -33219,7 +34512,9 @@
     "years_nulled": []
    },
    "generation": 7,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00488",
    "locality": null,
    "n_descendants": 0,
@@ -33315,7 +34610,9 @@
     "years_nulled": []
    },
    "generation": 7,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00491",
    "locality": null,
    "n_descendants": 0,
@@ -33411,7 +34708,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00494",
    "locality": null,
    "n_descendants": 6,
@@ -33508,7 +34807,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 7,
+   "generation": 8,
    "honours": [],
    "id": "C00503",
    "locality": null,
@@ -33540,7 +34839,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 8,
+   "generation": 9,
    "honours": [],
    "id": "C00504",
    "locality": null,
@@ -33638,7 +34937,9 @@
     "years_nulled": []
    },
    "generation": 7,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00507",
    "locality": null,
    "n_descendants": 0,
@@ -33680,10 +34981,11 @@
    "name_ascii": "Shinbi Kaneshima",
    "name_native": null,
    "name_romaji": "Kaneshima Shinbi",
-   "primary_style": "karate-generic",
+   "primary_style": "ishimine-ryu",
    "qid": null,
    "styles": [
-    "karate-generic"
+    "karate-generic",
+    "ishimine-ryu"
    ],
    "wikipedia_url": null
   },
@@ -33737,17 +35039,18 @@
    "honours": [],
    "id": "C00510",
    "locality": null,
-   "n_descendants": 42,
+   "n_descendants": 43,
    "n_students": 2,
    "name": "Shinkichi Kuniyoshi",
    "name_alt": [],
    "name_ascii": "Shinkichi Kuniyoshi",
    "name_native": "国吉真吉",
    "name_romaji": null,
-   "primary_style": "karate-generic",
+   "primary_style": "honshin-ryu",
    "qid": null,
    "styles": [
-    "karate-generic"
+    "karate-generic",
+    "honshin-ryu"
    ],
    "wikipedia_url": null
   },
@@ -33852,7 +35155,7 @@
    "active_from_estimated": false,
    "birth_year": 1902,
    "connected": true,
-   "death_year": null,
+   "death_year": 1990,
    "flags": {
     "added_by_research": false,
     "legendary": false,
@@ -33865,17 +35168,18 @@
    "honours": [],
    "id": "C00514",
    "locality": null,
-   "n_descendants": 18,
+   "n_descendants": 19,
    "n_students": 4,
    "name": "Shinsuke Kaneshima",
    "name_alt": [],
    "name_ascii": "Shinsuke Kaneshima",
    "name_native": null,
    "name_romaji": null,
-   "primary_style": "karate-generic",
+   "primary_style": "shorin-ryu",
    "qid": null,
    "styles": [
-    "karate-generic"
+    "karate-generic",
+    "shorin-ryu"
    ],
    "wikipedia_url": null
   },
@@ -33893,7 +35197,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 12,
    "honours": [],
    "id": "C00515",
    "locality": null,
@@ -33936,10 +35240,11 @@
    "name_ascii": "Shinyei Kaneshima",
    "name_native": null,
    "name_romaji": "Kaneshima Shin'ei",
-   "primary_style": "karate-generic",
+   "primary_style": "ishimine-ryu",
    "qid": null,
    "styles": [
-    "karate-generic"
+    "karate-generic",
+    "ishimine-ryu"
    ],
    "wikipedia_url": null
   },
@@ -33961,7 +35266,7 @@
    "honours": [],
    "id": "C00518",
    "locality": null,
-   "n_descendants": 6,
+   "n_descendants": 7,
    "n_students": 3,
    "name": "Shinyei Kyan",
    "name_alt": [],
@@ -34055,7 +35360,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00521",
    "locality": null,
    "n_descendants": 0,
@@ -34090,7 +35397,7 @@
    "honours": [],
    "id": "C00522",
    "locality": null,
-   "n_descendants": 637,
+   "n_descendants": 678,
    "n_students": 2,
    "name": "Shoi Sai",
    "name_alt": [],
@@ -34154,7 +35461,7 @@
    "honours": [],
    "id": "C00525",
    "locality": null,
-   "n_descendants": 24,
+   "n_descendants": 26,
    "n_students": 1,
    "name": "Shoko Itokazu",
    "name_alt": [],
@@ -34186,7 +35493,7 @@
    "honours": [],
    "id": "C00527",
    "locality": null,
-   "n_descendants": 17,
+   "n_descendants": 19,
    "n_students": 5,
    "name": "Shosei Kina",
    "name_alt": [],
@@ -34281,11 +35588,13 @@
     "years_nulled": []
    },
    "generation": 11,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00546",
    "locality": null,
-   "n_descendants": 0,
-   "n_students": 0,
+   "n_descendants": 1,
+   "n_students": 1,
    "name": "Shusei Maeshiro",
    "name_alt": [],
    "name_ascii": "Shusei Maeshiro",
@@ -34316,7 +35625,7 @@
    "honours": [],
    "id": "C00549",
    "locality": null,
-   "n_descendants": 70,
+   "n_descendants": 76,
    "n_students": 1,
    "name": "Sogen Sakiyama",
    "name_alt": [],
@@ -34381,7 +35690,7 @@
    "honours": [],
    "id": "C00564",
    "locality": null,
-   "n_descendants": 577,
+   "n_descendants": 613,
    "n_students": 3,
    "name": "Taitei Kojo",
    "name_alt": [],
@@ -34410,7 +35719,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 8,
+   "generation": 9,
    "honours": [],
    "id": "C00565",
    "locality": null,
@@ -34443,11 +35752,13 @@
     "years_nulled": []
    },
    "generation": 11,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00566",
    "locality": null,
-   "n_descendants": 0,
-   "n_students": 0,
+   "n_descendants": 1,
+   "n_students": 1,
    "name": "Takashi Kinjo",
    "name_alt": [],
    "name_ascii": "Takashi Kinjo",
@@ -34614,10 +35925,11 @@
    "name_ascii": "Taketo Nakamura",
    "name_native": "中村丈人",
    "name_romaji": null,
-   "primary_style": "karate-generic",
+   "primary_style": "okinawa-kenpo",
    "qid": null,
    "styles": [
-    "karate-generic"
+    "karate-generic",
+    "okinawa-kenpo"
    ],
    "wikipedia_url": null
   },
@@ -34769,7 +36081,7 @@
    "honours": [],
    "id": "C00604",
    "locality": null,
-   "n_descendants": 260,
+   "n_descendants": 281,
    "n_students": 2,
    "name": "Tokumine Pechin",
    "name_alt": [],
@@ -34925,7 +36237,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "C00618",
    "locality": null,
@@ -35098,7 +36410,7 @@
    "honours": [],
    "id": "C00627",
    "locality": null,
-   "n_descendants": 29,
+   "n_descendants": 32,
    "n_students": 1,
    "name": "Tsuken Hantaka",
    "name_alt": [],
@@ -35127,7 +36439,9 @@
     "years_nulled": []
    },
    "generation": 8,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00628",
    "locality": null,
    "n_descendants": 0,
@@ -35227,7 +36541,7 @@
    "honours": [],
    "id": "C00637",
    "locality": null,
-   "n_descendants": 28,
+   "n_descendants": 31,
    "n_students": 1,
    "name": "Ushi Komesu",
    "name_alt": [],
@@ -35261,7 +36575,7 @@
    "honours": [],
    "id": "C00639",
    "locality": null,
-   "n_descendants": 640,
+   "n_descendants": 681,
    "n_students": 6,
    "name": "Wai Shin Zan",
    "name_alt": [
@@ -35329,7 +36643,7 @@
    "honours": [],
    "id": "C00646",
    "locality": null,
-   "n_descendants": 572,
+   "n_descendants": 619,
    "n_students": 1,
    "name": "Yashichiro Ijuin",
    "name_alt": [],
@@ -35528,10 +36842,12 @@
    "name_ascii": "Yoshiaki Gakiya",
    "name_native": null,
    "name_romaji": null,
-   "primary_style": "karate-generic",
+   "primary_style": "matayoshi-kodokan",
    "qid": null,
    "styles": [
-    "karate-generic"
+    "karate-generic",
+    "matayoshi-kodokan",
+    "okinawa-kobudo-doushi-renseikai"
    ],
    "wikipedia_url": null
   },
@@ -35712,7 +37028,9 @@
     "years_nulled": []
    },
    "generation": 10,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00659",
    "locality": null,
    "n_descendants": 0,
@@ -35744,7 +37062,9 @@
     "years_nulled": []
    },
    "generation": 9,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00660",
    "locality": null,
    "n_descendants": 2,
@@ -35785,38 +37105,6 @@
    "name_alt": [],
    "name_ascii": "Yoshio Zaha",
    "name_native": null,
-   "name_romaji": null,
-   "primary_style": "karate-generic",
-   "qid": null,
-   "styles": [
-    "karate-generic"
-   ],
-   "wikipedia_url": null
-  },
-  {
-   "active_from": null,
-   "active_from_estimated": false,
-   "birth_year": 1940,
-   "connected": true,
-   "death_year": null,
-   "flags": {
-    "added_by_research": false,
-    "legendary": false,
-    "merged_from": [],
-    "needs_review": true,
-    "wrong_entity": false,
-    "years_nulled": []
-   },
-   "generation": 11,
-   "honours": [],
-   "id": "C00664",
-   "locality": null,
-   "n_descendants": 0,
-   "n_students": 0,
-   "name": "Yuken Tokashiki",
-   "name_alt": [],
-   "name_ascii": "Yuken Tokashiki",
-   "name_native": "渡嘉敷唯賢",
    "name_romaji": null,
    "primary_style": "karate-generic",
    "qid": null,
@@ -35903,8 +37191,10 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 8,
-   "honours": [],
+   "generation": 9,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00667",
    "locality": null,
    "n_descendants": 0,
@@ -36000,7 +37290,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "C00672",
    "locality": null,
    "n_descendants": 6,
@@ -36010,10 +37302,1736 @@
    "name_ascii": "Zenpo Shimabukuro",
    "name_native": "島袋善保",
    "name_romaji": null,
-   "primary_style": "karate-generic",
+   "primary_style": "shorin-ryu-seibukan",
    "qid": null,
    "styles": [
-    "karate-generic"
+    "karate-generic",
+    "shorin-ryu-seibukan"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1929,
+   "connected": true,
+   "death_year": 2021,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 10,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0001",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Aragaki Shuichi",
+   "name_alt": [],
+   "name_ascii": "Aragaki Shuichi",
+   "name_native": "新垣修一",
+   "name_romaji": null,
+   "primary_style": "goju-ryu",
+   "qid": null,
+   "styles": [
+    "goju-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 11,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0002",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Matayoshi Seitoku",
+   "name_alt": [],
+   "name_ascii": "Matayoshi Seitoku",
+   "name_native": "又吉清徳",
+   "name_romaji": null,
+   "primary_style": "goju-ryu",
+   "qid": null,
+   "styles": [
+    "goju-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1942,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 10,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0003",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Shinjo Anyu",
+   "name_alt": [],
+   "name_ascii": "Shinjo Anyu",
+   "name_native": "新城安勇",
+   "name_romaji": null,
+   "primary_style": "goju-ryu",
+   "qid": null,
+   "styles": [
+    "goju-ryu",
+    "jundokan"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 11,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0004",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Miyahira Masanobu",
+   "name_alt": [],
+   "name_ascii": "Miyahira Masanobu",
+   "name_native": "宮平昌信",
+   "name_romaji": null,
+   "primary_style": "matayoshi-kobudo",
+   "qid": null,
+   "styles": [
+    "matayoshi-kobudo"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1926,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 13,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0005",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Ishikawa Seigi",
+   "name_alt": [],
+   "name_ascii": "Ishikawa Seigi",
+   "name_native": "石川清義",
+   "name_romaji": null,
+   "primary_style": "kobayashi-shorin-ryu",
+   "qid": null,
+   "styles": [
+    "kobayashi-shorin-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1925,
+   "connected": true,
+   "death_year": 2013,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 11,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0006",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Ishikawa Seitoku",
+   "name_alt": [],
+   "name_ascii": "Ishikawa Seitoku",
+   "name_native": "石川精徳",
+   "name_romaji": null,
+   "primary_style": "kobayashi-shorin-ryu",
+   "qid": null,
+   "styles": [
+    "kobayashi-shorin-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1930,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 7,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0007",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Takara Shintoku",
+   "name_alt": [],
+   "name_ascii": "Takara Shintoku",
+   "name_native": "高良信徳",
+   "name_romaji": null,
+   "primary_style": "uechi-ryu",
+   "qid": null,
+   "styles": [
+    "uechi-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1935,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 13,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0008",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Miyagi Takeshi",
+   "name_alt": [],
+   "name_ascii": "Miyagi Takeshi",
+   "name_native": "宮城驍",
+   "name_romaji": null,
+   "primary_style": "kobayashi-shorin-ryu",
+   "qid": null,
+   "styles": [
+    "kobayashi-shorin-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1940,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 12,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0009",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Takushi Seiki",
+   "name_alt": [],
+   "name_ascii": "Takushi Seiki",
+   "name_native": "澤岻政輝",
+   "name_romaji": null,
+   "primary_style": "goju-ryu",
+   "qid": null,
+   "styles": [
+    "goju-ryu",
+    "matayoshi-kobudo"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1941,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 13,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0010",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Nakamura Seiyū",
+   "name_alt": [],
+   "name_ascii": "Nakamura Seiyū",
+   "name_native": "中村清祐",
+   "name_romaji": null,
+   "primary_style": "shorin-ryu-shidokan",
+   "qid": null,
+   "styles": [
+    "shorin-ryu-shidokan",
+    "okinawan-kobudo"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1942,
+   "connected": true,
+   "death_year": 2013,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 11,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0011",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Nakaza Seiei",
+   "name_alt": [],
+   "name_ascii": "Nakaza Seiei",
+   "name_native": "仲座清栄",
+   "name_romaji": null,
+   "primary_style": "shorin-ryu-shorinkan",
+   "qid": null,
+   "styles": [
+    "shorin-ryu-shorinkan",
+    "shorinji-ryu",
+    "goju-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0012",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Ōshiro Masatoshi",
+   "name_alt": [],
+   "name_ascii": "Ōshiro Masatoshi",
+   "name_native": "大城マサトシ",
+   "name_romaji": null,
+   "primary_style": "okinawan-karate-generic",
+   "qid": null,
+   "styles": [
+    "okinawan-karate-generic"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 7,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0013",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Matsuda Yoshio",
+   "name_alt": [],
+   "name_ascii": "Matsuda Yoshio",
+   "name_native": "松田義雄",
+   "name_romaji": null,
+   "primary_style": "uechi-ryu",
+   "qid": null,
+   "styles": [
+    "uechi-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1915,
+   "connected": true,
+   "death_year": 2014,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 13,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0014",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Yara Choi",
+   "name_alt": [],
+   "name_ascii": "Yara Choi",
+   "name_native": "屋良朝意",
+   "name_romaji": null,
+   "primary_style": "tomari-te",
+   "qid": null,
+   "styles": [
+    "tomari-te"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 13,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0015",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Shima Isao",
+   "name_alt": [],
+   "name_ascii": "Shima Isao",
+   "name_native": "島勇夫",
+   "name_romaji": null,
+   "primary_style": "matsubayashi-ryu",
+   "qid": null,
+   "styles": [
+    "matsubayashi-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1936,
+   "connected": true,
+   "death_year": 2002,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 12,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0016",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Nakazone Kinei (Nakasone Kinei)",
+   "name_alt": [],
+   "name_ascii": "Nakazone Kinei (Nakasone Kinei)",
+   "name_native": "ナカゾネ キンエイ",
+   "name_romaji": null,
+   "primary_style": "goju-ryu",
+   "qid": null,
+   "styles": [
+    "goju-ryu",
+    "shoreikan"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1938,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 13,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0017",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Gibo Giyu",
+   "name_alt": [],
+   "name_ascii": "Gibo Giyu",
+   "name_native": "儀保宜裕",
+   "name_romaji": null,
+   "primary_style": "kobayashi-shorin-ryu",
+   "qid": null,
+   "styles": [
+    "kobayashi-shorin-ryu",
+    "shorin-ryu-shorinkan"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1939,
+   "connected": false,
+   "death_year": 2023,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0018",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Tomimoto Yuko",
+   "name_alt": [],
+   "name_ascii": "Tomimoto Yuko",
+   "name_native": "富本裕宏",
+   "name_romaji": null,
+   "primary_style": "okinawan-kobudo",
+   "qid": null,
+   "styles": [
+    "okinawan-kobudo"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1946,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 13,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0019",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Tokuyama Yoshinori (usually romanised Yoshiki Tokuyama)",
+   "name_alt": [],
+   "name_ascii": "Tokuyama Yoshinori (usually romanised Yoshiki Tokuyama)",
+   "name_native": "徳山良規",
+   "name_romaji": null,
+   "primary_style": "shudokan",
+   "qid": null,
+   "styles": [
+    "shudokan",
+    "kobayashi-shorin-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1953,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 12,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0020",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Kinjō Yoshitaka",
+   "name_alt": [],
+   "name_ascii": "Kinjō Yoshitaka",
+   "name_native": "金城嘉孝",
+   "name_romaji": null,
+   "primary_style": "goju-ryu",
+   "qid": null,
+   "styles": [
+    "goju-ryu",
+    "tomari-te"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 10,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0021",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Kina Seikō",
+   "name_alt": [],
+   "name_ascii": "Kina Seikō",
+   "name_native": "喜納正興",
+   "name_romaji": null,
+   "primary_style": "goju-ryu",
+   "qid": null,
+   "styles": [
+    "goju-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1926,
+   "connected": true,
+   "death_year": 2021,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 11,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0022",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Wakugawa Kōsei",
+   "name_alt": [],
+   "name_ascii": "Wakugawa Kōsei",
+   "name_native": "湧川幸盛",
+   "name_romaji": null,
+   "primary_style": "goju-ryu",
+   "qid": null,
+   "styles": [
+    "goju-ryu",
+    "shodokan-goju-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 13,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0023",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Shimabukuro Katsuyuki",
+   "name_alt": [],
+   "name_ascii": "Shimabukuro Katsuyuki",
+   "name_native": "島袋勝之",
+   "name_romaji": null,
+   "primary_style": "kobayashi-shorin-ryu",
+   "qid": null,
+   "styles": [
+    "kobayashi-shorin-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 10,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0024",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Ishimine Chōshin",
+   "name_alt": [],
+   "name_ascii": "Ishimine Chōshin",
+   "name_native": "伊志嶺朝信",
+   "name_romaji": null,
+   "primary_style": "goju-ryu",
+   "qid": null,
+   "styles": [
+    "goju-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1933,
+   "connected": true,
+   "death_year": 2013,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 7,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0025",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Inada Hiroshi",
+   "name_alt": [],
+   "name_ascii": "Inada Hiroshi",
+   "name_native": "稲田弘",
+   "name_romaji": null,
+   "primary_style": "uechi-ryu",
+   "qid": null,
+   "styles": [
+    "uechi-ryu",
+    "shohei-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1936,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 11,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0026",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Tōyama Zenshū",
+   "name_alt": [],
+   "name_ascii": "Tōyama Zenshū",
+   "name_native": "當山全秋",
+   "name_romaji": null,
+   "primary_style": "goju-ryu",
+   "qid": null,
+   "styles": [
+    "goju-ryu",
+    "shoreikan"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1941,
+   "connected": true,
+   "death_year": 2013,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 13,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0027",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Arakaki Isamu",
+   "name_alt": [],
+   "name_ascii": "Arakaki Isamu",
+   "name_native": "新垣勇",
+   "name_romaji": null,
+   "primary_style": "kobayashi-shorin-ryu",
+   "qid": null,
+   "styles": [
+    "kobayashi-shorin-ryu",
+    "shorin-ryu-kyudokan"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1941,
+   "connected": true,
+   "death_year": 2012,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 12,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0028",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Shiroma Kiyonori (Seihan)",
+   "name_alt": [],
+   "name_ascii": "Shiroma Kiyonori (Seihan)",
+   "name_native": "城間清範",
+   "name_romaji": null,
+   "primary_style": "motobu-udundi",
+   "qid": null,
+   "styles": [
+    "motobu-udundi"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1942,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 15,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0029",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Takamiyagi Tetsuo",
+   "name_alt": [],
+   "name_ascii": "Takamiyagi Tetsuo",
+   "name_native": "高宮城鉄男",
+   "name_romaji": null,
+   "primary_style": "shorin-ryu",
+   "qid": null,
+   "styles": [
+    "shorin-ryu",
+    "motobu-udundi",
+    "okinawan-kobudo"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1944,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 13,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0030",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Tsuha Kiyoshi",
+   "name_alt": [],
+   "name_ascii": "Tsuha Kiyoshi",
+   "name_native": "津波清",
+   "name_romaji": null,
+   "primary_style": "kobayashi-shorin-ryu",
+   "qid": null,
+   "styles": [
+    "kobayashi-shorin-ryu",
+    "okinawan-kobudo"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1946,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 11,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0031",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Kuba Yoshio",
+   "name_alt": [],
+   "name_ascii": "Kuba Yoshio",
+   "name_native": "久場良男",
+   "name_romaji": null,
+   "primary_style": "goju-ryu",
+   "qid": null,
+   "styles": [
+    "goju-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0032",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Kanagusuku Eiki",
+   "name_alt": [],
+   "name_ascii": "Kanagusuku Eiki",
+   "name_native": "金城榮喜",
+   "name_romaji": null,
+   "primary_style": "okinawan-kobudo",
+   "qid": null,
+   "styles": [
+    "okinawan-karate-generic",
+    "okinawan-kobudo"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0033",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Kinjō Kenpo",
+   "name_alt": [],
+   "name_ascii": "Kinjō Kenpo",
+   "name_native": "金城憲保",
+   "name_romaji": null,
+   "primary_style": "okinawan-karate-generic",
+   "qid": null,
+   "styles": [
+    "okinawan-karate-generic"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 2,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0034",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Kakazu Mitsuo",
+   "name_alt": [],
+   "name_ascii": "Kakazu Mitsuo",
+   "name_native": "嘉数光雄",
+   "name_romaji": null,
+   "primary_style": "okinawan-kobudo",
+   "qid": null,
+   "styles": [
+    "okinawan-kobudo"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1930,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 7,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0035",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Higa Yoshio",
+   "name_alt": [],
+   "name_ascii": "Higa Yoshio",
+   "name_native": "比嘉敏雄",
+   "name_romaji": null,
+   "primary_style": "uechi-ryu",
+   "qid": null,
+   "styles": [
+    "uechi-ryu",
+    "shohei-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1939,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 13,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0036",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Iha Kōtarō",
+   "name_alt": [],
+   "name_ascii": "Iha Kōtarō",
+   "name_native": "伊波光太郎",
+   "name_romaji": null,
+   "primary_style": "okinawan-kobudo",
+   "qid": null,
+   "styles": [
+    "okinawan-kobudo",
+    "kobayashi-shorin-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 12,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0037",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Taira Yoshio",
+   "name_alt": [],
+   "name_ascii": "Taira Yoshio",
+   "name_native": "平良吉雄",
+   "name_romaji": null,
+   "primary_style": "goju-ryu",
+   "qid": null,
+   "styles": [
+    "goju-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": 2016,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0038",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Chinen Masatsune",
+   "name_alt": [],
+   "name_ascii": "Chinen Masatsune",
+   "name_native": "知念正常",
+   "name_romaji": null,
+   "primary_style": "goju-ryu",
+   "qid": null,
+   "styles": [
+    "goju-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1937,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 11,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0039",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Senaga Yoshitsune",
+   "name_alt": [],
+   "name_ascii": "Senaga Yoshitsune",
+   "name_native": "瀬長義常",
+   "name_romaji": null,
+   "primary_style": "uechi-ryu",
+   "qid": null,
+   "styles": [
+    "uechi-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1939,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0040",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Kiyūna Chōkō",
+   "name_alt": [],
+   "name_ascii": "Kiyūna Chōkō",
+   "name_native": "喜友名朝孝",
+   "name_romaji": null,
+   "primary_style": "shorin-ryu",
+   "qid": null,
+   "styles": [
+    "shorin-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1941,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 8,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0041",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Miyagi Minoru",
+   "name_alt": [],
+   "name_ascii": "Miyagi Minoru",
+   "name_native": "宮城實",
+   "name_romaji": null,
+   "primary_style": "uechi-ryu",
+   "qid": null,
+   "styles": [
+    "uechi-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 12,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0042",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Miyazato Kōsuke",
+   "name_alt": [],
+   "name_ascii": "Miyazato Kōsuke",
+   "name_native": "宮里幸助",
+   "name_romaji": null,
+   "primary_style": "ryukyu-kobudo-akamine",
+   "qid": null,
+   "styles": [
+    "ryukyu-kobudo-akamine",
+    "shorin-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0043",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Hanashiro Tetsuo",
+   "name_alt": [],
+   "name_ascii": "Hanashiro Tetsuo",
+   "name_native": "玻名城哲夫",
+   "name_romaji": null,
+   "primary_style": "okinawan-karate-generic",
+   "qid": null,
+   "styles": [
+    "okinawan-karate-generic"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 11,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0044",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Genka Noritsune",
+   "name_alt": [],
+   "name_ascii": "Genka Noritsune",
+   "name_native": "源河徳恒",
+   "name_romaji": null,
+   "primary_style": "shorin-ryu-shorinkan",
+   "qid": null,
+   "styles": [
+    "shorin-ryu-shorinkan"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 11,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0045",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Matsuda Yoshimasa",
+   "name_alt": [],
+   "name_ascii": "Matsuda Yoshimasa",
+   "name_native": "松田芳正",
+   "name_romaji": null,
+   "primary_style": "shorin-ryu",
+   "qid": null,
+   "styles": [
+    "shorin-ryu",
+    "kobayashi-shorin-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 10,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0046",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Yonamine Ikuo",
+   "name_alt": [],
+   "name_ascii": "Yonamine Ikuo",
+   "name_native": "与那嶺育孝",
+   "name_romaji": null,
+   "primary_style": "goju-ryu",
+   "qid": null,
+   "styles": [
+    "goju-ryu",
+    "meibukan"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 15,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0047",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Nakamoto Eishō",
+   "name_alt": [],
+   "name_ascii": "Nakamoto Eishō",
+   "name_native": "仲本英征",
+   "name_romaji": null,
+   "primary_style": "goju-ryu",
+   "qid": null,
+   "styles": [
+    "goju-ryu",
+    "ufuchiku-kobujutsu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1945,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 12,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0048",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Shimabukuro Tsuneo",
+   "name_alt": [],
+   "name_ascii": "Shimabukuro Tsuneo",
+   "name_native": "島袋常雄",
+   "name_romaji": null,
+   "primary_style": "uechi-ryu",
+   "qid": null,
+   "styles": [
+    "uechi-ryu",
+    "ryukyu-kobudo"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 14,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0049",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Maeda Kiyomasa",
+   "name_alt": [],
+   "name_ascii": "Maeda Kiyomasa",
+   "name_native": "前田清正",
+   "name_romaji": null,
+   "primary_style": "matsubayashi-ryu",
+   "qid": null,
+   "styles": [
+    "matsubayashi-ryu",
+    "yamanni-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 12,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
+   "id": "J0050",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Gushiken Shintoku",
+   "name_alt": [],
+   "name_ascii": "Gushiken Shintoku",
+   "name_native": "具志堅新徳",
+   "name_romaji": null,
+   "primary_style": "goju-ryu",
+   "qid": null,
+   "styles": [
+    "goju-ryu"
    ],
    "wikipedia_url": null
   },
@@ -36051,7 +39069,8 @@
     "karate-generic",
     "kung-fu",
     "te",
-    "chung-do-kwan"
+    "chung-do-kwan",
+    "jhoon-rhee-taekwondo"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Jhoon_Rhee"
   },
@@ -36182,8 +39201,8 @@
    "honours": [],
    "id": "Q1071733",
    "locality": "Shuri",
-   "n_descendants": 213,
-   "n_students": 17,
+   "n_descendants": 233,
+   "n_students": 21,
    "name": "Choshin Chibana",
    "name_alt": [],
    "name_ascii": "Choshin Chibana",
@@ -36200,7 +39219,6 @@
     "shobayashi-shorin-ryu",
     "shorin-ryu-shubukan",
     "shorin-ryu-kyudokan",
-    "shorin-ryu-reihokan",
     "shorin-ryu-seibukan"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Ch%C5%8Dshin_Chibana"
@@ -36370,7 +39388,8 @@
     "kyokushin",
     "japanese-karate-generic",
     "karate-generic",
-    "te"
+    "te",
+    "kendokai"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Hideo_Nakamura"
   },
@@ -36442,7 +39461,8 @@
     "meibukan",
     "goju-ryu",
     "karate-generic",
-    "te"
+    "te",
+    "imgka"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Akihito_Yagi"
   },
@@ -36774,8 +39794,8 @@
    "honours": [],
    "id": "Q1147708",
    "locality": "Shuri",
-   "n_descendants": 198,
-   "n_students": 15,
+   "n_descendants": 213,
+   "n_students": 18,
    "name": "Choki Motobu",
    "name_alt": [
     "Chokki Motobu",
@@ -37044,7 +40064,8 @@
     "shotokan",
     "karate-generic",
     "japanese-karate-generic",
-    "te"
+    "te",
+    "jka"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Hidetaka_Nishiyama"
   },
@@ -37063,7 +40084,9 @@
     "years_nulled": []
    },
    "generation": 11,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q130739281",
    "locality": "Naha",
    "n_descendants": 0,
@@ -37144,7 +40167,7 @@
    "honours": [],
    "id": "Q1336547",
    "locality": "Shuri",
-   "n_descendants": 585,
+   "n_descendants": 629,
    "n_students": 1,
    "name": "Takahara Peichin",
    "name_alt": [
@@ -37210,7 +40233,9 @@
     "years_nulled": []
    },
    "generation": 11,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q135222893",
    "locality": "Shuri",
    "n_descendants": 15,
@@ -37267,7 +40292,8 @@
     "shotokan",
     "karate-generic",
     "japanese-karate-generic",
-    "te"
+    "te",
+    "kase-ha"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Taiji_Kase"
   },
@@ -37323,7 +40349,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "Q1473967",
    "locality": null,
@@ -37399,7 +40425,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 8,
+   "generation": 9,
    "honours": [],
    "id": "Q1584213",
    "locality": null,
@@ -37417,7 +40443,8 @@
     "japanese-karate-generic",
     "karate-generic",
     "shorinji-ryu",
-    "te"
+    "te",
+    "koshiki-karatedo"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Masayuki_Hisataka"
   },
@@ -37971,7 +40998,8 @@
     "shotokan",
     "karate-generic",
     "japanese-karate-generic",
-    "te"
+    "te",
+    "jka"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Takenori_Imura"
   },
@@ -38041,7 +41069,8 @@
     "shotokan",
     "karate-generic",
     "japanese-karate-generic",
-    "te"
+    "te",
+    "jka"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Yoshiharu_Osaka"
   },
@@ -38098,11 +41127,13 @@
     "years_nulled": []
    },
    "generation": 12,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q15987228",
    "locality": "Naha",
-   "n_descendants": 19,
-   "n_students": 11,
+   "n_descendants": 23,
+   "n_students": 15,
    "name": "Yuchoku Higa",
    "name_alt": [
     "Higa Yuchoku"
@@ -38138,7 +41169,9 @@
     "years_nulled": []
    },
    "generation": 14,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q15987278",
    "locality": "Shuri",
    "n_descendants": 1,
@@ -38227,7 +41260,8 @@
     "shotokan",
     "karate-generic",
     "shotokai",
-    "te"
+    "te",
+    "jka"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Japan_Karate_Association"
   },
@@ -38427,11 +41461,13 @@
     "years_nulled": []
    },
    "generation": 9,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q16016038",
    "locality": "Naha",
-   "n_descendants": 17,
-   "n_students": 13,
+   "n_descendants": 25,
+   "n_students": 14,
    "name": "Meitoku Yagi",
    "name_alt": [],
    "name_ascii": "Meitoku Yagi",
@@ -38537,7 +41573,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 7,
+   "generation": 8,
    "honours": [],
    "id": "Q1620643",
    "locality": "Shuri",
@@ -38663,7 +41699,9 @@
     "karate-generic",
     "korean-martial-arts",
     "taekwondo",
-    "te"
+    "te",
+    "moo-duk-kwan",
+    "world-tang-soo-do-association"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Shin_Jae-chul"
   },
@@ -38721,7 +41759,7 @@
    "honours": [],
    "id": "Q16907056",
    "locality": null,
-   "n_descendants": 473,
+   "n_descendants": 509,
    "n_students": 1,
    "name": "Xie Zongxiang",
    "name_alt": [],
@@ -38733,7 +41771,8 @@
    "styles": [
     "goju-ryu",
     "karate-generic",
-    "te"
+    "te",
+    "whooping-crane"
    ],
    "wikipedia_url": "https://de.wikipedia.org/wiki/Xie_Zongxiang"
   },
@@ -38819,11 +41858,13 @@
     "years_nulled": []
    },
    "generation": 6,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q1728269",
    "locality": null,
-   "n_descendants": 52,
-   "n_students": 50,
+   "n_descendants": 59,
+   "n_students": 55,
    "name": "Kanei Uechi",
    "name_alt": [
     "Kanbun Uechi Jnr",
@@ -38874,7 +41915,8 @@
     "karate-generic",
     "shito-ryu",
     "japanese-karate-generic",
-    "te"
+    "te",
+    "jska"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Keigo_Abe"
   },
@@ -39111,11 +42153,13 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 7,
-   "honours": [],
+   "generation": 8,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q189805",
    "locality": "Shuri",
-   "n_descendants": 44,
+   "n_descendants": 45,
    "n_students": 12,
    "name": "Zenryo Shimabukuro",
    "name_alt": [],
@@ -39130,7 +42174,8 @@
     "kobayashi-shorin-ryu",
     "okinawan-karate-generic",
     "shorin-ryu-seibukan",
-    "te"
+    "te",
+    "chubu-shorin-ryu"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Zenry%C5%8D_Shimabukuro"
   },
@@ -39194,8 +42239,8 @@
    "honours": [],
    "id": "Q1908088",
    "locality": "Naha",
-   "n_descendants": 24,
-   "n_students": 1,
+   "n_descendants": 29,
+   "n_students": 2,
    "name": "Shinko Matayoshi",
    "name_alt": [],
    "name_ascii": "Shinko Matayoshi",
@@ -39228,11 +42273,13 @@
     "years_nulled": []
    },
    "generation": 10,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q1908090",
    "locality": "Naha",
-   "n_descendants": 23,
-   "n_students": 21,
+   "n_descendants": 27,
+   "n_students": 24,
    "name": "Shinpo Matayoshi",
    "name_alt": [
     "Matayoshi Shinpo"
@@ -39309,7 +42356,7 @@
    "honours": [],
    "id": "Q1929108",
    "locality": null,
-   "n_descendants": 588,
+   "n_descendants": 632,
    "n_students": 3,
    "name": "Kusanku",
    "name_alt": [],
@@ -39448,11 +42495,13 @@
     "years_nulled": []
    },
    "generation": 12,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q1963468",
    "locality": "Shuri",
-   "n_descendants": 69,
-   "n_students": 35,
+   "n_descendants": 75,
+   "n_students": 38,
    "name": "Shoshin Nagamine",
    "name_alt": [
     "Shosin Nagamine"
@@ -39543,7 +42592,8 @@
     "kyokushin",
     "shorin-ryu",
     "kung-fu",
-    "te"
+    "te",
+    "chun-kuk-do"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_Wall"
   },
@@ -39647,7 +42697,8 @@
     "wado-ryu",
     "karate-generic",
     "japanese-karate-generic",
-    "te"
+    "te",
+    "wado-kai"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/T%C5%8Dru_Arakawa"
   },
@@ -39669,8 +42720,8 @@
    "honours": [],
    "id": "Q221121",
    "locality": "Shuri",
-   "n_descendants": 325,
-   "n_students": 22,
+   "n_descendants": 372,
+   "n_students": 24,
    "name": "Chojun Miyagi",
    "name_alt": [],
    "name_ascii": "Chojun Miyagi",
@@ -39750,11 +42801,12 @@
    "name_ascii": "Bobby Lowe",
    "name_native": null,
    "name_romaji": null,
-   "primary_style": "te",
+   "primary_style": "kyokushin",
    "qid": "Q221797",
    "styles": [
     "karate-generic",
-    "te"
+    "te",
+    "kyokushin"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Bobby_Lowe"
   },
@@ -39789,7 +42841,8 @@
     "wado-ryu",
     "karate-generic",
     "shorin-ryu",
-    "te"
+    "te",
+    "shintani-wado-kai"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Masaru_Shintani"
   },
@@ -39807,11 +42860,11 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 6,
+   "generation": 7,
    "honours": [],
    "id": "Q2393877",
    "locality": "Shuri",
-   "n_descendants": 172,
+   "n_descendants": 185,
    "n_students": 11,
    "name": "Chotoku Kyan",
    "name_alt": [],
@@ -39916,7 +42969,7 @@
    "honours": [],
    "id": "Q2473562",
    "locality": "Naha",
-   "n_descendants": 54,
+   "n_descendants": 61,
    "n_students": 6,
    "name": "Kanbun Uechi",
    "name_alt": [],
@@ -39956,7 +43009,7 @@
    "honours": [],
    "id": "Q251784",
    "locality": null,
-   "n_descendants": 558,
+   "n_descendants": 595,
    "n_students": 3,
    "name": "Annan",
    "name_alt": [
@@ -40027,7 +43080,9 @@
     "years_nulled": []
    },
    "generation": 10,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q2599967",
    "locality": "Shuri",
    "n_descendants": 5,
@@ -40084,7 +43139,8 @@
     "karate-generic",
     "japanese-karate-generic",
     "shotokai",
-    "te"
+    "te",
+    "ska"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Tsutomu_Ohshima"
   },
@@ -40189,7 +43245,8 @@
    "styles": [
     "kyokushin",
     "karate-generic",
-    "te"
+    "te",
+    "iko-1"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Shokei_Matsui"
   },
@@ -40266,7 +43323,8 @@
     "kyokushin",
     "shito-ryu",
     "shotokan",
-    "chun-kuk-do"
+    "chun-kuk-do",
+    "moo-duk-kwan"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Chuck_Norris"
   },
@@ -40303,7 +43361,8 @@
     "kyokushin",
     "shotokan",
     "japanese-karate-generic",
-    "karate-generic"
+    "karate-generic",
+    "ikga"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/G%C5%8Dgen_Yamaguchi"
   },
@@ -40322,10 +43381,12 @@
     "years_nulled": []
    },
    "generation": 12,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q27363",
    "locality": "Shuri",
-   "n_descendants": 20,
+   "n_descendants": 21,
    "n_students": 10,
    "name": "Tatsuo Shimabuku",
    "name_alt": [],
@@ -40525,7 +43586,8 @@
     "karate-generic",
     "scrape-artefact",
     "japanese-karate-generic",
-    "te"
+    "te",
+    "jka"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Stan_Schmidt"
   },
@@ -40560,7 +43622,8 @@
     "shotokan",
     "karate-generic",
     "japanese-karate-generic",
-    "te"
+    "te",
+    "jka"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Takayuki_Mikami"
   },
@@ -40594,7 +43657,8 @@
    "styles": [
     "shotokan",
     "karate-generic",
-    "te"
+    "te",
+    "iskf"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Teruyuki_Okazaki"
   },
@@ -40684,12 +43748,12 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 1,
+   "generation": 5,
    "honours": [],
    "id": "Q3028499",
    "locality": "Tomari",
-   "n_descendants": 288,
-   "n_students": 7,
+   "n_descendants": 322,
+   "n_students": 8,
    "name": "Kosaku Matsumora",
    "name_alt": [],
    "name_ascii": "Kosaku Matsumora",
@@ -40800,10 +43864,11 @@
    "name_ascii": "Francisco Filho",
    "name_native": null,
    "name_romaji": null,
-   "primary_style": "karate-generic",
+   "primary_style": "kyokushin",
    "qid": "Q3081845",
    "styles": [
-    "karate-generic"
+    "karate-generic",
+    "kyokushin"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Francisco_Filho"
   },
@@ -40907,7 +43972,8 @@
     "wado-ryu",
     "karate-generic",
     "shindo-yoshin-ryu",
-    "te"
+    "te",
+    "wado-ryu-karate-do-renmei"
    ],
    "wikipedia_url": "https://de.wikipedia.org/wiki/Jir%C5%8D_%C5%8Ctsuka"
   },
@@ -40926,11 +43992,13 @@
     "years_nulled": []
    },
    "generation": 6,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q3139173",
    "locality": "Shuri",
-   "n_descendants": 27,
-   "n_students": 19,
+   "n_descendants": 30,
+   "n_students": 21,
    "name": "Hohan Soken",
    "name_alt": [],
    "name_ascii": "Hohan Soken",
@@ -41031,11 +44099,13 @@
     "years_nulled": []
    },
    "generation": 12,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q3194253",
    "locality": null,
-   "n_descendants": 17,
-   "n_students": 17,
+   "n_descendants": 22,
+   "n_students": 22,
    "name": "Katsuya Miyahira",
    "name_alt": [],
    "name_ascii": "Katsuya Miyahira",
@@ -41333,7 +44403,8 @@
     "shotokan",
     "karate-generic",
     "japanese-karate-generic",
-    "te"
+    "te",
+    "jka"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Hiroshi_Shirai"
   },
@@ -41355,8 +44426,8 @@
    "honours": [],
    "id": "Q3482287",
    "locality": "Shuri",
-   "n_descendants": 144,
-   "n_students": 6,
+   "n_descendants": 160,
+   "n_students": 7,
    "name": "Shinpan Gusukuma",
    "name_alt": [],
    "name_ascii": "Shinpan Gusukuma",
@@ -41391,11 +44462,13 @@
     "years_nulled": []
    },
    "generation": 10,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q3482635",
    "locality": "Shuri",
-   "n_descendants": 52,
-   "n_students": 30,
+   "n_descendants": 60,
+   "n_students": 34,
    "name": "Shugoro Nakazato",
    "name_alt": [],
    "name_ascii": "Shugoro Nakazato",
@@ -41640,9 +44713,9 @@
    "honours": [],
    "id": "Q3772405",
    "locality": "Shuri",
-   "n_descendants": 11,
-   "n_students": 6,
-   "name": "Kanken Oyadomari",
+   "n_descendants": 12,
+   "n_students": 7,
+   "name": "Kanken Toyama",
    "name_alt": [
     "Kanken Oyadomari",
     "Kanken Toyama",
@@ -41650,7 +44723,7 @@
    ],
    "name_ascii": "Kanken Toyama",
    "name_native": "遠山寛賢",
-   "name_romaji": "Kanken Tōyama",
+   "name_romaji": "Toyama Kanken",
    "primary_style": "shudokan",
    "qid": "Q3772405",
    "styles": [
@@ -41770,7 +44843,8 @@
     "okinawan-kobudo",
     "japanese-karate-generic",
     "shotokai",
-    "te"
+    "te",
+    "jka"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Masatoshi_Nakayama"
   },
@@ -41822,22 +44896,25 @@
     "years_nulled": []
    },
    "generation": 12,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q38585428",
    "locality": null,
-   "n_descendants": 36,
+   "n_descendants": 37,
    "n_students": 20,
    "name": "Shigeru Nakamura",
    "name_alt": [],
    "name_ascii": "Shigeru Nakamura",
    "name_native": "中村茂",
    "name_romaji": null,
-   "primary_style": "te",
+   "primary_style": "okinawa-kenpo",
    "qid": "Q38585428",
    "styles": [
     "japanese-karate-generic",
     "karate-generic",
-    "te"
+    "te",
+    "okinawa-kenpo"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Shigeru_Nakamura"
   },
@@ -41935,11 +45012,13 @@
     "years_nulled": []
    },
    "generation": 10,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q3954660",
    "locality": "Naha",
-   "n_descendants": 3,
-   "n_students": 1,
+   "n_descendants": 9,
+   "n_students": 4,
    "name": "Seikichi Toguchi",
    "name_alt": [],
    "name_ascii": "Seikichi Toguchi",
@@ -42030,7 +45109,8 @@
     "okinawan-kobudo",
     "shuri-te",
     "japanese-karate-generic",
-    "okinawan-karate-generic"
+    "okinawan-karate-generic",
+    "jundokan-international"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Teruo_Chinen"
   },
@@ -42160,7 +45240,7 @@
    "honours": [],
    "id": "Q41105",
    "locality": "Shuri",
-   "n_descendants": 258,
+   "n_descendants": 265,
    "n_students": 30,
    "name": "Gichin Funakoshi",
    "name_alt": [],
@@ -42322,7 +45402,8 @@
     "shotokan",
     "karate-generic",
     "japanese-karate-generic",
-    "te"
+    "te",
+    "jka"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Tatsuya_Naka"
   },
@@ -42411,8 +45492,8 @@
    "honours": [],
    "id": "Q453505",
    "locality": "Shuri",
-   "n_descendants": 139,
-   "n_students": 14,
+   "n_descendants": 156,
+   "n_students": 15,
    "name": "Kenwa Mabuni",
    "name_alt": [],
    "name_ascii": "Kenwa Mabuni",
@@ -42603,7 +45684,8 @@
     "shotokan",
     "karate-generic",
     "japanese-karate-generic",
-    "te"
+    "te",
+    "skif"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Hirokazu_Kanazawa"
   },
@@ -42637,7 +45719,8 @@
    "styles": [
     "taekwondo",
     "karate-generic",
-    "te"
+    "te",
+    "jhoon-rhee-taekwondo"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Allen_Steen"
   },
@@ -42658,7 +45741,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q4763171",
    "locality": null,
    "n_descendants": 0,
@@ -42668,11 +45753,13 @@
    "name_ascii": "Angi Uezu",
    "name_native": "上江洲安儀",
    "name_romaji": null,
-   "primary_style": "te",
+   "primary_style": "isshin-ryu",
    "qid": "Q4763171",
    "styles": [
     "te",
-    "karate-generic"
+    "karate-generic",
+    "isshin-ryu",
+    "isshin-ryu-oikka"
    ],
    "wikipedia_url": "https://ja.wikipedia.org/wiki/%E4%B8%8A%E6%B1%9F%E6%B4%B2%E5%AE%89%E5%84%80"
   },
@@ -42748,7 +45835,8 @@
     "shorin-ryu",
     "shuri-te",
     "tomari-te",
-    "kobayashi-shorin-ryu"
+    "kobayashi-shorin-ryu",
+    "ueshiro-shorin-ryu"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Matsubayashi-ry%C5%AB"
   },
@@ -42786,7 +45874,8 @@
     "uechi-ryu",
     "ryukyu-kobudo",
     "okinawan-kobudo",
-    "isshin-ryu-kobudo"
+    "isshin-ryu-kobudo",
+    "isshin-ryu-uika"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Arcenio_James_Advincula"
   },
@@ -42808,7 +45897,7 @@
    "honours": [],
    "id": "Q4807592",
    "locality": null,
-   "n_descendants": 580,
+   "n_descendants": 626,
    "n_students": 3,
    "name": "Ason",
    "name_alt": [],
@@ -42966,11 +46055,13 @@
     "years_nulled": []
    },
    "generation": 9,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q5103850",
    "locality": null,
-   "n_descendants": 3,
-   "n_students": 3,
+   "n_descendants": 4,
+   "n_students": 4,
    "name": "Chogi Kishaba",
    "name_alt": [],
    "name_ascii": "Chogi Kishaba",
@@ -42984,7 +46075,8 @@
     "yamanni-ryu",
     "okinawan-kobudo",
     "karate-generic",
-    "te"
+    "te",
+    "yamanni-chinen-ryu-rbkd"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Chogi_Kishaba"
   },
@@ -43145,8 +46237,8 @@
    "honours": [],
    "id": "Q527422",
    "locality": "Shuri",
-   "n_descendants": 506,
-   "n_students": 16,
+   "n_descendants": 539,
+   "n_students": 18,
    "name": "Anko Itosu",
    "name_alt": [],
    "name_ascii": "Anko Itosu",
@@ -43226,7 +46318,8 @@
    "styles": [
     "isshin-ryu",
     "karate-generic",
-    "te"
+    "te",
+    "isshin-ryu-aoka"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Donald_Hugh_Nagle"
   },
@@ -43280,11 +46373,13 @@
     "years_nulled": []
    },
    "generation": 9,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q5349190",
    "locality": "Shuri",
-   "n_descendants": 23,
-   "n_students": 19,
+   "n_descendants": 25,
+   "n_students": 21,
    "name": "Eiichi Miyazato",
    "name_alt": [],
    "name_ascii": "Eiichi Miyazato",
@@ -43427,7 +46522,7 @@
    "honours": [],
    "id": "Q542989",
    "locality": "Shuri",
-   "n_descendants": 586,
+   "n_descendants": 630,
    "n_students": 1,
    "name": "Chatan Yara",
    "name_alt": [],
@@ -43470,11 +46565,12 @@
    "name_ascii": "Frank Brennan",
    "name_native": null,
    "name_romaji": null,
-   "primary_style": "te",
+   "primary_style": "shotokan",
    "qid": "Q5485463",
    "styles": [
     "karate-generic",
-    "te"
+    "te",
+    "shotokan"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Frank_Brennan"
   },
@@ -43567,8 +46663,8 @@
    "honours": [],
    "id": "Q557301",
    "locality": "Shuri",
-   "n_descendants": 82,
-   "n_students": 3,
+   "n_descendants": 91,
+   "n_students": 4,
    "name": "Ankichi Arakaki",
    "name_alt": [],
    "name_ascii": "Ankichi Arakaki",
@@ -43723,7 +46819,8 @@
     "shotokan",
     "wado-ryu",
     "kenpo",
-    "kung-fu"
+    "kung-fu",
+    "ifk-kyokushin"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Steve_Arneil"
   },
@@ -43797,7 +46894,8 @@
    "qid": "Q5661611",
    "styles": [
     "isshin-ryu",
-    "karate-generic"
+    "karate-generic",
+    "isshin-ryu-uika"
    ],
    "wikipedia_url": null
   },
@@ -43922,7 +47020,7 @@
    "honours": [],
    "id": "Q584466",
    "locality": "Shuri",
-   "n_descendants": 626,
+   "n_descendants": 667,
    "n_students": 5,
    "name": "Seisho Arakaki",
    "name_alt": [
@@ -44565,7 +47663,7 @@
    "honours": [],
    "id": "Q6426547",
    "locality": "Tomari",
-   "n_descendants": 177,
+   "n_descendants": 190,
    "n_students": 4,
    "name": "Kokan Oyadomari",
    "name_alt": [],
@@ -44667,7 +47765,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 8,
+   "generation": 9,
    "honours": [],
    "id": "Q6519507",
    "locality": null,
@@ -44758,7 +47856,8 @@
     "shotokan",
     "japanese-karate-generic",
     "karate-generic",
-    "te"
+    "te",
+    "kwf"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Mikio_Yahara"
   },
@@ -44787,10 +47886,11 @@
    "name_ascii": "Makoto Nakamura",
    "name_native": "中村誠",
    "name_romaji": null,
-   "primary_style": "te",
+   "primary_style": "kyokushin",
    "qid": "Q6739958",
    "styles": [
-    "te"
+    "te",
+    "kyokushin"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Makoto_Nakamura"
   },
@@ -44931,7 +48031,8 @@
     "jundokan",
     "okinawan-karate-generic",
     "seidokan",
-    "te"
+    "te",
+    "okinawa-goju-ryu-kenkyukai"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Masaji_Taira"
   },
@@ -44949,12 +48050,12 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 6,
+   "generation": 7,
    "honours": [],
    "id": "Q6782517",
    "locality": "Shuri",
-   "n_descendants": 65,
-   "n_students": 5,
+   "n_descendants": 74,
+   "n_students": 6,
    "name": "Masami Chinen",
    "name_alt": [],
    "name_ascii": "Masami Chinen",
@@ -45006,7 +48107,8 @@
     "karate-generic",
     "shito-ryu",
     "shotokan",
-    "te"
+    "te",
+    "tsuruoka-ryu"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Masami_Tsuruoka"
   },
@@ -45062,7 +48164,9 @@
     "years_nulled": []
    },
    "generation": 10,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q6810356",
    "locality": "Naha",
    "n_descendants": 2,
@@ -45083,7 +48187,8 @@
     "karate-generic",
     "meibukan",
     "okinawan-karate-generic",
-    "te"
+    "te",
+    "imgka"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Meitatsu_Yagi"
   },
@@ -45121,7 +48226,8 @@
     "okinawan-kobudo",
     "japanese-karate-generic",
     "karate-generic",
-    "te"
+    "te",
+    "yoshukai-international"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Michael_G._Foster"
   },
@@ -45172,7 +48278,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q6869269",
    "locality": "Naha",
    "n_descendants": 0,
@@ -45288,7 +48396,7 @@
    "honours": [],
    "id": "Q6956791",
    "locality": null,
-   "n_descendants": 28,
+   "n_descendants": 31,
    "n_students": 1,
    "name": "Nabe Matsumura",
    "name_alt": [],
@@ -45324,8 +48432,8 @@
    "honours": [],
    "id": "Q699236",
    "locality": "Shuri",
-   "n_descendants": 472,
-   "n_students": 10,
+   "n_descendants": 508,
+   "n_students": 11,
    "name": "Kanryo Higaonna",
    "name_alt": [
     "Higaonna Kanryo"
@@ -45431,8 +48539,8 @@
    "honours": [],
    "id": "Q705617",
    "locality": "Shuri",
-   "n_descendants": 141,
-   "n_students": 7,
+   "n_descendants": 175,
+   "n_students": 8,
    "name": "Chomo Hanashiro",
    "name_alt": [],
    "name_ascii": "Chomo Hanashiro",
@@ -45470,8 +48578,8 @@
    "honours": [],
    "id": "Q706389",
    "locality": "Shuri",
-   "n_descendants": 216,
-   "n_students": 6,
+   "n_descendants": 241,
+   "n_students": 7,
    "name": "Choyu Motobu",
    "name_alt": [
     "Motobu Choyu"
@@ -45556,10 +48664,11 @@
    "name_ascii": "Tadashi Nakamura",
    "name_native": "中村忠",
    "name_romaji": null,
-   "primary_style": "te",
+   "primary_style": "seido-juku",
    "qid": "Q706955",
    "styles": [
-    "te"
+    "te",
+    "seido-juku"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Tadashi_Nakamura"
   },
@@ -45595,7 +48704,8 @@
     "karate-generic",
     "japanese-karate-generic",
     "te",
-    "yamanni-ryu"
+    "yamanni-ryu",
+    "asai-ryu"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Tetsuhiko_Asai"
   },
@@ -45717,8 +48827,8 @@
    "honours": [],
    "id": "Q715769",
    "locality": "Shuri",
-   "n_descendants": 571,
-   "n_students": 16,
+   "n_descendants": 618,
+   "n_students": 17,
    "name": "Sokon Matsumura",
    "name_alt": [
     "Matsumura Sokon"
@@ -45768,7 +48878,8 @@
     "shotokan",
     "karate-generic",
     "japanese-karate-generic",
-    "te"
+    "te",
+    "jka"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Keinosuke_Enoeda"
   },
@@ -45896,8 +49007,8 @@
    "honours": [],
    "id": "Q721201",
    "locality": "Shuri",
-   "n_descendants": 259,
-   "n_students": 1,
+   "n_descendants": 416,
+   "n_students": 2,
    "name": "Anko Azato",
    "name_alt": [],
    "name_ascii": "Anko Azato",
@@ -45931,8 +49042,8 @@
    "honours": [],
    "id": "Q722028",
    "locality": "Shuri",
-   "n_descendants": 70,
-   "n_students": 4,
+   "n_descendants": 73,
+   "n_students": 5,
    "name": "Kentsu Yabu",
    "name_alt": [],
    "name_ascii": "Kentsu Yabu",
@@ -45965,12 +49076,14 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 9,
-   "honours": [],
+   "generation": 10,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q723832",
    "locality": "Naha",
-   "n_descendants": 61,
-   "n_students": 9,
+   "n_descendants": 68,
+   "n_students": 12,
    "name": "Shinken Taira",
    "name_alt": [
     "Taira Shinken"
@@ -45986,7 +49099,8 @@
     "nihon-kobudo",
     "karate-generic",
     "okinawan-karate-generic",
-    "te"
+    "te",
+    "ryukyu-kobujutsu-kenkyukai"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Taira_Shinken"
   },
@@ -46039,7 +49153,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q727360",
    "locality": "Shuri",
    "n_descendants": 4,
@@ -46059,7 +49175,8 @@
     "okinawan-kobudo",
     "karate-generic",
     "okinawan-karate-generic",
-    "shito-kai"
+    "shito-kai",
+    "dento-shito-ryu"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Mabuni_Kenei"
   },
@@ -46499,7 +49616,8 @@
     "goju-ryu",
     "karate-generic",
     "chuan-fa",
-    "te"
+    "te",
+    "ken-shin-kan"
    ],
    "wikipedia_url": "https://ja.wikipedia.org/wiki/%E8%B5%A4%E5%B6%BA%E8%AA%A0%E4%B8%80"
   },
@@ -46523,7 +49641,7 @@
    "honours": [],
    "id": "Q7446703",
    "locality": null,
-   "n_descendants": 53,
+   "n_descendants": 61,
    "n_students": 1,
    "name": "Seiichi Iju",
    "name_alt": [],
@@ -46560,7 +49678,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q7446770",
    "locality": null,
    "n_descendants": 0,
@@ -46574,7 +49694,8 @@
    "qid": "Q7446770",
    "styles": [
     "shorin-ryu-shidokan",
-    "karate-generic"
+    "karate-generic",
+    "beikoku-shidokan"
    ],
    "wikipedia_url": null
   },
@@ -46634,8 +49755,8 @@
    "honours": [],
    "id": "Q7447367",
    "locality": "Naha",
-   "n_descendants": 79,
-   "n_students": 31,
+   "n_descendants": 94,
+   "n_students": 36,
    "name": "Seko Higa",
    "name_alt": [],
    "name_ascii": "Seko Higa",
@@ -46775,7 +49896,9 @@
     "years_nulled": []
    },
    "generation": 13,
-   "honours": [],
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q7677484",
    "locality": "Naha",
    "n_descendants": 2,
@@ -47011,7 +50134,8 @@
     "karate-generic",
     "okinawan-karate-generic",
     "te",
-    "matsubayashi-ryu"
+    "matsubayashi-ryu",
+    "yamanni-chinen-ryu-rbkd"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Toshihiro_Oshiro"
   },
@@ -47147,11 +50271,12 @@
    "name_ascii": "Willie Williams",
    "name_native": null,
    "name_romaji": null,
-   "primary_style": "te",
+   "primary_style": "kyokushin",
    "qid": "Q8021897",
    "styles": [
     "karate-generic",
-    "te"
+    "te",
+    "kyokushin"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Willie_Williams"
   },
@@ -47173,7 +50298,7 @@
    "honours": [],
    "id": "Q8031976",
    "locality": null,
-   "n_descendants": 587,
+   "n_descendants": 631,
    "n_students": 1,
    "name": "Wong Chung-Yoh",
    "name_alt": [],
@@ -47223,7 +50348,7 @@
    "active_from": 1995,
    "active_from_estimated": true,
    "birth_year": 1970,
-   "connected": false,
+   "connected": true,
    "death_year": null,
    "flags": {
     "added_by_research": false,
@@ -47233,8 +50358,10 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": null,
-   "honours": [],
+   "generation": 13,
+   "honours": [
+    "Hanshi 10th dan — Okinawa Karate News register (2018)"
+   ],
    "id": "Q8056246",
    "locality": null,
    "n_descendants": 0,
@@ -47282,7 +50409,8 @@
     "shotokan",
     "karate-generic",
     "japanese-karate-generic",
-    "te"
+    "te",
+    "iskf"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Yutaka_Yaguchi"
   },
@@ -47354,7 +50482,8 @@
     "shotokan",
     "karate-generic",
     "japanese-karate-generic",
-    "te"
+    "te",
+    "jka"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Hideo_Ochi"
   },
@@ -47524,7 +50653,7 @@
    "honours": [],
    "id": "Q921673",
    "locality": "Shuri",
-   "n_descendants": 584,
+   "n_descendants": 628,
    "n_students": 4,
    "name": "Kanga Sakukawa",
    "name_alt": [
@@ -47570,11 +50699,12 @@
    "name_ascii": "Masahiko Tanaka",
    "name_native": "田中昌彦",
    "name_romaji": null,
-   "primary_style": "te",
+   "primary_style": "jka",
    "qid": "Q922328",
    "styles": [
     "scrape-artefact",
-    "te"
+    "te",
+    "jka"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Masahiko_Tanaka"
   },
@@ -47664,7 +50794,7 @@
    "honours": [],
    "id": "Q954330",
    "locality": "Naha",
-   "n_descendants": 645,
+   "n_descendants": 686,
    "n_students": 8,
    "name": "Ryu Ryu Ko",
    "name_alt": [],
@@ -47742,12 +50872,13 @@
    "name_ascii": "Tatsuo Suzuki",
    "name_native": "鈴木達夫",
    "name_romaji": null,
-   "primary_style": "te",
+   "primary_style": "wado-kokusai",
    "qid": "Q97666381",
    "styles": [
     "japanese-karate-generic",
     "karate-generic",
-    "te"
+    "te",
+    "wado-kokusai"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Tatsuo_Suzuki"
   },
@@ -47805,7 +50936,7 @@
    "honours": [],
    "id": "Q99517310",
    "locality": "Naha",
-   "n_descendants": 173,
+   "n_descendants": 186,
    "n_students": 1,
    "name": "Chofu Kyan",
    "name_alt": [],
@@ -47819,6 +50950,859 @@
     "karate-generic"
    ],
    "wikipedia_url": "https://ja.wikipedia.org/wiki/%E5%96%9C%E5%B1%8B%E6%AD%A6%E6%9C%9D%E6%89%B6"
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 7,
+   "honours": [],
+   "id": "W0001",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Miki Jisaburo",
+   "name_alt": [],
+   "name_ascii": "Miki Jisaburo",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": "karate-generic",
+   "qid": null,
+   "styles": [
+    "karate-generic"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1919,
+   "connected": false,
+   "death_year": 2013,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "W0002",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Kinjo Hiroshi",
+   "name_alt": [],
+   "name_ascii": "Kinjo Hiroshi",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": "karate-generic",
+   "qid": null,
+   "styles": [
+    "karate-generic"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1878,
+   "connected": false,
+   "death_year": 1926,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "W0003",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Oyadomari Eiro",
+   "name_alt": [],
+   "name_ascii": "Oyadomari Eiro",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": "tomari-te",
+   "qid": null,
+   "styles": [
+    "tomari-te"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 12,
+   "honours": [],
+   "id": "W0004",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Takano Genjuro",
+   "name_alt": [],
+   "name_ascii": "Takano Genjuro",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": "motobu-ryu",
+   "qid": null,
+   "styles": [
+    "motobu-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "W0005",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Tawada (of Shuri)",
+   "name_alt": [],
+   "name_ascii": "Tawada (of Shuri)",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1895,
+   "connected": false,
+   "death_year": 1971,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "W0006",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Toma Jugo",
+   "name_alt": [],
+   "name_ascii": "Toma Jugo",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "W0007",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Kudeken Kenyu",
+   "name_alt": [],
+   "name_ascii": "Kudeken Kenyu",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 11,
+   "honours": [],
+   "id": "W0008",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Takamura Seiko",
+   "name_alt": [],
+   "name_ascii": "Takamura Seiko",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "W0009",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Tawada Shinjun",
+   "name_alt": [],
+   "name_ascii": "Tawada Shinjun",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "W0010",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Shirotaru",
+   "name_alt": [],
+   "name_ascii": "Shirotaru",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "W0011",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Nohara Hoichi ('Nohara no Ojisan')",
+   "name_alt": [],
+   "name_ascii": "Nohara Hoichi ('Nohara no Ojisan')",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 0,
+   "honours": [],
+   "id": "W0012",
+   "locality": null,
+   "n_descendants": 1,
+   "n_students": 1,
+   "name": "Fukuhara Chosei",
+   "name_alt": [],
+   "name_ascii": "Fukuhara Chosei",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1868,
+   "connected": false,
+   "death_year": 1945,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "W0013",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Tamagusuku Seiju",
+   "name_alt": [],
+   "name_ascii": "Tamagusuku Seiju",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1923,
+   "connected": false,
+   "death_year": 2016,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "W0014",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Tamotsu Sachie",
+   "name_alt": [],
+   "name_ascii": "Tamotsu Sachie",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 0,
+   "honours": [],
+   "id": "W0015",
+   "locality": null,
+   "n_descendants": 540,
+   "n_students": 1,
+   "name": "Bushi Nagahama",
+   "name_alt": [],
+   "name_ascii": "Bushi Nagahama",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1895,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 7,
+   "honours": [],
+   "id": "W0016",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Miyagi Hisateru",
+   "name_alt": [],
+   "name_ascii": "Miyagi Hisateru",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "W0017",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Tawada 'Meganto' Shinboku",
+   "name_alt": [],
+   "name_ascii": "Tawada 'Meganto' Shinboku",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1835,
+   "connected": true,
+   "death_year": 1902,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 6,
+   "honours": [],
+   "id": "W0018",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Nakazato Bokuhitsu",
+   "name_alt": [],
+   "name_ascii": "Nakazato Bokuhitsu",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 12,
+   "honours": [],
+   "id": "W0019",
+   "locality": null,
+   "n_descendants": 2,
+   "n_students": 1,
+   "name": "Marukawa Kenji",
+   "name_alt": [],
+   "name_ascii": "Marukawa Kenji",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": "motobu-ryu",
+   "qid": null,
+   "styles": [
+    "motobu-ryu",
+    "kenpo"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "W0020",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Kin Ryojin and Kin Ryosho",
+   "name_alt": [],
+   "name_ascii": "Kin Ryojin and Kin Ryosho",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 6,
+   "honours": [],
+   "id": "W0021",
+   "locality": null,
+   "n_descendants": 12,
+   "n_students": 1,
+   "name": "Ganeku Shinko",
+   "name_alt": [],
+   "name_ascii": "Ganeku Shinko",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": "shuri-te",
+   "qid": null,
+   "styles": [
+    "shuri-te"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1884,
+   "connected": true,
+   "death_year": 1979,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 8,
+   "honours": [],
+   "id": "W0022",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Tokuda Antei",
+   "name_alt": [],
+   "name_ascii": "Tokuda Antei",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "W0023",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Miyake Sango",
+   "name_alt": [],
+   "name_ascii": "Miyake Sango",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "W0024",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Yonamine Isshun",
+   "name_alt": [],
+   "name_ascii": "Yonamine Isshun",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1909,
+   "connected": true,
+   "death_year": 1979,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 7,
+   "honours": [],
+   "id": "W0025",
+   "locality": null,
+   "n_descendants": 2,
+   "n_students": 1,
+   "name": "Maeshiro Chotoku",
+   "name_alt": [],
+   "name_ascii": "Maeshiro Chotoku",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "W0026",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Kanegawa no Gibu",
+   "name_alt": [],
+   "name_ascii": "Kanegawa no Gibu",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "W0027",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Nakata Mizuhiko",
+   "name_alt": [],
+   "name_ascii": "Nakata Mizuhiko",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "W0028",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Arakaki Ansei",
+   "name_alt": [],
+   "name_ascii": "Arakaki Ansei",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
   }
  ]
 }

@@ -144,3 +144,117 @@ Q727360,shito-kai,[taxonomy:shito-ryu/confirmed] President of the West Japan (Ni
 Q7364578,chinese-goju,"[taxonomy:Goju-ryu complete tree (Okinawan branches, Japanese Goju-kai and its offshoots)/confirmed] Student of Peter Urban and Frank Ruiz; founded the Chinese Gōjū system on 25 January 1971.",proposed
 Q7827674,matsubayashi-ryu,"[taxonomy:shorin-ryu-tree/confirmed] Matsubayashi lineage (Shima-ha Shorin-ryu, via Masao Shima) alongside his Yamanni-ryu kobudo.",proposed
 Q9096235,chung-do-kwan,"[taxonomy:Mainland Japanese + Korean trees (Shotokan, Wado, Chito, Shudokan group, Shindo Jinen-ryu, Kushin-ryu, Koei-kan, Kyokushin tree, Taekwondo kwans, ITF/Kukkiwon, Tang Soo Do/Soo Bahk Do)/confirmed] Founder of the Chung Do Kwan (1944",proposed
+A0003,chung-do-kwan,[taxonomy:Korean tree: taekwondo (kwan/confirmed] Trained at the Chung Do Kwan under Won Kuk Lee before co-founding the Oh Do Kwan with Choi Hong-hi.,proposed
+A0009,uechi-ryu-zankai,"[taxonomy:Antecedents (te/tode, Chines/confirmed] Founded the Okinawa Karate-do Uechi-ryu Zankai (Zankyokai) at Zakimi in April 1998; last direct student of Kanbun Uechi's generation.",proposed
+A0011,iogkf,[taxonomy:Goju-ryu tree (naha-te): Goj/confirmed] Direct student of Chojun Miyagi and teacher of Morio Higaonna; recognised as the lineage head of the IOGKF (An'ichi Miyagi–Higaonna line).,proposed
+A0059,ueshiro-shorin-ryu,[taxonomy:Shorin-ryu (Kobayashi/Shobay/confirmed] Hand-picked successor of Ansei Ueshiro and head of Ueshiro Shorin-Ryu Karate USA.,proposed
+A0066,matsumura-kenpo,"[taxonomy:Shorin-ryu (Kobayashi/Shobay/confirmed] Founder of Shōrin-ryū Matsumura Kenpō and the Matsumura Kenpō Shōrin-ryū Karate Kobudō Federation, after studying under Hōhan Sōken and Shigeru Nakamura.",proposed
+A0067,matsumura-kenpo,[taxonomy:Shorin-ryu (Kobayashi/Shobay/confirmed] Son of founder Yuichi Kuda and president of the Matsumura Kenpō world association since 1999.,proposed
+A0090,dento-shito-ryu,"[taxonomy:Shito-ryu complete tree (sty/plausible] Son of Kenei Mabuni, inaugurated third sōke of Shitō-ryū in Osaka on 28 February 2016; heads the Dentō/WSKF Mabuni line. Currently tagged only generic shito-ryu.",proposed
+A0095,wado-ryu-karate-do-renmei,[taxonomy:mainland-japanese-kyokushin/confirmed] Third grandmaster heading the Wadoryu Karatedo Renmei.,proposed
+A0096,wado-kai,[taxonomy:mainland-japanese-kyokushin/confirmed] JKF Wadokai chief instructor after Arakawa.,proposed
+A0099,wado-kokusai,"[taxonomy:mainland-japanese-kyokushin/confirmed] WIKF chief instructor, successor to Tatsuo Suzuki.",proposed
+A0124,matayoshi-kodokan,[taxonomy:kobudo (complete Okinawan/Ry/plausible] Son of Matayoshi Shinpō and current head of the Kodokan dojo and Zen Okinawa Kobudō Renmei following Shinpō's death in 1997.,proposed
+A0135,imgka,"[taxonomy:Goju-ryu tree (naha-te): Goj/plausible] Vice president of the IMGKA, younger brother of Akihito Yagi.",proposed
+A0152,renbukai,"[taxonomy:mainland-japanese-kyokushin/confirmed] First director of the Kanbukan (1945), the direct forerunner of Renbukai.",proposed
+A0153,moo-duk-kwan,[taxonomy:Korean tree: taekwondo (kwan/confirmed] Second-generation head of the Moo Duk Kwan founded by his father Hwang Kee.,proposed
+A0158,isshin-ryu-aoka,"[taxonomy:Antecedents (te/tode, Chines/confirmed] Long-time president of the AOKA in the United States after Tatsuo Shimabuku established it in 1961.",proposed
+A0178,chung-do-kwan,[taxonomy:Korean tree: taekwondo (kwan/confirmed] Trained under successive Chung Do Kwan heads Son Duk-sung and Uhm Woon-kyu (and Nam Tae-hi) before becoming one of the twelve original ITF masters; currently tagged only generically.,proposed
+A0181,gtf,[taxonomy:Korean tree: taekwondo (kwan/confirmed] Founded the Global Taekwon-Do Federation on 14 June 1990 after leaving the ITF; currently tagged only with generic taekwondo and itf-taekwondo.,proposed
+A0193,asai-ryu,"[taxonomy:mainland-japanese-kyokushin/confirmed] Chief instructor of JKS, the organisation carrying Asai's line.",proposed
+A0194,skif,"[taxonomy:mainland-japanese-kyokushin/confirmed] SKIF kancho, son of founder Hirokazu Kanazawa.",proposed
+A0195,skif,[taxonomy:mainland-japanese-kyokushin/confirmed] SKIF chief instructor and technical successor to Kanazawa.,proposed
+A0212,gohakukai,"[taxonomy:Goju-ryu tree (naha-te): Goj/confirmed] Founded the Gohaku-kai in 1982, merging Fukuchi Seiko's Goju-ryu with Nakasone Seiyu's Tomari-te; current roster tags are generic.",proposed
+A0227,doshinkan,[taxonomy:mainland-japanese-kyokushin/confirmed] Founder of Karatedo Doshinkan (Vienna); 10th dan heir of Kanken Toyama's Shudokan.,proposed
+A0236,ishimine-ryu,[taxonomy:Shorin-ryu (Kobayashi/Shobay/confirmed] The Shuri-te master ('Old Ishimine') whose art the Ishimine-ryū school preserves and after whom it is named.,proposed
+B0015,honshin-ryu,"[taxonomy:Shorin-ryu (Kobayashi/Shobay/plausible] Nakamura Heisaburō (1894-1975), successor of Kuniyoshi Shinkichi and teacher of Miyagi Masakazu, who codified the line as Honshin-ryū in 1975; roster entry has no style tags.",proposed
+C00034,shobayashi-shorin-ryu,[taxonomy:Shorin-ryu (Kobayashi/Shobay/confirmed] Founder of Shōbayashi Shōrin-ryū; roster entry currently tagged only karate-generic.,proposed
+C00066,kenshinkan,[taxonomy:Shorin-ryu (Kobayashi/Shobay/confirmed] Founder of Shōrin-ryū Kenshin-kan (1977); roster entry currently tagged only karate-generic.,proposed
+C00066,matsumura-seito,[taxonomy:Shorin-ryu (Kobayashi/Shobay/confirmed] Senior student of Hōhan Sōken in Matsumura Seitō Shōrin-ryū before founding the Kenshin-kan.,proposed
+C00086,ikga,[taxonomy:Goju-ryu tree (naha-te): Goj/confirmed] Son of Gogen Yamaguchi and Saiko Shihan (president) of the IKGA.,proposed
+C00098,shorinji-ryu,"[taxonomy:Shorin-ryu (Kobayashi/Shobay/confirmed] Founder of Okinawan Shōrinji-ryū (1954), direct student of Chōtoku Kyan; roster entry currently tagged only karate-generic.",proposed
+C00117,uechi-ryu-karate-do-kyokai,"[taxonomy:Antecedents (te/tode, Chines/confirmed] Son of Kanei Uechi; headed the Uechi-ryu Karate-do Association (soke line) after the 1991 split.",proposed
+C00209,chubu-shorin-ryu,[taxonomy:Shorin-ryu (Kobayashi/Shobay/plausible] Kōchi Katsuhide headed the Chūbu Shōrin-ryū Karate-dō Kyōkai federation of Zenryō Shimabukuro-lineage schools after Zenryō's death in 1969; roster tag is only karate-generic.,proposed
+C00232,ryuei-ryu-hozonkai,[taxonomy:Goju-ryu tree (naha-te): Goj/confirmed] Third-generation inheritor who made the Nakaima family style public in 1971 and founded the Ryuei-ryu Karate Kobudo Preservation Society.,proposed
+C00245,world-oshukai,[taxonomy:kobudo (complete Okinawan/Ry/confirmed] Trained under Matayoshi Shinpō from 1962; founded the World Oshukai Dento Okinawa Shorin-Ryu Karate Do Kobudo Federation in 1993 as its president and chief instructor.,proposed
+C00247,isshin-ryu,"[taxonomy:Antecedents (te/tode, Chines/confirmed] Eldest son of founder Tatsuo Shimabuku; inherited headship of Isshin-ryu in 1975; currently tagged only karate-generic.",proposed
+C00247,isshin-ryu-iwka,"[taxonomy:Antecedents (te/tode, Chines/confirmed] Founded the Isshin-ryu World Karate Association in August 1974 with his father's blessing.",proposed
+C00261,tomari-te,"[taxonomy:Shorin-ryu (Kobayashi/Shobay/confirmed] Iha Kōtatsu (1873-1928), principal student of Matsumora Kōsaku and key transmitter of Tomari-te; roster dates match documented dates. Currently tagged only karate-generic.",proposed
+C00293,tomari-te,"[taxonomy:Shorin-ryu (Kobayashi/Shobay/confirmed] Nakasone Seiyū (1893-1967), successor of Iha Kōtatsu who preserved the Tomari-te kata and taught Tokashiki Iken of the Gōhakukai; currently tagged only karate-generic.",proposed
+C00319,gima-ha,[taxonomy:mainland-japanese-kyokushin/confirmed] Founder of Gima-ha Shoto-ryu (1956); partner in Funakoshi's first Tokyo demonstrations.,proposed
+C00354,okinawan-kobudo,"[taxonomy:kobudo (complete Okinawan/Ry/confirmed] Shuri sai master of the 19th century, documented as one of the two principal kobujutsu teachers of Yabiku Mōden. Currently tagged only karate-generic.",proposed
+C00368,shorin-ryu-shorinkan,"[taxonomy:Shorin-ryu (Kobayashi/Shobay/confirmed] Nakazato Minoru (仲里稔), son of Shūgorō Nakazato and current president (hanshi 10th dan) of Shōrin-ryū Shorinkan; roster tag is only karate-generic.",proposed
+C00373,ryukyu-kobujutsu-kenkyukai,"[taxonomy:kobudo (complete Okinawan/Ry/confirmed] Founded the Ryūkyū Kobujutsu Kenkyūkai in Tokyo in 1911, the first modern kobudo preservation organisation; teacher of Taira Shinken. Currently tagged only karate-generic.",proposed
+C00508,ishimine-ryu,"[taxonomy:Shorin-ryu (Kobayashi/Shobay/confirmed] Kaneshima Shinbi (1868-1921) studied under Ishimine from around 1883 and transmitted the tradition to his son Shin'ei, who named it Ishimine-ryū.",proposed
+C00510,honshin-ryu,"[taxonomy:Shorin-ryu (Kobayashi/Shobay/plausible] Kuniyoshi Shinkichi (Bushi Kunishi, 1848-1926), whose Kunishi bō and Kunishi kumi bō form the core of Honshin-ryū; root of the tradition. Roster tag is only karate-generic.",proposed
+C00514,tozan-ryu,[taxonomy:Shorin-ryu (Kobayashi/Shobay/confirmed] Founder of Tōzan-ryū Shindōkan; trained under Motobu Chōki and Tōyama Chōgi in Taiwan. Roster birth year 1902 differs from OKKB/OKIC sources giving 1895.,proposed
+C00517,ishimine-ryu,"[taxonomy:Shorin-ryu (Kobayashi/Shobay/confirmed] Kaneshima Shin'ei (b. 1903) named the Ishimine-ryū school in honour of Ishimine, his father's teacher, and headed this private Shuri-te tradition.",proposed
+C00574,okinawa-kenpo,"[taxonomy:Antecedents (te/tode, Chines/confirmed] Son of Shigeru Nakamura; built the 1953 Nago hombu dojo and continued the Nakamura line of Okinawa Kenpo after his father's death in 1969.",proposed
+C00653,matayoshi-kodokan,[taxonomy:kobudo (complete Okinawan/Ry/confirmed] Senior student of Matayoshi Shinpō who served as kancho of the Kodokan hombu dojo before founding his own organisation.,proposed
+C00653,okinawa-kobudo-doushi-renseikai,[taxonomy:kobudo (complete Okinawan/Ry/confirmed] Founded the Okinawa Kobudō Dōshi Rensei-kai in January 2002 after retiring as kancho of the Matayoshi Kodokan dojo. Currently tagged only karate-generic.,proposed
+C00664,gohakukai,[taxonomy:Shorin-ryu (Kobayashi/Shobay/confirmed] Same kanji (渡嘉敷唯賢) as A0212 Tokashiki Iken; 'Yuken' is an alternative reading. Founder of the Gōhakukai. These two roster entries appear to be duplicates of one person.,proposed
+C00672,shorin-ryu-seibukan,[taxonomy:Shorin-ryu (Kobayashi/Shobay/confirmed] Son of founder Zenryō Shimabukuro and current head (2nd generation) of the Okinawa Shōrin-ryū Seibukan; roster entry currently tagged only karate-generic.,proposed
+Q1046410,jhoon-rhee-taekwondo,[taxonomy:Korean tree: taekwondo (kwan/confirmed] Founder of the Jhoon Rhee system; opened his Washington DC institute in 1962 from his Chung Do Kwan base and is styled the father of American taekwondo.,proposed
+Q11365653,kendokai,[taxonomy:mainland-japanese-kyokushin/confirmed] Founder of Kendokai (1983); central Kanbukan/Renbukai-lineage master under Kanken Toyama. His existing kyokushin tag appears erroneous.,proposed
+Q11391351,imgka,[taxonomy:Goju-ryu tree (naha-te): Goj/confirmed] Chairman of the IMGKA since 2016; grandson of Meibukan founder Meitoku Yagi.,proposed
+Q124766,jka,[taxonomy:mainland-japanese-kyokushin/confirmed] Co-founder of the JKA (1949) and JKA instructor before establishing ITKF in the US.,proposed
+Q1360025,kase-ha,[taxonomy:mainland-japanese-kyokushin/confirmed] Founder of Kase-ha Shotokan-ryu via the World Kase-Ha Shotokan Karate-do Academy (1989).,proposed
+Q1584213,koshiki-karatedo,[taxonomy:Shorin-ryu (Kobayashi/Shobay/confirmed] Created Kōshiki Karatedō competition rules and Supersafe equipment in 1979 and founded the World Koshiki Karatedo Federation.,proposed
+Q15845041,jka,[taxonomy:mainland-japanese-kyokushin/confirmed] JKA hombu instructor and multiple JKA All Japan kata champion.,proposed
+Q15845053,jka,[taxonomy:mainland-japanese-kyokushin/confirmed] JKA hombu instructor and JKA All Japan kata and kumite champion.,proposed
+Q15987564,jka,[taxonomy:mainland-japanese-kyokushin/confirmed] JKA hombu instructor; JKA chief instructor from 2014.,proposed
+Q1678211,moo-duk-kwan,[taxonomy:Korean tree: taekwondo (kwan/confirmed] Trained in Hwang Kee's Moo Duk Kwan in Korea and came to the USA in 1968 as a Korean Moo Duk Kwan representative before founding the WTSDA.,proposed
+Q1678211,world-tang-soo-do-association,[taxonomy:Korean tree: taekwondo (kwan/confirmed] Founder (1982) and lifelong head of the World Tang Soo Do Association. Current tags are generic tang-soo-do/taekwondo.,proposed
+Q16907056,whooping-crane,"[taxonomy:Antecedents (te/tode, Chines/confirmed] Founder of Minghequan (Whooping/Crying Crane) in Fuzhou; widely identified with Ryu Ryu Ko, teacher of Kanryo Higaonna; roster currently tags him goju-ryu/te only.",proposed
+Q1737900,jska,[taxonomy:mainland-japanese-kyokushin/confirmed] Founder of the Japan Shotokan Karate Association (1999).,proposed
+Q189805,chubu-shorin-ryu,[taxonomy:Shorin-ryu (Kobayashi/Shobay/plausible] Headed the Chūbu (central Okinawa) Shōrin-ryū association of which his Seibukan was the leading school.,proposed
+Q1908088,matayoshi-kobudo,[taxonomy:kobudo (complete Okinawan/Ry/confirmed] Founder of the Matayoshi family kobudo tradition; currently tagged okinawan-kobudo and kingai-ryu but missing the matayoshi-kobudo tag itself.,proposed
+Q2079584,chun-kuk-do,[taxonomy:Korean tree: taekwondo (kwan/confirmed] Held a 9th degree black belt awarded under Chuck Norris and is categorised as a Chun Kuk Do practitioner; business partner in Norris's schools.,proposed
+Q21503589,wado-kai,[taxonomy:mainland-japanese-kyokushin/confirmed] Long-serving JKF Wadokai chief instructor (9th dan).,proposed
+Q221797,kyokushin,"[taxonomy:mainland-japanese-kyokushin/confirmed] First Kyokushin uchi-deshi of Mas Oyama; opened the first overseas Kyokushin dojo (Hawaii, 1957). Tags currently generic.",proposed
+Q23688927,shintani-wado-kai,[taxonomy:mainland-japanese-kyokushin/confirmed] Founder of the Shintani Wado Kai Karate Federation in Canada.,proposed
+Q2473562,pangai-noon,"[taxonomy:Antecedents (te/tode, Chines/confirmed] Studied under Zhou Zihe in Fuzhou from 1897 and taught the art as Pangai-noon until it was renamed Uechi-ryu in 1940.",proposed
+Q2619054,ska,[taxonomy:mainland-japanese-kyokushin/confirmed] Founder of Shotokan Karate of America; direct student of Gichin Funakoshi.,proposed
+Q2664662,iko-1,[taxonomy:mainland-japanese-kyokushin/confirmed] Kancho of IKO Kyokushinkaikan (IKO-1) since succeeding Mas Oyama in 1994.,proposed
+Q2673,moo-duk-kwan,"[taxonomy:Korean tree: taekwondo (kwan/confirmed] Earned his Tang Soo Do black belt in Moo Duk Kwan lineage while stationed at Osan Air Base, training under Jae Chul Shin; basis of his later Chun Kuk Do.",proposed
+Q268880,ikga,[taxonomy:Goju-ryu tree (naha-te): Goj/confirmed] Founded the International Karate-do Goju-kai Association in 1965 as the worldwide body of his Goju-kai.,proposed
+Q29043333,jka,[taxonomy:mainland-japanese-kyokushin/confirmed] Head of JKA South Africa; first non-Japanese to reach JKA 7th dan.,proposed
+Q2911640,jka,[taxonomy:mainland-japanese-kyokushin/confirmed] Graduate of the first JKA instructor course; JKA chief instructor in the US.,proposed
+Q2915906,iskf,[taxonomy:mainland-japanese-kyokushin/confirmed] Founder and chief instructor of the International Shotokan Karate Federation (1977).,proposed
+Q3081845,kyokushin,"[taxonomy:mainland-japanese-kyokushin/confirmed] Kyokushin World Open champion (1999, IKO); current tags are only generic.",proposed
+Q3136331,wado-ryu-karate-do-renmei,"[taxonomy:mainland-japanese-kyokushin/confirmed] Second grandmaster of Wado-ryu, head of the Wadoryu Karatedo Renmei after the 1981 split.",proposed
+Q348074,jka,[taxonomy:mainland-japanese-kyokushin/confirmed] JKA instructor dispatched to Italy in 1965; later co-founded WKSA (Kase-ha) with Taiji Kase.,proposed
+Q384558,jka,[taxonomy:mainland-japanese-kyokushin/confirmed] First chief instructor of the Japan Karate Association (1955-1987); defined the JKA line of Shotokan.,proposed
+Q38585428,okinawa-kenpo,"[taxonomy:Antecedents (te/tode, Chines/confirmed] Founder: opened his Nago dojo in 1953 and named his karate Okinawa Kenpo; currently tagged only generic te/karate.",proposed
+Q3984846,jundokan-international,"[taxonomy:Goju-ryu tree (naha-te): Goj/confirmed] Founded Jundokan International (Spokane, 1987) in honour of his teacher Eiichi Miyazato.",proposed
+Q4353136,jka,[taxonomy:mainland-japanese-kyokushin/confirmed] JKA hombu (headquarters) instructor.,proposed
+Q471629,skif,[taxonomy:mainland-japanese-kyokushin/confirmed] Founder of SKIF after leaving the JKA in 1977.,proposed
+Q4731883,jhoon-rhee-taekwondo,"[taxonomy:Korean tree: taekwondo (kwan/confirmed] Jhoon Rhee's first American black belt (Texas, Chung Do Kwan lineage); built the Southwest tournament circuit from Rhee's system. Current tags are generic taekwondo.",proposed
+Q4763171,isshin-ryu,"[taxonomy:Antecedents (te/tode, Chines/confirmed] Son-in-law of Tatsuo Shimabuku and leading technical instructor of Isshin-ryu; currently tagged only te/karate-generic.",proposed
+Q4763171,isshin-ryu-oikka,"[taxonomy:Antecedents (te/tode, Chines/confirmed] Founder of the Okinawa Isshin-ryu Karate Kobudo Association (hombu established 1990).",proposed
+Q4770567,ueshiro-shorin-ryu,"[taxonomy:Shorin-ryu (Kobayashi/Shobay/confirmed] Founder of Shorin-Ryu Karate USA (1962), the American Matsubayashi lineage that later became independent as Ueshiro Shōrin-ryū.",proposed
+Q4785266,isshin-ryu-uika,"[taxonomy:Antecedents (te/tode, Chines/confirmed] Co-founder of the UIKA (1977) with Mitchum, Johnson and Murphey.",proposed
+Q5103850,yamanni-chinen-ryu-rbkd,[taxonomy:kobudo (complete Okinawan/Ry/confirmed] Student of Chinen Masami and head of the Ryūkyū Bujutsu Kenkyū Dōyūkai (founded 1985) that transmitted Yamanni Chinen-ryū bojutsu internationally.,proposed
+Q5294533,isshin-ryu-aoka,"[taxonomy:Antecedents (te/tode, Chines/confirmed] Carried on the AOKA in the United States with Steve Armstrong until the 1977 split.",proposed
+Q5485463,shotokan,[taxonomy:mainland-japanese-kyokushin/confirmed] Senior KUGB Shotokan instructor and champion; current tags are only generic.,proposed
+Q562024,ifk-kyokushin,[taxonomy:mainland-japanese-kyokushin/confirmed] Founder of the International Federation of Karate (Kyokushin) in 1992.,proposed
+Q5661611,isshin-ryu-uika,"[taxonomy:Antecedents (te/tode, Chines/confirmed] Co-founded the United Isshinryu Karate Association in Albany, Georgia, March 1977.",proposed
+Q665589,kwf,[taxonomy:mainland-japanese-kyokushin/confirmed] Founder of the Karatenomichi World Federation (2000).,proposed
+Q6739958,kyokushin,"[taxonomy:mainland-japanese-kyokushin/confirmed] Two-time Kyokushin World Open champion (1979, 1984); current tags are only generic.",proposed
+Q6782405,okinawa-goju-ryu-kenkyukai,[taxonomy:Goju-ryu tree (naha-te): Goj/confirmed] Left the Jundokan in 2011 to found the Okinawa Goju-ryu Kenkyukai.,proposed
+Q6782529,tsuruoka-ryu,"[taxonomy:mainland-japanese-kyokushin/confirmed] Founder of Tsuruoka-ryu; father of Canadian karate, originally Chito-ryu.",proposed
+Q6810356,imgka,"[taxonomy:Goju-ryu tree (naha-te): Goj/confirmed] First president of the IMGKA (until December 2015), the Meibukan's international organisation.",proposed
+Q6830460,yoshukai-international,[taxonomy:mainland-japanese-kyokushin/confirmed] Founder of the Yoshukai International Karate Association (1980).,proposed
+Q706955,seido-juku,[taxonomy:mainland-japanese-kyokushin/confirmed] Founder of Seido Juku (1976); currently tagged only with the generic 'te'.,proposed
+Q709520,asai-ryu,[taxonomy:mainland-japanese-kyokushin/confirmed] Founder of the Japan Karate Shoto Federation (JKS); originator of Asai-ha Shotokan-ryu.,proposed
+Q716133,jka,[taxonomy:mainland-japanese-kyokushin/confirmed] JKA hombu instructor and JKA chief instructor for Great Britain (KUGB).,proposed
+Q723832,ryukyu-kobujutsu-kenkyukai,[taxonomy:kobudo (complete Okinawan/Ry/confirmed] Studied kobujutsu under Yabiku Mōden from 1929 and received shihan menkyo in 1933 before re-founding the tradition as the Ryukyu Kobudo Hozon Shinkokai.,proposed
+Q727360,dento-shito-ryu,[taxonomy:Shito-ryu complete tree (sty/plausible] Second sōke of the Mabuni line; Dentō Shitō-ryū is explicitly the tradition of Kenwa Mabuni as taught by Kenei Mabuni until his death in 2015.,proposed
+Q7446702,ken-shin-kan,"[taxonomy:Goju-ryu tree (naha-te): Goj/confirmed] Founded the Ken-Shin-Kan school in Brazil in 1968; pioneer of Goju-ryu in South America, trained in the Higa Seko and Izumikawa line; current roster tags are generic.",proposed
+Q7446770,beikoku-shidokan,"[taxonomy:Shorin-ryu (Kobayashi/Shobay/confirmed] Founder of the Beikoku (American) Shidōkan association, named in 2001 upon his 10th dan; headquartered at his Lansing dojo.",proposed
+Q7827674,yamanni-chinen-ryu-rbkd,[taxonomy:kobudo (complete Okinawan/Ry/confirmed] Co-founded the RBKD with Kishaba Chōgi in 1985 to bring Yamanni-ryū to the West; chief instructor of RBKD USA (8th dan Yamanni-ryū).,proposed
+Q8021897,kyokushin,[taxonomy:mainland-japanese-kyokushin/confirmed] Famous Kyokushin World Open competitor; tags currently generic.,proposed
+Q8062088,iskf,[taxonomy:mainland-japanese-kyokushin/confirmed] ISKF co-founder and vice chief instructor under Okazaki.,proposed
+Q896129,jka,[taxonomy:mainland-japanese-kyokushin/confirmed] JKA instructor and long-time JKA chief instructor for Germany (founder of DJKB).,proposed
+Q922328,jka,[taxonomy:mainland-japanese-kyokushin/confirmed] JKA hombu instructor and JKA world kumite champion; current tags are generic.,proposed
+Q97666381,wado-kokusai,[taxonomy:mainland-japanese-kyokushin/confirmed] Founder of the Wado International Karate-do Federation (WIKF); current tags lack any Wado style.,proposed

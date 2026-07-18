@@ -234,3 +234,23 @@ C00476,birth_year,,1896,[book:Bishop p.83-84] Bishop gives birth 1896 for Seikic
 Q715769,death_year,1899,1901,"[CONTESTED: Bishop, Okinawan Karate p.55-58 gives 1901; dataset holds 1899 (Wikidata/Wikipedia consensus). Bishop is a primary source but these dates are disputed in the literature; set status=proposed to adopt Bishop, or rejected to keep the current value.]",needs_decision
 Q1147708,birth_year,1870,1871,"[CONTESTED: Bishop, Okinawan Karate p.86 gives 1871; dataset holds 1870 (Wikidata/Wikipedia consensus). Bishop is a primary source but these dates are disputed in the literature; set status=proposed to adopt Bishop, or rejected to keep the current value.]",needs_decision
 Q38585428,birth_year,1894,1892,"[CONTESTED: Bishop, Okinawan Karate p.147 gives 1892; dataset holds 1894 (Wikidata/Wikipedia consensus). Bishop is a primary source but these dates are disputed in the literature; set status=proposed to adopt Bishop, or rejected to keep the current value.]",needs_decision
+A0162,birth_year,,1710,[research:https://ryukyu-bugei.com/?p=6415] scholarship gives birth 1710 for Shiohira Peichin (Shionja); dataset had none,proposed
+C00293,birth_year,,1893,[research:https://ryukyu-bugei.com/?p=7351] scholarship gives birth 1893 for Seiyu Nakasone; dataset had none,proposed
+C00293,death_year,,1983,[research:https://ryukyu-bugei.com/?p=7351] scholarship gives death 1983 for Seiyu Nakasone; dataset had none,proposed
+A0219,birth_year,,1890,[research:https://medium.com/motobu-ryu-blog/why-i-was-taught-motobu-udund%C4%AB-b927598a3453] scholarship gives birth 1890 for Motobu Chomo; dataset had none,proposed
+A0219,death_year,,1945,[research:https://medium.com/motobu-ryu-blog/why-i-was-taught-motobu-udund%C4%AB-b927598a3453] scholarship gives death 1945 for Motobu Chomo; dataset had none,proposed
+C00514,death_year,,1990,[research:http://web.archive.org/web/20230928101037/https://ryukyu-bugei.com/?p=8326] scholarship gives death 1990 for Shinsuke Kaneshima; dataset had none,proposed
+C00101,birth_year,,1905,[research:https://medium.com/motobu-ryu-blog/motobu-ch%C5%8Dy%C5%ABs-uns%C5%AB-f139995473fb] scholarship gives birth 1905 for Juei Tamaki; dataset had none,proposed
+C00101,death_year,,1997,[research:https://medium.com/motobu-ryu-blog/motobu-ch%C5%8Dy%C5%ABs-uns%C5%AB-f139995473fb] scholarship gives death 1997 for Juei Tamaki; dataset had none,proposed
+C00150,birth_year,,1894,[research:https://ryukyu-bugei.com/?p=4203] scholarship gives birth 1894 for Jinsei Kamiya; dataset had none,proposed
+C00150,death_year,,1964,[research:https://ryukyu-bugei.com/?p=4203] scholarship gives death 1964 for Jinsei Kamiya; dataset had none,proposed
+C00206,birth_year,,1800,[research:https://ryukyu-bugei.com/?p=7351] scholarship gives birth 1800 for Karyu Uku; dataset had none,proposed
+C00206,death_year,,1850,[research:https://ryukyu-bugei.com/?p=7351] scholarship gives death 1850 for Karyu Uku; dataset had none,proposed
+C00269,birth_year,,1656,[research:https://ryukyu-bugei.com/?p=5688] scholarship gives birth 1656 for Kojo UEKATA; dataset had none,proposed
+C00269,death_year,,1737,[research:https://ryukyu-bugei.com/?p=5688] scholarship gives death 1737 for Kojo UEKATA; dataset had none,proposed
+C00236,birth_year,,1900,[research:https://medium.com/motobu-ryu-blog/motobu-ch%C5%8Dy%C5%ABs-goj%C5%ABshiho-ec8332145ab1] scholarship gives birth 1900 for Kensei Kinjo; dataset had none,proposed
+Q699236,death_year,1916,1915,"[CONTESTED: web scholarship (https://ryukyu-bugei.com/?p=7330) gives 1915; dataset holds 1916. Set status=proposed to adopt, rejected to keep current.]",needs_decision
+Q3482287,birth_year,1890,1891,"[CONTESTED: web scholarship (https://ryukyu-bugei.com/?p=8326) gives 1891; dataset holds 1890. Set status=proposed to adopt, rejected to keep current.]",needs_decision
+Q3482287,death_year,1954,1957,"[CONTESTED: web scholarship (https://ryukyu-bugei.com/?p=8326) gives 1957; dataset holds 1954. Set status=proposed to adopt, rejected to keep current.]",needs_decision
+Q557301,death_year,1927,1929,"[CONTESTED: web scholarship (https://ryukyu-bugei.com/?p=4911) gives 1929; dataset holds 1927. Set status=proposed to adopt, rejected to keep current.]",needs_decision
+Q16006586,death_year,1969,1967,"[CONTESTED: web scholarship (https://medium.com/motobu-ryu-blog/motobu-ch%C5%8Dy%C5%ABs-u) gives 1967; dataset holds 1969. Set status=proposed to adopt, rejected to keep current.]",needs_decision

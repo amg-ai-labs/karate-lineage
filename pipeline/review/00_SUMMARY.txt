@@ -1,16 +1,16 @@
-Karate lineage pipeline v1.0.0  (source hash 1dc427a40223c06b)
+Karate lineage pipeline v1.0.0  (source hash a214e86ff1e635aa)
 
-Nodes: 973 (904 connected, 69 orphans)
-Edges: 1264 (guaranteed acyclic)
-Dropped as non-person / merged away: 332
-Canonical styles: 187
-Native-script names: 399; romaji forms: 116
+Nodes: 1050 (959 connected, 91 orphans)
+Edges: 1367 (guaranteed acyclic)
+Dropped as non-person / merged away: 333
+Canonical styles: 275
+Native-script names: 400; romaji forms: 117
 Note: every instructor_start_year in the source equals birth + 25, so all
 'trained from' dates are flagged estimated (shown with * in the cladogram).
 
 Review files:
-  01_applied_fixes.csv        2218 fixes applied automatically - veto by setting status=rejected in overrides/
-  02_needs_your_decision.csv  3 items waiting on you - set status in the named override file
-  03_unmapped_styles.csv      3 style strings with no mapping yet
-  04_orphan_suggestions.csv   55 orphans with possible relatives (suggestions only)
-  05_data_quality.csv         48 oddities logged (nulled years, broken cycles, stale overrides)
+  01_applied_fixes.csv        2676 fixes applied automatically - veto by setting status=rejected in overrides/
+  02_needs_your_decision.csv  8 items waiting on you - set status in the named override file
+  03_unmapped_styles.csv      0 style strings with no mapping yet
+  04_orphan_suggestions.csv   73 orphans with possible relatives (suggestions only)
+  05_data_quality.csv         49 oddities logged (nulled years, broken cycles, stale overrides)

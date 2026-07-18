@@ -1,6 +1,6 @@
 # The Lineage of Karate and Taekwondo
 
-An interactive cladogram of who taught whom in karate, kobudō and taekwondo: **973 people, 1,264 instructor-to-student links and 187 styles**, spanning seventeen generations from the Okinawan *te* of the 1600s to practitioners born in the 1990s.
+An interactive cladogram of who taught whom in karate, kobudō and taekwondo: **1,050 people, 1,367 instructor-to-student links, 275 styles and 212 kata**, spanning seventeen generations from the Okinawan *te* of the 1600s to practitioners born in the 1990s.
 
 Every link carries its sources. Every disputed claim is marked as disputed.
 
@@ -16,19 +16,19 @@ Every link carries its sources. Every disputed claim is marked as disputed.
 
 Martial-arts lineage is usually recorded as folklore: a chart on a dojo wall, a paragraph in a style's own history, a claim of descent nobody has checked. This project treats it as a dataset. Each person is a node, each teacher-to-student relationship is an edge, and each edge is graded by the strength of the evidence behind it and linked to its source.
 
-The result is a single connected tree rather than a set of competing family myths. 904 of the 973 people sit in one lineage; the remaining 69 are honestly marked as unlinked rather than joined by guesswork.
+The result is a single connected tree rather than a set of competing family myths. 959 of the 1,050 people sit in one lineage; the remaining 91 are honestly marked as unlinked rather than joined by guesswork.
 
 ## The evidence
 
 | Confidence | Links | What it means |
 |---|---:|---|
-| High | 738 | First-hand testimony, an interview, or a primary record |
-| Medium | 401 | Documented in published histories or a style's own records |
-| Low | 125 | Oral tradition, contested, or inferred from indirect evidence |
+| High | 790 | First-hand testimony, an interview, or a primary record |
+| Medium | 446 | Documented in published histories or a style's own records |
+| Low | 131 | Oral tradition, contested, or inferred from indirect evidence |
 
 **284 links cite Mark Bishop's *Okinawan Karate: Teachers, Styles and Secret Techniques*.** Bishop interviewed the Okinawan masters directly in the 1970s and 80s, so his first-hand statements are treated as primary evidence and his relayed traditions are graded lower. The book itself is not redistributed here; it is cited by page.
 
-The dataset began as a Wikipedia and Wikidata scrape, but little of it now rests there. It has been through a multilingual research pass (Japanese, Korean and Chinese sources), a historian's audit of every edge and every person, a full style-taxonomy build, and finally the Bishop book. Corrections that survived that process live in [`pipeline/overrides/`](pipeline/overrides/), 3,377 rows deep, each carrying a reason and its sources.
+The dataset began as a Wikipedia and Wikidata scrape, but little of it now rests there. It has been through a multilingual research pass (Japanese, Korean and Chinese sources), a historian's audit of every edge and every person, a four-level style taxonomy, the Bishop book, the online scholarship of Andreas Quast and Motobu Naoki, and the Okinawa Karate News hanshi 10th-dan register (2018), whose 146 masters are all reconciled into the dataset. Corrections that survived that process live in [`pipeline/overrides/`](pipeline/overrides/), 3,377 rows deep, each carrying a reason and its sources.
 
 Some of what the audit threw out: Richard Kim's claimed teacher was a namesake; the Funakoshi to Plée link is false; the Motobu to Mitose link was inferred from a photograph; and a "Yoshio Nakamura" turned out to be a judoka born in 1970. Wrong-entity matches like these are the most common failure of scraped lineage data, and there were 24 of them.
 
@@ -36,8 +36,9 @@ Some of what the audit threw out: Richard Kim's claimed teacher was a namesake; 
 
 - **Click any name** to isolate that person's lineage and read their record.
 - **Click any line** to see the evidence for that specific teacher-to-student claim, with live source links.
-- **Browse the style tree**: family → style → sub-style → sub-sub-style, six levels deep, each with its founder and founding year. Filtering a style includes everything beneath it.
-- **Export a publication-grade chart** of any person's clade or any style's clade, as vector SVG or PNG. The image above was produced this way.
+- **Browse the style tree**: originating group → style → sub-style → sub-sub-style, seven levels deep, each with its founder and founding year. Filtering a style includes everything beneath it.
+- **Browse the kata**: 212 kata and forms across karate, kobudō, taekwondo and tang soo do, each with its meaning, origin, era and the people who created, brought, standardised or renamed it.
+- **Export a publication-grade chart** of any person's clade or any style's clade, as vector SVG, print PDF (300 dpi), TIFF, JPG or PNG. The image above was produced this way.
 - **Correct the data in the browser.** Names, dates, teachers and students can be edited, added or flagged, and the corrections export as CSVs that feed straight back into the pipeline. This is how domain experts contribute without touching code.
 
 ## How it is built
@@ -73,8 +74,8 @@ The source CSVs are never edited. Every change is a row in an override file with
 Stated plainly, because a lineage dataset that claims certainty is lying:
 
 - **69 people are not linked** to the main tree. Where no reliable chain exists, none is invented.
-- **Three dates are contested** between Bishop and the Wikidata consensus (Sōkon Matsumura's death, Chōki Motobu's and Shigeru Nakamura's births). They are flagged for a ruling, not silently resolved. See `pipeline/review/02_needs_your_decision.csv`.
-- **447 people have no recorded birth year.** Where they can be placed from their teachers and students, the chart shows an estimated cohort, marked "c. 1890 (est.)".
+- **Eight dates are contested** between primary sources (Bishop; Quast's documentary work) and the Wikidata consensus. They are flagged for a ruling, not silently resolved. See `pipeline/review/02_needs_your_decision.csv`.
+- **Around 470 people have no recorded birth year.** Where they can be placed from their teachers and students, the chart shows an estimated cohort, marked "c. 1890 (est.)".
 - **The early lineages are oral tradition.** Kūsankū, Chatan Yara and their contemporaries are recorded as they are transmitted, at low confidence, not as established fact.
 - "Trained from" dates are birth + 25 estimates and are marked with an asterisk throughout.
 
