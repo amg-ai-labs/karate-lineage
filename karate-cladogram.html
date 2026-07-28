@@ -766,8 +766,16 @@ svg.addEventListener("wheel", ev => {
    site's curator. Open the page with #curator to switch it on for this browser
    (persists), #public to switch it off. The data itself is identical either way. */
 const CURATOR_KEY = "karate-curator";
-if (location.hash.indexOf("curator") >= 0) localStorage.setItem(CURATOR_KEY, "1");
-if (location.hash.indexOf("public") >= 0) localStorage.removeItem(CURATOR_KEY);
+function applyCuratorHash() {
+  const was = localStorage.getItem(CURATOR_KEY);
+  if (location.hash.indexOf("curator") >= 0) localStorage.setItem(CURATOR_KEY, "1");
+  if (location.hash.indexOf("public") >= 0) localStorage.removeItem(CURATOR_KEY);
+  return was !== localStorage.getItem(CURATOR_KEY);
+}
+applyCuratorHash();
+// editing the address bar's #hash does NOT reload the page, so apply the switch
+// the moment it changes and reload to refresh any open panels
+addEventListener("hashchange", () => { if (applyCuratorHash()) location.reload(); });
 function curator() { return localStorage.getItem(CURATOR_KEY) === "1"; }
 
 let pan = null, pendingSel = null, pendingEdge = null;
@@ -2595,6 +2603,12 @@ if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
   openLeft(1);
 }
 setTimeout(userMoved, 9000);   // hint fades on its own eventually
+
+// make the current mode visible, so curator view is never mistaken for the public site
+if (curator()) {
+  setTimeout(() => toast("Curator mode: source links are visible to you only. "
+    + "Add #public to the address to preview the public view."), 1200);
+}
 
 </script>
 </body>

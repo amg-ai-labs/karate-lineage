@@ -65,7 +65,7 @@ Rebuild everything with:
 python3 pipeline/build.py
 ```
 
-Pure standard-library Python 3.9 and vanilla JavaScript. No frameworks, no build step, no `node_modules`. The build is deterministic: the same inputs produce a byte-identical output every time.
+Pure standard-library Python 3.9 and vanilla JavaScript. No frameworks, no build step, no `node_modules`. The build is deterministic: the same inputs produce a byte-identical output every time. A headless smoke test (`python3 pipeline/test/run_smoke.py`) exercises every interactive feature of the built page.
 
 The source CSVs are never edited. Every change is a row in an override file with a `status` column (`proposed`, `confirmed`, `rejected`, `needs_decision`), so any decision can be reversed and every claim can be traced back to whoever made it and why. `pipeline/review/` is regenerated on each build and is where the pipeline reports what it changed and what it wants a human to rule on.
 
@@ -73,7 +73,7 @@ The source CSVs are never edited. Every change is a row in an override file with
 
 Stated plainly, because a lineage dataset that claims certainty is lying:
 
-- **69 people are not linked** to the main tree. Where no reliable chain exists, none is invented.
+- **91 people are not linked** to the main tree. Where no reliable chain exists, none is invented.
 - **Eight dates were contested** between primary sources (Bishop; Quast's documentary work) and the Wikidata consensus. Each carries a recorded ruling with its rationale in `pipeline/overrides/year_fixes.csv` (two adopted, six kept), reversible like every other decision.
 - **Around 470 people have no recorded birth year.** Where they can be placed from their teachers and students, the chart shows an estimated cohort, marked "c. 1890 (est.)".
 - **The early lineages are oral tradition.** Kūsankū, Chatan Yara and their contemporaries are recorded as they are transmitted, at low confidence, not as established fact.
