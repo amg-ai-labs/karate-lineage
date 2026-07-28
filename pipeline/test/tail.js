@@ -63,6 +63,34 @@ try {
   if (localStorage.getItem("karate-curator") !== null) throw new Error("hash switch to public failed");
   location.hash = "";
   console.log("curator #hash switching OK");
+  // REGRESSION: no source material may reach ANY public surface. A past leak was
+  // plain text in a hover tooltip, which an <a>-only audit missed entirely, so this
+  // sweeps rendered TEXT across every surface in both modes.
+  (function () {
+    const textOf = el => { let t = el.textContent || ""; for (const c of el.children) t += " " + textOf(c); return t; };
+    const tokens = el => (textOf(el).match(/https?:\/\/|research:|wikidata:|book:Bishop/g) || []).length;
+    const e1 = DATA.edges.find(e => (e.evidence || []).length);
+    const p1 = (placed.find(n => n.wiki) || placed[0]).id;
+    const surfaces = () => {
+      let n = 0;
+      showEdgeTip(e1, { clientX: 0, clientY: 0 }); n += tokens(document.getElementById("tooltip"));
+      showNodeTip(byId.get(p1), { clientX: 0, clientY: 0 }); n += tokens(document.getElementById("tooltip"));
+      openEdgeDetail(e1); n += tokens(document.getElementById("detail"));
+      openDetail(p1); n += tokens(document.getElementById("detail"));
+      renderKataPanel(); n += tokens(document.getElementById("katapanel"));
+      renderStylePanel(); n += tokens(document.getElementById("stylepanel"));
+      return n;
+    };
+    localStorage.removeItem("karate-curator");
+    const pub = surfaces();
+    localStorage.setItem("karate-curator", "1");
+    const cur = surfaces();
+    localStorage.removeItem("karate-curator");
+    if (pub !== 0) throw new Error("PUBLIC UI LEAKS " + pub + " source tokens");
+    if (cur < 1) throw new Error("curator mode shows no sources");
+    console.log("leak sweep: public " + pub + " source tokens, curator " + cur);
+  })();
+
   var sel = document.getElementById("stylefilter");
   var groups = sel.children.filter(c => c.tagName === "OPTGROUP").length;
   var indented = 0;

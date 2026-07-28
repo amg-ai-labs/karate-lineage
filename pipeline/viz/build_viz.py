@@ -537,22 +537,46 @@ def main():
     template = (HERE / "template.html").read_text(encoding="utf-8")
     app = (HERE / "app.js").read_text(encoding="utf-8")
     css = (HERE / "style.css").read_text(encoding="utf-8")
-    data_js = json.dumps(payload, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
-    html = (template
-            .replace("/*__STYLE__*/", css)
-            .replace("__DATA_JSON__", data_js.replace("</", "<\\/"))
-            .replace("/*__APP__*/", app))
+    def render(pl):
+        data_js = json.dumps(pl, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
+        return (template
+                .replace("/*__STYLE__*/", css)
+                .replace("__DATA_JSON__", data_js.replace("</", "<\\/"))
+                .replace("/*__APP__*/", app))
+
+    html = render(payload)
     TARGET.write_text(html, encoding="utf-8")
-    # Two publish targets, both written on every build:
-    #   website/  drag onto Netlify Drop (the existing live site)
-    #   docs/     served by GitHub Pages (Settings → Pages → main /docs)
+
+    # The published copies are built WITHOUT the evidence layer. Hiding sources in
+    # the interface is cosmetic: anyone can read a page's source. So the material
+    # is removed from the payload itself, and only the curator's local file
+    # (karate-cladogram.html, above) carries it.
+    pub = json.loads(json.dumps(payload))
+    pub["meta"] = {k: v for k, v in pub["meta"].items()
+                   if k not in ("source_hash", "pipeline_version")}
+    for e in pub["edges"]:
+        e.pop("evidence", None)                       # research: / wikidata: tokens
+    for n in pub["nodes"]:
+        n.pop("wiki", None)                           # wikipedia_url
+        n.pop("flags", None)                          # internal review state
+        if n.get("hon"):                              # keep the honour, drop its citation
+            n["hon"] = [re.sub(r"\s+—\s+.*$", "", h) for h in n["hon"]]
+    for k in pub["kata"]:
+        k.pop("sources", None)
+        if k.get("note"):                             # internal verifier remarks
+            k["note"] = k["note"].split("[Verifier:")[0].strip()
+    pub_html = render(pub)
     for folder in ("website", "docs"):
         site = TARGET.parent / folder / "index.html"
         site.parent.mkdir(exist_ok=True)
-        site.write_text(html, encoding="utf-8")
-    kb = len(html.encode()) // 1024
-    print(f"wrote {TARGET.name} ({kb} KB): {sum(1 for n in payload['nodes'] if 'x' in n)} placed nodes, "
+        site.write_text(pub_html, encoding="utf-8")
+
+    kb, pkb = len(html.encode()) // 1024, len(pub_html.encode()) // 1024
+    ev = sum(len(e.get("evidence", [])) for e in payload["edges"])
+    print(f"wrote {TARGET.name} ({kb} KB, curator: {ev} source citations): "
+          f"{sum(1 for n in payload['nodes'] if 'x' in n)} placed nodes, "
           f"{len(edges)} edges, {len(blocks)} blocks")
+    print(f"wrote docs/ and website/ index.html ({pkb} KB, public: evidence layer removed)")
 
 
 if __name__ == "__main__":

@@ -67,6 +67,8 @@ python3 pipeline/build.py
 
 Pure standard-library Python 3.9 and vanilla JavaScript. No frameworks, no build step, no `node_modules`. The build is deterministic: the same inputs produce a byte-identical output every time. A headless smoke test (`python3 pipeline/test/run_smoke.py`) exercises every interactive feature of the built page.
 
+Two files come out of every build: `karate-cladogram.html`, the curator's copy, which carries the full evidence layer; and `docs/index.html` + `website/index.html`, the published copies, from which the evidence layer is **removed at build time** rather than merely hidden in the interface. `pipeline/test/check_public.py` asserts that separation on every build.
+
 The source CSVs are never edited. Every change is a row in an override file with a `status` column (`proposed`, `confirmed`, `rejected`, `needs_decision`), so any decision can be reversed and every claim can be traced back to whoever made it and why. `pipeline/review/` is regenerated on each build and is where the pipeline reports what it changed and what it wants a human to rule on.
 
 ## Known limitations

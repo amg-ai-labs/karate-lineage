@@ -434,18 +434,23 @@ function showEdgeTip(e, ev) {
   const d1 = document.createElement("div"); d1.className = "tname";
   d1.textContent = `${s.name} taught ${t.name}`;
   const d2 = document.createElement("div"); d2.className = "tsub";
-  d2.textContent = `confidence: ${e.confidence}${e.primary ? "" : " · secondary lineage"}`;
-  const d3 = document.createElement("div"); d3.className = "tsub";
-  d3.textContent = "evidence: " + (e.evidence || []).join(", ");
-  tip.append(d1, d2, d3);
+  d2.textContent = `${e.confidence} confidence${e.primary ? "" : " · secondary lineage"}`;
+  tip.append(d1, d2);
+  // raw source URLs are curator-only, and belong in the panel (click), not a hover
+  if (curator() && (e.evidence || []).length) {
+    const d3 = document.createElement("div"); d3.className = "tsub tsrc";
+    d3.textContent = e.evidence.length + " source"
+      + (e.evidence.length === 1 ? "" : "s") + " — click the line to read them";
+    tip.appendChild(d3);
+  }
   tip.hidden = false;
   moveTip(ev);
 }
 function moveTip(ev) {
   const r = stage.getBoundingClientRect();
   let x = ev.clientX - r.left + 14, y = ev.clientY - r.top + 14;
-  x = Math.min(x, r.width - tip.offsetWidth - 10);
-  y = Math.min(y, r.height - tip.offsetHeight - 10);
+  x = Math.max(8, Math.min(x, r.width - tip.offsetWidth - 10));
+  y = Math.max(8, Math.min(y, r.height - tip.offsetHeight - 10));
   tip.style.left = x + "px"; tip.style.top = y + "px";
 }
 function hideTip() {
@@ -534,7 +539,12 @@ function applyFilters() {
     const inIso = !state.isolated || (state.isolated.includes(e.source) && state.isolated.includes(e.target));
     const lowHidden = state.hideLow && e.confidence === "low";
     vis.classList.toggle("hidden", !inIso || lowHidden);
-    hit.classList.toggle("hidden", !inIso || lowHidden);
+    // the hit-path carries no `edge` class, so the stylesheet's .hidden rule never
+    // applied to it: hide and disarm it explicitly, or filtered-out lines keep
+    // answering the pointer over apparently blank canvas
+    const gone = !inIso || lowHidden;
+    hit.classList.toggle("hidden", gone);
+    hit.style.display = gone ? "none" : "";
     const sC = nodeEls.get(e.source).classList, tC = nodeEls.get(e.target).classList;
     const gh = sC.contains("ghost") || tC.contains("ghost");
     const dim = !gh && (sC.contains("dim") || tC.contains("dim"));
@@ -987,7 +997,9 @@ function renderKataPanel() {
             });
             d.appendChild(e);
           }
-          add("", k.note);
+          const [kNote, kVer] = String(k.note || "").split(/\s*\[Verifier:/);
+          add("", kNote);
+          if (curator() && kVer) add("Verifier", kVer.replace(/\]\s*$/, ""));
           if (curator() && (k.sources || []).length) {
             const e = document.createElement("div"); e.className = "evrow";
             for (const u of k.sources) {
@@ -1226,7 +1238,9 @@ function openDetail(id) {
   }
   if (n.hon && n.hon.length) {
     const d = document.createElement("div"); d.className = "d-flag";
-    d.textContent = n.hon.join(" · ");
+    // "Hanshi 10th dan — Okinawa Karate News register (2018)": the rank is public,
+    // the register that attests it is a source
+    d.textContent = n.hon.map(h => curator() ? h : h.replace(/\s+—\s+.*$/, "")).join(" · ");
     panel.appendChild(d);
   }
   const fl = n.flags || {};
@@ -1234,7 +1248,7 @@ function openDetail(id) {
     const d = document.createElement("div"); d.className = "d-flag";
     d.textContent = [fl.legendary ? "semi-legendary figure" : "",
                      fl.needs_review ? "needs review" : "",
-                     fl.wrong_entity ? "possible wrong Wikidata match" : ""].filter(Boolean).join(" · ");
+                     fl.wrong_entity ? (curator() ? "possible wrong Wikidata match" : "identity uncertain") : ""].filter(Boolean).join(" · ");
     panel.appendChild(d);
   }
 
@@ -1484,7 +1498,10 @@ document.getElementById("listview").onclick = () => {
         const td = document.createElement("td"); td.textContent = get(n); tr.appendChild(td);
       }
       tr.style.cursor = "pointer";
-      tr.onclick = () => { if (pos.has(n.id)) { selectNode(n.id); centreOn(n.id); } else openDetail(n.id); };
+      tr.onclick = () => {
+      p.hidden = true;                       // the panels share one slot
+      if (pos.has(n.id)) { selectNode(n.id); centreOn(n.id); } else openDetail(n.id);
+    };
       tb.appendChild(tr);
     }
   };
@@ -1531,6 +1548,10 @@ function toast(msg) {
     document.getElementById("stage").appendChild(t);
   }
   t.textContent = msg;
+  hintDone = true;                            // the toast replaces the first-run hint
+  const hintEl = document.getElementById("hint");
+  if (hintEl) hintEl.hidden = true;
+  stage.classList.toggle("touring", typeof tourIdx !== "undefined" && tourIdx !== null);
   t.hidden = false; t.classList.remove("fade");
   clearTimeout(toastT);
   toastT = setTimeout(() => t.classList.add("fade"), 5200);
@@ -1574,8 +1595,9 @@ function buildExportSVG(opts) {
   }
   const foot = el("text", { x: W - PAD, y: H - 30, "font-size": 10.5, "text-anchor": "end",
                             fill: cssVar("--muted") }, out);
-  foot.textContent = "* trained-from dates estimated (birth + 25) · data "
-    + DATA.meta.source_hash + " · " + new Date().toISOString().slice(0, 10);
+  foot.textContent = "* trained-from dates estimated (birth + 25)"
+    + (curator() && DATA.meta.source_hash ? " · data " + DATA.meta.source_hash.slice(0, 8) : "")
+    + " · " + new Date().toISOString().slice(0, 10);
   return { out, W, H };
 }
 // The names carry a halo so they stay readable where an edge passes beneath them.
@@ -1823,25 +1845,35 @@ function csvEsc(v) {
   return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
 }
 function exportCSV() {
-  const rows = [["id", "name", "native", "romaji", "born", "died", "trained_from", "trained_estimated",
-                 "primary_style", "family", "locality", "teachers", "students", "wikipedia"]];
+  // the source column and the raw record ids are curator-only, so header and row
+  // are built together to keep them in step
+  const cur = curator();
+  const rows = [[...(cur ? ["id"] : []), "name", "native", "romaji", "born", "died",
+                 "trained_from", "trained_estimated", "primary_style", "family", "locality",
+                 "teachers", "students", ...(cur ? ["wikipedia"] : [])]];
   for (const n of visiblePeople()) {
     const f = eff(n);
-    rows.push([n.id, f.name, f.native || "", f.romaji || "", n.birth || "", n.death || "",
+    rows.push([...(cur ? [n.id] : []),
+               f.name, f.native || "", f.romaji || "", n.birth || "", n.death || "",
                n.trained || "", n.trainedEst ? "yes" : "", n.styleLabel, n.family, n.locality || "",
                (parentsOf.get(n.id) || []).map(e => eff(byId.get(e.source)).name).join("; "),
                (childrenOf.get(n.id) || []).map(e => eff(byId.get(e.target)).name).join("; "),
-               n.wiki || ""]);
+               ...(cur ? [n.wiki || ""] : [])]);
   }
   download("karate-lineage-visible.csv",
     new Blob(["﻿" + rows.map(r => r.map(csvEsc).join(",")).join("\n")], { type: "text/csv" }));
 }
 function exportJSON() {
   const vis = new Set(visiblePeople().map(n => n.id));
+  const cur = curator();
+  // a handed-on file must not carry what the interface hides
+  const pubNode = ({ wiki, flags, ...rest }) => rest;
+  const pubEdge = ({ evidence, ...rest }) => rest;
   const sub = {
-    meta: DATA.meta,
-    nodes: DATA.nodes.filter(n => vis.has(n.id)),
-    edges: DATA.edges.filter(e => vis.has(e.source) && vis.has(e.target)),
+    meta: cur ? DATA.meta : { counts: DATA.meta.counts },
+    nodes: DATA.nodes.filter(n => vis.has(n.id)).map(n => cur ? n : pubNode(n)),
+    edges: DATA.edges.filter(e => vis.has(e.source) && vis.has(e.target))
+                     .map(e => cur ? e : pubEdge(e)),
   };
   download("karate-lineage-subgraph.json", new Blob([JSON.stringify(sub, null, 1)], { type: "application/json" }));
 }
@@ -2162,8 +2194,11 @@ function repaint() {   // theme change: refresh fills and edge tints
 matchMedia("(prefers-color-scheme: dark)").addEventListener("change", repaint);
 new MutationObserver(repaint).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
 
+// the build hash is for the curator reconciling a published file against a build;
+// a reader just wants to know how big the tree is
 document.getElementById("stamp").textContent =
-  `${placed.length} linked people · ${DATA.edges.length} teacher–student links · data ${DATA.meta.source_hash}`;
+  `${placed.length.toLocaleString()} people · ${DATA.edges.length.toLocaleString()} teacher–student links`
+  + (curator() ? ` · build ${DATA.meta.source_hash.slice(0, 8)}` : "");
 
 renderBands();
 renderEdges();
