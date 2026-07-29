@@ -2625,7 +2625,7 @@ new MutationObserver(repaint).observe(document.documentElement, { attributes: tr
 // a reader just wants to know how big the tree is
 document.getElementById("stamp").textContent =
   `${placed.length.toLocaleString()} people · ${DATA.edges.length.toLocaleString()} teacher–student links`
-  + (curator() ? ` · build ${DATA.meta.source_hash.slice(0, 8)}` : "");
+  + (curator() && DATA.meta.source_hash ? ` · build ${DATA.meta.source_hash.slice(0, 8)}` : "");
 
 renderBands();
 renderEdges();
