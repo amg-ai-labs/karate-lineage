@@ -44,25 +44,18 @@ try {
   console.log("expert corrections: date edit + flag + edge panel + export OK");
   delete edits[fk.id]; edgeFlags = {}; applyFilters();
   // curator gating: evidence links hidden publicly, shown in curator mode
-  localStorage.removeItem("karate-curator");
-  openEdgeDetail(e0);
+  previewPublic = true;  openEdgeDetail(e0);
   var pubLinks = document.getElementById("detail").querySelectorAll("a").length;
-  localStorage.setItem("karate-curator", "1");
-  openEdgeDetail(e0);
+  previewPublic = false; openEdgeDetail(e0);
   var curLinks = document.getElementById("detail").querySelectorAll("a").length;
-  localStorage.removeItem("karate-curator");
   if (pubLinks !== 0) throw new Error("public edge panel leaks " + pubLinks + " source links");
-  if (curLinks < 1) throw new Error("curator mode shows no sources");
+  if (curLinks < 1) throw new Error("curator copy shows no sources");
   console.log("curator gating: public " + pubLinks + " links, curator " + curLinks);
   // #hash switching applies without a manual reload (hashchange path)
-  location.hash = "#curator";
-  if (!applyCuratorHash() && localStorage.getItem("karate-curator") !== "1")
-    throw new Error("hash switch to curator failed");
-  location.hash = "#public";
-  applyCuratorHash();
-  if (localStorage.getItem("karate-curator") !== null) throw new Error("hash switch to public failed");
-  location.hash = "";
-  console.log("curator #hash switching OK");
+  if (!hasEvidence) throw new Error("curator build lost its evidence layer");
+  previewPublic = true;  if (curator()) throw new Error("#public preview did not take effect");
+  previewPublic = false; if (!curator()) throw new Error("curator copy not detected");
+  console.log("curator detection from build: OK (hasEvidence=" + hasEvidence + ")");
   // REGRESSION: no source material may reach ANY public surface. A past leak was
   // plain text in a hover tooltip, which an <a>-only audit missed entirely, so this
   // sweeps rendered TEXT across every surface in both modes.
@@ -81,11 +74,8 @@ try {
       renderStylePanel(); n += tokens(document.getElementById("stylepanel"));
       return n;
     };
-    localStorage.removeItem("karate-curator");
-    const pub = surfaces();
-    localStorage.setItem("karate-curator", "1");
-    const cur = surfaces();
-    localStorage.removeItem("karate-curator");
+    previewPublic = true;  const pub = surfaces();
+    previewPublic = false; const cur = surfaces();
     if (pub !== 0) throw new Error("PUBLIC UI LEAKS " + pub + " source tokens");
     if (cur < 1) throw new Error("curator mode shows no sources");
     console.log("leak sweep: public " + pub + " source tokens, curator " + cur);
@@ -164,6 +154,16 @@ try {
   exportEdits();
   delete removals[mi.id]; applyFilters();
   console.log("person-removal flag + export OK");
+  (function () {                      // storage refused (local file / private window)
+    const real = localStorage.setItem;
+    localStorage.setItem = () => { throw new Error("blocked"); };
+    let threw = false;
+    try { edits["__t"] = { birth_year: 1900 }; saveCorrections(); } catch (e) { threw = true; }
+    localStorage.setItem = real;
+    delete edits["__t"];
+    if (threw) throw new Error("a blocked storage write breaks editing");
+    console.log("edits survive blocked storage: OK");
+  })();
   exportCSV(); exportJSON();
   console.log("SMOKE OK");
 } catch (e) {

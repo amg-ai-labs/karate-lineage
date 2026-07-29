@@ -455,11 +455,23 @@ try { edits = JSON.parse(localStorage.getItem(EDITS_KEY) || "{}"); } catch (_) {
 try { edgeFlags = JSON.parse(localStorage.getItem(FLAGS_KEY) || "{}"); } catch (_) {}
 try { edgeAdds = JSON.parse(localStorage.getItem(EADDS_KEY) || "[]"); } catch (_) {}
 try { removals = JSON.parse(localStorage.getItem(RM_KEY) || "{}"); } catch (_) {}
+// Some browsers refuse storage to a page opened as a local file, and private
+// windows can refuse it too. Corrections must never be lost silently: keep them
+// in memory regardless, and say once that they will not survive a reload.
+let storageWarned = false;
 function saveCorrections() {
-  localStorage.setItem(EDITS_KEY, JSON.stringify(edits));
-  localStorage.setItem(FLAGS_KEY, JSON.stringify(edgeFlags));
-  localStorage.setItem(EADDS_KEY, JSON.stringify(edgeAdds));
-  localStorage.setItem(RM_KEY, JSON.stringify(removals));
+  try {
+    localStorage.setItem(EDITS_KEY, JSON.stringify(edits));
+    localStorage.setItem(FLAGS_KEY, JSON.stringify(edgeFlags));
+    localStorage.setItem(EADDS_KEY, JSON.stringify(edgeAdds));
+    localStorage.setItem(RM_KEY, JSON.stringify(removals));
+  } catch (_) {
+    if (!storageWarned) {
+      storageWarned = true;
+      toast("This browser will not store corrections for a local file, so they "
+          + "will be lost if you reload. Use Export → “Expert corrections” before closing.");
+    }
+  }
   updateEditBadge();
 }
 function eff(n) {           // node fields with local edits applied
@@ -774,21 +786,19 @@ svg.addEventListener("wheel", ev => {
     view.x -= ev.deltaX; view.y -= ev.deltaY; applyView();
   }
 }, { passive: false });
-/* Curator mode: the evidence layer (source links, citations) is visible only to the
-   site's curator. Open the page with #curator to switch it on for this browser
-   (persists), #public to switch it off. The data itself is identical either way. */
-const CURATOR_KEY = "karate-curator";
-function applyCuratorHash() {
-  const was = localStorage.getItem(CURATOR_KEY);
-  if (location.hash.indexOf("curator") >= 0) localStorage.setItem(CURATOR_KEY, "1");
-  if (location.hash.indexOf("public") >= 0) localStorage.removeItem(CURATOR_KEY);
-  return was !== localStorage.getItem(CURATOR_KEY);
-}
-applyCuratorHash();
-// editing the address bar's #hash does NOT reload the page, so apply the switch
-// the moment it changes and reload to refresh any open panels
-addEventListener("hashchange", () => { if (applyCuratorHash()) location.reload(); });
-function curator() { return localStorage.getItem(CURATOR_KEY) === "1"; }
+/* Curator mode needs no switch: the build itself decides. The curator's copy
+   (karate-cladogram.html) carries the evidence layer; the published copies are
+   built without it, so there is nothing there to reveal. Open your file and you
+   see sources; open the website and you do not. #public previews the public view
+   on the curator's copy. */
+const hasEvidence = (DATA.edges || []).some(e => (e.evidence || []).length)
+                 || (DATA.nodes || []).some(n => n.wiki);
+let previewPublic = location.hash.indexOf("public") >= 0;
+function curator() { return hasEvidence && !previewPublic; }
+addEventListener("hashchange", () => {
+  const want = location.hash.indexOf("public") >= 0;
+  if (want !== previewPublic) { previewPublic = want; location.reload(); }
+});
 
 let pan = null, pendingSel = null, pendingEdge = null;
 svg.addEventListener("pointerdown", ev => {
@@ -2653,8 +2663,8 @@ setTimeout(userMoved, 9000);   // hint fades on its own eventually
 
 // make the current mode visible, so curator view is never mistaken for the public site
 if (curator()) {
-  setTimeout(() => toast("Curator mode: source links are visible to you only. "
-    + "Add #public to the address to preview the public view."), 1200);
+  setTimeout(() => toast("Curator copy: sources are visible here and are not in the published "
+    + "site. Edits export via Export → “Expert corrections”."), 1400);
 }
 
 </script>
