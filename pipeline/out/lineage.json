@@ -16040,12 +16040,12 @@
   "counts": {
    "connected": 959,
    "edges": 1367,
-   "nodes": 1050,
+   "nodes": 1061,
    "open_review_items": 0,
-   "orphans": 91
+   "orphans": 102
   },
   "pipeline_version": "1.0.0",
-  "source_hash": "b3fb0ea167d3ab2c"
+  "source_hash": "b6a7e7e29bc6aafe"
  },
  "nodes": [
   {
@@ -39129,6 +39129,358 @@
    "qid": null,
    "styles": [
     "goju-ryu"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "KN001",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Chinto",
+   "name_alt": [],
+   "name_ascii": "Chinto",
+   "name_native": "チントー",
+   "name_romaji": null,
+   "primary_style": "te",
+   "qid": null,
+   "styles": [
+    "te"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "KN002",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Shushi",
+   "name_alt": [],
+   "name_ascii": "Shushi",
+   "name_native": "周氏",
+   "name_romaji": null,
+   "primary_style": "chinese-martial-arts",
+   "qid": null,
+   "styles": [
+    "chinese-martial-arts"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "KN003",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Soeishi Ryotoku",
+   "name_alt": [],
+   "name_ascii": "Soeishi Ryotoku",
+   "name_native": "祖栄志良徳",
+   "name_romaji": null,
+   "primary_style": "okinawan-kobudo",
+   "qid": null,
+   "styles": [
+    "okinawan-kobudo"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "KN004",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Hamahiga Pechin",
+   "name_alt": [],
+   "name_ascii": "Hamahiga Pechin",
+   "name_native": "浜比嘉親雲上",
+   "name_romaji": null,
+   "primary_style": "okinawan-kobudo",
+   "qid": null,
+   "styles": [
+    "okinawan-kobudo"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "KN005",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Kanegawa Gimu",
+   "name_alt": [],
+   "name_ascii": "Kanegawa Gimu",
+   "name_native": "兼川",
+   "name_romaji": null,
+   "primary_style": "okinawan-kobudo",
+   "qid": null,
+   "styles": [
+    "okinawan-kobudo"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "KN006",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Chinen Shikiyanaka",
+   "name_alt": [],
+   "name_ascii": "Chinen Shikiyanaka",
+   "name_native": "知念志喜屋仲",
+   "name_romaji": null,
+   "primary_style": "okinawan-kobudo",
+   "qid": null,
+   "styles": [
+    "okinawan-kobudo"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "KN007",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Tsuken Hantagwa",
+   "name_alt": [],
+   "name_ascii": "Tsuken Hantagwa",
+   "name_native": "津堅ハンタ川",
+   "name_romaji": null,
+   "primary_style": "okinawan-kobudo",
+   "qid": null,
+   "styles": [
+    "okinawan-kobudo"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "KN008",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Sueyoshi",
+   "name_alt": [],
+   "name_ascii": "Sueyoshi",
+   "name_native": "末吉",
+   "name_romaji": null,
+   "primary_style": "okinawan-kobudo",
+   "qid": null,
+   "styles": [
+    "okinawan-kobudo"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "KN009",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Sesoko",
+   "name_alt": [],
+   "name_ascii": "Sesoko",
+   "name_native": "瀬底",
+   "name_romaji": null,
+   "primary_style": "okinawan-kobudo",
+   "qid": null,
+   "styles": [
+    "okinawan-kobudo"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "KN010",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Shoun",
+   "name_alt": [],
+   "name_ascii": "Shoun",
+   "name_native": "松雲",
+   "name_romaji": null,
+   "primary_style": "okinawan-kobudo",
+   "qid": null,
+   "styles": [
+    "okinawan-kobudo"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "KN011",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Tawada Shinboku",
+   "name_alt": [],
+   "name_ascii": "Tawada Shinboku",
+   "name_native": "多和田真牧",
+   "name_romaji": null,
+   "primary_style": "okinawan-kobudo",
+   "qid": null,
+   "styles": [
+    "okinawan-kobudo"
    ],
    "wikipedia_url": null
   },

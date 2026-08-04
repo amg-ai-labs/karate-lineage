@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-for script in [HERE / "clean.py", HERE / "viz" / "build_viz.py"]:
+for script in [HERE / "clean.py", HERE / "viz" / "build_viz.py", HERE / "master.py"]:
     r = subprocess.run([sys.executable, str(script)])
     if r.returncode:
         sys.exit(f"FAILED at {script.name}")
