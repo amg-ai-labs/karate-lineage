@@ -29,6 +29,7 @@
           <option value="up">Teachers (ancestors)</option>
           <option value="down">Students (descendants)</option>
         </select>
+        <button id="recentre" class="btn" title="Bring the selected person back to the centre (R)">◎ Recentre</button>
         <button id="isolate" class="btn" title="Re-lay out only this lineage">Isolate</button>
         <button id="clearfocus" class="btn" title="Clear focus">✕</button>
       </div>
@@ -71,7 +72,7 @@
     <svg id="canvas" role="img" aria-label="Karate lineage cladogram"></svg>
     <div id="genruler" aria-hidden="true"></div>
     <div id="minimap" aria-label="Overview map"><svg id="minisvg"></svg></div>
-    <div id="hint" hidden>Scroll to pan · ⇧-scroll moves along the timeline · pinch or ⌘-scroll to zoom · arrow keys pan, +/− zoom, F fits · click any name</div>
+    <div id="hint" hidden>Scroll to pan · ⇧-scroll moves along the timeline · pinch or ⌘-scroll to zoom · arrow keys pan · +/− zoom · F fits · R returns to your selection · click any name</div>
     <div id="tourcard" hidden>
       <div id="tourprogress"></div>
       <h3 id="tourtitle"></h3>

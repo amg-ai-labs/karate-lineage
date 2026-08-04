@@ -302,6 +302,9 @@ function applyView() {
 }
 /* smooth camera flight */
 let camAnim = null;
+function prefersReducedMotion() {
+  return matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
 function animateView(tx, ty, tk, dur) {
   cancelAnimationFrame(camAnim);
   const f = { x: view.x, y: view.y, k: view.k }, t0 = performance.now();
@@ -361,7 +364,11 @@ svg.addEventListener("wheel", ev => {
   stopCamera(); userMoved();
   const r = svg.getBoundingClientRect();
   if (ev.ctrlKey || ev.metaKey) {
-    zoomAt(ev.clientX - r.left, ev.clientY - r.top, Math.exp(-ev.deltaY * 0.011));
+    // a trackpad pinch arrives as ctrlKey with large deltas; a mouse wheel with
+    // small ones. Damp both, and clamp so one flick cannot jump three zoom levels.
+    const raw = ev.deltaY * (ev.deltaMode === 1 ? 18 : 1);
+    const f = Math.exp(-Math.max(-90, Math.min(90, raw)) * 0.0065);
+    zoomAt(ev.clientX - r.left, ev.clientY - r.top, f);
   } else if (ev.shiftKey) {
     // shift + scroll wheel moves along the timeline (left–right)
     view.x -= (ev.deltaY || ev.deltaX); applyView();
@@ -395,15 +402,38 @@ svg.addEventListener("pointermove", ev => {
   if (!pan) return;
   const dx = ev.clientX - pan.x, dy = ev.clientY - pan.y;
   if (Math.abs(dx) + Math.abs(dy) > 3) pan.moved = true;
-  view.x = pan.vx + dx; view.y = pan.vy + dy;
+  const nx = pan.vx + dx, ny = pan.vy + dy;
+  const now = performance.now(), dt = now - (pan.t || now);
+  if (dt > 0) {                      // track velocity for the glide on release
+    pan.vxx = (nx - view.x) / dt; pan.vyy = (ny - view.y) / dt;
+  }
+  pan.t = now;
+  view.x = nx; view.y = ny;
   applyView();   // keeps the date ruler and minimap tracking the drag
 });
+// a flick keeps moving and eases to a stop, which makes a large map feel navigable
+function glide(vx, vy) {
+  cancelAnimationFrame(camAnim);
+  let last = performance.now();
+  const step = now => {
+    const dt = Math.min(40, now - last); last = now;
+    vx *= Math.pow(0.94, dt / 16); vy *= Math.pow(0.94, dt / 16);
+    if (Math.abs(vx) < 0.02 && Math.abs(vy) < 0.02) return;
+    view.x += vx * dt; view.y += vy * dt;
+    applyView();
+    camAnim = requestAnimationFrame(step);
+  };
+  camAnim = requestAnimationFrame(step);
+}
 svg.addEventListener("pointerup", () => {
   if (pan && !pan.moved) {
     if (pendingSel) clickSelect(pendingSel);
     else if (pendingEdge) openEdgeDetail(pendingEdge);
     else clearSelection();
   }
+  if (pan && pan.moved && !prefersReducedMotion() &&
+      (Math.abs(pan.vxx || 0) > 0.15 || Math.abs(pan.vyy || 0) > 0.15))
+    glide(pan.vxx, pan.vyy);
   pendingSel = null;
   pendingEdge = null;
   pan = null;
@@ -615,6 +645,10 @@ document.getElementById("clearfocus").onclick = () => {
   applyFilters();
 };
 document.getElementById("focusdir").onchange = ev => { state.dir = ev.target.value; applyFilters(); };
+// however far you have wandered, come straight back to the person you selected
+document.getElementById("recentre").onclick = () => {
+  if (state.focus) { stopCamera(); centreOn(state.focus, Math.max(view.k, 0.9)); }
+};
 document.getElementById("hidelow").onchange = ev => { state.hideLow = ev.target.checked; applyFilters(); };
 addEventListener("keydown", ev => {
   if (ev.key === "Escape") {
@@ -640,6 +674,8 @@ addEventListener("keydown", ev => {
     f: () => fit(state.isolated ? new Set(state.isolated) : null),
     "0": () => fit(state.isolated ? new Set(state.isolated) : null),
     Home: () => openLeft(400),
+    r: () => { if (state.focus) centreOn(state.focus, Math.max(view.k, 0.9)); },
+    R: () => { if (state.focus) centreOn(state.focus, Math.max(view.k, 0.9)); },
   };
   const act = acts[ev.key];
   if (act) { ev.preventDefault(); stopCamera(); userMoved(); act(); }
@@ -950,7 +986,39 @@ const kataPanel = document.getElementById("katapanel");
 const kataBtn = document.getElementById("katabtn");
 const KATA = DATA.kata || [];
 if (KATA.length) kataBtn.hidden = false;
+// which kata a PERSON is credited with, and which a STYLE practises. The client
+// wants these visible from the person and style boxes, not only in the kata tab.
+const kataByPerson = new Map(), kataByStyle = new Map();
+for (const k of KATA) {
+  const credit = new Map();
+  if (k.origin_person) credit.set(k.origin_person, "originated");
+  for (const p of (k.introduced_by || [])) if (p.name) credit.set(p.name, p.role);
+  if (k.modifier) credit.set(k.modifier, "modified");
+  for (const [nm, role] of credit) {
+    if (!kataByPerson.has(nm)) kataByPerson.set(nm, []);
+    kataByPerson.get(nm).push({ kata: k, role });
+  }
+  for (const sid of (k.style_ids || [])) {
+    if (!kataByStyle.has(sid)) kataByStyle.set(sid, []);
+    kataByStyle.get(sid).push(k);
+  }
+}
+function kataFor(name) { return kataByPerson.get(name) || []; }
+// a style shows its own kata plus those of its parent styles, since a sub-style
+// inherits the parent syllabus
+function kataForStyle(sid) {
+  const out = new Map();
+  let cur = sid, hops = 0;
+  while (cur && hops++ < 10) {
+    for (const k of (kataByStyle.get(cur) || []))
+      if (!out.has(k.name)) out.set(k.name, { kata: k, from: cur === sid ? "" : cur });
+    const st = styleByIdMap.get(cur);
+    cur = st && st.parent;
+  }
+  return [...out.values()];
+}
 let kataOpen = new Set(), kataQuery = "";
+let styleQuery = "";
 kataBtn.onclick = () => {
   if (!kataPanel.hidden) { kataPanel.hidden = true; return; }
   renderKataPanel();
@@ -1059,21 +1127,152 @@ document.getElementById("stylesbtn").onclick = () => {
   if (!stylePanel.hidden) { stylePanel.hidden = true; return; }
   renderStylePanel();
 };
+// A style's own page: where it sits in the family tree, who made it and when,
+// who practises it, and which kata belong to it.
+function openStyleDetail(sid) {
+  const st = styleByIdMap.get(sid);
+  if (!st) return;
+  const panel = document.getElementById("detail");
+  panel.innerHTML = ""; panel.hidden = false;
+  panel.appendChild(panelCloseBtn(panel));
+  const h = document.createElement("h2"); h.textContent = st.label;
+  panel.appendChild(h);
+
+  // the chain back to the originating group, so the hierarchy is explicit
+  const chain = [];
+  let cur = sid, hops = 0;
+  while (cur && hops++ < 12) { chain.unshift(styleByIdMap.get(cur)); cur = styleByIdMap.get(cur).parent; }
+  const famLabel = (FAM_ORDER.find(f => f[0] === st.famRaw) || [, st.famRaw])[1];
+  // the originating groups (te, naha-te, shuri-te...) exist as nodes in the chain
+  // too, so strip them before counting levels or the group gets counted twice
+  const GROUP_IDS = new Set(FAM_ORDER.map(f => f[0]));
+  const groupPart = chain.filter(c => GROUP_IDS.has(c.id));
+  const stylePart = chain.filter(c => !GROUP_IDS.has(c.id));
+  // the chain is already root-first and contains the originating groups, so show
+  // it as it stands rather than prefixing the group and repeating it
+  const sub = document.createElement("div"); sub.className = "romaji";
+  sub.textContent = chain.map(c => c.label).join("  →  ");
+  panel.appendChild(sub);
+
+  const dl = document.createElement("dl");
+  const add = (k, v) => {
+    if (!v) return;
+    const dt = document.createElement("dt"); dt.textContent = k;
+    const dd = document.createElement("dd"); dd.textContent = v;
+    dl.append(dt, dd);
+  };
+  add("Originating group", famLabel);
+  const lvl = stylePart.length;
+  add("Level", lvl <= 0 ? "Originating group" : lvl === 1 ? "Style" : lvl === 2 ? "Sub-style"
+      : lvl === 3 ? "Sub-sub-style" : "Sub-style, level " + lvl);
+  add("Founder", st.founder);
+  add("Founded", st.founded);
+  if (st.parent && styleByIdMap.get(st.parent))
+    add(GROUP_IDS.has(st.parent) ? "Sits directly under" : "Branch of",
+        styleByIdMap.get(st.parent).label);
+  const kids = (styleKids.get(sid) || []).map(k => styleByIdMap.get(k).label);
+  add("Branches", kids.length ? kids.join(", ") : "");
+  const mem = styleMembers(sid);
+  add("People", mem.length + (mem.length === 1 ? " recorded" : " recorded, including sub-styles"));
+  panel.appendChild(dl);
+
+  // kata of this style, marking those inherited from a parent style
+  const ks = kataForStyle(sid);
+  if (ks.length) {
+    const h4 = document.createElement("h4");
+    h4.textContent = "Kata (" + ks.length + ")"; panel.appendChild(h4);
+    ks.sort((a, b) => (a.from ? 1 : 0) - (b.from ? 1 : 0) || a.kata.name.localeCompare(b.kata.name));
+    for (const { kata, from } of ks.slice(0, 60)) {
+      const row = document.createElement("div"); row.className = "rel";
+      const b = document.createElement("button"); b.className = "linklike";
+      b.textContent = kata.name;
+      b.onclick = () => { kataQuery = kata.name; kataOpen = new Set([kata.name]); renderKataPanel(); };
+      const meta = document.createElement("span"); meta.className = "conf";
+      const who = kata.origin_person || (kata.introduced_by || [])[0]?.name || "";
+      meta.textContent = [who, kata.era, from ? "via " + (styleByIdMap.get(from) || {}).label : ""]
+        .filter(Boolean).join(" · ");
+      if (kata.disputed) meta.classList.add("disputed");
+      row.append(b, meta);
+      panel.appendChild(row);
+    }
+    if (ks.length > 60) {
+      const more = document.createElement("div"); more.className = "edit-note";
+      more.textContent = "…and " + (ks.length - 60) + " more; open the Kata tab to see them all.";
+      panel.appendChild(more);
+    }
+  }
+
+  // senior people in this style, most connected first
+  if (mem.length) {
+    const h4p = document.createElement("h4"); h4p.textContent = "Principal figures";
+    panel.appendChild(h4p);
+    const people = mem.map(i => byId.get(i)).filter(Boolean)
+      .sort((a, b) => (b.desc || 0) - (a.desc || 0) || (a.birth || 9999) - (b.birth || 9999));
+    for (const pn of people.slice(0, 15)) {
+      const row = document.createElement("div"); row.className = "rel";
+      const b = document.createElement("button"); b.className = "linklike";
+      b.textContent = eff(pn).name;
+      b.onclick = () => { if (pos.has(pn.id)) { selectNode(pn.id); centreOn(pn.id); } else openDetail(pn.id); };
+      const meta = document.createElement("span"); meta.className = "conf";
+      meta.textContent = [pn.birth ? pn.birth + (pn.death ? "–" + pn.death : "–") : "",
+                          pn.students ? pn.students + " students" : ""].filter(Boolean).join(" · ");
+      row.append(b, meta);
+      panel.appendChild(row);
+    }
+  }
+
+  const h4e = document.createElement("h4"); h4e.textContent = "Publish"; panel.appendChild(h4e);
+  const wrap = document.createElement("div");
+  wrap.style.cssText = "display:flex;gap:6px;flex-wrap:wrap";
+  for (const [lbl, fmt] of [["⬇ SVG", "svg"], ["PDF", "pdf"], ["PNG", "png"],
+                            ["CSV", "csv"], ["JSON", "json"]]) {
+    const b = document.createElement("button"); b.className = "btn"; b.textContent = lbl;
+    b.onclick = () => {
+      const ids = styleMembers(sid);
+      if (fmt === "csv" || fmt === "json") return exportSubset(ids, st.label, fmt);
+      exportClade(ids, "The " + st.label + " clade", fmt, styleProvenance(sid));
+    };
+    wrap.appendChild(b);
+  }
+  panel.appendChild(wrap);
+  const note = document.createElement("div"); note.className = "edit-note";
+  note.textContent = "Charts and data for this style and every sub-style beneath it.";
+  panel.appendChild(note);
+}
+
 function renderStylePanel() {
   stylePanel.innerHTML = ""; stylePanel.hidden = false;
   stylePanel.appendChild(panelCloseBtn(stylePanel));
   const h = document.createElement("h3"); h.textContent = "Style tree"; stylePanel.appendChild(h);
   const note = document.createElement("div"); note.className = "edit-note";
-  note.textContent = "Family → style → sub-style. Click a style to filter the canvas "
-    + "(includes its sub-styles); ⬇ exports a publishable poster of that clade.";
+  note.textContent = "Originating group → style → sub-style → sub-sub-style. Click a name to "
+    + "filter the canvas (its sub-styles come too), ⓘ for the style's own page, ⬇ for a poster.";
   stylePanel.appendChild(note);
+  const find = document.createElement("input");
+  find.className = "kata-search"; find.type = "search";
+  find.placeholder = "Find a style… (name, founder or Japanese)";
+  find.value = styleQuery;
+  find.oninput = () => { styleQuery = find.value; renderStylePanel(); setTimeout(() => {
+    const el = document.getElementById("stylepanel").querySelectorAll("input")[0];
+    if (el) el.focus();
+  }, 0); };
+  stylePanel.appendChild(find);
   const counts = new Map();
   const count = id => {
     if (!counts.has(id)) counts.set(id, styleMembers(id).length);
     return counts.get(id);
   };
   const label = sid => { const s = styleByIdMap.get(sid); return s ? s.label : sid; };
+  const q = styleQuery.trim().toLowerCase();
+  const hit = sid => {
+    if (!q) return true;
+    const s = styleByIdMap.get(sid); if (!s) return false;
+    return (s.label + " " + s.id + " " + (s.founder || "")).toLowerCase().includes(q);
+  };
+  // a style stays visible if it matches, or if anything beneath it matches
+  const subtreeHit = sid => hit(sid) || [...styleWithDesc(sid)].some(k => hit(k));
   const addRow = (sid, depth) => {
+    if (q && !subtreeHit(sid)) return;
     const c = count(sid);
     const row = document.createElement("div");
     row.className = "st-row" + (state.style === sid ? " on" : "") + (c ? "" : " st-empty");
@@ -1097,7 +1296,11 @@ function renderStylePanel() {
     meta.textContent = styleProvenance(sid);
     const cnt = document.createElement("span"); cnt.className = "st-count";
     cnt.textContent = c || "–";
-    row.append(chev, nameB, meta, cnt);
+    const info = document.createElement("button");
+    info.className = "linklike st-i"; info.textContent = "ⓘ";
+    info.title = "Style details: founder, date, kata, principal figures";
+    info.onclick = () => openStyleDetail(sid);
+    row.append(chev, nameB, meta, cnt, info);
     if (c > 1) {
       const dl = document.createElement("button"); dl.className = "linklike st-dl"; dl.textContent = "⬇";
       dl.title = "Export a publishable poster of this style and its sub-styles (vector SVG)";
@@ -1106,7 +1309,7 @@ function renderStylePanel() {
       row.appendChild(dl);
     }
     stylePanel.appendChild(row);
-    if (styleOpen.has(sid)) for (const k of kids) addRow(k, depth + 1);
+    if (styleOpen.has(sid) || (q && kids.some(subtreeHit))) for (const k of kids) addRow(k, depth + 1);
   };
   for (const [fid, flabel] of FAM_ORDER) {
     const tops = DATA.styles
@@ -1187,6 +1390,30 @@ function openDetail(id) {
       wrap.appendChild(chip);
     }
     panel.appendChild(wrap);
+  }
+
+  // kata this person originated, brought, modified, renamed or transmitted
+  const mine = kataFor(eff(n).name);
+  if (mine.length) {
+    const h4k = document.createElement("h4");
+    h4k.textContent = "Kata (" + mine.length + ")";
+    panel.appendChild(h4k);
+    const ROLE_ORDER = { created: 0, originated: 0, brought: 1, modified: 2,
+                         standardised: 3, renamed: 4, transmitted: 5 };
+    mine.sort((a, b) => (ROLE_ORDER[a.role] ?? 9) - (ROLE_ORDER[b.role] ?? 9)
+                     || a.kata.name.localeCompare(b.kata.name));
+    for (const { kata, role } of mine) {
+      const row = document.createElement("div"); row.className = "rel";
+      const b = document.createElement("button"); b.className = "linklike";
+      b.textContent = kata.name + (kata.native ? "  " + kata.native : "");
+      b.onclick = () => { kataQuery = kata.name; kataOpen = new Set([kata.name]); renderKataPanel(); };
+      const r = document.createElement("span"); r.className = "conf";
+      r.textContent = role + (kata.era ? " · " + kata.era : "")
+        + (kata.disputed ? " · disputed" : "");
+      if (kata.disputed) r.classList.add("disputed");
+      row.append(b, r);
+      panel.appendChild(row);
+    }
   }
 
   const rels = [["Teachers", parentsOf.get(id) || [], e => e.source],
