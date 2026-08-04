@@ -164,6 +164,42 @@ try {
     if (threw) throw new Error("a blocked storage write breaks editing");
     console.log("edits survive blocked storage: OK");
   })();
+  // generation-limited clade export: the client needs 1, 2, 3, n or all generations,
+  // compactly laid out, plus the underlying data for his own analysis
+  (function () {
+    const mi2 = placed.find(n => n.name === "Chojun Miyagi");
+    const d = lineageDepth(mi2.id, "down");
+    if (d < 3) throw new Error("lineageDepth too shallow: " + d);
+    let prev = 0;
+    for (const g of [1, 2, 3]) {
+      const n = lineageSet(mi2.id, "down", g).size;
+      if (n <= prev) throw new Error("generation " + g + " added nobody");
+      prev = n;
+    }
+    if (lineageSet(mi2.id, "down", 1).size >= lineageSet(mi2.id, "down").size)
+      throw new Error("generation limiting had no effect");
+    // compact layout must be materially smaller than the screen layout
+    const ids2 = [...lineageSet(mi2.id, "down", 2)].filter(i => pos.has(i));
+    const box = (compact) => {
+      const l = isolateLayout(ids2, compact);
+      const xs = [...l.values()].map(p => p.x), ys = [...l.values()].map(p => p.y);
+      return (Math.max(...xs) - Math.min(...xs)) * (Math.max(...ys) - Math.min(...ys));
+    };
+    if (box(true) >= box(false) * 0.9)
+      throw new Error("compact layout is not meaningfully more compact");
+    console.log("generations: depth " + d + ", 1gen=" + lineageSet(mi2.id, "down", 1).size
+      + " 2gen=" + lineageSet(mi2.id, "down", 2).size + " all=" + lineageSet(mi2.id, "down").size
+      + "; compact layout " + Math.round(100 - box(true) / box(false) * 100) + "% smaller");
+    const files2 = [];
+    const _d2 = download;
+    download = (n) => files2.push(n);
+    exportSubset(ids2, "Test Person", "csv");
+    exportSubset(ids2, "Test Person", "json");
+    download = _d2;
+    if (files2.length !== 3) throw new Error("data export gave " + files2.length + " files, want 3");
+    console.log("data exports: " + files2.join(", "));
+  })();
+
   exportCSV(); exportJSON();
   console.log("SMOKE OK");
 } catch (e) {

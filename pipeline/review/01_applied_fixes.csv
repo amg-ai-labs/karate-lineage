@@ -1802,45 +1802,103 @@ merge,Yuken Tokashiki (C00664) merged into (A0212),[10th-dan register match] A02
 name_fix,Ahagon Naonobu -> Naonobu Ahagon,verified via unverified,name_fixes.csv
 name_fix,Akahige Kojo -> Homei Kojo (Akahige),"[audit:uechi-ryu] 'Akahige' (red beard) was a nickname; the standard romanisation of 湖城鳳鳴 (the native script already in the file) is Kojo Homei, listed 1861-1919 in the Japanese Wikipedia Kojo-ryu succession. Keep Akah",name_fixes.csv
 name_fix,Anan -> Annan,"[entity audit] Q251784 is a Wikimedia disambiguation page (mostly place names such as Anan, Tokushima), so the Wikidata match is wrong. However, the name itself is a legitimate lineage node: Annan/Anan is the Chines",name_fixes.csv
+name_fix,Aragaki Shuichi -> Shuichi Aragaki,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Arakaki Ansei -> Ansei Arakaki,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Arakaki Isamu -> Isamu Arakaki,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Arakaki Seisho -> Seisho Arakaki,verified via wikipedia,name_fixes.csv
+name_fix,Chinen Masatsune -> Masatsune Chinen,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Chinen Umikana -> Umikana Chinen,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Dr Minoru Yamada -> Minoru Yamada,[audit:orphans-1] Data hygiene: honorific 'Dr' embedded in the name field should be stripped. Identity could not be verified against any acceptable source; likely scraped from an association roster.,name_fixes.csv
 name_fix,Dr Shiji Mizokami -> Shiji Mizokami,[audit:orphans-1] Data hygiene: honorific 'Dr' embedded in the name field should be stripped. Identity could not be verified against any acceptable source; 'Shiji' is also an unusual Japanese given name and may itself,name_fixes.csv
 name_fix,Franklin DR Hargrove -> Frank Hargrove,"[panel] Real American Shorin-ryu Shorinkan teacher (student of Shugoro Nakazato, Hampton, Virginia, author on karate history). The embedded 'DR' is a displaced doctoral title from the sour",name_fixes.csv
 name_fix,Fukuda Hachinosuke -> Hachinosuke Fukuda,verified via wikipedia,name_fixes.csv
 name_fix,Gamani Soysa -> Gamini Soysa,"[audit:orphans-1] Spelling: the person is consistently rendered Gamini Soysa, Sri Lankan pioneer of Shorin-ryu Shorinkan in South Asia, first Sri Lankan to train in Okinawa. 'Gamani' appears to be a scrape typo.",name_fixes.csv
+name_fix,Genka Noritsune -> Noritsune Genka,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,George Mattson -> George E. Mattson,"[entity audit] Q18230165 is a Wikimedia disambiguation page; the dataset dates 1908-1997 belong to another George Mattson on that page, not the karateka. The intended person is George E. Mattson (b. c. 1937), the Ue",name_fixes.csv
+name_fix,Gibo Giyu -> Giyu Gibo,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Gushiken Shintoku -> Shintoku Gushiken,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Hanashiro Tetsuo -> Tetsuo Hanashiro,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Higa Peechin -> Peechin Higa,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Higa Yoshio -> Yoshio Higa,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Higa Yuchoku -> Yuchoku Higa,verified via wikipedia,name_fixes.csv
 name_fix,Higaonna Kanryo -> Kanryo Higaonna,verified via wikipedia,name_fixes.csv
+name_fix,Iha Kōtarō -> Kōtarō Iha,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Inada Hiroshi -> Hiroshi Inada,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Ishikawa Seigi -> Seigi Ishikawa,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Ishikawa Seitoku -> Seitoku Ishikawa,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Jitude Moshigwa Ire -> Moshigwa Ire,"[panel] 'Moshigwa' fits the genuine Uchinaaguchi nickname pattern (Mōshi + diminutive -gwa; cf. Motobu Choki's childhood name Mōshi) and Ire/Irei is a real Okinawan surname, so 'Moshigwa I",name_fixes.csv
+name_fix,Kakazu Mitsuo -> Mitsuo Kakazu,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Kanagusuku Eiki -> Eiki Kanagusuku,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Kanken Oyadomari -> Kanken Toyama,"[web scholarship crosscheck] node named 'Kanken Oyadomari' but the kanji 遠山寛賢 is Toyama Kanken, the Shudokan founder (1888-1966); Oyadomari is a wrong surname",name_fixes.csv
 name_fix,Kanken Toyama -> Kanken Oyadomari,"[audit:orphans-1] Wrong-entity / duplicate flag: Kanken Toyama (1888-1966, founder of Shudokan) was born Oyadomari Kanken and only later took the name Toyama. No independent karateka named 'Kanken Oyadomari' is documen",name_fixes.csv
 name_fix,Kano Jigoro -> Jigoro Kano,verified via well-known,name_fixes.csv
 name_fix,Kanyo Higaonna -> Kanyu Higaonna,"[audit:orphans-1] Standard romanisation is Kanyu, not Kanyo. This is a real, distinct person ('Higaonna of the East', 1849-1922), NOT a duplicate of Kanryo Higaonna: do not merge with him. Note the English Wikipedia ar",name_fixes.csv
 name_fix,Ki Teruya -> Kishin Teruya,"[panel] Almost certainly truncated 'Kishin Teruya' (1804-1864), the documented Tomari-te master who taught Kosaku Matsumora and Kokan Oyadomari (Passai, Rohai, Wanshu); Teruya Kishin has h",name_fixes.csv
+name_fix,Kina Seikō -> Seikō Kina,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Kinjo Hiroshi -> Hiroshi Kinjo,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Kokuba -> Kosei Kokuba,"[audit:shito-ryu] Node is currently just the surname 'Kokuba' with no native script. This is Kokuba Kosei (also romanised Kuniba Kosei), founder of Seishinkai and 2nd Soke of Motobu-ha. Japanese Wikipedia's Kuniba Shog",name_fixes.csv
 name_fix,Kotani Sumiyuki -> Sumiyuki Kotani,verified via wikipedia,name_fixes.csv
+name_fix,Kuba Yoshio -> Yoshio Kuba,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Mabuni Kenei -> Kenei Mabuni,verified via wikipedia,name_fixes.csv
+name_fix,Maeda Kiyomasa -> Kiyomasa Maeda,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Maeshiro Chotoku -> Chotoku Maeshiro,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Makoto Gima -> Shinkin Gima,[audit:shotokan] The standard romanisation in karate scholarship is Shinkin Gima (儀間真謹); 'Makoto' is an alternative reading of 真謹 but Gima-ha organisations and reference biographies use Shinkin. Native script already,name_fixes.csv
+name_fix,Matayoshi Seitoku -> Seitoku Matayoshi,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Matayoshi Shinpo -> Shinpo Matayoshi,verified via wikidata,name_fixes.csv
+name_fix,Matsuda Yoshimasa -> Yoshimasa Matsuda,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Matsuda Yoshio -> Yoshio Matsuda,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Matsumura Sokon -> Sokon Matsumura,verified via wikipedia,name_fixes.csv
+name_fix,Miyagi Hisateru -> Hisateru Miyagi,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Miyagi Minoru -> Minoru Miyagi,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Miyagi Takeshi -> Takeshi Miyagi,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Miyahira Masanobu -> Masanobu Miyahira,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Miyazato Kōsuke -> Kōsuke Miyazato,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Motobu Chochi -> Chochi Motobu,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Motobu Chohei -> Chohei Motobu,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Motobu Chokan -> Chokan Motobu,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Motobu Choki -> Choki Motobu,verified via wikipedia,name_fixes.csv
+name_fix,Motobu Chomo -> Chomo Motobu,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Motobu Choryu -> Choryu Motobu,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Motobu Choshin -> Choshin Motobu,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Motobu Choyu -> Choyu Motobu,verified via wikipedia,name_fixes.csv
+name_fix,Motobu Naoki -> Naoki Motobu,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Nakama Chozo -> Chozo Nakama,verified via wikipedia,name_fixes.csv
+name_fix,Nakamoto Eishō -> Eishō Nakamoto,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Nakamura Seiyū -> Seiyū Nakamura,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Nakaza Seiei -> Seiei Nakaza,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Nakazato Bokuhitsu -> Bokuhitsu Nakazato,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Nanko Mine -> Nanko Minei,"[panel] Matches Nanko Minei, a real and currently active Okinawan Goju-ryu 10th dan from Nanjo City (Minei Dojo, opened 1973; senior student of Miyasato in the OGKK line). 'Mine' is a trun",name_fixes.csv
 name_fix,Nishihira Kosei -> Kosei Nishihira,verified via wikipedia,name_fixes.csv
 name_fix,One-Eyed Toguchi -> Seijin Toguchi,"[panel] Nickname entry for Seijin 'One-Eyed' Toguchi (1895-1937), attested in Tomari-te lineage literature as a successor of Kodatsu Iha, who also appears in this dataset (C00261/C00262).",name_fixes.csv
+name_fix,Oyadomari Eiro -> Eiro Oyadomari,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Pan Yuba -> Pan Yuba (Lin Dachong),"[audit:chinese-antecedents] The native field currently mixes a toponym-based sobriquet with the personal name ('潘嶼八（林達崇）'). His personal name was Lin Dachong 林達崇; 'Pan Yuba' derives from Panyu (盤嶼/潘嶼), the Fuzhou locality where",name_fixes.csv
 name_fix,Peichin Takahara -> Takahara Peichin,"[audit:chinese-antecedents] Peichin (親雲上) is a Ryukyuan court rank, not a given name, so it follows the surname; the scholarly standard form is 'Takahara Peichin', as used in the Chatan Yara and Sakugawa literature. 'Peichin Tak",name_fixes.csv
 name_fix,Roy Y Suenaka -> Roy Y. Suenaka,"[audit:shorin-kobayashi] Standard form includes the full stop after the middle initial, matching his Wikipedia title 'Roy Y. Suenaka'.",name_fixes.csv
 name_fix,Ryoichi Onis -> Ryoichi Onishi,"[panel] 'Onis' is a truncated surname; 'Ryoichi Onishi' is a coherent Japanese name and a martial artist of that name (karate background, later Systema Osaka founder) exists. Whether that",name_fixes.csv
 name_fix,Saito Satoshi -> Satoshi Saito,verified via wikipedia,name_fixes.csv
+name_fix,Senaga Yoshitsune -> Yoshitsune Senaga,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Shima Isao -> Isao Shima,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Shimabukuro Katsuyuki -> Katsuyuki Shimabukuro,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Shimabukuro Tsuneo -> Tsuneo Shimabukuro,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Shin Jae Chul -> Jae Chul Shin,verified via wikipedia,name_fixes.csv
+name_fix,Shinjo Anyu -> Anyu Shinjo,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Shionja -> Shiohira Peichin (Shionja),[audit:chinese-antecedents] The native script 潮平親雲上 is correctly read Shiohira Peichin; he is the warehouse-official informant of the 1762 Oshima Hikki. 'Shionja' is a distorted romanisation propagated through secondary karate l,name_fixes.csv
 name_fix,Taira Shinken -> Shinken Taira,verified via wikipedia,name_fixes.csv
+name_fix,Taira Yoshio -> Yoshio Taira,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Takamiyagi Tetsuo -> Tetsuo Takamiyagi,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Takara Shintoku -> Shintoku Takara,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Takushi Seiki -> Seiki Takushi,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Terada Kiyoyuki -> Kiyoyuki Terada,verified via wikipedia,name_fixes.csv
 name_fix,Terry ONeill -> Terry O'Neill,"[entity audit] Q3518915 is a Wikimedia disambiguation page, and the dataset dates 1938-2019 are those of Terry O'Neill the celebrity photographer. The intended person is Terry O'Neill the martial artist (b. 27 Feb 1",name_fixes.csv
+name_fix,Tokashiki Iken -> Iken Tokashiki,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Toma Jugo -> Jugo Toma,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Tomimoto Yuko -> Yuko Tomimoto,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Tomita Tsunejiro -> Tsunejiro Tomita,verified via wikipedia,name_fixes.csv
+name_fix,Tsuha Kiyoshi -> Kiyoshi Tsuha,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Wakugawa Kōsei -> Kōsei Wakugawa,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Wan Shu -> Wang Ji,"[panel] As a lineage node this denotes Wanshu / Wang Ji, the 1683 Qing sapposhi envoy traditionally credited with teaching in Tomari and as namesake of the Wanshu kata. The envoy is histor",name_fixes.csv
+name_fix,Yonamine Ikuo -> Ikuo Yonamine,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
+name_fix,Yonamine Isshun -> Isshun Yonamine,[name order] normalised to the dataset's given-name-first convention (208 of 240 two-part Japanese names use it); Japanese order kept in name_romaji,name_fixes.csv
 name_fix,Yoshimura UDUN -> Chogi Yoshimura,"[panel] 'Udun' designates the Yoshimura princely house, but in karate lineage charts 'Yoshimura Udun' conventionally denotes the house's karate figure Yoshimura Chogi (1866-1945), a studen",name_fixes.csv
 node_addition,Adriano Emperado (A0230),"[audit:kenpo-hawaii-us] Essential Hawaii kenpo figure: Chow's first black belt and co-founder/lead figure of Kajukenbo (born 15 June 1926, died April 2009). Needed for the Chow>Emperado edge.",node_additions.csv
 node_addition,Akihiko Suzuki (B0005),[book:Bishop p.33] Kyoto-based Jundokan follower; absent from dataset.,node_additions.csv

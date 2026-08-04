@@ -16045,7 +16045,7 @@
    "orphans": 91
   },
   "pipeline_version": "1.0.0",
-  "source_hash": "bcc84b034ef25e47"
+  "source_hash": "b3fb0ea167d3ab2c"
  },
  "nodes": [
   {
@@ -16983,11 +16983,13 @@
    "locality": null,
    "n_descendants": 242,
    "n_students": 1,
-   "name": "Motobu Choshin",
-   "name_alt": [],
+   "name": "Choshin Motobu",
+   "name_alt": [
+    "Motobu Choshin"
+   ],
    "name_ascii": "Motobu Choshin",
    "name_native": "本部朝真",
-   "name_romaji": "Motobu Aji Choshin",
+   "name_romaji": "Motobu Choshin",
    "primary_style": "motobu-udundi",
    "qid": null,
    "styles": [
@@ -20151,11 +20153,13 @@
    "locality": null,
    "n_descendants": 147,
    "n_students": 1,
-   "name": "Chinen Umikana",
-   "name_alt": [],
+   "name": "Umikana Chinen",
+   "name_alt": [
+    "Chinen Umikana"
+   ],
    "name_ascii": "Chinen Umikana",
    "name_native": "知念",
-   "name_romaji": null,
+   "name_romaji": "Chinen Umikana",
    "primary_style": "yamanni-ryu",
    "qid": null,
    "styles": [
@@ -22802,11 +22806,13 @@
    "locality": null,
    "n_descendants": 251,
    "n_students": 1,
-   "name": "Motobu Chohei",
-   "name_alt": [],
+   "name": "Chohei Motobu",
+   "name_alt": [
+    "Motobu Chohei"
+   ],
    "name_ascii": "Motobu Chohei",
    "name_native": "本部王子朝平",
-   "name_romaji": null,
+   "name_romaji": "Motobu Chohei",
    "primary_style": "motobu-udundi",
    "qid": null,
    "styles": [
@@ -22834,11 +22840,13 @@
    "locality": null,
    "n_descendants": 250,
    "n_students": 1,
-   "name": "Motobu Chokan",
-   "name_alt": [],
+   "name": "Chokan Motobu",
+   "name_alt": [
+    "Motobu Chokan"
+   ],
    "name_ascii": "Motobu Chokan",
    "name_native": "本部按司朝完",
-   "name_romaji": null,
+   "name_romaji": "Motobu Chokan",
    "primary_style": "motobu-udundi",
    "qid": null,
    "styles": [
@@ -22866,11 +22874,13 @@
    "locality": null,
    "n_descendants": 249,
    "n_students": 1,
-   "name": "Motobu Chochi",
-   "name_alt": [],
+   "name": "Chochi Motobu",
+   "name_alt": [
+    "Motobu Chochi"
+   ],
    "name_ascii": "Motobu Chochi",
    "name_native": "本部按司朝智",
-   "name_romaji": null,
+   "name_romaji": "Motobu Chochi",
    "primary_style": "motobu-udundi",
    "qid": null,
    "styles": [
@@ -22898,11 +22908,13 @@
    "locality": null,
    "n_descendants": 248,
    "n_students": 1,
-   "name": "Motobu Choryu",
-   "name_alt": [],
+   "name": "Choryu Motobu",
+   "name_alt": [
+    "Motobu Choryu"
+   ],
    "name_ascii": "Motobu Choryu",
    "name_native": "本部王子朝隆",
-   "name_romaji": null,
+   "name_romaji": "Motobu Choryu",
    "primary_style": "motobu-udundi",
    "qid": null,
    "styles": [
@@ -22968,13 +22980,14 @@
    "locality": null,
    "n_descendants": 1,
    "n_students": 1,
-   "name": "Tokashiki Iken",
+   "name": "Iken Tokashiki",
    "name_alt": [
+    "Tokashiki Iken",
     "Yuken Tokashiki"
    ],
    "name_ascii": "Tokashiki Iken",
    "name_native": "渡嘉敷唯賢",
-   "name_romaji": null,
+   "name_romaji": "Tokashiki Iken",
    "primary_style": "gohakukai",
    "qid": null,
    "styles": [
@@ -23201,11 +23214,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Motobu Chomo",
-   "name_alt": [],
+   "name": "Chomo Motobu",
+   "name_alt": [
+    "Motobu Chomo"
+   ],
    "name_ascii": "Motobu Chomo",
    "name_native": "本部朝茂",
-   "name_romaji": null,
+   "name_romaji": "Motobu Chomo",
    "primary_style": "motobu-udundi",
    "qid": null,
    "styles": [
@@ -23233,11 +23248,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Motobu Naoki",
-   "name_alt": [],
+   "name": "Naoki Motobu",
+   "name_alt": [
+    "Motobu Naoki"
+   ],
    "name_ascii": "Motobu Naoki",
    "name_native": "本部朝行",
-   "name_romaji": null,
+   "name_romaji": "Motobu Naoki",
    "primary_style": "motobu-ryu",
    "qid": null,
    "styles": [
@@ -37332,11 +37349,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Aragaki Shuichi",
-   "name_alt": [],
+   "name": "Shuichi Aragaki",
+   "name_alt": [
+    "Aragaki Shuichi"
+   ],
    "name_ascii": "Aragaki Shuichi",
    "name_native": "新垣修一",
-   "name_romaji": null,
+   "name_romaji": "Aragaki Shuichi",
    "primary_style": "goju-ryu",
    "qid": null,
    "styles": [
@@ -37366,11 +37385,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Matayoshi Seitoku",
-   "name_alt": [],
+   "name": "Seitoku Matayoshi",
+   "name_alt": [
+    "Matayoshi Seitoku"
+   ],
    "name_ascii": "Matayoshi Seitoku",
    "name_native": "又吉清徳",
-   "name_romaji": null,
+   "name_romaji": "Matayoshi Seitoku",
    "primary_style": "goju-ryu",
    "qid": null,
    "styles": [
@@ -37400,11 +37421,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Shinjo Anyu",
-   "name_alt": [],
+   "name": "Anyu Shinjo",
+   "name_alt": [
+    "Shinjo Anyu"
+   ],
    "name_ascii": "Shinjo Anyu",
    "name_native": "新城安勇",
-   "name_romaji": null,
+   "name_romaji": "Shinjo Anyu",
    "primary_style": "goju-ryu",
    "qid": null,
    "styles": [
@@ -37435,11 +37458,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Miyahira Masanobu",
-   "name_alt": [],
+   "name": "Masanobu Miyahira",
+   "name_alt": [
+    "Miyahira Masanobu"
+   ],
    "name_ascii": "Miyahira Masanobu",
    "name_native": "宮平昌信",
-   "name_romaji": null,
+   "name_romaji": "Miyahira Masanobu",
    "primary_style": "matayoshi-kobudo",
    "qid": null,
    "styles": [
@@ -37469,11 +37494,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Ishikawa Seigi",
-   "name_alt": [],
+   "name": "Seigi Ishikawa",
+   "name_alt": [
+    "Ishikawa Seigi"
+   ],
    "name_ascii": "Ishikawa Seigi",
    "name_native": "石川清義",
-   "name_romaji": null,
+   "name_romaji": "Ishikawa Seigi",
    "primary_style": "kobayashi-shorin-ryu",
    "qid": null,
    "styles": [
@@ -37503,11 +37530,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Ishikawa Seitoku",
-   "name_alt": [],
+   "name": "Seitoku Ishikawa",
+   "name_alt": [
+    "Ishikawa Seitoku"
+   ],
    "name_ascii": "Ishikawa Seitoku",
    "name_native": "石川精徳",
-   "name_romaji": null,
+   "name_romaji": "Ishikawa Seitoku",
    "primary_style": "kobayashi-shorin-ryu",
    "qid": null,
    "styles": [
@@ -37537,11 +37566,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Takara Shintoku",
-   "name_alt": [],
+   "name": "Shintoku Takara",
+   "name_alt": [
+    "Takara Shintoku"
+   ],
    "name_ascii": "Takara Shintoku",
    "name_native": "高良信徳",
-   "name_romaji": null,
+   "name_romaji": "Takara Shintoku",
    "primary_style": "uechi-ryu",
    "qid": null,
    "styles": [
@@ -37571,11 +37602,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Miyagi Takeshi",
-   "name_alt": [],
+   "name": "Takeshi Miyagi",
+   "name_alt": [
+    "Miyagi Takeshi"
+   ],
    "name_ascii": "Miyagi Takeshi",
    "name_native": "宮城驍",
-   "name_romaji": null,
+   "name_romaji": "Miyagi Takeshi",
    "primary_style": "kobayashi-shorin-ryu",
    "qid": null,
    "styles": [
@@ -37605,11 +37638,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Takushi Seiki",
-   "name_alt": [],
+   "name": "Seiki Takushi",
+   "name_alt": [
+    "Takushi Seiki"
+   ],
    "name_ascii": "Takushi Seiki",
    "name_native": "澤岻政輝",
-   "name_romaji": null,
+   "name_romaji": "Takushi Seiki",
    "primary_style": "goju-ryu",
    "qid": null,
    "styles": [
@@ -37640,11 +37675,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Nakamura Seiyū",
-   "name_alt": [],
+   "name": "Seiyū Nakamura",
+   "name_alt": [
+    "Nakamura Seiyū"
+   ],
    "name_ascii": "Nakamura Seiyū",
    "name_native": "中村清祐",
-   "name_romaji": null,
+   "name_romaji": "Nakamura Seiyū",
    "primary_style": "shorin-ryu-shidokan",
    "qid": null,
    "styles": [
@@ -37675,11 +37712,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Nakaza Seiei",
-   "name_alt": [],
+   "name": "Seiei Nakaza",
+   "name_alt": [
+    "Nakaza Seiei"
+   ],
    "name_ascii": "Nakaza Seiei",
    "name_native": "仲座清栄",
-   "name_romaji": null,
+   "name_romaji": "Nakaza Seiei",
    "primary_style": "shorin-ryu-shorinkan",
    "qid": null,
    "styles": [
@@ -37745,11 +37784,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Matsuda Yoshio",
-   "name_alt": [],
+   "name": "Yoshio Matsuda",
+   "name_alt": [
+    "Matsuda Yoshio"
+   ],
    "name_ascii": "Matsuda Yoshio",
    "name_native": "松田義雄",
-   "name_romaji": null,
+   "name_romaji": "Matsuda Yoshio",
    "primary_style": "uechi-ryu",
    "qid": null,
    "styles": [
@@ -37813,11 +37854,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Shima Isao",
-   "name_alt": [],
+   "name": "Isao Shima",
+   "name_alt": [
+    "Shima Isao"
+   ],
    "name_ascii": "Shima Isao",
    "name_native": "島勇夫",
-   "name_romaji": null,
+   "name_romaji": "Shima Isao",
    "primary_style": "matsubayashi-ryu",
    "qid": null,
    "styles": [
@@ -37882,11 +37925,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Gibo Giyu",
-   "name_alt": [],
+   "name": "Giyu Gibo",
+   "name_alt": [
+    "Gibo Giyu"
+   ],
    "name_ascii": "Gibo Giyu",
    "name_native": "儀保宜裕",
-   "name_romaji": null,
+   "name_romaji": "Gibo Giyu",
    "primary_style": "kobayashi-shorin-ryu",
    "qid": null,
    "styles": [
@@ -37917,11 +37962,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Tomimoto Yuko",
-   "name_alt": [],
+   "name": "Yuko Tomimoto",
+   "name_alt": [
+    "Tomimoto Yuko"
+   ],
    "name_ascii": "Tomimoto Yuko",
    "name_native": "富本裕宏",
-   "name_romaji": null,
+   "name_romaji": "Tomimoto Yuko",
    "primary_style": "okinawan-kobudo",
    "qid": null,
    "styles": [
@@ -38021,11 +38068,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Kina Seikō",
-   "name_alt": [],
+   "name": "Seikō Kina",
+   "name_alt": [
+    "Kina Seikō"
+   ],
    "name_ascii": "Kina Seikō",
    "name_native": "喜納正興",
-   "name_romaji": null,
+   "name_romaji": "Kina Seikō",
    "primary_style": "goju-ryu",
    "qid": null,
    "styles": [
@@ -38055,11 +38104,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Wakugawa Kōsei",
-   "name_alt": [],
+   "name": "Kōsei Wakugawa",
+   "name_alt": [
+    "Wakugawa Kōsei"
+   ],
    "name_ascii": "Wakugawa Kōsei",
    "name_native": "湧川幸盛",
-   "name_romaji": null,
+   "name_romaji": "Wakugawa Kōsei",
    "primary_style": "goju-ryu",
    "qid": null,
    "styles": [
@@ -38090,11 +38141,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Shimabukuro Katsuyuki",
-   "name_alt": [],
+   "name": "Katsuyuki Shimabukuro",
+   "name_alt": [
+    "Shimabukuro Katsuyuki"
+   ],
    "name_ascii": "Shimabukuro Katsuyuki",
    "name_native": "島袋勝之",
-   "name_romaji": null,
+   "name_romaji": "Shimabukuro Katsuyuki",
    "primary_style": "kobayashi-shorin-ryu",
    "qid": null,
    "styles": [
@@ -38158,11 +38211,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Inada Hiroshi",
-   "name_alt": [],
+   "name": "Hiroshi Inada",
+   "name_alt": [
+    "Inada Hiroshi"
+   ],
    "name_ascii": "Inada Hiroshi",
    "name_native": "稲田弘",
-   "name_romaji": null,
+   "name_romaji": "Inada Hiroshi",
    "primary_style": "uechi-ryu",
    "qid": null,
    "styles": [
@@ -38228,11 +38283,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Arakaki Isamu",
-   "name_alt": [],
+   "name": "Isamu Arakaki",
+   "name_alt": [
+    "Arakaki Isamu"
+   ],
    "name_ascii": "Arakaki Isamu",
    "name_native": "新垣勇",
-   "name_romaji": null,
+   "name_romaji": "Arakaki Isamu",
    "primary_style": "kobayashi-shorin-ryu",
    "qid": null,
    "styles": [
@@ -38297,11 +38354,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Takamiyagi Tetsuo",
-   "name_alt": [],
+   "name": "Tetsuo Takamiyagi",
+   "name_alt": [
+    "Takamiyagi Tetsuo"
+   ],
    "name_ascii": "Takamiyagi Tetsuo",
    "name_native": "高宮城鉄男",
-   "name_romaji": null,
+   "name_romaji": "Takamiyagi Tetsuo",
    "primary_style": "shorin-ryu",
    "qid": null,
    "styles": [
@@ -38333,11 +38392,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Tsuha Kiyoshi",
-   "name_alt": [],
+   "name": "Kiyoshi Tsuha",
+   "name_alt": [
+    "Tsuha Kiyoshi"
+   ],
    "name_ascii": "Tsuha Kiyoshi",
    "name_native": "津波清",
-   "name_romaji": null,
+   "name_romaji": "Tsuha Kiyoshi",
    "primary_style": "kobayashi-shorin-ryu",
    "qid": null,
    "styles": [
@@ -38368,11 +38429,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Kuba Yoshio",
-   "name_alt": [],
+   "name": "Yoshio Kuba",
+   "name_alt": [
+    "Kuba Yoshio"
+   ],
    "name_ascii": "Kuba Yoshio",
    "name_native": "久場良男",
-   "name_romaji": null,
+   "name_romaji": "Kuba Yoshio",
    "primary_style": "goju-ryu",
    "qid": null,
    "styles": [
@@ -38402,11 +38465,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Kanagusuku Eiki",
-   "name_alt": [],
+   "name": "Eiki Kanagusuku",
+   "name_alt": [
+    "Kanagusuku Eiki"
+   ],
    "name_ascii": "Kanagusuku Eiki",
    "name_native": "金城榮喜",
-   "name_romaji": null,
+   "name_romaji": "Kanagusuku Eiki",
    "primary_style": "okinawan-kobudo",
    "qid": null,
    "styles": [
@@ -38471,11 +38536,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Kakazu Mitsuo",
-   "name_alt": [],
+   "name": "Mitsuo Kakazu",
+   "name_alt": [
+    "Kakazu Mitsuo"
+   ],
    "name_ascii": "Kakazu Mitsuo",
    "name_native": "嘉数光雄",
-   "name_romaji": null,
+   "name_romaji": "Kakazu Mitsuo",
    "primary_style": "okinawan-kobudo",
    "qid": null,
    "styles": [
@@ -38505,11 +38572,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Higa Yoshio",
-   "name_alt": [],
+   "name": "Yoshio Higa",
+   "name_alt": [
+    "Higa Yoshio"
+   ],
    "name_ascii": "Higa Yoshio",
    "name_native": "比嘉敏雄",
-   "name_romaji": null,
+   "name_romaji": "Higa Yoshio",
    "primary_style": "uechi-ryu",
    "qid": null,
    "styles": [
@@ -38540,11 +38609,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Iha Kōtarō",
-   "name_alt": [],
+   "name": "Kōtarō Iha",
+   "name_alt": [
+    "Iha Kōtarō"
+   ],
    "name_ascii": "Iha Kōtarō",
    "name_native": "伊波光太郎",
-   "name_romaji": null,
+   "name_romaji": "Iha Kōtarō",
    "primary_style": "okinawan-kobudo",
    "qid": null,
    "styles": [
@@ -38575,11 +38646,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Taira Yoshio",
-   "name_alt": [],
+   "name": "Yoshio Taira",
+   "name_alt": [
+    "Taira Yoshio"
+   ],
    "name_ascii": "Taira Yoshio",
    "name_native": "平良吉雄",
-   "name_romaji": null,
+   "name_romaji": "Taira Yoshio",
    "primary_style": "goju-ryu",
    "qid": null,
    "styles": [
@@ -38609,11 +38682,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Chinen Masatsune",
-   "name_alt": [],
+   "name": "Masatsune Chinen",
+   "name_alt": [
+    "Chinen Masatsune"
+   ],
    "name_ascii": "Chinen Masatsune",
    "name_native": "知念正常",
-   "name_romaji": null,
+   "name_romaji": "Chinen Masatsune",
    "primary_style": "goju-ryu",
    "qid": null,
    "styles": [
@@ -38643,11 +38718,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Senaga Yoshitsune",
-   "name_alt": [],
+   "name": "Yoshitsune Senaga",
+   "name_alt": [
+    "Senaga Yoshitsune"
+   ],
    "name_ascii": "Senaga Yoshitsune",
    "name_native": "瀬長義常",
-   "name_romaji": null,
+   "name_romaji": "Senaga Yoshitsune",
    "primary_style": "uechi-ryu",
    "qid": null,
    "styles": [
@@ -38711,11 +38788,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Miyagi Minoru",
-   "name_alt": [],
+   "name": "Minoru Miyagi",
+   "name_alt": [
+    "Miyagi Minoru"
+   ],
    "name_ascii": "Miyagi Minoru",
    "name_native": "宮城實",
-   "name_romaji": null,
+   "name_romaji": "Miyagi Minoru",
    "primary_style": "uechi-ryu",
    "qid": null,
    "styles": [
@@ -38745,11 +38824,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Miyazato Kōsuke",
-   "name_alt": [],
+   "name": "Kōsuke Miyazato",
+   "name_alt": [
+    "Miyazato Kōsuke"
+   ],
    "name_ascii": "Miyazato Kōsuke",
    "name_native": "宮里幸助",
-   "name_romaji": null,
+   "name_romaji": "Miyazato Kōsuke",
    "primary_style": "ryukyu-kobudo-akamine",
    "qid": null,
    "styles": [
@@ -38780,11 +38861,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Hanashiro Tetsuo",
-   "name_alt": [],
+   "name": "Tetsuo Hanashiro",
+   "name_alt": [
+    "Hanashiro Tetsuo"
+   ],
    "name_ascii": "Hanashiro Tetsuo",
    "name_native": "玻名城哲夫",
-   "name_romaji": null,
+   "name_romaji": "Hanashiro Tetsuo",
    "primary_style": "okinawan-karate-generic",
    "qid": null,
    "styles": [
@@ -38814,11 +38897,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Genka Noritsune",
-   "name_alt": [],
+   "name": "Noritsune Genka",
+   "name_alt": [
+    "Genka Noritsune"
+   ],
    "name_ascii": "Genka Noritsune",
    "name_native": "源河徳恒",
-   "name_romaji": null,
+   "name_romaji": "Genka Noritsune",
    "primary_style": "shorin-ryu-shorinkan",
    "qid": null,
    "styles": [
@@ -38848,11 +38933,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Matsuda Yoshimasa",
-   "name_alt": [],
+   "name": "Yoshimasa Matsuda",
+   "name_alt": [
+    "Matsuda Yoshimasa"
+   ],
    "name_ascii": "Matsuda Yoshimasa",
    "name_native": "松田芳正",
-   "name_romaji": null,
+   "name_romaji": "Matsuda Yoshimasa",
    "primary_style": "shorin-ryu",
    "qid": null,
    "styles": [
@@ -38883,11 +38970,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Yonamine Ikuo",
-   "name_alt": [],
+   "name": "Ikuo Yonamine",
+   "name_alt": [
+    "Yonamine Ikuo"
+   ],
    "name_ascii": "Yonamine Ikuo",
    "name_native": "与那嶺育孝",
-   "name_romaji": null,
+   "name_romaji": "Yonamine Ikuo",
    "primary_style": "goju-ryu",
    "qid": null,
    "styles": [
@@ -38918,11 +39007,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Nakamoto Eishō",
-   "name_alt": [],
+   "name": "Eishō Nakamoto",
+   "name_alt": [
+    "Nakamoto Eishō"
+   ],
    "name_ascii": "Nakamoto Eishō",
    "name_native": "仲本英征",
-   "name_romaji": null,
+   "name_romaji": "Nakamoto Eishō",
    "primary_style": "goju-ryu",
    "qid": null,
    "styles": [
@@ -38953,11 +39044,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Shimabukuro Tsuneo",
-   "name_alt": [],
+   "name": "Tsuneo Shimabukuro",
+   "name_alt": [
+    "Shimabukuro Tsuneo"
+   ],
    "name_ascii": "Shimabukuro Tsuneo",
    "name_native": "島袋常雄",
-   "name_romaji": null,
+   "name_romaji": "Shimabukuro Tsuneo",
    "primary_style": "uechi-ryu",
    "qid": null,
    "styles": [
@@ -38988,11 +39081,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Maeda Kiyomasa",
-   "name_alt": [],
+   "name": "Kiyomasa Maeda",
+   "name_alt": [
+    "Maeda Kiyomasa"
+   ],
    "name_ascii": "Maeda Kiyomasa",
    "name_native": "前田清正",
-   "name_romaji": null,
+   "name_romaji": "Maeda Kiyomasa",
    "primary_style": "matsubayashi-ryu",
    "qid": null,
    "styles": [
@@ -39023,11 +39118,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Gushiken Shintoku",
-   "name_alt": [],
+   "name": "Shintoku Gushiken",
+   "name_alt": [
+    "Gushiken Shintoku"
+   ],
    "name_ascii": "Gushiken Shintoku",
    "name_native": "具志堅新徳",
-   "name_romaji": null,
+   "name_romaji": "Gushiken Shintoku",
    "primary_style": "goju-ryu",
    "qid": null,
    "styles": [
@@ -42321,11 +42418,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Higa Peechin",
-   "name_alt": [],
+   "name": "Peechin Higa",
+   "name_alt": [
+    "Higa Peechin"
+   ],
    "name_ascii": "Higa Peechin",
    "name_native": "比嘉親雲上",
-   "name_romaji": null,
+   "name_romaji": "Higa Peechin",
    "primary_style": "okinawan-kobudo",
    "qid": "Q1909096",
    "styles": [
@@ -51003,11 +51102,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Kinjo Hiroshi",
-   "name_alt": [],
+   "name": "Hiroshi Kinjo",
+   "name_alt": [
+    "Kinjo Hiroshi"
+   ],
    "name_ascii": "Kinjo Hiroshi",
    "name_native": null,
-   "name_romaji": null,
+   "name_romaji": "Kinjo Hiroshi",
    "primary_style": "karate-generic",
    "qid": null,
    "styles": [
@@ -51035,11 +51136,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Oyadomari Eiro",
-   "name_alt": [],
+   "name": "Eiro Oyadomari",
+   "name_alt": [
+    "Oyadomari Eiro"
+   ],
    "name_ascii": "Oyadomari Eiro",
    "name_native": null,
-   "name_romaji": null,
+   "name_romaji": "Oyadomari Eiro",
    "primary_style": "tomari-te",
    "qid": null,
    "styles": [
@@ -51129,11 +51232,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Toma Jugo",
-   "name_alt": [],
+   "name": "Jugo Toma",
+   "name_alt": [
+    "Toma Jugo"
+   ],
    "name_ascii": "Toma Jugo",
    "name_native": null,
-   "name_romaji": null,
+   "name_romaji": "Toma Jugo",
    "primary_style": null,
    "qid": null,
    "styles": [],
@@ -51429,11 +51534,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Miyagi Hisateru",
-   "name_alt": [],
+   "name": "Hisateru Miyagi",
+   "name_alt": [
+    "Miyagi Hisateru"
+   ],
    "name_ascii": "Miyagi Hisateru",
    "name_native": null,
-   "name_romaji": null,
+   "name_romaji": "Miyagi Hisateru",
    "primary_style": null,
    "qid": null,
    "styles": [],
@@ -51489,11 +51596,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Nakazato Bokuhitsu",
-   "name_alt": [],
+   "name": "Bokuhitsu Nakazato",
+   "name_alt": [
+    "Nakazato Bokuhitsu"
+   ],
    "name_ascii": "Nakazato Bokuhitsu",
    "name_native": null,
-   "name_romaji": null,
+   "name_romaji": "Nakazato Bokuhitsu",
    "primary_style": null,
    "qid": null,
    "styles": [],
@@ -51674,11 +51783,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Yonamine Isshun",
-   "name_alt": [],
+   "name": "Isshun Yonamine",
+   "name_alt": [
+    "Yonamine Isshun"
+   ],
    "name_ascii": "Yonamine Isshun",
    "name_native": null,
-   "name_romaji": null,
+   "name_romaji": "Yonamine Isshun",
    "primary_style": null,
    "qid": null,
    "styles": [],
@@ -51704,11 +51815,13 @@
    "locality": null,
    "n_descendants": 2,
    "n_students": 1,
-   "name": "Maeshiro Chotoku",
-   "name_alt": [],
+   "name": "Chotoku Maeshiro",
+   "name_alt": [
+    "Maeshiro Chotoku"
+   ],
    "name_ascii": "Maeshiro Chotoku",
    "name_native": null,
-   "name_romaji": null,
+   "name_romaji": "Maeshiro Chotoku",
    "primary_style": null,
    "qid": null,
    "styles": [],
@@ -51794,11 +51907,13 @@
    "locality": null,
    "n_descendants": 0,
    "n_students": 0,
-   "name": "Arakaki Ansei",
-   "name_alt": [],
+   "name": "Ansei Arakaki",
+   "name_alt": [
+    "Arakaki Ansei"
+   ],
    "name_ascii": "Arakaki Ansei",
    "name_native": null,
-   "name_romaji": null,
+   "name_romaji": "Arakaki Ansei",
    "primary_style": null,
    "qid": null,
    "styles": [],

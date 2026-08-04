@@ -508,21 +508,36 @@ function styleMembers(id) {
   return placed.filter(n => n.styles.some(s => set.has(s))).map(n => n.id);
 }
 
-function lineageSet(id, dir) {
+// depth === Infinity walks the whole lineage; depth === 1 gives only the people
+// this person taught directly, 2 adds their students, and so on
+function lineageSet(id, dir, depth) {
+  depth = depth === undefined ? Infinity : depth;
   const out = new Set([id]);
   const walk = (start, rel) => {
-    const q = [start];
+    const q = [[start, 0]];
     while (q.length) {
-      const u = q.shift();
+      const [u, d] = q.shift();
+      if (d >= depth) continue;
       for (const e of (rel.get(u) || [])) {
         const v = rel === parentsOf ? e.source : e.target;
-        if (!out.has(v)) { out.add(v); q.push(v); }
+        if (!out.has(v)) { out.add(v); q.push([v, d + 1]); }
       }
     }
   };
   if (dir !== "down") walk(id, parentsOf);
   if (dir !== "up") walk(id, childrenOf);
   return out;
+}
+// how many teaching generations a lineage actually runs to, so the generation
+// picker can stop offering depths that add nobody
+function lineageDepth(id, dir) {
+  let d = 0, prev = 1;
+  for (let k = 1; k <= 40; k++) {
+    const n = lineageSet(id, dir, k).size;
+    if (n === prev) break;
+    prev = n; d = k;
+  }
+  return d;
 }
 
 function applyFilters() {
@@ -632,9 +647,12 @@ addEventListener("keydown", ev => {
 
 /* ============ isolate mode (client-side re-layout) ============ */
 const savedPos = new Map();
-function isolateLayout(ids) {
+function isolateLayout(ids, compact) {
   const set = new Set(ids);
-  const PITCH = DATA.meta.row_h, COL_GAP = 90;
+  // a printed figure wants density: on screen the rows breathe, on paper that
+  // breathing room becomes acres of white space around unreadably small names
+  const PITCH = compact ? Math.round(DATA.meta.row_h * 0.62) : DATA.meta.row_h;
+  const COL_GAP = compact ? 46 : 90;
   const gmin = Math.min(...ids.map(i => byId.get(i).gen));
   const layers = [];
   for (const id of ids) {
@@ -1329,21 +1347,64 @@ function openDetail(id) {
   }
   if (pos.has(id) && n.connected) {
     const h4p = document.createElement("h4"); h4p.textContent = "Publish"; panel.appendChild(h4p);
-    const wrap = document.createElement("div"); wrap.style.display = "flex"; wrap.style.gap = "6px";
+
+    // How many teaching generations to include. A whole clade is usually far too
+    // big to read on a page; one or two generations is the figure people want.
+    const maxD = lineageDepth(id, state.dir);
+    const gsel = document.createElement("div"); gsel.className = "gen-pick";
+    const gLab = document.createElement("label"); gLab.textContent = "Generations";
+    gsel.appendChild(gLab);
+    const opts = [];
+    for (let k = 1; k <= Math.min(maxD, 5); k++) opts.push([String(k), k]);
+    if (maxD > 5) opts.push(["n…", "n"]);
+    opts.push(["all", Infinity]);
+    let chosen = Math.min(2, maxD);                  // a readable default
+    const counts = document.createElement("span"); counts.className = "gen-count";
+    const btns = [];
+    const paint = () => {
+      btns.forEach(b => b.classList.toggle("on", b._v === chosen));
+      const nn = lineageSet(id, state.dir, chosen).size;
+      counts.textContent = nn + (nn === 1 ? " person" : " people")
+        + (chosen === Infinity ? " (whole lineage)" : "");
+    };
+    for (const [lbl, v] of opts) {
+      const b = document.createElement("button");
+      b.className = "linklike gen-b"; b.textContent = lbl; b._v = v;
+      b.onclick = () => {
+        if (v === "n") {
+          const t = prompt("How many teaching generations? (1–" + maxD + ")", String(maxD));
+          if (t === null) return;
+          const k = Math.max(1, Math.min(maxD, parseInt(t, 10) || 1));
+          chosen = k; b.textContent = "n=" + k; b._v = k;
+        } else chosen = v;
+        paint();
+      };
+      btns.push(b); gsel.appendChild(b);
+    }
+    gsel.appendChild(counts);
+    panel.appendChild(gsel);
+    paint();
+
+    const wrap = document.createElement("div"); wrap.style.display = "flex";
+    wrap.style.gap = "6px"; wrap.style.flexWrap = "wrap"; wrap.style.marginTop = "6px";
     for (const [lbl, fmt] of [["⬇ SVG", "svg"], ["PDF", "pdf"], ["PNG", "png"],
-                              ["JPG", "jpg"], ["TIFF", "tiff"]]) {
+                              ["JPG", "jpg"], ["TIFF", "tiff"], ["CSV", "csv"], ["JSON", "json"]]) {
       const b = document.createElement("button"); b.className = "btn"; b.textContent = lbl;
-      b.onclick = () => exportClade([...lineageSet(id, state.dir)],
-                                    "The lineage of " + eff(n).name, fmt);
+      b.onclick = () => {
+        const ids = [...lineageSet(id, state.dir, chosen)];
+        const gtag = chosen === Infinity ? "" : " · " + chosen + " generation"
+                     + (chosen === 1 ? "" : "s");
+        if (fmt === "csv" || fmt === "json") return exportSubset(ids, eff(n).name, fmt);
+        exportClade(ids, "The lineage of " + eff(n).name, fmt, gtag.replace(/^ · /, ""));
+      };
       wrap.appendChild(b);
     }
     panel.appendChild(wrap);
-    const nDesc = lineageSet(id, state.dir).size;
     const pn = document.createElement("div"); pn.className = "edit-note";
-    pn.textContent = "A chart of this clade alone (" + nDesc + " people), re-laid out for print. "
-      + "SVG is vector, so it stays sharp at any size — use it for publication. PNG is capped by "
-      + "the browser and is downscaled for very large clades. The direction selector in the focus "
-      + "chip chooses teachers, students, or both.";
+    pn.textContent = "The chart is re-laid out compactly for print, so it carries no empty space "
+      + "from the main map. SVG and PDF are the publication formats; CSV and JSON give you the "
+      + "underlying data for your own analysis. Teachers, students or both is set by the "
+      + "direction selector in the focus chip.";
     panel.appendChild(pn);
   }
   const note = document.createElement("div"); note.className = "edit-note";
@@ -1800,6 +1861,58 @@ function exportPDF(opts) {
   });
 }
 
+/* ============ data exports for a chosen subset (a person's clade, a style) ====
+   The client analyses this material in other tools, so every image export has a
+   data twin: the same people and links as CSV (two files) or as JSON.          */
+function exportSubset(idArr, label, fmt) {
+  const ids = new Set(idArr.filter(i => byId.has(i)));
+  if (!ids.size) { toast("Nothing to export."); return; }
+  const people = [...ids].map(i => byId.get(i));
+  const links = DATA.edges.filter(e => ids.has(e.source) && ids.has(e.target));
+  const cur = curator();
+  const slug = slugify(label);
+  const kataFor = nm => (DATA.kata || [])
+    .filter(k => (k.introduced_by || []).some(p => p.name === nm) || k.origin_person === nm)
+    .map(k => k.name).join("; ");
+  if (fmt === "json") {
+    const pubNode = ({ wiki, flags, ...r }) => r;
+    const pubEdge = ({ evidence, ...r }) => r;
+    download("lineage-" + slug + ".json", new Blob([JSON.stringify({
+      subject: label, exported: new Date().toISOString().slice(0, 10),
+      counts: { people: people.length, links: links.length },
+      people: people.map(n => cur ? n : pubNode(n)),
+      links: links.map(e => cur ? e : pubEdge(e)),
+    }, null, 1)], { type: "application/json" }));
+    toast("Exported " + people.length + " people and " + links.length + " links as JSON.");
+    return;
+  }
+  // two CSVs, because a node table and an edge table is what network tools expect
+  const nrows = [[...(cur ? ["id"] : []), "name", "native", "born", "died", "trained_from",
+                  "style", "family", "locality", "generation", "students", "descendants",
+                  "honours", "kata"]];
+  for (const n of people) {
+    const f = eff(n);
+    nrows.push([...(cur ? [n.id] : []),
+      f.name, f.native || "", n.birth || "", n.death || "", n.trained || "",
+      n.styleLabel || "", n.family || "", n.locality || "",
+      n.gen === undefined ? "" : n.gen, n.students || 0, n.desc || 0,
+      (n.hon || []).join("; "), kataFor(f.name)]);
+  }
+  const erows = [["teacher", "student", "confidence", "primary",
+                  ...(cur ? ["evidence"] : [])]];
+  for (const e of links) {
+    erows.push([eff(byId.get(e.source)).name, eff(byId.get(e.target)).name,
+                e.confidence, e.primary ? "yes" : "",
+                ...(cur ? [(e.evidence || []).join(" | ")] : [])]);
+  }
+  const csv = r => "\ufeff" + r.map(x => x.map(csvEsc).join(",")).join("\n");
+  download("lineage-" + slug + "-people.csv", new Blob([csv(nrows)], { type: "text/csv" }));
+  setTimeout(() => download("lineage-" + slug + "-links.csv",
+    new Blob([csv(erows)], { type: "text/csv" })), 350);
+  toast("Exported two CSVs: " + people.length + " people and " + links.length
+      + " teacher-to-student links, ready for Gephi, Cytoscape, R or Excel.");
+}
+
 /* ============ clade posters: one click → publishable lineage chart ============ */
 function slugify(s) {
   return s.toLowerCase().normalize("NFKD").replace(/[^\w]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 60);
@@ -1818,7 +1931,7 @@ function exportClade(idArr, title, format, credit) {
   if (ids.length < 2) { alert("Not enough placed people to draw this clade."); return; }
   const savedPos2 = new Map([...pos].map(([k, p]) => [k, { ...p }]));
   const savedIso = state.isolated, savedFocus = state.focus, savedStyle = state.styleSet;
-  const layout = isolateLayout(ids);
+  const layout = isolateLayout(ids, true);   // posters use the compact layout
   for (const [k, p] of layout) pos.set(k, p);
   state.isolated = ids;
   // a poster shows its whole clade at full strength: the on-screen selection would
