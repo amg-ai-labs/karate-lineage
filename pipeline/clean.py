@@ -333,6 +333,9 @@ def main():
                           "interaction": "teacher_of",
                           "evidence": r.get("evidence", "research"),
                           "confidence": r.get("confidence", "low"),
+                          # a researched ruling on whether this link carried the
+                          # style; read later when picking the style-bearing teacher
+                          "primary": r.get("primary", ""),
                           "source_name_ascii": r.get("source_name", ""),
                           "target_name_ascii": r.get("target_name", "")})
         applied.append({"kind": "edge_addition",
@@ -391,6 +394,7 @@ def main():
             continue
         edges.append({"source": s, "target": t, "confidence": e.get("confidence", ""),
                       "evidence": [p.strip() for p in e.get("evidence", "").split("|") if p.strip()],
+                      "primary": e.get("primary", ""),
                       "inferred_flip": inferred_flip})
 
     for key, r in edge_actions.items():
@@ -408,6 +412,10 @@ def main():
                 prev["confidence"] = e["confidence"]
             prev["evidence"] = sorted(set(prev["evidence"]) | set(e["evidence"]))
             prev["inferred_flip"] = prev["inferred_flip"] or e["inferred_flip"]
+            # a researched ruling on the same pair should not be lost to whichever
+            # copy of the edge happened to be read first
+            if not prev.get("primary") and e.get("primary"):
+                prev["primary"] = e["primary"]
         else:
             by_key[k] = e
     edges = list(by_key.values())

@@ -1212,6 +1212,10 @@ function renderKataPanel(back) {
         d.appendChild(e);
       };
       add("Meaning:", k.meaning);
+      // The Shotokan names are renamings of Okinawan originals, and the client
+      // wanted that visible rather than implied by a note.
+      add("Renamed from:", k.renamed_from);
+      add("Taught at:", k.level ? k.level + " level" : "");
       add("Introduced:", k.era);
       addPerson("Likely creator:", k.origin_person, k.origin_place);
       addPerson("Likely modifier:", k.modifier, k.modified_era);

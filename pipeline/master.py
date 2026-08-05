@@ -195,6 +195,8 @@ for k in sorted(kata, key=lambda k: (k.get("family", ""), k["name"])):
         "name": k["name"], "native": k.get("native") or "",
         "variants": "; ".join(k.get("variants") or []),
         "family": k.get("family", ""), "styles": "|".join(k.get("style_ids") or []),
+        "level": k.get("level", ""),
+        "renamed_from": k.get("renamed_from", ""),
         "meaning": k.get("meaning", ""), "era": k.get("era", ""),
         "origin_person": k.get("origin_person", ""), "origin_place": k.get("origin_place", ""),
         "modifier": k.get("modifier", ""), "modified_era": k.get("modified_era", ""),

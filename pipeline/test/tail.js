@@ -116,6 +116,11 @@ try {
   if (!chinto) throw new Error("Chinto missing from the kata list");
   if (!chinto.origin_person && !(chinto.introduced_by || []).length)
     throw new Error("Chinto still has no attached person");
+  var lvl = DATA.kata.filter(k => k.level).length;
+  var renamed = DATA.kata.filter(k => k.renamed_from).length;
+  if (lvl < 200) throw new Error("only " + lvl + " kata carry a level");
+  if (renamed < 20) throw new Error("only " + renamed + " kata record a renaming");
+  console.log("kata level/renaming: " + lvl + " levelled, " + renamed + " renamed from an Okinawan original");
   var disputed = DATA.kata.filter(k => k.disputed).length;
   var withProv = DATA.kata.filter(k => k.provenance).length;
   var withMod = DATA.kata.filter(k => k.modifier).length;

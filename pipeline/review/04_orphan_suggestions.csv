@@ -5,16 +5,17 @@ B0009,Eiki Kaneji,,Eiki Kurashita (A0133)
 B0013,Bushi Kunishi,,Bushi Nagahama (W0015)
 B0014,Jerry Gold,karate-generic,Jerry Figgiani (A0062)
 B0016,Kencho Miyagi,,An'ichi Miyagi (A0011); Ken Miyagi (A0013); Takao Miyagi (B0020); Hiroshi Miyagi (C00113); Noboru Miyagi (C00239)
-B0018,Yamada (of Tomari),tomari-te,Haruyoshi Yamada (A0080); Dr Minoru Yamada (C00047); Michio Yamada (J0094); Tatsuo Yamada (Q11470681)
+B0018,Yamada (of Tomari),tomari-te,Haruyoshi Yamada (A0080); Dr Minoru Yamada (C00047); Michio Yamada (J0094); Tatsuo Yamada (Q11470681); Masatoshi Yamada (R0143)
 B0021,Arakaki no TANMEI,,Toshimitsu Arakaki (A0056); Seiki Arakaki (C00279); Morimasa Arakaki (C00374); Arakaki Isamu (J0027); Akiyoshi Arakaki (J0104)
 B0026,Kenwa Kanna,,Kenwa Mabuni (Q453505)
 C00017,Chobi Kishaba,karate-generic,"Chogi Kishaba (Q5103850, shared style family); Chokei Kishaba (Q5104212, shared style family)"
 C00102,Junjiro Nishime,karate-generic,Kiyoshi Nishime (A0126)
 C00106,Kaoru Kojo,karate-generic,"Akahige Kojo (C00001, shared style family); Kaoru Kinjo (C00105, shared style family); Kafu Kojo (C00107, shared style family); Kaho Kojo (C00108, shared style family); Isei Kojo (C00141, shared style family)"
 C00111,Kanaa Kanagusuku,karate-generic,"Sanda Kanagusuku (C00450, shared style family)"
+C00118,Sakuhei Yoshida,karate-generic,"Yoshida Kotaro (R0213, shared style family)"
 C00153,Jiro Kojo,karate-generic,"Akahige Kojo (C00001, shared style family); Jiro Shiroma (C00094, shared style family); Jiro Uehara (C00095, shared style family); Kafu Kojo (C00107, shared style family); Kaho Kojo (C00108, shared style family)"
 C00179,Koragwa Tsuken,karate-generic,"Tsuken Akachu (C00626, shared style family); Tsuken Hantaka (C00627, shared style family); Tsuken Shosoku Oyakata (A0025)"
-C00190,Kunio Sunagawa,karate-generic,"Kunio Furugen (C00188, shared style family); Kunio Higa (C00189, shared style family)"
+C00190,Kunio Sunagawa,karate-generic,"Kunio Furugen (C00188, shared style family); Kunio Higa (C00189, shared style family); Kunio Tatsuno (R0021)"
 C00227,Kenichi Kochi,karate-generic,"Katsuhide Kochi (C00209, shared style family); Katsumori Kochi (C00213, shared style family); Kenichi Kanari (C00225, shared style family); Kenichi Kinjo (C00226, shared style family); Kenichi Sawai (Q1494112, shared style family)"
 C00228,Minoru Kinjo,karate-generic,"Akio Kinjo (C00002, shared style family); Chinsaku Kinjo (C00016, shared style family); Dr Minoru Yamada (C00047, shared style family); Kaoru Kinjo (C00105, shared style family); Kyuyu Kinjo (C00192, shared style family)"
 C00233,Kenko Taira,karate-generic,"Hoshu Taira (C00130, shared style family); Kenko Chibana (C00231, shared style family); Kenko Nakaima (C00232, shared style family); Masaji Taira (Q6782405, shared style family); Taira Shinken (Q723832, shared style family)"
@@ -23,7 +24,7 @@ C00259,Saburo Miyagi,karate-generic,"Hiroshi Miyagi (C00113, shared style family
 C00267,Koji Oshiro,karate-generic,"Chojo Oshiro (C00025, shared style family); Hiroshi Oshiro (C00074, shared style family); Isao Oshiro (C00089, shared style family); Iko Oshiro (C00136, shared style family); Mamoru Oshiro (C00322, shared style family)"
 C00276,Seiji Inamine,karate-generic,"Seijin Inamine (C00471, shared style family); Seiji Nishimura (Q476441, shared style family); Seiji Isobe (Q780966, shared style family)"
 C00290,Seiyei Miyagi,karate-generic,"Hiroshi Miyagi (C00113, shared style family); Noboru Miyagi (C00239, shared style family); Koki Miyagi (C00282, shared style family); Seiyei Miyahira (C00291, shared style family); Masakazu Miyagi (C00329, shared style family)"
-C00331,Sonko Tamaki,karate-generic,"Haruo Tamaki (C00093, shared style family); Juei Tamaki (C00101, shared style family)"
+C00331,Sonko Tamaki,karate-generic,"Haruo Tamaki (C00093, shared style family); Juei Tamaki (C00101, shared style family); Takeshi Tamaki (R0105)"
 C00343,Masao Kinjo,karate-generic,"Akio Kinjo (C00002, shared style family); Chinsaku Kinjo (C00016, shared style family); Kaoru Kinjo (C00105, shared style family); Kyuyu Kinjo (C00192, shared style family); Kenichi Kinjo (C00226, shared style family)"
 C00346,Masaru Takamura,karate-generic,"Masaru Yonamine (C00347, shared style family); Masaru Shintani (Q23688927, shared style family); Masaru Watanabe (J0132); Sawayama Masaru (N0022); Takamura Seiko (W0008)"
 C00351,Taruu Kanagusuku,karate-generic,"Sanda Kanagusuku (C00450, shared style family)"
@@ -34,16 +35,15 @@ C00364,Meiyu Kinjo,karate-generic,"Akio Kinjo (C00002, shared style family); Chi
 C00369,Mitsuhiko Kinjo,karate-generic,"Akio Kinjo (C00002, shared style family); Chinsaku Kinjo (C00016, shared style family); Kaoru Kinjo (C00105, shared style family); Kyuyu Kinjo (C00192, shared style family); Kenichi Kinjo (C00226, shared style family)"
 C00387,Narihiko Takamura,karate-generic,Takamura Seiko (W0008)
 C00404,One-Eyed Toguchi,karate-generic,"Soko Toguchi (C00330, shared style family); Seikichi Toguchi (Q3954660, shared style family); One-Eyed Toguchi (B0022)"
-C00435,Ryomei Tamaki,karate-generic,"Haruo Tamaki (C00093, shared style family); Juei Tamaki (C00101, shared style family)"
+C00435,Ryomei Tamaki,karate-generic,"Haruo Tamaki (C00093, shared style family); Juei Tamaki (C00101, shared style family); Takeshi Tamaki (R0105)"
 C00501,Seiyu Yonaha,karate-generic,"Seiyu Arashiro (C00292, shared style family); Seiyu Nakasone (C00293, shared style family); Seiyu Nakamura (C00294, shared style family); Seisho Yonaha (C00491, shared style family); Seiyu Shinjo (A0008)"
 C00519,Shinyei Maeda,karate-generic,"Gisei Maeda (C00083, shared style family); Maeda PECHIN (C00195, shared style family); Shinyei Kaneshima (C00517, shared style family); Shinyei Kyan (C00518, shared style family); Maeda Kiyomasa (J0049)"
-C00567,Takashi Kiokawa,karate-generic,"Takashi Kinjo (C00566, shared style family); Takashi Azuma (Q4057557, shared style family); Takashi Kushida (Q7677342, shared style family); Takashi Shinjo (A0140)"
-C00573,Takeshi Naito,karate-generic,Takeshi Uema (A0033); Takeshi Shimoda (A0224); Miyagi Takeshi (J0008); Takeshi Uehara (J0087); Takeshi Oishi (J0116)
+C00567,Takashi Kiokawa,karate-generic,"Takashi Kinjo (C00566, shared style family); Takashi Azuma (Q4057557, shared style family); Takashi Kushida (Q7677342, shared style family); Takashi Shinjo (A0140); Takashi Miyagi (R0056)"
 C00636,Unta Kanagusuku,karate-generic,"Sanda Kanagusuku (C00450, shared style family)"
 C00641,Wan Shu,karate-generic,"Shu Shiwa (Zhou Zihe) (A0007, shared style family)"
 C00649,Yasutaka Taira,karate-generic,"Hoshu Taira (C00130, shared style family); Masaji Taira (Q6782405, shared style family); Taira Shinken (Q723832, shared style family); Yoshitaka Taira (A0055); Taira Yoshio (J0037)"
 C00652,Yoneo Yoshizato,karate-generic,"Shintaro Yoshizato (C00515, shared style family)"
-C00655,Yoshiaki Unno,karate-generic,"Yoshiaki Gakiya (C00653, shared style family); Yoshiaki Iwanishi (C00654, shared style family); Yoshiaki Ajari (A0097)"
+C00655,Yoshiaki Unno,karate-generic,"Yoshiaki Gakiya (C00653, shared style family); Yoshiaki Iwanishi (C00654, shared style family); Yoshiaki Ajari (A0097); Yoshiaki Nobukawa (R0013)"
 C00656,Yoshiji Tengan,karate-generic,"Yoshiji Soeno (Q6130268, shared style family)"
 J0012,Ōshiro Masatoshi,okinawan-karate-generic,"Chojo Oshiro (C00025, shared style family); Hiroshi Oshiro (C00074, shared style family); Isao Oshiro (C00089, shared style family); Iko Oshiro (C00136, shared style family); Mamoru Oshiro (C00322, shared style family)"
 J0018,Tomimoto Yuko,okinawan-kobudo,Yuko Hirayama (Q15845027)
@@ -52,39 +52,39 @@ J0033,Kinjō Kenpo,okinawan-karate-generic,"Akio Kinjo (C00002, shared style fam
 J0038,Chinen Masatsune,goju-ryu,"Teruo Chinen (Q3984846, shared style family); Chinen Umikana (A0125); Kosuke Chinen (C00182); Kenyu Chinen (C00245); Sanda Chinen (C00449)"
 J0040,Kiyūna Chōkō,shorin-ryu|risshikan,Choko Motobu (C00028); Choyu Kiyuna (C00044); Kiyuna PECHIN (C00257); Ryo Kiyuna (Q64574038)
 J0043,Hanashiro Tetsuo,okinawan-karate-generic,"Seisho Hanashiro (C00489, shared style family); Chomo Hanashiro (Q705617, shared style family); Takamiyagi Tetsuo (J0029); Tetsuo Narikawa (J0125)"
-J0054,Masaharu Fujiwara,dai-nippon-butokukai,Toshio Fujiwara (Q3532632)
-J0055,Yukiharu Miura,dai-nippon-butokukai,"Miyuki Miura (Q6884566, shared style family)"
-J0056,Manabu Adachi,dai-nippon-butokukai,"Yukio Adachi (C00666, shared style family); Manabu Murakami (A0195)"
+J0054,Masaharu Fujiwara,dai-nippon-butokukai,Toshio Fujiwara (Q3532632); Seiichi Fujiwara (R0086)
+J0055,Yukiharu Miura,dai-nippon-butokukai,"Miyuki Miura (Q6884566, shared style family); Hiroyuki Miura (R0006)"
+J0056,Manabu Adachi,dai-nippon-butokukai,"Yukio Adachi (C00666, shared style family); Manabu Murakami (A0195); Manabu Miyagi (R0058)"
 J0057,Masakatsu Tsujino,dai-nippon-butokukai,"Masakatsu Inezuka (C00327, shared style family)"
-J0059,Fuminori Yamada,dai-nippon-butokukai,"Dr Minoru Yamada (C00047, shared style family); Tatsuo Yamada (Q11470681, shared style family); Haruyoshi Yamada (A0080); Michio Yamada (J0094)"
+J0059,Fuminori Yamada,dai-nippon-butokukai,"Dr Minoru Yamada (C00047, shared style family); Tatsuo Yamada (Q11470681, shared style family); Haruyoshi Yamada (A0080); Michio Yamada (J0094); Masatoshi Yamada (R0143)"
 J0061,Yutaka Takeda,dai-nippon-butokukai,"Sokaku Takeda (A0233, shared style family); Yutaka Toyama (Q4023282, shared style family); Yutaka Yaguchi (Q8062088, shared style family)"
 J0062,Masahiko Uemura,dai-nippon-butokukai|shorin-ken,"Masahiko Tanaka (Q922328, shared style family); Takuya Uemura (A0192)"
 J0065,Akihito Komatsunomiya,dai-nippon-butokukai,"Akihito Yagi (Q11391351, shared style family)"
-J0076,Hiroyuki Hamada,koden-shindo-ryu|tomari-te|shuri-te|naha-te|japanese-karate-generic|karate-generic,"Hiroyuki Shinkai (C00080, shared style family); Tesshin Hamada (J0051, shared style family)"
-J0085,Mario McKenna,toon-ryu,Mario Topolsek (C00200)
+J0076,Hiroyuki Hamada,koden-shindo-ryu|tomari-te|shuri-te|naha-te|japanese-karate-generic|karate-generic,"Hiroyuki Shinkai (C00080, shared style family); Tesshin Hamada (J0051, shared style family); Hiroyuki Miura (R0006, shared style family); Hiroyuki Aoki (R0047, shared style family); Hiroyuki Koda (R0186, shared style family)"
+J0084,Shigemasa Yoshino,toon-ryu,Shigemasa Kawata (R0010)
 J0089,Kenji Uehara,motobu-udundi,"Seikichi Uehara (C00478, shared style family); Takeshi Uehara (J0087, shared style family); Marukawa Kenji (W0019, shared style family); Ko Uehara (B0001); Jiro Uehara (C00095)"
 J0092,Iko Kojo,kojo-ryu,"Akahige Kojo (C00001, shared style family); Kafu Kojo (C00107, shared style family); Kaho Kojo (C00108, shared style family); Isei Kojo (C00141, shared style family); Saikyo Kojo (C00263, shared style family)"
 J0093,Isho Kojo,kojo-ryu,"Akahige Kojo (C00001, shared style family); Kafu Kojo (C00107, shared style family); Kaho Kojo (C00108, shared style family); Isei Kojo (C00141, shared style family); Saikyo Kojo (C00263, shared style family)"
 J0128,Kiyohiko Tosa,genseiryu-butokukai,"Kiyohiko Higa (C00253, shared style family); Kunihiko Tosa (J0127, shared style family)"
-J0134,Eiichi Tanaka,shito-kai,"Masahiko Tanaka (Q922328, shared style family); Eiichi Miyazato (Q5349190)"
+J0134,Eiichi Tanaka,shito-kai,"Masahiko Tanaka (Q922328, shared style family); Eiichi Eriguchi (KP021); Eiichi Miyazato (Q5349190)"
 J0138,Haruyoshi Shimabukuro,uechi-ryu,"Shimabukuro Tsuneo (J0048, shared style family); Zenshun Shimabukuro (A0042); Zenji Shimabukuro (A0043); Eiko Shimabukuro (A0050); Haruyoshi Yamada (A0080)"
 J0139,Sadayuki Taira,meibukan,"Taira Yoshio (J0037, shared style family); Masaji Taira (Q6782405, shared style family); Yoshitaka Taira (A0055); Hoshu Taira (C00130); Taira Shinken (Q723832)"
 J0140,Yoshimasa Kakazu,shorin-ryu-kyudokan,"Matsuda Yoshimasa (J0045, shared style family); Kakazu Mitsuo (J0034)"
 J0144,Ippei Yagi,meibukan,"Meitetsu Yagi (A0134, shared style family); Akihiro Yagi (A0135, shared style family); Akihito Yagi (Q11391351, shared style family); Meitoku Yagi (Q16016038, shared style family); Meitatsu Yagi (Q6810356, shared style family)"
 J0145,Nobuko Oshiro,daishinkan,"Toshihiro Oshiro (Q7827674, shared style family); Zenei Oshiro (A0122); Chojo Oshiro (C00025); Hiroshi Oshiro (C00074); Isao Oshiro (C00089)"
-J0146,Toru Kadekaru,goju-ryu,Toru Urasoko (C00610); Toru Arakawa (Q21503589)
+J0146,Toru Kadekaru,goju-ryu,"Toru Miyagi (R0057, shared style family); Toru Urasoko (C00610); Toru Arakawa (Q21503589); Toru Takamizawa (R0175)"
 J0147,Kazuo Uezato,goju-ryu,"Kazuo Terauchi (A0015, shared style family); Kazuo Kishimoto (C00217); Kazuo Miyazato (C00218); Kazuo Tabata (C00219); Kazuo Sakai (Q16648173)"
 J0148,Kunio Uehara,shorin-ryu,Ko Uehara (B0001); Jiro Uehara (C00095); Isamu Uehara (C00139); Kunio Furugen (C00188); Kunio Higa (C00189)
 J0149,Eisho Nakazato,shorin-ryu,"Joen Nakazato (C00098, shared style family); Minoru Nakazato (C00368, shared style family); Takeshi Nakazato (J0143, shared style family); Shugoro Nakazato (Q3482635, shared style family); Hideo Nakazato (C00097)"
-J0150,Takashi Okuma,goju-ryu,"Takashi Shinjo (A0140, shared style family); Takashi Kinjo (C00566); Koichiro Okuma (Q15845026); Takashi Azuma (Q4057557); Takashi Kushida (Q7677342)"
+J0150,Takashi Okuma,goju-ryu,"Takashi Shinjo (A0140, shared style family); Takashi Miyagi (R0056, shared style family); Takashi Kinjo (C00566); Koichiro Okuma (Q15845026); Takashi Azuma (Q4057557)"
 J0151,Kim Un-yong,kukki-taekwondo,"Kim Ki-whang (A0157, shared style family); Kim Bok-man (J0152, shared style family); Kim Suk-kyu (J0160, shared style family); Kim Young-taek (J0169, shared style family); Kim Un-chang (J0172, shared style family)"
+J0176,Chang Ung,itf-chang-ung|itf-taekwondo,"Chinil Chang (R0211, shared style family)"
 J0181,Okamoto Minoru,renbukai,"Minoru Kawawada (Q1937515, shared style family); Minoru Mochizuki (Q1937662, shared style family); Minoru Higa (Q6869269, shared style family); Dr Minoru Yamada (C00047); Keisei Okamoto (C00223)"
 J0188,Taro Miyake,judo,"Taro Shimabuku (C00350, shared style family)"
-KN003,Soeishi Ryotoku,okinawan-kobudo,Soeishi (B0030)
 KN004,Hamahiga Pechin,okinawan-kobudo,"Tawata PECHIN (C00354, shared style family); Sakuma Pechin (A0030); Ishimine Pechin (A0236); Maeda PECHIN (C00195); Kiyuna PECHIN (C00257)"
 KN007,Tsuken Hantagwa,okinawan-kobudo,"Tsuken Shosoku Oyakata (A0025, shared style family); Tsuken Akachu (C00626); Tsuken Hantaka (C00627)"
 KP003,Chokuho Agena,,Chokuho Agena (N0140)
-KP004,Kenichi Yamashiro,,Kata Yamashiro (C00208); Kenichi Kanari (C00225); Kenichi Kinjo (C00226); Kenichi Yamashiro (N0117); Kenichi Sawai (Q1494112)
+KP004,Kenichi Yamashiro,matayoshi-kobudo|matayoshi-kodokan,Kata Yamashiro (C00208); Kenichi Kanari (C00225); Kenichi Kinjo (C00226); Kenichi Yamashiro (N0117); Kenichi Sawai (Q1494112)
 KP005,Choun Oyakata,,Tsuken Shosoku Oyakata (A0025)
 KP006,Gikei Yamazato,,Giki Yamazato (N0128)
 KP008,Wai Shinzan,,Wai Shin Zan (C00639)
@@ -94,19 +94,19 @@ KP013,Shoshin Miyahira,,Seiyei Miyahira (C00291); Miyahira Masanobu (J0004); Sho
 KP015,Kwak Kun-sik,,Kwak Kuen-sik (J0161)
 KP016,Lee Yong-sup,,Lee Kyo-yoon (A0172); Lee Yong-woo (A0173); Lee Chong-woo (A0176); Lee Nam-suk (A0177); Lee Bates (C00193)
 KP017,Kim Soon-bae,,Kim Ki-whang (A0157); Kim Diginakis (C00248); Kim Baylor (J0068); Kim Bok-man (J0152); Kim Suk-kyu (J0160)
-KP018,Han Young-tae,,Han Cha-kyo (A0178)
+KP018,Han Young-tae,,Han Cha-kyo (A0178); Han Bong-soo (R0208)
 KP019,Woo Jae-lim,,Woo Jong-lim (J0158)
-KP021,Eiichi Eriguchi,,Eiichi Miyazato (Q5349190)
 KP022,Kanken Oyadomari,,Konin Oyadomari (C00178); Kotsu Oyadomari (C00187); Kanken Toyama (Q3772405); Kokan Oyadomari (Q6426547)
 KP023,Satoru Shinki,,Satoru Araki (C00451); Satoru Suzuki (J0101)
 N0002,Jiryo Uezu,,Angi Uezu (Q4763171)
 N0006,Gikei Yamazato,,Giki Yamazato (N0128)
+N0035,Sada Sakugawa,,Sakugawa Masanobu (R0115)
 N0041,Magii Komesu,,Kiyoshi Komesu (C00256); Ushi Komesu (C00637)
 N0059,Haruko Matayoshi,,Yasushi Matayoshi (A0124); Matayoshi Seitoku (J0002); Shinchin Matayoshi (J0108); Shintoku Matayoshi (J0109); Shinko Matayoshi (Q1908088)
 N0062,Shoshin Miyahira,,Seiyei Miyahira (C00291); Miyahira Masanobu (J0004); Shoshin Nagamine (Q1963468); Katsuya Miyahira (Q3194253)
 N0065,Eigen Tomoyose,,Ryokichi Tomoyose (C00433); Ryuko Tomoyose (C00438); Ryuyu Tomoyose (C00441); Takamasa Tomoyose (J0133)
 N0076,Shoei Nakamura,,Tetsuji Nakamura (A0014); Heisaburo Nakamura (B0015); Ankichi Nakamura (C00006); Keikichi Nakamura (C00221); Kokichi Nakamura (C00281)
-N0084,Tsunetomo Yamamoto,,Katsuoh Yamamoto (A0027); Hideo Yamamoto (Q15987804)
+N0084,Tsunetomo Yamamoto,,Katsuoh Yamamoto (A0027); Hideo Yamamoto (Q15987804); Norihiro Yamamoto (R0080)
 N0137,Bunshiro Nagamine,,Tankichi Nagamine (C00349); Ichiro Nagamine (N0066); Shoshu Nagamine (N0096); Shoshin Nagamine (Q1963468); Takayoshi Nagamine (Q7677484)
 N0141,Kimiko Matayoshi,,Yasushi Matayoshi (A0124); Matayoshi Seitoku (J0002); Shinchin Matayoshi (J0108); Shintoku Matayoshi (J0109); Shinko Matayoshi (Q1908088)
 N0156,Ankei Oshiro,,Zenei Oshiro (A0122); Chojo Oshiro (C00025); Hiroshi Oshiro (C00074); Isao Oshiro (C00089); Iko Oshiro (C00136)
@@ -114,16 +114,16 @@ N0209,Masayuki Kinjo,,Seizan Kinjo (A0069); Tsuneo Kinjo (A0143); Arata Kinjo (A
 Q17225688,Kenji Kano,te|dai-nippon-butokukai,"Kenji Nakaima (C00229, shared style family); Kenji Yamaki (Q11258528, shared style family); Kenji Ushiro (Q11449231, shared style family); Kenji Kurosaki (Q1738762, shared style family); Kano Jigoro (Q190141, shared style family)"
 Q1909096,Higa Peechin,okinawan-kobudo|chinese-martial-arts|karate-generic|okinawan-karate-generic|chuan-fa|te,"Jintatsu Higa (C00152, shared style family); Kama Higa (C00173, shared style family); Kunio Higa (C00189, shared style family); Kisuke Higa (C00250, shared style family); Kiyohiko Higa (C00253, shared style family)"
 Q459861,Rina Takeda,shorin-ryu|karate-generic|te,"Sokaku Takeda (A0233, shared style family)"
-Q6227103,John Corcoran,te,"John Reeberg (Q3182349, shared style family); John Saxon (Q470591, shared style family); John E. Kennedy (A0108); John Sells (C00159)"
+Q6227103,John Corcoran,te,"John Reeberg (Q3182349, shared style family); John Saxon (Q470591, shared style family); John E. Kennedy (A0108); John Sells (C00159); John Shipes (R0116)"
 Q6419132,Kiyoshi Yoshimoti,niten-ichi-ryu|nihon-kobudo|sekiguchi-ryu|te,"Kiyoshi Komesu (C00256, shared style family); Kiyoshi Arakaki (Q11501557, shared style family); Kiyoshi Nishime (A0126); Kiyoshi Yamazaki (A0225); Tsuha Kiyoshi (J0030)"
 Q935081,Robert John Burke,shorin-ryu|karate-generic|te,"Robert Scaglione (A0059, shared style family); John E. Kennedy (A0108, shared style family); John Sells (C00159, shared style family); Robert Donnely (C00249, shared style family); Robert Heisner (Q136799394, shared style family)"
 W0003,Oyadomari Eiro,tomari-te,"Kokan Oyadomari (Q6426547, shared style family); Konin Oyadomari (C00178); Kotsu Oyadomari (C00187)"
 W0005,Tawada (of Shuri),,Tawada Shinboku (KN011)
-W0006,Toma Jugo,,Shian Toma (A0020); Seiki Toma (A0021); Jushin Toma (C00104); Shiyu Toma (C00520)
+W0006,Toma Jugo,,Shian Toma (A0020); Seiki Toma (A0021); Jushin Toma (C00104); Shiyu Toma (C00520); Isao Toma (R0122)
 W0009,Tawada Shinjun,,Tawada Shinboku (KN011)
-W0011,Nohara Hoichi ('Nohara no Ojisan'),,Takao Nohara (C00565)
+W0011,Nohara Hoichi ('Nohara no Ojisan'),,Takao Nohara (C00565); Nohara Kōei (R0088)
 W0014,Tamotsu Sachie,,Isamu Tamotsu (A0046); Iwao Tamotsu (A0047); Yuzo Tamotsu (A0048)
 W0017,Tawada 'Meganto' Shinboku,,Tawada Shinboku (KN011)
 W0024,Yonamine Isshun,,Iko Yonamine (C00137); Kosuke Yonamine (C00301); Masao Yonamine (C00345); Masaru Yonamine (C00347); Yonamine Ikuo (J0046)
-W0026,Kanegawa no Gibu,,Sokuichi Gibu (A0024); Kanegawa Gimu (KN005)
+W0026,Kanegawa no Gibu,,Sokuichi Gibu (A0024); Kanegawa Gimu (KN005); Gibu Makoto (R0087)
 W0027,Nakata Mizuhiko,,Pat Nakata (A0040)

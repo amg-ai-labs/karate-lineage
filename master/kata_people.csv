@@ -21,11 +21,12 @@ Bassai Sho,Anko Itosu,Anko Itosu,Q527422,yes,created,Itosu creation c. 1900s; Sh
 Bassai Sho,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,Itosu creation c. 1900s; Shotokan name adopted 1935,
 Bassai Sho,Masatoshi Nakayama,Masatoshi Nakayama,Q384558,yes,standardised,Itosu creation c. 1900s; Shotokan name adopted 1935,
 Bassai Sho,Masatoshi Nakayama,Masatoshi Nakayama and the JKA technical committee,Q384558,yes,modified,Itosu creation c. 1900s; Shotokan name adopted 1935,
-Chinto (Wado-ryu),Sokon Matsumura,attributed to Sokon Matsumura (folklore); Wado adaptation by Hironori Otsuka,Q715769,yes,originated,"Wado version 1930s (declared among the nine official kata, 1977)",
-Chinto (Wado-ryu),Sokon Matsumura,Sokon Matsumura,Q715769,yes,created,"Wado version 1930s (declared among the nine official kata, 1977)",
-Chinto (Wado-ryu),Hironori Otsuka,Hironori Otsuka,Q386415,yes,standardised,"Wado version 1930s (declared among the nine official kata, 1977)",
-Empi,Tomari-te lineage attributed to the Chinese envoy Wang Ji,Tomari-te lineage attributed to the Chinese envoy Wang Ji (Wanshu); renamed by Gichin Funakoshi,,"group or body, not an individual",originated,renamed 1935 (Wanshu lineage traditionally dated 1683),
-Empi,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,renamed 1935 (Wanshu lineage traditionally dated 1683),
+Chinto (Wado-ryu),Sokon Matsumura,attributed to Sokon Matsumura (folklore); Wado adaptation by Hironori Otsuka,Q715769,yes,originated,"Wado version 1930s (declared among the nine official kata, 1977)",yes
+Chinto (Wado-ryu),Sokon Matsumura,Sokon Matsumura,Q715769,yes,created,"Wado version 1930s (declared among the nine official kata, 1977)",yes
+Chinto (Wado-ryu),Hironori Otsuka,Hironori Otsuka,Q386415,yes,standardised,"Wado version 1930s (declared among the nine official kata, 1977)",yes
+Empi,Tomari-te lineage attributed to the Chinese envoy Wang Ji,Tomari-te lineage attributed to the Chinese envoy Wang Ji (Wanshu); renamed by Gichin Funakoshi,,"group or body, not an individual",originated,renamed 1935 (Wanshu lineage traditionally dated 1683),yes
+Empi,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,renamed 1935 (Wanshu lineage traditionally dated 1683),yes
+Empi,Gigo Funakoshi,Gigo (Yoshitaka) Funakoshi (Q628761); Masatoshi Nakayama (Q384558) and the JKA,Q628761,yes,modified,renamed 1935 (Wanshu lineage traditionally dated 1683),yes
 Enpi,Wang Ji,Wang Ji (Wanshu) per folklore; renamed by Gichin Funakoshi,C00641,yes,originated,renamed 1936; Wanshu lineage traditionally dated 1683,yes
 Enpi,Wang Ji,Wang Ji,C00641,yes,transmitted,renamed 1936; Wanshu lineage traditionally dated 1683,yes
 Enpi,Kosaku Matsumora,Kosaku Matsumora,Q3028499,yes,standardised,renamed 1936; Wanshu lineage traditionally dated 1683,yes
@@ -63,9 +64,10 @@ Hangetsu,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,renamed 1936; Seis
 Hangetsu,Gigo Funakoshi,Gigo Funakoshi,Q628761,yes,modified,renamed 1936; Seisan among the oldest kata on Okinawa,yes
 Hangetsu,Masatoshi Nakayama,Masatoshi Nakayama,Q384558,yes,standardised,renamed 1936; Seisan among the oldest kata on Okinawa,yes
 Hangetsu,Gigo Funakoshi,Gigo Funakoshi and Masatoshi Nakayama,Q628761,yes,modified,renamed 1936; Seisan among the oldest kata on Okinawa,yes
-Heian,Anko Itosu,Anko Itosu (created the Pinan series); Gichin Funakoshi (Japanese renaming),Q527422,yes,originated,originals c. 1904; renamed 1935 (Karate-do Kyohan),
-Heian,Anko Itosu,Anko Itosu,Q527422,yes,created,originals c. 1904; renamed 1935 (Karate-do Kyohan),
-Heian,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,originals c. 1904; renamed 1935 (Karate-do Kyohan),
+Heian,Anko Itosu,Anko Itosu (created the Pinan series); Gichin Funakoshi (Japanese renaming),Q527422,yes,originated,originals c. 1904; renamed 1935 (Karate-do Kyohan),yes
+Heian,Anko Itosu,Anko Itosu,Q527422,yes,created,originals c. 1904; renamed 1935 (Karate-do Kyohan),yes
+Heian,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,originals c. 1904; renamed 1935 (Karate-do Kyohan),yes
+Heian,Gigo Funakoshi,"Gigo (Yoshitaka) Funakoshi (Q628761), c. 1936-1945; then Masatoshi Nakayama (Q384558) and the JKA from 1949",Q628761,yes,modified,originals c. 1904; renamed 1935 (Karate-do Kyohan),yes
 Heian Godan,Anko Itosu,Anko Itosu,Q527422,yes,created,originals 1904-1907; renamed 1936,
 Heian Godan,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,originals 1904-1907; renamed 1936,
 Heian Godan,Masatoshi Nakayama,Masatoshi Nakayama,Q384558,yes,standardised,originals 1904-1907; renamed 1936,
@@ -212,12 +214,12 @@ Papuren,Kenei Mabuni,Kenwa and Kenei Mabuni; competition form fixed by the JKF S
 Passai (Wado-ryu),Unknown,Unknown. Nagamine: Passai 'was created by an unknown master long ago',,originator not recorded,originated,Wado recension 1930s,yes
 Passai (Wado-ryu),Anko Itosu,Anko Itosu,Q527422,yes,standardised,Wado recension 1930s,yes
 Passai (Wado-ryu),Hironori Otsuka,Hironori Otsuka,Q386415,yes,modified,Wado recension 1930s,yes
-Pinan (Wado-ryu),Anko Itosu,Anko Itosu created the originals; the Wado versions are Hironori Otsuka's adaptations,Q527422,yes,originated,"Itosu originals 1904-1907; Wado adaptation from the 1930s, confirmed among the nine official kata in 1977",
-Pinan (Wado-ryu),Anko Itosu,Anko Itosu,Q527422,yes,created,"Itosu originals 1904-1907; Wado adaptation from the 1930s, confirmed among the nine official kata in 1977",
-Pinan (Wado-ryu),Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,brought,"Itosu originals 1904-1907; Wado adaptation from the 1930s, confirmed among the nine official kata in 1977",
-Pinan (Wado-ryu),Hironori Otsuka,Hironori Otsuka,Q386415,yes,modified,"Itosu originals 1904-1907; Wado adaptation from the 1930s, confirmed among the nine official kata in 1977",
-Pinan (Wado-ryu),Hironori Otsuka II,Hironori Otsuka II,Q3136331,yes,standardised,"Itosu originals 1904-1907; Wado adaptation from the 1930s, confirmed among the nine official kata in 1977",
-Pinan (Wado-ryu),Hironori Otsuka,"Hironori Otsuka, applying Shindo Yoshin-ryu jujutsu body movement (tai sabaki, nagashi) to Itosu's originals",Q386415,yes,modified,"Itosu originals 1904-1907; Wado adaptation from the 1930s, confirmed among the nine official kata in 1977",
+Pinan (Wado-ryu),Anko Itosu,Anko Itosu created the originals; the Wado versions are Hironori Otsuka's adaptations,Q527422,yes,originated,"Itosu originals 1904-1907; Wado adaptation from the 1930s, confirmed among the nine official kata in 1977",yes
+Pinan (Wado-ryu),Anko Itosu,Anko Itosu,Q527422,yes,created,"Itosu originals 1904-1907; Wado adaptation from the 1930s, confirmed among the nine official kata in 1977",yes
+Pinan (Wado-ryu),Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,brought,"Itosu originals 1904-1907; Wado adaptation from the 1930s, confirmed among the nine official kata in 1977",yes
+Pinan (Wado-ryu),Hironori Otsuka,Hironori Otsuka,Q386415,yes,modified,"Itosu originals 1904-1907; Wado adaptation from the 1930s, confirmed among the nine official kata in 1977",yes
+Pinan (Wado-ryu),Hironori Otsuka II,Hironori Otsuka II,Q3136331,yes,standardised,"Itosu originals 1904-1907; Wado adaptation from the 1930s, confirmed among the nine official kata in 1977",yes
+Pinan (Wado-ryu),Hironori Otsuka,"Hironori Otsuka, applying Shindo Yoshin-ryu jujutsu body movement (tai sabaki, nagashi) to Itosu's originals",Q386415,yes,modified,"Itosu originals 1904-1907; Wado adaptation from the 1930s, confirmed among the nine official kata in 1977",yes
 Rakuyo,Tetsuhiko Asai,Tetsuhiko Asai,Q709520,yes,created,c. 1980s-2000s,
 Rakuyo,Masao Kagawa,Masao Kagawa,A0193,yes,standardised,c. 1980s-2000s,
 Rakuyo,Masao Kagawa,Masao Kagawa and the JKS,A0193,yes,modified,c. 1980s-2000s,
@@ -285,8 +287,9 @@ Shudokan kata canon (Toyama line),Kanken Toyama,Kanken Toyama,Q3772405,yes,broug
 Shudokan kata canon (Toyama line),Isao Ichikawa,Isao Ichikawa,A0227,yes,transmitted,"Shudokan founded in Tokyo, 1930; canon settled 1930s-1950s",yes
 Shudokan kata canon (Toyama line),Hiroshi Kinjo,Kinjo Hiroshi,W0002,yes,transmitted,"Shudokan founded in Tokyo, 1930; canon settled 1930s-1950s",yes
 Shudokan kata canon (Toyama line),Kanken Toyama,Kanken Toyama; later branch codification by Isao Ichikawa (Doshinkan) and by the Renbukai,Q3772405,yes,modified,"Shudokan founded in Tokyo, 1930; canon settled 1930s-1950s",yes
-Sochin (Shotokan),Gigo Funakoshi,"Yoshitaka (Gigo) Funakoshi, reworking the Aragaki-line Sochin",Q628761,yes,originated,late 1930s-early 1940s,
-Sochin (Shotokan),Gigo Funakoshi,Gigo Funakoshi,Q628761,yes,created,late 1930s-early 1940s,
+Sochin (Shotokan),Gigo Funakoshi,"Yoshitaka (Gigo) Funakoshi, reworking the Aragaki-line Sochin",Q628761,yes,originated,late 1930s-early 1940s,yes
+Sochin (Shotokan),Gigo Funakoshi,Gigo Funakoshi,Q628761,yes,created,late 1930s-early 1940s,yes
+Sochin (Shotokan),Gigo Funakoshi,Gigo (Yoshitaka) Funakoshi (Q628761),Q628761,yes,modified,late 1930s-early 1940s,yes
 Suishu,Tetsuhiko Asai,Tetsuhiko Asai,Q709520,yes,created,c. 1980s-2000s,
 Suishu,Masao Kagawa,Masao Kagawa,A0193,yes,standardised,c. 1980s-2000s,
 Suishu,Masao Kagawa,Masao Kagawa and the JKS,A0193,yes,modified,c. 1980s-2000s,
@@ -297,9 +300,10 @@ Suparinpei (Wado-ryu),Hironori Otsuka,Hironori Otsuka,Q386415,yes,transmitted,So
 Suparinpei (Wado-ryu),Unknown,Not standardised across Wado; taught only in particular branch lines,,originator not recorded,modified,Source kata Qing-era China; taught in parts of the Wado line from the mid-20th century,yes
 Taido hokei series,Seiken Shukumine,Seiken Shukumine,A0211,yes,created,1965 onwards,
 Taido hokei series,Japan Taido Association,Japan Taido Association,,"group or body, not an individual",modified,1965 onwards,
-Taikyoku,Gichin Funakoshi,Gichin Funakoshi with his son Yoshitaka (Gigo) Funakoshi,Q41105,yes,originated,"c. 1940 (published in Karate-do Nyumon, 1943)",
-Taikyoku,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,created,"c. 1940 (published in Karate-do Nyumon, 1943)",
-Taikyoku,Gigo Funakoshi,Gigo Funakoshi,Q628761,yes,created,"c. 1940 (published in Karate-do Nyumon, 1943)",
+Taikyoku,Gichin Funakoshi,Gichin Funakoshi with his son Yoshitaka (Gigo) Funakoshi,Q41105,yes,originated,"c. 1940 (published in Karate-do Nyumon, 1943)",yes
+Taikyoku,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,created,"c. 1940 (published in Karate-do Nyumon, 1943)",yes
+Taikyoku,Gigo Funakoshi,Gigo Funakoshi,Q628761,yes,created,"c. 1940 (published in Karate-do Nyumon, 1943)",yes
+Taikyoku,Shigeru Egami,Shigeru Egami (Q1246030) and Genshin Hironishi (A0148) for the Shotokai performance; Masatoshi Nakayama (Q384558) for the JKA form,Q1246030,yes,modified,"c. 1940 (published in Karate-do Nyumon, 1943)",yes
 "Taikyoku Yondan, Godan and Rokudan",Gigo Funakoshi,"Gigo (Yoshitaka) Funakoshi, extending his father's Taikyoku series",Q628761,yes,originated,c. late 1930s-1940s,yes
 "Taikyoku Yondan, Godan and Rokudan",Gigo Funakoshi,Gigo Funakoshi,Q628761,yes,created,c. late 1930s-1940s,yes
 "Taikyoku Yondan, Godan and Rokudan",Shigeru Egami,Shigeru Egami,Q1246030,yes,transmitted,c. late 1930s-1940s,yes
@@ -317,9 +321,10 @@ Taisabaki Shodan,Yasuhiro Konishi,Yasuhiro Konishi; later formalised within Shin
 Tantodori,Hironori Otsuka,Hironori Otsuka,Q386415,yes,created,1930s-1940s,
 Tantodori,Hironori Otsuka II,Hironori Otsuka II,Q3136331,yes,standardised,1930s-1940s,
 Tantodori,Hironori Otsuka II,Hironori Otsuka II and the Wadoryu Karatedo Renmei,Q3136331,yes,modified,1930s-1940s,
-Tekki,old Shuri-te lineage,old Shuri-te lineage (creator unknown); Anko Itosu (three-kata arrangement); Gichin Funakoshi (renaming),,"group or body, not an individual",originated,renamed 1935 (Naihanchi originals 19th century or earlier),
-Tekki,Anko Itosu,Anko Itosu,Q527422,yes,standardised,renamed 1935 (Naihanchi originals 19th century or earlier),
-Tekki,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,renamed 1935 (Naihanchi originals 19th century or earlier),
+Tekki,old Shuri-te lineage,old Shuri-te lineage (creator unknown); Anko Itosu (three-kata arrangement); Gichin Funakoshi (renaming),,"group or body, not an individual",originated,renamed 1935 (Naihanchi originals 19th century or earlier),yes
+Tekki,Anko Itosu,Anko Itosu,Q527422,yes,standardised,renamed 1935 (Naihanchi originals 19th century or earlier),yes
+Tekki,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,renamed 1935 (Naihanchi originals 19th century or earlier),yes
+Tekki,Gigo Funakoshi,"Gigo (Yoshitaka) Funakoshi (Q628761), c. 1936-1945; Masatoshi Nakayama (Q384558) and the JKA",Q628761,yes,modified,renamed 1935 (Naihanchi originals 19th century or earlier),yes
 Tekki Nidan,Anko Itosu,Anko Itosu (created the parent Naihanchi Nidan),Q527422,yes,originated,parent kata c. 1900; renamed 1936,
 Tekki Nidan,Anko Itosu,Anko Itosu,Q527422,yes,created,parent kata c. 1900; renamed 1936,
 Tekki Nidan,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,parent kata c. 1900; renamed 1936,
@@ -339,10 +344,12 @@ Tekki Shodan,Gigo Funakoshi,Gigo Funakoshi (kiba-dachi lengthened) and Masatoshi
 Ten no Kata,Gichin Funakoshi,Gichin Funakoshi with Yoshitaka (Gigo) Funakoshi,Q41105,yes,originated,"early 1940s (published in Karate-do Nyumon, 1943)",
 Ten no Kata,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,created,"early 1940s (published in Karate-do Nyumon, 1943)",
 Ten no Kata,Gigo Funakoshi,Gigo Funakoshi,Q628761,yes,created,"early 1940s (published in Karate-do Nyumon, 1943)",
+Ten no Kata,Shigeru Egami,"Shigeru Egami (Q1246030) and the Shotokai, who kept it after the JKA dropped it",Q1246030,yes,modified,"early 1940s (published in Karate-do Nyumon, 1943)",
 Tenshin,Tsuyoshi Chitose,Tsuyoshi Chitose (probable creation),Q135222893,yes,originated,mid-20th century (after 1946),
 Tenshin,Tsuyoshi Chitose,Tsuyoshi Chitose,Q135222893,yes,created,mid-20th century (after 1946),
-Wankan (Shotokan),Tomari-te lineage,Tomari-te lineage (Matsumora line); Shotokan version by Yoshitaka (Gigo) Funakoshi,,"group or body, not an individual",originated,Shotokan version late 1930s-1940s,
-Wankan (Shotokan),Gigo Funakoshi,Gigo Funakoshi,Q628761,yes,created,Shotokan version late 1930s-1940s,
+Wankan (Shotokan),Tomari-te lineage,Tomari-te lineage (Matsumora line); Shotokan version by Yoshitaka (Gigo) Funakoshi,,"group or body, not an individual",originated,Shotokan version late 1930s-1940s,yes
+Wankan (Shotokan),Gigo Funakoshi,Gigo Funakoshi,Q628761,yes,created,Shotokan version late 1930s-1940s,yes
+Wankan (Shotokan),Gigo Funakoshi,Gigo (Yoshitaka) Funakoshi (Q628761),Q628761,yes,modified,Shotokan version late 1930s-1940s,yes
 Wanshu (Wado-ryu),Wang Ji,Traditionally the envoy Wang Ji; Wado redaction by Hironori Otsuka,C00641,yes,originated,Folklore origin 1683; documented transmission 19th century; Wado version 1930s,yes
 Wanshu (Wado-ryu),Kosaku Matsumora,Kosaku Matsumora,Q3028499,yes,transmitted,Folklore origin 1683; documented transmission 19th century; Wado version 1930s,yes
 Wanshu (Wado-ryu),Anko Itosu,Anko Itosu,Q527422,yes,modified,Folklore origin 1683; documented transmission 19th century; Wado version 1930s,yes
@@ -612,9 +619,9 @@ Tawada no Sai,Shinken Taira,Taira Shinken,Q723832,yes,modified,c. 1833 (demonstr
 Tecchu no Kata,Unknown,none; no classical kata survives,,originator not recorded,originated,20th century (recent compositions only),yes
 Tecchu no Kata,Shinpo Matayoshi,Shinpo Matayoshi,Q1908090,yes,transmitted,20th century (recent compositions only),yes
 Tecchu no Kata,various modern teachers,various modern teachers,,NO — person missing,modified,20th century (recent compositions only),yes
-Tinbe (Matayoshi),Shinko Matayoshi,Matayoshi Shinko,Q1908088,yes,originated,early 20th century,
-Tinbe (Matayoshi),Shinko Matayoshi,Shinko Matayoshi,Q1908088,yes,brought,early 20th century,
-Tinbe (Matayoshi),Shinpo Matayoshi,Shinpo Matayoshi,Q1908090,yes,standardised,early 20th century,
+Tinbe (Matayoshi),Shinko Matayoshi,Matayoshi Shinko,Q1908088,yes,originated,early 20th century,yes
+Tinbe (Matayoshi),Shinko Matayoshi,Shinko Matayoshi,Q1908088,yes,brought,early 20th century,yes
+Tinbe (Matayoshi),Shinpo Matayoshi,Shinpo Matayoshi,Q1908090,yes,standardised,early 20th century,yes
 Tinbe nu Ti,Shinpo Matayoshi,Shinpo Matayoshi (composition); Kingai / Jin Ying (technical source),Q1908090,yes,originated,composed mid 20th century; Chinese source techniques learned by Shinko Matayoshi c. 1930-1934,yes
 Tinbe nu Ti,Kingai,Kingai (Jin Ying),KP002,yes,created,composed mid 20th century; Chinese source techniques learned by Shinko Matayoshi c. 1930-1934,yes
 Tinbe nu Ti,Shinko Matayoshi,Shinko Matayoshi,Q1908088,yes,brought,composed mid 20th century; Chinese source techniques learned by Shinko Matayoshi c. 1930-1934,yes
@@ -1245,9 +1252,9 @@ Saiha (Kyokushin),Chojun Miyagi,Chojun Miyagi,Q221121,yes,standardised,Source ka
 Saiha (Kyokushin),Gogen Yamaguchi,Gogen Yamaguchi,Q268880,yes,transmitted,Source kata late 19th-early 20th century; in Kyokushin from the 1950s-60s,yes
 Saiha (Kyokushin),Mas Oyama,Mas Oyama,Q294548,yes,modified,Source kata late 19th-early 20th century; in Kyokushin from the 1950s-60s,yes
 Saiha (Kyokushin),Mas Oyama,"Mas Oyama, via Gogen Yamaguchi's Goju-kai form",Q294548,yes,modified,Source kata late 19th-early 20th century; in Kyokushin from the 1950s-60s,yes
-Sanchin (Kyokushin),Fujian Chinese lineage via Kanryo Higaonna,Fujian Chinese lineage via Kanryo Higaonna; closed-fist version by Chojun Miyagi; brought into Kyokushin by Mas Oyama,,"group or body, not an individual",originated,Qing-era China and Meiji Okinawa; in Kyokushin from the 1950s,
-Sanchin (Kyokushin),Chojun Miyagi,Chojun Miyagi,Q221121,yes,standardised,Qing-era China and Meiji Okinawa; in Kyokushin from the 1950s,
-Sanchin (Kyokushin),Mas Oyama,Mas Oyama,Q294548,yes,brought,Qing-era China and Meiji Okinawa; in Kyokushin from the 1950s,
+Sanchin (Kyokushin),Fujian Chinese lineage via Kanryo Higaonna,Fujian Chinese lineage via Kanryo Higaonna; closed-fist version by Chojun Miyagi; brought into Kyokushin by Mas Oyama,,"group or body, not an individual",originated,Qing-era China and Meiji Okinawa; in Kyokushin from the 1950s,yes
+Sanchin (Kyokushin),Chojun Miyagi,Chojun Miyagi,Q221121,yes,standardised,Qing-era China and Meiji Okinawa; in Kyokushin from the 1950s,yes
+Sanchin (Kyokushin),Mas Oyama,Mas Oyama,Q294548,yes,brought,Qing-era China and Meiji Okinawa; in Kyokushin from the 1950s,yes
 Seienchin (Kyokushin),Unknown,Unknown Naha-te/Fujian origin via Kanryo Higaonna and Chojun Miyagi; Kyokushin form by Mas Oyama,,originator not recorded,originated,Source kata late 19th-early 20th century; in Kyokushin from the 1950s-60s,yes
 Seienchin (Kyokushin),Kanryo Higaonna,Kanryo Higaonna,Q699236,yes,brought,Source kata late 19th-early 20th century; in Kyokushin from the 1950s-60s,yes
 Seienchin (Kyokushin),Chojun Miyagi,Chojun Miyagi,Q221121,yes,standardised,Source kata late 19th-early 20th century; in Kyokushin from the 1950s-60s,yes
@@ -1262,8 +1269,8 @@ Seipai (Kyokushin),Mas Oyama,Mas Oyama,Q294548,yes,modified,Source kata late 19t
 Seipai (Kyokushin),Mas Oyama,"Mas Oyama, via Goju-kai",Q294548,yes,modified,Source kata late 19th-early 20th century; in Kyokushin from the 1950s-60s,yes
 Sokugi Taikyoku sono ichi-san,Shokei Matsui,Shokei Matsui,Q2664662,yes,created,c. 1990s,yes
 Sokugi Taikyoku sono ichi-san,IKO Kyokushinkaikan technical committee,IKO Kyokushinkaikan technical committee,,"group or body, not an individual",modified,c. 1990s,yes
-Sushiho,Shuri-te lineage,Shuri-te lineage (Matsumura/Itosu line); Kyokushin version by Mas Oyama,,"group or body, not an individual",originated,19th-century Okinawa; Kyokushin version 1950s-60s,
-Sushiho,Mas Oyama,Mas Oyama,Q294548,yes,renamed,19th-century Okinawa; Kyokushin version 1950s-60s,
+Sushiho,Shuri-te lineage,Shuri-te lineage (Matsumura/Itosu line); Kyokushin version by Mas Oyama,,"group or body, not an individual",originated,19th-century Okinawa; Kyokushin version 1950s-60s,yes
+Sushiho,Mas Oyama,Mas Oyama,Q294548,yes,renamed,19th-century Okinawa; Kyokushin version 1950s-60s,yes
 Taikyoku sono ichi-san,Gigo Funakoshi,adapted by Mas Oyama from the Shotokan Taikyoku of Gichin and Gigo Funakoshi,Q628761,yes,originated,1950s-1964 (Kyokushinkaikan syllabus),
 Taikyoku sono ichi-san,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,created,1950s-1964 (Kyokushinkaikan syllabus),
 Taikyoku sono ichi-san,Gigo Funakoshi,Gigo Funakoshi,Q628761,yes,created,1950s-1964 (Kyokushinkaikan syllabus),
@@ -1273,9 +1280,9 @@ Taikyoku sono ichi-san Ura,Mas Oyama,Mas Oyama,Q294548,yes,created,c. 1960s-1970
 Taikyoku sono ichi-san Ura,Kenji Kurosaki,Kenji Kurosaki,Q1738762,yes,transmitted,c. 1960s-1970s,yes
 Taikyoku sono ichi-san Ura,Shokei Matsui,Shokei Matsui,Q2664662,yes,standardised,c. 1960s-1970s,yes
 Taikyoku sono ichi-san Ura,Kyokushinkaikan honbu instructors,Kyokushinkaikan honbu instructors; syllabus fixed by the IKO,,"group or body, not an individual",modified,c. 1960s-1970s,yes
-Tensho (Kyokushin),Chojun Miyagi,"Chojun Miyagi (created 1921, drawing on the Chinese Rokkishu); brought into Kyokushin by Mas Oyama",Q221121,yes,originated,1921; in Kyokushin from the 1950s-60s,
-Tensho (Kyokushin),Chojun Miyagi,Chojun Miyagi,Q221121,yes,created,1921; in Kyokushin from the 1950s-60s,
-Tensho (Kyokushin),Mas Oyama,Mas Oyama,Q294548,yes,brought,1921; in Kyokushin from the 1950s-60s,
+Tensho (Kyokushin),Chojun Miyagi,"Chojun Miyagi (created 1921, drawing on the Chinese Rokkishu); brought into Kyokushin by Mas Oyama",Q221121,yes,originated,1921; in Kyokushin from the 1950s-60s,yes
+Tensho (Kyokushin),Chojun Miyagi,Chojun Miyagi,Q221121,yes,created,1921; in Kyokushin from the 1950s-60s,yes
+Tensho (Kyokushin),Mas Oyama,Mas Oyama,Q294548,yes,brought,1921; in Kyokushin from the 1950s-60s,yes
 Tsuki no Kata,Seigo Tada,"Seigo Tada, founder of Seigokan Goju-ryu",Q7446692,yes,originated,mid-20th century (Seigokan founded 1945); in Kyokushin by the 1960s-70s,
 Tsuki no Kata,Seigo Tada,Seigo Tada,Q7446692,yes,created,mid-20th century (Seigokan founded 1945); in Kyokushin by the 1960s-70s,
 Tsuki no Kata,Tadashi Nakamura,Tadashi Nakamura,Q706955,yes,brought,mid-20th century (Seigokan founded 1945); in Kyokushin by the 1960s-70s,
@@ -1402,9 +1409,9 @@ Jin-i,Kojo UEKATA,Kojo UEKATA,C00269,yes,brought,Undocumented; Kojo family tradi
 Jin-i,Kaho Kojo,Kaho Kojo,C00108,yes,transmitted,Undocumented; Kojo family tradition claims 17th-18th century Kume origins,yes
 Jin-i,Kafu Kojo,Kafu Kojo,C00107,yes,standardised,Undocumented; Kojo family tradition claims 17th-18th century Kume origins,yes
 Jin-i,Kaho Kojo,Kaho Kojo and Kafu Kojo,C00108,yes,modified,Undocumented; Kojo family tradition claims 17th-18th century Kume origins,yes
-Jion (To'on-ryu),Unknown,unknown; the Shuri-te/Tomari-te Jion tradition,,originator not recorded,originated,learned by Kyoda in the early 20th century; in the To'on-ryu syllabus from 1934,
-Jion (To'on-ryu),Kentsu Yabu,Kentsu Yabu,Q722028,yes,transmitted,learned by Kyoda in the early 20th century; in the To'on-ryu syllabus from 1934,
-Jion (To'on-ryu),Juhatsu Kyoda,Juhatsu Kyoda,A0012,yes,brought,learned by Kyoda in the early 20th century; in the To'on-ryu syllabus from 1934,
+Jion (To'on-ryu),Unknown,unknown; the Shuri-te/Tomari-te Jion tradition,,originator not recorded,originated,learned by Kyoda in the early 20th century; in the To'on-ryu syllabus from 1934,yes
+Jion (To'on-ryu),Kentsu Yabu,Kentsu Yabu,Q722028,yes,transmitted,learned by Kyoda in the early 20th century; in the To'on-ryu syllabus from 1934,yes
+Jion (To'on-ryu),Juhatsu Kyoda,Juhatsu Kyoda,A0012,yes,brought,learned by Kyoda in the early 20th century; in the To'on-ryu syllabus from 1934,yes
 Kakuha Dai Ichi,Seikichi Toguchi,Seikichi Toguchi,Q3954660,yes,created,c. 1950s-1970s,yes
 Kakuha Dai Ichi,Seikichi Toguchi,Seikichi Toguchi — created outright,Q3954660,yes,modified,c. 1950s-1970s,yes
 Kakuha Dai Ni,Seikichi Toguchi,Seikichi Toguchi,Q3954660,yes,created,c. 1950s-1970s,yes
@@ -1440,9 +1447,9 @@ Nijikken,Unknown,unknown; Kojo family transmission,,originator not recorded,orig
 Nijikken,Kaho Kojo,Kaho Kojo,C00108,yes,brought,family transmission; documented 20th century,yes
 Nijikken,Shuren Kojo,Shuren Kojo,C00542,yes,transmitted,family transmission; documented 20th century,yes
 Nijikken,Unknown,unknown,,originator not recorded,modified,family transmission; documented 20th century,yes
-Niseishi (Ryuei-ryu),Ryu Ryu Ko,Ryu Ryu Ko (transmitted; ultimate creator unknown),Q954330,yes,originated,Qing-era China; brought to Okinawa c. 1840s,
-Niseishi (Ryuei-ryu),Norisato Nakaima,Norisato Nakaima,C00244,yes,brought,Qing-era China; brought to Okinawa c. 1840s,
-Niseishi (Ryuei-ryu),Kenko Nakaima,Kenko Nakaima,C00232,yes,standardised,Qing-era China; brought to Okinawa c. 1840s,
+Niseishi (Ryuei-ryu),Ryu Ryu Ko,Ryu Ryu Ko (transmitted; ultimate creator unknown),Q954330,yes,originated,Qing-era China; brought to Okinawa c. 1840s,yes
+Niseishi (Ryuei-ryu),Norisato Nakaima,Norisato Nakaima,C00244,yes,brought,Qing-era China; brought to Okinawa c. 1840s,yes
+Niseishi (Ryuei-ryu),Kenko Nakaima,Kenko Nakaima,C00232,yes,standardised,Qing-era China; brought to Okinawa c. 1840s,yes
 Ohan,Ryu Ryu Ko,Ru Ru Ko of Fuzhou (transmitted); ultimate creator unknown,Q954330,yes,originated,Qing-era China; brought to Okinawa c. 1840s,yes
 Ohan,Ryu Ryu Ko,Ryu Ryu Ko,Q954330,yes,transmitted,Qing-era China; brought to Okinawa c. 1840s,yes
 Ohan,Norisato Nakaima,Norisato Nakaima,C00244,yes,brought,Qing-era China; brought to Okinawa c. 1840s,yes
@@ -1536,10 +1543,10 @@ Sepai,Unknown,Unknown Chinese originator; transmitted to Kanryo Higaonna in Fuzh
 Sepai,Ryu Ryu Ko,Ryu Ryu Ko,Q954330,yes,transmitted,late 19th to early 20th century,yes
 Sepai,Kanryo Higaonna,Kanryo Higaonna,Q699236,yes,brought,late 19th to early 20th century,yes
 Sepai,Chojun Miyagi,Chojun Miyagi,Q221121,yes,standardised,late 19th to early 20th century,yes
-Sesan,Ryu Ryu Ko,Ryu Ryu Ko (transmitted; ultimate creator unknown),Q954330,yes,originated,Qing-era China; Okinawa from c. 1880s,
-Sesan,Kanryo Higaonna,Kanryo Higaonna,Q699236,yes,brought,Qing-era China; Okinawa from c. 1880s,
-Sesan,Juhatsu Kyoda,Juhatsu Kyoda,A0012,yes,standardised,Qing-era China; Okinawa from c. 1880s,
-Sesan,Norisato Nakaima,Norisato Nakaima,C00244,yes,brought,Qing-era China; Okinawa from c. 1880s,
+Sesan,Ryu Ryu Ko,Ryu Ryu Ko (transmitted; ultimate creator unknown),Q954330,yes,originated,Qing-era China; Okinawa from c. 1880s,yes
+Sesan,Kanryo Higaonna,Kanryo Higaonna,Q699236,yes,brought,Qing-era China; Okinawa from c. 1880s,yes
+Sesan,Juhatsu Kyoda,Juhatsu Kyoda,A0012,yes,standardised,Qing-era China; Okinawa from c. 1880s,yes
+Sesan,Norisato Nakaima,Norisato Nakaima,C00244,yes,brought,Qing-era China; Okinawa from c. 1880s,yes
 Shiho Uke,Juhatsu Kyoda,Juhatsu Kyoda,A0012,yes,created,formalised by Kyoda between 1934 and 1968,yes
 Shisochin,Unknown,"Unknown. Standardly credited to Ryu Ryu Ko's teaching of Kanryo Higaonna, but a competing account holds that a version was already circulating on Okinawa through Seisho Aragaki",,originator not recorded,originated,late 19th to early 20th century,yes
 Shisochin,Ryu Ryu Ko,Ryu Ryu Ko,Q954330,yes,transmitted,late 19th to early 20th century,yes
@@ -1582,6 +1589,16 @@ Tsuruho,Gokenki,Gokenki,C00084,yes,brought,Qing-era Fujian; in Okinawa c. 1912-1
 Tsuruho,Shinko Matayoshi,Shinko Matayoshi,Q1908088,yes,transmitted,Qing-era Fujian; in Okinawa c. 1912-1940 via Go Kenki,yes
 Tsuruho,Shinpo Matayoshi,Shinpo Matayoshi,Q1908090,yes,transmitted,Qing-era Fujian; in Okinawa c. 1912-1940 via Go Kenki,yes
 Tsuruho,Shinko Matayoshi,"Shinko Matayoshi, then Shinpo Matayoshi",Q1908088,yes,modified,Qing-era Fujian; in Okinawa c. 1912-1940 via Go Kenki,yes
+Chinen Bo Kihon Ichi,Kenyu Chinen,Chinen Kenyu,C00245,yes,originated,late 20th century,yes
+Chinen Bo Kihon Ni,Kenyu Chinen,Chinen Kenyu,C00245,yes,originated,late 20th century,yes
+Chinen Sai Kihon Ichi,Kenyu Chinen,Chinen Kenyu,C00245,yes,originated,late 20th century,yes
+Chinen Tonkuwa Kihon Ichi,Kenyu Chinen,Chinen Kenyu,C00245,yes,originated,late 20th century,yes
+Gusukuma no Chinto,"Tomari-te Chinto tradition, transmitted through Gusukuma","Tomari-te Chinto tradition, transmitted through Gusukuma (Shiroma) of Tomari",,NO — person missing,originated,19th-century Okinawa; preserved in Gensei-ryu from c. 1950,yes
+Gusukuma no Chinto,Seiken Shukumine,Seiken Shukumine,A0211,yes,modified,19th-century Okinawa; preserved in Gensei-ryu from c. 1950,yes
+Kanyū no Seisan,Kanyu Higaonna,Higaonna Kanyū 東恩納寛裕 (1849-1922),C00202,yes,originated,transmitted to Kyoda in the early 20th century; one of the six kata Tōon-ryū carries,yes
+Kanyū no Seisan,Juhatsu Kyoda,"Kyoda Jūhatsu, who preserved it unaltered",A0012,yes,modified,transmitted to Kyoda in the early 20th century; one of the six kata Tōon-ryū carries,yes
+Shukumine no Bassai,Unknown,"Unknown, from the Passai tradition",,originator not recorded,originated,Passai lineage by the mid-19th century; Shukumine's recension from c. 1950,yes
+Shukumine no Bassai,Seiken Shukumine,Seiken Shukumine,A0211,yes,modified,Passai lineage by the mid-19th century; Shukumine's recension from c. 1950,yes
 Ananku,Chotoku Kyan,Chotoku Kyan,Q2393877,yes,created,c. 1930s (some accounts say as early as 1895),yes
 Ananku,Shoshin Nagamine,Shoshin Nagamine,Q1963468,yes,transmitted,c. 1930s (some accounts say as early as 1895),yes
 Ananku,Tatsuo Shimabuku,Tatsuo Shimabuku,Q27363,yes,transmitted,c. 1930s (some accounts say as early as 1895),yes
@@ -1655,11 +1672,11 @@ Kosokun Shiho,Kenwa Mabuni,Kenwa Mabuni,Q453505,yes,standardised,c. 1900s,yes
 Kosokun Sho,Anko Itosu,Anko Itosu,Q527422,yes,created,late 19th century,
 Kosokun Sho,Kenwa Mabuni,Kenwa Mabuni,Q453505,yes,standardised,late 19th century,
 Kosokun Sho,Kenwa Mabuni,Kenwa Mabuni for Shito-ryu; Funakoshi and the JKA for the Kanku Sho form,Q453505,yes,modified,late 19th century,
-Kusanku,Kanga Sakukawa,"Kanga Sakukawa (attributed), after the envoy Kūsankū",Q921673,yes,originated,c. 1760s,
-Kusanku,Kusanku,Kusanku,Q1929108,yes,brought,c. 1760s,
-Kusanku,Kanga Sakukawa,Kanga Sakukawa,Q921673,yes,created,c. 1760s,
-Kusanku,Anko Itosu,Anko Itosu,Q527422,yes,standardised,c. 1760s,
-Kusanku,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,c. 1760s,
+Kusanku,Kanga Sakukawa,"Kanga Sakukawa (attributed), after the envoy Kūsankū",Q921673,yes,originated,c. 1760s,yes
+Kusanku,Kusanku,Kusanku,Q1929108,yes,brought,c. 1760s,yes
+Kusanku,Kanga Sakukawa,Kanga Sakukawa,Q921673,yes,created,c. 1760s,yes
+Kusanku,Anko Itosu,Anko Itosu,Q527422,yes,standardised,c. 1760s,yes
+Kusanku,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,c. 1760s,yes
 Kusanku Sho,Anko Itosu,Anko Itosu,Q527422,yes,created,late 19th century,
 Kusanku Sho,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,late 19th century,
 Matsukaze,Tomari-te lineage of Kosaku Matsumora,Tomari-te lineage of Kosaku Matsumora (ultimate creator unknown); arranged and renamed by Kenwa Mabuni,,"group or body, not an individual",originated,Tomari antecedent 19th century; present form c. 1930s-1940s,yes
@@ -1719,8 +1736,9 @@ Passai,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,by the mid-19th cent
 Passai,Anko Itosu,"Anko Itosu, who fixed the Passai Dai form used in the school syllabus and composed Passai Sho as a companion; Gichin Funakoshi, who renamed it Bassai for Japan",Q527422,yes,modified,by the mid-19th century; no documentation earlier than the Matsumura/Oyadomari generation,yes
 Passai Sho,Anko Itosu,Anko Itosu,Q527422,yes,created,late 19th century,
 Passai Sho,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,late 19th century,
-Pinan,Anko Itosu,Anko Itosu,Q527422,yes,created,1904-1907 (introduced into Okinawan school physical education),
-Pinan,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,1904-1907 (introduced into Okinawan school physical education),
+Pinan,Anko Itosu,Anko Itosu,Q527422,yes,created,1904-1907 (introduced into Okinawan school physical education),yes
+Pinan,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,1904-1907 (introduced into Okinawan school physical education),yes
+Pinan,Gichin Funakoshi,Gichin Funakoshi (Q41105) by renaming and reordering,Q41105,yes,modified,1904-1907 (introduced into Okinawan school physical education),yes
 Pinan Godan,Anko Itosu,Anko Itosu,Q527422,yes,created,1904-1907,
 Pinan Godan,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,1904-1907,
 Pinan Godan,Gichin Funakoshi,Funakoshi and the JKA (Heian Godan),Q41105,yes,modified,1904-1907,
