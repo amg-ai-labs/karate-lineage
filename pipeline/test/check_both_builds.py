@@ -33,7 +33,9 @@ def boot(pl, label, fails):
     stub = stub_src.replace("__VIZ_DATA__", json.dumps(json.dumps(pl, ensure_ascii=False)))
     tail = ("try {\n"
             "  document.getElementById('stamp').textContent;\n"
-            "  console.log('RENDERED ' + nodeEls.size + ' nodes, curator=' + curator());\n"
+            "  var __imgs = exportFormats([['a','svg'],['b','png4'],['c','tiff'],['d','csv']]);\n"
+            "  console.log('RENDERED ' + nodeEls.size + ' nodes, curator=' + curator()\n"
+            "    + ', images=' + canExportImages() + ', formats=' + __imgs.length);\n"
             "} catch (e) { console.log('THREW: ' + e); }")
     run = HERE / "_both.js"
     run.write_text(stub + "\n" + app + "\n" + tail, encoding="utf-8")
@@ -41,12 +43,17 @@ def boot(pl, label, fails):
                        capture_output=True, text=True, timeout=600)
     out = ((r.stdout or "") + (r.stderr or "")).strip()
     run.unlink(missing_ok=True)
-    m = re.search(r"RENDERED (\d+) nodes, curator=(\w+)", out)
+    m = re.search(r"RENDERED (\d+) nodes, curator=(\w+), images=(\w+), formats=(\d+)", out)
     if not m or int(m.group(1)) == 0 or "THREW" in out:
         fails.append(f"{label}: {out[-260:]}")
         print(f"  {label}: FAILED")
     else:
-        print(f"  {label}: {m.group(1)} nodes rendered, curator={m.group(2)}")
+        print(f"  {label}: {m.group(1)} nodes rendered, curator={m.group(2)}, "
+              f"image export={m.group(3)} ({m.group(4)} of 4 formats offered)")
+        # the published copy must never offer a figure export, only data
+        if m.group(2) == "false" and (m.group(3) != "false" or m.group(4) != "1"):
+            fails.append(f"{label}: public build offers image export")
+            print(f"  FAIL: {label} is public but offers image export")
 
 
 fails = []

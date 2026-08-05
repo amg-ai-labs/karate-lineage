@@ -132,6 +132,128 @@ try {
   kataQuery = ""; kataOpen.clear();
   console.log("kata detail block for " + chinto.name + ": " + dtxt.slice(0, 70).replace(/\s+/g, " "));
 
+  // PANELS: only one may be visible, or a panel opened from another is invisible
+  // behind it. That is what made clicking a kata inside a person's panel look dead.
+  (function () {
+    var th = DATA.nodes.find(n => /Teruo Hayashi/i.test(n.name)) || placed[0];
+    openDetail(th.id);
+    var d = document.getElementById("detail");
+    var kb = d.querySelectorAll("button").filter(b => /^[A-Z]/.test(b.textContent)
+              && DATA.kata.some(k => b.textContent.indexOf(k.name) === 0));
+    if (!kb.length) throw new Error("no kata buttons in " + th.name + "'s panel");
+    kb[0].fire("click");
+    var kp = document.getElementById("katapanel");
+    if (kp.hidden) throw new Error("clicking a kata did not open the kata panel");
+    if (!d.hidden) throw new Error("person panel still visible under the kata panel");
+    if (!kp.querySelectorAll(".kata-detail").length)
+      throw new Error("kata panel opened but the entry is not expanded");
+    var back = kp.querySelectorAll(".panel-back");
+    if (!back.length) throw new Error("no way back to the person");
+    back[0].fire("click");
+    if (document.getElementById("detail").hidden)
+      throw new Error("back did not return to the person");
+    var open = ["detail", "tablepanel", "orphanpanel", "addpanel", "stylepanel",
+                "katapanel", "statspanel", "connectpanel"]
+      .filter(id => !document.getElementById(id).hidden);
+    if (open.length !== 1) throw new Error("panels open at once: " + open.join(", "));
+    console.log("panels: one at a time, kata opens from a person and returns");
+  })();
+
+  // IMAGE EXPORT is the curator's alone; the public build offers data only
+  (function () {
+    var imgs = ["svg", "pdf", "png", "png2", "png4", "jpg", "jpg4", "tiff"];
+    previewPublic = true;
+    if (canExportImages()) throw new Error("public build still offers image export");
+    var pub = exportFormats(imgs.map(f => [f, f]));
+    if (pub.length) throw new Error("public export offers images: " + pub.map(p => p[1]).join(","));
+    var pubData = exportFormats([["CSV", "csv"], ["GraphML", "graphml"]]);
+    if (pubData.length !== 2) throw new Error("public build lost its data exports");
+    previewPublic = false;
+    if (!canExportImages()) throw new Error("curator build lost image export");
+    if (exportFormats(imgs.map(f => [f, f])).length !== imgs.length)
+      throw new Error("curator build is missing image formats");
+    console.log("image export: curator " + imgs.length + " formats, public 0 (data still 2)");
+  })();
+
+  // STYLE-BEARING LINE: the client's Sakumoto case
+  (function () {
+    var s = DATA.nodes.find(n => /Sakumoto/i.test(n.name));
+    if (!s) throw new Error("Sakumoto absent");
+    linePrimaryOnly = false; var all = lineageSet(s.id, "up").size;
+    linePrimaryOnly = true;  var prim = [...lineageSet(s.id, "up")].map(i => (byId.get(i) || {}).name);
+    linePrimaryOnly = false;
+    if (prim.length >= all) throw new Error("style-bearing filter changed nothing");
+    var stray = prim.filter(n => /Itosu|Matsumura|Yabu|Sakukawa/.test(n || ""));
+    if (stray.length) throw new Error("Shuri-te still in Sakumoto's style-bearing line: " + stray);
+    console.log("style-bearing line: Sakumoto " + all + " -> " + prim.length
+      + " (" + prim.join(" < ") + ")");
+  })();
+
+  // STYLE LIST must begin with the originating groups, not wherever a root happens to be
+  (function () {
+    styleOrder = "cat"; styleQuery = ""; renderStylePanel();
+    var sp = document.getElementById("stylepanel");
+    var fams = sp.querySelectorAll(".st-fam").map(f => f.textContent.trim());
+    if (!/Shuri-te/.test(fams[0] || ""))
+      throw new Error("style list starts at " + fams[0] + ", not Shuri-te");
+    for (const want of ["Naha-te", "Tomari-te"])
+      if (!fams.some(f => f.indexOf(want) >= 0)) throw new Error(want + " missing from the style list");
+    styleOrder = "alpha"; renderStylePanel();
+    var az = sp.querySelectorAll(".st-name").map(b => b.textContent);
+    if (az.length !== DATA.styles.length)
+      throw new Error("A-Z lists " + az.length + " of " + DATA.styles.length + " styles");
+    var sorted = az.slice().sort((a, b) => a.localeCompare(b));
+    if (az.join("|") !== sorted.join("|")) throw new Error("A-Z is not in order");
+    styleOrder = "cat";
+    console.log("style list: " + fams.length + " groups from " + fams[0]
+      + "; A-Z covers all " + az.length);
+  })();
+
+  // CONNECT: two people, the chain between them, and an exportable sub-graph
+  (function () {
+    var a = DATA.nodes.find(n => n.name === "Chojun Miyagi");
+    var b = DATA.nodes.find(n => n.name === "Gichin Funakoshi");
+    var p = pathBetween(a.id, b.id);
+    if (!p || p.length < 2) throw new Error("no path between Miyagi and Funakoshi");
+    cxPeople = [a.id, b.id]; renderConnect();
+    var cp = document.getElementById("connectpanel");
+    if (cp.hidden) throw new Error("connect panel did not open");
+    if (!cp.querySelectorAll(".cx-path").length) throw new Error("no path shown");
+    var cs = connectionSet([a.id, b.id]);
+    if (cs.ids.length < p.length) throw new Error("sub-graph smaller than the path");
+    cxPeople = [];
+    console.log("connect: " + p.map(i => (byId.get(i) || {}).name).join(" - ")
+      + " (" + cs.ids.length + " in the sub-graph)");
+  })();
+
+  // KATA charts: a kata exports the people who carried it
+  (function () {
+    var withPeople = DATA.kata.filter(k => kataPeopleIds(k).length >= 2);
+    if (withPeople.length < 50)
+      throw new Error("only " + withPeople.length + " kata have 2+ people on the chart");
+    var k = withPeople[0];
+    kataQuery = k.name; kataOpen = new Set([k.name]); renderKataPanel();
+    var kp = document.getElementById("katapanel");
+    var sv = kp.querySelectorAll("button").filter(b => /SVG/.test(b.textContent));
+    if (!sv.length) throw new Error("kata entry offers no chart export");
+    var files = [], _d = download; download = function (n) { files.push(n); };
+    sv[0].fire("click"); download = _d;
+    if (!files.length || !/\.svg$/.test(files[0]))
+      throw new Error("kata export produced: " + files.join(", "));
+    kataQuery = ""; kataOpen.clear();
+    console.log("kata charts: " + withPeople.length + " kata exportable; sample " + files[0]);
+  })();
+
+  // KEY must explain every line style actually used on the canvas
+  (function () {
+    renderKey();
+    var t = document.getElementById("keypanel").textContent;
+    for (const w of ["Solid", "Dashed", "Dotted", "Blue", "Red", "Hue"])
+      if (t.indexOf(w) < 0) throw new Error("key does not explain: " + w);
+    document.getElementById("keypanel").hidden = true;
+    console.log("key: explains solid, dashed, dotted, blue, faint, red, hue and rings");
+  })();
+
   // GraphML must be well-formed and must not declare an empty int attribute,
   // which is the usual way a hand-built GraphML fails to open in Gephi
   (function () {

@@ -389,6 +389,15 @@ addEventListener("hashchange", () => {
   const want = location.hash.indexOf("public") >= 0;
   if (want !== previewPublic) { previewPublic = want; location.reload(); }
 });
+// Publication-grade images are the curator's own capability: on the website
+// visitors read and explore the lineage and may take the data, but the figures
+// are generated only from the curator's copy. Like the evidence layer, this is
+// decided by the build, not by a switch a visitor could find.
+const IMAGE_FMTS = new Set(["svg", "pdf", "png", "png2", "png4", "jpg", "jpg4", "tiff"]);
+function canExportImages() { return curator(); }
+function exportFormats(pairs) {
+  return canExportImages() ? pairs : pairs.filter(([, fmt]) => !IMAGE_FMTS.has(fmt));
+}
 
 let pan = null, pendingSel = null, pendingEdge = null;
 svg.addEventListener("pointerdown", ev => {
@@ -540,8 +549,16 @@ function styleMembers(id) {
 
 // depth === Infinity walks the whole lineage; depth === 1 gives only the people
 // this person taught directly, 2 adds their students, and so on
-function lineageSet(id, dir, depth) {
+// Following every documented link mixes two different things: the line that
+// carried a style, and study that happened but changed nothing. Tsuguo Sakumoto
+// reads as having Shuri-te ancestry only because his teacher Kenko Nakaima also
+// studied under Yabu Kentsu and Oshiro Chojo, and Bishop records that Nakaima
+// kept his grandfather's Ryuei-ryu unaltered. Restricting to the style-bearing
+// links gives the lineage as a stylist would describe it.
+let linePrimaryOnly = false;
+function lineageSet(id, dir, depth, primaryOnly) {
   depth = depth === undefined ? Infinity : depth;
+  const strict = primaryOnly === undefined ? linePrimaryOnly : primaryOnly;
   const out = new Set([id]);
   const walk = (start, rel) => {
     const q = [[start, 0]];
@@ -549,6 +566,7 @@ function lineageSet(id, dir, depth) {
       const [u, d] = q.shift();
       if (d >= depth) continue;
       for (const e of (rel.get(u) || [])) {
+        if (strict && !e.primary) continue;
         const v = rel === parentsOf ? e.source : e.target;
         if (!out.has(v)) { out.add(v); q.push([v, d + 1]); }
       }
@@ -1044,6 +1062,25 @@ for (const k of KATA) {
   }
 }
 function kataFor(name) { return kataByPerson.get(name) || []; }
+// the people a kata names, resolved to nodes actually on the chart
+const nodeByName = new Map();
+for (const n of DATA.nodes) {
+  nodeByName.set(deMacron(n.name), n.id);
+  const p = deMacron(n.name).split(" ");
+  if (p.length === 2) nodeByName.set(p[1] + " " + p[0], n.id);
+}
+function kataPeopleIds(k) {
+  const names = new Set();
+  if (k.origin_person) names.add(k.origin_person);
+  if (k.modifier) names.add(k.modifier);
+  for (const p of (k.introduced_by || [])) if (p.name) names.add(p.name);
+  const out = [];
+  for (const nm of names) {
+    const id = nodeByName.get(deMacron(nm));
+    if (id && out.indexOf(id) < 0) out.push(id);
+  }
+  return out;
+}
 // a style shows its own kata plus those of its parent styles, since a sub-style
 // inherits the parent syllabus
 function kataForStyle(sid) {
@@ -1072,8 +1109,8 @@ function kataPersonBtn(nm) {
   else b.disabled = true;
   return b;
 }
-function renderKataPanel() {
-  kataPanel.innerHTML = ""; kataPanel.hidden = false;
+function renderKataPanel(back) {
+  kataPanel.innerHTML = ""; showPanel(kataPanel, back);
   kataPanel.appendChild(panelCloseBtn(kataPanel));
   const h = document.createElement("h3");
   h.textContent = "Kata & forms (" + KATA.length + ")"; kataPanel.appendChild(h);
@@ -1098,8 +1135,137 @@ function renderKataPanel() {
   mkChk("with a named person", () => kataPeopleOnly, v => kataPeopleOnly = v);
   const tally = document.createElement("span"); filters.appendChild(tally);
   kataPanel.appendChild(filters);
+  // three ways to read the list, because they answer different questions:
+  // where a kata comes from, who practises it now, or simply where the name is
+  const kpick = document.createElement("div"); kpick.className = "order-pick";
+  for (const [v, lbl] of [["cat", "By origin"], ["style", "By style"], ["alpha", "A–Z"]]) {
+    const b = document.createElement("button");
+    b.className = "btn ord" + (kataOrder === v ? " on" : "");
+    b.textContent = lbl;
+    b.onclick = () => { kataOrder = v; renderKataPanel(); };
+    kpick.appendChild(b);
+  }
+  kataPanel.appendChild(kpick);
   const list = document.createElement("div"); kataPanel.appendChild(list);
   const famLabel = Object.fromEntries(FAM_ORDER);
+    function kataRow(k, showStyle) {
+    const row = document.createElement("div"); row.className = "kata-row";
+    const head = document.createElement("button"); head.className = "linklike kata-name";
+    head.textContent = (kataOpen.has(k.name) ? "▾ " : "▸ ") + k.name
+      + (k.native ? "  " + k.native : "");
+    head.onclick = () => {
+      kataOpen.has(k.name) ? kataOpen.delete(k.name) : kataOpen.add(k.name);
+      renderList();
+    };
+    row.appendChild(head);
+    if (showStyle) {
+      const meta = document.createElement("span"); meta.className = "kata-style";
+      const names = (k.style_ids || []).map(id => (styleByIdMap.get(id) || {}).label)
+        .filter(Boolean);
+      const shown = names.slice(0, 3).join(", ")
+        + (names.length > 3 ? " +" + (names.length - 3) : "");
+      meta.textContent = [k.level, shown || (famLabel[k.family] || k.family)]
+        .filter(Boolean).join(" · ");
+      row.appendChild(meta);
+    }
+    if (kataOpen.has(k.name)) {
+      const d = document.createElement("div"); d.className = "kata-detail";
+      const add = (lbl, txt) => {
+        if (!txt) return;
+        const e = document.createElement("div");
+        const b = document.createElement("b"); b.textContent = lbl + " ";
+        e.append(b, document.createTextNode(txt)); d.appendChild(e);
+      };
+      const addPerson = (lbl, nm, extra) => {
+        if (!nm) return;
+        const e = document.createElement("div");
+        const b = document.createElement("b"); b.textContent = lbl + " ";
+        e.append(b, kataPersonBtn(nm));
+        if (extra) e.appendChild(document.createTextNode(" · " + extra));
+        d.appendChild(e);
+      };
+      add("Meaning:", k.meaning);
+      add("Introduced:", k.era);
+      addPerson("Likely creator:", k.origin_person, k.origin_place);
+      addPerson("Likely modifier:", k.modifier, k.modified_era);
+      add("Provenance:", k.provenance);
+      if ((k.variants || []).length) add("Also known as:", k.variants.join(", "));
+      if ((k.style_ids || []).length) {
+        const e = document.createElement("div");
+        const b = document.createElement("b"); b.textContent = "Practised by: ";
+        e.appendChild(b);
+        let shownStyles = 0;
+        for (const sid of k.style_ids) {
+          const st = styleByIdMap.get(sid);
+          if (!st) continue;
+          if (shownStyles) e.appendChild(document.createTextNode(" · "));
+          const btn = document.createElement("button");
+          btn.className = "linklike"; btn.textContent = st.label;
+          btn.onclick = () => openStyleDetail(sid);
+          e.appendChild(btn); shownStyles++;
+        }
+        if (shownStyles) d.appendChild(e);
+      }
+      if ((k.introduced_by || []).length) {
+        const e = document.createElement("div");
+        const b = document.createElement("b"); b.textContent = "Lineage: "; e.appendChild(b);
+        k.introduced_by.forEach((p, i) => {
+          if (i) e.appendChild(document.createTextNode(" · "));
+          e.appendChild(kataPersonBtn(p.name));
+          e.appendChild(document.createTextNode(" (" + p.role + ")"));
+        });
+        d.appendChild(e);
+      }
+      // the client asked for contested attributions to be explicit rather
+      // than quietly averaged away, so say so on the face of the entry
+      if (k.disputed) {
+        const e = document.createElement("div"); e.className = "kata-disputed";
+        e.textContent = "⚠ Attribution disputed or not independently confirmed.";
+        d.appendChild(e);
+      }
+      // A kata's chart is the people who carried it: creator, modifiers and
+      // transmitters, plus the teaching chain that actually joins them.
+      const kIds = kataPeopleIds(k);
+      if (kIds.length) {
+        const ex = document.createElement("div");
+        ex.style.cssText = "display:flex;gap:6px;flex-wrap:wrap;margin-top:6px";
+        for (const [lbl, fmt] of exportFormats(
+              [["⬇ SVG", "svg"], ["PDF", "pdf"], ["PNG", "png"], ["JPG", "jpg"],
+               ["TIFF", "tiff"], ["CSV", "csv"], ["JSON", "json"], ["GraphML", "graphml"]])) {
+          const b = document.createElement("button");
+          b.className = "btn"; b.textContent = lbl;
+          b.onclick = () => {
+            const { ids } = connectionSet(kIds);
+            if (!ids.length) { toast("Nobody on the chart is credited with this kata."); return; }
+            if (fmt === "csv" || fmt === "json" || fmt === "graphml")
+              return exportSubset(ids, k.name, fmt);
+            exportClade(ids, "The transmission of " + k.name, fmt,
+                        [k.era, k.provenance].filter(Boolean).join(" · ").slice(0, 120));
+          };
+          ex.appendChild(b);
+        }
+        d.appendChild(ex);
+        const en = document.createElement("div"); en.className = "edit-note";
+        en.textContent = kIds.length + " people on the chart are credited with this kata"
+          + (canExportImages() ? "." : "; chart images come from the curator's copy.");
+        d.appendChild(en);
+      }
+      const [kNote, kVer] = String(k.note || "").split(/\s*\[Verifier:/);
+      add("", kNote);
+      if (curator() && kVer) add("Verifier", kVer.replace(/\]\s*$/, ""));
+      if (curator() && (k.sources || []).length) {
+        const e = document.createElement("div"); e.className = "evrow";
+        for (const u of k.sources) {
+          const a = document.createElement("a"); a.href = u; a.target = "_blank";
+          a.rel = "noopener"; a.textContent = "source ↗"; a.style.marginRight = "8px";
+          e.appendChild(a);
+        }
+        d.appendChild(e);
+      }
+      row.appendChild(d);
+    }
+      return row;
+    }
   function renderList() {
     list.textContent = "";
     const q = kataQuery.trim().toLowerCase();
@@ -1116,6 +1282,61 @@ function renderKataPanel() {
     const shown = KATA.filter(match).length;
     tally.textContent = "· " + shown + " of " + KATA.length + " shown, "
       + KATA.filter(named).length + " have a named person";
+    if (kataOrder === "style") {
+      // Under each originating group, every style that has kata, and its kata
+      // alphabetically. This is the view that answers "what does Shotokan do?".
+      const hint = document.createElement("div"); hint.className = "edit-note";
+      hint.textContent = "A kata appears under every style that practises it, so the same "
+        + "name recurs: Bassai Dai sits under Shōtōkan and under Shitō-ryū alike.";
+      list.appendChild(hint);
+      const shown = new Set();
+      for (const [fid, flab] of FAM_ORDER) {
+        const styles = DATA.styles.filter(s2 => s2.famRaw === fid)
+          .sort((a, b) => a.label.localeCompare(b.label));
+        const blocks = [];
+        for (const s2 of styles) {
+          const own = KATA.filter(k => (k.style_ids || []).indexOf(s2.id) >= 0 && match(k))
+            .sort((a, b) => a.name.localeCompare(b.name));
+          if (own.length) blocks.push([s2, own]);
+        }
+        if (!blocks.length) continue;
+        const fh = document.createElement("div"); fh.className = "st-fam";
+        const dot = document.createElement("span"); dot.className = "dot";
+        dot.style.background = famColour(fid);
+        fh.append(dot, document.createTextNode(" " + (famLabel[fid] || fid)));
+        list.appendChild(fh);
+        for (const [s2, own] of blocks) {
+          const sh = document.createElement("div"); sh.className = "kata-styleh";
+          const nm = document.createElement("button");
+          nm.className = "linklike"; nm.textContent = s2.label + " · " + own.length;
+          nm.onclick = () => openStyleDetail(s2.id);
+          sh.appendChild(nm);
+          list.appendChild(sh);
+          for (const k of own) { shown.add(k.name); list.appendChild(kataRow(k, false)); }
+        }
+      }
+      // a kata nobody is recorded as practising would vanish from this view, so say so
+      const orphanK = KATA.filter(k => match(k) && !shown.has(k.name));
+      if (orphanK.length) {
+        const fh = document.createElement("div"); fh.className = "st-fam";
+        fh.textContent = "Not yet attached to a style · " + orphanK.length;
+        list.appendChild(fh);
+        for (const k of orphanK.sort((a, b) => a.name.localeCompare(b.name)))
+          list.appendChild(kataRow(k, true));
+      }
+      return;
+    }
+    if (kataOrder === "alpha") {
+      const rows = KATA.filter(match).slice()
+        .sort((a, b) => a.name.localeCompare(b.name));
+      for (const k of rows) list.appendChild(kataRow(k, true));
+      if (!rows.length) {
+        const d = document.createElement("div"); d.className = "edit-note";
+        d.textContent = "No kata match “" + kataQuery + "”.";
+        list.appendChild(d);
+      }
+      return;
+    }
     for (const [fid] of FAM_ORDER) {
       const rows = KATA.filter(k => k.family === fid && match(k))
         .sort((a, b) => a.name.localeCompare(b.name));
@@ -1125,87 +1346,7 @@ function renderKataPanel() {
       dot.style.background = famColour(fid);
       fh.append(dot, document.createTextNode(" " + (famLabel[fid] || fid) + " · " + rows.length));
       list.appendChild(fh);
-      for (const k of rows) {
-        const row = document.createElement("div"); row.className = "kata-row";
-        const head = document.createElement("button"); head.className = "linklike kata-name";
-        head.textContent = (kataOpen.has(k.name) ? "▾ " : "▸ ") + k.name
-          + (k.native ? "  " + k.native : "");
-        head.onclick = () => {
-          kataOpen.has(k.name) ? kataOpen.delete(k.name) : kataOpen.add(k.name);
-          renderList();
-        };
-        row.appendChild(head);
-        if (kataOpen.has(k.name)) {
-          const d = document.createElement("div"); d.className = "kata-detail";
-          const add = (lbl, txt) => {
-            if (!txt) return;
-            const e = document.createElement("div");
-            const b = document.createElement("b"); b.textContent = lbl + " ";
-            e.append(b, document.createTextNode(txt)); d.appendChild(e);
-          };
-          const addPerson = (lbl, nm, extra) => {
-            if (!nm) return;
-            const e = document.createElement("div");
-            const b = document.createElement("b"); b.textContent = lbl + " ";
-            e.append(b, kataPersonBtn(nm));
-            if (extra) e.appendChild(document.createTextNode(" · " + extra));
-            d.appendChild(e);
-          };
-          add("Meaning:", k.meaning);
-          add("Introduced:", k.era);
-          addPerson("Likely creator:", k.origin_person, k.origin_place);
-          addPerson("Likely modifier:", k.modifier, k.modified_era);
-          add("Provenance:", k.provenance);
-          if ((k.variants || []).length) add("Also known as:", k.variants.join(", "));
-          if ((k.style_ids || []).length) {
-            const e = document.createElement("div");
-            const b = document.createElement("b"); b.textContent = "Practised by: ";
-            e.appendChild(b);
-            let shownStyles = 0;
-            for (const sid of k.style_ids) {
-              const st = styleByIdMap.get(sid);
-              if (!st) continue;
-              if (shownStyles) e.appendChild(document.createTextNode(" · "));
-              const btn = document.createElement("button");
-              btn.className = "linklike"; btn.textContent = st.label;
-              btn.onclick = () => openStyleDetail(sid);
-              e.appendChild(btn); shownStyles++;
-            }
-            if (shownStyles) d.appendChild(e);
-          }
-          if ((k.introduced_by || []).length) {
-            const e = document.createElement("div");
-            const b = document.createElement("b"); b.textContent = "Lineage: "; e.appendChild(b);
-            k.introduced_by.forEach((p, i) => {
-              if (i) e.appendChild(document.createTextNode(" · "));
-              e.appendChild(kataPersonBtn(p.name));
-              e.appendChild(document.createTextNode(" (" + p.role + ")"));
-            });
-            d.appendChild(e);
-          }
-          // the client asked for contested attributions to be explicit rather
-          // than quietly averaged away, so say so on the face of the entry
-          if (k.disputed) {
-            const e = document.createElement("div"); e.className = "kata-disputed";
-            e.textContent = "⚠ Attribution disputed or not independently confirmed.";
-            d.appendChild(e);
-          }
-          const [kNote, kVer] = String(k.note || "").split(/\s*\[Verifier:/);
-          add("", kNote);
-          if (curator() && kVer) add("Verifier", kVer.replace(/\]\s*$/, ""));
-          if (curator() && (k.sources || []).length) {
-            const e = document.createElement("div"); e.className = "evrow";
-            for (const u of k.sources) {
-              const a = document.createElement("a"); a.href = u; a.target = "_blank";
-              a.rel = "noopener"; a.textContent = "source ↗"; a.style.marginRight = "8px";
-              e.appendChild(a);
-            }
-            d.appendChild(e);
-          }
-          row.appendChild(d);
-        }
-        list.appendChild(row);
-      }
+      for (const k of rows) list.appendChild(kataRow(k, false));
     }
     if (!list.children.length) {
       const d = document.createElement("div"); d.className = "edit-note";
@@ -1214,6 +1355,257 @@ function renderKataPanel() {
     }
   }
   renderList();
+}
+
+/* ============ connections: how are these people related? ============
+   The client asked for the equivalent of routing between points on a map: pick
+   two or more people and see the chain that joins them. Teaching runs one way,
+   but relatedness does not, so the search is over the undirected graph and the
+   answer is usually "both descend from X" rather than "A taught B". */
+const cxPanel = document.getElementById("connectpanel");
+let cxPeople = [];
+document.getElementById("connectbtn").onclick = () => {
+  if (!cxPanel.hidden) { cxPanel.hidden = true; return; }
+  if (state.focus && cxPeople.indexOf(state.focus) < 0 && cxPeople.length < 2)
+    cxPeople.push(state.focus);
+  renderConnect();
+};
+// shortest chain between two people, ignoring the direction of teaching
+function pathBetween(a, b, primaryOnly) {
+  if (a === b) return [a];
+  const strict = primaryOnly === undefined ? linePrimaryOnly : primaryOnly;
+  const prev = new Map([[a, null]]);
+  const q = [a];
+  while (q.length) {
+    const u = q.shift();
+    const step = [];
+    for (const e of (parentsOf.get(u) || [])) if (!strict || e.primary) step.push(e.source);
+    for (const e of (childrenOf.get(u) || [])) if (!strict || e.primary) step.push(e.target);
+    for (const v of step) {
+      if (prev.has(v)) continue;
+      prev.set(v, u);
+      if (v === b) {
+        const out = [];
+        for (let cur = b; cur !== null; cur = prev.get(cur)) out.push(cur);
+        return out.reverse();
+      }
+      q.push(v);
+    }
+  }
+  return null;
+}
+// every pairwise chain, unioned: the sub-graph that explains the whole set
+function connectionSet(ids) {
+  const out = new Set(), paths = [];
+  for (let i = 0; i < ids.length; i++)
+    for (let j = i + 1; j < ids.length; j++) {
+      const p = pathBetween(ids[i], ids[j]);
+      paths.push({ a: ids[i], b: ids[j], path: p });
+      if (p) for (const x of p) out.add(x);
+    }
+  if (ids.length === 1) out.add(ids[0]);
+  return { ids: [...out], paths };
+}
+function renderConnect() {
+  cxPanel.innerHTML = ""; showPanel(cxPanel);
+  cxPanel.appendChild(panelCloseBtn(cxPanel));
+  const h = document.createElement("h3");
+  h.textContent = "How are they connected?"; cxPanel.appendChild(h);
+  const note = document.createElement("div"); note.className = "edit-note";
+  note.textContent = "Add two or more people. The shortest chain of teaching between each "
+    + "pair is traced, and the whole set exports as one chart.";
+  cxPanel.appendChild(note);
+
+  const inp = document.createElement("input");
+  inp.className = "kata-search"; inp.type = "search";
+  inp.placeholder = "Add a person…";
+  const res = document.createElement("div"); res.className = "cx-results";
+  inp.oninput = () => {
+    res.textContent = "";
+    const q = deMacron(inp.value.trim()).replace(/[-_/]/g, " ").toLowerCase();
+    if (q.length < 2) return;
+    const hits = DATA.nodes.filter(n => searchMatch(searchHay(n), q)).slice(0, 6);
+    for (const n of hits) {
+      const b = document.createElement("button");
+      b.className = "linklike"; b.style.display = "block";
+      b.textContent = eff(n).name + (n.styleLabel ? "  · " + n.styleLabel : "");
+      b.onclick = () => {
+        if (cxPeople.indexOf(n.id) < 0) cxPeople.push(n.id);
+        inp.value = ""; renderConnect();
+      };
+      res.appendChild(b);
+    }
+  };
+  cxPanel.append(inp, res);
+
+  const chips = document.createElement("div"); chips.className = "cx-chips";
+  for (const id of cxPeople) {
+    const c = document.createElement("span"); c.className = "cx-chip";
+    c.appendChild(document.createTextNode(eff(byId.get(id)).name));
+    const x = document.createElement("button"); x.textContent = "✕";
+    x.title = "Remove";
+    x.onclick = () => { cxPeople = cxPeople.filter(p => p !== id); renderConnect(); };
+    c.appendChild(x); chips.appendChild(c);
+  }
+  cxPanel.appendChild(chips);
+
+  if (cxPeople.length < 2) {
+    const d = document.createElement("div"); d.className = "edit-note";
+    d.textContent = "Add at least two people.";
+    cxPanel.appendChild(d);
+    return;
+  }
+  const { ids, paths } = connectionSet(cxPeople);
+  for (const { a, b, path } of paths) {
+    const d = document.createElement("div"); d.className = "cx-path";
+    const nameA = eff(byId.get(a)).name, nameB = eff(byId.get(b)).name;
+    if (!path) {
+      const e = document.createElement("div"); e.className = "cx-none";
+      e.textContent = nameA + " and " + nameB + " are not connected by any recorded chain"
+        + (linePrimaryOnly ? " of style-bearing links." : ".");
+      cxPanel.appendChild(e); continue;
+    }
+    const via = document.createElement("span"); via.className = "via";
+    via.textContent = (path.length - 1) + (path.length === 2 ? " step: " : " steps: ");
+    d.appendChild(via);
+    path.forEach((id, i) => {
+      if (i) {
+        const arrow = document.createElement("span"); arrow.className = "cx-hop";
+        // which way the teaching actually runs on this hop
+        const fwd = (childrenOf.get(path[i - 1]) || []).some(e => e.target === id);
+        arrow.textContent = fwd ? " → " : " ← ";
+        d.appendChild(arrow);
+      }
+      const btn = document.createElement("button");
+      btn.className = "linklike"; btn.textContent = eff(byId.get(id)).name;
+      btn.onclick = () => { cxPanel.hidden = true; clickSelect(id); centreOn(id, Math.max(view.k, 0.9)); };
+      d.appendChild(btn);
+    });
+    cxPanel.appendChild(d);
+  }
+  const sum = document.createElement("div"); sum.className = "edit-note";
+  sum.textContent = ids.length + " people in the connecting sub-graph.";
+  cxPanel.appendChild(sum);
+
+  const wrap = document.createElement("div");
+  wrap.style.cssText = "display:flex;gap:6px;flex-wrap:wrap;margin-top:6px";
+  for (const [lbl, fmt] of exportFormats(
+        [["⬇ SVG", "svg"], ["PDF", "pdf"], ["PNG", "png"], ["JPG", "jpg"], ["TIFF", "tiff"],
+         ["CSV", "csv"], ["JSON", "json"], ["GraphML", "graphml"]])) {
+    const b = document.createElement("button"); b.className = "btn"; b.textContent = lbl;
+    const label = cxPeople.map(id => eff(byId.get(id)).name).join(" and ");
+    b.onclick = () => {
+      if (fmt === "csv" || fmt === "json" || fmt === "graphml")
+        return exportSubset(ids, label, fmt);
+      exportClade(ids, label, fmt, "the chain connecting them");
+    };
+    wrap.appendChild(b);
+  }
+  cxPanel.appendChild(wrap);
+  const clear = document.createElement("button");
+  clear.className = "linklike"; clear.style.marginTop = "8px"; clear.textContent = "Clear";
+  clear.onclick = () => { cxPeople = []; renderConnect(); };
+  cxPanel.appendChild(clear);
+}
+
+/* ============ key: what the lines, colours and rings actually mean ============ */
+const keyPanel = document.getElementById("keypanel");
+document.getElementById("keybtn").onclick = () => {
+  if (!keyPanel.hidden) { keyPanel.hidden = true; return; }
+  renderKey();
+};
+function renderKey() {
+  keyPanel.innerHTML = ""; keyPanel.hidden = false;
+  const x = document.createElement("button");
+  x.className = "btn d-close"; x.textContent = "✕";
+  x.onclick = () => { keyPanel.hidden = true; };
+  keyPanel.appendChild(x);
+  const h = document.createElement("h3"); h.textContent = "Lines between people";
+  keyPanel.appendChild(h);
+  const line = (attrs) => {
+    const svg = document.createElementNS(SVGNS, "svg");
+    svg.setAttribute("width", "44"); svg.setAttribute("height", "12");
+    const p = document.createElementNS(SVGNS, "path");
+    p.setAttribute("d", "M1 6 H43");
+    p.setAttribute("fill", "none");
+    p.setAttribute("stroke", attrs.stroke || "var(--edge)");
+    p.setAttribute("stroke-width", attrs.w || 1.6);
+    if (attrs.dash) p.setAttribute("stroke-dasharray", attrs.dash);
+    p.setAttribute("stroke-opacity", attrs.op || 1);
+    svg.appendChild(p);
+    return svg;
+  };
+  const row = (mark, title, text) => {
+    const d = document.createElement("div"); d.className = "key-row";
+    d.appendChild(mark);
+    const s = document.createElement("span");
+    const b = document.createElement("b"); b.textContent = title + " ";
+    s.append(b, document.createTextNode(text));
+    d.appendChild(s); keyPanel.appendChild(d);
+  };
+  row(line({}), "Solid.",
+      "The style-bearing line: the teacher whose system the student went on to carry.");
+  row(line({ dash: "3 4" }), "Dashed.",
+      "Secondary study. Real and documented, but it did not carry the style. "
+      + "Kenkō Nakaima studied under Yabu Kentsū, yet kept his grandfather's Ryūei-ryū unaltered.");
+  row(line({ dash: "1.5 5" }), "Dotted.",
+      "Low confidence: oral tradition, contested, or inferred from indirect evidence.");
+  row(line({ stroke: "var(--accent)", w: 2 }), "Blue.",
+      "A direct teacher or student of the person you have selected.");
+  row(line({ op: 0.28 }), "Faint.",
+      "Off the selected lineage. Still there, pushed back so the line you asked for reads.");
+  row(line({ stroke: "#d4483f", dash: "4 3" }), "Red.",
+      "You have flagged this link as wrong. It exports with your corrections.");
+  const h2 = document.createElement("h3"); h2.textContent = "Colour";
+  keyPanel.appendChild(h2);
+  const sw = (fill) => {
+    const svg = document.createElementNS(SVGNS, "svg");
+    svg.setAttribute("width", "44"); svg.setAttribute("height", "12");
+    const c = document.createElementNS(SVGNS, "circle");
+    c.setAttribute("cx", "22"); c.setAttribute("cy", "6"); c.setAttribute("r", "5");
+    c.setAttribute("fill", fill); svg.appendChild(c);
+    return svg;
+  };
+  const fam = document.createElement("div"); fam.className = "key-row";
+  const fsvg = document.createElementNS(SVGNS, "svg");
+  fsvg.setAttribute("width", "44"); fsvg.setAttribute("height", "12");
+  FAM_ORDER.slice(0, 6).forEach(([f], i) => {
+    const c = document.createElementNS(SVGNS, "circle");
+    c.setAttribute("cx", String(5 + i * 7)); c.setAttribute("cy", "6"); c.setAttribute("r", "3.4");
+    c.setAttribute("fill", famColour(f)); fsvg.appendChild(c);
+  });
+  fam.appendChild(fsvg);
+  const fs = document.createElement("span");
+  const fb = document.createElement("b"); fb.textContent = "Hue. ";
+  fs.append(fb, document.createTextNode("The originating group: Shuri-te, Naha-te, Tomari-te, "
+    + "Uechi-ryū, kobudō, and so on. A line takes the tint of the teacher's group."));
+  fam.appendChild(fs); keyPanel.appendChild(fam);
+  const h3 = document.createElement("h3"); h3.textContent = "Rings on a name";
+  keyPanel.appendChild(h3);
+  const ring = (attrs) => {
+    const svg = document.createElementNS(SVGNS, "svg");
+    svg.setAttribute("width", "44"); svg.setAttribute("height", "14");
+    const c = document.createElementNS(SVGNS, "circle");
+    c.setAttribute("cx", "22"); c.setAttribute("cy", "7"); c.setAttribute("r", "4");
+    c.setAttribute("fill", "var(--muted)"); svg.appendChild(c);
+    const o = document.createElementNS(SVGNS, "circle");
+    o.setAttribute("cx", "22"); o.setAttribute("cy", "7"); o.setAttribute("r", "6.5");
+    o.setAttribute("fill", "none"); o.setAttribute("stroke", attrs.stroke);
+    o.setAttribute("stroke-width", "1.3");
+    if (attrs.dash) o.setAttribute("stroke-dasharray", attrs.dash);
+    svg.appendChild(o);
+    return svg;
+  };
+  row(ring({ stroke: "var(--muted)", dash: "1 3" }), "Broken ring.",
+      "Legendary or semi-historical: the person is named in tradition but not firmly documented.");
+  row(ring({ stroke: "#64748b" }), "Slate ring.", "Also a kobudō (weapons) exponent.");
+  if (curator())
+    row(ring({ stroke: "var(--warn)", dash: "2.5 2.5" }), "Warning ring.",
+        "You have marked this person for review.");
+  const note = document.createElement("div"); note.className = "edit-note";
+  note.textContent = "Size follows how many people descend from someone, so the figures who "
+    + "shaped the art read first. Position follows date of birth, left to right.";
+  keyPanel.appendChild(note);
 }
 
 /* ============ analytics: who was most connected, and whose line stopped ======
@@ -1230,6 +1622,7 @@ function saveCSV(rows, filename) {
 const statsPanel = document.getElementById("statspanel");
 const statsBtn = document.getElementById("statsbtn");
 let rankMeasure = RANK && RANK.measures.length ? RANK.measures[0].key : "";
+let rankScope = "";
 if (RANK) statsBtn.hidden = false;
 statsBtn.onclick = () => {
   if (!statsPanel.hidden) { statsPanel.hidden = true; return; }
@@ -1244,7 +1637,7 @@ function rankFor(id) {
 }
 function renderStatsPanel() {
   if (!RANK) return;
-  statsPanel.innerHTML = ""; statsPanel.hidden = false;
+  statsPanel.innerHTML = ""; showPanel(statsPanel);
   statsPanel.appendChild(panelCloseBtn(statsPanel));
   const h = document.createElement("h3");
   h.textContent = "Analytics"; statsPanel.appendChild(h);
@@ -1266,6 +1659,29 @@ function renderStatsPanel() {
   sel.onchange = () => { rankMeasure = sel.value; draw(); };
   statsPanel.appendChild(sel);
 
+  // Scope: the whole tree, or one style and everything beneath it. This is what
+  // turns a fixed table into a question you can ask, e.g. "who has the largest
+  // body of prominent students inside Goju-ryu".
+  const scope = document.createElement("select"); scope.className = "rk-select";
+  const oAll = document.createElement("option");
+  oAll.value = ""; oAll.textContent = "Across the whole tree";
+  scope.appendChild(oAll);
+  for (const [fid, flabel] of FAM_ORDER) {
+    const styles = DATA.styles.filter(s => s.famRaw === fid && styleMembers(s.id).length >= 5)
+      .sort((a, b) => a.label.localeCompare(b.label));
+    if (!styles.length) continue;
+    const g = document.createElement("optgroup"); g.label = flabel;
+    for (const s of styles) {
+      const o = document.createElement("option");
+      o.value = s.id; o.textContent = s.label + " (" + styleMembers(s.id).length + ")";
+      g.appendChild(o);
+    }
+    scope.appendChild(g);
+  }
+  scope.value = rankScope;
+  scope.onchange = () => { rankScope = scope.value; draw(); };
+  statsPanel.appendChild(scope);
+
   const note = document.createElement("div"); note.className = "rk-note";
   statsPanel.appendChild(note);
   const wrap = document.createElement("div"); statsPanel.appendChild(wrap);
@@ -1280,6 +1696,31 @@ function renderStatsPanel() {
     const m = RANK.measures.find(x => x.key === rankMeasure);
     note.textContent = terminal ? RANK.terminal.note : (m ? m.note : "");
     current = terminal ? RANK.terminal.list : (RANK.top[rankMeasure] || []);
+    if (rankScope) {
+      // The precomputed top-50 is global, so a style's own leaders are rebuilt
+      // here from each person's stored figures rather than filtered out of it,
+      // which would leave a style with only the handful that made the global list.
+      const inStyle = new Set(styleMembers(rankScope));
+      const rows = [];
+      for (const id of inStyle) {
+        const v = rankFor(id);
+        const n = byId.get(id);
+        if (!v || !n) continue;
+        rows.push({ id, name: eff(n).name,
+                    dates: n.birth ? n.birth + (n.death ? "–" + n.death : "–") : "?",
+                    style: n.styleLabel || "", family: n.family || "", v });
+      }
+      if (terminal) {
+        current = rows.filter(r => r.v.direct === 0 && r.v.teachers > 0)
+          .sort((a, b) => a.dates.localeCompare(b.dates));
+      } else {
+        current = rows.sort((a, b) => (b.v[rankMeasure] || 0) - (a.v[rankMeasure] || 0)
+                                   || a.name.localeCompare(b.name)).slice(0, 50);
+      }
+      const st = styleByIdMap.get(rankScope);
+      note.textContent += " Restricted to " + (st ? st.label : rankScope)
+        + " and its sub-styles: " + inStyle.size + " people, ranked among themselves.";
+    }
     currentCols = terminal ? ["teachers", "generations"] : [rankMeasure];
     wrap.textContent = "";
     const t = document.createElement("table"); t.className = "rk-table";
@@ -1322,7 +1763,8 @@ function renderStatsPanel() {
     const rows = [cols].concat(current.map((r, i) =>
       [rankMeasure === "__terminal" ? "" : i + 1, r.name, r.dates, r.style, r.family]
         .concat(RANK.keys.map(k => r.v[k]))));
-    const label = rankMeasure === "__terminal" ? "terminal-lineages" : rankMeasure;
+    const label = (rankMeasure === "__terminal" ? "terminal-lineages" : rankMeasure)
+      + (rankScope ? "-in-" + slugify(rankScope) : "");
     saveCSV(rows, "karate-analytics-" + label + ".csv");
   }
   draw();
@@ -1338,11 +1780,11 @@ document.getElementById("stylesbtn").onclick = () => {
 };
 // A style's own page: where it sits in the family tree, who made it and when,
 // who practises it, and which kata belong to it.
-function openStyleDetail(sid) {
+function openStyleDetail(sid, back) {
   const st = styleByIdMap.get(sid);
   if (!st) return;
   const panel = document.getElementById("detail");
-  panel.innerHTML = ""; panel.hidden = false;
+  panel.innerHTML = ""; showPanel(panel, back);
   panel.appendChild(panelCloseBtn(panel));
   const h = document.createElement("h2"); h.textContent = st.label;
   panel.appendChild(h);
@@ -1390,25 +1832,28 @@ function openStyleDetail(sid) {
   if (ks.length) {
     const h4 = document.createElement("h4");
     h4.textContent = "Kata (" + ks.length + ")"; panel.appendChild(h4);
-    ks.sort((a, b) => (a.from ? 1 : 0) - (b.from ? 1 : 0) || a.kata.name.localeCompare(b.kata.name));
-    for (const { kata, from } of ks.slice(0, 60)) {
+    // ordered as they are taught: junior first, then middle, then senior, and
+    // the style's own kata before those inherited from a parent
+    const LVL = { junior: 0, middle: 1, senior: 2 };
+    ks.sort((a, b) => (a.from ? 1 : 0) - (b.from ? 1 : 0)
+                   || (LVL[a.kata.level] ?? 3) - (LVL[b.kata.level] ?? 3)
+                   || a.kata.name.localeCompare(b.kata.name));
+    for (const { kata, from } of ks) {
       const row = document.createElement("div"); row.className = "rel";
       const b = document.createElement("button"); b.className = "linklike";
-      b.textContent = kata.name;
-      b.onclick = () => { kataQuery = kata.name; kataOpen = new Set([kata.name]); renderKataPanel(); };
+      b.textContent = kata.name + (kata.native ? "  " + kata.native : "");
+      b.onclick = () => openKata(kata.name,
+        { label: st.label, open: () => openStyleDetail(sid) });
       const meta = document.createElement("span"); meta.className = "conf";
       const who = kata.origin_person || (kata.introduced_by || [])[0]?.name || "";
-      meta.textContent = [who, kata.era, from ? "via " + (styleByIdMap.get(from) || {}).label : ""]
+      meta.textContent = [kata.level, who, kata.era,
+                          from ? "via " + (styleByIdMap.get(from) || {}).label : ""]
         .filter(Boolean).join(" · ");
       if (kata.disputed) meta.classList.add("disputed");
       row.append(b, meta);
       panel.appendChild(row);
     }
-    if (ks.length > 60) {
-      const more = document.createElement("div"); more.className = "edit-note";
-      more.textContent = "…and " + (ks.length - 60) + " more; open the Kata tab to see them all.";
-      panel.appendChild(more);
-    }
+
   }
 
   // senior people in this style, most connected first
@@ -1431,27 +1876,123 @@ function openStyleDetail(sid) {
   }
 
   const h4e = document.createElement("h4"); h4e.textContent = "Publish"; panel.appendChild(h4e);
+  // same generation control the person panel has: a style's chart is as
+  // unreadable as a person's when it runs to every last descendant
+  const members = styleMembers(sid);
+  const roots = members.filter(id => !(parentsOf.get(id) || [])
+    .some(e => members.indexOf(e.source) >= 0));
+  let stChosen = Infinity;
+  const gsel = document.createElement("select"); gsel.className = "rk-select";
+  const stDepth = (() => {
+    let best = 0;
+    for (const r of roots) best = Math.max(best, lineageDepth(r, "down"));
+    return Math.max(best, 1);
+  })();
+  const opts = [["Everyone in this style", Infinity]];
+  for (let g = 1; g <= Math.min(stDepth, 12); g++)
+    opts.push([g === 1 ? "The heads only" : g + " generations from the head", g]);
+  for (const [lbl, v] of opts) {
+    const o = document.createElement("option");
+    o.value = String(v); o.textContent = lbl; gsel.appendChild(o);
+  }
+  gsel.value = "Infinity";
+  const count = document.createElement("div"); count.className = "edit-note";
+  function stIds() {
+    if (stChosen === Infinity) return members;
+    const keep = new Set();
+    for (const r of roots) for (const id of lineageSet(r, "down", stChosen - 1)) keep.add(id);
+    return members.filter(id => keep.has(id));
+  }
+  function paintCount() {
+    const n = stIds().length;
+    count.textContent = n + " of " + members.length + " people in this chart.";
+  }
+  gsel.onchange = () => {
+    stChosen = gsel.value === "Infinity" ? Infinity : parseInt(gsel.value, 10);
+    paintCount();
+  };
+  panel.appendChild(gsel); panel.appendChild(count); paintCount();
+
   const wrap = document.createElement("div");
   wrap.style.cssText = "display:flex;gap:6px;flex-wrap:wrap";
-  for (const [lbl, fmt] of [["⬇ SVG", "svg"], ["PDF", "pdf"], ["PNG", "png"],
-                            ["CSV", "csv"], ["JSON", "json"], ["GraphML", "graphml"]]) {
+  for (const [lbl, fmt] of exportFormats(
+        [["⬇ SVG", "svg"], ["PDF", "pdf"], ["PNG", "png"], ["JPG", "jpg"], ["TIFF", "tiff"],
+         ["CSV", "csv"], ["JSON", "json"], ["GraphML", "graphml"]])) {
     const b = document.createElement("button"); b.className = "btn"; b.textContent = lbl;
     b.onclick = () => {
-      const ids = styleMembers(sid);
+      const ids = stIds();
       if (fmt === "csv" || fmt === "json" || fmt === "graphml")
         return exportSubset(ids, st.label, fmt);
-      exportClade(ids, "The " + st.label + " clade", fmt, styleProvenance(sid));
+      const gtag = stChosen === Infinity ? "" : stChosen + " generation"
+                   + (stChosen === 1 ? "" : "s");
+      exportClade(ids, "The " + st.label + " clade", fmt,
+                  [styleProvenance(sid), gtag].filter(Boolean).join(" · "));
     };
     wrap.appendChild(b);
   }
   panel.appendChild(wrap);
   const note = document.createElement("div"); note.className = "edit-note";
-  note.textContent = "Charts and data for this style and every sub-style beneath it.";
+  note.textContent = canExportImages()
+    ? "Charts and data for this style and every sub-style beneath it."
+    : "Data for this style and every sub-style beneath it. Chart images are "
+      + "generated from the curator's copy.";
   panel.appendChild(note);
 }
 
+// shared A–Z / by-category switch, used by the style list, the kata list and the table
+let styleOrder = "cat", kataOrder = "cat", tableOrder = "cat";
+function orderPicker(value, onPick, catLabel, alphaLabel) {
+  const wrap = document.createElement("div"); wrap.className = "order-pick";
+  for (const [v, lbl] of [["cat", catLabel], ["alpha", alphaLabel]]) {
+    const b = document.createElement("button");
+    b.className = "btn ord" + (value === v ? " on" : "");
+    b.textContent = lbl;
+    b.onclick = () => onPick(v);
+    wrap.appendChild(b);
+  }
+  return wrap;
+}
+// A–Z over every style, each showing where it sits, so the tree is still legible
+function renderStyleAlpha() {
+  const q = styleQuery.trim().toLowerCase();
+  const rows = DATA.styles
+    .filter(s => !q || (s.label + " " + s.id + " " + (s.founder || "")).toLowerCase().includes(q))
+    .slice().sort((a, b) => a.label.localeCompare(b.label));
+  for (const s of rows) {
+    const row = document.createElement("div");
+    row.className = "st-row" + (state.style === s.id ? " on" : "");
+    const c = styleMembers(s.id).length;
+    const nameB = document.createElement("button");
+    nameB.className = "linklike st-name"; nameB.textContent = s.label;
+    if (c) nameB.onclick = () => { setStyleFilter(state.style === s.id ? "" : s.id); renderStylePanel(); };
+    const meta = document.createElement("span"); meta.className = "st-meta";
+    meta.textContent = styleChainLabel(s.id);
+    const cnt = document.createElement("span"); cnt.className = "st-count";
+    cnt.textContent = c || "–";
+    const info = document.createElement("button");
+    info.className = "linklike st-i"; info.textContent = "ⓘ";
+    info.onclick = () => openStyleDetail(s.id);
+    row.append(nameB, meta, cnt, info);
+    stylePanel.appendChild(row);
+  }
+  if (!rows.length) {
+    const d = document.createElement("div"); d.className = "edit-note";
+    d.textContent = "No style matches “" + styleQuery + "”.";
+    stylePanel.appendChild(d);
+  }
+}
+// "Gōjū-ryū < Naha-te", so an alphabetical row still says where it belongs
+function styleChainLabel(sid) {
+  const out = []; let cur = styleByIdMap.get(sid), hops = 0;
+  while (cur && cur.parent && hops++ < 8) {
+    const p = styleByIdMap.get(cur.parent);
+    if (!p) break;
+    out.push(p.label); cur = p;
+  }
+  return out.slice(0, 2).join(" < ");
+}
 function renderStylePanel() {
-  stylePanel.innerHTML = ""; stylePanel.hidden = false;
+  stylePanel.innerHTML = ""; showPanel(stylePanel);
   stylePanel.appendChild(panelCloseBtn(stylePanel));
   const h = document.createElement("h3"); h.textContent = "Style tree"; stylePanel.appendChild(h);
   const note = document.createElement("div"); note.className = "edit-note";
@@ -1467,6 +2008,11 @@ function renderStylePanel() {
     if (el) el.focus();
   }, 0); };
   stylePanel.appendChild(find);
+  // Two ways to read a style list, and they answer different questions: where a
+  // style sits in the tradition, or simply where a name is in the alphabet.
+  stylePanel.appendChild(orderPicker(styleOrder, v => {
+    styleOrder = v; renderStylePanel();
+  }, "By tradition", "A–Z"));
   const counts = new Map();
   const count = id => {
     if (!counts.has(id)) counts.set(id, styleMembers(id).length);
@@ -1521,9 +2067,16 @@ function renderStylePanel() {
     stylePanel.appendChild(row);
     if (styleOpen.has(sid) || (q && kids.some(subtreeHit))) for (const k of kids) addRow(k, depth + 1);
   };
+  if (styleOrder === "alpha") { renderStyleAlpha(); return; }
   for (const [fid, flabel] of FAM_ORDER) {
+    // A style is a root OF ITS FAMILY when its parent sits in another family.
+    // Testing only for "no parent" hid Shuri-te, Naha-te and Tomari-te entirely,
+    // because their styles hang off parents held in a different group, so the
+    // tree appeared to begin at Uechi-ryu.
     const tops = DATA.styles
-      .filter(s => s.famRaw === fid && (!s.parent || !styleByIdMap.has(s.parent)))
+      .filter(s => s.famRaw === fid
+              && (!s.parent || !styleByIdMap.has(s.parent)
+                  || (styleByIdMap.get(s.parent) || {}).famRaw !== fid))
       .map(s => s.id)
       .sort((a, b) => label(a).localeCompare(label(b)));
     if (!tops.length) continue;
@@ -1536,17 +2089,50 @@ function renderStylePanel() {
   }
 }
 
-/* ============ detail panel ============ */
+/* ============ panels ============
+   Every panel sits at the same place on the right, so two open at once means the
+   second is invisible behind the first. That is why clicking a kata inside a
+   person's panel looked like it did nothing: the kata panel opened underneath.
+   One panel is visible at a time, and a panel opened from another offers a way
+   back to it. */
+const PANEL_IDS = ["detail", "tablepanel", "orphanpanel", "addpanel",
+                   "stylepanel", "katapanel", "statspanel", "connectpanel"];
+let panelBack = null;          // {label, open} describing where we came from
+function showPanel(el, back) {
+  for (const id of PANEL_IDS) {
+    const p = document.getElementById(id);
+    if (p && p !== el) p.hidden = true;
+  }
+  panelBack = back || null;
+  el.hidden = false;
+}
 function closePanel(id) { document.getElementById(id).hidden = true; }
 function panelCloseBtn(panel) {
-  const b = document.createElement("button");
-  b.className = "btn d-close"; b.textContent = "✕";
-  b.onclick = () => { panel.hidden = true; };
-  return b;
+  const wrap = document.createElement("div"); wrap.className = "panel-bar";
+  if (panelBack) {
+    const b = document.createElement("button");
+    b.className = "linklike panel-back";
+    b.textContent = "← " + panelBack.label;
+    const go = panelBack.open;
+    b.onclick = () => go();
+    wrap.appendChild(b);
+  }
+  const x = document.createElement("button");
+  x.className = "btn d-close"; x.textContent = "✕";
+  x.onclick = () => { panel.hidden = true; panelBack = null; };
+  wrap.appendChild(x);
+  return wrap;
 }
-function openDetail(id) {
+// open the canonical kata entry, from wherever the user clicked it
+function openKata(name, back) {
+  kataQuery = name;
+  kataDisputedOnly = false; kataPeopleOnly = false;
+  kataOpen = new Set([name]);
+  renderKataPanel(back);
+}
+function openDetail(id, back) {
   const n = byId.get(id), f = eff(n), panel = document.getElementById("detail");
-  panel.innerHTML = ""; panel.hidden = false;
+  panel.innerHTML = ""; showPanel(panel, back);
   panel.appendChild(panelCloseBtn(panel));
   const h = document.createElement("h2"); h.textContent = f.name; panel.appendChild(h);
   if (f.native) { const d = document.createElement("div"); d.className = "native-big"; d.textContent = f.native; panel.appendChild(d); }
@@ -1616,7 +2202,8 @@ function openDetail(id) {
       const row = document.createElement("div"); row.className = "rel";
       const b = document.createElement("button"); b.className = "linklike";
       b.textContent = kata.name + (kata.native ? "  " + kata.native : "");
-      b.onclick = () => { kataQuery = kata.name; kataOpen = new Set([kata.name]); renderKataPanel(); };
+      b.onclick = () => openKata(kata.name,
+        { label: eff(n).name, open: () => openDetail(id) });
       const r = document.createElement("span"); r.className = "conf";
       r.textContent = role + (kata.era ? " · " + kata.era : "")
         + (kata.disputed ? " · disputed" : "");
@@ -1802,6 +2389,25 @@ function openDetail(id) {
   if (pos.has(id) && n.connected) {
     const h4p = document.createElement("h4"); h4p.textContent = "Publish"; panel.appendChild(h4p);
 
+    // Follow only the links that carried a style, or every documented link.
+    // The difference is not cosmetic: a teacher's supplementary study drags a
+    // whole foreign branch into a student's apparent ancestry.
+    const pl = document.createElement("label"); pl.className = "prim-toggle";
+    const pc = document.createElement("input"); pc.type = "checkbox";
+    pc.checked = linePrimaryOnly;
+    pc.onchange = () => {
+      linePrimaryOnly = pc.checked;
+      applyFilters();
+      openDetail(id);
+    };
+    pl.append(pc, document.createTextNode("style-bearing line only"));
+    panel.appendChild(pl);
+    const pn2 = document.createElement("div"); pn2.className = "edit-note";
+    pn2.textContent = linePrimaryOnly
+      ? "Following only the links that carried a style. Supplementary study is left out."
+      : "Following every documented link, including study that did not carry a style.";
+    panel.appendChild(pn2);
+
     // How many teaching generations to include. A whole clade is usually far too
     // big to read on a page; one or two generations is the figure people want.
     const maxD = lineageDepth(id, state.dir);
@@ -1841,9 +2447,9 @@ function openDetail(id) {
 
     const wrap = document.createElement("div"); wrap.style.display = "flex";
     wrap.style.gap = "6px"; wrap.style.flexWrap = "wrap"; wrap.style.marginTop = "6px";
-    for (const [lbl, fmt] of [["⬇ SVG", "svg"], ["PDF", "pdf"], ["PNG", "png"],
-                              ["JPG", "jpg"], ["TIFF", "tiff"], ["CSV", "csv"], ["JSON", "json"],
-                              ["GraphML", "graphml"]]) {
+    for (const [lbl, fmt] of exportFormats(
+          [["⬇ SVG", "svg"], ["PDF", "pdf"], ["PNG", "png"], ["JPG", "jpg"], ["TIFF", "tiff"],
+           ["CSV", "csv"], ["JSON", "json"], ["GraphML", "graphml"]])) {
       const b = document.createElement("button"); b.className = "btn"; b.textContent = lbl;
       b.onclick = () => {
         const ids = [...lineageSet(id, state.dir, chosen)];
@@ -1900,7 +2506,7 @@ function evidenceLink(tok, e) {
 function openEdgeDetail(e) {
   const s = byId.get(e.source), t = byId.get(e.target);
   const panel = document.getElementById("detail");
-  panel.innerHTML = ""; panel.hidden = false;
+  panel.innerHTML = ""; showPanel(panel);
   panel.appendChild(panelCloseBtn(panel));
   const h = document.createElement("h2");
   h.textContent = eff(s).name + " → " + eff(t).name;
@@ -1975,7 +2581,7 @@ orphanBtn.onclick = () => {
   renderListPanel(p, orphans, "Not yet linked to the tree (no teacher or student edges in the data)");
 };
 function renderListPanel(p, people, blurb) {
-  p.innerHTML = ""; p.hidden = false;
+  p.innerHTML = ""; showPanel(p);
   p.appendChild(panelCloseBtn(p));
   const h = document.createElement("h2"); h.style.fontSize = "15px"; h.textContent = blurb;
   p.appendChild(h);
@@ -2001,7 +2607,7 @@ function renderListPanel(p, people, blurb) {
 document.getElementById("listview").onclick = () => {
   const p = document.getElementById("tablepanel");
   if (!p.hidden) { p.hidden = true; return; }
-  p.innerHTML = ""; p.hidden = false;
+  p.innerHTML = ""; showPanel(p);
   p.appendChild(panelCloseBtn(p));
   const h = document.createElement("h2"); h.style.fontSize = "15px";
   h.textContent = "Visible people"; p.appendChild(h);
@@ -2051,7 +2657,12 @@ function visiblePeople() {
 
 /* ============ export ============ */
 const expBtn = document.getElementById("exportbtn"), expMenu = document.getElementById("exportmenu");
-expBtn.onclick = ev => { ev.stopPropagation(); expMenu.hidden = !expMenu.hidden; };
+expBtn.onclick = ev => {
+  ev.stopPropagation();
+  for (const b of expMenu.querySelectorAll("button"))
+    b.hidden = IMAGE_FMTS.has(String(b.dataset.x || "")) && !canExportImages();
+  expMenu.hidden = !expMenu.hidden;
+};
 document.addEventListener("click", () => { expMenu.hidden = true; });
 function hideMenus() { expMenu.hidden = true; sBox.hidden = true; }
 expMenu.addEventListener("click", ev => {
@@ -2576,7 +3187,7 @@ document.getElementById("addperson").onclick = () => {
   renderAddPanel();
 };
 function renderAddPanel() {
-  addPanel.innerHTML = ""; addPanel.hidden = false;
+  addPanel.innerHTML = ""; showPanel(addPanel);
   addPanel.appendChild(panelCloseBtn(addPanel));
   const h = document.createElement("h3"); h.textContent = "Add a person"; addPanel.appendChild(h);
   const grid = document.createElement("div"); grid.className = "edit-grid";

@@ -191,6 +191,25 @@ body { overflow: hidden; }
   display: flex; flex-direction: column; gap: 3px; }
 .kata-detail b { color: var(--ink); font-weight: 600; }
 .kata-disputed { color: var(--warn, #a2601a); font-size: 11.5px; margin-top: 2px; }
+.kata-style { display: block; font-size: 11px; color: var(--muted); margin: 0 0 2px 14px; }
+.kata-styleh { font-size: 12px; font-weight: 600; margin: 7px 0 2px 8px; }
+.order-pick { display: inline-flex; gap: 0; margin: 0 0 8px; }
+.order-pick .ord { font-size: 11.5px; padding: 3px 9px; border-radius: 0; }
+.order-pick .ord:first-child { border-radius: 7px 0 0 7px; }
+.order-pick .ord:last-child { border-radius: 0 7px 7px 0; border-left: 0; }
+.order-pick .ord.on { background: var(--accent); color: #fff; border-color: var(--accent); }
+#connectpanel { width: 460px; }
+.cx-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+.cx-chip { display: inline-flex; align-items: center; gap: 6px; font-size: 12px;
+  background: var(--band); border: 1px solid var(--panel-ring); border-radius: 20px;
+  padding: 3px 6px 3px 10px; }
+.cx-chip button { border: 0; background: none; cursor: pointer; color: var(--muted);
+  font-size: 13px; line-height: 1; padding: 0 2px; }
+.cx-chip button:hover { color: var(--warn); }
+.cx-path { font-size: 12px; margin: 6px 0; line-height: 1.6; }
+.cx-path .via { color: var(--muted); }
+.cx-hop { color: var(--ink-2); }
+.cx-none { color: var(--warn); font-size: 12px; }
 .kata-filters { display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
   font-size: 11.5px; color: var(--ink-2); margin-bottom: 6px; }
 .kata-filters label { display: flex; gap: 4px; align-items: center; cursor: pointer; }
@@ -252,7 +271,7 @@ body { overflow: hidden; }
 
 /* ---- panels ---- */
 #detail, #orphanpanel, #tablepanel, #addpanel, #stylepanel, #katapanel,
-#statspanel { position: absolute; top: 12px;
+#statspanel, #connectpanel { position: absolute; top: 12px;
   right: 12px; bottom: 46px; width: 340px; overflow: auto; z-index: 20;
   background: var(--panel); border: 1px solid var(--panel-ring);
   border-radius: 12px; padding: 16px; box-shadow: 0 10px 34px rgba(0,0,0,.18); }
@@ -286,6 +305,23 @@ body { overflow: hidden; }
 .evrow a { color: var(--accent); }
 #tablepanel { width: 560px; }
 .d-close { position: absolute; top: 9px; right: 10px; }
+.panel-bar { display: flex; align-items: center; gap: 8px; min-height: 20px; margin-bottom: 2px; }
+.panel-back { font-size: 12px; color: var(--accent); text-align: left; }
+#keypanel { position: absolute; left: 12px; top: 34px; z-index: 22; max-width: 310px;
+  background: color-mix(in srgb, var(--panel) 94%, transparent); backdrop-filter: blur(3px);
+  border: 1px solid var(--panel-ring); border-radius: 10px; padding: 11px 13px;
+  box-shadow: 0 8px 28px rgba(0,0,0,.16); font-size: 12px; }
+#keypanel h3 { font-size: 11px; text-transform: uppercase; letter-spacing: .06em;
+  color: var(--muted); margin: 9px 0 5px; }
+#keypanel h3:first-of-type { margin-top: 2px; }
+.key-row { display: grid; grid-template-columns: 44px 1fr; gap: 9px; align-items: center;
+  padding: 2.5px 0; }
+.key-row svg { display: block; }
+.key-row span { line-height: 1.35; color: var(--ink-2); }
+.key-row b { color: var(--ink); font-weight: 600; }
+#keypanel .d-close { top: 7px; right: 8px; }
+.prim-toggle { display: flex; gap: 6px; align-items: center; font-size: 12px;
+  color: var(--ink-2); margin: 4px 0 2px; cursor: pointer; }
 #detail h2 { font-size: 17px; line-height: 1.25; padding-right: 30px; }
 #detail .native-big { font-size: 15px; color: var(--ink-2); margin-top: 1px; }
 #detail .romaji { font-size: 12.5px; color: var(--muted); font-style: italic; }
@@ -332,7 +368,7 @@ body { overflow: hidden; }
 
 @media (max-width: 760px) {
   #detail, #orphanpanel, #tablepanel, #addpanel, #stylepanel, #katapanel,
-  #statspanel { width: calc(100vw - 24px); }
+  #statspanel, #connectpanel { width: calc(100vw - 24px); }
   #search { width: 140px; }
 }
 

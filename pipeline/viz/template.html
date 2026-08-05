@@ -39,6 +39,8 @@
       <button id="stylesbtn" class="btn" title="Browse the family / style / sub-style tree">Styles ▾</button>
       <button id="katabtn" class="btn" title="Kata &amp; forms: meaning, origin, who introduced them" hidden>Kata</button>
       <button id="statsbtn" class="btn" title="Rankings: reach, prominent students, teachers, lineages that ended" hidden>Analytics</button>
+      <button id="keybtn" class="btn" title="What the lines, colours and rings mean">Key</button>
+      <button id="connectbtn" class="btn" title="Show how two or more people are connected">Connect</button>
       <label id="conf-toggle"><input type="checkbox" id="hidelow"> hide low-confidence</label>
       <button id="editmode" class="btn" title="Edit names; export corrections for the pipeline">
         Edits <span id="editcount" hidden></span></button>
@@ -85,6 +87,7 @@
         <button id="tourend" class="btn">End tour</button>
       </div>
     </div>
+    <div id="keypanel" hidden aria-label="Key to the chart"></div>
     <div id="tooltip" hidden></div>
     <aside id="detail" hidden aria-label="Person details"></aside>
     <aside id="tablepanel" hidden aria-label="Table of visible people"></aside>
@@ -98,6 +101,7 @@
     <aside id="stylepanel" hidden aria-label="Style tree"></aside>
     <aside id="katapanel" hidden aria-label="Kata and forms"></aside>
     <aside id="statspanel" hidden aria-label="Rankings and analytics"></aside>
+    <aside id="connectpanel" hidden aria-label="Connections between people"></aside>
   </main>
 </div>
 <script id="data" type="application/json">__DATA_JSON__</script>
