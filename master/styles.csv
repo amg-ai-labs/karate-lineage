@@ -2,12 +2,12 @@ id,label,parent,family,founder,founded,ancestry,n_people,aliases
 chinese-martial-arts,Chinese Martial Arts,,chinese,,,Chinese Martial Arts,19,Chinese Martial Arts
 chuan-fa,Chuan Fa,,chinese,,,Chuan Fa,9,Ch'uan Fa; Chuan Fa; Quan Fa
 feeding-crane,Feeding Crane (Shihequan),fujian-white-crane,chinese,Zheng Li 鄭禮 (branch origin); transmitted at the seventh generation by Cai Zhong 蔡忠 to Cai Gongsong 蔡公頌 and then Lin Deshun 林德順,1927,Feeding Crane (Shihequan) < Fujian White Crane < Chinese Martial Arts,0,
-flying-crane,Flying Crane (Feihequan),fujian-white-crane,chinese,"Zheng Ji 鄭濟, pupil of Zheng Li 鄭禮 (single-source attribution)",,Flying Crane (Feihequan) < Fujian White Crane < Chinese Martial Arts,0,
+flying-crane,Flying Crane (Feihequan),fujian-white-crane,chinese,"Zheng Ji 鄭濟, pupil of Zheng Li 鄭禮 (single-source attribution)",,Flying Crane (Feihequan) < Fujian White Crane < Chinese Martial Arts,1,
 fujian-white-crane,Fujian White Crane,chinese-martial-arts,chinese,Fang Qiniang,1650,Fujian White Crane < Chinese Martial Arts,11,Báihèquán; Fujian White; Fujian White Crane; White Crane; Yongchun Baihequan; Yongchun White Crane; 白鶴拳
-huzunquan,Tiger Boxing (Huzunquan),chinese-martial-arts,chinese,Li Yuanzhu 李元珠 (estimated 1716-1793),,Tiger Boxing (Huzunquan) < Chinese Martial Arts,0,
+huzunquan,Tiger Boxing (Huzunquan),chinese-martial-arts,chinese,Li Yuanzhu 李元珠 (estimated 1716-1793),,Tiger Boxing (Huzunquan) < Chinese Martial Arts,3,
 jumping-crane,Jumping or Ancestral Crane (Zonghequan),fujian-white-crane,chinese,Fang Shipei 方世培 (taboo name Huishi 徽石),,Jumping or Ancestral Crane (Zonghequan) < Fujian White Crane < Chinese Martial Arts,0,
 kung-fu,Kung Fu,,chinese,,,Kung Fu,28,Kung Fu
-luohan-quan,"Luohan Quan (Monk Fist, Arhat Boxing)",chinese-martial-arts,chinese,"no single founder; monastic transmission with regional lines (Quanzhou, Zhangzhou, Yongfu, Fuzhou)",,"Luohan Quan (Monk Fist, Arhat Boxing) < Chinese Martial Arts",0,
+luohan-quan,"Luohan Quan (Monk Fist, Arhat Boxing)",chinese-martial-arts,chinese,"no single founder; monastic transmission with regional lines (Quanzhou, Zhangzhou, Yongfu, Fuzhou)",,"Luohan Quan (Monk Fist, Arhat Boxing) < Chinese Martial Arts",1,
 sleeping-crane,Sleeping Crane (Suhequan),fujian-white-crane,chinese,"not securely recorded; the Italian survey names Lin Chuanwu 林傳武 of Chengmen 城門, Fuzhou, taught five years by the monk Jue Qing 覺清 at Shimen temple 石門寺",,Sleeping Crane (Suhequan) < Fujian White Crane < Chinese Martial Arts,0,
 whooping-crane,Whooping Crane (Minghequan),fujian-white-crane,chinese,"Xie Zongxiang (Xie Zhongxiang, 'Ryū Ryū Ko')",1883,Whooping Crane (Minghequan) < Fujian White Crane < Chinese Martial Arts,4,Calling Crane; Crying Crane; Minghequan; Whooping Crane (Minghequan); Whooping Crane Fist; 鳴鶴拳
 asai-ryu,Asai-ha Shōtōkan-ryū (Japan Karate Shoto Federation),jka,japanese,Tetsuhiko Asai,2000,Asai-ha Shōtōkan-ryū (Japan Karate Shoto Federation) < Shotokan (Japan Karate Association line) < Shotokan < Shuri-te < Te,2,Asai-ha Shōtōkan-ryū (Japan Karate Shoto Federation); Asai-ryū; JKS; Japan Karate Shotorenmei; NPO Japan Karate Shōtōkai
@@ -279,7 +279,7 @@ scrape-artefact,Scrape artefact,,other,,,Scrape artefact,27,Aji Ryukyu; Anji Ryu
 sekiguchi-ryu,Sekiguchi-Ryu,,other,,,Sekiguchi-Ryu,2,Sekiguchi-ryu
 shinden-fudo-ryu,Shinden Fudō-ryū (神傳不動流),,other,"Yata Onseisai (矢田穏清斎), who renamed the earlier Shinden Jigen-ryū / Shinden Jigan-ryū",,Shinden Fudō-ryū (神傳不動流),0,
 shindo-munen-ryu,Shindō Munen-ryū (神道無念流),,other,,,Shindō Munen-ryū (神道無念流),0,
-shindo-tenshin-ryu,"Shindō Tenshin-ryū Kenpō (神道天心流), later Tenshin Koryū",,other,Ueno Takashi (上野貴),,"Shindō Tenshin-ryū Kenpō (神道天心流), later Tenshin Koryū",0,
+shindo-tenshin-ryu,"Shindō Tenshin-ryū Kenpō (神道天心流), later Tenshin Koryū",,other,Ueno Takashi (上野貴),,"Shindō Tenshin-ryū Kenpō (神道天心流), later Tenshin Koryū",1,
 shindo-yoshin-ryu,Shindo Yoshin-Ryu,,other,,,Shindo Yoshin-Ryu,3,Shindo Yoshin-ryu; Shinto-Yoshin-ryu
 shingetsu-ryu,Shingetsu-Ryu,,other,,,Shingetsu-Ryu,1,Shingetsu-ryu
 shinkage-ryu,Shinkage-Ryu,,other,,,Shinkage-Ryu,1,Shinkage-ryu; Yagyu Shinkage-ryu

@@ -25590,7 +25590,7 @@
    "orphans": 161
   },
   "pipeline_version": "1.0.0",
-  "source_hash": "eca47b3c3b7d3a6d"
+  "source_hash": "cc1fee98ec133a3d"
  },
  "nodes": [
   {
@@ -25830,7 +25830,8 @@
    "styles": [
     "kung-fu",
     "chinese-martial-arts",
-    "karate-generic"
+    "karate-generic",
+    "huzunquan"
    ],
    "wikipedia_url": null
   },
@@ -31715,7 +31716,8 @@
    "primary_style": "fujian-white-crane",
    "qid": null,
    "styles": [
-    "fujian-white-crane"
+    "fujian-white-crane",
+    "flying-crane"
    ],
    "wikipedia_url": "https://zh.wikipedia.org/wiki/永春白鶴拳"
   },
@@ -53563,9 +53565,11 @@
    "name_ascii": "Tang Daiji",
    "name_native": "唐大基",
    "name_romaji": null,
-   "primary_style": null,
+   "primary_style": "huzunquan",
    "qid": null,
-   "styles": [],
+   "styles": [
+    "huzunquan"
+   ],
    "wikipedia_url": null
   },
   {
@@ -56035,9 +56039,11 @@
    "name_ascii": "Miao Xing",
    "name_native": "妙興",
    "name_romaji": null,
-   "primary_style": null,
+   "primary_style": "luohan-quan",
    "qid": null,
-   "styles": [],
+   "styles": [
+    "luohan-quan"
+   ],
    "wikipedia_url": null
   },
   {
@@ -73307,9 +73313,11 @@
    "name_ascii": "Ueno Takashi",
    "name_native": "上野貴",
    "name_romaji": null,
-   "primary_style": null,
+   "primary_style": "shindo-tenshin-ryu",
    "qid": null,
-   "styles": [],
+   "styles": [
+    "shindo-tenshin-ryu"
+   ],
    "wikipedia_url": null
   },
   {
@@ -73555,9 +73563,9 @@
   {
    "active_from": null,
    "active_from_estimated": false,
-   "birth_year": null,
+   "birth_year": 1854,
    "connected": true,
-   "death_year": null,
+   "death_year": 1929,
    "flags": {
     "added_by_research": true,
     "legendary": false,
@@ -73577,9 +73585,11 @@
    "name_ascii": "Zheng Xianji",
    "name_native": "郑仙纪",
    "name_romaji": null,
-   "primary_style": null,
+   "primary_style": "huzunquan",
    "qid": null,
-   "styles": [],
+   "styles": [
+    "huzunquan"
+   ],
    "wikipedia_url": null
   },
   {

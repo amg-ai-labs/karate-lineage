@@ -5,7 +5,7 @@ A0003,Nam Tae-hi,남태희 (南太熙),,1929,2013,,,taekwondo|tang-soo-do|korean
 A0004,T'ung Gee Hsing,,,,,,,kung-fu|shuri-te|kenpo,kung-fu,yes,0,,yes,
 A0005,William J. Dometrich,,,1935,2012,,,chito-ryu|dai-nippon-butokukai,chito-ryu,yes,13,,yes,https://en.wikipedia.org/wiki/William_J._Dometrich
 A0006,Frank Ruiz,,,1934,1995,,,goju-ryu|karate-generic,goju-ryu,yes,14,,yes,
-A0007,Shu Shiwa (Zhou Zihe),周子和,Zhou Zihe,1874,1926,,,kung-fu|chinese-martial-arts|karate-generic,kung-fu,yes,1,,yes,
+A0007,Shu Shiwa (Zhou Zihe),周子和,Zhou Zihe,1874,1926,,,kung-fu|chinese-martial-arts|karate-generic|huzunquan,kung-fu,yes,1,,yes,
 A0008,Seiyu Shinjo,新城清優,,1929,1981,,,uechi-ryu,uechi-ryu,yes,8,,yes,
 A0009,Seiko Toyama,當山清幸,,1928,2009,,,uechi-ryu|uechi-ryu-zankai,uechi-ryu,yes,8,,yes,
 A0010,Shinyu Gushi,,,1939,2012,,,uechi-ryu,uechi-ryu,yes,9,,yes,
@@ -182,7 +182,7 @@ A0183,Kong Young-il,공영일,,1943,,,,taekwondo|korean-martial-arts|itf-taekwon
 A0184,Fang Zhong,方種,,,,,,chinese-martial-arts,chinese-martial-arts,yes,0,,yes,https://zh.wikipedia.org/wiki/永春白鶴拳
 A0185,Fang Qiniang,方七娘,,,,,,fujian-white-crane,fujian-white-crane,yes,1,,yes,https://zh.wikipedia.org/wiki/方七娘
 A0186,Zeng Si,曾四,,,,,,fujian-white-crane,fujian-white-crane,yes,2,,yes,https://zh.wikipedia.org/wiki/方七娘
-A0187,Zheng Li,鄭禮,,,,,,fujian-white-crane,fujian-white-crane,yes,3,,yes,https://zh.wikipedia.org/wiki/永春白鶴拳
+A0187,Zheng Li,鄭禮,,,,,,fujian-white-crane|flying-crane,fujian-white-crane,yes,3,,yes,https://zh.wikipedia.org/wiki/永春白鶴拳
 A0188,Lin Shixian,林世咸,,,,,,fujian-white-crane,fujian-white-crane,yes,4,,yes,https://zh.wikipedia.org/zh-hant/鳴鶴拳
 A0189,Pan Yuba (Lin Dachong),林達崇,,,,,,fujian-white-crane,fujian-white-crane,yes,5,,yes,https://zh.wikipedia.org/zh-hant/鳴鶴拳
 A0190,Zheng Bugong,鄭步恭,,,,,,kung-fu|chinese-martial-arts,kung-fu,yes,0,,yes,https://zh.wikipedia.org/zh-hans/虎尊拳
@@ -841,7 +841,7 @@ KN008,Sueyoshi,末吉,,1846,1920,,,okinawan-kobudo,okinawan-kobudo,yes,0,,yes,
 KN009,Sesoko,瀬底,,,,,,okinawan-kobudo,okinawan-kobudo,,,,yes,
 KN010,Shoun,松雲,,,,,,okinawan-kobudo,okinawan-kobudo,,,,yes,
 KN011,Tawada Shinboku,多和田真牧,,1851,1920,,,okinawan-kobudo,okinawan-kobudo,yes,5,,yes,
-KP001,Tang Daiji,唐大基,,1887,1937,,,,,yes,0,,yes,
+KP001,Tang Daiji,唐大基,,1887,1937,,,huzunquan,huzunquan,yes,0,,yes,
 KP002,Kingai,金硬,,,,,,,,yes,0,,yes,
 KP003,Chokuho Agena,安慶名朝比呼,,,,,,,,yes,0,,yes,
 KP004,Kenichi Yamashiro,山城賢一,,,,,,matayoshi-kobudo|matayoshi-kodokan,matayoshi-kobudo,,,,yes,
@@ -923,7 +923,7 @@ N0202,Gifuku Funakoshi,,,,,,,,,yes,0,,yes,
 N0209,Masayuki Kinjo,,,1904,,,,,,,,,yes,
 N0210,Choho Giwan,,,,1875,,,,,,,,yes,
 N0221,James Genovese,,,,,,,,,yes,13,,yes,
-N0222,Miao Xing,妙興,,1891,1927,,,,,yes,0,,yes,
+N0222,Miao Xing,妙興,,1891,1927,,,luohan-quan,luohan-quan,yes,0,,yes,
 N0223,Jiao Gui Wu,,,,,,,,,yes,0,,yes,
 Q1046410,Jhoon Rhee,이준구,,1932,2018,1957,,taekwondo|tang-soo-do|scrape-artefact|karate-generic|kung-fu|te|chung-do-kwan|jhoon-rhee-taekwondo,taekwondo,yes,17,,,https://en.wikipedia.org/wiki/Jhoon_Rhee
 Q1052982,Jeff Speakman,,,1958,,1983,,american-kenpo|goju-ryu|karate-generic|goju-kai|kenpo|kung-fu|te,american-kenpo,yes,3,,,https://en.wikipedia.org/wiki/Jeff_Speakman
@@ -1417,7 +1417,7 @@ R0232,Shin Han-seung,,,1928,1987,,"Chungju, South Korea",taekkyon,taekkyon,yes,2
 R0233,Im Ho,,,,,,"Seoul, Korea",taekkyon,taekkyon,yes,0,,yes,
 R0237,Hōsaku Sodeyama,袖山豊作,,,,,,shindo-jinen-ryu,shindo-jinen-ryu,yes,0,,yes,
 R0239,Julian Mead,,,,,,United Kingdom,,,yes,16,,yes,
-R0240,Ueno Takashi,上野貴,,1899,1976,,"Renseikan dōjō, Shinagawa, Tokyo",,,yes,0,,yes,
+R0240,Ueno Takashi,上野貴,,1899,1976,,"Renseikan dōjō, Shinagawa, Tokyo",shindo-tenshin-ryu,shindo-tenshin-ryu,yes,0,,yes,
 R0243,Mikio Sueyoshi,末吉幹雄,,,,,"Yomitan / Okinawa, Japan",,,yes,18,,yes,
 R0244,Maurice Roggero,,,,,,France,,,yes,18,,yes,
 R0245,Aleksander Staniszew,,,1955,,,Poland,,,yes,18,,yes,
@@ -1426,7 +1426,7 @@ R0247,Gilles Mehard,,,,,,France,,,yes,18,,yes,
 R0249,Thanh-Nhan Le,,,,,,"Reims, France",,,yes,18,,yes,
 R0250,Li Zhaobei,,,,,,,,,yes,0,,yes,
 R0251,Ke Xidi,,,,,,,,,yes,0,,yes,
-R0252,Zheng Xianji,郑仙纪,,,,,,,,yes,0,,yes,
+R0252,Zheng Xianji,郑仙纪,,1854,1929,,,huzunquan,huzunquan,yes,0,,yes,
 R0256,Thomas Miyashiro,,,1915,1977,,"Waimanalo and Honolulu, Hawaii",,,yes,13,,yes,
 R0259,Chibana Chōshō,知念? — surname 知花; given name 朝章-type reading Chōshō,,1847,1927,,Shuri Tōnokura,,,yes,0,,yes,
 W0001,Miki Jisaburo,,,,,,,karate-generic,karate-generic,yes,7,,yes,
