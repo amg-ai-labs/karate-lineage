@@ -36,7 +36,10 @@ body { overflow: hidden; }
   position: relative; z-index: 60; }   /* above the stage, so its menus are not trapped */
 #titleblock h1 { font-size: 17px; font-weight: 700; letter-spacing: -.01em; }
 #subtitle { font-size: 11.5px; color: var(--ink-2); }
-#controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-left: auto; }
+#controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+  margin-left: auto; justify-content: flex-end; row-gap: 6px; }
+/* the tools that open a panel read as one set, so a wrapped toolbar still parses */
+#stylesbtn, #katabtn, #statsbtn, #keybtn, #connectbtn, #listview { border-style: dashed; }
 .btn, select, input[type="search"] {
   font: inherit; font-size: 12.5px; color: var(--ink);
   background: var(--panel); border: 1px solid var(--panel-ring);

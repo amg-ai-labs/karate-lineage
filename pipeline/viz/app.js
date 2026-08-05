@@ -694,9 +694,21 @@ addEventListener("keydown", ev => {
     Home: () => openLeft(400),
     r: () => { if (state.focus) centreOn(state.focus, Math.max(view.k, 0.9)); },
     R: () => { if (state.focus) centreOn(state.focus, Math.max(view.k, 0.9)); },
+    // one key per panel, so the tools are reachable without hunting the toolbar
+    s: () => document.getElementById("stylesbtn").click(),
+    k: () => { const b = document.getElementById("katabtn"); if (!b.hidden) b.click(); },
+    a: () => { const b = document.getElementById("statsbtn"); if (!b.hidden) b.click(); },
+    c: () => document.getElementById("connectbtn").click(),
+    t: () => document.getElementById("listview").click(),
+    "?": () => document.getElementById("keybtn").click(),
+    "/": () => { sInput.focus(); sInput.select(); },
   };
   const act = acts[ev.key];
-  if (act) { ev.preventDefault(); stopCamera(); userMoved(); act(); }
+  if (!act) return;
+  ev.preventDefault();
+  // panel and search keys must not fight the camera
+  if ("skactSKACT?/".indexOf(ev.key) >= 0 && "rR".indexOf(ev.key) < 0) { act(); return; }
+  stopCamera(); userMoved(); act();
 });
 
 /* ============ isolate mode (client-side re-layout) ============ */
@@ -2424,8 +2436,15 @@ function openDetail(id, back) {
     const paint = () => {
       btns.forEach(b => b.classList.toggle("on", b._v === chosen));
       const nn = lineageSet(id, state.dir, chosen).size;
+      // Say which links are being counted. Supplementary study is a short cut
+      // through the graph, so counting every link puts people a generation
+      // earlier than their own line would: Funakoshi's second generation is 156
+      // people by every link and 95 by the style-bearing ones alone.
+      const all = linePrimaryOnly ? lineageSet(id, state.dir, chosen, false).size : nn;
       counts.textContent = nn + (nn === 1 ? " person" : " people")
-        + (chosen === Infinity ? " (whole lineage)" : "");
+        + (chosen === Infinity ? " (whole lineage)" : "")
+        + (linePrimaryOnly ? " by style-bearing links" + (all > nn ? ", " + all + " by every link" : "")
+                           : "");
     };
     for (const [lbl, v] of opts) {
       const b = document.createElement("button");

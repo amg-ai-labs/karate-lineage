@@ -43,7 +43,10 @@ body { overflow: hidden; }
   position: relative; z-index: 60; }   /* above the stage, so its menus are not trapped */
 #titleblock h1 { font-size: 17px; font-weight: 700; letter-spacing: -.01em; }
 #subtitle { font-size: 11.5px; color: var(--ink-2); }
-#controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-left: auto; }
+#controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+  margin-left: auto; justify-content: flex-end; row-gap: 6px; }
+/* the tools that open a panel read as one set, so a wrapped toolbar still parses */
+#stylesbtn, #katabtn, #statsbtn, #keybtn, #connectbtn, #listview { border-style: dashed; }
 .btn, select, input[type="search"] {
   font: inherit; font-size: 12.5px; color: var(--ink);
   background: var(--panel); border: 1px solid var(--panel-ring);
@@ -466,7 +469,7 @@ body { overflow: hidden; }
     <svg id="canvas" role="img" aria-label="Karate lineage cladogram"></svg>
     <div id="genruler" aria-hidden="true"></div>
     <div id="minimap" aria-label="Overview map"><svg id="minisvg"></svg></div>
-    <div id="hint" hidden>Scroll to pan · ⇧-scroll moves along the timeline · pinch or ⌘-scroll to zoom · arrow keys pan · +/− zoom · F fits · R returns to your selection · click any name</div>
+    <div id="hint" hidden>Scroll to pan · ⇧-scroll moves along the timeline · pinch or ⌘-scroll to zoom · arrow keys pan · +/− zoom · F fits · R returns to your selection · / searches · S styles · K kata · A analytics · C connect · T table · ? key · click any name</div>
     <div id="tourcard" hidden>
       <div id="tourprogress"></div>
       <h3 id="tourtitle"></h3>
@@ -1192,9 +1195,21 @@ addEventListener("keydown", ev => {
     Home: () => openLeft(400),
     r: () => { if (state.focus) centreOn(state.focus, Math.max(view.k, 0.9)); },
     R: () => { if (state.focus) centreOn(state.focus, Math.max(view.k, 0.9)); },
+    // one key per panel, so the tools are reachable without hunting the toolbar
+    s: () => document.getElementById("stylesbtn").click(),
+    k: () => { const b = document.getElementById("katabtn"); if (!b.hidden) b.click(); },
+    a: () => { const b = document.getElementById("statsbtn"); if (!b.hidden) b.click(); },
+    c: () => document.getElementById("connectbtn").click(),
+    t: () => document.getElementById("listview").click(),
+    "?": () => document.getElementById("keybtn").click(),
+    "/": () => { sInput.focus(); sInput.select(); },
   };
   const act = acts[ev.key];
-  if (act) { ev.preventDefault(); stopCamera(); userMoved(); act(); }
+  if (!act) return;
+  ev.preventDefault();
+  // panel and search keys must not fight the camera
+  if ("skactSKACT?/".indexOf(ev.key) >= 0 && "rR".indexOf(ev.key) < 0) { act(); return; }
+  stopCamera(); userMoved(); act();
 });
 
 /* ============ isolate mode (client-side re-layout) ============ */
@@ -2922,8 +2937,15 @@ function openDetail(id, back) {
     const paint = () => {
       btns.forEach(b => b.classList.toggle("on", b._v === chosen));
       const nn = lineageSet(id, state.dir, chosen).size;
+      // Say which links are being counted. Supplementary study is a short cut
+      // through the graph, so counting every link puts people a generation
+      // earlier than their own line would: Funakoshi's second generation is 156
+      // people by every link and 95 by the style-bearing ones alone.
+      const all = linePrimaryOnly ? lineageSet(id, state.dir, chosen, false).size : nn;
       counts.textContent = nn + (nn === 1 ? " person" : " people")
-        + (chosen === Infinity ? " (whole lineage)" : "");
+        + (chosen === Infinity ? " (whole lineage)" : "")
+        + (linePrimaryOnly ? " by style-bearing links" + (all > nn ? ", " + all + " by every link" : "")
+                           : "");
     };
     for (const [lbl, v] of opts) {
       const b = document.createElement("button");
