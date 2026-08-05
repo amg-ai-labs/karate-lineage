@@ -1,9 +1,15 @@
 id,label,parent,family,founder,founded,ancestry,n_people,aliases
 chinese-martial-arts,Chinese Martial Arts,,chinese,,,Chinese Martial Arts,19,Chinese Martial Arts
 chuan-fa,Chuan Fa,,chinese,,,Chuan Fa,9,Ch'uan Fa; Chuan Fa; Quan Fa
+feeding-crane,Feeding Crane (Shihequan),fujian-white-crane,chinese,Zheng Li 鄭禮 (branch origin); transmitted at the seventh generation by Cai Zhong 蔡忠 to Cai Gongsong 蔡公頌 and then Lin Deshun 林德順,1927,Feeding Crane (Shihequan) < Fujian White Crane < Chinese Martial Arts,0,
+flying-crane,Flying Crane (Feihequan),fujian-white-crane,chinese,"Zheng Ji 鄭濟, pupil of Zheng Li 鄭禮 (single-source attribution)",,Flying Crane (Feihequan) < Fujian White Crane < Chinese Martial Arts,0,
 fujian-white-crane,Fujian White Crane,chinese-martial-arts,chinese,Fang Qiniang,1650,Fujian White Crane < Chinese Martial Arts,11,Báihèquán; Fujian White; Fujian White Crane; White Crane; Yongchun Baihequan; Yongchun White Crane; 白鶴拳
+huzunquan,Tiger Boxing (Huzunquan),chinese-martial-arts,chinese,Li Yuanzhu 李元珠 (estimated 1716-1793),,Tiger Boxing (Huzunquan) < Chinese Martial Arts,0,
+jumping-crane,Jumping or Ancestral Crane (Zonghequan),fujian-white-crane,chinese,Fang Shipei 方世培 (taboo name Huishi 徽石),,Jumping or Ancestral Crane (Zonghequan) < Fujian White Crane < Chinese Martial Arts,0,
 kung-fu,Kung Fu,,chinese,,,Kung Fu,28,Kung Fu
-whooping-crane,Whooping Crane (Minghequan),fujian-white-crane,chinese,"Xie Zongxiang (Xie Zhongxiang, 'Ryū Ryū Ko')",1883,Whooping Crane (Minghequan) < Fujian White Crane < Chinese Martial Arts,1,Calling Crane; Crying Crane; Minghequan; Whooping Crane (Minghequan); Whooping Crane Fist; 鳴鶴拳
+luohan-quan,"Luohan Quan (Monk Fist, Arhat Boxing)",chinese-martial-arts,chinese,"no single founder; monastic transmission with regional lines (Quanzhou, Zhangzhou, Yongfu, Fuzhou)",,"Luohan Quan (Monk Fist, Arhat Boxing) < Chinese Martial Arts",0,
+sleeping-crane,Sleeping Crane (Suhequan),fujian-white-crane,chinese,"not securely recorded; the Italian survey names Lin Chuanwu 林傳武 of Chengmen 城門, Fuzhou, taught five years by the monk Jue Qing 覺清 at Shimen temple 石門寺",,Sleeping Crane (Suhequan) < Fujian White Crane < Chinese Martial Arts,0,
+whooping-crane,Whooping Crane (Minghequan),fujian-white-crane,chinese,"Xie Zongxiang (Xie Zhongxiang, 'Ryū Ryū Ko')",1883,Whooping Crane (Minghequan) < Fujian White Crane < Chinese Martial Arts,4,Calling Crane; Crying Crane; Minghequan; Whooping Crane (Minghequan); Whooping Crane Fist; 鳴鶴拳
 asai-ryu,Asai-ha Shōtōkan-ryū (Japan Karate Shoto Federation),jka,japanese,Tetsuhiko Asai,2000,Asai-ha Shōtōkan-ryū (Japan Karate Shoto Federation) < Shotokan (Japan Karate Association line) < Shotokan < Shuri-te < Te,2,Asai-ha Shōtōkan-ryū (Japan Karate Shoto Federation); Asai-ryū; JKS; Japan Karate Shotorenmei; NPO Japan Karate Shōtōkai
 bushin-kan,Bushin Kan (武心館),dai-nippon-butokukai,japanese,Hiroyuki Tesshin Hamada,,Bushin Kan (武心館) < Dai Nippon Butokukai,4,Bushin Kan (武心館); 武心館
 butoku-kan-brazil,Butoku-kan (Escola de Karatê Butoku-kan),jka,japanese,Taketo Okuda,,Butoku-kan (Escola de Karatê Butoku-kan) < Shotokan (Japan Karate Association line) < Shotokan < Shuri-te < Te,0,
@@ -13,7 +19,7 @@ chishin-ryu-heiho,Muso Chishin-ryu Heiho (無双知心流兵法),bushin-kan,japa
 chito-ryu,Chito-Ryu,shuri-te,japanese,Tsuyoshi Chitose,1946,Chito-Ryu < Shuri-te < Te,14,Chito-Ryu; Chito-kai; Chitoryu; chitoryu
 dento-shito-ryu,Dentō Shitō-ryū,shito-ryu,japanese,Kenei Mabuni,,Dentō Shitō-ryū < Shito-Ryu < Shuri-te < Te,2,Dento Shito Ryu International; Dentō Shitō-ryū; Traditional Shitō-ryū (Kenei Mabuni line)
 doshinkan,Karatedō Dōshinkan,shudokan,japanese,Isao Ichikawa,1966,Karatedō Dōshinkan < Shudokan < Shuri-te < Te,3,Doshinkan; Karatedō Dōshinkan; Nihon Karatedō Dōshinkan; 道心館
-fska,Funakoshi Shotokan Karate Association,jka,japanese,Kenneth Funakoshi,1987,Funakoshi Shotokan Karate Association < Shotokan (Japan Karate Association line) < Shotokan < Shuri-te < Te,0,
+fska,Funakoshi Shotokan Karate Association,jka,japanese,Kenneth Funakoshi,1987,Funakoshi Shotokan Karate Association < Shotokan (Japan Karate Association line) < Shotokan < Shuri-te < Te,1,
 genbu-kai,Demura-ha Shitō-ryū Genbu-kai,itosu-ryu,japanese,Fumio Demura,1999,Demura-ha Shitō-ryū Genbu-kai < Itosu-Ryu < Shito-Ryu < Shuri-te < Te,3,Demura-ha Shitō-ryū Genbu-kai; Genbu-Kai; Japan Karate-do Genbu-kai; Shito-Ryu Karate-Do Genbu-Kai International; Shitō-ryū Karate-dō Genbu-kai International
 genwakai,Genwakai (Nihon Budō Karate Genwakai),genseiryu,japanese,Nangō Tsugumasa (with former Renbukai and university club members),,Genwakai (Nihon Budō Karate Genwakai) < Genseiryū < Shuri-te < Te,1,Genwakai (Nihon Budō Karate Genwakai); Japan Budo Karate Genwakai; 日本武道空手玄和会
 gima-ha,Gima-ha Shōtō-ryū,shotokan,japanese,Gima Shinkin (Makoto Gima),1956,Gima-ha Shōtō-ryū < Shotokan < Shuri-te < Te,1,Gima-ha Shotokan-ryu; Gima-ha Shōtō-ryū; 儀間派
@@ -57,7 +63,7 @@ seiko-kai,Suzuki-ha Shitō-ryū Seikō-kai,itosu-ryu,japanese,Seiko Suzuki,1994,
 seito-shito-ryu,Seitō Shitō-ryū,shito-ryu,japanese,Kenzo Mabuni,1952,Seitō Shitō-ryū < Shito-Ryu < Shuri-te < Te,0,Nihon Karate-dō Kai; Nippon Karate-do Kai; Seito Shito-ryu; Seitō Shitō-ryū; Shito-Ryu International Karate-Do Kai; Shitō-ryū International Karate-dō Kai; 日本空手道会
 shindo-jinen-ryu,Shindo Jinen-Ryu,shuri-te,japanese,Yasuhiro Konishi,1933,Shindo Jinen-Ryu < Shuri-te < Te,7,Japan Karate-Do Ryobu-Kai; Ryobu-kai; Ryōbu-kai; Shindo Jinen Ryu; Shindo jinen-ryu; 神道自然流
 shingo-ha-yoshukai,Shingo-ha Yoshukai,yoshukai,japanese,Mike Sadler,,Shingo-ha Yoshukai < Yoshukai < Chito-Ryu < Shuri-te < Te,0,
-shintaido,Shintaido (新体道),shotokai,japanese,Hiroyuki Aoki,1969,Shintaido (新体道) < Shotokai < Shotokan < Shuri-te < Te,0,
+shintaido,Shintaido (新体道),shotokai,japanese,Hiroyuki Aoki,1969,Shintaido (新体道) < Shotokai < Shotokan < Shuri-te < Te,1,
 shintani-wado-kai,Shintani Wado Kai,wado-ryu,japanese,Masaru Shintani,1966,Shintani Wado Kai < Wado-Ryu < Shotokan < Shuri-te < Te,1,SWKKF; Shintani Wado Kai; Shintani Wado Kai Karate Federation
 shito-kai,Shitō-kai Shitō-ryū,shito-ryu,japanese,Manzo Iwata,1964,Shitō-kai Shitō-ryū < Shito-Ryu < Shuri-te < Te,9,All Japan Karatedo Shito-kai; Higashi-Nihon Shito-kai; JKF Shitō-kai; Japan Karatedo Kai; Nishi-Nihon Shito-kai; Shitō-kai Shitō-ryū; World Shitoryu Karatedo Federation; World Shitōryū Karate-dō Federation (WSKF); 全日本空手道連盟糸東会
 shito-ryu,Shito-Ryu,shuri-te,japanese,Kenwa Mabuni,1934,Shito-Ryu < Shuri-te < Te,58,Hanko-ryū (early name); Shito Ryu; Shito-Kai; Shito-Ryu; Shitokai; Shitoryu; kotaka-ha-shito-ryu; seito-shito-ryu; shitokai; shitoryu; 糸東流
@@ -76,7 +82,7 @@ wado-kokusai,Wadō Kokusai (Wado International Karate-do Federation),wado-ryu,ja
 wado-ryu,Wado-Ryu,shotokan,japanese,Hironori Ōtsuka,1934,Wado-Ryu < Shotokan < Shuri-te < Te,38,CategorieWado-ryu; JKF Wadokai; WADOKAI; Wado Kokusai (WIKF); Wado-Kai; Wado-Ryu; Wado-kai; Wado-ryu Karate-do Renmei; WadoKai; Wadokai; wadokai; wadoryu
 wado-ryu-karate-do-renmei,Wadōryū Karatedō Renmei,wado-ryu,japanese,Hironori Ōtsuka (succeeded by Hironori Ōtsuka II and III),1981,Wadōryū Karatedō Renmei < Wado-Ryu < Shotokan < Shuri-te < Te,2,Wado Ryu Karate Do Renmei; Wadōryū Karatedō Renmei; Wadōryū Renmei; 和道流空手道連盟
 washin-ryu,Washin-Ryu,,japanese,Hidy Ochiai,1966,Washin-Ryu,1,Washin-Ryu Karate; Washin-Ryu karate; 和真流
-wskf,World Shotokan Karate-do Federation (Kasuya-ha),jka,japanese,Hitoshi Kasuya,1990,World Shotokan Karate-do Federation (Kasuya-ha) < Shotokan (Japan Karate Association line) < Shotokan < Shuri-te < Te,0,
+wskf,World Shotokan Karate-do Federation (Kasuya-ha),jka,japanese,Hitoshi Kasuya,1990,World Shotokan Karate-do Federation (Kasuya-ha) < Shotokan (Japan Karate Association line) < Shotokan < Shuri-te < Te,1,
 yamada-ha-shito-ryu-shukokai,Yamada-ha Shitō-ryū Shukokai,shukokai,japanese,Haruyoshi Yamada,1998,Yamada-ha Shitō-ryū Shukokai < Shukokai < Shito-Ryu < Shuri-te < Te,1,Shito-ryu Shukokai Karate-do Union; Shito-ryu Shukokai Union; Yamada-ha Shito-ryu Shukokai Karatedo World Union; Yamada-ha Shitō-ryū Shukokai; Yamada-ha Shitō-ryū Shukokai Karate-dō
 yoshukai,Yoshukai,chito-ryu,japanese,Katsuoh Yamamoto,1963,Yoshukai < Chito-Ryu < Shuri-te < Te,5,Yoshukai Karate
 yoshukai-international,Yoshukai International,yoshukai,japanese,Michael G. Foster,1980,Yoshukai International < Yoshukai < Chito-Ryu < Shuri-te < Te,1,Yoshukai International; Yoshukai International Karate Association; Yoshukai Karate International
@@ -123,7 +129,7 @@ yamanni-chinen-ryu-rbkd,Yamanni Chinen-ryū / Ryūkyū Bujutsu Kenkyū Dōyūkai
 yamanni-ryu,Yamanni-Ryu,okinawan-kobudo,kobudo,Chinen Masami (named the style; Chinen family lineage from Chinen Umikana),,Yamanni-Ryu < Okinawan Kobudo,16,Yamane-ryu; Yamanni Chinen-ryu; Yamanni-Ryu; yamanni-ryu
 zen-okinawa-kobudo-renmei,Zen Okinawa Kobudō Renmei (全沖縄古武道連盟),matayoshi-kobudo,kobudo,"Matayoshi Shinpo (又吉真豊, 1921-1997)",1970,Zen Okinawa Kobudō Renmei (全沖縄古武道連盟) < Matayoshi Kobudo < Okinawan Kobudo,0,
 chang-moo-kwan,Chang Moo Kwan,taekwondo,korean,Yoon Byung-in,1946,Chang Moo Kwan < Taekwondo < Shotokan < Shuri-te < Te,3,Chang Moo Kwan; Changmookwan; YMCA Kwon Bop Bu; YMCA Kwon Bup Bu; 창무관
-chayon-ryu,"Chayon-Ryu (자연류, Natural Way)",kang-duk-won,korean,Kim Pyung-soo,1970,"Chayon-Ryu (자연류, Natural Way) < Kang Duk Won < Chang Moo Kwan < Taekwondo < Shotokan < Shuri-te < Te",0,
+chayon-ryu,"Chayon-Ryu (자연류, Natural Way)",kang-duk-won,korean,Kim Pyung-soo,1970,"Chayon-Ryu (자연류, Natural Way) < Kang Duk Won < Chang Moo Kwan < Taekwondo < Shotokan < Shuri-te < Te",1,
 cheezic-tang-soo-do,Cheezic Tang Soo Do,moo-duk-kwan,korean,Robert Cheezic,1971,Cheezic Tang Soo Do < Moo Duk Kwan (Taekwondo) < Tang Soo Do < Shotokan < Shuri-te < Te,0,Cheezic Tang Soo Do; Cheezic Tang Soo Do Federation
 choi-kwang-do,Choi Kwang Do (최광도),itf-taekwondo,korean,Choi Kwang-jo,1987,Choi Kwang Do (최광도) < ITF Taekwon-Do < Taekwondo < Shotokan < Shuri-te < Te,0,Choi Kwang Do (최광도); 최광도
 chosun-yun-moo-kwan-kwonbeopbu,Chosun Yun Moo Kwan Kwonbeopbu (조선연무관 권법부),shotokan,korean,Chun Sang-sup,1946,Chosun Yun Moo Kwan Kwonbeopbu (조선연무관 권법부) < Shotokan < Shuri-te < Te,0,Chosun Yun Moo Kwan Kwonbeopbu (조선연무관 권법부); 조선연무관 권법부
@@ -132,9 +138,9 @@ chun-kuk-do,Chun Kuk Do,moo-duk-kwan,korean,Chuck Norris,1990,Chun Kuk Do < Moo 
 chung-do-kwan,Chung Do Kwan,taekwondo,korean,Won Kuk Lee,1944,Chung Do Kwan < Taekwondo < Shotokan < Shuri-te < Te,17,Blue Wave School; Chung Do Kwan; Chungdokwan; 청도관
 gtf,Global Taekwon-Do Federation (GTF),itf-taekwondo,korean,Park Jung-tae,1990,Global Taekwon-Do Federation (GTF) < ITF Taekwon-Do < Taekwondo < Shotokan < Shuri-te < Te,1,GTF; Global Taekwon-Do Federation (GTF); Global Taekwondo Federation
 han-moo-kwan,Han Moo Kwan,ji-do-kwan,korean,Lee Kyo-yoon,1954,Han Moo Kwan < Ji Do Kwan < Taekwondo < Shotokan < Shuri-te < Te,1,Han Moo Kwan; Hanmookwan; 한무관
-hankido,Hankido (한기도),hapkido,korean,Myung Jae-nam,1993,"Hankido (한기도) < Hapkido (합기도, 合氣道) < Daito-Ryu Aiki-jujutsu",0,
+hankido,Hankido (한기도),hapkido,korean,Myung Jae-nam,1993,"Hankido (한기도) < Hapkido (합기도, 合氣道) < Daito-Ryu Aiki-jujutsu",1,
 hapkido,"Hapkido (합기도, 合氣道)",daito-ryu,korean,Choi Yong-sool,1948,"Hapkido (합기도, 合氣道) < Daito-Ryu Aiki-jujutsu",7,"Hapkido (합기도, 合氣道); 합기도 (合氣道)"
-hwa-rang-do,Hwa Rang Do (화랑도),hapkido,korean,Joo Bang Lee and Joo Sang Lee,1968,"Hwa Rang Do (화랑도) < Hapkido (합기도, 合氣道) < Daito-Ryu Aiki-jujutsu",0,
+hwa-rang-do,Hwa Rang Do (화랑도),hapkido,korean,Joo Bang Lee and Joo Sang Lee,1968,"Hwa Rang Do (화랑도) < Hapkido (합기도, 合氣道) < Daito-Ryu Aiki-jujutsu",2,
 international-tang-soo-do-federation,International Tang Soo Do Federation,moo-duk-kwan,korean,Chun Sik Kim,1984,International Tang Soo Do Federation < Moo Duk Kwan (Taekwondo) < Tang Soo Do < Shotokan < Shuri-te < Te,0,C.S. Kim Karate; ITF Tang Soo Do; International Tang Soo Do Federation
 itf-chang-ung,"ITF (Vienna, Chang Ung / Ri Yong-son branch)",itf-taekwondo,korean,Chang Ung (elected 2002; succeeded by Ri Yong-son),2002,"ITF (Vienna, Chang Ung / Ri Yong-son branch) < ITF Taekwon-Do < Taekwondo < Shotokan < Shuri-te < Te",1,"ITF (Ri Yong-son); ITF (Vienna, Chang Ung / Ri Yong-son branch); ITF-Vienna; itftkd.sport"
 itf-choi-jung-hwa,ITF (Choi Jung-hwa branch),itf-taekwondo,korean,Choi Jung-hwa,2002,ITF (Choi Jung-hwa branch) < ITF Taekwon-Do < Taekwondo < Shotokan < Shuri-te < Te,1,ITF (Choi Jung-hwa branch); ITF (Toronto); ITF Canada; ITF-C
@@ -152,7 +158,7 @@ kukki-taekwondo,Kukki Taekwondo (WT),taekwondo,korean,Korea Taekwondo Associatio
 moo-duk-kwan,Moo Duk Kwan (Taekwondo),tang-soo-do,korean,Hwang Kee,1945,Moo Duk Kwan (Taekwondo) < Tang Soo Do < Shotokan < Shuri-te < Te,8,Korean Soo Bahk Do Association Moo Duk Kwan; Moo Duk Kwan (Taekwondo); Moo Duk Kwan Tang Soo Do; Mudukkwan; School of Martial Virtue; 무덕관
 moo-duk-kwan-taekwondo,Moo Duk Kwan Taekwondo,moo-duk-kwan,korean,"Kim Young-taek, Hong Chong-soo and Lee Kang-ik (faction that left Hwang Kee to join the KTA unification)",1965,Moo Duk Kwan Taekwondo < Moo Duk Kwan (Taekwondo) < Tang Soo Do < Shotokan < Shuri-te < Te,4,Korea Taekwondo Moo Duk Kwan; Moo Duk Hae; Moo Duk Kwan Taekwondo; Taekwondo Moo Duk Kwan
 oh-do-kwan,Oh Do Kwan,taekwondo,korean,Choi Hong-hi and Nam Tae-hi,1954,Oh Do Kwan < Taekwondo < Shotokan < Shuri-te < Te,7,Gym of My Way; Oh Do Kwan; Ohdokwan; 오도관
-shin-moo-kwan-hapkido,"Shin Moo Kwan (신무관, hapkido)",hapkido,korean,Kim Moo-hong,1961,"Shin Moo Kwan (신무관, hapkido) < Hapkido (합기도, 合氣道) < Daito-Ryu Aiki-jujutsu",0,
+shin-moo-kwan-hapkido,"Shin Moo Kwan (신무관, hapkido)",hapkido,korean,Kim Moo-hong,1961,"Shin Moo Kwan (신무관, hapkido) < Hapkido (합기도, 合氣道) < Daito-Ryu Aiki-jujutsu",1,
 sin-moo-hapkido,Sin Moo Hapkido (신무합기도),hapkido,korean,Ji Han-jae,,"Sin Moo Hapkido (신무합기도) < Hapkido (합기도, 合氣道) < Daito-Ryu Aiki-jujutsu",0,Sin Moo Hapkido (신무합기도); 신무합기도
 song-moo-kwan,Song Moo Kwan,taekwondo,korean,Byung Jick Ro,1944,Song Moo Kwan < Taekwondo < Shotokan < Shuri-te < Te,1,Ever Youthful House of Martial Arts Training; Song Moo Kwan; Songmookwan; 송무관
 songahm-taekwondo,Songahm Taekwondo (ATA),taekwondo,korean,Haeng Ung Lee,1969,Songahm Taekwondo (ATA) < Taekwondo < Shotokan < Shuri-te < Te,2,ATA International; ATA Martial Arts; American Taekwondo Association; Songahm; Songahm Taekwondo (ATA)
@@ -176,7 +182,7 @@ kudo,Kudo,kyokushin,kyokushin,Takashi Azuma,1981,Kudo < Kyokushin < Shotokan < S
 kyokushin,Kyokushin,shotokan,kyokushin,Masutatsu (Mas) Ōyama,1964,Kyokushin < Shotokan < Shuri-te < Te,69,Dan Black Belt in Kyokushin Karate; IKO; KYOKUSHINKAI; KYOKUSHINKAIKAN; Kazumi Karate; Kyokushin; Kyokushin Kaikan; Kyokushin Karate; Kyokushin kaikan; Kyokushin karate; Kyokushin-kai; Kyokushinkai; Kyokushinkaikan; kyokushinkai; kyokushinkaikan
 kyokushin-budokai,Kyokushin Budokai,kyokushin,kyokushin,Jon Bluming,,Kyokushin Budokai < Kyokushin < Shotokan < Shuri-te < Te,6,IBK; International Budo Kaikan; International Kyokushin Budokai; Kyokushin Budokai
 kyokushin-kan,Kyokushin-kan,kyokushin,kyokushin,Hatsuo Royama (with Tsuyoshi Hiroshige),2003,Kyokushin-kan < Kyokushin < Shotokan < Shuri-te < Te,5,Kyokushin-kan; Kyokushin-kan Inte; Kyokushin-kan Karate; Kyokushinkan; Kyokushinkan International; kyokushinkan
-kyokushin-kenbukai,Kyokushin Kenbukai (極真武道空手連盟 極真拳武會),kyokushin-kan,kyokushin,Tsuyoshi Hiroshige,2017,Kyokushin Kenbukai (極真武道空手連盟 極真拳武會) < Kyokushin-kan < Kyokushin < Shotokan < Shuri-te < Te,0,
+kyokushin-kenbukai,Kyokushin Kenbukai (極真武道空手連盟 極真拳武會),kyokushin-kan,kyokushin,Tsuyoshi Hiroshige,2017,Kyokushin Kenbukai (極真武道空手連盟 極真拳武會) < Kyokushin-kan < Kyokushin < Shotokan < Shuri-te < Te,1,
 kyokushin-rengokai,All Japan Kyokushin Union (全日本極真連合会 / 極真連合会),kyokushin,kyokushin,"Founded jointly in January 2001 by ten branch chiefs including Daigo Ōishi, Shigeru Tabata, Kazuyuki Hasegawa and Yasuhiro Shichinohe; Shigeru Tabata is representative director",2001,All Japan Kyokushin Union (全日本極真連合会 / 極真連合会) < Kyokushin < Shotokan < Shuri-te < Te,0,
 nakamura-dojo,Kyokushin Karate Nakamura Dojo (国際空手道連盟 極真空手 中村道場),kyokushin,kyokushin,Makoto Nakamura,,Kyokushin Karate Nakamura Dojo (国際空手道連盟 極真空手 中村道場) < Kyokushin < Shotokan < Shuri-te < Te,0,
 satojuku,Satojuku,kyokushin,kyokushin,Katsuaki Satō,1977,Satojuku < Kyokushin < Shotokan < Shuri-te < Te,1,Odo karate; Sato Juku; Satojuku Karate
@@ -196,20 +202,20 @@ goju-kai,Goju-Kai,goju-ryu,naha-te,Gogen Yamaguchi,1950,Goju-Kai < Goju-Ryu < Na
 goju-kai-usa,Gōjū-Kai Karate-dō USA,goju-kai,naha-te,Gosei Yamaguchi,1964,Gōjū-Kai Karate-dō USA < Goju-Kai < Goju-Ryu < Naha-te < Te,1,Goju-Kai Karate-do U.S.A.; Gōjū-Kai Karate-dō USA; goju-kai-usa
 goju-kensha,Gōjū Kensha,senbukan,naha-te,Tadahiko Otsuka,1970,Gōjū Kensha < Senbukan < Shodokan Goju-Ryu < Goju-Ryu < Naha-te < Te,1,Goju Kensha Karate-do Federation; Gōjū Kensha; goju-kensha; gojukensha; 剛柔拳舎
 goju-ryu,Goju-Ryu,naha-te,naha-te,Chojun Miyagi,1930,Goju-Ryu < Naha-te < Te,129,Goju Kan; Goju Ryu; Goju-Ryu; Goju-Ryu Karate-do; Goju-Ryu Karate-do Kyokai; Goju-ryu karate; Gojuryu; International Okinawan Goju-Ryu Karate-do Federation; goju-ryu; gojukan; gojuryu; gojuryukenkyukai; kenshikai; nisei-goju; shobukan; 剛柔流
-goju-ryu-bujutsukan,Gōjū-ryū Bujutsukan (剛柔流武術館),goju-ryu,naha-te,An'ichi Miyagi,,Gōjū-ryū Bujutsukan (剛柔流武術館) < Goju-Ryu < Naha-te < Te,0,
+goju-ryu-bujutsukan,Gōjū-ryū Bujutsukan (剛柔流武術館),goju-ryu,naha-te,An'ichi Miyagi,,Gōjū-ryū Bujutsukan (剛柔流武術館) < Goju-Ryu < Naha-te < Te,1,
 goshukan,Goshukan,seiwakai,naha-te,Stacey Karetsian,2007,Goshukan < Seiwakai < Goju-Kai < Goju-Ryu < Naha-te < Te,0,Goshukan; goshukan
 goshukan-international,Gojuryu Karatedo Goshukan International,kenwakai,naha-te,Desmond Tuck,2019,Gojuryu Karatedo Goshukan International < Kenwakai < Seiwakai < Goju-Kai < Goju-Ryu < Naha-te < Te,0,Gojuryu Karatedo Goshukan International; International Goju Karatedo Goshukan
 harlem-goju,Harlem Gōjū,usa-goju,naha-te,Sam McGee,1973,Harlem Gōjū < USA Gōjū (American Gōjū) < Goju-Kai < Goju-Ryu < Naha-te < Te,0,Harlem Goju Association; Harlem Gōjū
 ikga,IKGA (International Karate-dō Gōjū-kai Association),goju-kai,naha-te,Gōgen Yamaguchi,1965,IKGA (International Karate-dō Gōjū-kai Association) < Goju-Kai < Goju-Ryu < Naha-te < Te,2,IKGA (International Karate-dō Gōjū-kai Association); Yamaguchi Goju-kai
 imgka,International Meibukan Gōjū-ryū Karate-dō Association (IMGKA),meibukan,naha-te,Meitatsu Yagi (first president),,International Meibukan Gōjū-ryū Karate-dō Association (IMGKA) < Meibukan < Goju-Ryu < Naha-te < Te,3,IMGKA; International Meibukan Gojyu Ryu Karate Association; International Meibukan Gōjū-ryū Karate-dō Association (IMGKA)
 iogkf,IOGKF (International Okinawan Gōjū-ryū Karate-dō Federation),goju-ryu,naha-te,Morio Higaonna,1979,IOGKF (International Okinawan Gōjū-ryū Karate-dō Federation) < Goju-Ryu < Naha-te < Te,11,An'ichi Miyagi lineage; IOGKF; IOGKF (International Okinawan Gōjū-ryū Karate-dō Federation); iogkf
-jundokan,Jundokan,goju-ryu,naha-te,Eiichi Miyazato,1957,Jundokan < Goju-Ryu < Naha-te < Te,13,Jundokan; jundokan; 順道館
+jundokan,Jundokan,goju-ryu,naha-te,Eiichi Miyazato,1957,Jundokan < Goju-Ryu < Naha-te < Te,14,Jundokan; jundokan; 順道館
 jundokan-international,Jundokan International,jundokan,naha-te,Teruo Chinen,1987,Jundokan International < Jundokan < Goju-Ryu < Naha-te < Te,1,Jundokan International; Jundokan International Goju-ryu
 kanzen-goju,Kanzen Gōjū-ryū,nisei-goju,naha-te,Harry Rosenstein,1974,Kanzen Gōjū-ryū < Nisei Gōjū < USA Gōjū (American Gōjū) < Goju-Kai < Goju-Ryu < Naha-te < Te,0,Kanzen Goju Kai; Kanzen Gōjū-ryū
 ken-shin-kan,Ken-Shin-Kan,shodokan-goju-ryu,naha-te,Seiichi Akamine,1968,Ken-Shin-Kan < Shodokan Goju-Ryu < Goju-Ryu < Naha-te < Te,1,Escuela Superior Ken-Shin-Kan; Ken-Shin-Kan
 kenshikai,Kenshikai,shodokan-goju-ryu,naha-te,Tetsuhiro Hokama,1978,Kenshikai < Shodokan Goju-Ryu < Goju-Ryu < Naha-te < Te,0,Kenshikai; Okinawa Goju-ryu Kenshi-kai Karate-do Kobudo Association; kenshi-kai; 拳志会; 研心会
 kenwakai,Kenwakai,seiwakai,naha-te,Akio Takahashi,1985,Kenwakai < Seiwakai < Goju-Kai < Goju-Ryu < Naha-te < Te,0,Gojuryu Karatedo Kenwakai; Kenwakai
-komeikan,Kōmeikan (講明館) — Karate-dō Gōjū-ryū Sōke Kōmeikan,goju-ryu,naha-te,Takashi (Kei) Miyagi 宮城敬,1955,Kōmeikan (講明館) — Karate-dō Gōjū-ryū Sōke Kōmeikan < Goju-Ryu < Naha-te < Te,0,
+komeikan,Kōmeikan (講明館) — Karate-dō Gōjū-ryū Sōke Kōmeikan,goju-ryu,naha-te,Takashi (Kei) Miyagi 宮城敬,1955,Kōmeikan (講明館) — Karate-dō Gōjū-ryū Sōke Kōmeikan < Goju-Ryu < Naha-te < Te,3,
 kuyukai,Kuyūkai,goju-ryu,naha-te,Osamu Hirano,1968,Kuyūkai < Goju-Ryu < Naha-te < Te,0,Kuyūkai; Nihon Goju-ryu Karate-do Kuyukai International; ku-yu-kai; kuyukai
 meibukan,Meibukan,goju-ryu,naha-te,Meitoku Yagi,1952,Meibukan < Goju-Ryu < Naha-te < Te,11,Meibukan; Meibukan Gojyu-ryu; meibukan; 明武舘; 明武館
 naha-te,Naha-te,te,naha-te,Kanryo Higashionna,1926,Naha-te < Te,16,Naha-te
@@ -220,8 +226,8 @@ okinawa-goju-ryu-kyokai,"Okinawa Gōjū-ryū Karate-dō Kyōkai (沖縄剛柔流
 ryuei-ryu,Ryuei-Ryu,naha-te,naha-te,Nakaima Norisato,1971,Ryuei-Ryu < Naha-te < Te,5,Ryuei Ryu; Ryuei-Ryu; Ryueiryu; Ryuyei-ryu; ryuei-ryu; 劉衛流
 ryuei-ryu-hozonkai,Ryūei-ryū Karate Kobudō Hozonkai,ryuei-ryu,naha-te,Kenkō Nakaima,1971,Ryūei-ryū Karate Kobudō Hozonkai < Ryuei-Ryu < Naha-te < Te,1,Ryuei Ryu Karate and Kobudo Preservation Society; Ryūei-ryū Karate Kobudō Hozonkai
 ryuei-ryu-ryuhokai,Ryūei-ryū Ryūhōkai (劉衛流龍鳳会),ryuei-ryu,naha-te,Sakumoto Tsuguo 佐久本嗣男,,Ryūei-ryū Ryūhōkai (劉衛流龍鳳会) < Ryuei-Ryu < Naha-te < Te,0,Ryūei-ryū Ryūhōkai (劉衛流龍鳳会); 劉衛流龍鳳会
-ryushinkaikan,Ryūshinkaikan,shoreikan,naha-te,Ryugo Sakai,,Ryūshinkaikan < Shoreikan < Goju-Ryu < Naha-te < Te,0,
-ryusyokai,Sekai Gōjū-ryū Ryūsyōkai,meibukan,naha-te,Shigetoshi Senaha,1999,Sekai Gōjū-ryū Ryūsyōkai < Meibukan < Goju-Ryu < Naha-te < Te,0,
+ryushinkaikan,Ryūshinkaikan,shoreikan,naha-te,Ryugo Sakai,,Ryūshinkaikan < Shoreikan < Goju-Ryu < Naha-te < Te,1,
+ryusyokai,Sekai Gōjū-ryū Ryūsyōkai,meibukan,naha-te,Shigetoshi Senaha,1999,Sekai Gōjū-ryū Ryūsyōkai < Meibukan < Goju-Ryu < Naha-te < Te,1,
 sansei-goju,Sansei Gōjū,usa-goju,naha-te,Manny Saavedra,1979,Sansei Gōjū < USA Gōjū (American Gōjū) < Goju-Kai < Goju-Ryu < Naha-te < Te,0,International Sansei Goju-Ryu Organization; Sansei Gōjū; World Sansei Goju-Ryu Karate Organization
 seigokan,Seigokan,goju-ryu,naha-te,Seigo Tada,1945,Seigokan < Goju-Ryu < Naha-te < Te,1,Seigokan; Seigokan Goju-ryu; seigokan; 正剛館; 聖剛館
 seiwakai,Seiwakai,goju-kai,naha-te,Shuji Tasaki,1972,Seiwakai < Goju-Kai < Goju-Ryu < Naha-te < Te,2,Goju-ryu Karate-do Seiwakai; Seiwa Kai; Seiwakai; seiwakai; 誠和会
@@ -233,7 +239,7 @@ shorei-ryu,Shorei-Ryu,naha-te,naha-te,,,Shorei-Ryu < Naha-te < Te,1,Shorei-ryu
 shoreikan,Shoreikan,goju-ryu,naha-te,Seikichi Toguchi,1954,Shoreikan < Goju-Ryu < Naha-te < Te,7,Shorei-kan; Shoreikan; shoreikan; 尚礼館
 shoseikan,Shōseikan,goju-kai,naha-te,Katsutoshi Ishihara,1968,Shōseikan < Goju-Kai < Goju-Ryu < Naha-te < Te,0,All-Japan Shoseikan Karate-do; Shōseikan; World Shoseikan Karate (WSK)
 tenshi-goju,Tenshi Gōjū,goju-kai,naha-te,Lou Angel,1987,Tenshi Gōjū < Goju-Kai < Goju-Ryu < Naha-te < Te,0,Tenshi Goju Kai; Tenshi Gōjū
-togkf,TOGKF (Traditional Okinawan Gōjū-ryū Karate-dō Federation),iogkf,naha-te,Morio Higaonna,2022,TOGKF (Traditional Okinawan Gōjū-ryū Karate-dō Federation) < IOGKF (International Okinawan Gōjū-ryū Karate-dō Federation) < Goju-Ryu < Naha-te < Te,0,
+togkf,TOGKF (Traditional Okinawan Gōjū-ryū Karate-dō Federation),iogkf,naha-te,Morio Higaonna,2022,TOGKF (Traditional Okinawan Gōjū-ryū Karate-dō Federation) < IOGKF (International Okinawan Gōjū-ryū Karate-dō Federation) < Goju-Ryu < Naha-te < Te,5,
 toon-kai,"Tōon-kai (東恩会, Osaka)",toon-ryu,naha-te,not named in sources found,2015,"Tōon-kai (東恩会, Osaka) < Toon-Ryu < Naha-te < Te",0,"Tōon-kai (東恩会, Osaka); 東恩会"
 toon-ryu,Toon-Ryu,naha-te,naha-te,Kyoda Jūhatsu,1934,Toon-Ryu < Naha-te < Te,8,To'on-ryu; Toon-Ryu; toon-ryu; 東恩流
 toon-ryu-shidokai,"Tōon-ryū Shidōkai (士道会, Fukuoka)",toon-ryu,naha-te,Yoshino Shigemasa 芳野重正,,"Tōon-ryū Shidōkai (士道会, Fukuoka) < Toon-Ryu < Naha-te < Te",0,"Tōon-ryū Shidōkai (士道会, Fukuoka); 士道会"
@@ -241,13 +247,17 @@ usa-goju,USA Gōjū (American Gōjū),goju-kai,naha-te,Peter Urban,1967,USA Gōj
 yuishinkan,Yuishinkan,goju-ryu,naha-te,Tomoharu Kisaki,1954,Yuishinkan < Goju-Ryu < Naha-te < Te,0,Yuishinkan; Yuishinkan Goju-ryu; 唯心館
 aikido,Aikido,,other,,,Aikido,5,Aikikai; Dan Aikikai
 american-karate,American Karate,,other,,,American Karate,1,American Karate
+asayama-ichiden-ryu,Asayama Ichiden-ryū (浅山一伝流),,other,,,Asayama Ichiden-ryū (浅山一伝流),0,
 budokwai,"Budokwai, London (武道会)",judo,other,,1918,"Budokwai, London (武道会) < Judo",1,"Budokwai, London (武道会); 武道会"
 bushido-kai,Bushido Kai Karate,,other,,,Bushido Kai Karate,1,Bushido Kai Karate
 dai-nippon-butokukai,Dai Nippon Butokukai,,other,,1895,Dai Nippon Butokukai,25,Dai Nippon Butokukai
+daien-ryu,Daien-ryū Jōjutsu (大円流杖術),,other,,,Daien-ryū Jōjutsu (大円流杖術),0,
 daito-ryu,Daito-Ryu Aiki-jujutsu,,other,,,Daito-Ryu Aiki-jujutsu,9,Daito-ryu; Daito-ryu Aiki-jujutsu
 dnbk-international,Dai Nippon Butoku Kai International Division (大日本武徳会国際部),dai-nippon-butokukai,other,,1965,Dai Nippon Butoku Kai International Division (大日本武徳会国際部) < Dai Nippon Butokukai,1,Dai Nippon Butoku Kai International Division (大日本武徳会国際部); 大日本武徳会国際部
+fusen-ryu,Fusen-ryū Jūjutsu (不遷流),,other,Takeda Motsuge (武田物外),,Fusen-ryū Jūjutsu (不遷流),0,
 hokushin-itto-ryu,Hokushin Itto-Ryu,,other,,,Hokushin Itto-Ryu,1,Hokushin Itto-ryu
 hozoin-ryu,Hozoin-Ryu,,other,,,Hozoin-Ryu,1,Hozoin-ryu
+igaryu-jujutsu,Igā-ryū Jūjutsu (為我流柔術),,other,,,Igā-ryū Jūjutsu (為我流柔術),0,
 jigen-ryu,Jigen-Ryu,,other,,,Jigen-Ryu,3,Jigen-ryu
 judo,Judo,,other,,,Judo,7,Kodokan; Kodokan Judo
 karate-generic,Karate,,other,,,Karate,679,Brazilian Association of Karate; Dan Karate; Dan karate; Karate
@@ -258,7 +268,7 @@ koga-ryu,Koga-Ryu,,other,,,Koga-Ryu,3,Koga-ryu
 mugai-ryu,Mugai-Ryu,,other,,,Mugai-Ryu,1,Mugai-ryu
 muso-jikiden-eishin-ryu,Muso Jikiden Eishin-Ryu,,other,,,Muso Jikiden Eishin-Ryu,1,Muso Jikiden Eishin-ryu
 muso-shinden-ryu,Muso Shinden-Ryu,,other,,,Muso Shinden-Ryu,1,Muso Shinden Ryu
-nanban-satto-ryu,Nanban Satto-Ryu,,other,,,Nanban Satto-Ryu,1,Nanban Satto-ryu
+nanban-satto-ryu,Nanban Satto-Ryu,,other,"Hashimoto Ippusai (橋本一夫斎), as Nanban Ippō-ryū Jūjutsu (南蛮一法流柔術)",,Nanban Satto-Ryu,1,Nanban Satto-ryu
 negishi-ryu,Negishi-Ryu,,other,,,Negishi-Ryu,2,Negishi-ryu
 nihon-kobudo,Nihon Kobudo,,other,,,Nihon Kobudo,7,Japan Kobudo; Japanese Kobudo; Japanese kobudo; Nihon Kobudo
 niten-ichi-ryu,Niten Ichi-Ryu,,other,,,Niten Ichi-Ryu,1,Gosho-ha Hyoho Niten Ichi-ryu; Niten Ichi-ryu
@@ -267,7 +277,10 @@ okinawan-karate-generic,Okinawan Karate,,other,,,Okinawan Karate,62,Okinawan Kar
 ryoi-shinto-ryu,Ryoi Shinto-Ryu,,other,,,Ryoi Shinto-Ryu,2,Ryoi-shito-ryu
 scrape-artefact,Scrape artefact,,other,,,Scrape artefact,27,Aji Ryukyu; Anji Ryukyu; Appointe; Australasia official site; Bakuryu Sentai Abaranger; Bank of the Ryukyus; Basse-Terre; Bill Ryusaki; Chishu Ryu; Cite; Complete; Disposition of Ryukyu; FileHuineng-tearing-sutrassvg; FilePort-authority-terminaljpg; Grand Maste; Grandmaste; Hao Taikei Ryu Knight; Headmaste; History of the Ryukyus; Inte; Invasion of Ryukyu; Karyu Uku; King of Ryukyu; Kyokugenryu; Kyoryu Boukenki Jura Tripper; Kyu-Iwasaki-tei Garden; Long Beach Press-Telegram; Los Angeles Trade-Technical College; Menkyo kai; Menkyo kaiden; MenkyoMenkyo Kaiden; Merited Maste; Ryu Mi-yong; Ryu Ryu Ko; Ryu Shaman King; Ryu ga Gotoku 3; Ryu school; Self-test of Intelligence; Shunryu Suzuki; Tenryu Saburo; The A-Team; Udun Ryukyu; United States Civil Administration of the Ryukyu Islands; United States Military Government of the Ryukyu Islands; University of the Ryukyus; Volcano and Ryukyu Islands campaign; all-terrain vehicle; counter-terrorism; inta-netsutoa-kaibu
 sekiguchi-ryu,Sekiguchi-Ryu,,other,,,Sekiguchi-Ryu,2,Sekiguchi-ryu
-shindo-yoshin-ryu,Shindo Yoshin-Ryu,,other,,,Shindo Yoshin-Ryu,2,Shindo Yoshin-ryu; Shinto-Yoshin-ryu
+shinden-fudo-ryu,Shinden Fudō-ryū (神傳不動流),,other,"Yata Onseisai (矢田穏清斎), who renamed the earlier Shinden Jigen-ryū / Shinden Jigan-ryū",,Shinden Fudō-ryū (神傳不動流),0,
+shindo-munen-ryu,Shindō Munen-ryū (神道無念流),,other,,,Shindō Munen-ryū (神道無念流),0,
+shindo-tenshin-ryu,"Shindō Tenshin-ryū Kenpō (神道天心流), later Tenshin Koryū",,other,Ueno Takashi (上野貴),,"Shindō Tenshin-ryū Kenpō (神道天心流), later Tenshin Koryū",0,
+shindo-yoshin-ryu,Shindo Yoshin-Ryu,,other,,,Shindo Yoshin-Ryu,3,Shindo Yoshin-ryu; Shinto-Yoshin-ryu
 shingetsu-ryu,Shingetsu-Ryu,,other,,,Shingetsu-Ryu,1,Shingetsu-ryu
 shinkage-ryu,Shinkage-Ryu,,other,,,Shinkage-Ryu,1,Shinkage-ryu; Yagyu Shinkage-ryu
 shinto-muso-ryu,Shinto Muso-Ryu,,other,,,Shinto Muso-Ryu,6,Kasumi Shinto-ryu Kenjutsu; Shindo Muso-ryu; Shinto Muso-ryu
@@ -352,6 +365,7 @@ honshin-ryu,Honshin-ryū,te,te,"Miyagi Masakazu (codified; tradition of Kuniyosh
 kojo-ryu,Kojō-ryū,te,te,"Kojō Uēkata (Cai Zhaogong, 1656–1737)",1700,Kojō-ryū < Te,16,Kojo-ryu; Kojō-ryū; Koshokan
 kojo-ryu-rinzankai,Okinawa-den Kojō-ryū Karatedō Rinzankai (沖縄傳湖城流空手道林山会),kojo-ryu,te,Hayashi Shingo 林伸伍,,Okinawa-den Kojō-ryū Karatedō Rinzankai (沖縄傳湖城流空手道林山会) < Kojō-ryū < Te,0,Okinawa-den Kojō-ryū Karatedō Rinzankai (沖縄傳湖城流空手道林山会); 沖縄傳湖城流空手道林山会
 te,Te,,te,,,Te,285,Okinawa-te; Te; Tode; Tote
+matsumora-ryu,Matsumora-ryū (Yara Chōi line),tomari-te,tomari-te,"Yara Chōi 屋良朝意 (1915–2014), from the tradition of Kuba Chōjin",,Matsumora-ryū (Yara Chōi line) < Tomari-te < Te,0,
 motobu-ryu,Motobu-Ryu,tomari-te,tomari-te,Motobu Chōki,1922,Motobu-Ryu < Tomari-te < Te,10,Motobu-Ryu; Motoburyu; Nihon Denryu Hyoho Motobu Kenpo; motobu-ryu; motoburyu
 motobu-ryu-kobujutsu-kyokai,Motobu-ryū Kobujutsu Kyōkai (本部流古武術協会),motobu-udundi,tomari-te,"Uehara Seikichi (上原清吉, 1904-2004)",1961,Motobu-ryū Kobujutsu Kyōkai (本部流古武術協会) < Motobu Udundi < Te,0,
 motobu-udundi,Motobu Udundi,te,tomari-te,"Motobu Chōhei (1st sōke, 17th century)",,Motobu Udundi < Te,22,Moidi; Motobu Udun Di; Motobu Udun Dī; Motobu Udundi; Motobu Udundi bojutsu; Motobu-ryu Udundi; Motobu-ryū Udundī; Udundi; motobu-udundi; 本部御殿手
@@ -359,7 +373,7 @@ motobu-udundi-kobujutsu-kyokai,Motobu Udundi Kobujutsu Kyōkai (本部御殿手�
 motobu-udundi-kyokai,Okinawa Motobu Udundi Karate Kobudō Kyōkai (沖縄本部御殿手空手古武道協会),motobu-udundi,tomari-te,,2012,Okinawa Motobu Udundi Karate Kobudō Kyōkai (沖縄本部御殿手空手古武道協会) < Motobu Udundi < Te,0,Okinawa Motobu Udundi Karate Kobudō Kyōkai (沖縄本部御殿手空手古武道協会); 沖縄本部御殿手空手古武道協会
 motobu-udundi-moidi-shiroma-ha,Motobu Ryūkyū Kobujutsu Moidi (Shiroma-ha),motobu-udundi,tomari-te,"Shiroma Seihan / Kiyonori (城間清範, 1941-2012)",,Motobu Ryūkyū Kobujutsu Moidi (Shiroma-ha) < Motobu Udundi < Te,0,
 tomari-te,Tomari-te,te,tomari-te,,,Tomari-te < Te,23,Matsumora-type Tomari-te; Tomari-te; tomarite
-iukf,International Uechi-ryū Karate Federation (IUKF),uechi-ryu,uechi-ryu,George E. Mattson,,International Uechi-ryū Karate Federation (IUKF) < Uechi-Ryu < Pangai-noon,0,
+iukf,International Uechi-ryū Karate Federation (IUKF),uechi-ryu,uechi-ryu,George E. Mattson,,International Uechi-ryū Karate Federation (IUKF) < Uechi-Ryu < Pangai-noon,1,
 konan-ryu,Kōnan-ryū,uechi-ryu,uechi-ryu,Itokazu Seiki (with Kinjō Takashi),1978,Kōnan-ryū < Uechi-Ryu < Pangai-noon,2,Kōnan-ryū; Pangainoon-ryu (Itokazu)
 okinawa-kobu-ryu,Okinawa Kōbu-ryū Karate-dō Kobudō Kōbukai (沖縄孝武流空手道古武道孝武会),konan-ryu,uechi-ryu,Kinjō Takashi 金城孝,,Okinawa Kōbu-ryū Karate-dō Kobudō Kōbukai (沖縄孝武流空手道古武道孝武会) < Kōnan-ryū < Uechi-Ryu < Pangai-noon,0,
 pangai-noon,Pangai-noon,,uechi-ryu,Zhou Zihe (Shū Shiwa),1900,Pangai-noon,0,Pangai-noon; Pangai-noon-ryū Karate-jutsu; Pangainoon; Pangainoon-ryu; Pangainun; Pwan Gai Noon; Pwangainoon; 半硬軟

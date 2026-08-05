@@ -54,6 +54,15 @@
    "parent": "jka"
   },
   {
+   "aliases": [],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "asayama-ichiden-ryu",
+   "label": "Asayama Ichiden-ryū (浅山一伝流)",
+   "parent": null
+  },
+  {
    "aliases": [
     "Ashihara Kaikan",
     "Ashihara Karate",
@@ -364,6 +373,15 @@
    "parent": null
   },
   {
+   "aliases": [],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "daien-ryu",
+   "label": "Daien-ryū Jōjutsu (大円流杖術)",
+   "parent": null
+  },
+  {
    "aliases": [
     "Okinawa Karate-dō Shōrin-ryū Daishinkan Kyōkai (沖縄空手道小林流大信館協会)",
     "沖縄空手道小林流大信館協会"
@@ -440,6 +458,24 @@
   },
   {
    "aliases": [],
+   "family": "chinese",
+   "founded": 1927,
+   "founder": "Zheng Li 鄭禮 (branch origin); transmitted at the seventh generation by Cai Zhong 蔡忠 to Cai Gongsong 蔡公頌 and then Lin Deshun 林德順",
+   "id": "feeding-crane",
+   "label": "Feeding Crane (Shihequan)",
+   "parent": "fujian-white-crane"
+  },
+  {
+   "aliases": [],
+   "family": "chinese",
+   "founded": null,
+   "founder": "Zheng Ji 鄭濟, pupil of Zheng Li 鄭禮 (single-source attribution)",
+   "id": "flying-crane",
+   "label": "Flying Crane (Feihequan)",
+   "parent": "fujian-white-crane"
+  },
+  {
+   "aliases": [],
    "family": "japanese",
    "founded": 1987,
    "founder": "Kenneth Funakoshi",
@@ -474,6 +510,15 @@
    "founder": null,
    "id": "full-contact-karate",
    "label": "Full Contact Karate",
+   "parent": null
+  },
+  {
+   "aliases": [],
+   "family": "other",
+   "founded": null,
+   "founder": "Takeda Motsuge (武田物外)",
+   "id": "fusen-ryu",
+   "label": "Fusen-ryū Jūjutsu (不遷流)",
    "parent": null
   },
   {
@@ -805,6 +850,15 @@
   },
   {
    "aliases": [],
+   "family": "chinese",
+   "founded": null,
+   "founder": "Li Yuanzhu 李元珠 (estimated 1716-1793)",
+   "id": "huzunquan",
+   "label": "Tiger Boxing (Huzunquan)",
+   "parent": "chinese-martial-arts"
+  },
+  {
+   "aliases": [],
    "family": "korean",
    "founded": 1968,
    "founder": "Joo Bang Lee and Joo Sang Lee",
@@ -833,6 +887,15 @@
    "id": "ifk-kyokushin",
    "label": "International Federation of Karate (Kyokushin)",
    "parent": "kyokushin"
+  },
+  {
+   "aliases": [],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "igaryu-jujutsu",
+   "label": "Igā-ryū Jūjutsu (為我流柔術)",
+   "parent": null
   },
   {
    "aliases": [
@@ -1202,6 +1265,15 @@
    "id": "judo",
    "label": "Judo",
    "parent": null
+  },
+  {
+   "aliases": [],
+   "family": "chinese",
+   "founded": null,
+   "founder": "Fang Shipei 方世培 (taboo name Huishi 徽石)",
+   "id": "jumping-crane",
+   "label": "Jumping or Ancestral Crane (Zonghequan)",
+   "parent": "fujian-white-crane"
   },
   {
    "aliases": [
@@ -2074,6 +2146,15 @@
    "parent": "shorin-ryu-kyudokan"
   },
   {
+   "aliases": [],
+   "family": "chinese",
+   "founded": null,
+   "founder": "no single founder; monastic transmission with regional lines (Quanzhou, Zhangzhou, Yongfu, Fuzhou)",
+   "id": "luohan-quan",
+   "label": "Luohan Quan (Monk Fist, Arhat Boxing)",
+   "parent": "chinese-martial-arts"
+  },
+  {
    "aliases": [
     "Matayoshi Kobudo",
     "matayoshi-kobudo"
@@ -2126,6 +2207,15 @@
    "id": "matsubayashi-ryu",
    "label": "Matsubayashi-Ryu",
    "parent": "shorin-ryu"
+  },
+  {
+   "aliases": [],
+   "family": "tomari-te",
+   "founded": null,
+   "founder": "Yara Chōi 屋良朝意 (1915–2014), from the tradition of Kuba Chōjin",
+   "id": "matsumora-ryu",
+   "label": "Matsumora-ryū (Yara Chōi line)",
+   "parent": "tomari-te"
   },
   {
    "aliases": [
@@ -2381,7 +2471,7 @@
    ],
    "family": "other",
    "founded": null,
-   "founder": null,
+   "founder": "Hashimoto Ippusai (橋本一夫斎), as Nanban Ippō-ryū Jūjutsu (南蛮一法流柔術)",
    "id": "nanban-satto-ryu",
    "label": "Nanban Satto-Ryu",
    "parent": null
@@ -3253,6 +3343,15 @@
    "parent": "hapkido"
   },
   {
+   "aliases": [],
+   "family": "other",
+   "founded": null,
+   "founder": "Yata Onseisai (矢田穏清斎), who renamed the earlier Shinden Jigen-ryū / Shinden Jigan-ryū",
+   "id": "shinden-fudo-ryu",
+   "label": "Shinden Fudō-ryū (神傳不動流)",
+   "parent": null
+  },
+  {
    "aliases": [
     "Japan Karate-Do Ryobu-Kai",
     "Ryobu-kai",
@@ -3267,6 +3366,24 @@
    "id": "shindo-jinen-ryu",
    "label": "Shindo Jinen-Ryu",
    "parent": "shuri-te"
+  },
+  {
+   "aliases": [],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "shindo-munen-ryu",
+   "label": "Shindō Munen-ryū (神道無念流)",
+   "parent": null
+  },
+  {
+   "aliases": [],
+   "family": "other",
+   "founded": null,
+   "founder": "Ueno Takashi (上野貴)",
+   "id": "shindo-tenshin-ryu",
+   "label": "Shindō Tenshin-ryū Kenpō (神道天心流), later Tenshin Koryū",
+   "parent": null
   },
   {
    "aliases": [
@@ -3940,6 +4057,15 @@
    "id": "skif",
    "label": "Shotokan Karate-do International Federation (Kanazawa-ha)",
    "parent": "jka"
+  },
+  {
+   "aliases": [],
+   "family": "chinese",
+   "founded": null,
+   "founder": "not securely recorded; the Italian survey names Lin Chuanwu 林傳武 of Chengmen 城門, Fuzhou, taught five years by the monk Jue Qing 覺清 at Shimen temple 石門寺",
+   "id": "sleeping-crane",
+   "label": "Sleeping Crane (Suhequan)",
+   "parent": "fujian-white-crane"
   },
   {
    "aliases": [],

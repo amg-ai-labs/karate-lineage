@@ -4372,7 +4372,7 @@
   "modifier": "Taira Shinken",
   "name": "Chatan Yara no Kon",
   "native": "北谷屋良の棍",
-  "note": "ALREADY HELD, but a SPECIFIC IDENTITY DISPUTE SHOULD BE ATTACHED AND IS NOT CURRENTLY RECORDED. The roster's Chatan Yara (Q542989) is dated 1668-1756. Nagamine, however, describes a 'Chatan Yara (Master Yara from Chatan village)' who was superintendent of the king's riding stable at Makibaru and who taught Jigen-ryu jojutsu to Matsumora Kosaku (1829-1898) — a man who cannot be the 1668-1756 figure. Either the name denotes two or more men of Chatan, or the traditional dates are wrong. Every kata bearing the Chatan Yara name (this, Chatan Yara no Sai, Chatan Yara no Kusanku, Yaraguwa no Tonfa) inherits this ambiguity. [Verifier: Real, well known kata. Chatan Yara is a semi-legendary figure who",
+  "note": "ALREADY HELD, but a SPECIFIC IDENTITY DISPUTE SHOULD BE ATTACHED AND IS NOT CURRENTLY RECORDED. The roster's Chatan Yara (Q542989) is dated 1668-1756. Nagamine, however, describes a 'Chatan Yara (Master Yara from Chatan village)' who was superintendent of the king's riding stable at Makibaru and who taught Jigen-ryu jojutsu to Matsumora Kosaku (1829-1898) — a man who cannot be the 1668-1756 figure. Either the name denotes two or more men of Chatan, or the traditional dates are wrong. Every kata bearing the Chatan Yara name (this, Chatan Yara no Sai, Chatan Yara no Kusanku, Yaraguwa no Tonfa) inherits this ambiguity. [Verifier: Real, well known kata. Chatan Yara is a semi-legendary figure who Quast names Chatan Yara no Kon alongside Sakugawa no Kon as containing the half-kneeling posture also found in Kūsankū kata, and identifies that similarity as the sole basis on which people infer a K",
   "origin_person": "Chatan Yara",
   "origin_place": "Chatan",
   "provenance": "Chatan Yara -> (unrecorded) -> Yabiku Moden / Taira Shinken; a parallel Matayoshi family version survives as Yara no Kon.",
@@ -16508,7 +16508,9 @@
    "okinawa-goju-ryu-kyokai",
    "seigokan",
    "seiwakai",
-   "shito-kai"
+   "shito-kai",
+   "togkf",
+   "komeikan"
   ],
   "variants": [
    "Saam Chien",
@@ -16642,7 +16644,7 @@
   "modifier": "Chojun Miyagi",
   "name": "Sanseiru",
   "native": "三十六手",
-  "note": "Held. Attribution is transmission only; no creator is known. Note that Uechi-ryu's Sanseiryu is a separate import via Shu Shiwa and should not be collapsed into this entry. One of the four kata reliably traceable to Higaonna (preserved in both Goju-ryu and To'on-ryu). The Nakaima family's Ryuei-ryu preserves its own Sanseiru from the same Ryu Ryu Ko source, and Uechi-ryu's Sanseiryu (listed separately) is a distinct Pangai-noon form sharing only the name. First of the kata reserved for black belts in Goju-ryu. Added ikga, imgka, jundokan-international, okinawa-goju-ryu-kyokai, seigokan, seiwakai, shito-kai. Sixth of the twelve. Distinct from the Uechi-ryu 'Sanseiryu' 三十六, which is a separate Chinese transmission and correctly held as its own row.",
+  "note": "Held. Attribution is transmission only; no creator is known. Note that Uechi-ryu's Sanseiryu is a separate import via Shu Shiwa and should not be collapsed into this entry. One of the four kata reliably traceable to Higaonna (preserved in both Goju-ryu and To'on-ryu). The Nakaima family's Ryuei-ryu preserves its own Sanseiru from the same Ryu Ryu Ko source, and Uechi-ryu's Sanseiryu (listed separately) is a distinct Pangai-noon form sharing only the name. First of the kata reserved for black belts in Goju-ryu. Added ikga, imgka, jundokan-international, okinawa-goju-ryu-kyokai, seigokan, seiwakai, shito-kai. Sixth of the twelve. Distinct from the Uechi-ryu 'Sanseiryu' 三十六, which is a separate Chinese transmission and correctly held as its own row. Kyoda was adamant that only he learned Sanseiru from Higaonna, Miyagi being away on military service in Kumamoto at the time. This directly con",
   "origin_person": "Unknown Fujian originator; transmitted through Ryu Ryu Ko",
   "origin_place": "Fuzhou, Fujian, China",
   "provenance": "Two independent Okinawan imports of the same Fuzhou material: the Higaonna line (Goju) and the Nakaima line (Ryuei-ryu).",
@@ -16791,7 +16793,9 @@
    "seiwakai",
    "shito-kai",
    "shodokan-goju-ryu",
-   "shoreikan"
+   "shoreikan",
+   "togkf",
+   "komeikan"
   ],
   "variants": [
    "Seipai Dai",
@@ -17259,7 +17263,8 @@
    "okinawa-goju-ryu-kyokai",
    "seigokan",
    "seiwakai",
-   "shito-kai"
+   "shito-kai",
+   "togkf"
   ],
   "variants": [
    "Bechurin",
@@ -17525,7 +17530,9 @@
    "okinawa-goju-ryu-kyokai",
    "seigokan",
    "seiwakai",
-   "shito-kai"
+   "shito-kai",
+   "togkf",
+   "komeikan"
   ],
   "variants": [
    "Rokkishu (its Fujian model)",
@@ -17577,6 +17584,27 @@
    "Heho",
    "Kakuho"
   ]
+ },
+ {
+  "disputed": true,
+  "era": "transmitted 1914",
+  "family": "other",
+  "introduced_by": [],
+  "meaning": "",
+  "modified_era": "",
+  "modifier": "Kanken Tōyama",
+  "name": "Chibana Kūsankū",
+  "native": "",
+  "note": "NOT IN kata_current.tsv. A distinct Kūsankū recension handed from Chibana Chōshō to Tōyama Kanken in 1914, described by Motobu Naoki as an unusual kata of Tōyama's. Worth adding as a named variant alongside Chatan Yara no Kusanku, Kusanku Sho and Tomari Kusanku.",
+  "origin_person": "Chibana Chōshō (1847–1927)",
+  "origin_place": "",
+  "provenance": "",
+  "sources": [],
+  "style_ids": [
+   "shudokan",
+   "shuri-te"
+  ],
+  "variants": []
  },
  {
   "disputed": true,
@@ -17655,6 +17683,26 @@
   "sources": [],
   "style_ids": [
    "world-oshukai"
+  ],
+  "variants": []
+ },
+ {
+  "disputed": true,
+  "era": "documented 1867",
+  "family": "other",
+  "introduced_by": [],
+  "meaning": "",
+  "modified_era": "",
+  "modifier": "",
+  "name": "Chishaukin",
+  "native": "",
+  "note": "Not in the dataset's kata list. Performed by Aragaki Tsuji Pēchin (Aragaki Seishō) at the 1867 Sanrukuchu demonstration and recorded by Mabuni Kenwa as part of Aragaki's curriculum alongside Seisan, Sochin, Unshu and Niseishi. Also rendered Chishaukiun or Chisaukin. One of the very few kata names attested in a dated 19th-century document.",
+  "origin_person": "Aragaki Seishō (earliest recorded performer)",
+  "origin_place": "",
+  "provenance": "",
+  "sources": [],
+  "style_ids": [
+   "naha-te"
   ],
   "variants": []
  },
@@ -17912,7 +17960,7 @@
   "modifier": "Chotoku Kyan, and later Shito-ryu competitors who fixed the tournament form",
   "name": "Chatanyara Kushanku",
   "native": "北谷屋良公相君",
-  "note": "Held as 'Chatan Yara no Kusanku' (line 10). WKF spells it 'Chatanyara Kushanku'. The Chatan Yara attribution is partly folklore, the dates on the roster (1668-1756) sit awkwardly with the Kusanku envoy tradition of the 1750s-60s, and that chronological tension should be recorded rather than smoothed over. [Verifier: Kata and Chatan Yara attribution are real and the traditional account. The dates are the problem: 1668-1756 is only one of at least three circulating sets (c.1741-1812 and b.1760 are also published), so they should not be stated bare. disputed=true is correctly set; add the date conflict to the note. Kyan's transmission of this version is corroborated.] The Chatan Yara recension, made famous in modern WKF competition.",
+  "note": "Held as 'Chatan Yara no Kusanku' (line 10). WKF spells it 'Chatanyara Kushanku'. The Chatan Yara attribution is partly folklore, the dates on the roster (1668-1756) sit awkwardly with the Kusanku envoy tradition of the 1750s-60s, and that chronological tension should be recorded rather than smoothed over. [Verifier: Kata and Chatan Yara attribution are real and the traditional account. The dates are the problem: 1668-1756 is only one of at least three circulating sets (c.1741-1812 and b.1760 are also published), so they should not be stated bare. disputed=true is correctly set; add the date conflict to the note. Kyan's transmission of this version is corroborated.] The Chatan Yara recension, made famous in modern WKF competition. Motobu Naoki traces the Shitō-ryū competition Chatan Yara Kūsankū through Murata Kazutoshi (teacher of Moro'oka Yoshinori of the Shitō-kai), who learned it from",
   "origin_person": "Chatan Yara (1668-1756)",
   "origin_place": "",
   "provenance": "Attributed to Chatan Yara, said to have studied in Fuzhou; carried into Shorin and Shito lines.",
@@ -18086,7 +18134,7 @@
   "modifier": "Anko Itosu, who produced the Dai and Sho pair transmitted to Funakoshi and Mabuni; Gichin Funakoshi, who renamed Useishi as Gojushiho",
   "name": "Gojushiho",
   "native": "五十四歩",
-  "note": "ORPHANED IN THE CURRENT DATABASE. The Matsumura attribution is traditional and is not documented; the more defensible statement is that Matsumura taught and named it and Itosu shaped the surviving versions. A named caution for the graph: Shotokan's Gojushiho Dai and Gojushiho Sho are transposed relative to the names used in Okinawan Shorin-ryu and Shito-ryu, so any cross-style mapping in the database must record which naming convention is meant. [Verifier: Kata and Useishi name correct, Matsumura attribution is the standard one, Itosu Dai/Sho correct. The modifier claim is wrong as phrased: Funakoshi's documented rename was to Hotaku (woodpecker), which did not stick; 'Gojushiho' is simply t Uniformly a senior kata across the Shuri lines. Added shogen-ryu, shorin-ryu-kishaba-juku, ueshiro-shorin-ryu, shito-kai. Sixteenth of the Matsubayashi 18.",
+  "note": "ORPHANED IN THE CURRENT DATABASE. The Matsumura attribution is traditional and is not documented; the more defensible statement is that Matsumura taught and named it and Itosu shaped the surviving versions. A named caution for the graph: Shotokan's Gojushiho Dai and Gojushiho Sho are transposed relative to the names used in Okinawan Shorin-ryu and Shito-ryu, so any cross-style mapping in the database must record which naming convention is meant. [Verifier: Kata and Useishi name correct, Matsumura attribution is the standard one, Itosu Dai/Sho correct. The modifier claim is wrong as phrased: Funakoshi's documented rename was to Hotaku (woodpecker), which did not stick; 'Gojushiho' is simply t Uniformly a senior kata across the Shuri lines. Added shogen-ryu, shorin-ryu-kishaba-juku, ueshiro-shorin-ryu, shito-kai. Sixteenth of the Matsubayashi 18. CONFIRMS the dataset's Gojushiho entry and ",
   "origin_person": "Sokon Matsumura is the standard attribution; he is said to have codified the form and given it the name Useishi. The underlying material is Chinese and no Chinese creator is recoverable",
   "origin_place": "Shuri, Okinawa, from Fujian source material; the Bubishi preserves a related 'fifty-four steps of the Black Tiger' with White Crane fist",
   "provenance": "Matsumura's Useishi passes through Itosu to both Funakoshi (Shotokan Gojushiho Dai and Sho) and Mabuni (Shito-ryu Gojushiho), and separately through the Matsumura Seito line. The Bubishi correspondence is the strongest evidence for a Fujian White Crane / Black Tiger ancestor.",
@@ -18166,7 +18214,7 @@
   "modifier": "Nabe Matsumura, then Hohan Soken, who fixed the form now taught",
   "name": "Hakutsuru",
   "native": "白鶴",
-  "note": "EXISTING ENTRY, BUT THE DISPUTE MUST BE STATED MORE PLAINLY. The database calls this a 'traditional attribution' but still lists Sokon Matsumura as (created). The dispute is substantial: (i) no Hakutsuru appears in any Matsumura-line source before Soken made it public in the mid-20th century, roughly 50 years after Matsumura's death; (ii) rival white crane material was circulating in Okinawa in exactly that period through Go Kenki, and several researchers argue Soken's form derives from that milieu rather than from a secret family transmission; (iii) multiple unrelated 'Hakutsuru' kata now exist (Matsumura Seito, Kojo-ryu, the Go Kenki/Matayoshi Hakutsuru heiho set), which the database shoul White-crane kata treated as the closing transmission of the Matsumura line.",
+  "note": "EXISTING ENTRY, BUT THE DISPUTE MUST BE STATED MORE PLAINLY. The database calls this a 'traditional attribution' but still lists Sokon Matsumura as (created). The dispute is substantial: (i) no Hakutsuru appears in any Matsumura-line source before Soken made it public in the mid-20th century, roughly 50 years after Matsumura's death; (ii) rival white crane material was circulating in Okinawa in exactly that period through Go Kenki, and several researchers argue Soken's form derives from that milieu rather than from a secret family transmission; (iii) multiple unrelated 'Hakutsuru' kata now exist (Matsumura Seito, Kojo-ryu, the Go Kenki/Matayoshi Hakutsuru heiho set), which the database shoul White-crane kata treated as the closing transmission of the Matsumura line. kata_current.tsv already flags the Matsumura attribution as contested and credits Sōken Hōhan with fixing the form now taug",
   "origin_person": "Traditionally Sokon Matsumura, said to have learned white crane methods in China; the attribution is contested",
   "origin_place": "Shuri, Okinawa (claimed Fujian antecedents)",
   "provenance": "Bishop, Matsumura Seito chapter and Appendix C; Bishop is notably cautious about the Matsumura Hakutsuru claim",
@@ -19213,7 +19261,7 @@
   "modifier": "Anko Itosu, who is the leading candidate for dividing the material into three graded kata; alternative candidates named in the literature are Tokumine Pechin and Choki Motobu",
   "name": "Naihanchi",
   "native": "ナイハンチ / 内歩進",
-  "note": "ORPHANED IN THE CURRENT DATABASE and genuinely contested. Three separate disputes: (a) the creator is unknown, and the Matsumura attribution is traditional only; (b) who split the kata into three is unresolved between Itosu, Tokumine Pechin and Choki Motobu, with Itosu the majority view; (c) whether Nidan and Sandan are Itosu compositions or older material he merely arranged. The current DB row already credits 'Anko Itosu (created)' without qualification: that should be softened to 'standardised/modified', with 'created' applied only to Nidan and Sandan and even then marked disputed. [Verifier: Correct and honestly hedged: the literature does name exactly Itosu, Tokumine Pechin and Motobu Ch Historically the first kata of Shuri-te; in modern syllabi consistently a brown-belt to shodan form.",
+  "note": "ORPHANED IN THE CURRENT DATABASE and genuinely contested. Three separate disputes: (a) the creator is unknown, and the Matsumura attribution is traditional only; (b) who split the kata into three is unresolved between Itosu, Tokumine Pechin and Choki Motobu, with Itosu the majority view; (c) whether Nidan and Sandan are Itosu compositions or older material he merely arranged. The current DB row already credits 'Anko Itosu (created)' without qualification: that should be softened to 'standardised/modified', with 'created' applied only to Nidan and Sandan and even then marked disputed. [Verifier: Correct and honestly hedged: the literature does name exactly Itosu, Tokumine Pechin and Motobu Ch Historically the first kata of Shuri-te; in modern syllabi consistently a brown-belt to shodan form. kata_current.tsv says of Naihanchi Shodan: 'Sokon Matsumura is the most frequently named Okinawan ",
   "origin_person": "Unknown. The kata is generally held to have entered Okinawa from Fuzhou; Sokon Matsumura is the most frequently named Okinawan candidate for the Shodan form, but this is tradition, not record",
   "origin_place": "Okinawa (Shuri and Tomari), from a Fuzhou source form known as Nifanchin",
   "provenance": "The oldest surviving written references to Naihanchi are in Choki Motobu's books of the 1920s-30s, where he states the kata was imported from China and was no longer practised there. Before Itosu introduced the Pinan series, Naihanchi was the first kata taught in both Shuri-te and Tomari-te, which is itself evidence of its antiquity. A separate Tomari line runs from Karyu (Giko) Uku to Kosaku Matsumora, and a separate Shuri line from Bushi Tachimura to Soko Kishimoto (Tachimura no Naihanchi). Motobu Choki made Naihanchi the core of his own practice and is the reason the kata carries a reputation as a complete fighting curriculum.",
@@ -20854,7 +20902,7 @@
   "modifier": "Seikichi Uehara",
   "name": "Kasshindi (Ichi, Ni, San)",
   "native": "合戦手",
-  "note": "Already held with Uehara as creator, which is correct. Adding the specific 1976 Osaka transmission to Motobu Chosei and flagging the standing DISPUTE in Motobu studies: how much of Motobu Udundi as taught by Uehara is Motobu Choyu's transmission and how much is Uehara's own composition. The Motobu family line and the Uehara line differ on this, and Kasshindi is the clearest example of a form Uehara acknowledged making himself. Created by Uehara Seikichi when he systematised Motobu Udundi's curriculum in the 20th century, alongside his standardisation of the material inherited from Motobu Choyu. Practised today under Motobu Chosei's Motobu-ryu organisation. [Verifier: Facts confirmed almost v",
+  "note": "Already held with Uehara as creator, which is correct. Adding the specific 1976 Osaka transmission to Motobu Chosei and flagging the standing DISPUTE in Motobu studies: how much of Motobu Udundi as taught by Uehara is Motobu Choyu's transmission and how much is Uehara's own composition. The Motobu family line and the Uehara line differ on this, and Kasshindi is the clearest example of a form Uehara acknowledged making himself. Created by Uehara Seikichi when he systematised Motobu Udundi's curriculum in the 20th century, alongside his standardisation of the material inherited from Motobu Choyu. Practised today under Motobu Chosei's Motobu-ryu organisation. [Verifier: Facts confirmed almost v CONFIRMS kata_current.tsv as it stands. Motobu Chōsei learned the Kasshindī series from Uehara in Osaka, and Motobu Naoki states they 'were created by Uehara Sensei'. Worth recording explicitly becau",
   "origin_person": "Seikichi Uehara",
   "origin_place": "Okinawa",
   "provenance": "Three forms for handling multiple opponents, built by Uehara Seikichi (1904-2004) from techniques he received from Motobu Choyu (1857-1928), the last Motobu family holder of Udundi. Uehara taught them to Motobu Chosei in Osaka from 1976-1977.",
@@ -21378,7 +21426,7 @@
   "modifier": "Kosaku Matsumora, who fixed the Tomari form; Kodatsu Iha and Seiyu Nakasone transmitted it onward; Tokashiki Iken standardised the Gohakukai version",
   "name": "Tomari Naihanchi",
   "native": "泊ナイハンチ",
-  "note": "ORPHANED IN THE CURRENT DATABASE. A person CAN and SHOULD be attached here: Karyu (Giko) Uku, roster C00206, as the named Tomari transmitter, on Nagamine's authority. The creator remains unknown. Note also that Nagamine's account has three Naihanchi already existing in Tomari before Itosu, which is evidence against the common claim that Itosu created Nidan and Sandan, and the database should not assert both. [Verifier: Verified in the Tomari literature: Uku Karyu (Giko Uku, 1800-1850) taught Matsumora three kata known in Tomari as Naihanchi, and the Matsumora-Iha-Nakasone-Tokashiki preservation line is correct (Tokashiki teaches Naifanchi I, II, III). But this directly contradicts the kata|N The Matsumora recension.",
+  "note": "ORPHANED IN THE CURRENT DATABASE. A person CAN and SHOULD be attached here: Karyu (Giko) Uku, roster C00206, as the named Tomari transmitter, on Nagamine's authority. The creator remains unknown. Note also that Nagamine's account has three Naihanchi already existing in Tomari before Itosu, which is evidence against the common claim that Itosu created Nidan and Sandan, and the database should not assert both. [Verifier: Verified in the Tomari literature: Uku Karyu (Giko Uku, 1800-1850) taught Matsumora three kata known in Tomari as Naihanchi, and the Matsumora-Iha-Nakasone-Tokashiki preservation line is correct (Tokashiki teaches Naifanchi I, II, III). But this directly contradicts the kata|N The Matsumora recension. Quast identifies a distinguishing technical feature: continuous nami-gaeshi (returning-wave leg raise) on every step in all three Naihanchi, found in Matsubayashi-ryū and in ",
   "origin_person": "Unknown. The named Tomari transmitter is Karyu (Giko) Uku (1800-1850), who taught the three Naihanchi as the foundation of the Tomari curriculum",
   "origin_place": "Tomari, Okinawa; ultimate source Chinese, via Fuzhou",
   "provenance": "Nagamine records directly that Matsumora Kosaku's first teacher was Uku Giko (1800-1850), in whose courtyard he trained for three years and from whom he learned 'the three kata known in Tomari as Naihanchi'. This is one of the firmest named transmissions in the whole Tomari corpus and is a first-hand-derived account, not folklore.",

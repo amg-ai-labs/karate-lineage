@@ -83,27 +83,23 @@ J0181,Okamoto Minoru,renbukai,"Minoru Kawawada (Q1937515, shared style family); 
 J0188,Taro Miyake,judo,"Taro Shimabuku (C00350, shared style family)"
 KN004,Hamahiga Pechin,okinawan-kobudo,"Tawata PECHIN (C00354, shared style family); Sakuma Pechin (A0030); Ishimine Pechin (A0236); Maeda PECHIN (C00195); Kiyuna PECHIN (C00257)"
 KN007,Tsuken Hantagwa,okinawan-kobudo,"Tsuken Shosoku Oyakata (A0025, shared style family); Tsuken Akachu (C00626); Tsuken Hantaka (C00627)"
-KP003,Chokuho Agena,,Chokuho Agena (N0140)
 KP004,Kenichi Yamashiro,matayoshi-kobudo|matayoshi-kodokan,Kata Yamashiro (C00208); Kenichi Kanari (C00225); Kenichi Kinjo (C00226); Kenichi Yamashiro (N0117); Kenichi Sawai (Q1494112)
 KP005,Choun Oyakata,,Tsuken Shosoku Oyakata (A0025)
 KP006,Gikei Yamazato,,Giki Yamazato (N0128)
-KP008,Wai Shinzan,,Wai Shin Zan (C00639)
-KP009,Irei Okina,,Shin'ushi Irei (N0170)
 KP011,Toyama,,Seiko Toyama (A0009); Tōyama Zenshū (J0026); Kanken Toyama (Q3772405); Yutaka Toyama (Q4023282)
-KP013,Shoshin Miyahira,,Seiyei Miyahira (C00291); Miyahira Masanobu (J0004); Shoshin Nagamine (Q1963468); Katsuya Miyahira (Q3194253)
+KP013,Shoshin Miyahira,,Seiyei Miyahira (C00291); Miyahira Masanobu (J0004); Shoshin Nagamine (Q1963468); Katsuya Miyahira (Q3194253); Koja Shōshin (R0246)
 KP015,Kwak Kun-sik,,Kwak Kuen-sik (J0161)
 KP016,Lee Yong-sup,,Lee Kyo-yoon (A0172); Lee Yong-woo (A0173); Lee Chong-woo (A0176); Lee Nam-suk (A0177); Lee Bates (C00193)
 KP017,Kim Soon-bae,,Kim Ki-whang (A0157); Kim Diginakis (C00248); Kim Baylor (J0068); Kim Bok-man (J0152); Kim Suk-kyu (J0160)
 KP018,Han Young-tae,,Han Cha-kyo (A0178); Han Bong-soo (R0208)
 KP019,Woo Jae-lim,,Woo Jong-lim (J0158)
 KP022,Kanken Oyadomari,,Konin Oyadomari (C00178); Kotsu Oyadomari (C00187); Kanken Toyama (Q3772405); Kokan Oyadomari (Q6426547)
-KP023,Satoru Shinki,,Satoru Araki (C00451); Satoru Suzuki (J0101)
 N0002,Jiryo Uezu,,Angi Uezu (Q4763171)
 N0006,Gikei Yamazato,,Giki Yamazato (N0128)
 N0035,Sada Sakugawa,,Sakugawa Masanobu (R0115)
 N0041,Magii Komesu,,Kiyoshi Komesu (C00256); Ushi Komesu (C00637)
 N0059,Haruko Matayoshi,,Yasushi Matayoshi (A0124); Matayoshi Seitoku (J0002); Shinchin Matayoshi (J0108); Shintoku Matayoshi (J0109); Shinko Matayoshi (Q1908088)
-N0062,Shoshin Miyahira,,Seiyei Miyahira (C00291); Miyahira Masanobu (J0004); Shoshin Nagamine (Q1963468); Katsuya Miyahira (Q3194253)
+N0062,Shoshin Miyahira,,Seiyei Miyahira (C00291); Miyahira Masanobu (J0004); Shoshin Nagamine (Q1963468); Katsuya Miyahira (Q3194253); Koja Shōshin (R0246)
 N0065,Eigen Tomoyose,,Ryokichi Tomoyose (C00433); Ryuko Tomoyose (C00438); Ryuyu Tomoyose (C00441); Takamasa Tomoyose (J0133)
 N0076,Shoei Nakamura,,Tetsuji Nakamura (A0014); Heisaburo Nakamura (B0015); Ankichi Nakamura (C00006); Keikichi Nakamura (C00221); Kokichi Nakamura (C00281)
 N0084,Tsunetomo Yamamoto,,Katsuoh Yamamoto (A0027); Hideo Yamamoto (Q15987804); Norihiro Yamamoto (R0080)
@@ -116,6 +112,7 @@ Q1909096,Higa Peechin,okinawan-kobudo|chinese-martial-arts|karate-generic|okinaw
 Q459861,Rina Takeda,shorin-ryu|karate-generic|te,"Sokaku Takeda (A0233, shared style family)"
 Q6227103,John Corcoran,te,"John Reeberg (Q3182349, shared style family); John Saxon (Q470591, shared style family); John E. Kennedy (A0108); John Sells (C00159); John Shipes (R0116)"
 Q6419132,Kiyoshi Yoshimoti,niten-ichi-ryu|nihon-kobudo|sekiguchi-ryu|te,"Kiyoshi Komesu (C00256, shared style family); Kiyoshi Arakaki (Q11501557, shared style family); Kiyoshi Nishime (A0126); Kiyoshi Yamazaki (A0225); Tsuha Kiyoshi (J0030)"
+Q7790297,Thomas H Makiyama,keijutsukai-aikido|goju-ryu|karate-generic|te,Thomas Miyashiro (R0256)
 Q935081,Robert John Burke,shorin-ryu|karate-generic|te,"Robert Scaglione (A0059, shared style family); John E. Kennedy (A0108, shared style family); John Sells (C00159, shared style family); Robert Donnely (C00249, shared style family); Robert Heisner (Q136799394, shared style family)"
 W0003,Oyadomari Eiro,tomari-te,"Kokan Oyadomari (Q6426547, shared style family); Konin Oyadomari (C00178); Kotsu Oyadomari (C00187)"
 W0005,Tawada (of Shuri),,Tawada Shinboku (KN011)
