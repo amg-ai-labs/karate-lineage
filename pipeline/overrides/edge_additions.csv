@@ -1113,3 +1113,192 @@ Q723832,C00211,Shinken Taira,Katsuhiko Minowa,high,research:https://ryukyu-bugei
 C00251,Q6426547,Kishin Teruya,Kokan Oyadomari,high,research:https://ryukyu-bugei.com/?p=7351,[web scholarship; scholarship] Both in dataset but no edge; dataset only has C00251 Teruya -> Q3028499 Matsumora. Passai transmission: Teruya -> Matsumora and Oyadomari -> Iha Kotatsu -> Naka,proposed
 Q3028499,W0018,Kosaku Matsumora,Nakazato Bokuhitsu,high,research:https://ryukyu-bugei.com/?p=7351,[web scholarship; scholarship] Nakazato Bokuhitsu (1835-1902?) absent from dataset. Onward transmission of Tomari no Naihanchi to Nakasone Seiyu (C00293) also uncaptured.,proposed
 W0012,A0220,Fukuhara Chosei,Motobu Naoki,high,research:https://medium.com/@motobu715/self-introduction-9c4fb4e44e5a,[web scholarship; scholarship] A0220 Motobu Naoki currently has NO incoming edges. Teacher Fukuhara Chosei (Motobu-ryu master) absent from dataset. Also implies Chosei Motobu (A0028) -> Motob,proposed
+J0051,J0066,Tesshin Hamada,Keith Seal,high,research:https://www.outerbanks.com/bushin-kan-karate.html,[japanese sweep] student of Tesshin Hamada,proposed
+J0051,J0067,Tesshin Hamada,William Stockey,medium,research:https://www.e-budo.com/archive/index.php/t-14491.html,[japanese sweep] student of Tesshin Hamada,proposed
+J0051,J0069,Tesshin Hamada,Soichiro Higashi,medium,research:https://www.kiu.ac.jp/2025/01/08/post-39003/,[japanese sweep] student of Tesshin Hamada,proposed
+J0051,J0070,Tesshin Hamada,Larry King,low,research:https://victorybushinkan.com/instructors/,[japanese sweep] student of Tesshin Hamada,proposed
+J0060,J0066,Toshikazu Sakamoto,Keith Seal,medium,research:https://bushinkankarate.wordpress.com/training-manual/,[japanese sweep] student of Toshikazu Sakamoto,proposed
+J0051,J0068,Tesshin Hamada,Kim Baylor,low,"research:https://www.princeton.edu/~kendo/about.htm — association only, teaching relationship NOT stated",[japanese sweep] teacher of Kim Baylor,proposed
+Q5349190,J0072,Eiichi Miyazato,Masafumi Suzuki,high,research:https://ja.wikipedia.org/wiki/鈴木正文_(空手家),[japanese sweep] teacher of Masafumi Suzuki,proposed
+Q221121,J0072,Chojun Miyagi,Masafumi Suzuki,low,research:https://amahof.asn.au/members/1996-2/masafumi-suzuki/,[japanese sweep] teacher of Masafumi Suzuki,proposed
+Q3772405,J0072,Kanken Toyama,Masafumi Suzuki,low,research:https://amahof.asn.au/members/1996-2/masafumi-suzuki/,[japanese sweep] teacher of Masafumi Suzuki,proposed
+J0072,J0079,Masafumi Suzuki,Yasuo Kawano,medium,research:https://ja.wikipedia.org/wiki/日本正武館,[japanese sweep] student of Masafumi Suzuki,proposed
+J0072,Q1584213,Masafumi Suzuki,Masayuki Hisataka,low,research:https://ja.wikipedia.org/wiki/全日本硬式空手道連盟,[japanese sweep] student of Masafumi Suzuki,proposed
+J0077,J0073,Kensuke Ohama,Hiroyasu Tamae,high,research:https://www.weblio.jp/content/玉得博康,[japanese sweep] teacher of Hiroyasu Tamae,proposed
+Q3482287,J0073,Shinpan Gusukuma,Hiroyasu Tamae,high,research:https://www.weblio.jp/content/玉得博康,[japanese sweep] teacher of Hiroyasu Tamae,proposed
+J0073,J0074,Hiroyasu Tamae,Norio Nakamura,medium,research:https://ja.wikipedia.org/wiki/錬武舘,[japanese sweep] student of Hiroyasu Tamae,proposed
+A0152,J0074,Yun Kwae-byung,Norio Nakamura,medium,research:https://ja.wikipedia.org/wiki/韓武舘,[japanese sweep] teacher of Norio Nakamura,proposed
+W0002,J0074,Hiroshi Kinjo,Norio Nakamura,medium,research:https://ja.wikipedia.org/wiki/韓武舘,[japanese sweep] teacher of Norio Nakamura,proposed
+J0074,J0078,Norio Nakamura,Katsumi Uesugi,medium,research:https://ja.wikipedia.org/wiki/全日本硬式空手道連盟,[japanese sweep] student of Norio Nakamura,proposed
+J0074,C00230,Norio Nakamura,Kenjiro Chiba,low,research:https://ja.wikipedia.org/wiki/全日本硬式空手道連盟,[japanese sweep] student of Norio Nakamura,proposed
+Q1147708,J0080,Choki Motobu,Nisaburo Miki,low,research:https://note.com/motoburyu/n/n2bd1170c4835,[japanese sweep] teacher of Nisaburo Miki,proposed
+A0012,J0081,Juhatsu Kyoda,Kazuya Kanzaki,high,research:https://ja.wikipedia.org/wiki/%E7%A5%9E%E5%B4%8E%E5%92%8C%E4%B9%9F,[japanese sweep] teacher of Kazuya Kanzaki,proposed
+J0082,J0081,Shigemitsu Kyoda,Kazuya Kanzaki,high,research:https://ja.wikipedia.org/wiki/%E7%A5%9E%E5%B4%8E%E5%92%8C%E4%B9%9F,[japanese sweep] teacher of Kazuya Kanzaki,proposed
+J0081,J0083,Kazuya Kanzaki,Shigehide Ikeda,medium,research:https://ja.wikipedia.org/wiki/%E6%9D%B1%E6%81%A9%E6%B5%81,[japanese sweep] student of Kazuya Kanzaki,proposed
+A0012,J0082,Juhatsu Kyoda,Shigemitsu Kyoda,high,research:https://ja.wikipedia.org/wiki/%E6%9D%B1%E6%81%A9%E6%B5%81,[japanese sweep] teacher of Shigemitsu Kyoda,proposed
+C00478,J0086,Seikichi Uehara,Shinsuke Moromizato,medium,research:https://mutubu-udundi.okinawa/about,[japanese sweep] teacher of Shinsuke Moromizato,proposed
+C00478,J0087,Seikichi Uehara,Takeshi Uehara,high,research:https://mokkeikan.jimdofree.com/,[japanese sweep] teacher of Takeshi Uehara,proposed
+C00478,J0088,Seikichi Uehara,Masanobu Ishikawa,medium,research:https://mutubu-udundi.okinawa/about,[japanese sweep] teacher of Masanobu Ishikawa,proposed
+C00478,J0090,Seikichi Uehara,Harumitsu Kinjo,medium,research:https://mokkeikan.jimdofree.com/,[japanese sweep] teacher of Harumitsu Kinjo,proposed
+C00107,J0094,Kafu Kojo,Michio Yamada,high,research:https://ja.wikipedia.org/wiki/%E6%B9%96%E5%9F%8E%E6%B5%81,[japanese sweep] teacher of Michio Yamada,proposed
+C00449,J0095,Sanda Chinen,Chotoku Zukeran,high,research:https://www.okinawatimes.co.jp/articles/-/844605,[japanese sweep] teacher of Chotoku Zukeran,proposed
+C00449,J0096,Sanda Chinen,Masaushi Yonaha,high,research:https://www.okinawatimes.co.jp/articles/-/844605,[japanese sweep] teacher of Masaushi Yonaha,proposed
+Q16006586,J0097,Kanki Izumigawa,Busen Arakawa,high,research:https://ja.wikipedia.org/wiki/%E6%B3%89%E5%B7%9D%E5%AF%9B%E5%96%9C,[japanese sweep] teacher of Busen Arakawa,proposed
+Q16006586,J0098,Kanki Izumigawa,Tsutomu Takato,high,research:https://ja.wikipedia.org/wiki/%E6%B3%89%E5%B7%9D%E5%AF%9B%E5%96%9C,[japanese sweep] teacher of Tsutomu Takato,proposed
+Q16006586,J0099,Kanki Izumigawa,Hyotaro Harada,high,research:https://ja.wikipedia.org/wiki/%E6%B3%89%E5%B7%9D%E5%AF%9B%E5%96%9C,[japanese sweep] teacher of Hyotaro Harada,proposed
+Q16006586,J0100,Kanki Izumigawa,Kenneth Murakami,high,research:https://ja.wikipedia.org/wiki/%E6%B3%89%E5%B7%9D%E5%AF%9B%E5%96%9C,[japanese sweep] teacher of Kenneth Murakami,proposed
+Q16006586,J0101,Kanki Izumigawa,Satoru Suzuki,medium,research:https://ja.wikipedia.org/wiki/%E6%B3%89%E5%B7%9D%E5%AF%9B%E5%96%9C,[japanese sweep] teacher of Satoru Suzuki,proposed
+Q1584213,J0102,Masayuki Hisataka,Masamitsu Hisataka,high,research:https://ja.wikipedia.org/wiki/%E4%B9%85%E9%AB%98%E6%AD%A3%E5%85%89,[japanese sweep] teacher of Masamitsu Hisataka,proposed
+Q1620643,J0102,Kori Hisataka,Masamitsu Hisataka,high,research:https://ja.wikipedia.org/wiki/%E4%B9%85%E9%AB%98%E6%AD%A3%E5%85%89,[japanese sweep] teacher of Masamitsu Hisataka,proposed
+J0103,Q1620643,Sanra Kinjo,Kori Hisataka,high,research:https://ja.wikipedia.org/wiki/%E5%B0%91%E6%9E%97%E5%AF%BA%E6%B5%81%E6%8B%B3%E8%A1%8C%E9%A4%A8%E7%A9%BA%E6%89%8B%E9%81%93,[japanese sweep] student of Sanra Kinjo,proposed
+C00301,J0104,Kosuke Yonamine,Akiyoshi Arakaki,medium,research:http://www.kobudo-arakaki.com/about/,[japanese sweep] teacher of Akiyoshi Arakaki,proposed
+C00625,J0106,Tsuguo Sakumoto,Yuka Shimizu,high,research:https://ja.wikipedia.org/wiki/%E4%BD%90%E4%B9%85%E6%9C%AC%E5%97%A3%E7%94%B7,[japanese sweep] teacher of Yuka Shimizu,proposed
+Q1728269,C00329,Kanei Uechi,Masakazu Miyagi,low,research:http://www.kcdw.de/kobudo.htm,[japanese sweep] teacher of Masakazu Miyagi,proposed
+C00211,J0107,Katsuhiko Minowa,Masakazu Kinjo,high,research:https://www.d3b.jp/npcolumn/8912,[japanese sweep] teacher of Masakazu Kinjo,proposed
+Q723832,J0107,Shinken Taira,Masakazu Kinjo,medium,research:https://www.d3b.jp/npcolumn/8912,[japanese sweep] teacher of Masakazu Kinjo,proposed
+J0109,J0108,Shintoku Matayoshi,Shinchin Matayoshi,high,research:https://www.nihonkobudokyoukai.org/martialarts/066/,[japanese sweep] teacher of Shinchin Matayoshi,proposed
+J0108,Q1908088,Shinchin Matayoshi,Shinko Matayoshi,high,research:https://www.nihonkobudokyoukai.org/martialarts/066/,[japanese sweep] student of Shinchin Matayoshi,proposed
+C00449,J0110,Sanda Chinen,Raisuke Higa,high,research:https://kobudo-shinbukan.jp/,[japanese sweep] teacher of Raisuke Higa,proposed
+J0110,C00035,Raisuke Higa,Eisuke Akamine,high,research:https://kobudo-shinbukan.jp/,[japanese sweep] student of Raisuke Higa,proposed
+C00449,J0111,Sanda Chinen,Yohei Akamine,high,research:https://kobudo-shinbukan.jp/,[japanese sweep] teacher of Yohei Akamine,proposed
+J0111,C00035,Yohei Akamine,Eisuke Akamine,high,research:https://kobudo-shinbukan.jp/,[japanese sweep] student of Yohei Akamine,proposed
+C00449,J0112,Sanda Chinen,Jinsaburo Higa,high,research:https://kobudo-shinbukan.jp/,[japanese sweep] teacher of Jinsaburo Higa,proposed
+J0112,C00035,Jinsaburo Higa,Eisuke Akamine,high,research:https://kobudo-shinbukan.jp/,[japanese sweep] student of Jinsaburo Higa,proposed
+B0030,KN006,Soeishi,Chinen Shikiyanaka,medium,research:https://www.nihonkobudokyoukai.org/martialarts/062/,[japanese sweep] teacher of Shikiyanaka Chinen,proposed
+KN006,J0113,Chinen Shikiyanaka,Aburaya Yamagusuku,medium,research:https://www.nihonkobudokyoukai.org/martialarts/062/,[japanese sweep] student of Shikiyanaka Chinen,proposed
+J0113,C00449,Aburaya Yamagusuku,Sanda Chinen,medium,research:https://www.nihonkobudokyoukai.org/martialarts/062/,[japanese sweep] student of Aburaya Yamagusuku,proposed
+Q1908090,J0114,Shinpo Matayoshi,Yoshifumi Hayasaka,high,research:https://newstsukuba.jp/55285/01/02/,[japanese sweep] teacher of Yoshifumi Hayasaka,proposed
+J0115,A0118,Masatomo Nakamura,Hidemi Tamayose,medium,research:https://www.okinawatimes.co.jp/articles/-/344876,[japanese sweep] student of Masatomo Nakamura,proposed
+C00035,C00301,Eisuke Akamine,Kosuke Yonamine,high,research:https://ryusyu-kai.qwc.jp/,[japanese sweep] teacher of Kosuke Yonamine,proposed
+C00478,A0127,Seikichi Uehara,Kaishu Isa,medium,research:https://note.com/motoburyu/n/nd4392f610625,[japanese sweep] teacher of Kaishu Isa,proposed
+A0063,A0118,Masao Shima,Hidemi Tamayose,low,research:https://www.okinawatimes.co.jp/articles/-/344876,[japanese sweep] teacher of Hidemi Tamayose,proposed
+Q384558,J0116,Masatoshi Nakayama,Takeshi Oishi,low,research:https://ja.wikipedia.org/wiki/日本空手協会,[japanese sweep] teacher of Takeshi Oishi,proposed
+Q1246030,J0117,Shigeru Egami,Jotaro Takagi,high,research:https://www.shotokai.jp/about/teacher/takagi/,[japanese sweep] teacher of Jotaro Takagi,proposed
+A0148,J0117,Genshin Hironishi,Jotaro Takagi,high,research:https://www.shotokai.jp/about/teacher/takagi/,[japanese sweep] teacher of Jotaro Takagi,proposed
+J0117,J0119,Jotaro Takagi,Yoshinori Takita,medium,research:https://ja.wikipedia.org/wiki/日本空手道松濤會,[japanese sweep] student of Jotaro Takagi,proposed
+Q41105,J0118,Gichin Funakoshi,Giei Funakoshi,high,research:https://www.shotokai.jp/about/teacher/giei-funakoshi/,[japanese sweep] teacher of Giei Funakoshi,proposed
+J0118,J0121,Giei Funakoshi,Tomosaburo Okano,medium,research:https://karate-do.main.jp/kenkojuku1/,[japanese sweep] student of Giei Funakoshi,proposed
+Q41105,J0120,Gichin Funakoshi,Hoan Kosugi,high,research:https://www.shotokai.jp/about/teacher/kosugi/,[japanese sweep] teacher of Hoan Kosugi,proposed
+Q41105,J0121,Gichin Funakoshi,Tomosaburo Okano,high,research:https://karate-do.main.jp/kenkojuku1/,[japanese sweep] teacher of Tomosaburo Okano,proposed
+Q628761,J0121,Gigo Funakoshi,Tomosaburo Okano,medium,research:https://webhiden.jp/guide/dojyo336/,[japanese sweep] teacher of Tomosaburo Okano,proposed
+J0121,J0122,Tomosaburo Okano,Tomokatsu Okano,high,research:https://webhiden.jp/guide/dojyo336/,[japanese sweep] student of Tomosaburo Okano,proposed
+Q3772405,J0074,Kanken Toyama,Norio Nakamura,medium,research:https://ja.wikipedia.org/wiki/錬武舘,[japanese sweep] teacher of Norio Nakamura,proposed
+Q4351940,J0124,Yasuhiro Konishi,Takehiro Konishi,high,research:https://ja.wikipedia.org/wiki/神道自然流,[japanese sweep] teacher of Takehiro Konishi,proposed
+J0126,J0125,Sadao Ayase,Tetsuo Narikawa,high,research:https://ja.wikipedia.org/wiki/玄制流,[japanese sweep] teacher of Tetsuo Narikawa,proposed
+A0211,J0126,Seiken Shukumine,Sadao Ayase,high,research:https://ja.wikipedia.org/wiki/玄制流,[japanese sweep] teacher of Sadao Ayase,proposed
+A0211,J0127,Seiken Shukumine,Kunihiko Tosa,medium,research:https://ja.wikipedia.org/wiki/玄制流,[japanese sweep] teacher of Kunihiko Tosa,proposed
+A0211,J0130,Seiken Shukumine,Koichi Taniguchi,high,research:https://ja.wikipedia.org/wiki/祝嶺正献,[japanese sweep] teacher of Koichi Taniguchi,proposed
+Q453505,J0131,Kenwa Mabuni,Hisahiro Uno,low,research:https://ja.wikipedia.org/wiki/糸東流,[japanese sweep] teacher of Hisahiro Uno,proposed
+Q453505,J0132,Kenwa Mabuni,Masaru Watanabe,high,research:https://ja.wikipedia.org/wiki/糸東流,[japanese sweep] teacher of Masaru Watanabe,proposed
+Q453505,J0133,Kenwa Mabuni,Takamasa Tomoyose,high,research:https://ja.wikipedia.org/wiki/糸東流,[japanese sweep] teacher of Takamasa Tomoyose,proposed
+Q386415,J0136,Hironori Otsuka,Shinji Michihara,medium,research:https://ja.wikipedia.org/wiki/和道流,[japanese sweep] teacher of Shinji Michihara,proposed
+Q3772405,W0002,Kanken Toyama,Hiroshi Kinjo,high,research:https://ja.wikipedia.org/wiki/金城裕,[japanese sweep] teacher of Hiroshi Kinjo,proposed
+Q705617,W0002,Chomo Hanashiro,Hiroshi Kinjo,high,research:https://ja.wikipedia.org/wiki/金城裕,[japanese sweep] teacher of Hiroshi Kinjo,proposed
+Q453505,W0002,Kenwa Mabuni,Hiroshi Kinjo,medium,research:https://ja.wikipedia.org/wiki/金城裕,[japanese sweep] teacher of Hiroshi Kinjo,proposed
+W0002,A0152,Hiroshi Kinjo,Yun Kwae-byung,medium,research:https://ja.wikipedia.org/wiki/錬武舘,[japanese sweep] student of Hiroshi Kinjo,proposed
+Q41105,Q11470681,Gichin Funakoshi,Tatsuo Yamada,high,research:https://ja.wikipedia.org/wiki/山田辰雄_(空手家),[japanese sweep] teacher of Tatsuo Yamada,proposed
+Q11470681,Q294548,Tatsuo Yamada,Mas Oyama,medium,research:https://ja.wikipedia.org/wiki/山田辰雄_(空手家),[japanese sweep] student of Tatsuo Yamada,proposed
+Q16016038,J0137,Meitoku Yagi,Masaaki Ikemiyagi,high,research:https://okinawa-karate-navi.com/dojo/detail/26/,[japanese sweep] teacher of Masaaki Ikemiyagi,proposed
+C00659,C00265,Yoshio Hichiya,Koei Teruya,low,research:https://ogkk.okinawa/archives/about/history,[japanese sweep] teacher of Koei Teruya,proposed
+Q5349190,J0141,Eiichi Miyazato,Masanari Kikugawa,high,research:https://www.d3b.jp/npcolumn/10167,[japanese sweep] teacher of Masanari Kikugawa,proposed
+C00296,C00659,Koshin Iha,Yoshio Hichiya,low,research:https://ogkk.okinawa/archives/about/history,[japanese sweep] teacher of Yoshio Hichiya,proposed
+C00117,J0142,Kanmei Uechi,Sadanao Uechi,high,research:https://www.d3b.jp/npcolumn/19450,[japanese sweep] teacher of Sadanao Uechi,proposed
+Q1728269,J0142,Kanei Uechi,Sadanao Uechi,high,research:https://www.d3b.jp/npcolumn/19450,[japanese sweep] teacher of Sadanao Uechi,proposed
+C00098,J0143,Joen Nakazato,Takeshi Nakazato,low,research:https://okic.odks.jp/pdf/okinawadojolist.pdf,[japanese sweep] teacher of Takeshi Nakazato,proposed
+Q356335,J0152,Choi Hong-hi,Kim Bok-man,high,research:https://ko.wikipedia.org/wiki/김복만_(무술가),[japanese sweep] teacher of Kim Bok-man,proposed
+Q356335,J0153,Choi Hong-hi,Choi Kwang-jo,medium,research:https://en.wikipedia.org/wiki/Choi_Kwang_Do,[japanese sweep] teacher of Choi Kwang-jo,proposed
+Q9096235,J0154,Won Kuk Lee,Yoo Eung-jun,high,research:https://m.cafe.daum.net/tsa./IqRR/10,[japanese sweep] teacher of Yoo Eung-jun,proposed
+J0154,A0150,Yoo Eung-jun,Son Duk-sung (Duk Sung Son),medium,research:https://en.wikipedia.org/wiki/Chung_Do_Kwan,[japanese sweep] student of Yoo Eung-jun,proposed
+J0154,A0156,Yoo Eung-jun,Uhm Woon-kyu,medium,research:https://en.wikipedia.org/wiki/Chung_Do_Kwan,[japanese sweep] student of Yoo Eung-jun,proposed
+Q9096235,J0155,Won Kuk Lee,Kang Suh-chong,high,research:https://m.cafe.daum.net/tsa./IqRR/10,[japanese sweep] teacher of Kang Suh-chong,proposed
+Q9096235,J0156,Won Kuk Lee,Hyun Jong-myun,high,research:https://m.cafe.daum.net/tsa./IqRR/10,[japanese sweep] teacher of Hyun Jong-myun,proposed
+Q9096235,J0157,Won Kuk Lee,Ko Jae-chun,medium,research:https://m.cafe.daum.net/tsa./IqRR/10,[japanese sweep] teacher of Ko Jae-chun,proposed
+Q356335,J0157,Choi Hong-hi,Ko Jae-chun,medium,research:https://itftkd.sport/history/pioneers/,[japanese sweep] teacher of Ko Jae-chun,proposed
+Q9096235,J0158,Won Kuk Lee,Woo Jong-lim,medium,research:https://m.cafe.daum.net/tsa./IqRR/10,[japanese sweep] teacher of Woo Jong-lim,proposed
+Q9096235,J0159,Won Kuk Lee,Baek Joon-ki,medium,research:https://m.cafe.daum.net/tsa./IqRR/10,[japanese sweep] teacher of Baek Joon-ki,proposed
+Q9096235,J0160,Won Kuk Lee,Kim Suk-kyu,medium,research:https://m.cafe.daum.net/tsa./IqRR/10,[japanese sweep] teacher of Kim Suk-kyu,proposed
+Q9096235,J0161,Won Kuk Lee,Kwak Kuen-sik,medium,research:https://m.cafe.daum.net/tsa./IqRR/10,[japanese sweep] teacher of Kwak Kuen-sik,proposed
+Q9096235,J0162,Won Kuk Lee,Chung Yong-taek,high,research:https://en.wikipedia.org/wiki/Chung_Do_Kwan,[japanese sweep] teacher of Chung Yong-taek,proposed
+Q9096235,J0163,Won Kuk Lee,Park Hae-man,medium,research:https://en.wikipedia.org/wiki/Chung_Do_Kwan,[japanese sweep] teacher of Park Hae-man,proposed
+A0155,J0164,Chun Sang-sup,Bae Young-ki,high,research:https://mookas.com/news/17833,[japanese sweep] teacher of Bae Young-ki,proposed
+A0152,J0164,Yun Kwae-byung,Bae Young-ki,medium,research:https://mookas.com/news/17833,[japanese sweep] teacher of Bae Young-ki,proposed
+A0176,J0165,Lee Chong-woo,Lee Seung-wan,medium,research:https://mookas.com/news/17833,[japanese sweep] teacher of Lee Seung-wan,proposed
+J0165,J0166,Lee Seung-wan,Ahn Hak-seon,low,research:https://mookas.com/news/17833,[japanese sweep] teacher of Ahn Hak-seon,proposed
+A0155,J0167,Chun Sang-sup,Jeon Il-seop,high,research:https://mookas.com/news/17833,[japanese sweep] teacher of Jeon Il-seop,proposed
+A0001,J0168,Hwang Kee,Hong Chong-soo,high,research:https://en.wikipedia.org/wiki/Moo_Duk_Kwan_Taekwondo,[japanese sweep] teacher of Hong Chong-soo,proposed
+A0001,J0169,Hwang Kee,Kim Young-taek,high,research:https://en.wikipedia.org/wiki/Moo_Duk_Kwan_Taekwondo,[japanese sweep] teacher of Kim Young-taek,proposed
+A0001,J0170,Hwang Kee,Lee Kang-ik,high,research:https://en.wikipedia.org/wiki/Moo_Duk_Kwan_Taekwondo,[japanese sweep] teacher of Lee Kang-ik,proposed
+J0168,J0171,Hong Chong-soo,Oh Se-jun,medium,research:http://www.ourtoday.co.kr/news/article.html?no=23340,[japanese sweep] teacher of Oh Se-jun,proposed
+A0001,J0172,Hwang Kee,Kim Un-chang,high,research:https://mookas.com/news/17586,[japanese sweep] teacher of Kim Un-chang,proposed
+J0173,J0174,Lee Haeng-ung,Lee Soon-ho,medium,research:https://ko.wikipedia.org/wiki/이순호_(무술가),[japanese sweep] student of Lee Haeng-ung,proposed
+Q356335,J0175,Choi Hong-hi,Choi Jung-hwa,high,research:https://en.wikipedia.org/wiki/Choi_Jung-hwa,[japanese sweep] teacher of Choi Jung-hwa,proposed
+Q356335,J0177,Choi Hong-hi,Kwon Jae-hwa,low,research:https://itftkd.sport/history/pioneers/,[japanese sweep] teacher of Kwon Jae-hwa,proposed
+A0233,J0178,Sokaku Takeda,Choi Yong-sool,medium,research:https://ko.wikipedia.org/wiki/최용술,[japanese sweep] teacher of Choi Yong-sool,proposed
+J0178,J0179,Choi Yong-sool,Ji Han-jae,high,research:https://ko.wikipedia.org/wiki/최용술,[japanese sweep] student of Choi Yong-sool,proposed
+Q294548,J0182,Mas Oyama,William Oliver,high,research:https://ja.wikipedia.org/wiki/%E6%A5%B5%E7%9C%9F%E4%BC%9A%E9%A4%A8,[japanese sweep] teacher of William Oliver,proposed
+Q706955,J0182,Tadashi Nakamura,William Oliver,high,research:https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%A3%E3%83%AA%E3%82%A2%E3%83%A0%E3%83%BB%E3%82%AA%E3%83%AA%E3%83%90%E3%83%BC,[japanese sweep] teacher of William Oliver,proposed
+Q780966,J0183,Seiji Isobe,Ademir da Costa,high,research:https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%87%E3%83%9F%E3%83%BC%E3%83%AB%E3%83%BB%E3%83%80%E3%83%BB%E3%82%B3%E3%82%B9%E3%82%BF,[japanese sweep] teacher of Ademir da Costa,proposed
+Q294548,J0183,Mas Oyama,Ademir da Costa,medium,research:https://ja.wikipedia.org/wiki/%E6%A5%B5%E7%9C%9F%E4%BC%9A%E9%A4%A8,[japanese sweep] teacher of Ademir da Costa,proposed
+J0183,Q3081845,Ademir da Costa,Francisco Filho,medium,research:https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%87%E3%83%9F%E3%83%BC%E3%83%AB%E3%83%BB%E3%83%80%E3%83%BB%E3%82%B3%E3%82%B9%E3%82%BF,[japanese sweep] student of Ademir da Costa,proposed
+Q294548,J0184,Mas Oyama,Michel Wedel,medium,research:https://ja.wikipedia.org/wiki/%E6%A5%B5%E7%9C%9F%E4%BC%9A%E9%A4%A8,[japanese sweep] teacher of Michel Wedel,proposed
+Q294548,J0185,Mas Oyama,Gerard Gordeau,low,research:https://ja.wikipedia.org/wiki/%E6%A5%B5%E7%9C%9F%E4%BC%9A%E9%A4%A8,[japanese sweep] teacher of Gerard Gordeau,proposed
+Q2636225,J0186,Kazuyoshi Ishii,Sam Greco,low,research:https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%A0%E3%83%BB%E3%82%B0%E3%83%AC%E3%82%B3,[japanese sweep] teacher of Sam Greco,proposed
+Q5618841,J0187,Gunji Koizumi,Yukio Tani,medium,research:https://ja.wikipedia.org/wiki/%E5%B0%8F%E6%B3%89%E8%BB%8D%E6%B2%BB,[japanese sweep] teacher of Yukio Tani,proposed
+Q1937662,J0189,Minoru Mochizuki,Hiroo Mochizuki,high,research:https://ja.wikipedia.org/wiki/%E6%9C%9B%E6%9C%88%E7%A8%94,[japanese sweep] teacher of Hiroo Mochizuki,proposed
+J0189,Q352678,Hiroo Mochizuki,Bjorn Bregy,low,research:https://www.yoseikan.com/,[japanese sweep] student of Hiroo Mochizuki,proposed
+C00025,W0002,Chojo Oshiro,Hiroshi Kinjo,high,research:https://ja.wikipedia.org/wiki/%E9%87%91%E5%9F%8E%E8%A3%95,[japanese sweep] teacher of Hiroshi Kinjo,proposed
+C00003,W0002,Anbun Tokuda,Hiroshi Kinjo,high,research:https://ja.wikipedia.org/wiki/%E9%87%91%E5%9F%8E%E8%A3%95,[japanese sweep] teacher of Hiroshi Kinjo,proposed
+W0025,W0002,Chotoku Maeshiro,Hiroshi Kinjo,high,research:https://ja.wikipedia.org/wiki/%E9%87%91%E5%9F%8E%E8%A3%95,[japanese sweep] teacher of Hiroshi Kinjo,proposed
+Q190141,Q5618841,Jigoro Kano,Gunji Koizumi,low,research:https://ja.wikipedia.org/wiki/%E5%B0%8F%E6%B3%89%E8%BB%8D%E6%B2%BB,[japanese sweep] teacher of Gunji Koizumi,proposed
+N0202,Q41105,Gifuku Funakoshi,Gichin Funakoshi,high,book:Nagamine/Cramer/Guarelli SECTION 20,[firsthand] Gifuku Funakoshi (Gichin's grandfather) is absent from the dataset; no name-order or romanisation variant matches. Note the transmission is Confucian classics and Chinese,proposed
+N0140,Q1908088,Chokuho Agena,Shinko Matayoshi,medium,book:Nagamine/Cramer/Guarelli guarelli02 lines 11-13,[tradition] Shinko Matayoshi = Q1908088 (present). Chokuho Agena is absent from the dataset and needs creating. Shinko's recorded teachers are currently only 'Gushikawa no Tiragwa' a,proposed
+C00025,Q1908088,Chojo Oshiro,Shinko Matayoshi,medium,book:Nagamine/Cramer/Guarelli guarelli02 line 39,"[tradition] Both present (Chojo Oshiro C00025, 大城朝恕 1887-1935, matching the book's dates exactly; Shinko Matayoshi Q1908088), but no edge between them exists. Genuine new bo-jutsu li",proposed
+Q5349190,N0169,Eiichi Miyazato,Andrea Guarelli,high,book:Nagamine/Cramer/Guarelli guarelli02 line 195,"[firsthand] Eiichi Miyazato = Q5349190 (present). Andrea Guarelli, the book's author, is absent and must be created first. Firsthand ('my teachers'), so [high] once the person exists",proposed
+Q527422,Q2393877,Anko Itosu,Chotoku Kyan,medium,"book:Nagamine, Tales of Okinawa's Great Masters PDF PAGE 72","[tradition] NOT in the dataset. Kyan's recorded teachers are Chofu Kyan, Sokon Matsumura, Kosaku Matsumora, Kokan Oyadomari, Maeda Pechin and Tokumine Pechin. Nagamine lists Kyan amo",proposed
+Q3028499,W0020,Kosaku Matsumora,Kin Ryojin and Kin Ryosho,medium,"book:Nagamine, Tales of Okinawa's Great Masters PDF PAGE 115","[tradition] No edge exists. Student matches W0020, but that node is malformed: it is named 'Kin Ryojin and Kin Ryosho', conflating two people. Nagamine (nagamine_09 l.81) gives Kin R",proposed
+Q99517310,N0054,Chofu Kyan,Chohitsu Kyan,high,"book:Cramer, The History of Karate and the Masters Who Made It SECTION 19",[firsthand] Teacher matches Q99517310 Chofu Kyan. Chohitsu Kyan (Chotoku's elder brother) is absent from the dataset and would need creating. The dataset already holds the sibling ed,proposed
+Q221121,N0088,Chojun Miyagi,Eiko Miyazato,high,"book:Cramer, The History of Karate and the Masters Who Made It SECTION 23","[firsthand] Eiko Miyazato is absent. Do NOT match to Q5349190 Eiichi Miyazato: Cramer's index (cramer_02 ll.159-160) lists 'Miyazato, Eiichi' and 'Miyazato, Eiko' as separate entries",proposed
+N0170,Q1908088,Shin'ushi Irei,Shinko Matayoshi,medium,"book:Guarelli, Okinawan Kobudo guarelli02 line 13","[tradition] Irei Okina Shin'ushi is absent from the dataset. Guarelli names him as the source of the nunchaku, tunkuwa, kurumanbo and kuwa material in Yomitan; guarelli_03 l.3 confir",proposed
+Q1908090,N0120,Shinpo Matayoshi,Koshin Kamura,medium,"book:Guarelli, Okinawan Kobudo guarelli02 line 133","[tradition] Koshin Kamura is absent from the dataset. He also appears at guarelli_02 ll.165 and 203 (Zen Okinawan Kobudo Renmei; Kodokan council after 1997), so the identification is",proposed
+N0172,N0169,Su Yinghan,Andrea Guarelli,high,"book:Guarelli, Okinawan Kobudo SECTION 9","[firsthand] Both absent. Guarelli is the book's author (Matayoshi Kobudo, A.I.K.O.); Su Yinghan is a White Crane master in Yongchun. Context (guarelli_03 l.133) is a single training ",proposed
+Q722028,N0176,Kentsu Yabu,Kitatsu Kawasaki,medium,"book:Nagamine, Tales of Okinawa's Great Masters PDF PAGE 165","[tradition] Teacher matched (Kentsu Yabu Q722028). Kawasaki Kitatsu is absent from the roster entirely: add the person, then the edge. Source states direct tuition ('learned karate d",proposed
+Q453505,Q384558,Kenwa Mabuni,Masatoshi Nakayama,high,"book:Cramer, The History of Karate and the Masters Who Made It SECTION 26","[firsthand] Both people in the roster, no edge between them. Firsthand testimony ('So Kenwa Mabuni taught me these kata'), so a genuine addition; Nakayama's held teachers are Gichin ",proposed
+C00084,Q1908088,Gokenki,Shinko Matayoshi,medium,"book:Guarelli, Okinawan Kobudo guarelli02 line 23","[tradition] Both in the roster, no edge. Gokenki C00084 currently teaches Chojun Miyagi, Kenwa Mabuni and Shinpo Matayoshi but not Shinko. Independently corroborated by Cramer SECTIO",proposed
+Q1908090,N0121,Shinpo Matayoshi,Hiroko Ogido,medium,"book:Guarelli, Okinawan Kobudo guarelli02 line 177","[tradition] Teacher matched. Ogido Hiroko is absent from the roster: add the person (traditional dance teacher and Matayoshi Kobudō expert, female), then the edge. Named among his mo",proposed
+Q1908090,N0117,Shinpo Matayoshi,Kenichi Yamashiro,high,"book:Guarelli, Okinawan Kobudo guarelli05 line 99",[firsthand] Teacher matched. Kenichi Yamashiro absent from the roster (C00208 'Kata Yamashiro' is a different Uechi-ryu figure). Add person then edge; Guarelli also names him alongsi,proposed
+Q1963468,N0066,Shoshin Nagamine,Ichiro Nagamine,high,book:Nagamine/Cramer/Guarelli PDF PAGE 10,[firsthand] Teacher matches Q1963468 (Shoshin Nagamine). No 'Ichiro Nagamine' in dataset and no such edge. Student is a new person.,proposed
+C00639,W0015,Wai Shin Zan,Bushi Nagahama,medium,book:Nagamine/Cramer/Guarelli SECTION 17,[tradition] 'Wu Shin Zan' = Wai Shin Zan C00639 (romanisation variant). 'Nagahama' = Bushi Nagahama W0015. No such edge exists; dataset only has 'Bushi Nagahama -> Anko Itosu [high]',proposed
+C00084,A0012,Gokenki,Juhatsu Kyoda,medium,book:Nagamine/Cramer/Guarelli SECTION 22 SECTION 23,[synthesis] Both identifiable (Gokenki C00084 = Wu Xianhui/Xiangui; Juhatsu Kyoda A0012) but no edge exists. Corroborated by kata_current 'Nepai': Gokenki (brought); Juhatsu Kyoda (s,proposed
+Q453505,Q41105,Kenwa Mabuni,Gichin Funakoshi,medium,book:Nagamine/Cramer/Guarelli SECTION 26,"[synthesis] Both identifiable; no such edge. Note this reverses the conventional peer/senior relation and is a contested claim (Funakoshi 1868, Mabuni 1889); best recorded as low con",proposed
+Q41105,N0167,Gichin Funakoshi,Fasajiro Takagi,high,book:Nagamine/Cramer/Guarelli SECTION 30,[firsthand] Teacher matches Q41105. 'Fasajiro Takagi' is not in the dataset and the given name looks like an OCR corruption (probably Masajiro/Sasajiro Takagi); not Hideho Takagi (A0,proposed
+Q1908090,N0169,Shinpo Matayoshi,Andrea Guarelli,high,book:Nagamine/Cramer/Guarelli SECTION 3,"[firsthand] Teacher matches Q1908090. Guarelli (the author) absent from the dataset; documentary evidence (6th dan Renshi certificate no.103, 20 July 1997). New person plus new edge,",proposed
+N0027,N0061,Shinjō Gima,Sokan Noguni,medium,book:Nagamine/Cramer/Guarelli SECTION 8,"[tradition] Neither person in dataset. This is Gima Shinjō, Ryukyuan official and tutor of Noguni Sōkan, an agricultural (sweet potato) rather than martial lineage. Recommend excludi",proposed
+N0223,Q1908088,Jiao Gui Wu,Shinko Matayoshi,medium,book:Nagamine/Cramer/Guarelli guarelli02 line 29,"[tradition] Student matches Q1908088. Teacher 'Wu Jiao Gui (Go Koki)', father of Go Kenki, is not in the dataset (distinct from Gokenki C00084). New person plus new edge.",proposed
+Q221121,Q1908090,Chojun Miyagi,Shinpo Matayoshi,medium,book:Nagamine/Cramer/Guarelli guarelli02 line 57,"[tradition] Both identifiable; no such edge (dataset has Chotoku Kyan, Gokenki, Seko Higa and Shinko Matayoshi as Shinpo's teachers). Book qualifies it as 'a short period' with his f",proposed
+Q3028499,N0128,Kosaku Matsumora,Giki Yamazato,medium,book:Nagamine/Cramer/Guarelli PDF PAGE 63,"[tradition] Teacher matched Q3028499. Student Giki Yamazato (山里義輝, 1866-1946) is absent from the dataset; add person then edge. Same passage also names Kuba Koho (1870-1942) and Iha ",proposed
+N0107,N0033,Seikun Ishikawa,Seijin Ishikawa,medium,book:Nagamine/Cramer/Guarelli PDF PAGE 169,"[tradition] Neither person is in the dataset (no Seikun or Seijin Ishikawa; existing Ishikawa entries are B0027 Masanori, C00129 Horoku, J0005 Seigi, J0006 Seitoku). Note the transmi",proposed
+N0028,Q1908088,Ying Jin,Shinko Matayoshi,medium,book:Nagamine/Cramer/Guarelli guarelli02 line 31,[tradition] Student matched Q1908088. Teacher Jin Ying / Kingai (金應) is absent from the dataset despite 'kingai-ryu' appearing as a style on both Shinko Q1908088 and Shinpo Q1908090.,proposed
+Q1908088,N0030,Shinko Matayoshi,C. Iraha,medium,book:Nagamine/Cramer/Guarelli guarelli02 line 39,"[tradition] Teacher matched Q1908088. Student 'Iraha C.' absent from the dataset; only an initial is given, so add at low confidence.",proposed
+Q1963468,Q7147128,Shoshin Nagamine,Patrick McCarthy,high,"book:Nagamine, Tales of Okinawa's Great Masters PDF PAGE 14",[firsthand] Both identifiable. Dataset holds only 'Richard Kim -> Patrick McCarthy [high]'; no Nagamine->McCarthy edge. Quote describes ongoing training opportunities rather than for,proposed
+Q1963468,N0068,Shoshin Nagamine,Kiyoshi Shinjo,high,"book:Nagamine, Tales of Okinawa's Great Masters PDF 33","[firsthand] Teacher matches Q1963468. Student 'Shinjo Kiyoshi' is genuinely absent (dataset Shinjo entries are Seiyu A0008, Seiryo C00064, Masanobu A0138, Masashi A0139, Takashi A014",proposed
+Q3028499,N0149,Kosaku Matsumora,Koho Kuba,medium,"book:Nagamine, Tales of Okinawa's Great Masters PDF PAGE 63",[tradition] Teacher matches Q3028499. Kuba Koho (1870-1942) absent from dataset; C00024 Chojin Kuba (1904-1989) is a different man. Same quote also supports Matsumora -> Yamazato Gik,proposed
+C00257,N0096,Kiyuna Pechin,Shoshu Nagamine,medium,"book:Nagamine, Tales of Okinawa's Great Masters PDF PAGE 69",[tradition] Teacher matches C00257 Kiyuna Pechin (dataset holds 'Sokon Matsumura -> Kiyuna Pechin' and 'Kiyuna Pechin -> Seiyei Miyahira'). Student 'Nagamine Shoshu' absent. CAUTION:,proposed
+Q527422,W0007,Anko Itosu,Kudeken Kenyu,medium,"book:Nagamine, Tales of Okinawa's Great Masters PDF PAGE 73",[tradition] Both people exist (Q527422; W0007 Kudeken Kenyu) but W0007 currently has no edges at all. Same quote also confirms the existing 'Anko Itosu -> Kentsu Yabu [medium]' and ',proposed
+N0008,Q1963468,Aji Tanmei Iha,Shoshin Nagamine,high,"book:Nagamine, Tales of Okinawa's Great Masters PDF 85",[firsthand] Student matches Q1963468. 'Iha no Aji Tanmei' is absent; he is NOT C00261 Kodatsu Iha (the existing 'Kodatsu Iha -> Shoshin Nagamine [medium]' edge is a separate relation,proposed
+Q2393877,N0040,Chotoku Kyan,Shinzou Ishida,medium,"book:Nagamine, Tales of Okinawa's Great Masters PDF 109","[tradition] Teacher matches Q2393877. Ishida Shinzo absent from dataset. Cross-corroborated: Cramer indexes 'Shinzo Ishida' at book p. 94, so two independent books carry him. Quote (",proposed
+N0155,Q1963468,Ansei Misato,Shoshin Nagamine,high,"book:Nagamine, Tales of Okinawa's Great Masters PDF 132","[firsthand] Student matches Q1963468. Misato Ansei absent. This is a Ryukyu dance (buyo) teaching link, not karate; include only if the graph admits adjacent performing-arts teachers",proposed
+N0153,N0108,Musashi Miyamoto,Magonojo Terao,medium,"book:Nagamine, Tales of Okinawa's Great Masters PDF PAGE 182","[tradition] Neither person is in the dataset. This is 17th-century Japanese swordsmanship (Niten Ichi-ryu, the Dokkodo), wholly outside the Okinawan karate lineage; recommend excludi",proposed
+C00084,Q41105,Gokenki,Gichin Funakoshi,medium,"book:Cramer, The History of Karate and the Masters Who Made It SECTION 31","[synthesis] Both identifiable (C00084 Gokenki, Q41105). No such edge held. WEAK: the quote is a collective statement about a research group ('they were all training with Wu Xiangui')",proposed
+Q1908090,N0119,Shinpo Matayoshi,Tsutomu Yamagawa,medium,"book:Guarelli, Okinawan Kobudo guarelli02 line 109","[tradition] Teacher matches Q1908090. Yamagawa Tsutomu absent from dataset. Source is a photograph caption ('Master Matayoshi with some students'), so low confidence.",proposed
+C00449,Q1908088,Sanda Chinen,Shinko Matayoshi,medium,"book:Guarelli, Okinawan Kobudo chunk guarelli04, line 103","[tradition] Sanra Chinen = Chinen Yamani = C00449 Sanda Chinen (知念三良), and the book's dates 1842-1925 match C00449 exactly; 'Umikana's son' matches the existing 'Chinen Umikana -> Sa",proposed
+Q2393877,W0028,Chotoku Kyan,Ansei Arakaki,high,"book:Nagamine, Tales of Okinawa's Great Masters PDF 109","[firsthand] Both people present (student = W0028 Arakaki Ansei, brother of Ankichi Arakaki) but no edge exists: W0028 has no edges at all in the dataset. 'His assistant' implies a cl",proposed
+N0155,Q557301,Ansei Misato,Ankichi Arakaki,medium,"book:Nagamine, Tales of Okinawa's Great Masters PDF 132","[tradition] Student = Q557301 Ankichi Arakaki. Teacher Ansei Misato absent from the dataset (no 'Misato' at all). CAUTION: the transmission described is the Ryukyuan dance shudon, no",proposed
+N0158,Q1963468,Tanouye Rotaishi,Shoshin Nagamine,high,"book:Nagamine, Tales of Okinawa's Great Masters PDF PAGE 179","[firsthand] Student = Q1963468 Shoshin Nagamine. Teacher Tanouye Rotaishi (Archbishop of Daihonzan Chozen-ji, 84th Dharma Successor of Rinzai Zen) absent. CAUTION: this is Zen certif",proposed
+Q722028,A0012,Kentsu Yabu,Juhatsu Kyoda,medium,"book:Cramer, The History of Karate and the Masters Who Made It SECTION 23","[synthesis] Yabu Kensu = Q722028 Kentsu Yabu. Both present, no edge exists. Kentsu Yabu's recorded students are Kanken Toyama, Kenko Nakaima, Miyagi Hisateru, Shigeru Nakamura and Sh",proposed
+Q268880,N0221,Gogen Yamaguchi,James Genovese,medium,"book:Cramer, The History of Karate and the Masters Who Made It SECTION 25",[synthesis] Teacher = Q268880 Gogen Yamaguchi. James Genovese absent from the dataset; a genuinely missing Western Goju Kai student. Quote truncated ('in Ja[pan]').,proposed
+C00653,N0169,Yoshiaki Gakiya,Andrea Guarelli,high,"book:Guarelli, Okinawan Kobudo SECTION 8",[firsthand] Teacher = C00653 Yoshiaki Gakiya. Andrea Guarelli absent from the dataset. Firsthand author statement of direct study. Same sentence also asserts direct study with Shinpo,proposed
+N0224,Q1908088,Ryuko Shiishi,Shinko Matayoshi,medium,"book:Guarelli, Okinawan Kobudo chunk guarelli04, line 109","[tradition] Student = Q1908088 Shinko Matayoshi. Ryuko Shiishi absent from the dataset (no 'Shiishi' entry); he is described as a descendant of the Shiishi family, itself also absent",proposed
+N0222,Q221121,Miao Xing,Chojun Miyagi,medium,"book:Cramer, The History of Karate and the Masters Who Made It SECTION 22","[synthesis] Miao Xing absent from the dataset; add as a Chinese Monk Fist Boxing master, then the edge. Claim is hedged in the source ('some researchers assert'), so a low weight is ",proposed
+Q268880,A0217,Gogen Yamaguchi,So Nei Chu,high,"book:Cramer, The History of Karate and the Masters Who Made It SECTION 25","[firsthand] Both people present but no edge. Warning: the dataset holds So Nei Chu twice, A0217 (曹寧柱, b.1908) and A0228 (曺寧柱, 1908-1996), each with its own edge to Mas Oyama. Merge b",proposed
+J0109,Q1908088,Shintoku Matayoshi,Shinko Matayoshi,medium,"book:Guarelli, Okinawan Kobudo guarelli02 line 11",[tradition] Shintoku Matayoshi (Shinko's grandfather) absent from the dataset. Adding him gives the Matayoshi bo/eku strand a root generation above Shinko.,proposed
+Q1908088,N0122,Shinko Matayoshi,T. Omiya,medium,"book:Guarelli, Okinawan Kobudo guarelli02 line 39","[tradition] Omiya T. absent from the dataset and given only as an initialled surname in a student list. Add at low weight, or hold until a full given name is found.",proposed

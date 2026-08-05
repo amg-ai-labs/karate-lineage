@@ -106,6 +106,113 @@ try {
   var krows = document.getElementById("katapanel").querySelectorAll(".kata-row").length;
   if (krows < 150) throw new Error("kata rows rendered: " + krows);
   console.log("kata tab: " + DATA.kata.length + " kata, " + krows + " rows rendered");
+  // every kata must be attachable to somebody, which was the client's complaint
+  var noPerson = DATA.kata.filter(k => !k.origin_person && !k.modifier
+    && !(k.introduced_by || []).length);
+  if (noPerson.length > DATA.kata.length * 0.02)
+    throw new Error("kata with no person: " + noPerson.length + " — "
+      + noPerson.slice(0, 5).map(k => k.name).join(", "));
+  var chinto = DATA.kata.find(k => /^chint/i.test(k.name));
+  if (!chinto) throw new Error("Chinto missing from the kata list");
+  if (!chinto.origin_person && !(chinto.introduced_by || []).length)
+    throw new Error("Chinto still has no attached person");
+  var disputed = DATA.kata.filter(k => k.disputed).length;
+  var withProv = DATA.kata.filter(k => k.provenance).length;
+  var withMod = DATA.kata.filter(k => k.modifier).length;
+  console.log("kata detail: " + noPerson.length + " with no person, " + disputed
+    + " disputed, " + withProv + " with provenance, " + withMod + " with a modifier");
+  // the detail block must actually render the fields the client asked for
+  kataOpen.clear(); kataOpen.add(chinto.name); kataQuery = chinto.name;
+  renderKataPanel();
+  var det = document.getElementById("katapanel").querySelector(".kata-detail");
+  if (!det) throw new Error("kata detail did not render for " + chinto.name);
+  var dtxt = det.textContent;
+  if (dtxt.indexOf("Likely creator") < 0 && dtxt.indexOf("Lineage") < 0)
+    throw new Error("kata detail shows no person: " + dtxt.slice(0, 120));
+  kataQuery = ""; kataOpen.clear();
+  console.log("kata detail block for " + chinto.name + ": " + dtxt.slice(0, 70).replace(/\s+/g, " "));
+
+  // GraphML must be well-formed and must not declare an empty int attribute,
+  // which is the usual way a hand-built GraphML fails to open in Gephi
+  (function () {
+    var gml = "", _d = download;
+    download = function (name, blob) { if (/\.graphml$/.test(name)) gml = blob._text; };
+    exportSubset([...lineageSet(fk.id, "down")].slice(0, 60), "smoke", "graphml");
+    download = _d;
+    if (!gml) throw new Error("no GraphML produced");
+    var opens = (gml.match(/<node /g) || []).length, closes = (gml.match(/<\/node>/g) || []).length;
+    if (!opens || opens !== closes) throw new Error("GraphML node tags unbalanced: " + opens + "/" + closes);
+    if (/<data key="n_(born|died|generation|students|descendants)"><\/data>/.test(gml))
+      throw new Error("GraphML declares an empty int attribute");
+    if (gml.indexOf("<graph ") < 0 || gml.indexOf("</graphml>") < 0)
+      throw new Error("GraphML missing graph element");
+    // an unescaped & or < would make the file unparseable
+    var body = gml.replace(/<[^>]*>/g, "");
+    if (/[<>]/.test(body) || /&(?!amp;|lt;|gt;|quot;)/.test(body))
+      throw new Error("GraphML has unescaped markup in its text");
+    console.log("GraphML: " + opens + " nodes, "
+      + (gml.match(/<edge /g) || []).length + " edges, well-formed and escaped");
+  })();
+
+  // analytics: every measure must render its own table and export its own CSV
+  if (!DATA.rankings) throw new Error("rankings missing from payload");
+  renderStatsPanel();
+  var measures = DATA.rankings.measures.map(m => m.key).concat(["__terminal"]);
+  var sp = document.getElementById("statspanel");
+  for (var mi = 0; mi < measures.length; mi++) {
+    rankMeasure = measures[mi];
+    renderStatsPanel();
+    var trs = sp.querySelectorAll("tr").length;
+    if (trs < 5) throw new Error("analytics table for " + measures[mi] + ": " + trs + " rows");
+    var noteTxt = sp.querySelector(".rk-note").textContent;
+    if (noteTxt.length < 20)
+      throw new Error("analytics measure " + measures[mi] + " has no method note");
+  }
+  rankMeasure = DATA.rankings.measures[0].key;
+  renderStatsPanel();
+  var aFiles = [], _aDl = download;
+  download = function (name, blob) { aFiles.push(name); };
+  sp.querySelectorAll("button").filter(b => /Download this table/.test(b.textContent))[0].fire("click");
+  download = _aDl;
+  if (!aFiles.length || !/analytics.*\.csv$/.test(aFiles[0]))
+    throw new Error("analytics CSV export produced: " + aFiles.join(", "));
+  var topRow = DATA.rankings.top[DATA.rankings.measures[0].key][0];
+  openDetail(topRow.id);
+  var dtext = document.getElementById("detail").textContent;
+  if (dtext.indexOf("Connectivity") < 0)
+    throw new Error("person panel shows no connectivity figures");
+  console.log("analytics: " + measures.length + " views, each with a method note; CSV "
+    + aFiles[0] + "; per-person figures in the detail panel");
+
+  // search: kanji, reversed name order, macrons, and school names (client item 8)
+  function searchIds(q) {
+    document.getElementById("search").value = q;
+    runSearch();
+    return sHits.map(h => h.n.name);
+  }
+  var ham = DATA.nodes.find(n => /Tesshin Hamada/i.test(n.name));
+  if (!ham) throw new Error("Tesshin Hamada absent");
+  var checks = [
+    ["Hamada Tesshin", "Tesshin Hamada"],      // reversed order
+    ["hamada", "Tesshin Hamada"],              // surname alone
+  ];
+  if (ham.native) checks.push([ham.native, "Tesshin Hamada"]);
+  var mot = DATA.nodes.find(n => n.name === "Choki Motobu");
+  if (mot) {
+    checks.push(["Motobu Choki", "Choki Motobu"]);
+    checks.push(["Chōki Motobu", "Choki Motobu"]);
+  }
+  for (var ci = 0; ci < checks.length; ci++) {
+    var got = searchIds(checks[ci][0]);
+    if (got.indexOf(checks[ci][1]) < 0)
+      throw new Error("search '" + checks[ci][0] + "' did not find "
+        + checks[ci][1] + "; got " + got.slice(0, 4).join(", "));
+  }
+  var bySchool = searchIds("shotokan");
+  if (!bySchool.length) throw new Error("search by school name found nobody");
+  document.getElementById("search").value = ""; runSearch();
+  console.log("search: kanji + reversed order + macron + school name all resolve ("
+    + checks.length + " checks, school query -> " + bySchool.length + " hits)");
   var honN = placed.filter(n => n.hon && n.hon.length).length;
   if (honN < 100) throw new Error("honours missing from payload: " + honN);
   console.log("people with honours in payload: " + honN);

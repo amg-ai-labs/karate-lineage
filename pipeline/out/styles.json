@@ -84,6 +84,18 @@
   },
   {
    "aliases": [
+    "Budokwai, London (武道会)",
+    "武道会"
+   ],
+   "family": "other",
+   "founded": 1918,
+   "founder": null,
+   "id": "budokwai",
+   "label": "Budokwai, London (武道会)",
+   "parent": "judo"
+  },
+  {
+   "aliases": [
     "Bugeikan",
     "Iso Bugeikan",
     "Okinawa Dento Bugeikan",
@@ -117,6 +129,18 @@
    "id": "bushido-kai",
    "label": "Bushido Kai Karate",
    "parent": null
+  },
+  {
+   "aliases": [
+    "Bushin Kan (武心館)",
+    "武心館"
+   ],
+   "family": "japanese",
+   "founded": null,
+   "founder": "Hiroyuki Tesshin Hamada",
+   "id": "bushin-kan",
+   "label": "Bushin Kan (武心館)",
+   "parent": "dai-nippon-butokukai"
   },
   {
    "aliases": [
@@ -184,6 +208,18 @@
   },
   {
    "aliases": [
+    "Muso Chishin-ryu Heiho (無双知心流兵法)",
+    "無双知心流兵法 (kanji inferred, not confirmed in a Japanese source)"
+   ],
+   "family": "japanese",
+   "founded": null,
+   "founder": "Hiroyuki Tesshin Hamada",
+   "id": "chishin-ryu-heiho",
+   "label": "Muso Chishin-ryu Heiho (無双知心流兵法)",
+   "parent": "bushin-kan"
+  },
+  {
+   "aliases": [
     "Chito-Ryu",
     "Chito-kai",
     "Chitoryu",
@@ -195,6 +231,30 @@
    "id": "chito-ryu",
    "label": "Chito-Ryu",
    "parent": "shuri-te"
+  },
+  {
+   "aliases": [
+    "Choi Kwang Do (최광도)",
+    "최광도"
+   ],
+   "family": "korean",
+   "founded": 1987,
+   "founder": "Choi Kwang-jo",
+   "id": "choi-kwang-do",
+   "label": "Choi Kwang Do (최광도)",
+   "parent": "itf-taekwondo"
+  },
+  {
+   "aliases": [
+    "Chosun Yun Moo Kwan Kwonbeopbu (조선연무관 권법부)",
+    "조선연무관 권법부"
+   ],
+   "family": "korean",
+   "founded": 1946,
+   "founder": "Chun Sang-sup",
+   "id": "chosun-yun-moo-kwan-kwonbeopbu",
+   "label": "Chosun Yun Moo Kwan Kwonbeopbu (조선연무관 권법부)",
+   "parent": "shotokan"
   },
   {
    "aliases": [
@@ -221,6 +281,18 @@
    "id": "chubu-shorin-ryu",
    "label": "Chūbu Shōrin-ryū",
    "parent": "shorin-ryu-seibukan"
+  },
+  {
+   "aliases": [
+    "Chun Kuhn Taekwondo (천권 태권도) / Chun Kuhn Do",
+    "천권 태권도"
+   ],
+   "family": "korean",
+   "founded": null,
+   "founder": "Kim Bok-man",
+   "id": "chun-kuhn-taekwondo",
+   "label": "Chun Kuhn Taekwondo (천권 태권도) / Chun Kuhn Do",
+   "parent": "itf-taekwondo"
   },
   {
    "aliases": [
@@ -266,6 +338,18 @@
   },
   {
    "aliases": [
+    "Okinawa Karate-dō Shōrin-ryū Daishinkan Kyōkai (沖縄空手道小林流大信館協会)",
+    "沖縄空手道小林流大信館協会"
+   ],
+   "family": "shuri-te",
+   "founded": null,
+   "founder": null,
+   "id": "daishinkan",
+   "label": "Okinawa Karate-dō Shōrin-ryū Daishinkan Kyōkai (沖縄空手道小林流大信館協会)",
+   "parent": "kobayashi-shorin-ryu"
+  },
+  {
+   "aliases": [
     "Daito-ryu",
     "Daito-ryu Aiki-jujutsu"
    ],
@@ -288,6 +372,18 @@
    "id": "dento-shito-ryu",
    "label": "Dentō Shitō-ryū",
    "parent": "shito-ryu"
+  },
+  {
+   "aliases": [
+    "Dai Nippon Butoku Kai International Division (大日本武徳会国際部)",
+    "大日本武徳会国際部"
+   ],
+   "family": "other",
+   "founded": 1965,
+   "founder": null,
+   "id": "dnbk-international",
+   "label": "Dai Nippon Butoku Kai International Division (大日本武徳会国際部)",
+   "parent": "dai-nippon-butokukai"
   },
   {
    "aliases": [
@@ -373,6 +469,30 @@
    "id": "genseiryu",
    "label": "Genseiryū",
    "parent": "shuri-te"
+  },
+  {
+   "aliases": [
+    "Kokusai Genseiryū Karatedō Renmei Butokukai (国際玄制流空手道連盟武徳会)",
+    "国際玄制流空手道連盟武徳会"
+   ],
+   "family": "shuri-te",
+   "founded": null,
+   "founder": null,
+   "id": "genseiryu-butokukai",
+   "label": "Kokusai Genseiryū Karatedō Renmei Butokukai (国際玄制流空手道連盟武徳会)",
+   "parent": "genseiryu"
+  },
+  {
+   "aliases": [
+    "Kokusai Karate-dō Renmei Gensei-ryū Seidōkai (国際空手道連盟玄制流成道会)",
+    "国際空手道連盟玄制流成道会"
+   ],
+   "family": "shuri-te",
+   "founded": 1983,
+   "founder": "Tetsuo Narikawa",
+   "id": "genseiryu-seidokai",
+   "label": "Kokusai Karate-dō Renmei Gensei-ryū Seidōkai (国際空手道連盟玄制流成道会)",
+   "parent": "genseiryu"
   },
   {
    "aliases": [
@@ -554,6 +674,18 @@
    "id": "han-moo-kwan",
    "label": "Han Moo Kwan",
    "parent": "ji-do-kwan"
+  },
+  {
+   "aliases": [
+    "Hapkido (합기도, 合氣道)",
+    "합기도 (合氣道)"
+   ],
+   "family": "korean",
+   "founded": 1948,
+   "founder": "Choi Yong-sool",
+   "id": "hapkido",
+   "label": "Hapkido (합기도, 合氣道)",
+   "parent": "daito-ryu"
   },
   {
    "aliases": [
@@ -1080,6 +1212,17 @@
   },
   {
    "aliases": [
+    "Kanbukan (韓武舘)"
+   ],
+   "family": "japanese",
+   "founded": 1945,
+   "founder": null,
+   "id": "kanbukan",
+   "label": "Kanbukan (韓武舘)",
+   "parent": "shudokan"
+  },
+  {
+   "aliases": [
     "House for Teaching Generosity",
     "Kang Duk Won",
     "Kangdukwon",
@@ -1243,6 +1386,18 @@
   },
   {
    "aliases": [
+    "Ryūkyū Kobudō Kenryō-ryū (琉球古武道賢亮流)",
+    "琉球古武道賢亮流"
+   ],
+   "family": "kobudo",
+   "founded": 2000,
+   "founder": "Yonamine Kōsuke 与那嶺幸助",
+   "id": "kenryo-ryu",
+   "label": "Ryūkyū Kobudō Kenryō-ryū (琉球古武道賢亮流)",
+   "parent": "ryukyu-kobudo-akamine"
+  },
+  {
+   "aliases": [
     "Kenshikai",
     "Okinawa Goju-ryu Kenshi-kai Karate-do Kobudo Association",
     "kenshi-kai",
@@ -1255,6 +1410,18 @@
    "id": "kenshikai",
    "label": "Kenshikai",
    "parent": "shodokan-goju-ryu"
+  },
+  {
+   "aliases": [
+    "Kenshikai (賢士会, William Oliver, New York)",
+    "賢士会"
+   ],
+   "family": "kyokushin",
+   "founded": 2002,
+   "founder": "William Oliver",
+   "id": "kenshikai-oliver",
+   "label": "Kenshikai (賢士会, William Oliver, New York)",
+   "parent": "seido-juku"
   },
   {
    "aliases": [
@@ -1362,6 +1529,18 @@
   },
   {
    "aliases": [
+    "Nihon Koden Shindō-ryū Karate-dō (日本古伝神道流空手道)",
+    "日本古伝神道流空手道"
+   ],
+   "family": "japanese",
+   "founded": 1964,
+   "founder": "Hiroyuki Hamada",
+   "id": "koden-shindo-ryu",
+   "label": "Nihon Koden Shindō-ryū Karate-dō (日本古伝神道流空手道)",
+   "parent": "tomari-te"
+  },
+  {
+   "aliases": [
     "Koeikan Karate-do",
     "koei-kan"
    ],
@@ -1409,6 +1588,18 @@
    "id": "kojo-ryu",
    "label": "Kojō-ryū",
    "parent": "te"
+  },
+  {
+   "aliases": [
+    "Okinawa-den Kojō-ryū Karatedō Rinzankai (沖縄傳湖城流空手道林山会)",
+    "沖縄傳湖城流空手道林山会"
+   ],
+   "family": "te",
+   "founded": null,
+   "founder": "Hayashi Shingo 林伸伍",
+   "id": "kojo-ryu-rinzankai",
+   "label": "Okinawa-den Kojō-ryū Karatedō Rinzankai (沖縄傳湖城流空手道林山会)",
+   "parent": "kojo-ryu"
   },
   {
    "aliases": [
@@ -1502,6 +1693,18 @@
   },
   {
    "aliases": [
+    "Kuk Mu Kwan (국무관)",
+    "국무관"
+   ],
+   "family": "korean",
+   "founded": 1953,
+   "founder": "Kang Suh-chong",
+   "id": "kuk-mu-kwan",
+   "label": "Kuk Mu Kwan (국무관)",
+   "parent": "chung-do-kwan"
+  },
+  {
+   "aliases": [
     "Kukki Taekwondo (WT)",
     "Kukkiwon Taekwondo",
     "Kukkiwon taekwondo",
@@ -1574,6 +1777,18 @@
    "id": "kushin-ryu",
    "label": "Kushin-Ryu",
    "parent": "goju-ryu"
+  },
+  {
+   "aliases": [
+    "Kūshin-ryū (空慎流, Kinjō line)",
+    "空慎流"
+   ],
+   "family": "japanese",
+   "founded": null,
+   "founder": null,
+   "id": "kushin-ryu-kinjo",
+   "label": "Kūshin-ryū (空慎流, Kinjō line)",
+   "parent": "shito-ryu"
   },
   {
    "aliases": [
@@ -1656,6 +1871,18 @@
    "id": "kyokushin-kan",
    "label": "Kyokushin-kan",
    "parent": "kyokushin"
+  },
+  {
+   "aliases": [
+    "Okinawa Shōrin-ryū Kyūdōkan Kenshikai (沖縄小林流究道館拳士会)",
+    "沖縄小林流究道館拳士会"
+   ],
+   "family": "shuri-te",
+   "founded": null,
+   "founder": "Yoshimasa Kakazu",
+   "id": "kyudokan-kenshikai",
+   "label": "Okinawa Shōrin-ryū Kyūdōkan Kenshikai (沖縄小林流究道館拳士会)",
+   "parent": "shorin-ryu-kyudokan"
   },
   {
    "aliases": [
@@ -1857,6 +2084,30 @@
   },
   {
    "aliases": [
+    "Motobu Udundi Kobujutsu Kyōkai (本部御殿手古武術協会)",
+    "本部御殿手古武術協会"
+   ],
+   "family": "tomari-te",
+   "founded": 1970,
+   "founder": null,
+   "id": "motobu-udundi-kobujutsu-kyokai",
+   "label": "Motobu Udundi Kobujutsu Kyōkai (本部御殿手古武術協会)",
+   "parent": "motobu-udundi"
+  },
+  {
+   "aliases": [
+    "Okinawa Motobu Udundi Karate Kobudō Kyōkai (沖縄本部御殿手空手古武道協会)",
+    "沖縄本部御殿手空手古武道協会"
+   ],
+   "family": "tomari-te",
+   "founded": 2012,
+   "founder": null,
+   "id": "motobu-udundi-kyokai",
+   "label": "Okinawa Motobu Udundi Karate Kobudō Kyōkai (沖縄本部御殿手空手古武道協会)",
+   "parent": "motobu-udundi"
+  },
+  {
+   "aliases": [
     "Mugai-ryu"
    ],
    "family": "other",
@@ -1935,6 +2186,30 @@
   },
   {
    "aliases": [
+    "Nihon Bōgu Karate-dō Renmei (日本防具空手道連盟)",
+    "日本防具空手道連盟"
+   ],
+   "family": "japanese",
+   "founded": 2003,
+   "founder": "Katsumi Uesugi",
+   "id": "nihon-bogu-karate",
+   "label": "Nihon Bōgu Karate-dō Renmei (日本防具空手道連盟)",
+   "parent": "renbukai"
+  },
+  {
+   "aliases": [
+    "Nihon Kenpō Karate-dō (日本拳法空手道)",
+    "日本拳法空手道"
+   ],
+   "family": "japanese",
+   "founded": null,
+   "founder": "Tatsuo Yamada",
+   "id": "nihon-kenpo-karate-do",
+   "label": "Nihon Kenpō Karate-dō (日本拳法空手道)",
+   "parent": "motobu-ryu"
+  },
+  {
+   "aliases": [
     "Japan Kobudo",
     "Japanese Kobudo",
     "Japanese kobudo",
@@ -1946,6 +2221,18 @@
    "id": "nihon-kobudo",
    "label": "Nihon Kobudo",
    "parent": null
+  },
+  {
+   "aliases": [
+    "Nippon Seibukan (日本正武館)",
+    "日本正武館"
+   ],
+   "family": "naha-te",
+   "founded": 1955,
+   "founder": "Masafumi Suzuki",
+   "id": "nihon-seibukan",
+   "label": "Nippon Seibukan (日本正武館)",
+   "parent": "goju-ryu"
   },
   {
    "aliases": [
@@ -2044,6 +2331,18 @@
   },
   {
    "aliases": [
+    "Okinawa Dentō Karate-dō Shinkōkai (沖縄伝統空手道振興会, Okinawa Traditional Karate-dō Promotion Association)",
+    "一般社団法人沖縄伝統空手道振興会"
+   ],
+   "family": "other",
+   "founded": null,
+   "founder": null,
+   "id": "okinawa-dento-karate-shinkokai",
+   "label": "Okinawa Dentō Karate-dō Shinkōkai (沖縄伝統空手道振興会, Okinawa Traditional Karate-dō Promotion Association)",
+   "parent": null
+  },
+  {
+   "aliases": [
     "Goju-ryu Kenkyukai",
     "Okinawa Goju Ryu Research Society",
     "Okinawa Gōjū-ryū Kenkyūkai",
@@ -2054,6 +2353,18 @@
    "founder": "Masaji Taira",
    "id": "okinawa-goju-ryu-kenkyukai",
    "label": "Okinawa Gōjū-ryū Kenkyūkai",
+   "parent": "jundokan"
+  },
+  {
+   "aliases": [
+    "Okinawa Gōjū-ryū Karate-dō Kyōkai (沖縄剛柔流空手道協会, OGKK)",
+    "沖縄剛柔流空手道協会"
+   ],
+   "family": "naha-te",
+   "founded": 1969,
+   "founder": "Eiichi Miyazato",
+   "id": "okinawa-goju-ryu-kyokai",
+   "label": "Okinawa Gōjū-ryū Karate-dō Kyōkai (沖縄剛柔流空手道協会, OGKK)",
    "parent": "jundokan"
   },
   {
@@ -2087,6 +2398,18 @@
    "id": "okinawa-kobudo-doushi-renseikai",
    "label": "Okinawa Kobudō Dōshi Rensei-kai",
    "parent": "matayoshi-kodokan"
+  },
+  {
+   "aliases": [
+    "Okinawa Kobudō Kyōkai (沖縄古武道協会, 1961)",
+    "沖縄古武道協会"
+   ],
+   "family": "kobudo",
+   "founded": 1961,
+   "founder": null,
+   "id": "okinawa-kobudo-kyokai",
+   "label": "Okinawa Kobudō Kyōkai (沖縄古武道協会, 1961)",
+   "parent": "okinawan-kobudo"
   },
   {
    "aliases": [
@@ -2137,6 +2460,18 @@
   },
   {
    "aliases": [
+    "Ōtō-ryū (王統流)",
+    "王統流"
+   ],
+   "family": "shuri-te",
+   "founded": null,
+   "founder": null,
+   "id": "oto-ryu",
+   "label": "Ōtō-ryū (王統流)",
+   "parent": "shuri-te"
+  },
+  {
+   "aliases": [
     "Pangai-noon",
     "Pangai-noon-ryū Karate-jutsu",
     "Pangainoon",
@@ -2169,6 +2504,29 @@
    "id": "renbukai",
    "label": "Renbukai (Zen Nihon Karatedō Renmei Renbukai)",
    "parent": "shudokan"
+  },
+  {
+   "aliases": [
+    "Renbukan (錬武舘)"
+   ],
+   "family": "shuri-te",
+   "founded": 1951,
+   "founder": null,
+   "id": "renbukan",
+   "label": "Renbukan (錬武舘)",
+   "parent": "kanbukan"
+  },
+  {
+   "aliases": [
+    "Shōrin-ryū Risshikan (立志館)",
+    "立志館"
+   ],
+   "family": "shuri-te",
+   "founded": null,
+   "founder": "Kiyuna Chōkō",
+   "id": "risshikan",
+   "label": "Shōrin-ryū Risshikan (立志館)",
+   "parent": "shorin-ryu"
   },
   {
    "aliases": [
@@ -2224,6 +2582,18 @@
    "founder": "Kenkō Nakaima",
    "id": "ryuei-ryu-hozonkai",
    "label": "Ryūei-ryū Karate Kobudō Hozonkai",
+   "parent": "ryuei-ryu"
+  },
+  {
+   "aliases": [
+    "Ryūei-ryū Ryūhōkai (劉衛流龍鳳会)",
+    "劉衛流龍鳳会"
+   ],
+   "family": "naha-te",
+   "founded": null,
+   "founder": "Sakumoto Tsuguo 佐久本嗣男",
+   "id": "ryuei-ryu-ryuhokai",
+   "label": "Ryūei-ryū Ryūhōkai (劉衛流龍鳳会)",
    "parent": "ryuei-ryu"
   },
   {
@@ -2870,6 +3240,18 @@
   },
   {
    "aliases": [
+    "Shorin-Ken Karatedo (DNBK Honbu karate curriculum)",
+    "少林拳 (kanji inferred, not confirmed in a Japanese source)"
+   ],
+   "family": "japanese",
+   "founded": null,
+   "founder": null,
+   "id": "shorin-ken",
+   "label": "Shorin-Ken Karatedo (DNBK Honbu karate curriculum)",
+   "parent": "dai-nippon-butokukai"
+  },
+  {
+   "aliases": [
     "Jindokai",
     "Shorin-Ryu",
     "Shorin-ryu",
@@ -2988,6 +3370,18 @@
    "id": "shorinji-ryu",
    "label": "Shorinji-Ryu",
    "parent": "shorin-ryu"
+  },
+  {
+   "aliases": [
+    "Shōrinji-ryū Gudōkan (全沖縄少林寺流空手道協会 求道館)",
+    "全沖縄少林寺流空手道協会 求道館"
+   ],
+   "family": "shuri-te",
+   "founded": null,
+   "founder": null,
+   "id": "shorinji-ryu-gudokan",
+   "label": "Shōrinji-ryū Gudōkan (全沖縄少林寺流空手道協会 求道館)",
+   "parent": "shorinji-ryu"
   },
   {
    "aliases": [
@@ -3160,6 +3554,18 @@
   },
   {
    "aliases": [
+    "Sin Moo Hapkido (신무합기도)",
+    "신무합기도"
+   ],
+   "family": "korean",
+   "founded": null,
+   "founder": "Ji Han-jae",
+   "id": "sin-moo-hapkido",
+   "label": "Sin Moo Hapkido (신무합기도)",
+   "parent": "hapkido"
+  },
+  {
+   "aliases": [
     "SKA",
     "Shotokan Karate of America (Ohshima line)",
     "Southern California Karate Association"
@@ -3227,6 +3633,18 @@
    "id": "soo-bahk-do",
    "label": "Soo Bahk Do",
    "parent": "moo-duk-kwan"
+  },
+  {
+   "aliases": [
+    "Taekkyon (택견)",
+    "택견"
+   ],
+   "family": "korean",
+   "founded": null,
+   "founder": null,
+   "id": "taekkyon",
+   "label": "Taekkyon (택견)",
+   "parent": null
   },
   {
    "aliases": [
@@ -3351,6 +3769,18 @@
   },
   {
    "aliases": [
+    "Tōon-kai (東恩会, Osaka)",
+    "東恩会"
+   ],
+   "family": "naha-te",
+   "founded": 2015,
+   "founder": "not named in sources found",
+   "id": "toon-kai",
+   "label": "Tōon-kai (東恩会, Osaka)",
+   "parent": "toon-ryu"
+  },
+  {
+   "aliases": [
     "To'on-ryu",
     "Toon-Ryu",
     "toon-ryu",
@@ -3362,6 +3792,18 @@
    "id": "toon-ryu",
    "label": "Toon-Ryu",
    "parent": "naha-te"
+  },
+  {
+   "aliases": [
+    "Tōon-ryū Shidōkai (士道会, Fukuoka)",
+    "士道会"
+   ],
+   "family": "naha-te",
+   "founded": null,
+   "founder": "Yoshino Shigemasa 芳野重正",
+   "id": "toon-ryu-shidokai",
+   "label": "Tōon-ryū Shidōkai (士道会, Fukuoka)",
+   "parent": "toon-ryu"
   },
   {
    "aliases": [
@@ -3445,6 +3887,18 @@
   },
   {
    "aliases": [
+    "Uechi-ryū Karatedō Han-Kōnan Kyōkai (上地流空手道半硬軟協会, Kōyōkan)",
+    "上地流空手道半硬軟協会"
+   ],
+   "family": "uechi-ryu",
+   "founded": null,
+   "founder": "Itokazu Seikō 糸数盛光",
+   "id": "uechi-ryu-hankonan-kyokai",
+   "label": "Uechi-ryū Karatedō Han-Kōnan Kyōkai (上地流空手道半硬軟協会, Kōyōkan)",
+   "parent": "uechi-ryu"
+  },
+  {
+   "aliases": [
     "Sōke line (Uechi Kanmei, then Uechi Sadanao)",
     "Uechi-ryū Karate-dō Association",
     "Uechi-ryū Karate-dō Kyōkai",
@@ -3511,6 +3965,18 @@
    "id": "ueshiro-shorin-ryu",
    "label": "Ueshiro Shōrin-ryū Karate USA",
    "parent": "matsubayashi-ryu"
+  },
+  {
+   "aliases": [
+    "Kinjō Ufuchiku-den Ryūkyū Kobujutsu / Ryūkyū Bujutsu Shūdōkan (金城大筑傳琉球古武術・琉球武術修道館)",
+    "金城大筑傳琉球古武術"
+   ],
+   "family": "kobudo",
+   "founded": null,
+   "founder": null,
+   "id": "ufuchiku-den-shudokan",
+   "label": "Kinjō Ufuchiku-den Ryūkyū Kobujutsu / Ryūkyū Bujutsu Shūdōkan (金城大筑傳琉球古武術・琉球武術修道館)",
+   "parent": "ufuchiku-kobujutsu"
   },
   {
    "aliases": [
@@ -3619,6 +4085,18 @@
    "id": "washin-ryu",
    "label": "Washin-Ryu",
    "parent": null
+  },
+  {
+   "aliases": [
+    "Watoyama-ryū / Toyama-ryū kobujutsu (渡山流)",
+    "渡山流"
+   ],
+   "family": "kobudo",
+   "founded": null,
+   "founder": null,
+   "id": "watoyama-ryu",
+   "label": "Watoyama-ryū / Toyama-ryū kobujutsu (渡山流)",
+   "parent": "okinawan-kobudo"
   },
   {
    "aliases": [
@@ -3836,6 +4314,30 @@
    "id": "yuishinkan",
    "label": "Yuishinkan",
    "parent": "goju-ryu"
+  },
+  {
+   "aliases": [
+    "Zen Nihon Kōshiki Karate-dō Renmei (全日本硬式空手道連盟)",
+    "全日本硬式空手道連盟"
+   ],
+   "family": "japanese",
+   "founded": 1981,
+   "founder": null,
+   "id": "zen-nihon-koshiki",
+   "label": "Zen Nihon Kōshiki Karate-dō Renmei (全日本硬式空手道連盟)",
+   "parent": "koshiki-karatedo"
+  },
+  {
+   "aliases": [
+    "Zen Okinawa Karate-dō Renmei (全沖縄空手道連盟, All-Okinawa Karate-dō Federation)",
+    "全沖縄空手道連盟"
+   ],
+   "family": "other",
+   "founded": 1967,
+   "founder": null,
+   "id": "zen-okinawa-karate-do-renmei",
+   "label": "Zen Okinawa Karate-dō Renmei (全沖縄空手道連盟, All-Okinawa Karate-dō Federation)",
+   "parent": null
   },
   {
    "aliases": [

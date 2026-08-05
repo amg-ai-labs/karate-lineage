@@ -108,6 +108,59 @@ def show(title, key, cols, n=50):
         print(f"{i:3d}  {r['name'][:30]:30s} {dates:11s} {r['style'][:22]:22s} "
               + " ".join(f"{r[c]:>10d}" if isinstance(r[c], int) else f"{r[c]:>10s}" for c in cols))
 
+# The measures, declared once so the CSV, the console report and the website
+# all describe them identically. Keeping them separate is the point: collapsing
+# them into a single "influence score" would hide which thing is being claimed.
+MEASURES = [
+    ("branch_reach", "Widest reach (excluding pass-through figures)",
+     "Descendants of people who taught two or more students, so the count reflects "
+     "an art that spread through them rather than merely past them."),
+    ("prominent", "Most prominent students",
+     "Direct students who are themselves notable: they taught three or more people, "
+     "founded or headed a style, or hold a recorded honour."),
+    ("direct", "Most students taught personally",
+     "Direct teacher-to-student links recorded in the dataset."),
+    ("teachers", "Most teachers",
+     "How many teachers this person studied under."),
+    ("teacher_styles", "Most diverse teachers",
+     "How many distinct styles are represented among this person's teachers."),
+    ("breadth", "Broadest stylistic spread",
+     "Distinct styles appearing anywhere among their descendants."),
+    ("generations", "Deepest lineage",
+     "How many generations the line runs below them."),
+    ("reach", "Total descendants (rewards antiquity)",
+     "Every descendant, however distant. Shown for completeness: an early figure "
+     "inherits everyone who came after, so this ranks position in time as much as influence."),
+]
+
+if "--json" in sys.argv:
+    out = K / "pipeline/out"
+    by_id = {r["id"]: r for r in rows}
+    term = [r for r in rows if r["direct"] == 0 and r["teachers"] > 0]
+    pre1950 = [r for r in term if r["born"] and int(r["born"]) < 1950]
+    def slim(r):
+        return {"id": r["id"], "name": r["name"], "dates":
+                (f"{r['born'] or '?'}–{r['died']}" if r["died"] else (r["born"] or "?")),
+                "style": r["style"], "family": r["family"],
+                "v": {k: r[k] for k, _t, _n in MEASURES}}
+    payload = {
+        "measures": [{"key": k, "title": t, "note": n} for k, t, n in MEASURES],
+        "top": {k: [slim(r) for r in top(k, 50)] for k, _t, _n in MEASURES},
+        "terminal": {"total": len(term), "pre1950": len(pre1950),
+                     "note": "People with no recorded students, so the recorded line stops "
+                             "with them. Restricted to those born before 1950, since a "
+                             "living teacher's students may simply not be recorded yet.",
+                     "list": [slim(r) for r in sorted(pre1950, key=lambda r: str(r["born"]))]},
+        "person": {v: [by_id[v][k] for k, _t, _n in MEASURES] for v in by_id},
+        "keys": [k for k, _t, _n in MEASURES],
+    }
+    with open(out / "rankings.json", "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
+    print(f"wrote rankings.json ({len(rows)} people, {len(MEASURES)} measures, "
+          f"{len(pre1950)} terminal lineages)")
+    if "--csv" not in sys.argv:
+        sys.exit(0)
+
 if "--csv" in sys.argv:
     out = K / "pipeline/analysis"
     with open(out / "influence_rankings.csv", "w", encoding="utf-8", newline="") as f:

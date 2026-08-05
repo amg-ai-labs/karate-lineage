@@ -53,28 +53,89 @@ for _n in lin["nodes"]:
             _BY_NAME.setdefault(_norm(_p[1] + _p[0]), _n)
 
 GROUP_WORDS = ("committee", "team", "association", "federation", "lineage", "family tradition",
-               "senior students", "unknown", "tradition ascribes", "kwan", "society")
+               "senior students", "senior instructors", "tradition ascribes", "kwan", "society",
+               "honbu", "editorial", "jka", "kai for competition", "shitokai")
+# an unrecorded originator is a different fact from an unidentified one: say so
+UNKNOWN_RE = re.compile(r"^(origin\s+)?(unknown|uncertain|unattributed|none|not recorded"
+                        r"|not documented|undocumented|anonymous|n/?a)\b", re.I)
+# credits arrive as prose. Strip the commentary and keep the name.
+TRAIL_PROSE = re.compile(r"\s*[—–]\s*.*$")                 # "Toguchi — created outright"
+DESCRIPTOR = re.compile(r",\s*(?:a |an |the )?(?:chinese|okinawan|japanese|korean|fujian|"
+                        r"working|drawing|from|via|then the|for |after |who |which |in |of )"
+                        r".*$", re.I)
+ROLE_TAIL = re.compile(r"\s*,?\s*(?:of|from|in)\s+(?:fuzhou|fujian|kume|naha|shuri|tomari"
+                       r"|okinawa|china)\b.*$", re.I)
+LEAD = re.compile(r"^(attributed to|traditionally|probably|possibly|presented by|developed "
+                  r"(?:by|within)|created by|reportedly|said to be|per |disputed:\s*|"
+                  r"usually credited to|kata attributed to|either |linked to|"
+                  r"the envoy |chinese envoy |the )\s*", re.I)
+# Okinawan rank and courtesy titles sit inside the recorded name and block an
+# exact match: Tawada Chikudun Pechin Shinboku is our Shinboku Tawada.
+TITLES = re.compile(r"\b(chikudun|chikudon|pechin|peichin|ufuchiku|oyakata|uekata|"
+                    r"tanmei|tanmee|satunushi|satonushi|sensei|shihan|no)\b", re.I)
+ALIAS = {"ruruko": "Ryu Ryu Ko", "gigo": "Gigo Funakoshi", "shushiwa": "Shu Shiwa",
+         "kojouekata": "Kojo Uekata", "shushinotanmei": "Shushi",
+         "yoshitaka": "Gigo Funakoshi", "yoshitakafunakoshi": "Gigo Funakoshi",
+         "funakoshi": "Gichin Funakoshi", "masutatsu": "Mas Oyama",
+         "masutatsuoyama": "Mas Oyama", "todesakugawa": "Kanga Sakukawa",
+         "sakugawa": "Kanga Sakukawa", "kanjisakugawa": "Kanga Sakukawa",
+         "kangasakugawa": "Kanga Sakukawa"}
+
 
 def resolve_person(raw):
-    """-> (node or None, cleaned_name, kind) where kind is person|group|unresolved"""
+    """-> (node or None, cleaned_name, kind); kind is person|group|unknown|unresolved
+
+    Credits are free text, so build a ladder of progressively more aggressive
+    rewrites and take the first that lands on a real person. Order matters: the
+    whole string is tried before any truncation, so a person whose recorded name
+    genuinely contains a comma is never cut down to their surname.
+    """
     txt = (raw or "").strip()
     if not txt:
         return None, "", "unresolved"
+    if UNKNOWN_RE.match(txt):
+        return None, "Unknown", "unknown"
+
     head = re.split(r"\s*[;(]", txt)[0].strip().rstrip(",")
-    head = re.sub(r"^(attributed to|traditionally|probably|possibly)\s+", "", head, flags=re.I)
-    for cand in (txt, head):
+    head = LEAD.sub("", head)
+    cands = [txt, head]
+    for rx in (TRAIL_PROSE, DESCRIPTOR, ROLE_TAIL):
+        cands.append(rx.sub("", head).strip().rstrip(","))
+    # "A, then B" / "A and B" / "A, working from X": every part is a candidate,
+    # because a kata credited to two people should resolve to the first we hold
+    for part in re.split(r"\s*(?:,\s*then|,|\s+and\s+|\s+with\s+|&|\s+then\s+)\s*", head):
+        part = TRAIL_PROSE.sub("", part).strip()
+        if len(part) > 2:
+            cands.append(LEAD.sub("", part))
+    # "Kanga Sakukawa after the envoy Kusanku", "Anko Itosu created the originals":
+    # the name leads and commentary follows, so try the longest prefix that is a
+    # person. Longest first, so a two-word prefix can never pre-empt a longer match.
+    words = LEAD.sub("", head).split()
+    for i in range(len(words) - 1, 1, -1):
+        cands.append(" ".join(words[:i]))
+    for c in list(cands):                       # again with rank titles removed
+        stripped = re.sub(r"\s+", " ", TITLES.sub(" ", c)).strip()
+        if stripped and stripped != c:
+            cands.append(stripped)
+    for cand in cands:
+        if not cand:
+            continue
         hit = _BY_NAME.get(_norm(cand))
         if hit:
             return hit, hit["name"], "person"
-    # "A and B", "A with B": try each part
-    for part in re.split(r"\s+(?:and|with|&)\s+", head):
-        hit = _BY_NAME.get(_norm(part))
-        if hit:
-            return hit, hit["name"], "person"
+        alias = ALIAS.get(_norm(cand))
+        if alias:
+            hit = _BY_NAME.get(_norm(alias))
+            if hit:
+                return hit, hit["name"], "person"
+
     low = txt.lower()
-    if any(g in low for g in GROUP_WORDS):
+    if any(g in low for g in GROUP_WORDS) or re.search(r"\bfamily\b|\bcircle of\b|\bschool\b", low):
         return None, head or txt, "group"
-    return None, head or txt, "unresolved"
+    if re.search(r"\bunknown\b|\buncertain\b|\bnot recorded\b|\bunnamed\b|\bunresolved\b|"
+                 r"\bno (?:original|individual) creator\b|\bnot standardised\b|\bno name\b", low):
+        return None, "Unknown", "unknown"
+    return None, TRAIL_PROSE.sub("", head).strip() or txt, "unresolved"
 
 
 def chain(sid):
@@ -154,8 +215,10 @@ for k in kata:
         hit, clean, kind = resolve_person(nm)
         kp.append({"kata": k["name"], "person": clean, "person_as_written": nm,
                    "person_id": hit["id"] if hit else "",
-                   "in_dataset": "yes" if hit else ("group or body, not an individual"
-                                                    if kind == "group" else "NO — person missing"),
+                   "in_dataset": "yes" if hit else
+                                 {"group": "group or body, not an individual",
+                                  "unknown": "originator not recorded"}.get(
+                                      kind, "NO — person missing"),
                    "role": role, "era": k.get("era", ""),
                    "disputed": "yes" if k.get("disputed") else ""})
 

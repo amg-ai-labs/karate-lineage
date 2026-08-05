@@ -5,11 +5,11 @@ generated from the same data, so these files and the site never drift apart.
 
 | file | rows | what it is |
 |---|---:|---|
-| `people.csv` | 1061 | every person, dates, styles, honours, connectivity |
-| `links.csv` | 1367 | every teacher-to-student link, graded, with its sources |
-| `styles.csv` | 275 | every style with its ancestry back to the originating group |
-| `kata.csv` | 212 | every kata: meaning, era, originator, modifier, provenance |
-| `kata_people.csv` | 559 | kata mapped to the people who made or carried them |
+| `people.csv` | 1279 | every person, dates, styles, honours, connectivity |
+| `links.csv` | 1555 | every teacher-to-student link, graded, with its sources |
+| `styles.csv` | 317 | every style with its ancestry back to the originating group |
+| `kata.csv` | 473 | every kata: meaning, era, originator, modifier, provenance |
+| `kata_people.csv` | 1960 | kata mapped to the people who made or carried them |
 
 `links.csv` is a standard edge list and `people.csv` a node list, so the pair
 imports directly into Gephi, Cytoscape, R (igraph) or NetworkX.
@@ -19,6 +19,6 @@ a row in `pipeline/overrides/`, each carrying a reason and a source, and each
 reversible by setting its `status` to `rejected`. To see how a figure changed:
 `git log -p master/people.csv`.
 
-**Kata attributions still needing a person:** 28 of 559 rows are marked
+**Kata attributions still needing a person:** 26 of 1960 rows are marked
 `NO — person missing`, meaning the kata credits someone who is not yet in the
 dataset. Those are the gaps to research next.

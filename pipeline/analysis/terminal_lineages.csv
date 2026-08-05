@@ -1,27 +1,34 @@
 inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,prominent,breadth,generations,teachers,teacher_styles,honours
 ,0,A0162,Shiohira Peichin (Shionja),潮平親雲上,1710,,,other,0,0,0,0,0,1,4,
-,0,W0018,Nakazato Bokuhitsu,,1835,1902,,other,0,0,0,0,0,1,5,
-,0,C00436,Ryosei Kuwae,桑江良正,1853,,,other,0,0,0,0,0,2,6,
+,0,C00026,Choken Makabe,真壁朝顕,1769,1823,,other,0,0,0,0,0,1,6,
+,0,W0018,Bokuhitsu Nakazato,,1835,1902,,other,0,0,0,0,0,1,5,
+,0,C00436,Ryosei Kuwae,桑江良正,1853,1939,,other,0,0,0,0,0,2,6,
 ,0,C00001,Homei Kojo (Akahige),湖城鳳鳴,1861,1919,,te,0,0,0,0,0,1,2,
 ,0,Q3276775,Sakujiro Yokoyama,横山作次郎,1864,1912,,te,0,0,0,0,0,1,9,
 ,0,Q2672426,Tsunejiro Tomita,富田常次郎,1865,1937,,japanese,0,0,0,0,0,1,9,
 ,0,Q3236604,Yoshitsugu Yamashita,山下義韶,1865,1935,,te,0,0,0,0,0,1,9,
 ,0,C00657,Chogi Yoshimura,義村朝義,1866,1945,,other,0,0,0,0,0,2,13,
+,0,N0128,Giki Yamazato,,1866,1946,,other,0,0,0,0,0,1,5,
 ,0,Q2637587,Shiro Saigo,西郷四郎,1866,1922,,te,0,0,0,0,0,1,9,
+,0,N0149,Koho Kuba,,1870,1942,,other,0,0,0,0,0,1,5,
+,0,W0020,Kin Ryojin and Kin Ryosho,,1873,1936,,other,0,0,0,0,0,1,5,
 ,0,C00605,Tokusaburo Matsuda,松田徳三郎,1877,1931,,other,0,0,0,0,0,2,6,
 ,0,Q2456537,Mitsuyo Maeda,前田光世,1878,1941,,te,0,0,0,0,0,1,9,
+,0,J0187,Yukio Tani,谷幸雄,1880,1950,,other,0,0,0,0,0,1,4,
+,0,J0120,Hoan Kosugi,小杉放菴,1881,1964,,japanese,0,0,0,0,0,1,9,
 ,0,W0022,Tokuda Antei,,1884,1979,,other,0,0,0,0,0,1,9,
-,0,A0219,Motobu Chomo,本部朝茂,1890,1945,,tomari-te,0,0,0,0,0,3,11,
+,0,A0219,Chomo Motobu,本部朝茂,1890,1945,,tomari-te,0,0,0,0,0,3,11,
 ,0,Q7418861,Sannosuke Ueshima,上島三之助,1893,1987,,japanese,0,0,0,0,0,2,9,
 ,0,Q4340844,Vasili Oshchepkov,Василий Ощепков,1893,1937,,chinese,0,0,0,0,0,1,9,
-,0,W0016,Miyagi Hisateru,,1895,,,other,0,0,0,0,0,2,7,
+,0,W0016,Hisateru Miyagi,,1895,,,other,0,0,0,0,0,2,7,
 ,0,C00476,Seikichi Hokama,,1896,,,other,0,0,0,0,0,6,2,
 ,0,C00319,Shinkin Gima,儀間真謹,1896,1989,,japanese,0,0,0,0,0,3,14,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,N0176,Kitatsu Kawasaki,,1897,1963,,other,0,0,0,0,0,1,7,
+,0,N0096,Shoshu Nagamine,,1897,,,other,0,0,0,0,0,1,1,
 ,0,Q6389379,Kenji Tomiki,富木謙治,1900,1979,,naha-te,0,0,0,0,0,2,12,
 ,0,Q982540,Sumiyuki Kotani,小谷澄之,1903,1991,,te,0,0,0,0,0,1,9,
 ,0,C00174,Kamesuke Higaonna,東恩納亀助,1905,1968,,other,0,0,0,0,0,1,9,
-,0,Q11470681,Tatsuo Yamada,山田辰雄,1905,1967,,te,0,0,0,0,0,1,9,
-,0,Q1937662,Minoru Mochizuki,望月稔,1907,2003,,japanese,0,0,0,0,0,3,19,
+,0,N0033,Seijin Ishikawa,,1905,,,other,0,0,0,0,0,1,0,
 ,0,C00018,Choboku Takamine,高嶺朝睦,1908,,,other,0,0,0,0,0,1,8,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00045,Genkai Nakaima,仲井真元楷,1908,1984,,other,0,0,0,0,0,1,9,
 ,0,Q460890,Keiko Fukuda,福田敬子,1913,2013,,te,0,0,0,0,0,1,9,
@@ -30,44 +37,43 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,A0151,Byung Jick Ro,노병직,1919,2015,,korean,0,0,0,0,0,1,9,
 ,0,A0157,Kim Ki-whang,김기황 (金基璜),1920,1993,,korean,0,0,0,0,0,1,12,
 ,0,Q7446702,Seiichi Akamine,赤嶺誠一,1920,1995,,naha-te,0,0,0,0,0,3,17,
+,0,J0162,Chung Yong-taek,정영택,1921,2006,,korean,0,0,0,0,0,1,8,
 ,0,Q2576986,Donn F Draeger,,1922,1982,,kyokushin,0,0,0,0,0,1,2,
 ,0,Q4467319,Kiyoyuki Terada,寺田精之,1922,2009,,te,0,0,0,0,0,1,6,
 ,0,Q16089695,Satoshi Saito,齋藤聰,1922,2014,,kobudo,0,0,0,0,0,2,16,
 ,0,Q19325706,Vernon Bell,,1922,2004,,te,0,0,0,0,0,3,11,
-,0,J0006,Ishikawa Seitoku,石川精徳,1925,2013,,shuri-te,0,0,0,0,0,3,14,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,A0177,Lee Nam-suk,이남석,1925,2000,,korean,0,0,0,0,0,1,5,
 ,0,C00409,Osamu Ozawa,,1925,1998,,other,0,0,0,0,0,2,15,
-,0,A0211,Seiken Shukumine,祝嶺正献,1925,2001,,shuri-te,0,0,0,0,0,1,2,
+,0,J0006,Seitoku Ishikawa,石川精徳,1925,2013,,shuri-te,0,0,0,0,0,3,14,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,A0230,Adriano Emperado,,1926,2009,,kenpo,0,0,0,0,0,1,5,
-,0,J0005,Ishikawa Seigi,石川清義,1926,,,shuri-te,0,0,0,0,0,2,11,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0022,Kōsei Wakugawa,湧川幸盛,1926,2021,,naha-te,0,0,0,0,0,2,6,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0005,Seigi Ishikawa,石川清義,1926,,,shuri-te,0,0,0,0,0,2,11,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00361,Tetsunosuke Yasuda,,1926,,,other,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
-,0,J0022,Wakugawa Kōsei,湧川幸盛,1926,2021,,naha-te,0,0,0,0,0,2,6,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00475,Seikichi Higa,比嘉世吉,1927,1999,,naha-te,0,0,0,0,0,2,11,
 ,0,Q716152,Shoji Nishio,西尾昭二,1927,2005,,japanese,0,0,0,0,0,4,16,
 ,0,A0041,Yoshihide Shinzato,新里良英,1927,2008,,shuri-te,0,0,0,0,0,3,11,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q106668612,Aaron Banks,,1928,2013,,te,0,0,0,0,0,1,3,
 ,0,Q5728406,Henry Slomanski,,1928,2000,,japanese,0,0,0,0,0,1,10,
-,0,A0176,Lee Chong-woo,이종우,1928,2015,,korean,0,0,0,0,0,2,7,
 ,0,Q3317210,Mitsusuke Harada,原田満祐,1928,2021,,japanese,0,0,0,0,0,5,11,
 ,0,A0019,Seiyu Oyata,親田清勇,1928,2012,,shuri-te,0,0,0,0,0,4,8,Hanshi 10th dan — Okinawa Karate News register (2018)
-,0,J0001,Aragaki Shuichi,新垣修一,1929,2021,,naha-te,0,0,0,0,0,2,10,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q221797,Bobby Lowe,,1929,2011,,te,0,0,0,0,0,1,9,
 ,0,Q18414412,Kazuo Sakura,桜村和夫,1929,2002,,japanese,0,0,0,0,0,1,10,
 ,0,Q6782529,Masami Tsuruoka,鶴岡政己,1929,2014,,japanese,0,0,0,0,0,1,10,
 ,0,Q7397534,Sadamu Uriu,,1929,2020,,japanese,0,0,0,0,0,2,9,
+,0,J0001,Shuichi Aragaki,新垣修一,1929,2021,,naha-te,0,0,0,0,0,2,10,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q48441622,Harold Long,,1930,1998,,te,0,0,0,0,0,1,10,
-,0,J0035,Higa Yoshio,比嘉敏雄,1930,,,uechi-ryu,0,0,0,0,0,1,4,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,A0172,Lee Kyo-yoon,이교윤,1930,2017,,korean,0,0,0,0,0,1,4,
 ,0,Q369949,Robert Culp,,1930,2010,,te,0,0,0,0,0,1,6,
-,0,J0007,Takara Shintoku,高良信徳,1930,,,uechi-ryu,0,0,0,0,0,1,4,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0007,Shintoku Takara,高良信徳,1930,,,uechi-ryu,0,0,0,0,0,1,4,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q2619054,Tsutomu Ohshima,大島劼,1930,,,japanese,0,0,0,0,0,3,10,
+,0,J0035,Yoshio Higa,比嘉敏雄,1930,,,uechi-ryu,0,0,0,0,0,1,4,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,A0013,Ken Miyagi,宮城敬,1931,2003,,other,0,0,0,0,0,1,9,
 ,0,A0158,Steve Armstrong,,1931,2006,,shuri-te,0,0,0,0,0,1,10,
 ,0,Q7446770,Seikichi Iha,伊波清吉,1932,,,shuri-te,0,0,0,0,0,2,11,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q8062088,Yutaka Yaguchi,矢口豊,1932,2023,,japanese,0,0,0,0,0,2,12,
 ,0,A0058,Frank Grant,,1933,2019,,shuri-te,0,0,0,0,0,3,11,
 ,0,Q5661611,Harold M Mitchum,,1933,2016,,shuri-te,0,0,0,0,0,1,10,
-,0,J0025,Inada Hiroshi,稲田弘,1933,2013,,uechi-ryu,0,0,0,0,0,1,4,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0025,Hiroshi Inada,稲田弘,1933,2013,,uechi-ryu,0,0,0,0,0,1,4,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,A0174,Park Chul-hee,박철희,1933,2016,,korean,0,0,0,0,0,1,5,
 ,0,A0216,Shuji Tasaki,田崎修司,1933,2011,,naha-te,0,0,0,0,0,1,7,
 ,0,Q2911640,Takayuki Mikami,三上孝之,1933,,,japanese,0,0,0,0,0,1,7,
@@ -75,6 +81,7 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,A0097,Yoshiaki Ajari,,1933,2022,,japanese,0,0,0,0,0,1,10,
 ,0,A0178,Han Cha-kyo,한차교,1934,1996,,korean,0,0,0,0,0,3,7,
 ,0,C00229,Kenji Nakaima,仲井間憲児,1934,,,naha-te,0,0,0,0,0,1,3,
+,0,J0152,Kim Bok-man,,1934,2021,,korean,0,0,0,0,0,1,8,
 ,0,C00506,Shigeru Kojo,湖城繁,1934,,,te,0,0,0,0,0,1,2,
 ,0,Q562024,Steve Arneil,,1934,2021,,kyokushin,0,0,0,0,0,1,9,
 ,0,C00574,Taketo Nakamura,中村丈人,1934,,,shuri-te,0,0,0,0,0,1,4,
@@ -84,11 +91,12 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,C00085,Gosei Yamaguchi,,1935,,,naha-te,0,0,0,0,0,1,7,
 ,0,A0227,Isao Ichikawa,,1935,1996,,shuri-te,0,0,0,0,0,1,12,
 ,0,Q13424717,Kyoichi Inoue,井上強一,1935,2017,,te,0,0,0,0,0,1,6,
-,0,J0008,Miyagi Takeshi,宮城驍,1935,,,shuri-te,0,0,0,0,0,2,9,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00507,Shigeru Takamiyagi,高宮城繁,1935,2014,,other,0,0,0,0,0,1,4,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q7677342,Takashi Kushida,串田誉司,1935,2012,,te,0,0,0,0,0,1,6,
+,0,J0008,Takeshi Miyagi,宮城驍,1935,,,shuri-te,0,0,0,0,0,2,9,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00002,Akio Kinjo,金城昭夫,1936,,,other,0,0,0,0,0,3,11,
 ,0,Q550492,Dan Inosanto,,1936,,,kenpo,0,0,0,0,0,1,6,
+,0,J0179,Ji Han-jae,지한재,1936,2026,,other,0,0,0,0,0,1,1,
 ,0,Q470591,John Saxon,,1936,2020,,japanese,0,0,0,0,0,1,5,
 ,0,J0016,Nakazone Kinei (Nakasone Kinei),ナカゾネ キンエイ,1936,2002,,naha-te,0,0,0,0,0,2,5,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q29043185,Norman Robinson,,1936,2025,,te,0,0,0,0,0,1,5,
@@ -97,19 +105,19 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,J0026,Tōyama Zenshū,當山全秋,1936,,,naha-te,0,0,0,0,0,1,5,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,A0036,Doug Perry,,1937,,,shuri-te,0,0,0,0,0,1,6,
 ,0,Q18230165,George E. Mattson,,1937,,,te,0,0,0,0,0,2,5,
-,0,J0039,Senaga Yoshitsune,瀬長義常,1937,,,uechi-ryu,0,0,0,0,0,5,13,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0039,Yoshitsune Senaga,瀬長義常,1937,,,uechi-ryu,0,0,0,0,0,5,13,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q4785266,Arcenio James Advincula,,1938,,,shuri-te,0,0,0,0,0,1,10,
 ,0,Q5294533,Donald Hugh Nagle,,1938,1999,,shuri-te,0,0,0,0,0,1,10,
-,0,J0017,Gibo Giyu,儀保宜裕,1938,,,shuri-te,0,0,0,0,0,2,8,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0017,Giyu Gibo,儀保宜裕,1938,,,shuri-te,0,0,0,0,0,2,8,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q1737900,Keigo Abe,阿部圭吾,1938,2019,,japanese,0,0,0,0,0,1,7,
 ,0,A0179,Rhee Ki-ha,이기하,1938,,,korean,0,0,0,0,0,1,8,
 ,0,A0059,Robert Scaglione,,1938,,,shuri-te,0,0,0,0,0,2,8,
 ,0,Q6519507,Shunji Watanabe,渡辺俊二,1938,,,shuri-te,0,0,0,0,0,1,6,
 ,0,Q4023282,Yutaka Toyama,富山豊,1938,,,japanese,0,0,0,0,0,1,10,
 ,0,Q5176649,Count Dante,,1939,1975,,chinese,0,0,0,0,0,1,7,
-,0,J0036,Iha Kōtarō,伊波光太郎,1939,,,kobudo,0,0,0,0,0,5,15,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q6378081,Katsuhiko Shinzato,新里勝彦,1939,,,shuri-te,0,0,0,0,0,4,11,
 ,0,C00247,Kichiro Shimabuku,島袋吉郎,1939,,,shuri-te,0,0,0,0,0,1,10,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0036,Kōtarō Iha,伊波光太郎,1939,,,kobudo,0,0,0,0,0,5,15,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q7143413,Pat E Johnson,,1939,2023,,chinese,0,0,0,0,0,1,10,
 ,0,Q2079584,Robert Wall,,1939,2022,,kyokushin,0,0,0,0,0,1,10,
 ,0,A0010,Shinyu Gushi,,1939,2012,,uechi-ryu,0,0,0,0,0,4,5,Hanshi 10th dan — Okinawa Karate News register (2018)
@@ -119,35 +127,34 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,Q95043,James Caan,,1940,2022,,japanese,0,0,0,0,0,1,4,
 ,0,A0225,Kiyoshi Yamazaki,,1940,2023,,japanese,0,0,0,0,0,1,7,
 ,0,A0098,Masafumi Shiomitsu,,1940,,,japanese,0,0,0,0,0,2,12,
-,0,Q1584213,Masayuki Hisataka,久高正之,1940,,,shuri-te,0,0,0,0,0,1,6,
 ,0,Q6830460,Michael G Foster,,1940,2021,,japanese,0,0,0,0,0,1,2,
 ,0,Q130739281,Naonobu Ahagon,阿波根直信,1940,,,shuri-te,0,0,0,0,0,2,12,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q7373534,Roy Y. Suenaka,,1940,2020,,shuri-te,0,0,0,0,0,1,7,
+,0,J0009,Seiki Takushi,澤岻政輝,1940,,,naha-te,0,0,0,0,0,1,1,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00334,Tadahiko Otsuka,大塚忠彦,1940,2012,,naha-te,0,0,0,0,0,2,11,
-,0,J0009,Takushi Seiki,澤岻政輝,1940,,,naha-te,0,0,0,0,0,1,1,Hanshi 10th dan — Okinawa Karate News register (2018)
-,0,J0027,Arakaki Isamu,新垣勇,1941,2013,,shuri-te,0,0,0,0,0,1,7,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0027,Isamu Arakaki,新垣勇,1941,2013,,shuri-te,0,0,0,0,0,1,7,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q15987280,James Yabe,,1941,,,japanese,0,0,0,0,0,1,5,
-,0,C00117,Kanmei Uechi,上地完明,1941,2015,,uechi-ryu,0,0,0,0,0,1,4,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q6869269,Minoru Higa,比嘉稔,1941,,,shuri-te,0,0,0,0,0,1,7,Hanshi 10th dan — Okinawa Karate News register (2018)
-,0,J0041,Miyagi Minoru,宮城實,1941,,,uechi-ryu,0,0,0,0,0,1,1,Hanshi 10th dan — Okinawa Karate News register (2018)
-,0,J0010,Nakamura Seiyū,中村清祐,1941,,,shuri-te,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0041,Minoru Miyagi,宮城實,1941,,,uechi-ryu,0,0,0,0,0,1,1,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,A0180,Park Jong-soo,박종수,1941,2021,,korean,0,0,0,0,0,1,8,
 ,0,Q7173266,Peter Chong,,1941,,,te,0,0,0,0,0,1,9,
+,0,J0010,Seiyū Nakamura,中村清祐,1941,,,shuri-te,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,A0223,Sherman Harrill,,1941,2002,,shuri-te,0,0,0,0,0,1,10,
 ,0,Q16266721,Shingo Ohgami,大神真吾,1941,2019,,japanese,0,0,0,0,0,1,10,
 ,0,J0028,Shiroma Kiyonori (Seihan),城間清範,1941,2012,,tomari-te,0,0,0,0,0,1,2,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0116,Takeshi Oishi,大石武士,1941,,,japanese,0,0,0,0,0,1,7,
 ,0,Q3984846,Teruo Chinen,知念輝夫,1941,2015,,naha-te,0,0,0,0,0,2,12,
 ,0,Q7808402,Tino Ceberano,,1941,,,naha-te,0,0,0,0,0,1,7,
+,0,J0003,Anyu Shinjo,新城安勇,1942,,,naha-te,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0153,Choi Kwang-jo,최광조,1942,,,korean,0,0,0,0,0,1,8,
 ,0,A0096,Hideho Takagi,,1942,2018,,japanese,0,0,0,0,0,1,10,
 ,0,Q6167244,Jay T Will,,1942,1995,,kenpo,0,0,0,0,0,2,7,
 ,0,Q6742556,Malcolm Phipps,,1942,,,japanese,0,0,0,0,0,1,5,
 ,0,C00200,Mario Topolsek,Mario Topolšek,1942,2021,,other,0,0,0,0,0,2,7,
-,0,J0011,Nakaza Seiei,仲座清栄,1942,2013,,shuri-te,0,0,0,0,0,3,11,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q11436963,Noboru Osawa,大沢昇,1942,,,te,0,0,0,0,0,2,12,
 ,0,A0085,Sadaaki Sakagami,坂上節明,1942,,,japanese,0,0,0,0,0,2,8,
-,0,J0003,Shinjo Anyu,新城安勇,1942,,,naha-te,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
-,0,Q706955,Tadashi Nakamura,中村忠,1942,2019,,te,0,0,0,0,0,1,9,
-,0,J0029,Takamiyagi Tetsuo,高宮城鉄男,1942,,,shuri-te,0,0,0,0,0,3,6,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0011,Seiei Nakaza,仲座清栄,1942,2013,,shuri-te,0,0,0,0,0,3,11,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0029,Tetsuo Takamiyagi,高宮城鉄男,1942,,,shuri-te,0,0,0,0,0,3,6,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q4340863,Yasuhiko Oyama,大山泰彦,1942,,,kyokushin,0,0,0,0,0,2,12,
 ,0,A0071,James Coffman,,1943,,,shuri-te,0,0,0,0,0,2,8,
 ,0,Q3161686,Jan Kallenbach,,1943,2021,,kyokushin,0,0,0,0,0,1,7,
@@ -159,14 +166,15 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,Q7328577,Richard Rabago,,1943,2012,,shuri-te,0,0,0,0,0,1,6,
 ,0,Q7364578,Ron van Clief,,1943,,,chinese,0,0,0,0,0,3,7,
 ,0,Q15987736,Shigeru Takashina,,1943,2013,,japanese,0,0,0,0,0,1,7,
-,0,Q7924865,Vic Moore,,1943,,,shuri-te,0,0,0,0,0,2,8,
+,0,Q7924865,Vic Moore,,1943,,,shuri-te,0,0,0,0,0,2,9,
 ,0,A0214,Yoshimatsu Akamine,赤嶺嘉松,1943,,,shuri-te,0,0,0,0,0,1,7,
 ,0,A0055,Yoshitaka Taira,平良慶孝,1943,,,shuri-te,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q1691502,Joe Lewis,,1944,2012,,other,0,0,0,0,0,2,2,
 ,0,C00245,Kenyu Chinen,知念賢祐,1944,,,kobudo,0,0,0,0,0,2,10,
+,0,J0030,Kiyoshi Tsuha,津波清,1944,,,shuri-te,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q7678008,Takemasa Okuyama,,1944,,,japanese,0,0,0,0,0,2,5,
 ,0,A0123,Tetsuhiro Hokama,外間哲弘,1944,,,naha-te,0,0,0,0,0,3,12,Hanshi 10th dan — Okinawa Karate News register (2018)
-,0,J0030,Tsuha Kiyoshi,津波清,1944,,,shuri-te,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0125,Tetsuo Narikawa,成川哲夫,1944,2010,,shuri-te,0,0,0,0,0,1,1,
 ,0,Q862634,Bill Wallace,,1945,,,te,0,0,0,0,0,1,1,
 ,0,A0064,Eihachi Ota,,1945,,,shuri-te,0,0,0,0,0,2,6,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q6149743,Jan Plas,,1945,2010,,kyokushin,0,0,0,0,0,2,10,
@@ -174,13 +182,14 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,A0034,Oscar Higa,,1945,,,shuri-te,0,0,0,0,0,2,7,
 ,0,A0070,Ronald Lindsey,,1945,2023,,shuri-te,0,0,0,0,0,3,8,
 ,0,A0121,Seisho Itokazu,糸数盛昌,1945,,,kobudo,0,0,0,0,0,1,8,
-,0,J0048,Shimabukuro Tsuneo,島袋常雄,1945,,,uechi-ryu,0,0,0,0,0,3,8,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0048,Tsuneo Shimabukuro,島袋常雄,1945,,,uechi-ryu,0,0,0,0,0,3,11,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q28466388,Brian Fitkin,,1946,,,kyokushin,0,0,0,0,0,1,9,
 ,0,Q6378060,Katsuaki Sato,佐藤勝昭,1946,,,kyokushin,0,0,0,0,0,2,12,
-,0,J0031,Kuba Yoshio,久場良男,1946,,,naha-te,0,0,0,0,0,1,5,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0141,Masanari Kikugawa,喜久川政成,1946,,,naha-te,0,0,0,0,0,1,6,
 ,0,Q136799394,Robert Heisner,,1946,2024,,japanese,0,0,0,0,0,1,10,
 ,0,Q7535789,Skipper Mullins,,1946,2020,,korean,0,0,0,0,0,1,4,
 ,0,J0019,Tokuyama Yoshinori (usually romanised Yoshiki Tokuyama),徳山良規,1946,,,shuri-te,0,0,0,0,0,2,15,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0031,Yoshio Kuba,久場良男,1946,,,naha-te,0,0,0,0,0,1,5,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q3035513,Dominique Valera,,1947,,,japanese,0,0,0,0,0,1,8,
 ,0,A0153,Hwang Hyun-chul (H.C. Hwang),황현철,1947,,,korean,0,0,0,0,0,1,3,
 ,0,Q3182349,John Reeberg,,1947,,,te,0,0,0,0,0,1,3,
@@ -196,7 +205,7 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,Q3518915,Terry O'Neill,,1948,,,te,0,0,0,0,0,3,6,
 ,0,Q3532632,Toshio Fujiwara,藤原敏男,1948,,,te,0,0,0,0,0,1,7,
 ,0,Q5668035,Harry Cook,,1949,,,te,0,0,0,0,0,1,5,
-,0,A0118,Hidemi Tamayose,玉寄英美,1949,,,kobudo,0,0,0,0,0,1,2,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,A0118,Hidemi Tamayose,玉寄英美,1949,,,kobudo,0,0,0,0,0,3,5,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q5610965,Howard Collins,,1949,,,kyokushin,0,0,0,0,0,2,12,
 ,0,A0134,Meitetsu Yagi,八木明哲,1949,2024,,naha-te,0,0,0,0,0,1,5,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q6884566,Miyuki Miura,三浦美幸,1949,,,japanese,0,0,0,0,0,3,14,
@@ -217,14 +226,18 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,Q730348,Benny Urquidez,,1952,,,kyokushin,0,0,0,0,0,1,6,
 ,0,Q5228927,Dave Hazard,,1952,,,japanese,0,0,0,0,0,1,5,
 ,0,Q6782405,Masaji Taira,平良正次,1952,,,naha-te,0,0,0,0,0,1,6,
+,0,J0107,Masakazu Kinjo,金城政和,1952,,,kobudo,0,0,0,0,0,2,8,
 ,0,Q1937515,Minoru Kawawada,川和田実,1952,,,japanese,0,0,0,0,0,1,7,
 ,0,Q16875962,Shinobu Ichiyanagi,一柳忍,1952,,,japanese,0,0,0,0,0,1,1,
 ,0,Q15845041,Takenori Imura,井村武憲,1952,,,japanese,0,0,0,0,0,1,7,
+,0,J0182,William Oliver,ウィリアム・オリバー,1952,2005,,kyokushin,0,0,0,0,0,2,11,
 ,0,Q8049998,Yasuhisa Shioda,塩田泰久,1952,,,te,0,0,0,0,0,1,6,
 ,0,J0020,Kinjō Yoshitaka,金城嘉孝,1953,,,naha-te,0,0,0,0,0,1,4,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0137,Masaaki Ikemiyagi,池宮城政明,1953,,,naha-te,0,0,0,0,0,1,5,
 ,0,Q7040172,Nisar Smiler,,1953,,,te,0,0,0,0,0,1,7,
 ,0,A0122,Zenei Oshiro,大城善栄,1953,,,kobudo,0,0,0,0,0,1,8,
-,0,A0117,Hiroshi Akamine,赤嶺浩,1954,,,kobudo,0,0,0,0,0,1,2,
+,0,J0175,Choi Jung-hwa,최중화,1954,,,korean,0,0,0,0,0,1,8,
+,0,A0117,Hiroshi Akamine,赤嶺浩,1954,,,kobudo,0,0,0,0,0,1,3,
 ,0,Q562887,Joko Ninomiya,二宮城光,1954,,,kyokushin,0,0,0,0,0,2,14,
 ,0,A0120,Kisho Inoue,井上貴勝,1954,,,kobudo,0,0,0,0,0,1,5,
 ,0,Q11501557,Kiyoshi Arakaki,新垣清,1954,,,shuri-te,0,0,0,0,0,1,6,
@@ -233,6 +246,7 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,Q15987804,Hideo Yamamoto,山本英雄,1955,,,te,0,0,0,0,0,1,7,
 ,0,Q6266828,Johnny Gyro,,1955,,,korean,0,0,0,0,0,1,10,
 ,0,A0193,Masao Kagawa,香川政夫,1955,,,japanese,0,0,0,0,0,1,6,
+,0,J0185,Gerard Gordeau,ジェラルド・ゴルドー,1956,,,kyokushin,0,0,0,0,0,1,9,
 ,0,Q16187228,Robert Mustard,,1956,,,chinese,0,0,0,0,0,1,6,
 ,0,Q7850204,Tsuneo Ando,安藤毎夫,1956,,,te,0,0,0,0,0,1,6,
 ,0,A0068,Isao Kise,喜瀬功,1957,2025,,shuri-te,0,0,0,0,0,1,3,
@@ -240,6 +254,7 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,A0048,Yuzo Tamotsu,保勇三,1957,,,shuri-te,0,0,0,0,0,1,1,
 ,0,A0092,Genzo Iwata,岩田源三,1958,,,japanese,0,0,0,0,0,1,6,
 ,0,Q1052982,Jeff Speakman,,1958,,,kenpo,0,0,0,0,0,2,6,
+,0,J0184,Michel Wedel,ミッシェル・ウェーデル,1958,,,kyokushin,0,0,0,0,0,1,9,
 ,0,A0105,Ron Nix,,1958,,,shuri-te,0,0,0,0,0,1,4,
 ,0,Q15987806,Tomio Imamura,今村富雄,1958,,,japanese,0,0,0,0,0,1,7,
 ,0,Q15845038,Yasunori Ogura,小倉靖典,1958,,,japanese,0,0,0,0,0,1,7,
@@ -247,6 +262,7 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,Q11463345,Kazuhiko Ogasawara,小笠原和彦,1959,,,kyokushin,0,0,0,0,0,1,9,
 ,0,A0196,Yoshinobu Ohta,,1959,,,japanese,0,0,0,0,0,1,5,
 ,0,Q5485463,Frank Brennan,,1960,,,te,0,0,0,0,0,1,5,
+,0,N0169,Andrea Guarelli,,1961,,,other,0,0,0,0,0,4,12,
 ,0,Q11472844,Hiroto Okazaki,岡崎寛人,1961,,,kyokushin,0,0,0,0,0,1,4,
 ,0,Q6212631,Joe Thambu,,1961,,,shuri-te,0,0,0,0,0,1,6,
 ,0,Q15845035,Katsutoshi Shiina,椎名勝利,1961,,,japanese,0,0,0,0,0,1,7,
@@ -267,6 +283,7 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,A0014,Tetsuji Nakamura,中村哲二,1965,,,naha-te,0,0,0,0,0,1,9,
 ,0,A0124,Yasushi Matayoshi,又吉靖,1965,,,kobudo,0,0,0,0,0,1,8,
 ,0,A0195,Manabu Murakami,,1966,,,japanese,0,0,0,0,0,1,5,
+,0,J0186,Sam Greco,サム・グレコ,1967,,,kyokushin,0,0,0,0,0,1,6,
 ,0,Q15845028,Koji Ogata,尾方弘二,1968,,,japanese,0,0,0,0,0,1,5,
 ,0,Q15845030,Satoshi Takahashi,高橋敏,1968,,,japanese,0,0,0,0,0,1,7,
 ,0,Q11474560,Tatsuya Iwasaki,岩崎達也,1969,,,te,0,0,0,0,0,2,12,
@@ -274,16 +291,18 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,Q15845026,Koichiro Okuma,大隈広一郎,1970,,,japanese,0,0,0,0,0,1,7,
 ,0,Q8056246,Yoshio Nakamura,中村佳央,1970,,,te,0,0,0,0,0,1,7,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q2869852,Atsuko Wakai,若井敦子,1971,,,naha-te,0,0,0,0,0,3,9,
-,0,Q3081845,Francisco Filho,,1971,,,kyokushin,0,0,0,0,0,1,5,
+,0,Q3081845,Francisco Filho,,1971,,,kyokushin,0,0,0,0,0,2,5,
 ,0,Q5361556,Hajime Kazumi,数見肇,1971,,,kyokushin,0,0,0,0,0,4,13,
+,0,J0142,Sadanao Uechi,上地完尚,1971,,,uechi-ryu,0,0,0,0,0,2,5,
 ,0,A0194,Nobuaki Kanazawa,,1972,,,japanese,0,0,0,0,0,1,5,
 ,0,A0146,Glaube Feitosa,,1973,,,kyokushin,0,0,0,0,0,1,5,
-,0,Q352678,Bjorn Bregy,,1974,,,te,0,0,0,0,0,1,5,
+,0,Q352678,Bjorn Bregy,,1974,,,te,0,0,0,0,0,2,7,
 ,0,Q11428483,Norichika Tsukamoto,塚本徳臣,1974,,,kyokushin,0,0,0,0,0,2,12,
 ,0,Q7151260,Paul Herbert,,1974,,,te,0,0,0,0,0,1,5,
 ,0,Q7171725,Petar Majstorovic,,1975,,,kyokushin,0,0,0,0,0,1,5,
 ,0,Q539362,Xhavit Bajrami,,1975,,,kyokushin,0,0,0,0,0,1,5,
 ,0,Q11391351,Akihito Yagi,八木明人,1977,,,naha-te,0,0,0,0,0,2,10,
+,0,J0102,Masamitsu Hisataka,久高正光,1978,,,shuri-te,0,0,0,0,0,2,10,
 ,0,Q15845021,Kazuaki Kurihara,栗原一晃,1979,,,japanese,0,0,0,0,0,1,5,
 ,0,Q15845024,Keisuke Nemoto,根本敬介,1979,,,japanese,0,0,0,0,0,1,5,
 ,0,A0197,Antonio Diaz,,1980,,,japanese,0,0,0,0,0,1,2,
@@ -302,24 +321,32 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,Q64929894,Leona Pettas,レオナ・ペタス,1992,,,kyokushin,0,0,0,0,0,1,3,
 ,0,A0192,Takuya Uemura,上村拓也,1992,,,other,0,0,0,0,0,1,2,
 ,0,A0171,Ken Nishimura,西村拳,1995,,,japanese,0,0,0,0,0,1,7,
+,0,J0166,Ahn Hak-seon,안학선,,,,korean,0,0,0,0,0,1,2,
 ,0,B0005,Akihiko Suzuki,,,,,naha-te,0,0,0,0,0,1,6,
 ,0,A0135,Akihiro Yagi,八木明広,,,,naha-te,0,0,0,0,0,1,10,
+,0,J0104,Akiyoshi Arakaki,新垣昭善,,,,kobudo,0,0,0,0,0,1,4,
 ,0,A0109,Allen Tackett,,,,,shuri-te,0,0,0,0,0,1,4,
-,0,C00005,Ankichi Miyazato,,,,,other,0,0,0,0,0,1,2,
-,0,C00006,Ankichi Nakamura,,,,,other,0,0,0,0,0,2,6,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,C00005,Ankichi Miyazato,,,,,other,0,0,0,0,0,1,3,
+,0,C00006,Ankichi Nakamura,,,,,other,0,0,0,0,0,2,7,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,W0028,Ansei Arakaki,,,,,other,0,0,0,0,0,1,9,
 ,0,Q18413638,Atsuo Yamashita,,,,,japanese,0,0,0,0,0,1,10,
+,0,J0164,Bae Young-ki,배영기,,,,korean,0,0,0,0,0,2,7,
+,0,J0159,Baek Joon-ki,백준기,,,,korean,0,0,0,0,0,1,8,
 ,0,A0035,Benito Higa,,,,,shuri-te,0,0,0,0,0,1,1,
 ,0,A0082,Bill Bressaw,,,,,japanese,0,0,0,0,0,1,3,
 ,0,A0051,Bill Hayes,,,,,shuri-te,0,0,0,0,0,1,2,
 ,0,C00007,Bob Hurten,,,,,other,0,0,0,0,0,1,6,
 ,0,C00010,Bunsaku Yosekawa,,,,,other,0,0,0,0,0,1,6,
 ,0,C00012,Bus Martin,,,,,other,0,0,0,0,0,1,6,
+,0,J0097,Busen Arakawa,荒川武仙,,,,naha-te,0,0,0,0,0,1,8,
+,0,N0030,C. Iraha,,,,,other,0,0,0,0,0,1,6,
 ,0,A0111,C. Michial Jones,,,,,shuri-te,0,0,0,0,0,2,5,
 ,0,C00013,Chihan Yohena,,,,,other,0,0,0,0,0,1,8,
-,0,C00015,Chiko Yohena,,,,,other,0,0,0,0,0,1,1,
-,0,C00026,Choken Makabe,真壁朝顕,,,,other,0,0,0,0,0,1,6,
+,0,C00015,Chiko Yohena,,,,,other,0,0,0,0,0,1,3,
+,0,N0054,Chohitsu Kyan,,,,,other,0,0,0,0,0,1,2,
 ,0,C00037,Chomo Motobu,本部朝茂,,1945,,other,0,0,0,0,0,2,7,
 ,0,C00038,Choshin Ahagon,,,,,other,0,0,0,0,0,1,6,
+,0,J0095,Chotoku Zukeran,瑞慶覧朝徳,,,,kobudo,0,0,0,0,0,1,2,
 ,0,C00044,Choyu Kiyuna,喜友名朝有,,,,other,0,0,0,0,0,1,8,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,A0083,Chris Thompson,,,,,japanese,0,0,0,0,0,1,3,
 ,0,A0044,Dan Smith,,,,,shuri-te,0,0,0,0,0,1,2,
@@ -329,47 +356,58 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,A0081,Eddie Daniels,,,,,japanese,0,0,0,0,0,1,3,
 ,0,A0133,Eiki Kurashita,,,,,naha-te,0,0,0,0,0,1,8,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00032,Eikichi Fukumoto,,,,,other,0,0,0,0,0,1,8,
+,0,N0088,Eiko Miyazato,,,,,other,0,0,0,0,0,1,9,
 ,0,A0050,Eiko Shimabukuro,,,,,shuri-te,0,0,0,0,0,1,2,
+,0,J0047,Eishō Nakamoto,仲本英征,,,,naha-te,0,0,0,0,0,1,2,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,A0168,Eizo Onishi,,,,,japanese,0,0,0,0,0,2,13,
 ,0,C00036,Emory Turner,,,,,other,0,0,0,0,0,1,6,
 ,0,C00055,Ernest Estrada,,,,,other,0,0,0,0,0,1,6,
+,0,N0167,Fasajiro Takagi,,,,,other,0,0,0,0,0,1,9,
 ,0,C00057,Franco Sanguinetti,,,,,other,0,0,0,0,0,2,10,
 ,0,C00039,Frank Hargrove,,,,,other,0,0,0,0,0,1,6,
 ,0,C00040,Fumio Nagaishi,,,,,other,0,0,0,0,0,2,8,
 ,0,C00041,Fumio Nakama,,,,,other,0,0,0,0,0,1,7,
 ,0,C00068,Gamini Soysa,,,,,other,0,0,0,0,0,1,6,
 ,0,C00069,Geiji Morisono,,,,,other,0,0,0,0,0,1,6,
-,0,J0044,Genka Noritsune,源河徳恒,,,,shuri-te,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00083,Gisei Maeda,,,,,other,0,0,0,0,0,1,1,
 ,0,A0073,Giuseppe Meloni,,,,,shuri-te,0,0,0,0,0,1,7,
 ,0,A0110,Glenn Capistrant,,,,,shuri-te,0,0,0,0,0,1,4,
-,0,J0050,Gushiken Shintoku,具志堅新徳,,,,naha-te,0,0,0,0,0,1,1,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,A0102,Hajimu Takashima,,,,,japanese,0,0,0,0,0,1,10,
 ,0,C00092,Harumi Takami,,,,,other,0,0,0,0,0,1,6,
+,0,J0090,Harumitsu Kinjo,金城春光,,,,tomari-te,0,0,0,0,0,1,2,
 ,0,C00093,Haruo Tamaki,,,,,other,0,0,0,0,0,1,8,
 ,0,A0080,Haruyoshi Yamada,,,,,japanese,0,0,0,0,0,1,3,
 ,0,C00097,Hideo Nakazato,,,,,other,0,0,0,0,0,1,7,
+,0,N0121,Hiroko Ogido,,,,,other,0,0,0,0,0,1,8,
 ,0,C00113,Hiroshi Miyagi,,,,,other,0,0,0,0,0,1,3,
 ,0,C00114,Hiroshi Miyazato,,,,,other,0,0,0,0,0,1,4,
 ,0,C00074,Hiroshi Oshiro,,,,,other,0,0,0,0,0,1,4,
-,0,B0029,Hiroshi Shima,,,,,other,0,0,0,0,0,1,1,
+,0,B0029,Hiroshi Shima,,,,,other,0,0,0,0,0,1,3,
 ,0,C00077,Hiroshi Shinya,,,,,other,0,0,0,0,0,2,2,
 ,0,C00078,Hiroshi Sugihara,,,,,other,0,0,0,0,0,1,4,
 ,0,C00079,Hirotaka Arashiro,,,,,other,0,0,0,0,0,1,4,
 ,0,C00080,Hiroyuki Shinkai,,,,,other,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0131,Hisahiro Uno,卯野久博,,,,japanese,0,0,0,0,0,1,9,
 ,0,C00081,Hisao Aizawa,,,,,other,0,0,0,0,0,1,8,
 ,0,A0049,Hitoshi Oyakawa,親川仁志,,,,shuri-te,0,0,0,0,0,1,2,
 ,0,A0175,Hong Jong-pyo,홍정표,,,,korean,0,0,0,0,0,1,5,
 ,0,C00130,Hoshu Taira,,,,,other,0,0,0,0,0,1,8,
+,0,J0099,Hyotaro Harada,原田彪太朗,,,,naha-te,0,0,0,0,0,1,8,
+,0,J0156,Hyun Jong-myun,현종명,,,,korean,0,0,0,0,0,1,8,
+,0,N0066,Ichiro Nagamine,,,,,other,0,0,0,0,0,1,6,
 ,0,C00135,Ichiro Shirasaka,,,,,other,0,0,0,0,0,1,6,
 ,0,C00136,Iko Oshiro,,,,,other,0,0,0,0,0,1,7,
 ,0,C00137,Iko Yonamine,,,,,other,0,0,0,0,0,1,5,
+,0,J0046,Ikuo Yonamine,与那嶺育孝,,,,naha-te,0,0,0,0,0,1,5,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,A0137,Ingo de Jong,,,,,naha-te,0,0,0,0,0,2,8,
 ,0,C00139,Isamu Uehara,,,,,other,0,0,0,0,0,1,1,
 ,0,C00089,Isao Oshiro,,,,,other,0,0,0,0,0,1,6,
+,0,J0015,Isao Shima,島勇夫,,,,shuri-te,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,J0024,Ishimine Chōshin,伊志嶺朝信,,,,naha-te,0,0,0,0,0,1,8,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00142,Isoroku Katagiri,,,,,other,0,0,0,0,0,1,6,
 ,0,C00146,Jack Mark,,,,,other,0,0,0,0,0,1,2,
+,0,N0221,James Genovese,,,,,other,0,0,0,0,0,1,7,
+,0,J0167,Jeon Il-seop,전일섭,,,,korean,0,0,0,0,0,1,4,
 ,0,A0062,Jerry Figgiani,,,,,shuri-te,0,0,0,0,0,2,5,
 ,0,B0007,Jesus Martinez,,,,,shuri-te,0,0,0,0,0,1,6,
 ,0,C00151,Jinshi Oyakawa,,,,,other,0,0,0,0,0,1,2,
@@ -382,19 +420,20 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,C00162,Jubin Senaha,,,,,other,0,0,0,0,0,1,5,
 ,0,C00103,Jushin Kohama,,,,,other,0,0,0,0,0,1,7,
 ,0,C00104,Jushin Toma,,,,,other,0,0,0,0,0,1,7,
-,0,A0127,Kaishu Isa,,,,,kobudo,0,0,0,0,0,2,2,
-,0,J0034,Kakazu Mitsuo,嘉数光雄,,,,kobudo,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,A0127,Kaishu Isa,,,,,kobudo,0,0,0,0,0,3,3,
 ,0,C00176,Kanbun Izumigawa,泉川寛文,,,,other,0,0,0,0,0,3,12,
+,0,J0155,Kang Suh-chong,강서종,,,,korean,0,0,0,0,0,1,8,
 ,0,C00197,Kansei Uechi,,,,,uechi-ryu,0,0,0,0,0,1,4,
 ,0,C00105,Kaoru Kinjo,,,,,other,0,0,0,0,0,1,6,
 ,0,C00207,Kasei Shimabuku,,,,,other,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00208,Kata Yamashiro,,,,,other,0,0,0,0,0,1,4,
 ,0,C00209,Katsuhide Kochi,,,,,shuri-te,0,0,0,0,0,2,7,
 ,0,C00210,Katsuhide Shimabuku,,,,,other,0,0,0,0,0,1,7,
-,0,C00211,Katsuhiko Minowa,,,,,other,0,0,0,0,0,3,9,
 ,0,C00212,Katsumi Murakami,村上勝美,,,,naha-te,0,0,0,0,0,3,16,
+,0,J0078,Katsumi Uesugi,上杉勝巳,,,,japanese,0,0,0,0,0,1,4,
 ,0,A0145,Katsuya Izumikawa,泉川勝也,,,,naha-te,0,0,0,0,0,1,8,
-,0,C00214,Katsuyoshi Kanei,,,,,other,0,0,0,0,0,2,10,
+,0,C00214,Katsuyoshi Kanei,兼井克義,,,,other,0,0,0,0,0,2,10,
+,0,J0023,Katsuyuki Shimabukuro,島袋勝之,,,,shuri-te,0,0,0,0,0,2,12,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00133,Kayei Akamine,,,,,other,0,0,0,0,0,1,4,
 ,0,C00216,Kazuhide Shingaki,,,,,other,0,0,0,0,0,1,4,
 ,0,A0039,Kazumasa Yokoyama,横山和正,,,,shuri-te,0,0,0,0,0,1,6,
@@ -407,21 +446,31 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,A0087,Kei Tsumura,,,,,japanese,0,0,0,0,0,1,2,
 ,0,C00220,Keiichi Suji,,,,,other,0,0,0,0,0,1,6,
 ,0,C00222,Keikichi Nakasone,,,,,other,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0066,Keith Seal,,,,,japanese,0,0,0,0,0,2,7,
 ,0,C00225,Kenichi Kanari,,,,,other,0,0,0,0,0,1,6,
 ,0,C00226,Kenichi Kinjo,,,,,other,0,0,0,0,0,2,10,Hanshi 10th dan — Okinawa Karate News register (2018)
-,0,C00230,Kenjiro Chiba,,,,,other,0,0,0,0,0,1,8,
+,0,N0117,Kenichi Yamashiro,,,,,other,0,0,0,0,0,1,8,
+,0,C00230,Kenjiro Chiba,,,,,other,0,0,0,0,0,2,11,
 ,0,C00231,Kenko Chibana,,,,,other,0,0,0,0,0,1,4,
+,0,J0100,Kenneth Murakami,ケネス村上,,,,naha-te,0,0,0,0,0,1,8,
 ,0,C00147,Kentoku Kaneshiro,,,,,other,0,0,0,0,0,1,2,
+,0,J0068,Kim Baylor,,,,,other,0,0,0,0,0,1,7,
 ,0,C00248,Kim Diginakis,,,,,other,0,0,0,0,0,1,2,
-,0,J0021,Kina Seikō,喜納正興,,,,naha-te,0,0,0,0,0,2,15,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0160,Kim Suk-kyu,김석규,,,,korean,0,0,0,0,0,1,8,
+,0,J0172,Kim Un-chang,김운창,,,,korean,0,0,0,0,0,1,3,
+,0,J0169,Kim Young-taek,김영택,,,,korean,0,0,0,0,0,1,3,
 ,0,C00255,Kiyoji Kinjo,,,,,other,0,0,0,0,0,1,4,
+,0,J0049,Kiyomasa Maeda,前田清正,,,,shuri-te,0,0,0,0,0,2,8,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00256,Kiyoshi Komesu,,,,,other,0,0,0,0,0,1,4,
 ,0,A0126,Kiyoshi Nishime,,,,,kobudo,0,0,0,0,0,1,7,
+,0,N0068,Kiyoshi Shinjo,,,,,other,0,0,0,0,0,1,6,
+,0,J0157,Ko Jae-chun,고재천,,,,korean,0,0,0,0,0,2,11,
 ,0,B0001,Ko Uehara,,,,,naha-te,0,0,0,0,0,1,6,
 ,0,C00258,Koan Nagado,,,,,other,0,0,0,0,0,1,3,
 ,0,C00165,Koei Iha,,,,,other,0,0,0,0,0,1,8,
-,0,C00265,Koei Teruya,,,,,other,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,C00265,Koei Teruya,,,,,naha-te,0,0,0,0,0,2,6,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00266,Koichi Mori,,,,,other,0,0,0,0,0,1,4,
+,0,J0130,Koichi Taniguchi,谷口興一,,,,shuri-te,0,0,0,0,0,1,3,
 ,0,C00270,Kojun Makishi,,,,,other,0,0,0,0,0,2,2,
 ,0,C00282,Koki Miyagi,,,,,other,0,0,0,0,0,2,10,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00283,Koki Shiroma,,,,,other,0,0,0,0,0,1,9,
@@ -429,21 +478,30 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,C00281,Kokichi Nakamura,,,,,other,0,0,0,0,0,1,4,
 ,0,C00286,Komei Akamine,,,,,other,0,0,0,0,0,1,8,
 ,0,C00287,Komei Tsuha,,,,,other,0,0,0,0,0,1,2,
+,0,N0120,Koshin Kamura,,,,,other,0,0,0,0,0,1,8,
 ,0,C00297,Koshin Shimabukuro,,,,,other,0,0,0,0,0,1,4,
 ,0,C00298,Koshin Shiroma,,,,,other,0,0,0,0,0,1,8,
 ,0,C00182,Kosuke Chinen,,,,,other,0,0,0,0,0,1,7,
 ,0,C00183,Kosuke Henna,,,,,other,0,0,0,0,0,1,4,
 ,0,A0094,Kozo Kuniba,国場浩三,,,,japanese,0,0,0,0,0,1,9,
+,0,W0007,Kudeken Kenyu,,,,,other,0,0,0,0,0,1,4,
+,0,J0127,Kunihiko Tosa,土佐邦彦,,,,shuri-te,0,0,0,0,0,1,3,
 ,0,C00191,Kunihiro Kato,,,,,other,0,0,0,0,0,1,6,
 ,0,C00304,Kunimasa Kai,,,,,other,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
-,0,C00188,Kunio Furugen,,,,,other,0,0,0,0,0,1,1,
+,0,C00188,Kunio Furugen,,,,,other,0,0,0,0,0,1,3,
 ,0,C00189,Kunio Higa,,,,,other,0,0,0,0,0,1,1,
+,0,J0161,Kwak Kuen-sik,곽근식,,,,korean,0,0,0,0,0,1,8,
+,0,J0177,Kwon Jae-hwa,권재화,,,,korean,0,0,0,0,0,1,8,
 ,0,C00192,Kyuyu Kinjo,,,,,other,0,0,0,0,0,1,2,
+,0,J0042,Kōsuke Miyazato,宮里幸助,,,,kobudo,0,0,0,0,0,1,3,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,A0112,Larry Isaac,,,,,shuri-te,0,0,0,0,0,4,12,
+,0,J0070,Larry King,,,,,japanese,0,0,0,0,0,1,7,
 ,0,C00193,Lee Bates,,,,,other,0,0,0,0,0,1,6,
+,0,J0170,Lee Kang-ik,이강익,,,,korean,0,0,0,0,0,1,3,
+,0,J0174,Lee Soon-ho,이순호,,,,korean,0,0,0,0,0,1,1,
 ,0,A0173,Lee Yong-woo,이용우,,2006,,korean,0,0,0,0,0,1,8,
 ,0,A0084,Lionel Marinus,,,,,japanese,0,0,0,0,0,1,3,
-,0,J0049,Maeda Kiyomasa,前田清正,,,,shuri-te,0,0,0,0,0,2,8,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,N0108,Magonojo Terao,,,,,other,0,0,0,0,0,1,0,
 ,0,Q6739958,Makoto Nakamura,中村誠,,,,te,0,0,0,0,0,1,9,
 ,0,C00320,Makoto Tanizoe,,,,,other,0,0,0,0,0,1,6,
 ,0,A0130,Mamoru Nakamoto,仲本守,,,,kobudo,0,0,0,0,0,1,2,
@@ -453,32 +511,33 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,C00339,Masami Nashiro,,,,,other,0,0,0,0,0,1,7,
 ,0,C00340,Masamitsu Kinjo,,,,,other,0,0,0,0,0,1,4,
 ,0,C00341,Masanao Miyazato,,,,,other,0,0,0,0,0,1,5,
+,0,J0088,Masanobu Ishikawa,石川正信,,,,tomari-te,0,0,0,0,0,1,2,
+,0,J0004,Masanobu Miyahira,宮平昌信,,,,kobudo,0,0,0,0,0,1,8,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,B0027,Masanori Ishikawa,,,,,shuri-te,0,0,0,0,0,1,6,
 ,0,B0019,Masao Kobayashi,,,,,shuri-te,0,0,0,0,0,1,6,
 ,0,C00344,Masao Mizutani,,,,,other,0,0,0,0,0,1,6,
 ,0,C00345,Masao Yonamine,,,,,other,0,0,0,0,0,1,7,
+,0,J0132,Masaru Watanabe,渡辺勝,,,,japanese,0,0,0,0,0,1,9,
 ,0,C00347,Masaru Yonamine,,,,,other,0,0,0,0,0,1,6,
 ,0,A0139,Masashi Shinjo,,,,,naha-te,0,0,0,0,0,1,1,
-,0,J0002,Matayoshi Seitoku,又吉清徳,,,,naha-te,0,0,0,0,0,2,8,Hanshi 10th dan — Okinawa Karate News register (2018)
-,0,J0045,Matsuda Yoshimasa,松田芳正,,,,shuri-te,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
-,0,J0013,Matsuda Yoshio,松田義雄,,,,uechi-ryu,0,0,0,0,0,1,4,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0096,Masaushi Yonaha,与那覇政牛,,,,kobudo,0,0,0,0,0,1,2,
 ,0,A0052,Matt Larsen,,,,,shuri-te,0,0,0,0,0,1,2,
 ,0,C00365,Meiyu Takara,,,,,other,0,0,0,0,0,1,6,
+,0,J0094,Michio Yamada,山田道夫,,,,te,0,0,0,0,0,1,2,
 ,0,A0226,Mie Nakayama,中山三枝,,,,japanese,0,0,0,0,0,1,2,
 ,0,W0001,Miki Jisaburo,,,,,other,0,0,0,0,0,1,1,
 ,0,C00368,Minoru Nakazato,仲里稔,,,,shuri-te,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00047,Minoru Yamada,,,,,other,0,0,0,0,0,1,1,
 ,0,C00370,Mitsuo Inoue,,,,,other,0,0,0,0,0,1,7,
+,0,J0034,Mitsuo Kakazu,嘉数光雄,,,,kobudo,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00371,Mitsuo Miyazato,,,,,other,0,0,0,0,0,1,1,
-,0,J0004,Miyahira Masanobu,宮平昌信,,,,kobudo,0,0,0,0,0,1,8,Hanshi 10th dan — Okinawa Karate News register (2018)
-,0,J0042,Miyazato Kōsuke,宮里幸助,,,,kobudo,0,0,0,0,0,1,2,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00374,Morimasa Arakaki,,,,,other,0,0,0,0,0,1,1,
 ,0,C00375,Morinobu Maeshiro,眞栄城守信,,,,other,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
-,0,A0220,Motobu Naoki,本部朝行,,,,tomari-te,0,0,0,0,0,2,3,
-,0,J0047,Nakamoto Eishō,仲本英征,,,,naha-te,0,0,0,0,0,1,2,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00385,Nanko Minei,,,,,other,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,A0220,Naoki Motobu,本部朝行,,,,tomari-te,0,0,0,0,0,2,3,
 ,0,A0170,Naoyuki Chitose,,,,,japanese,0,0,0,0,0,1,1,
 ,0,C00388,Natsukichi Shimabuku,,,,,other,0,0,0,0,0,1,4,
+,0,J0080,Nisaburo Miki,三木二三郎,,,,japanese,0,0,0,0,0,1,9,
 ,0,A0115,Noah Legel,,,,,shuri-te,0,0,0,0,0,1,3,
 ,0,C00238,Noboru Amakawa,,,,,other,0,0,0,0,0,1,8,
 ,0,C00390,Noboru Isakawa,,,,,other,0,0,0,0,0,1,2,
@@ -489,10 +548,13 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,B0002,Nobuhide Asato,,,,,uechi-ryu,0,0,0,0,0,1,8,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00243,Nobuo Miyazato,,,,,other,0,0,0,0,0,1,1,
 ,0,A0037,Noel Smith,,,,,shuri-te,0,0,0,0,0,1,6,
+,0,J0044,Noritsune Genka,源河徳恒,,,,shuri-te,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00397,Noriyasu Kinjo,,,,,other,0,0,0,0,0,1,6,
+,0,J0171,Oh Se-jun,오세준,,,,korean,0,0,0,0,0,1,2,
 ,0,Q110022261,Paolo Biotti Natoli,,,,,japanese,0,0,0,0,0,1,5,
+,0,J0163,Park Hae-man,박해만,,,,korean,0,0,0,0,0,1,8,
 ,0,A0040,Pat Nakata,,,2013,,shuri-te,0,0,0,0,0,1,9,
-,0,Q7147128,Patrick McCarthy,,,,,te,0,0,0,0,0,1,2,
+,0,Q7147128,Patrick McCarthy,,,,,te,0,0,0,0,0,2,6,
 ,0,A0077,Richard Boyden,,,,,shuri-te,0,0,0,0,0,1,7,
 ,0,A0074,Ricky Rose,,,,,shuri-te,0,0,0,0,0,2,8,
 ,0,C00249,Robert Donnely,,,,,other,0,0,0,0,0,1,4,
@@ -507,6 +569,7 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,C00446,Sadao Miyazato,,,,,other,0,0,0,0,0,1,1,
 ,0,C00448,Sakihara Pechin,,,,,other,0,0,0,0,0,1,5,
 ,0,C00451,Satoru Araki,,,,,other,0,0,0,0,0,1,4,
+,0,J0101,Satoru Suzuki,鈴木覚,,,,naha-te,0,0,0,0,0,1,8,
 ,0,C00271,Seigi Shiroma,,,,,other,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00272,Seigoro Koizumi,,,,,other,0,0,0,0,0,1,8,
 ,0,C00273,Seiichi Shiroma,,,,,other,0,0,0,0,0,1,6,
@@ -516,8 +579,9 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,C00278,Seiken Tamanaha,,,,,other,0,0,0,0,0,1,6,
 ,0,C00280,Seiki Ire,,,,,other,0,0,0,0,0,1,4,
 ,0,C00481,Seiko Goya,,,,,other,0,0,0,0,0,1,6,
-,0,C00483,Seiko Itokazu,,,,,other,0,0,0,0,0,2,9,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,C00483,Seiko Itokazu,,,,,uechi-ryu,0,0,0,0,0,2,9,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00484,Seiko Nakamoto,,,,,other,0,0,0,0,0,1,5,
+,0,J0021,Seikō Kina,喜納正興,,,,naha-te,0,0,0,0,0,2,15,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00486,Seisaburo Miyagi,,,,,other,0,0,0,0,0,1,4,
 ,0,C00487,Seishin Arashiro,,,,,other,0,0,0,0,0,1,5,
 ,0,C00488,Seishin Shirado,,,,,other,0,0,0,0,0,1,4,Hanshi 10th dan — Okinawa Karate News register (2018)
@@ -525,33 +589,40 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,C00490,Seisho Kuniyoshi,,,,,other,0,0,0,0,0,1,5,
 ,0,C00491,Seisho Yonaha,,,,,other,0,0,0,0,0,1,4,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00492,Seisuke Adaniya,,,,,other,0,0,0,0,0,1,8,
+,0,J0002,Seitoku Matayoshi,又吉清徳,,,,naha-te,0,0,0,0,0,2,8,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00495,Seiyei Akamine,,,,,other,0,0,0,0,0,1,1,
 ,0,C00292,Seiyu Arashiro,,,,,other,0,0,0,0,0,1,4,
-,0,C00294,Seiyu Nakamura,,,,,other,0,0,0,0,0,2,6,
+,0,C00294,Seiyu Nakamura,,,,,other,0,0,0,0,0,2,7,
 ,0,C00295,Seken Akamine,,,,,other,0,0,0,0,0,1,1,
 ,0,C00503,Senmatsu Unten,,,,,other,0,0,0,0,0,1,9,
 ,0,C00504,Senyu Unten,,,,,other,0,0,0,0,0,1,2,
+,0,J0083,Shigehide Ikeda,池田重秀,,,,naha-te,0,0,0,0,0,1,1,
 ,0,C00505,Shigemitsu Morine,,,,,other,0,0,0,0,0,1,8,
 ,0,A0215,Shigeru Ishino,,,,,shuri-te,0,0,0,0,0,1,6,
 ,0,C00031,Shiji Mizokami,,,,,other,0,0,0,0,0,1,1,
-,0,J0015,Shima Isao,島勇夫,,,,shuri-te,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
-,0,J0023,Shimabukuro Katsuyuki,島袋勝之,,,,shuri-te,0,0,0,0,0,2,12,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,B0017,Shingo Hayashi,,,,,te,0,0,0,0,0,1,2,
+,0,J0136,Shinji Michihara,道原伸司,,,,japanese,0,0,0,0,0,1,10,
 ,0,C00509,Shinkichi Ishimine,,,,,other,0,0,0,0,0,1,6,
 ,0,C00511,Shinkichi Nakamura,,,,,other,0,0,0,0,0,1,4,
 ,0,C00512,Shinsaku Minami,,,,,other,0,0,0,0,0,1,6,
 ,0,C00513,Shinsei Omine,,,,,other,0,0,0,0,0,2,9,
+,0,J0086,Shinsuke Moromizato,諸見里真助,,,,tomari-te,0,0,0,0,0,1,2,
+,0,J0050,Shintoku Gushiken,具志堅新徳,,,,naha-te,0,0,0,0,0,1,1,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00517,Shinyei Kaneshima,,,,,shuri-te,0,0,0,0,0,3,17,
+,0,N0040,Shinzou Ishida,,,,,other,0,0,0,0,0,1,9,
 ,0,C00520,Shiyu Toma,,,,,other,0,0,0,0,0,1,6,
 ,0,C00521,Shoei Miyazato,,,,,other,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00523,Shoji Arasaki,,,,,other,0,0,0,0,0,1,4,
 ,0,C00531,Shuei Sakiyama,,,,,other,0,0,0,0,0,1,4,
+,0,J0069,Soichiro Higashi,東壮一郎,,,,japanese,0,0,0,0,0,1,7,
+,0,N0061,Sokan Noguni,野國總管,,,,other,0,0,0,0,0,1,0,
 ,0,C00330,Soko Toguchi,,,,,other,0,0,0,0,0,2,2,
 ,0,C00332,Soryu Furugen,,,,,other,0,0,0,0,0,1,4,
 ,0,A0076,Steve Watson,,,,,shuri-te,0,0,0,0,0,1,7,
 ,0,C00333,Susumu Tamamura,,,,,other,0,0,0,0,0,1,4,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,N0122,T. Omiya,,,,,other,0,0,0,0,0,1,6,
 ,0,C00335,Tadashi Nakagawa,,,,,other,0,0,0,0,0,1,6,
-,0,J0037,Taira Yoshio,平良吉雄,,,,naha-te,0,0,0,0,0,1,1,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0133,Takamasa Tomoyose,友寄隆正,,,,japanese,0,0,0,0,0,1,9,
 ,0,W0008,Takamura Seiko,,,,,other,0,0,0,0,0,1,7,
 ,0,W0004,Takano Genjuro,,,,,tomari-te,0,0,0,0,0,1,9,
 ,0,B0020,Takao Miyagi,,,,,tomari-te,0,0,0,0,0,1,2,
@@ -559,9 +630,12 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,A0140,Takashi Shinjo,,,,,naha-te,0,0,0,0,0,1,1,
 ,0,C00568,Takasuga Kitamura,,,,,other,0,0,0,0,0,1,6,
 ,0,A0065,Takaya Yabiku,,,,,shuri-te,0,0,0,0,0,1,7,
+,0,J0124,Takehiro Konishi,小西健裕,,,,japanese,0,0,0,0,0,1,7,
 ,0,C00348,Takenobu Uehara,上原武信,,,,other,0,0,0,0,0,2,4,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00572,Takeo Hiyagon,,,,,other,0,0,0,0,0,1,4,
+,0,J0143,Takeshi Nakazato,仲里武思,,,,shuri-te,0,0,0,0,0,1,2,
 ,0,A0224,Takeshi Shimoda,下田武,,,,japanese,0,0,0,0,0,1,9,
+,0,J0087,Takeshi Uehara,上原健志,,,,tomari-te,0,0,0,0,0,1,2,
 ,0,A0033,Takeshi Uema,上間建,,,,shuri-te,0,0,0,0,0,2,2,
 ,0,C00575,Takeyuki Kinjo,,,,,other,0,0,0,0,0,1,3,
 ,0,C00349,Tankichi Nagamine,,,,,other,0,0,0,0,0,1,7,Hanshi 10th dan — Okinawa Karate News register (2018)
@@ -573,6 +647,7 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,A0142,Tetsu Gima,儀間哲,,,,naha-te,0,0,0,0,0,1,6,
 ,0,A0075,Theodore Lange,,,,,shuri-te,0,0,0,0,0,2,8,
 ,0,C00607,Tomohiro Arashiro,,,,,other,0,0,0,0,0,1,3,
+,0,J0122,Tomokatsu Okano,岡野友勝,,,,japanese,0,0,0,0,0,1,1,
 ,0,C00610,Toru Urasoko,,,,,other,0,0,0,0,0,1,4,
 ,0,Q15845047,Toshihiro Mori,森俊博,,,,japanese,0,0,0,0,0,1,7,
 ,0,C00618,Toshimasa Matsumoto,,,,,other,0,0,0,0,0,1,1,
@@ -583,22 +658,31 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,A0091,Tsukasa Mabuni,摩文仁司,,,,japanese,0,0,0,0,0,1,2,
 ,0,C00626,Tsuken Akachu,,,,,other,0,0,0,0,0,1,1,
 ,0,A0143,Tsuneo Kinjo,金城常雄,,,,naha-te,0,0,0,0,0,1,6,
+,0,J0098,Tsutomu Takato,高頭勉,,,,naha-te,0,0,0,0,0,1,8,
+,0,N0119,Tsutomu Yamagawa,,,,,other,0,0,0,0,0,1,8,
 ,0,A0045,Walter Dailey,,,,,shuri-te,0,0,0,0,0,2,7,
 ,0,A0093,William H. Price,,,,,japanese,0,0,0,0,0,1,9,
+,0,J0067,William Stockey,,,,,japanese,0,0,0,0,0,1,7,
+,0,J0158,Woo Jong-lim,우종림,,,,korean,0,0,0,0,0,1,8,
+,0,J0079,Yasuo Kawano,河野保雄,,,,naha-te,0,0,0,0,0,1,5,
 ,0,C00648,Yasuo Shimoji,,,,,other,0,0,0,0,0,1,4,
 ,0,C00650,Yeiko Nakahara,,,,,other,0,0,0,0,0,1,6,
 ,0,C00651,Yeishun Henna,,,,,other,0,0,0,0,0,1,4,
-,0,J0046,Yonamine Ikuo,与那嶺育孝,,,,naha-te,0,0,0,0,0,1,5,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00654,Yoshiaki Iwanishi,,,,,other,0,0,0,0,0,1,6,
+,0,J0114,Yoshifumi Hayasaka,早坂義文,,,,kobudo,0,0,0,0,0,1,8,
 ,0,A0141,Yoshihiro Miyazato,宮里善博,,,,naha-te,0,0,0,0,0,1,6,
+,0,J0045,Yoshimasa Matsuda,松田芳正,,,,shuri-te,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00658,Yoshinobu Sugai,,,,,other,0,0,0,0,0,1,8,
-,0,C00659,Yoshio Hichiya,,,,,other,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0119,Yoshinori Takita,瀧田良德,,,,japanese,0,0,0,0,0,1,1,
+,0,J0013,Yoshio Matsuda,松田義雄,,,,uechi-ryu,0,0,0,0,0,1,4,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00399,Yoshio Okawa,,,,,other,0,0,0,0,0,1,6,
+,0,J0037,Yoshio Taira,平良吉雄,,,,naha-te,0,0,0,0,0,1,1,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00400,Yoshio Uehara,,,,,other,0,0,0,0,0,1,2,
 ,0,C00663,Yoshio Zaha,,,,,other,0,0,0,0,0,1,2,
+,0,J0106,Yuka Shimizu,清水由佳,,,,naha-te,0,0,0,0,0,1,2,
 ,0,C00665,Yuki Morobashi,,,,,other,0,0,0,0,0,1,8,
 ,0,C00666,Yukio Adachi,,,,,other,0,0,0,0,0,1,6,
-,0,A0119,Yukio Kuniyoshi,國吉幸雄,,,,kobudo,0,0,0,0,0,1,2,
+,0,A0119,Yukio Kuniyoshi,國吉幸雄,,,,kobudo,0,0,0,0,0,1,3,
 ,0,C00667,Yushin Tomei,,,,,other,0,0,0,0,0,1,7,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00668,Yusho Higa,,,,,other,0,0,0,0,0,1,8,
 ,0,C00669,Yusuke Horiyama,,,,,other,0,0,0,0,0,1,6,

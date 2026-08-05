@@ -892,20 +892,60 @@ function renderLegend() {
 }
 
 /* ============ search ============ */
+// The client asked to be able to find a person the way the sources actually
+// write them: in kanji or kana, under any romanisation, with the family name
+// first or last, by their title, or by the school they ran. So the haystack
+// carries every one of those forms, and matching is token-AND rather than a
+// single substring, which is what makes the reversed order work.
+const MACRON = { "ā": "a", "ī": "i", "ū": "u", "ē": "e", "ō": "o",
+                 "â": "a", "î": "i", "û": "u", "ê": "e", "ô": "o" };
+function deMacron(s) {
+  return String(s || "").toLowerCase().replace(/[āīūēōâîûêô]/g, c => MACRON[c] || c);
+}
+function flip(s) {                      // "Chōki Motobu" -> "motobu choki"
+  const p = deMacron(s).replace(/[^\p{L}\p{N} ]/gu, " ").trim().split(/\s+/);
+  return p.length === 2 ? p[1] + " " + p[0] : "";
+}
 function searchHay(n) {   // built per query so name edits are searchable
   const f = eff(n);
-  return [f.name, n.name, n.ascii, f.romaji, f.native, ...(n.alt || [])]
-    .filter(Boolean).join(" ").toLowerCase();
+  const latin = [f.name, n.name, n.ascii, f.romaji, ...(n.alt || [])].filter(Boolean);
+  const styles = (n.styles || []).map(s => {
+    const st = styleByIdEarly.get(s);
+    return st ? st.label + " " + s : s;
+  });
+  const parts = latin
+    .concat(latin.map(flip))                       // either name order
+    .concat([f.native, n.native].filter(Boolean))  // kanji and kana as written
+    .concat(styles)                                // school / organisation names
+    .concat(n.hon || [])                           // titles and honours
+    .concat([n.locality || ""]);
+  // keep the accented forms too, so typing the macron still matches
+  return (parts.join(" ") + " " + deMacron(parts.join(" ")))
+    .replace(/[-_/]/g, " ").toLowerCase();
+}
+function searchMatch(hay, q) {
+  return q.split(/\s+/).filter(Boolean).every(t => hay.includes(t));
 }
 const sInput = document.getElementById("search");
 const sBox = document.getElementById("searchresults");
 let sSel = -1, sHits = [];
 function runSearch() {
-  const q = sInput.value.trim().toLowerCase();
+  const rawQ = sInput.value.trim();
+  const q = deMacron(rawQ).replace(/[-_/]/g, " ").toLowerCase();
   sBox.innerHTML = ""; sSel = -1; sHits = [];
-  if (q.length < 2) { sBox.hidden = true; return; }
-  sHits = DATA.nodes.filter(n => searchHay(n).includes(q)).slice(0, 12)
-    .map(n => ({ id: n.id, n }));
+  // one kanji is a real query; one latin letter is not
+  const minLen = /[　-ヿ㐀-鿿]/.test(rawQ) ? 1 : 2;
+  if (q.length < minLen) { sBox.hidden = true; return; }
+  // rank: a hit on the person's own name beats a hit on their school
+  const scored = [];
+  for (const n of DATA.nodes) {
+    const hay = searchHay(n);
+    if (!searchMatch(hay, q)) continue;
+    const nm = deMacron(eff(n).name);
+    scored.push({ id: n.id, n, s: nm === q ? 0 : nm.startsWith(q) ? 1 : nm.includes(q) ? 2 : 3 });
+  }
+  scored.sort((a, b) => a.s - b.s || eff(a.n).name.localeCompare(eff(b.n).name));
+  sHits = scored.slice(0, 12);
   for (const [i, r] of sHits.entries()) {
     const d = document.createElement("div");
     d.setAttribute("role", "option");
@@ -1018,6 +1058,7 @@ function kataForStyle(sid) {
   return [...out.values()];
 }
 let kataOpen = new Set(), kataQuery = "";
+let kataDisputedOnly = false, kataPeopleOnly = false;
 let styleQuery = "";
 kataBtn.onclick = () => {
   if (!kataPanel.hidden) { kataPanel.hidden = true; return; }
@@ -1041,17 +1082,40 @@ function renderKataPanel() {
     + "standardised it. Click a name to open that person on the canvas.";
   kataPanel.appendChild(note);
   const inp = document.createElement("input"); inp.type = "search";
-  inp.placeholder = "Find a kata…"; inp.value = kataQuery; inp.className = "kata-search";
+  inp.placeholder = "Find a kata: name, kanji or alternative spelling…";
+  inp.value = kataQuery; inp.className = "kata-search";
   inp.oninput = () => { kataQuery = inp.value; renderList(); };
   kataPanel.appendChild(inp);
+  const filters = document.createElement("div"); filters.className = "kata-filters";
+  const mkChk = (labelText, get, set) => {
+    const l = document.createElement("label");
+    const c = document.createElement("input"); c.type = "checkbox"; c.checked = get();
+    c.onchange = () => { set(c.checked); renderList(); };
+    l.append(c, document.createTextNode(labelText));
+    filters.appendChild(l);
+  };
+  mkChk("disputed only", () => kataDisputedOnly, v => kataDisputedOnly = v);
+  mkChk("with a named person", () => kataPeopleOnly, v => kataPeopleOnly = v);
+  const tally = document.createElement("span"); filters.appendChild(tally);
+  kataPanel.appendChild(filters);
   const list = document.createElement("div"); kataPanel.appendChild(list);
   const famLabel = Object.fromEntries(FAM_ORDER);
   function renderList() {
     list.textContent = "";
     const q = kataQuery.trim().toLowerCase();
-    const match = k => !q || k.name.toLowerCase().includes(q)
+    const named = k => !!(k.origin_person || k.modifier || (k.introduced_by || []).length);
+    const match = k => (!q || k.name.toLowerCase().includes(q)
       || (k.native || "").includes(kataQuery.trim())
-      || (k.variants || []).some(v => v.toLowerCase().includes(q));
+      || (k.meaning || "").toLowerCase().includes(q)
+      || (k.origin_person || "").toLowerCase().includes(q)
+      || (k.modifier || "").toLowerCase().includes(q)
+      || (k.introduced_by || []).some(p => (p.name || "").toLowerCase().includes(q))
+      || (k.variants || []).some(v => v.toLowerCase().includes(q)))
+      && (!kataDisputedOnly || k.disputed)
+      && (!kataPeopleOnly || named(k));
+    const shown = KATA.filter(match).length;
+    tally.textContent = "· " + shown + " of " + KATA.length + " shown, "
+      + KATA.filter(named).length + " have a named person";
     for (const [fid] of FAM_ORDER) {
       const rows = KATA.filter(k => k.family === fid && match(k))
         .sort((a, b) => a.name.localeCompare(b.name));
@@ -1079,10 +1143,36 @@ function renderKataPanel() {
             const b = document.createElement("b"); b.textContent = lbl + " ";
             e.append(b, document.createTextNode(txt)); d.appendChild(e);
           };
+          const addPerson = (lbl, nm, extra) => {
+            if (!nm) return;
+            const e = document.createElement("div");
+            const b = document.createElement("b"); b.textContent = lbl + " ";
+            e.append(b, kataPersonBtn(nm));
+            if (extra) e.appendChild(document.createTextNode(" · " + extra));
+            d.appendChild(e);
+          };
           add("Meaning:", k.meaning);
-          add("Era:", k.era);
-          add("Origin:", [k.origin_person, k.origin_place].filter(Boolean).join(" · "));
+          add("Introduced:", k.era);
+          addPerson("Likely creator:", k.origin_person, k.origin_place);
+          addPerson("Likely modifier:", k.modifier, k.modified_era);
+          add("Provenance:", k.provenance);
           if ((k.variants || []).length) add("Also known as:", k.variants.join(", "));
+          if ((k.style_ids || []).length) {
+            const e = document.createElement("div");
+            const b = document.createElement("b"); b.textContent = "Practised by: ";
+            e.appendChild(b);
+            let shownStyles = 0;
+            for (const sid of k.style_ids) {
+              const st = styleByIdMap.get(sid);
+              if (!st) continue;
+              if (shownStyles) e.appendChild(document.createTextNode(" · "));
+              const btn = document.createElement("button");
+              btn.className = "linklike"; btn.textContent = st.label;
+              btn.onclick = () => openStyleDetail(sid);
+              e.appendChild(btn); shownStyles++;
+            }
+            if (shownStyles) d.appendChild(e);
+          }
           if ((k.introduced_by || []).length) {
             const e = document.createElement("div");
             const b = document.createElement("b"); b.textContent = "Lineage: "; e.appendChild(b);
@@ -1091,6 +1181,13 @@ function renderKataPanel() {
               e.appendChild(kataPersonBtn(p.name));
               e.appendChild(document.createTextNode(" (" + p.role + ")"));
             });
+            d.appendChild(e);
+          }
+          // the client asked for contested attributions to be explicit rather
+          // than quietly averaged away, so say so on the face of the entry
+          if (k.disputed) {
+            const e = document.createElement("div"); e.className = "kata-disputed";
+            e.textContent = "⚠ Attribution disputed or not independently confirmed.";
             d.appendChild(e);
           }
           const [kNote, kVer] = String(k.note || "").split(/\s*\[Verifier:/);
@@ -1117,6 +1214,118 @@ function renderKataPanel() {
     }
   }
   renderList();
+}
+
+/* ============ analytics: who was most connected, and whose line stopped ======
+   Eight measures, kept apart on purpose. Collapsing them into one "influence
+   score" would hide which claim is being made, and they disagree: the person
+   with the most students is rarely the person with the most notable ones. Each
+   view states its own method and exports its own table. */
+const RANK = DATA.rankings || null;
+// BOM first, so Excel opens the Japanese columns as UTF-8 rather than mojibake
+function saveCSV(rows, filename) {
+  const body = "﻿" + rows.map(r => r.map(csvEsc).join(",")).join("\n");
+  download(filename, new Blob([body], { type: "text/csv" }));
+}
+const statsPanel = document.getElementById("statspanel");
+const statsBtn = document.getElementById("statsbtn");
+let rankMeasure = RANK && RANK.measures.length ? RANK.measures[0].key : "";
+if (RANK) statsBtn.hidden = false;
+statsBtn.onclick = () => {
+  if (!statsPanel.hidden) { statsPanel.hidden = true; return; }
+  renderStatsPanel();
+};
+// a person's own numbers, for their detail panel
+function rankFor(id) {
+  if (!RANK || !RANK.person[id]) return null;
+  const vals = RANK.person[id], out = {};
+  RANK.keys.forEach((k, i) => out[k] = vals[i]);
+  return out;
+}
+function renderStatsPanel() {
+  if (!RANK) return;
+  statsPanel.innerHTML = ""; statsPanel.hidden = false;
+  statsPanel.appendChild(panelCloseBtn(statsPanel));
+  const h = document.createElement("h3");
+  h.textContent = "Analytics"; statsPanel.appendChild(h);
+  const intro = document.createElement("div"); intro.className = "edit-note";
+  intro.textContent = "Measures are reported separately, not combined into one score, "
+    + "because they measure different things and disagree with each other.";
+  statsPanel.appendChild(intro);
+
+  const sel = document.createElement("select"); sel.className = "rk-select";
+  for (const m of RANK.measures) {
+    const o = document.createElement("option"); o.value = m.key; o.textContent = m.title;
+    sel.appendChild(o);
+  }
+  const oTerm = document.createElement("option");
+  oTerm.value = "__terminal"; oTerm.textContent =
+    "Lineages that ended with them (" + RANK.terminal.pre1950 + ")";
+  sel.appendChild(oTerm);
+  sel.value = rankMeasure;
+  sel.onchange = () => { rankMeasure = sel.value; draw(); };
+  statsPanel.appendChild(sel);
+
+  const note = document.createElement("div"); note.className = "rk-note";
+  statsPanel.appendChild(note);
+  const wrap = document.createElement("div"); statsPanel.appendChild(wrap);
+  const dl = document.createElement("button");
+  dl.className = "linklike"; dl.textContent = "Download this table (CSV)";
+  dl.onclick = () => downloadTable();
+  statsPanel.appendChild(dl);
+
+  let current = [], currentCols = [];
+  function draw() {
+    const terminal = rankMeasure === "__terminal";
+    const m = RANK.measures.find(x => x.key === rankMeasure);
+    note.textContent = terminal ? RANK.terminal.note : (m ? m.note : "");
+    current = terminal ? RANK.terminal.list : (RANK.top[rankMeasure] || []);
+    currentCols = terminal ? ["teachers", "generations"] : [rankMeasure];
+    wrap.textContent = "";
+    const t = document.createElement("table"); t.className = "rk-table";
+    const thead = document.createElement("tr");
+    for (const c of ["", "Person", "Style"].concat(currentCols)) {
+      const th = document.createElement("th");
+      th.textContent = c === "" ? "" : c.replace(/_/g, " ");
+      if (currentCols.indexOf(c) >= 0) th.className = "num";
+      thead.appendChild(th);
+    }
+    t.appendChild(thead);
+    current.forEach((r, i) => {
+      const tr = document.createElement("tr");
+      const rk = document.createElement("td"); rk.className = "rk-rank";
+      rk.textContent = terminal ? "" : String(i + 1); tr.appendChild(rk);
+      const nm = document.createElement("td");
+      const b = document.createElement("button");
+      b.className = "linklike"; b.textContent = r.name;
+      b.onclick = () => {
+        statsPanel.hidden = true;
+        if (pos.has(r.id)) { exitIsolate(false); selectNode(r.id); centreOn(r.id, Math.max(view.k, 0.9)); }
+        else openDetail(r.id);
+      };
+      nm.appendChild(b);
+      const dt = document.createElement("div"); dt.className = "rk-dates";
+      dt.textContent = r.dates; nm.appendChild(dt);
+      tr.appendChild(nm);
+      const st = document.createElement("td"); st.textContent = r.style || "—";
+      tr.appendChild(st);
+      for (const c of currentCols) {
+        const td = document.createElement("td"); td.className = "num";
+        td.textContent = String(r.v[c]); tr.appendChild(td);
+      }
+      t.appendChild(tr);
+    });
+    wrap.appendChild(t);
+  }
+  function downloadTable() {
+    const cols = ["rank", "name", "dates", "style", "family"].concat(RANK.keys);
+    const rows = [cols].concat(current.map((r, i) =>
+      [rankMeasure === "__terminal" ? "" : i + 1, r.name, r.dates, r.style, r.family]
+        .concat(RANK.keys.map(k => r.v[k]))));
+    const label = rankMeasure === "__terminal" ? "terminal-lineages" : rankMeasure;
+    saveCSV(rows, "karate-analytics-" + label + ".csv");
+  }
+  draw();
 }
 
 /* ============ style-tree browser: family → style → sub-style → … ============ */
@@ -1225,11 +1434,12 @@ function openStyleDetail(sid) {
   const wrap = document.createElement("div");
   wrap.style.cssText = "display:flex;gap:6px;flex-wrap:wrap";
   for (const [lbl, fmt] of [["⬇ SVG", "svg"], ["PDF", "pdf"], ["PNG", "png"],
-                            ["CSV", "csv"], ["JSON", "json"]]) {
+                            ["CSV", "csv"], ["JSON", "json"], ["GraphML", "graphml"]]) {
     const b = document.createElement("button"); b.className = "btn"; b.textContent = lbl;
     b.onclick = () => {
       const ids = styleMembers(sid);
-      if (fmt === "csv" || fmt === "json") return exportSubset(ids, st.label, fmt);
+      if (fmt === "csv" || fmt === "json" || fmt === "graphml")
+        return exportSubset(ids, st.label, fmt);
       exportClade(ids, "The " + st.label + " clade", fmt, styleProvenance(sid));
     };
     wrap.appendChild(b);
@@ -1414,6 +1624,23 @@ function openDetail(id) {
       row.append(b, r);
       panel.appendChild(row);
     }
+  }
+
+  // this person's own figures, on the same measures as the Analytics table
+  const rk = rankFor(id);
+  if (rk && RANK) {
+    const h4r = document.createElement("h4");
+    h4r.textContent = "Connectivity"; panel.appendChild(h4r);
+    const g = document.createElement("div"); g.className = "d-stats";
+    for (const m of RANK.measures) {
+      if (!rk[m.key]) continue;
+      const rank = (RANK.top[m.key] || []).findIndex(r => r.id === id);
+      const l = document.createElement("span"); l.textContent = m.title;
+      const v = document.createElement("span");
+      v.textContent = rk[m.key] + (rank >= 0 ? "  (#" + (rank + 1) + ")" : "");
+      g.append(l, v);
+    }
+    if (g.children.length) panel.appendChild(g);
   }
 
   const rels = [["Teachers", parentsOf.get(id) || [], e => e.source],
@@ -1615,13 +1842,15 @@ function openDetail(id) {
     const wrap = document.createElement("div"); wrap.style.display = "flex";
     wrap.style.gap = "6px"; wrap.style.flexWrap = "wrap"; wrap.style.marginTop = "6px";
     for (const [lbl, fmt] of [["⬇ SVG", "svg"], ["PDF", "pdf"], ["PNG", "png"],
-                              ["JPG", "jpg"], ["TIFF", "tiff"], ["CSV", "csv"], ["JSON", "json"]]) {
+                              ["JPG", "jpg"], ["TIFF", "tiff"], ["CSV", "csv"], ["JSON", "json"],
+                              ["GraphML", "graphml"]]) {
       const b = document.createElement("button"); b.className = "btn"; b.textContent = lbl;
       b.onclick = () => {
         const ids = [...lineageSet(id, state.dir, chosen)];
         const gtag = chosen === Infinity ? "" : " · " + chosen + " generation"
                      + (chosen === 1 ? "" : "s");
-        if (fmt === "csv" || fmt === "json") return exportSubset(ids, eff(n).name, fmt);
+        if (fmt === "csv" || fmt === "json" || fmt === "graphml")
+          return exportSubset(ids, eff(n).name, fmt);
         exportClade(ids, "The lineage of " + eff(n).name, fmt, gtag.replace(/^ · /, ""));
       };
       wrap.appendChild(b);
@@ -1829,7 +2058,9 @@ expMenu.addEventListener("click", ev => {
   const b = ev.target.closest("button"); if (!b) return;
   ({ png2: () => exportPNG(2), png4: () => exportPNG(4), svg: exportSVG,
      jpg4: () => exportJPG(4), tiff: () => exportTIFF(), pdf: () => exportPDF(),
-     csv: exportCSV, json: exportJSON, edits: exportEdits, adds: exportAdds })[b.dataset.x]();
+     csv: exportCSV, json: exportJSON, edits: exportEdits, adds: exportAdds,
+     graphml: () => exportSubset(visiblePeople().map(n => n.id), "visible", "graphml"),
+   })[b.dataset.x]();
 });
 function download(name, blob) {
   if (!blob) { toast("The file could not be generated. Try the SVG format."); return; }
@@ -2111,6 +2342,50 @@ function exportSubset(idArr, label, fmt) {
       links: links.map(e => cur ? e : pubEdge(e)),
     }, null, 1)], { type: "application/json" }));
     toast("Exported " + people.length + " people and " + links.length + " links as JSON.");
+    return;
+  }
+  // GraphML: one file that carries the graph AND its attributes, which is what
+  // Gephi, Cytoscape and yEd open directly. Two CSVs need a manual import step.
+  if (fmt === "graphml") {
+    const xe = s => String(s === undefined || s === null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+    const NK = [["name", "string"], ["native", "string"], ["born", "int"], ["died", "int"],
+                ["style", "string"], ["family", "string"], ["locality", "string"],
+                ["generation", "int"], ["students", "int"], ["descendants", "int"],
+                ["honours", "string"], ["kata", "string"]];
+    const EK = [["confidence", "string"], ["primary", "string"]];
+    const out = ['<?xml version="1.0" encoding="UTF-8"?>',
+      '<graphml xmlns="http://graphml.graphdrawing.org/xmlns">'];
+    NK.forEach(([k, t]) => out.push(`<key id="n_${k}" for="node" attr.name="${k}" attr.type="${t}"/>`));
+    EK.forEach(([k, t]) => out.push(`<key id="e_${k}" for="edge" attr.name="${k}" attr.type="${t}"/>`));
+    out.push(`<graph id="${xe(label)}" edgedefault="directed">`);
+    for (const n of people) {
+      const f = eff(n);
+      const v = { name: f.name, native: f.native || "", born: n.birth || "", died: n.death || "",
+                  style: n.styleLabel || "", family: n.family || "", locality: n.locality || "",
+                  generation: n.gen === undefined ? "" : n.gen, students: n.students || 0,
+                  descendants: n.desc || 0, honours: (n.hon || []).join("; "),
+                  kata: kataFor(f.name) };
+      out.push(`<node id="${xe(n.id)}">`);
+      // an empty int attribute is invalid, so a missing year is simply omitted
+      NK.forEach(([k, t]) => {
+        if (v[k] === "" || (t === "int" && !isFinite(parseInt(v[k], 10)))) return;
+        out.push(`<data key="n_${k}">${xe(v[k])}</data>`);
+      });
+      out.push("</node>");
+    }
+    links.forEach((e, i) => {
+      out.push(`<edge id="e${i}" source="${xe(e.source)}" target="${xe(e.target)}">`);
+      out.push(`<data key="e_confidence">${xe(e.confidence)}</data>`);
+      out.push(`<data key="e_primary">${e.primary ? "yes" : "no"}</data>`);
+      out.push("</edge>");
+    });
+    out.push("</graph></graphml>");
+    download("lineage-" + slug + ".graphml",
+      new Blob([out.join("\n")], { type: "application/xml" }));
+    toast("Exported GraphML: " + people.length + " people, " + links.length
+        + " links. Opens directly in Gephi, Cytoscape or yEd.");
     return;
   }
   // two CSVs, because a node table and an edge table is what network tools expect

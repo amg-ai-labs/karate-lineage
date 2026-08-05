@@ -254,3 +254,19 @@ Q3482287,birth_year,1890,1891,"[RESOLVED best-guess: KEEP current] En/ja-wiki an
 Q3482287,death_year,1954,1957,"[RESOLVED best-guess: KEEP current] As above: 1954 is the consensus; 1957 appears only in scattered secondary pages | was: [CONTESTED: web scholarship (https://ryukyu-bugei.com/?p=8326) gives 1957; dataset holds 1954. Set status=proposed to adopt, rejected to keep current.]",rejected
 Q557301,death_year,1927,1929,"[RESOLVED best-guess: KEEP current] Nagamine (who knew him) and ja-wiki give Arakaki Ankichi 1899-1927, died aged 28; 1929 is a copyist variant | was: [CONTESTED: web scholarship (https://ryukyu-bugei.com/?p=4911) gives 1929; dataset holds 1927. Set status=proposed to adopt, rejected to keep current.]",rejected
 Q16006586,death_year,1969,1967,"[RESOLVED best-guess: ADOPT] Senbukan/Seito Goju lineage sources (seinenkai.com, shuriway) give Izumigawa Kanki 1908-1967; 1969 is unsourced | was: [CONTESTED: web scholarship (https://medium.com/motobu-ryu-blog/motobu-ch%C5%8Dy%C5%ABs-u) gives 1967; dataset holds 1969. Set status=proposed to adopt, rejected to keep current.]",proposed
+A0236,birth_year,,1812,[book:Nagamine/Cramer/Guarelli SECTION 8] gives birth 1812 for Ishimine Pechin; dataset had none,proposed
+A0236,death_year,,1892,[book:Nagamine/Cramer/Guarelli SECTION 8] gives death 1892 for Ishimine Pechin; dataset had none,proposed
+W0017,birth_year,,1814,"[book:Guarelli, Okinawan Kobudo guarelli02 line 3] gives birth 1814 for Tawada 'Meganto' Shinboku; dataset had none",proposed
+W0017,death_year,,1848,"[book:Guarelli, Okinawan Kobudo guarelli02 line 3] gives death 1848 for Tawada 'Meganto' Shinboku; dataset had none",proposed
+C00257,birth_year,,1845,"[book:Nagamine, Tales of Okinawa's Great Masters PDF PAGE 45] gives birth 1845 for Kiyuna Pechin; dataset had none",proposed
+C00257,death_year,,1920,"[book:Nagamine, Tales of Okinawa's Great Masters PDF PAGE 45] gives death 1920 for Kiyuna Pechin; dataset had none",proposed
+C00026,birth_year,,1769,[book:Nagamine/Cramer/Guarelli PDF 29-31] gives birth 1769 for Choken Makabe; dataset had none,proposed
+C00026,death_year,,1823,[book:Nagamine/Cramer/Guarelli PDF 29-31] gives death 1823 for Choken Makabe; dataset had none,proposed
+C00436,death_year,,1939,[book:Nagamine/Cramer/Guarelli PDF PAGE 45] gives death 1939 for Ryosei Kuwae; dataset had none,proposed
+B0030,birth_year,,1772,"[book:Guarelli, Okinawan Kobudo SECTION 8] gives birth 1772 for Soeishi; dataset had none",proposed
+B0030,death_year,,1825,"[book:Guarelli, Okinawan Kobudo SECTION 8] gives death 1825 for Soeishi; dataset had none",proposed
+W0020,birth_year,,1873,[book:Nagamine/Cramer/Guarelli PDF PAGE 115-116] gives birth 1873 for Kin Ryojin and Kin Ryosho; dataset had none,proposed
+W0020,death_year,,1936,[book:Nagamine/Cramer/Guarelli PDF PAGE 115-116] gives death 1936 for Kin Ryojin and Kin Ryosho; dataset had none,proposed
+J0173,birth_year,,1936,Lee Haeng-ung: [kata completion] Roster entry carried no value for this field; the kata sweep supplied it while tracing the kata's attribution.,proposed
+C00444,birth_year,,1900,Saburo Uehara: [kata completion] Roster entry carried no value for this field; the kata sweep supplied it while tracing the kata's attribution.,proposed
+C00444,death_year,,1965,Saburo Uehara: [kata completion] Roster entry carried no value for this field; the kata sweep supplied it while tracing the kata's attribution.,proposed

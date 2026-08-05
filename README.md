@@ -1,6 +1,6 @@
 # The Lineage of Karate and Taekwondo
 
-An interactive cladogram of who taught whom in karate, kobudō and taekwondo: **1,050 people, 1,367 instructor-to-student links, 275 styles and 212 kata**, spanning seventeen generations from the Okinawan *te* of the 1600s to practitioners born in the 1990s.
+An interactive cladogram of who taught whom in karate, kobudō and taekwondo: **1,279 people, 1,555 instructor-to-student links, 317 styles and 473 kata**, spanning nineteen generations from the Okinawan *te* of the 1600s to practitioners born in the 1990s.
 
 Every link carries its sources. Every disputed claim is marked as disputed.
 
@@ -8,7 +8,7 @@ Every link carries its sources. Every disputed claim is marked as disputed.
 
 ![The lineage of Chōjun Miyagi](docs/img/miyagi-clade.png)
 
-*The Gōjū-ryū clade: Chōjun Miyagi and the 326 people who descend from him. Exported directly from the tool as vector art.*
+*The Gōjū-ryū clade: Chōjun Miyagi and the 405 people who descend from him. Exported directly from the tool as vector art.*
 
 ---
 
@@ -16,19 +16,19 @@ Every link carries its sources. Every disputed claim is marked as disputed.
 
 Martial-arts lineage is usually recorded as folklore: a chart on a dojo wall, a paragraph in a style's own history, a claim of descent nobody has checked. This project treats it as a dataset. Each person is a node, each teacher-to-student relationship is an edge, and each edge is graded by the strength of the evidence behind it and linked to its source.
 
-The result is a single connected tree rather than a set of competing family myths. 959 of the 1,050 people sit in one lineage; the remaining 91 are honestly marked as unlinked rather than joined by guesswork.
+The result is a single connected tree rather than a set of competing family myths. 1,097 of the 1,279 people sit in one lineage; the remaining 182 are honestly marked as unlinked rather than joined by guesswork.
 
 ## The evidence
 
 | Confidence | Links | What it means |
 |---|---:|---|
-| High | 790 | First-hand testimony, an interview, or a primary record |
-| Medium | 446 | Documented in published histories or a style's own records |
-| Low | 131 | Oral tradition, contested, or inferred from indirect evidence |
+| High | 877 | First-hand testimony, an interview, or a primary record |
+| Medium | 528 | Documented in published histories or a style's own records |
+| Low | 150 | Oral tradition, contested, or inferred from indirect evidence |
 
-**284 links cite Mark Bishop's *Okinawan Karate: Teachers, Styles and Secret Techniques*.** Bishop interviewed the Okinawan masters directly in the 1970s and 80s, so his first-hand statements are treated as primary evidence and his relayed traditions are graded lower. The book itself is not redistributed here; it is cited by page.
+**285 links cite Mark Bishop's *Okinawan Karate: Teachers, Styles and Secret Techniques*.** Bishop interviewed the Okinawan masters directly in the 1970s and 80s, so his first-hand statements are treated as primary evidence and his relayed traditions are graded lower. The book itself is not redistributed here; it is cited by page.
 
-The dataset began as a Wikipedia and Wikidata scrape, but little of it now rests there. It has been through a multilingual research pass (Japanese, Korean and Chinese sources), a historian's audit of every edge and every person, a four-level style taxonomy, the Bishop book, the online scholarship of Andreas Quast and Motobu Naoki, and the Okinawa Karate News hanshi 10th-dan register (2018), whose 146 masters are all reconciled into the dataset. Corrections that survived that process live in [`pipeline/overrides/`](pipeline/overrides/), 3,377 rows deep, each carrying a reason and its sources.
+The dataset began as a Wikipedia and Wikidata scrape, but little of it now rests there. It has been through a multilingual research pass (Japanese, Korean and Chinese sources), a historian's audit of every edge and every person, a four-level style taxonomy, four books (Mark Bishop's *Okinawan Karate*; Shoshin Nagamine's *Tales of Okinawa's Great Masters*; Mark Cramer's *Karate and Kobudo Lineages*; Andrea Guarelli's *Okinawa Kobudo*), the online scholarship of Andreas Quast and Motobu Naoki, and the Okinawa Karate News hanshi 10th-dan register (2018), whose 146 masters are all reconciled into the dataset. Corrections that survived that process live in [`pipeline/overrides/`](pipeline/overrides/), 5,286 rows deep, each carrying a reason and its sources.
 
 Some of what the audit threw out: Richard Kim's claimed teacher was a namesake; the Funakoshi to Plée link is false; the Motobu to Mitose link was inferred from a photograph; and a "Yoshio Nakamura" turned out to be a judoka born in 1970. Wrong-entity matches like these are the most common failure of scraped lineage data, and there were 24 of them.
 
@@ -37,8 +37,10 @@ Some of what the audit threw out: Richard Kim's claimed teacher was a namesake; 
 - **Click any name** to isolate that person's lineage and read their record.
 - **Click any line** to see the evidence for that specific teacher-to-student claim, with live source links.
 - **Browse the style tree**: originating group → style → sub-style → sub-sub-style, seven levels deep, each with its founder and founding year. Filtering a style includes everything beneath it.
-- **Browse the kata**: 212 kata and forms across karate, kobudō, taekwondo and tang soo do, each with its meaning, origin, era and the people who created, brought, standardised or renamed it.
-- **Export a publication-grade chart** of any person's clade or any style's clade, as vector SVG, print PDF (300 dpi), TIFF, JPG or PNG. The image above was produced this way.
+- **Browse the kata**: 473 kata and forms across karate, kobudō, taekwondo and tang soo do, each with its meaning, date of introduction, likely creator, likely modifier and modification date, provenance, and the styles that practise it. Every kata has a person attached wherever one is recorded, and contested attributions are marked as disputed rather than smoothed over.
+- **Read the analytics**: eight separate measures of connectivity (reach, prominent students, students taught, teachers studied under, diversity of those teachers, stylistic spread, depth of line) plus the lineages that ended with their holder. The measures are reported separately, never combined into one score, and each states its method.
+- **Export a publication-grade chart** of any person's clade or any style's clade, at a chosen number of generations, as vector SVG, print PDF (300 dpi), TIFF, JPG or PNG. The chart is re-laid out compactly for print, so it carries no empty space. The image above was produced this way.
+- **Export the data** for any person, style or sub-style as CSV (a node table and an edge table), JSON, or GraphML that opens directly in Gephi, Cytoscape or yEd.
 - **Correct the data in the browser.** Names, dates, teachers and students can be edited, added or flagged, and the corrections export as CSVs that feed straight back into the pipeline. This is how domain experts contribute without touching code.
 
 ## How it is built
@@ -53,10 +55,16 @@ pipeline/clean.py           merges, de-duplicates, resolves wrong entities, brea
                             checks chronology, normalises styles → a guaranteed-acyclic graph
     │
     ▼
-pipeline/viz/build_viz.py   time-based layout (people sit in their decade of birth)
+pipeline/analysis/          eight connectivity measures + the lineages that ended
     │
     ▼
-karate-cladogram.html       one self-contained file, no dependencies, no network calls
+pipeline/viz/build_viz.py   time-based layout (people sit in their decade of birth)
+    │
+    ├──▶ karate-cladogram.html   one self-contained file, no dependencies, no network calls
+    │
+    ▼
+pipeline/master.py          master/*.csv — the whole dataset as plain CSVs, rewritten
+                            every build, so the tables and the site never drift apart
 ```
 
 Rebuild everything with:
@@ -65,14 +73,15 @@ Rebuild everything with:
 python3 pipeline/build.py
 ```
 
-Pure standard-library Python 3.9 and vanilla JavaScript. No frameworks, no build step, no `node_modules`. The build is deterministic: the same inputs produce a byte-identical output every time. A headless smoke test (`python3 pipeline/test/run_smoke.py`) exercises every interactive feature of the built page.
+Pure standard-library Python 3.9 and vanilla JavaScript. No frameworks, no build step, no `node_modules`. The build is deterministic: the same inputs produce a byte-identical output every time. Three headless test suites run against the built page: `run_smoke.py` exercises every interactive feature, `check_public.py` asserts the published copy carries no evidence layer, and `check_both_builds.py` renders five different payload shapes to catch a build that only works on the curator's machine.
 
-Two files come out of every build:
+Three things come out of every build:
 
 | File | Sources | Editing | Who opens it |
 |---|---|---|---|
 | `karate-cladogram.html` | Full evidence layer | Yes, exports corrections | The curator, locally |
 | `docs/index.html`, `website/index.html` | **Removed at build time** | Yes, exports corrections | Everyone, on the web |
+| `master/*.csv` | Full, in `evidence` columns | Open in Excel, R, anything | Anyone wanting the raw tables |
 
 The evidence layer is stripped from the payload itself rather than merely hidden in the interface, because hiding is cosmetic when anyone can read a page's source. The page needs no switch: it shows sources when the build it came from carries them. `pipeline/test/check_public.py` asserts that separation on every build.
 
@@ -82,9 +91,9 @@ The source CSVs are never edited. Every change is a row in an override file with
 
 Stated plainly, because a lineage dataset that claims certainty is lying:
 
-- **91 people are not linked** to the main tree. Where no reliable chain exists, none is invented.
+- **182 people are not linked** to the main tree. Where no reliable chain exists, none is invented.
 - **Eight dates were contested** between primary sources (Bishop; Quast's documentary work) and the Wikidata consensus. Each carries a recorded ruling with its rationale in `pipeline/overrides/year_fixes.csv` (two adopted, six kept), reversible like every other decision.
-- **Around 470 people have no recorded birth year.** Where they can be placed from their teachers and students, the chart shows an estimated cohort, marked "c. 1890 (est.)".
+- **634 people have no recorded birth year.** Where they can be placed from their teachers and students, the chart shows an estimated cohort, marked "c. 1890 (est.)".
 - **The early lineages are oral tradition.** Kūsankū, Chatan Yara and their contemporaries are recorded as they are transmitted, at low confidence, not as established fact.
 - "Trained from" dates are birth + 25 estimates and are marked with an asterisk throughout.
 
@@ -94,7 +103,7 @@ If you know this material and something here is wrong, the fastest route is to o
 
 ## Licence and citation
 
-Code is MIT. The dataset (`nodes.csv`, `edges.csv`, `pipeline/overrides/`, `pipeline/out/`) is CC BY 4.0: use it, but cite it. Mark Bishop's book is copyright its author and publisher and is not included in this repository.
+Code is MIT. The dataset (`nodes.csv`, `edges.csv`, `pipeline/overrides/`, `pipeline/out/`) is CC BY 4.0: use it, but cite it. The books cited (Bishop, Nagamine, Cramer, Guarelli) are copyright their authors and publishers and are not included in this repository; they are cited by page only.
 
 ```
 Guni, A. (2026). The Lineage of Karate and Taekwondo: a source-checked instructor-to-student

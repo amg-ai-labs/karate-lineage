@@ -381,6 +381,8 @@ def main():
     styles = json.load(open(OUT / "styles.json", encoding="utf-8"))["styles"]
     kata_path = OUT / "kata.json"
     kata = json.load(open(kata_path, encoding="utf-8")) if kata_path.exists() else []
+    rank_path = OUT / "rankings.json"
+    rankings = json.load(open(rank_path, encoding="utf-8")) if rank_path.exists() else None
     style_by_id = {s["id"]: s for s in styles}
     colours = build_style_colours(styles)
 
@@ -497,6 +499,7 @@ def main():
                      for k, lb, l, d in (NEUTRAL_TE, NEUTRAL_OTHER)],
         "styleColours": colours,
         "kata": kata,
+        "rankings": rankings,
         "styles": [{"id": s["id"], "label": s["label"], "parent": s["parent"],
                     "famRaw": raw_family.get(s["id"], "other"),
                     "founder": s.get("founder") or "", "founded": s.get("founded") or "",

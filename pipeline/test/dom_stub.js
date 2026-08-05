@@ -7,7 +7,7 @@ function El(tag, id) {
   this.attrs = {};
   this.style = {};
   this.dataset = {};
-  this.textContent = "";
+  this._text = "";
   this.value = "";
   this.hidden = false;
   this._cls = new Set();
@@ -23,6 +23,16 @@ function El(tag, id) {
     contains: function (c) { return self._cls.has(c); },
   };
 }
+// textContent has to behave like the real one: reading it returns this node's
+// own text PLUS every descendant's, writing it replaces the whole subtree.
+// A plain data property silently reports "" for any element built from children,
+// which lets a panel that renders nothing pass a test that checks its text.
+Object.defineProperty(El.prototype, "textContent", {
+  get: function () {
+    return this._text + this.children.map(c => c.textContent).join("");
+  },
+  set: function (v) { this._text = String(v); this.children = []; },
+});
 El.prototype.setAttribute = function (k, v) {
   this.attrs[k] = String(v);
   if (k === "class") { this._cls = new Set(String(v).split(/\s+/).filter(Boolean)); }
@@ -37,7 +47,8 @@ El.prototype.appendChild = function (c) { this.children.push(c); c.parentNode = 
 El.prototype.append = function () {
   for (var i = 0; i < arguments.length; i++) {
     var a = arguments[i];
-    if (typeof a === "string") this.textContent += a; else this.appendChild(a);
+    if (typeof a === "string") { var t = new El("#text"); t._text = a; this.appendChild(t); }
+    else this.appendChild(a);
   }
 };
 El.prototype.remove = function () {
@@ -55,7 +66,7 @@ El.prototype.cloneNode = function (deep) {
   var c = new El(this.tagName, this.id);
   c.attrs = Object.assign({}, this.attrs);
   c._cls = new Set(this._cls);
-  c.textContent = this.textContent;
+  c._text = this._text;
   c.style = Object.assign({}, this.style);
   if (deep) for (var k of this.children) c.appendChild(k.cloneNode(true));
   return c;
@@ -72,6 +83,9 @@ El.prototype.querySelectorAll = function (sel) {
     for (var c of e.children) { if (test(c)) out.push(c); walk(c); }
   })(this);
   return out;
+};
+El.prototype.querySelector = function (sel) {
+  return this.querySelectorAll(sel)[0] || null;
 };
 El.prototype.addEventListener = function (t, f) {
   (this._ev = this._ev || {})[t] = (this._ev[t] || []).concat(f);
@@ -196,7 +210,12 @@ function Blob(parts, opts) {
     n += p && p.byteLength !== undefined ? p.byteLength : String(p || "").length;
   }
   this.size = n; this.type = (opts || {}).type || "";
+  // keep the text so a test can assert on what was actually written out
+  this._text = (parts || []).map(function (p) {
+    return p && p.byteLength !== undefined ? "" : String(p == null ? "" : p);
+  }).join("");
 }
+Blob.prototype.text = function () { return Promise.resolve(this._text); };
 Blob.prototype.arrayBuffer = function () { return Promise.resolve(new ArrayBuffer(8)); };
 var URL = { createObjectURL: function () { return "blob:x"; }, revokeObjectURL: function () {} };
 function TextEncoder() { this.encode = function (s) {
