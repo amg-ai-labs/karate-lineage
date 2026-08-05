@@ -270,3 +270,14 @@ W0020,death_year,,1936,[book:Nagamine/Cramer/Guarelli PDF PAGE 115-116] gives de
 J0173,birth_year,,1936,Lee Haeng-ung: [kata completion] Roster entry carried no value for this field; the kata sweep supplied it while tracing the kata's attribution.,proposed
 C00444,birth_year,,1900,Saburo Uehara: [kata completion] Roster entry carried no value for this field; the kata sweep supplied it while tracing the kata's attribution.,proposed
 C00444,death_year,,1965,Saburo Uehara: [kata completion] Roster entry carried no value for this field; the kata sweep supplied it while tracing the kata's attribution.,proposed
+KN005,birth_year,,1862,"[book:Taira Shinken, Ryukyu Kobudo Taikan, trans. McCarthy, Koryu Uchinadi vol.1 p.110] gives birth 1862 for Kanegawa Gimu; dataset had none",proposed
+KN005,death_year,,1921,"[book:Taira Shinken, Ryukyu Kobudo Taikan, trans. McCarthy, Koryu Uchinadi vol.1 p.110] gives death 1921 for Kanegawa Gimu; dataset had none",proposed
+KN006,birth_year,,1780,"[book:McCarthy, Koryu Uchinadi vol.2 p.19] gives birth 1780 for Chinen Shikiyanaka; dataset had none",proposed
+KN006,death_year,,1841,"[book:McCarthy, Koryu Uchinadi vol.2 p.19] gives death 1841 for Chinen Shikiyanaka; dataset had none",proposed
+KP001,birth_year,,1887,"[book:McCarthy, Koryu Uchinadi vol.2 p.19] gives birth 1887 for Tang Daiji; dataset had none",proposed
+KP001,death_year,,1937,"[book:McCarthy, Koryu Uchinadi vol.2 p.19] gives death 1937 for Tang Daiji; dataset had none",proposed
+KN008,birth_year,,1846,"[book:McCarthy, Koryu Uchinadi vol.2 p.32] gives birth 1846 for Sueyoshi; dataset had none",proposed
+KN008,death_year,,1920,"[book:McCarthy, Koryu Uchinadi vol.2 p.32] gives death 1920 for Sueyoshi; dataset had none",proposed
+KN011,birth_year,,1851,"[book:McCarthy, Koryu Uchinadi vol.2 p.46] gives birth 1851 for Tawada Shinboku; dataset had none",proposed
+KN011,death_year,,1920,"[book:McCarthy, Koryu Uchinadi vol.2 p.46] gives death 1920 for Tawada Shinboku; dataset had none",proposed
+B0011,death_year,,1993,"[book:McCarthy, Koryu Uchinadi vol.2 p.46] gives death 1993 for Kanei Uechi (Shito-ryu); dataset had none",proposed

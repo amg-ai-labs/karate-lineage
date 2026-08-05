@@ -26,6 +26,7 @@ Q721201,Anko Azato,Q1147708,Choki Motobu,low,,research:https://medium.com/@motob
 Q721201,Anko Azato,Q41105,Gichin Funakoshi,high,yes,infobox:students | infobox:teacher | text_pattern:taught | wikidata:P1066 | wikidata:P802
 Q527422,Anko Itosu,C00003,Anbun Tokuda,high,yes,research:https://note.com/motoburyu/n/n29dffb7866f6 | research:https://www.d3b.jp/npcolumn/7625
 Q527422,Anko Itosu,C00025,Chojo Oshiro,medium,,book:Bishop p.109
+Q527422,Anko Itosu,Q221121,Chojun Miyagi,medium,,"book:Toguchi, Okinawan Goju-Ryu (Shorei-Kan) p.15"
 Q527422,Anko Itosu,Q1147708,Choki Motobu,high,,infobox:students | infobox:teacher | research:https://en.wikipedia.org/wiki/Motobu_Ch%C5%8Dki | research:https://en.wikipedia.org/wiki/Motobu_Ch%C5%8Dy%C5%AB
 Q527422,Anko Itosu,Q705617,Chomo Hanashiro,high,yes,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802
 Q527422,Anko Itosu,Q1071733,Choshin Chibana,high,yes,infobox:students | infobox:teacher | text_pattern:learned_from | wikidata:P1066 | wikidata:P802
@@ -89,6 +90,7 @@ A0078,Chojiro Tani,A0080,Haruyoshi Yamada,medium,yes,research:https://en.wikiped
 A0078,Chojiro Tani,A0079,Shigeru Kimura,high,yes,research:https://en.wikipedia.org/wiki/Sh%C5%ABk%C5%8Dkai | research:https://shuriway.com/kimura.html
 C00025,Chojo Oshiro,W0025,Chotoku Maeshiro,high,yes,research:https://ryukyu-bugei.com/?p=3954
 C00025,Chojo Oshiro,W0002,Hiroshi Kinjo,high,,research:https://ja.wikipedia.org/wiki/%E9%87%91%E5%9F%8E%E8%A3%95
+C00025,Chojo Oshiro,Q3772405,Kanken Toyama,medium,,"book:McCarthy, Koryu Uchinadi vol.2 p.144"
 C00025,Chojo Oshiro,C00232,Kenko Nakaima,high,,book:Bishop p.20
 C00025,Chojo Oshiro,Q6782517,Masami Chinen,high,,research:https://ryukyu-bugei.com/?p=3954
 C00025,Chojo Oshiro,W0001,Miki Jisaburo,high,yes,research:https://ryukyu-bugei.com/?p=9879
@@ -105,6 +107,7 @@ Q221121,Chojun Miyagi,C00148,Jinan Shinzato,high,yes,research:https://en.wikiped
 Q221121,Chojun Miyagi,C00150,Jinsei Kamiya,high,yes,research:https://en.wikipedia.org/wiki/G%C5%8Dj%C5%AB-ry%C5%AB | research:https://historyandstoriesofgojuryu.blogspot.com/2021/06/who-were-senior-students-of-chojun.html
 Q221121,Chojun Miyagi,A0013,Ken Miyagi,low,yes,research:https://karateresearch.com/2025/11/18/remembering-miyagi-chojun-a-conversation
 Q221121,Chojun Miyagi,C00236,Kensei Kinjo,medium,,book:Bishop p.121
+Q221121,Chojun Miyagi,Q453505,Kenwa Mabuni,medium,,"book:McCarthy, Koryu Uchinadi vol.2 p.34"
 Q221121,Chojun Miyagi,C00296,Koshin Iha,high,yes,research:https://ogkkb.be/19-in-memoriam/15-sensei-koshin-iha | research:http://yushikan.blogspot.com/2012/01/koshin-iha-sensei.html | research:https://en.wikipedia.org/wiki/G%C5%8Dj%C5%AB-ry%C5%AB
 Q221121,Chojun Miyagi,J0072,Masafumi Suzuki,low,,research:https://amahof.asn.au/members/1996-2/masafumi-suzuki/
 Q221121,Chojun Miyagi,Q16016038,Meitoku Yagi,high,yes,infobox:students | research:https://en.wikipedia.org/wiki/Ch%C5%8Djun_Miyagi | research:https://en.wikipedia.org/wiki/Meitoku_Yagi
@@ -150,6 +153,7 @@ Q705617,Chomo Hanashiro,Q557301,Ankichi Arakaki,high,yes,infobox:students | info
 Q705617,Chomo Hanashiro,Q15987180,Chozo Nakama,high,,infobox:students
 Q705617,Chomo Hanashiro,W0002,Hiroshi Kinjo,high,yes,research:https://ja.wikipedia.org/wiki/金城裕
 Q705617,Chomo Hanashiro,C00107,Kafu Kojo,low,,research:https://simonechierchini.com/2020/04/29/kojo-ryu-karate-lo-stile-fantasma-di-okinawa/
+Q705617,Chomo Hanashiro,Q453505,Kenwa Mabuni,medium,,"book:McCarthy, Koryu Uchinadi vol.2 p.15"
 Q705617,Chomo Hanashiro,Q7446702,Seiichi Akamine,high,yes,wikidata:P802
 Q705617,Chomo Hanashiro,C00494,Seitoku Higa,high,,book:Bishop p.174
 Q705617,Chomo Hanashiro,Q38585428,Shigeru Nakamura,medium,,research:https://www.okinawakenpokarate.com/history.php | research:https://www.usadojo.com/shigeru-nakamura/ | research:https://pelletierskarate.com/about-karate/brief-history-of-okinawa-kenpo/
@@ -160,6 +164,7 @@ Q1071733,Choshin Chibana,Q557301,Ankichi Arakaki,high,,infobox:students | infobo
 Q1071733,Choshin Chibana,Q15987180,Chozo Nakama,high,,infobox:students | research:https://en.wikipedia.org/wiki/Ch%C5%8Dshin_Chibana | research:https://en.wikipedia.org/wiki/Chozo_Nakama | research:https://www.thedojo.us/history/chibana | wikidata:P802
 Q1071733,Choshin Chibana,C00034,Eizo Shimabukuro,medium,,research:https://en.wikipedia.org/wiki/Ch%C5%8Dshin_Chibana
 Q1071733,Choshin Chibana,A0031,Joki Uema,high,yes,research:https://en.wikipedia.org/wiki/Ch%C5%8Dshin_Chibana | research:https://www.shubukan.jp/
+Q1071733,Choshin Chibana,Q3772405,Kanken Toyama,low,,"book:McCarthy, Koryu Uchinadi vol.2 p.144"
 Q1071733,Choshin Chibana,C00212,Katsumi Murakami,medium,yes,research:https://ryubukandojo.wordpress.com/2015/08/17/katsumi-murakami/
 Q1071733,Choshin Chibana,Q3194253,Katsuya Miyahira,high,,infobox:students | infobox:teacher | research:https://en.wikipedia.org/wiki/Beikoku_Shidokan | research:https://en.wikipedia.org/wiki/Katsuya_Miyahira | research:https://www.shorinryu.de/eng/sensei-miyahira-katsuya-eng.html | text_context:teacher_keyword | wikidata:P1066 | wikidata:P802
 Q1071733,Choshin Chibana,J0023,Katsuyuki Shimabukuro,medium,yes,"research:https://www.facebook.com/groups/709248329841056/posts/1742438559855356/ (described as a student of Chibana Chosin, later Higa Yuchoku)"
@@ -407,6 +412,7 @@ Q3136331,Hironori Otsuka II,A0095,Kazutaka Otsuka (Hironori Otsuka III),medium,y
 J0189,Hiroo Mochizuki,Q352678,Bjorn Bregy,low,yes,research:https://www.yoseikan.com/
 C00112,Hiroshi Ishihara,C00232,Kenko Nakaima,high,,book:Bishop p.20
 W0002,Hiroshi Kinjo,J0074,Norio Nakamura,medium,,research:https://ja.wikipedia.org/wiki/韓武舘
+W0002,Hiroshi Kinjo,Q7147128,Patrick McCarthy,high,,"book:McCarthy, Koryu Uchinadi vol.2 p.107"
 W0002,Hiroshi Kinjo,A0152,Yun Kwae-byung,medium,,research:https://ja.wikipedia.org/wiki/錬武舘
 Q348074,Hiroshi Shirai,Q3840266,Luigi Zoia,high,yes,infobox:students | wikidata:P802
 Q348074,Hiroshi Shirai,Q110022261,Paolo Biotti Natoli,high,yes,wikidata:P802
@@ -516,11 +522,13 @@ C00108,Kaho Kojo,C00542,Shuren Kojo,medium,yes,book:Bishop p.49
 C00108,Kaho Kojo,C00605,Tokusaburo Matsuda,low,,research:https://medium.com/@motobu715/matsuda-tokusabur%C5%8D-e2bed486d39a | research:https://medium.com/@motobu715/koj%C5%8D-kah%C5%8D-and-uechi-kanbun-dd6efc3e42fd
 C00173,Kama Higa,C00476,Seikichi Hokama,high,,book:Bishop p.84
 Q2473562,Kanbun Uechi,Q1728269,Kanei Uechi,high,yes,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802
+Q2473562,Kanbun Uechi,Q453505,Kenwa Mabuni,medium,,"book:McCarthy, Koryu Uchinadi vol.2 p.22"
 Q2473562,Kanbun Uechi,C00441,Ryuyu Tomoyose,high,yes,research:https://en.wikipedia.org/wiki/Uechi-Ry%C5%AB | research:https://uechi-ryu.com/ryuyu-tomoyose/
 Q2473562,Kanbun Uechi,C00444,Saburo Uehara,high,yes,research:https://uechi-ryu.com/saburo-uehara/ | research:https://en.wikipedia.org/wiki/Kanbun_Uechi
 Q2473562,Kanbun Uechi,A0009,Seiko Toyama,high,yes,research:https://en.wikipedia.org/wiki/Kanbun_Uechi | research:https://www.uechiryu-europe.org/en/chronologie/ | research:https://www.alandollar.com/uechi/hist_kanbun.htm
 Q2473562,Kanbun Uechi,C00064,Seiryo Shinjo,high,yes,research:https://en.wikipedia.org/wiki/Kanbun_Uechi | research:https://okdkarate.com/uechi-ryu-karate/ | research:https://www.kenyukaiinternational.com/history
 Q2473562,Kanbun Uechi,A0008,Seiyu Shinjo,high,yes,research:https://www.kenyukaiinternational.com/history | research:https://kenyukai-md.com/kenyukai | research:https://www.alandollar.com/uechi/hist_kanbun.htm
+KN005,Kanegawa Gimu,Q723832,Shinken Taira,low,,"book:Taira Shinken, Ryukyu Kobudo Taikan, trans. McCarthy, Koryu Uchinadi vol.1 p.110"
 Q1728269,Kanei Uechi,B0024,David Scot,high,yes,book:Bishop p.43
 Q1728269,Kanei Uechi,Q18230165,George E. Mattson,high,yes,research:https://en.wikipedia.org/wiki/George_Mattson_(martial_artist)
 Q1728269,Kanei Uechi,J0025,Hiroshi Inada,medium,yes,"research:https://shogunmartialarts.org.uk/karate/okikukai-on-okinawa-mainland-japan-masters/ (born February 15, 1933, Hanshi 10 Dan, student of Uechi Kanei, adviser of the Okikukai)"
@@ -579,10 +587,12 @@ Q1728269,Kanei Uechi,J0035,Yoshio Higa,medium,yes,research:https://shogunmartial
 Q1728269,Kanei Uechi,J0013,Yoshio Matsuda,low,yes,research:Inferred only: the Yafuso Shubukan is a branch dojo in the Uechi soke Shubukan (修武館) line and Matsuda's generation of Uechi-ryu 10th dans were Kanei Uechi's students; no source names his teacher explicitly
 Q1728269,Kanei Uechi,J0039,Yoshitsune Senaga,medium,,research:http://karate-k.ru/yoshitsune-senaga-1
 Q921673,Kanga Sakukawa,C00026,Choken Makabe,low,yes,research:https://worldbudokan.com/worlbudokanhome/articles-2/sokon-matsumura/ | research:https://mastinkarate.com/wp-content/uploads/2009/10/Timeline1.pdf
+Q921673,Kanga Sakukawa,N0018,Ginowan Denuchi,medium,yes,"book:Taira Shinken, Ryukyu Kobudo Taikan, trans. McCarthy, Koryu Uchinadi vol.1 p.18"
 Q921673,Kanga Sakukawa,Q715769,Sokon Matsumura,high,yes,infobox:students | infobox:teacher | research:https://en.wikipedia.org/wiki/Matsumura_S%C5%8Dkon | research:https://worldbudokan.com/worlbudokanhome/articles-2/sokon-matsumura/ | wikidata:P802
 Q921673,Kanga Sakukawa,A0018,Tachimura no Peichin,low,yes,research:https://azpracticalkarate.com/2020/12/kishimotodi-revisited.html | research:https://blackbeltwiki.com/kishimotodi | research:https://en.wikipedia.org/wiki/Sakugawa_Kanga | research:https://ilpracticalkarate.com/kishimotodi | research:https://www.karateobsession.com/2020/12/kishimotodi-revisited.html
 Q921673,Kanga Sakukawa,A0125,Umikana Chinen,high,yes,research:https://en.wikipedia.org/wiki/Yamanni_ryu
 Q3772405,Kanken Toyama,A0168,Eizo Onishi,high,,research:https://it.wikipedia.org/wiki/Koei-Kan | research:https://en-academic.com/dic.nsf/enwiki/3706481
+Q3772405,Kanken Toyama,C00072,Genwa Nakasone,low,yes,"book:McCarthy, Koryu Uchinadi vol.2 p.41"
 Q3772405,Kanken Toyama,W0002,Hiroshi Kinjo,high,,research:https://ja.wikipedia.org/wiki/金城裕
 Q3772405,Kanken Toyama,A0227,Isao Ichikawa,high,yes,research:https://doshinkan.or.at/en/history/ | research:http://www.doshinkan.pl/dojo_poland/english/geschichte.html
 Q3772405,Kanken Toyama,A0157,Kim Ki-whang,high,yes,research:https://en.wikipedia.org/wiki/Ki_Whang_Kim | research:https://taekwondohalloffame.com/honorees/great-grand-master-ki-whang-kim/
@@ -698,26 +708,35 @@ Q722028,Kentsu Yabu,C00232,Kenko Nakaima,high,,book:Bishop p.20
 Q722028,Kentsu Yabu,N0176,Kitatsu Kawasaki,medium,yes,"book:Nagamine, Tales of Okinawa's Great Masters PDF PAGE 165"
 Q722028,Kentsu Yabu,Q38585428,Shigeru Nakamura,medium,,research:https://www.okinawakenpokarate.com/history.php | research:https://www.usadojo.com/shigeru-nakamura/ | research:https://pelletierskarate.com/about-karate/brief-history-of-okinawa-kenpo/
 Q722028,Kentsu Yabu,C00319,Shinkin Gima,high,yes,research:http://findingkarate.com/wordpress/shinkin-gima/
+Q453505,Kenwa Mabuni,N0026,Abe Iwao,low,yes,"book:McCarthy, Koryu Uchinadi vol.2 p.47"
 Q453505,Kenwa Mabuni,A0078,Chojiro Tani,high,,research:https://en.wikipedia.org/wiki/Ch%C5%8Djir%C5%8D_Tani
 Q453505,Kenwa Mabuni,Q15987180,Chozo Nakama,high,,book:Bishop p.117
+Q453505,Kenwa Mabuni,N0025,Fuji Kozo,low,yes,"book:McCarthy, Koryu Uchinadi vol.2 p.47"
+Q453505,Kenwa Mabuni,N0024,Fujitani Masatoshi,low,yes,"book:McCarthy, Koryu Uchinadi vol.2 p.47"
 Q453505,Kenwa Mabuni,Q41105,Gichin Funakoshi,medium,,book:Nagamine/Cramer/Guarelli SECTION 26
 Q453505,Kenwa Mabuni,Q386415,Hironori Otsuka,high,,infobox:teacher | wikidata:P1066 | wikidata:P802
 Q453505,Kenwa Mabuni,W0002,Hiroshi Kinjo,medium,,research:https://ja.wikipedia.org/wiki/金城裕
 Q453505,Kenwa Mabuni,J0131,Hisahiro Uno,low,yes,research:https://ja.wikipedia.org/wiki/糸東流
+Q453505,Kenwa Mabuni,B0011,Kanei Uechi (Shito-ryu),low,yes,"book:McCarthy, Koryu Uchinadi vol.2 p.46"
 Q453505,Kenwa Mabuni,Q727360,Kenei Mabuni,high,yes,infobox:students | infobox:teacher | research:https://en.wikipedia.org/wiki/Kenwa_Mabuni | research:https://www.shuriway.com/kenei2.html | wikidata:P1066 | wikidata:P802
 Q453505,Kenwa Mabuni,C00236,Kensei Kinjo,high,yes,research:https://medium.com/motobu-ryu-blog/motobu-ch%C5%8Dy%C5%ABs-goj%C5%ABshiho-ec8332145ab1
 Q453505,Kenwa Mabuni,C00246,Kenzo Mabuni,high,yes,research:http://findingkarate.com/wordpress/kenzo-mabuni/ | research:https://www.seitoshitoryu.com/soke.php
+Q453505,Kenwa Mabuni,N0029,Kimura Kempe,low,yes,"book:McCarthy, Koryu Uchinadi vol.2 p.47"
 Q453505,Kenwa Mabuni,C00285,Kosei Kokuba,low,,research:https://www.inoue-ha-karate.com/about/yoshimi-inoue/ | research:https://es.wikipedia.org/wiki/Teruo_Hayashi
 Q453505,Kenwa Mabuni,Q6753487,Manzo Iwata,high,,infobox:students | infobox:teacher | research:https://en.wikipedia.org/wiki/Manzo_Iwata | research:https://www.shuriway.com/manzoiwata.html
 Q453505,Kenwa Mabuni,J0132,Masaru Watanabe,high,yes,research:https://ja.wikipedia.org/wiki/糸東流
 Q453505,Kenwa Mabuni,Q384558,Masatoshi Nakayama,high,,"book:Cramer, The History of Karate and the Masters Who Made It SECTION 26"
 Q453505,Kenwa Mabuni,C00409,Osamu Ozawa,medium,,research:https://www.atascaderoshotokan.com/shihan-ozawa
 Q453505,Kenwa Mabuni,C00440,Ryusho Sakagami,high,,research:https://shuriway.com/sakagami.html | research:https://www.usadojo.com/ryusho-sakagami/
+Q453505,Kenwa Mabuni,N0022,Sawayama Masaru,low,yes,"book:McCarthy, Koryu Uchinadi vol.2 p.47"
+Q453505,Kenwa Mabuni,N0023,Seiki Hiroshi,low,yes,"book:McCarthy, Koryu Uchinadi vol.2 p.47"
+Q453505,Kenwa Mabuni,N0027,Shinjō Gima,low,yes,"book:McCarthy, Koryu Uchinadi vol.2 p.47"
 Q453505,Kenwa Mabuni,Q723832,Shinken Taira,high,,research:https://en.wikipedia.org/wiki/Taira_Shinken
 Q453505,Kenwa Mabuni,Q3959901,Shogo Kuniba,high,yes,infobox:teacher | research:https://en.wikipedia.org/wiki/Sh%C5%8Dg%C5%8D_Kuniba
 Q453505,Kenwa Mabuni,J0133,Takamasa Tomoyose,high,yes,research:https://ja.wikipedia.org/wiki/糸東流
 Q453505,Kenwa Mabuni,C00586,Teruo Hayashi,low,,research:https://www.internationalshitoryu.com/aboutus/organization-chart/hayashi-teruo/
 Q453505,Kenwa Mabuni,Q4351940,Yasuhiro Konishi,medium,,infobox:teacher
+Q453505,Kenwa Mabuni,N0028,Ying Jin,low,yes,"book:McCarthy, Koryu Uchinadi vol.2 p.47"
 Q453505,Kenwa Mabuni,A0152,Yun Kwae-byung,medium,,research:https://en.wikipedia.org/wiki/Yun_Kwae-byung
 C00246,Kenzo Mabuni,A0091,Tsukasa Mabuni,medium,yes,research:https://www.seitoshitoryu.com/soke.php | research:https://www.usaseitoshitoryu.org/ | research:https://seitoshitoryu.webs.com/tsukasamabuni.htm
 A0128,Kiichi Nakamoto,J0047,Eishō Nakamoto,medium,yes,"research:OKIC official Okinawa dojo register lists 仲本英征 (furigana ヒデユキ, Hideyuki) as head of the Ginowan branch dojo of the Goju-ryu Okinawakan Karate-do Association, Nakamoto Kiichi's organisation; Yushikan blog names Hideyuki Nakamoto among Kiichi Nakamoto's senior kobudo students"
@@ -917,6 +936,7 @@ A0160,Michael Gneck,Q862634,Bill Wallace,medium,yes,research:https://en.wikipedi
 C00366,Miinshiin Higa,C00494,Seitoku Higa,high,,book:Bishop p.170
 Q1937662,Minoru Mochizuki,J0189,Hiroo Mochizuki,high,yes,research:https://ja.wikipedia.org/wiki/%E6%9C%9B%E6%9C%88%E7%A8%94
 A0206,Mir-Ali Seyidov,A0200,Fizuli Musayev,medium,,"research:https://ru.wikipedia.org/wiki/Сейидов,_Мирали_Мирджалал_оглы"
+C00373,Moden Yabiku,Q453505,Kenwa Mabuni,medium,,"book:McCarthy, Koryu Uchinadi vol.2 p.32"
 C00373,Moden Yabiku,C00440,Ryusho Sakagami,high,yes,research:https://www.itosu-ryu.net/soke
 C00373,Moden Yabiku,Q723832,Shinken Taira,high,,research:https://en.wikipedia.org/wiki/Taira_Shinken | research:https://www.ryukyukobudousa.com/lineage/yabiku-moden
 Q182130,Morihei Ueshiba,Q706726,Gozo Shioda,high,yes,infobox:teacher | wikidata:P1066
@@ -969,7 +989,7 @@ Q954330,Ryu Ryu Ko,Q584466,Seisho Arakaki,high,yes,infobox:students | infobox:te
 Q954330,Ryu Ryu Ko,C00564,Taitei Kojo,medium,,research:https://en.wikipedia.org/wiki/Ry%C5%AB_Ry%C5%AB_Ko | research:https://koshinkan.org/478-2/
 Q954330,Ryu Ryu Ko,C00605,Tokusaburo Matsuda,low,yes,research:https://en.wikipedia.org/wiki/Ry%C5%AB_Ry%C5%AB_Ko | research:https://medium.com/@motobu715/matsuda-tokusabur%C5%8D-e2bed486d39a
 Q954330,Ryu Ryu Ko,C00639,Wai Shin Zan,medium,yes,book:Bishop p.193
-N0224,Ryuko Shiishi,Q1908088,Shinko Matayoshi,medium,,"book:Guarelli, Okinawan Kobudo chunk guarelli04, line 109"
+KP010,Ryuko Shiishi,Q1908088,Shinko Matayoshi,medium,,"book:Guarelli, Okinawan Kobudo chunk guarelli04, line 109"
 C00438,Ryuko Tomoyose,Q18230165,George E. Mattson,high,,research:https://en.wikipedia.org/wiki/George_Mattson_(martial_artist) | research:https://en.wikipedia.org/wiki/Uechi-Ry%C5%AB | research:https://uechi-ryu.com/ryuko-tomoyose/
 C00440,Ryusho Sakagami,Q1473967,Fumio Demura,high,,research:https://shuriway.com/sakagami.html | research:https://www.usadojo.com/ryusho-sakagami/
 C00440,Ryusho Sakagami,A0087,Kei Tsumura,medium,yes,research:https://www.usadojo.com/ryusho-sakagami/
@@ -1169,8 +1189,10 @@ Q723832,Shinken Taira,J0107,Masakazu Kinjo,medium,,research:https://www.d3b.jp/n
 Q723832,Shinken Taira,Q6918025,Motokatsu Inoue,high,yes,research:https://en.wikipedia.org/wiki/Motokatsu_Inoue
 Q723832,Shinken Taira,C00440,Ryusho Sakagami,high,,research:https://shuriway.com/sakagami.html | research:https://www.itosu-ryu.net/soke
 Q723832,Shinken Taira,A0085,Sadaaki Sakagami,high,yes,research:https://www.itosu-ryu.net/soke
+Q723832,Shinken Taira,Q3959901,Shogo Kuniba,medium,,"book:Taira Shinken, Ryukyu Kobudo Taikan, trans. McCarthy, Koryu Uchinadi vol.1 p.118"
 Q723832,Shinken Taira,W0008,Takamura Seiko,high,yes,research:https://ryukyu-bugei.com/?p=9238
 Q723832,Shinken Taira,Q27363,Tatsuo Shimabuku,high,,infobox:teacher | research:https://en.wikipedia.org/wiki/Tatsuo_Shimabuku
+Q723832,Shinken Taira,C00586,Teruo Hayashi,medium,,"book:Taira Shinken, Ryukyu Kobudo Taikan, trans. McCarthy, Koryu Uchinadi vol.1 p.118"
 Q723832,Shinken Taira,Q15987228,Yuchoku Higa,medium,,research:https://ja.wikipedia.org/wiki/%E5%B9%B3%E4%BF%A1%E8%B3%A2
 C00510,Shinkichi Kuniyoshi,B0015,Heisaburo Nakamura,high,yes,book:Bishop p.152
 C00510,Shinkichi Kuniyoshi,Q38585428,Shigeru Nakamura,high,,research:https://okinawa-kenpo.com/en.php
@@ -1355,6 +1377,7 @@ A0024,Sokuichi Gibu,Q6782576,Masanobu Kikukawa,high,,research:https://en.wikiped
 A0150,Son Duk-sung (Duk Sung Son),A0178,Han Cha-kyo,high,yes,research:https://en.wikipedia.org/wiki/Han_Cha-kyo | research:https://en.wikipedia.org/wiki/Original_masters_of_taekwondo
 Q106695378,Sosui Ichikawa,C00334,Tadahiko Otsuka,high,yes,research:https://jamessumarac.com/an-interview-with-sensei-tadahiko-ohtsuka-part-1/ | research:https://jamessumarac.com/traditional-goju-ryu-karate/
 N0172,Su Yinghan,N0169,Andrea Guarelli,high,,"book:Guarelli, Okinawan Kobudo SECTION 9"
+KN008,Sueyoshi,Q453505,Kenwa Mabuni,medium,,"book:McCarthy, Koryu Uchinadi vol.2 p.32"
 C00076,Sugaya Ueshima,Q7418861,Sannosuke Ueshima,medium,,research:https://en.wikipedia.org/wiki/Kushin-ryu | research:https://ja.wikipedia.org/wiki/%E4%B8%8A%E5%B3%B6%E4%B8%89%E4%B9%8B%E5%8A%A9
 A0004,T'ung Gee Hsing,Q7350475,Robert Trias,low,,research:https://en.wikipedia.org/wiki/Robert_Trias | research:https://en.wikipedia.org/wiki/Shuri-ryu | research:https://www.usadojo.com/the-origins-and-development-of-shuri-ryu/
 A0018,Tachimura no Peichin,C00550,Soko Kishimoto,high,yes,research:https://ilpracticalkarate.com/kishimotodi | research:https://www.karateobsession.com/2020/12/kishimotodi-revisited.html | research:https://blackbeltwiki.com/kishimotodi
@@ -1378,6 +1401,10 @@ Q598665,Takayuki Kubota,Q2673,Chuck Norris,low,,infobox:students
 Q598665,Takayuki Kubota,Q95043,James Caan,high,yes,infobox:students | wikidata:P802
 Q598665,Takayuki Kubota,Q7678008,Takemasa Okuyama,high,yes,research:https://en.wikipedia.org/wiki/Takemasa_Okuyama
 A0218,Takeo Maruta,Q268880,Gogen Yamaguchi,medium,,research:https://en.wikipedia.org/wiki/G%C5%8Dgen_Yamaguchi | research:https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%8F%A3%E5%89%9B%E7%8E%84 | research:http://seinenkai.com/articles/noble/noble-yamaguchi.html
+KP001,Tang Daiji,Q221121,Chojun Miyagi,low,,"book:McCarthy, Koryu Uchinadi vol.2 p.22"
+KP001,Tang Daiji,A0012,Juhatsu Kyoda,low,,"book:McCarthy, Koryu Uchinadi vol.2 p.22"
+KP001,Tang Daiji,Q453505,Kenwa Mabuni,medium,,"book:McCarthy, Koryu Uchinadi vol.2 p.22"
+KP001,Tang Daiji,Q1908088,Shinko Matayoshi,low,,"book:McCarthy, Koryu Uchinadi vol.2 p.22"
 N0158,Tanouye Rotaishi,Q1963468,Shoshin Nagamine,high,,"book:Nagamine, Tales of Okinawa's Great Masters PDF PAGE 179"
 C00350,Taro Shimabuku,J0006,Seitoku Ishikawa,medium,,research:https://kyudomugen.com/karateka/
 C00350,Taro Shimabuku,Q1963468,Shoshin Nagamine,high,,research:https://en.wikipedia.org/wiki/Sh%C5%8Dshin_Nagamine
@@ -1396,6 +1423,7 @@ Q97666381,Tatsuo Suzuki,A0098,Masafumi Shiomitsu,low,,research:http://findingkar
 Q97666381,Tatsuo Suzuki,Q7800728,Ticky Donovan,high,yes,research:https://en.wikipedia.org/wiki/Tatsuo_Suzuki_(martial_artist) | wikidata:P1066
 Q11470681,Tatsuo Yamada,Q294548,Mas Oyama,medium,,research:https://ja.wikipedia.org/wiki/山田辰雄_(空手家)
 Q30928815,Tatsusaburo Nakayama,Q386415,Hironori Otsuka,high,,wikidata:P1066
+KN011,Tawada Shinboku,Q453505,Kenwa Mabuni,medium,,"book:McCarthy, Koryu Uchinadi vol.2 p.32"
 C00354,Tawata Pechin,C00373,Moden Yabiku,high,,research:https://www.ryukyukobudousa.com/lineage/yabiku-moden
 C00355,Teiichi Nakamura,Q38585428,Shigeru Nakamura,medium,,research:https://www.usadojo.com/shigeru-nakamura/
 B0025,Ten Senshi,C00476,Seikichi Hokama,high,,book:Bishop p.84
@@ -1480,6 +1508,10 @@ Q9096235,Won Kuk Lee,A0156,Uhm Woon-kyu,high,yes,research:https://en.wikipedia.o
 Q9096235,Won Kuk Lee,J0158,Woo Jong-lim,medium,yes,research:https://m.cafe.daum.net/tsa./IqRR/10
 Q9096235,Won Kuk Lee,J0154,Yoo Eung-jun,high,yes,research:https://m.cafe.daum.net/tsa./IqRR/10
 Q8031976,Wong Chung-Yoh,Q542989,Chatan Yara,medium,,wikidata:P1066
+KP024,Wu Xiangui,Q221121,Chojun Miyagi,low,,"book:McCarthy, Koryu Uchinadi vol.2 p.22"
+KP024,Wu Xiangui,A0012,Juhatsu Kyoda,low,,"book:McCarthy, Koryu Uchinadi vol.2 p.22"
+KP024,Wu Xiangui,Q453505,Kenwa Mabuni,medium,,"book:McCarthy, Koryu Uchinadi vol.2 p.22"
+KP024,Wu Xiangui,Q1908088,Shinko Matayoshi,low,,"book:McCarthy, Koryu Uchinadi vol.2 p.22"
 Q16907056,Xie Zongxiang,Q699236,Kanryo Higaonna,low,,research:https://en.wikipedia.org/wiki/Ry%C5%AB_Ry%C5%AB_Ko | research:https://zh.wikipedia.org/wiki/謝崇祥 | research:https://zh.wikipedia.org/zh-hant/鳴鶴拳 | wikidata:P1066
 A0229,Yang Kuk-jin,A0001,Hwang Kee,medium,yes,research:https://en.wikipedia.org/wiki/Hwang_Kee
 C00646,Yashichiro Ijuin,Q715769,Sokon Matsumura,medium,,book:Bishop p.55

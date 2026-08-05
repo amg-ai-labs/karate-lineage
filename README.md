@@ -1,6 +1,6 @@
 # The Lineage of Karate and Taekwondo
 
-An interactive cladogram of who taught whom in karate, kobudō and taekwondo: **1,279 people, 1,555 instructor-to-student links, 317 styles and 473 kata**, spanning nineteen generations from the Okinawan *te* of the 1600s to practitioners born in the 1990s.
+An interactive cladogram of who taught whom in karate, kobudō and taekwondo: **1,284 people, 1,587 instructor-to-student links, 317 styles and 473 kata**, spanning nineteen generations from the Okinawan *te* of the 1600s to practitioners born in the 1990s.
 
 Every link carries its sources. Every disputed claim is marked as disputed.
 
@@ -16,19 +16,19 @@ Every link carries its sources. Every disputed claim is marked as disputed.
 
 Martial-arts lineage is usually recorded as folklore: a chart on a dojo wall, a paragraph in a style's own history, a claim of descent nobody has checked. This project treats it as a dataset. Each person is a node, each teacher-to-student relationship is an edge, and each edge is graded by the strength of the evidence behind it and linked to its source.
 
-The result is a single connected tree rather than a set of competing family myths. 1,097 of the 1,279 people sit in one lineage; the remaining 182 are honestly marked as unlinked rather than joined by guesswork.
+The result is a single connected tree rather than a set of competing family myths. 1,111 of the 1,284 people sit in one lineage; the remaining 173 are honestly marked as unlinked rather than joined by guesswork.
 
 ## The evidence
 
 | Confidence | Links | What it means |
 |---|---:|---|
-| High | 877 | First-hand testimony, an interview, or a primary record |
-| Medium | 528 | Documented in published histories or a style's own records |
-| Low | 150 | Oral tradition, contested, or inferred from indirect evidence |
+| High | 878 | First-hand testimony, an interview, or a primary record |
+| Medium | 541 | Documented in published histories or a style's own records |
+| Low | 168 | Oral tradition, contested, or inferred from indirect evidence |
 
 **285 links cite Mark Bishop's *Okinawan Karate: Teachers, Styles and Secret Techniques*.** Bishop interviewed the Okinawan masters directly in the 1970s and 80s, so his first-hand statements are treated as primary evidence and his relayed traditions are graded lower. The book itself is not redistributed here; it is cited by page.
 
-The dataset began as a Wikipedia and Wikidata scrape, but little of it now rests there. It has been through a multilingual research pass (Japanese, Korean and Chinese sources), a historian's audit of every edge and every person, a four-level style taxonomy, four books (Mark Bishop's *Okinawan Karate*; Shoshin Nagamine's *Tales of Okinawa's Great Masters*; Mark Cramer's *Karate and Kobudo Lineages*; Andrea Guarelli's *Okinawa Kobudo*), the online scholarship of Andreas Quast and Motobu Naoki, and the Okinawa Karate News hanshi 10th-dan register (2018), whose 146 masters are all reconciled into the dataset. Corrections that survived that process live in [`pipeline/overrides/`](pipeline/overrides/), 5,286 rows deep, each carrying a reason and its sources.
+The dataset began as a Wikipedia and Wikidata scrape, but little of it now rests there. It has been through a multilingual research pass (Japanese, Korean and Chinese sources), a historian's audit of every edge and every person, a four-level style taxonomy, eight books (Mark Bishop's *Okinawan Karate*; Shoshin Nagamine's *Tales of Okinawa's Great Masters* and *Essence of Okinawan Karate-Do*; Mark Cramer's *The History of Karate*; Andrea Guarelli's *Okinawan Kobudo*; Patrick McCarthy's *Koryu Uchinadi* volumes 1 and 2, the first of which is Taira Shinken's *Ryukyu Kobudo Taikan* in translation; and Seikichi Toguchi's *Okinawan Goju-Ryu*), the online scholarship of Andreas Quast and Motobu Naoki, and the Okinawa Karate News hanshi 10th-dan register (2018), whose 146 masters are all reconciled into the dataset. Corrections that survived that process live in [`pipeline/overrides/`](pipeline/overrides/), 5,340 rows deep, each carrying a reason and its sources.
 
 Some of what the audit threw out: Richard Kim's claimed teacher was a namesake; the Funakoshi to Plée link is false; the Motobu to Mitose link was inferred from a photograph; and a "Yoshio Nakamura" turned out to be a judoka born in 1970. Wrong-entity matches like these are the most common failure of scraped lineage data, and there were 24 of them.
 
@@ -91,9 +91,9 @@ The source CSVs are never edited. Every change is a row in an override file with
 
 Stated plainly, because a lineage dataset that claims certainty is lying:
 
-- **182 people are not linked** to the main tree. Where no reliable chain exists, none is invented.
+- **173 people are not linked** to the main tree. Where no reliable chain exists, none is invented.
 - **Eight dates were contested** between primary sources (Bishop; Quast's documentary work) and the Wikidata consensus. Each carries a recorded ruling with its rationale in `pipeline/overrides/year_fixes.csv` (two adopted, six kept), reversible like every other decision.
-- **634 people have no recorded birth year.** Where they can be placed from their teachers and students, the chart shows an estimated cohort, marked "c. 1890 (est.)".
+- **633 people have no recorded birth year.** Where they can be placed from their teachers and students, the chart shows an estimated cohort, marked "c. 1890 (est.)".
 - **The early lineages are oral tradition.** Kūsankū, Chatan Yara and their contemporaries are recorded as they are transmitted, at low confidence, not as established fact.
 - "Trained from" dates are birth + 25 estimates and are marked with an asterisk throughout.
 
@@ -103,7 +103,7 @@ If you know this material and something here is wrong, the fastest route is to o
 
 ## Licence and citation
 
-Code is MIT. The dataset (`nodes.csv`, `edges.csv`, `pipeline/overrides/`, `pipeline/out/`) is CC BY 4.0: use it, but cite it. The books cited (Bishop, Nagamine, Cramer, Guarelli) are copyright their authors and publishers and are not included in this repository; they are cited by page only.
+Code is MIT. The dataset (`nodes.csv`, `edges.csv`, `pipeline/overrides/`, `pipeline/out/`) is CC BY 4.0: use it, but cite it. The books cited (Bishop, Nagamine ×2, Cramer, Guarelli, McCarthy ×2, Toguchi) are copyright their authors and publishers and are not included in this repository; they are cited by page only.
 
 ```
 Guni, A. (2026). The Lineage of Karate and Taekwondo: a source-checked instructor-to-student

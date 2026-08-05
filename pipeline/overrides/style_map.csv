@@ -1,6 +1,6 @@
 raw,canonical_id,label,parent,family,founder,founded,note,status
 Aikikai,aikido,Aikido,,other,,,Aikikai is the mainline aikido organisation; collapsed to aikido. B kept a separate aikikai id,proposed
-Dan Aikikai,aikido,Aikido,,other,,,Scrape artefact rank phrase ('...Dan Aikikai'); collapsed to aikido,proposed
+Dan Aikikai,aikido,Aikido,,other,Ueshiba Morihei,,"[book:McCarthy, Koryu Uchinadi vol.2 p.53] founder from the book. Scrape artefact rank phrase ('...Dan Aikikai'); collapsed to aikido",proposed
 American Karate,american-karate,American Karate,,other,,,Generic,proposed
 American Kenpo,american-kenpo,American Kenpo,kara-ho-kempo,kenpo,Ed Parker,1954,"Ed Parker, via William Chow | [taxonomy:kenpo + international trees (kenpo family, American karate offshoots, Nanbu styles)/confirmed] https://en.wikipedia.org/wiki/American_Kenpo | https://en.wikipedia.org/wiki/Ed_Parker",proposed
 American Kenpo Karate,american-kenpo,American Kenpo,kara-ho-kempo,kenpo,,,,proposed
@@ -18,7 +18,7 @@ Chuan Fa,chuan-fa,Chuan Fa,,chinese,,,Chinese boxing; kenpo antecedent,proposed
 Quan Fa,chuan-fa,Chuan Fa,,chinese,,,,proposed
 Chuck Norris Syste,chun-kuk-do,Chun Kuk Do,moo-duk-kwan,korean,Chuck Norris,1990,"Chuck Norris; renamed Chuck Norris System; raw truncated | [taxonomy:kenpo + international trees (kenpo family, American karate offshoots, Nanbu styles)/confirmed] https://en.wikipedia.org/wiki/Chun_Kuk_Do | [taxonomy:Korean tree: taekwondo",proposed
 Chun Kuk Do was renamed to the Chuck Norris Syste,chun-kuk-do,Chun Kuk Do,tang-soo-do,korean,,,Scrape artefact sentence,proposed
-Dai Nippon Butokukai,dai-nippon-butokukai,Dai Nippon Butokukai,,other,,,"Governing organisation, not a style",proposed
+Dai Nippon Butokukai,dai-nippon-butokukai,Dai Nippon Butokukai,,other,,1895,"[book:McCarthy, Koryu Uchinadi vol.2 p.91] founded from the book. Governing organisation, not a style",proposed
 Daito-ryu,daito-ryu,Daito-Ryu Aiki-jujutsu,,other,,,,proposed
 Daito-ryu Aiki-jujutsu,daito-ryu,Daito-Ryu Aiki-jujutsu,,other,,,,proposed
 Enshin Karate,enshin,Enshin Karate,ashihara,kyokushin,Jōkō Ninomiya,1988,"Ninomiya Joko, ex-Ashihara | [taxonomy:Mainland Japanese + Korean trees (Shotokan, Wado, Chito, Shudokan group, Shindo Jinen-ryu, Kushin-ryu, Koei-kan, Kyokushin tree, Taekwondo kwans, ITF/Kukkiwon, Tang Soo Do/Soo Bahk Do)/confirmed] https",proposed
@@ -54,13 +54,13 @@ Itosu Ryu,itosu-ryu,Itosu-Ryu,shito-ryu,japanese,Ryusho Sakagami,1969,Sakagami l
 Japanese Karate,japanese-karate-generic,Japanese Karate,,japanese,,,Generic mainland Japanese karate label; -generic id so the viz can treat it as unspecified within the japanese family,proposed
 Jigen-ryu,jigen-ryu,Jigen-Ryu,,other,,,Satsuma kenjutsu; influenced Matsumura Sokon,proposed
 Kodokan,judo,Judo,,other,,,Kodokan Judo,proposed
-Kodokan Judo,judo,Judo,,other,,,,proposed
+Kodokan Judo,judo,Judo,,other,Kano Jigoro,,"[book:Taira Shinken, Ryukyu Kobudo Taikan, trans. McCarthy, Koryu Uchinadi vol.1 p.123] founder from the book. ",proposed
 Jundokan,jundokan,Jundokan,goju-ryu,naha-te,Eiichi Miyazato,1957,"Miyazato Eiichi | [taxonomy:Goju-ryu complete tree (Okinawan branches, Japanese Goju-kai and its offshoots)/confirmed] https://en.wikipedia.org/wiki/Eiichi_Miyazato",proposed
 Kara-Ho Kempo,kara-ho-kempo,Kara-Ho Kempo,kosho-shorei-ryu,kenpo,William Kwai Sun Chow,1944,"William Chow | [taxonomy:kenpo + international trees (kenpo family, American karate offshoots, Nanbu styles)/confirmed] https://en.wikipedia.org/wiki/William_Kwai_Sun_Chow",proposed
 Brazilian Association of Karate,karate-generic,Karate,,other,,,"National organisation, not a style",proposed
 Dan Karate,karate-generic,Karate,,other,,,Scrape artefact rank phrase,proposed
 Dan karate,karate-generic,Karate,,other,,,Scrape artefact rank phrase ('...Dan karate'),proposed
-Karate,karate-generic,Karate,,other,,,Generic label; exclude from colouring,proposed
+Karate,karate-generic,Karate,,other,,1936,"[book:Nagamine, Essence of Okinawan Karate-Do p.19] founded from the book. Generic label; exclude from colouring",proposed
 Katori Shinto-ryu,katori-shinto-ryu,Tenshin Shoden Katori Shinto-Ryu,,other,,,,proposed
 Tenshin Shoden Katori Shinto-ryu,katori-shinto-ryu,Tenshin Shoden Katori Shinto-Ryu,,other,,,Kenjutsu koryu,proposed
 Keijutsukai,keijutsukai-aikido,Keijutsukai Aikido,aikido,other,,,,proposed
@@ -119,7 +119,7 @@ Motobu Udundi,motobu-udundi,Motobu Udundi,te,tomari-te,"Motobu Chōhei (1st sōk
 Mugai-ryu,mugai-ryu,Mugai-Ryu,,other,,,Iai koryu,proposed
 Muso Jikiden Eishin-ryu,muso-jikiden-eishin-ryu,Muso Jikiden Eishin-Ryu,,other,,,Iaido koryu,proposed
 Muso Shinden Ryu,muso-shinden-ryu,Muso Shinden-Ryu,,other,,,Iaido,proposed
-Naha-te,naha-te,Naha-te,te,naha-te,,,,proposed
+Naha-te,naha-te,Naha-te,te,naha-te,Kanryo Higashionna,1926,"[book:Toguchi, Okinawan Goju-Ryu (Shorei-Kan) p.13] founder from the book. [book:McCarthy, Koryu Uchinadi vol.2 p.149] founded from the book. ",proposed
 Nanban Satto-ryu,nanban-satto-ryu,Nanban Satto-Ryu,,other,,,Kenpo/jujutsu koryu,proposed
 Nanbudo,nanbudo,Nanbudo,sankukai,japanese,Yoshinao Nanbu,1978,"Nanbu Yoshinao, ex-Shukokai (Tani Chojiro) via Sankukai. Curators disagreed: B parented to shito-ryu; shukokai is the immediate lineage | [taxonomy:shito-ryu/confirmed] https://www.worldnanbudo.com/yoshinao-nanbu/?lang=en | https://nanbudo.",proposed
 Negishi-ryu,negishi-ryu,Negishi-Ryu,,other,,,Shurikenjutsu,proposed
@@ -285,7 +285,7 @@ Shudokan Aikido,shudokan-aikido,Shudokan Aikido,aikido,other,,,"Aikido school, d
 Shukokai,shukokai,Shukokai,shito-ryu,japanese,Chojiro Tani,1946,Tani Chojiro | [taxonomy:shito-ryu/confirmed] https://en.wikipedia.org/wiki/Sh%C5%ABk%C5%8Dkai | https://shukokai-world.net/shito-ryu-shukokai-masters/,proposed
 Shuri-ryu,shuri-ryu,Shuri-Ryu,shuri-te,shuri-te,Robert Trias,1946,"Robert Trias, American style claiming Shuri-te roots | [taxonomy:Mainland Japanese + Korean trees (Shotokan, Wado, Chito, Shudokan group, Shindo Jinen-ryu, Kushin-ryu, Koei-kan, Kyokushin tree, Taekwondo kwans, ITF/Kukkiwon, Tang Soo Do/Soo",proposed
 Okinawan martial artsShuri-te,shuri-te,Shuri-te,te,shuri-te,,,Scrape artefact prefix,proposed
-Shuri-te,shuri-te,Shuri-te,te,shuri-te,,,,proposed
+Shuri-te,shuri-te,Shuri-te,te,shuri-te,,1926,"[book:McCarthy, Koryu Uchinadi vol.2 p.149] founded from the book. ",proposed
 Korean Taekwondo,taekwondo,Taekwondo,shotokan,korean,"Collective (kwan founders); name adopted 1955, championed by Choi Hong-hi",1955," | [taxonomy:Mainland Japanese + Korean trees (Shotokan, Wado, Chito, Shudokan group, Shindo Jinen-ryu, Kushin-ryu, Koei-kan, Kyokushin tree, Taekwondo kwans, ITF/Kukkiwon, Tang Soo Do/Soo Bahk Do)/confirmed] https://en.wikipedia.org/wiki/T",proposed
 Tae Kwon Do,taekwondo,Taekwondo,shotokan,korean,,,,proposed
 Taekwon-do,taekwondo,Taekwondo,shotokan,korean,,,Historically via Shotokan-trained kwan founders,proposed
@@ -302,7 +302,7 @@ Tenjin Shinyo ryu,tenjin-shinyo-ryu,Tenjin Shinyo-Ryu,,other,,,,proposed
 Tenjin Shinyo-ryu,tenjin-shinyo-ryu,Tenjin Shinyo-Ryu,,other,,,Jujutsu koryu,proposed
 Matsumora-type Tomari-te,tomari-te,Tomari-te,te,tomari-te,,,Matsumora Kosaku line,proposed
 Tomari-te,tomari-te,Tomari-te,te,tomari-te,,,,proposed
-tomarite,tomari-te,Tomari-te,te,tomari-te,,,,proposed
+tomarite,tomari-te,Tomari-te,te,tomari-te,,1926,"[book:McCarthy, Koryu Uchinadi vol.2 p.149] founded from the book. ",proposed
 Toon-Ryu,toon-ryu,Toon-Ryu,naha-te,naha-te,Kyoda Jūhatsu,1934,"Kyoda Juhatsu, from Higaonna Kanryo | [taxonomy:kobudo + uechi-ryu + remaining trees (ryuei-ryu, kojo-ryu, toon-ryu, motobu, kishimoto-di, bugeikan, genseiryu/taido)/plausible] https://en.wikipedia.org/wiki/T%C5%8Don-ry%C5%AB",proposed
 Toshin-ryu,toshin-ryu,Toshin-Ryu,,other,,,"Koryu, identification uncertain",proposed
 Toyama-ryu,toyama-ryu,Toyama-Ryu,,other,,,Military-derived swordsmanship; unrelated to Toyama Kanken's Shudokan,proposed

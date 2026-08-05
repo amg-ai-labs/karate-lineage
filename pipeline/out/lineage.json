@@ -2078,6 +2078,17 @@
    "target": "Q1908088"
   },
   {
+   "confidence": "medium",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.144"
+   ],
+   "id": "C00025->Q3772405",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "C00025",
+   "target": "Q3772405"
+  },
+  {
    "confidence": "high",
    "evidence": [
     "research:https://ryukyu-bugei.com/?p=3954"
@@ -3758,6 +3769,17 @@
    "is_primary": true,
    "source": "C00373",
    "target": "C00440"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.32"
+   ],
+   "id": "C00373->Q453505",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "C00373",
+   "target": "Q453505"
   },
   {
    "confidence": "high",
@@ -5523,6 +5545,17 @@
    "target": "Q352678"
   },
   {
+   "confidence": "low",
+   "evidence": [
+    "book:Taira Shinken, Ryukyu Kobudo Taikan, trans. McCarthy, Koryu Uchinadi vol.1 p.110"
+   ],
+   "id": "KN005->Q723832",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "KN005",
+   "target": "Q723832"
+  },
+  {
    "confidence": "medium",
    "evidence": [
     "research:https://www.nihonkobudokyoukai.org/martialarts/062/"
@@ -5532,6 +5565,127 @@
    "is_primary": true,
    "source": "KN006",
    "target": "J0113"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.32"
+   ],
+   "id": "KN008->Q453505",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "KN008",
+   "target": "Q453505"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.32"
+   ],
+   "id": "KN011->Q453505",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "KN011",
+   "target": "Q453505"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.22"
+   ],
+   "id": "KP001->A0012",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "KP001",
+   "target": "A0012"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.22"
+   ],
+   "id": "KP001->Q1908088",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "KP001",
+   "target": "Q1908088"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.22"
+   ],
+   "id": "KP001->Q221121",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "KP001",
+   "target": "Q221121"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.22"
+   ],
+   "id": "KP001->Q453505",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "KP001",
+   "target": "Q453505"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "book:Guarelli, Okinawan Kobudo chunk guarelli04, line 109"
+   ],
+   "id": "KP010->Q1908088",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "KP010",
+   "target": "Q1908088"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.22"
+   ],
+   "id": "KP024->A0012",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "KP024",
+   "target": "A0012"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.22"
+   ],
+   "id": "KP024->Q1908088",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "KP024",
+   "target": "Q1908088"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.22"
+   ],
+   "id": "KP024->Q221121",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "KP024",
+   "target": "Q221121"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.22"
+   ],
+   "id": "KP024->Q453505",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "KP024",
+   "target": "Q453505"
   },
   {
    "confidence": "high",
@@ -5685,17 +5839,6 @@
    "inferred_flip": false,
    "is_primary": false,
    "source": "N0223",
-   "target": "Q1908088"
-  },
-  {
-   "confidence": "medium",
-   "evidence": [
-    "book:Guarelli, Okinawan Kobudo chunk guarelli04, line 109"
-   ],
-   "id": "N0224->Q1908088",
-   "inferred_flip": false,
-   "is_primary": false,
-   "source": "N0224",
    "target": "Q1908088"
   },
   {
@@ -5962,6 +6105,17 @@
    "is_primary": true,
    "source": "Q1071733",
    "target": "Q3482635"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.144"
+   ],
+   "id": "Q1071733->Q3772405",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q1071733",
+   "target": "Q3772405"
   },
   {
    "confidence": "low",
@@ -9741,6 +9895,17 @@
    "target": "Q4351940"
   },
   {
+   "confidence": "medium",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.34"
+   ],
+   "id": "Q221121->Q453505",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q221121",
+   "target": "Q453505"
+  },
+  {
    "confidence": "high",
    "evidence": [
     "infobox:teacher",
@@ -10082,6 +10247,17 @@
    "is_primary": true,
    "source": "Q2473562",
    "target": "Q1728269"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.22"
+   ],
+   "id": "Q2473562->Q453505",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q2473562",
+   "target": "Q453505"
   },
   {
    "confidence": "high",
@@ -12446,6 +12622,17 @@
    "target": "A0227"
   },
   {
+   "confidence": "low",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.41"
+   ],
+   "id": "Q3772405->C00072",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q3772405",
+   "target": "C00072"
+  },
+  {
    "confidence": "high",
    "evidence": [
     "research:https://www.karatedohshudokanmx.com/or%C3%ADgenes/yoshiki-tokuyama (became a disciple of Toyama Kanken in 1963 until Toyama's death in 1966; note the roster row Q3772405 carries the romaji 'Kanken Oyadomari' but its kanji 遠山寛賢 is Toyama Kanken, the Shudokan founder)"
@@ -14076,6 +14263,17 @@
    "target": "A0152"
   },
   {
+   "confidence": "low",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.46"
+   ],
+   "id": "Q453505->B0011",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q453505",
+   "target": "B0011"
+  },
+  {
    "confidence": "high",
    "evidence": [
     "research:https://medium.com/motobu-ryu-blog/motobu-ch%C5%8Dy%C5%ABs-goj%C5%ABshiho-ec8332145ab1"
@@ -14176,6 +14374,94 @@
    "is_primary": true,
    "source": "Q453505",
    "target": "J0133"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.47"
+   ],
+   "id": "Q453505->N0022",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q453505",
+   "target": "N0022"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.47"
+   ],
+   "id": "Q453505->N0023",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q453505",
+   "target": "N0023"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.47"
+   ],
+   "id": "Q453505->N0024",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q453505",
+   "target": "N0024"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.47"
+   ],
+   "id": "Q453505->N0025",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q453505",
+   "target": "N0025"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.47"
+   ],
+   "id": "Q453505->N0026",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q453505",
+   "target": "N0026"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.47"
+   ],
+   "id": "Q453505->N0027",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q453505",
+   "target": "N0027"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.47"
+   ],
+   "id": "Q453505->N0028",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q453505",
+   "target": "N0028"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.47"
+   ],
+   "id": "Q453505->N0029",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q453505",
+   "target": "N0029"
   },
   {
    "confidence": "high",
@@ -14667,6 +14953,17 @@
    "is_primary": true,
    "source": "Q527422",
    "target": "Q15987180"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "book:Toguchi, Okinawan Goju-Ryu (Shorei-Kan) p.15"
+   ],
+   "id": "Q527422->Q221121",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q527422",
+   "target": "Q221121"
   },
   {
    "confidence": "medium",
@@ -16041,6 +16338,17 @@
    "target": "Q38585428"
   },
   {
+   "confidence": "medium",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.15"
+   ],
+   "id": "Q705617->Q453505",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q705617",
+   "target": "Q453505"
+  },
+  {
    "confidence": "high",
    "evidence": [
     "infobox:students",
@@ -16808,6 +17116,17 @@
   {
    "confidence": "medium",
    "evidence": [
+    "book:Taira Shinken, Ryukyu Kobudo Taikan, trans. McCarthy, Koryu Uchinadi vol.1 p.118"
+   ],
+   "id": "Q723832->C00586",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q723832",
+   "target": "C00586"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
     "research:https://www.d3b.jp/npcolumn/8912"
    ],
    "id": "Q723832->J0107",
@@ -16853,6 +17172,17 @@
    "is_primary": false,
    "source": "Q723832",
    "target": "Q27363"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "book:Taira Shinken, Ryukyu Kobudo Taikan, trans. McCarthy, Koryu Uchinadi vol.1 p.118"
+   ],
+   "id": "Q723832->Q3959901",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "Q723832",
+   "target": "Q3959901"
   },
   {
    "confidence": "high",
@@ -17847,6 +18177,17 @@
    "target": "C00026"
   },
   {
+   "confidence": "medium",
+   "evidence": [
+    "book:Taira Shinken, Ryukyu Kobudo Taikan, trans. McCarthy, Koryu Uchinadi vol.1 p.18"
+   ],
+   "id": "Q921673->N0018",
+   "inferred_flip": false,
+   "is_primary": true,
+   "source": "Q921673",
+   "target": "N0018"
+  },
+  {
    "confidence": "high",
    "evidence": [
     "infobox:students",
@@ -18040,6 +18381,17 @@
   {
    "confidence": "high",
    "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.107"
+   ],
+   "id": "W0002->Q7147128",
+   "inferred_flip": false,
+   "is_primary": false,
+   "source": "W0002",
+   "target": "Q7147128"
+  },
+  {
+   "confidence": "high",
+   "evidence": [
     "research:https://medium.com/@motobu715/self-introduction-9c4fb4e44e5a"
    ],
    "id": "W0012->A0220",
@@ -18106,14 +18458,14 @@
  ],
  "meta": {
   "counts": {
-   "connected": 1097,
-   "edges": 1555,
-   "nodes": 1279,
+   "connected": 1111,
+   "edges": 1587,
+   "nodes": 1284,
    "open_review_items": 0,
-   "orphans": 182
+   "orphans": 173
   },
   "pipeline_version": "1.0.0",
-  "source_hash": "e41827eb466ce1d1"
+  "source_hash": "66a1843203d700ed"
  },
  "nodes": [
   {
@@ -18130,7 +18482,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "A0001",
    "locality": null,
@@ -18196,7 +18548,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "A0003",
    "locality": null,
@@ -18339,7 +18691,7 @@
    "honours": [],
    "id": "A0007",
    "locality": null,
-   "n_descendants": 69,
+   "n_descendants": 473,
    "n_students": 1,
    "name": "Shu Shiwa (Zhou Zihe)",
    "name_alt": [
@@ -18814,7 +19166,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "A0022",
    "locality": null,
@@ -20652,7 +21004,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 9,
+   "generation": 10,
    "honours": [],
    "id": "A0078",
    "locality": null,
@@ -20686,7 +21038,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 11,
    "honours": [],
    "id": "A0079",
    "locality": null,
@@ -20720,7 +21072,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 11,
    "honours": [],
    "id": "A0080",
    "locality": null,
@@ -20754,7 +21106,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "A0081",
    "locality": null,
@@ -20788,7 +21140,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "A0082",
    "locality": null,
@@ -20822,7 +21174,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "A0083",
    "locality": null,
@@ -20856,7 +21208,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "A0084",
    "locality": null,
@@ -20890,7 +21242,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "A0085",
    "locality": null,
@@ -20924,7 +21276,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "A0086",
    "locality": null,
@@ -20957,7 +21309,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "A0087",
    "locality": null,
@@ -21089,7 +21441,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 11,
    "honours": [],
    "id": "A0091",
    "locality": null,
@@ -21121,7 +21473,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 11,
    "honours": [],
    "id": "A0092",
    "locality": null,
@@ -21947,7 +22299,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "A0117",
    "locality": null,
@@ -22016,7 +22368,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "A0119",
    "locality": null,
@@ -22082,7 +22434,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "A0121",
    "locality": null,
@@ -22115,7 +22467,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "A0122",
    "locality": null,
@@ -22148,7 +22500,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -22183,7 +22535,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "A0124",
    "locality": null,
@@ -22220,7 +22572,7 @@
    "honours": [],
    "id": "A0125",
    "locality": null,
-   "n_descendants": 197,
+   "n_descendants": 492,
    "n_students": 1,
    "name": "Umikana Chinen",
    "name_alt": [
@@ -22386,7 +22738,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "A0130",
    "locality": null,
@@ -22981,7 +23333,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "A0148",
    "locality": null,
@@ -23047,7 +23399,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "A0150",
    "locality": null,
@@ -23082,7 +23434,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 11,
    "honours": [],
    "id": "A0151",
    "locality": null,
@@ -23154,7 +23506,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "A0153",
    "locality": null,
@@ -23224,7 +23576,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 11,
    "honours": [],
    "id": "A0155",
    "locality": null,
@@ -23259,7 +23611,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "A0156",
    "locality": null,
@@ -23555,7 +23907,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "A0167",
    "locality": null,
@@ -23717,7 +24069,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "A0172",
    "locality": null,
@@ -23751,7 +24103,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "A0173",
    "locality": null,
@@ -23922,7 +24274,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 14,
+   "generation": 15,
    "honours": [],
    "id": "A0178",
    "locality": null,
@@ -23957,7 +24309,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "A0179",
    "locality": null,
@@ -23991,7 +24343,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "A0180",
    "locality": null,
@@ -24025,7 +24377,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "A0181",
    "locality": null,
@@ -24060,7 +24412,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "A0182",
    "locality": null,
@@ -24094,7 +24446,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "A0183",
    "locality": null,
@@ -24132,7 +24484,7 @@
    "honours": [],
    "id": "A0184",
    "locality": null,
-   "n_descendants": 694,
+   "n_descendants": 709,
    "n_students": 1,
    "name": "Fang Zhong",
    "name_alt": [],
@@ -24164,7 +24516,7 @@
    "honours": [],
    "id": "A0185",
    "locality": null,
-   "n_descendants": 693,
+   "n_descendants": 708,
    "n_students": 2,
    "name": "Fang Qiniang",
    "name_alt": [],
@@ -24196,7 +24548,7 @@
    "honours": [],
    "id": "A0186",
    "locality": null,
-   "n_descendants": 692,
+   "n_descendants": 707,
    "n_students": 1,
    "name": "Zeng Si",
    "name_alt": [],
@@ -24228,7 +24580,7 @@
    "honours": [],
    "id": "A0187",
    "locality": null,
-   "n_descendants": 691,
+   "n_descendants": 706,
    "n_students": 1,
    "name": "Zheng Li",
    "name_alt": [],
@@ -24260,7 +24612,7 @@
    "honours": [],
    "id": "A0188",
    "locality": null,
-   "n_descendants": 690,
+   "n_descendants": 705,
    "n_students": 1,
    "name": "Lin Shixian",
    "name_alt": [],
@@ -24292,7 +24644,7 @@
    "honours": [],
    "id": "A0189",
    "locality": null,
-   "n_descendants": 689,
+   "n_descendants": 704,
    "n_students": 1,
    "name": "Pan Yuba (Lin Dachong)",
    "name_alt": [
@@ -24326,7 +24678,7 @@
    "honours": [],
    "id": "A0190",
    "locality": null,
-   "n_descendants": 69,
+   "n_descendants": 473,
    "n_students": 1,
    "name": "Zheng Bugong",
    "name_alt": [],
@@ -24415,7 +24767,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 14,
+   "generation": 15,
    "honours": [],
    "id": "A0193",
    "locality": null,
@@ -24514,7 +24866,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 14,
+   "generation": 15,
    "honours": [],
    "id": "A0196",
    "locality": null,
@@ -25443,7 +25795,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 11,
    "honours": [],
    "id": "A0224",
    "locality": null,
@@ -25901,7 +26253,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -26175,8 +26527,8 @@
    "active_from": null,
    "active_from_estimated": false,
    "birth_year": 1904,
-   "connected": false,
-   "death_year": null,
+   "connected": true,
+   "death_year": 1993,
    "flags": {
     "added_by_research": true,
     "legendary": false,
@@ -26185,7 +26537,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": null,
+   "generation": 10,
    "honours": [],
    "id": "B0011",
    "locality": null,
@@ -26221,7 +26573,7 @@
    "honours": [],
    "id": "B0012",
    "locality": null,
-   "n_descendants": 670,
+   "n_descendants": 787,
    "n_students": 1,
    "name": "Shiroma (Gusukuma) of Tomari",
    "name_alt": [],
@@ -26783,7 +27135,7 @@
    "honours": [],
    "id": "B0030",
    "locality": null,
-   "n_descendants": 199,
+   "n_descendants": 494,
    "n_students": 1,
    "name": "Soeishi",
    "name_alt": [],
@@ -26910,7 +27262,7 @@
    "honours": [],
    "id": "C00003",
    "locality": null,
-   "n_descendants": 34,
+   "n_descendants": 35,
    "n_students": 4,
    "name": "Anbun Tokuda",
    "name_alt": [],
@@ -26938,7 +27290,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "C00005",
    "locality": null,
@@ -27402,8 +27754,8 @@
    "honours": [],
    "id": "C00025",
    "locality": null,
-   "n_descendants": 142,
-   "n_students": 6,
+   "n_descendants": 158,
+   "n_students": 7,
    "name": "Chojo Oshiro",
    "name_alt": [],
    "name_ascii": "Chojo Oshiro",
@@ -27606,7 +27958,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -27778,7 +28130,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "C00040",
    "locality": null,
@@ -28014,7 +28366,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 14,
    "honours": [],
    "id": "C00057",
    "locality": null,
@@ -28171,7 +28523,7 @@
    "active_from": null,
    "active_from_estimated": false,
    "birth_year": 1895,
-   "connected": false,
+   "connected": true,
    "death_year": 1978,
    "flags": {
     "added_by_research": false,
@@ -28181,7 +28533,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": null,
+   "generation": 11,
    "honours": [],
    "id": "C00072",
    "locality": null,
@@ -28521,7 +28873,7 @@
    "honours": [],
    "id": "C00084",
    "locality": null,
-   "n_descendants": 605,
+   "n_descendants": 615,
    "n_students": 6,
    "name": "Gokenki",
    "name_alt": [],
@@ -28718,7 +29070,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "C00093",
    "locality": null,
@@ -29200,7 +29552,7 @@
    "honours": [],
    "id": "C00108",
    "locality": null,
-   "n_descendants": 77,
+   "n_descendants": 481,
    "n_students": 5,
    "name": "Kaho Kojo",
    "name_alt": [],
@@ -29726,7 +30078,7 @@
    "honours": [],
    "id": "C00141",
    "locality": null,
-   "n_descendants": 78,
+   "n_descendants": 482,
    "n_students": 1,
    "name": "Isei Kojo",
    "name_alt": [],
@@ -29791,7 +30143,7 @@
    "honours": [],
    "id": "C00145",
    "locality": null,
-   "n_descendants": 881,
+   "n_descendants": 892,
    "n_students": 6,
    "name": "Iwah",
    "name_alt": [],
@@ -29927,7 +30279,7 @@
    "honours": [],
    "id": "C00150",
    "locality": null,
-   "n_descendants": 73,
+   "n_descendants": 84,
    "n_students": 1,
    "name": "Jinsei Kamiya",
    "name_alt": [],
@@ -30151,7 +30503,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "C00165",
    "locality": null,
@@ -30696,7 +31048,7 @@
    "honours": [],
    "id": "C00195",
    "locality": null,
-   "n_descendants": 209,
+   "n_descendants": 210,
    "n_students": 2,
    "name": "Maeda Pechin",
    "name_alt": [],
@@ -30730,7 +31082,7 @@
    "honours": [],
    "id": "C00196",
    "locality": null,
-   "n_descendants": 69,
+   "n_descendants": 473,
    "n_students": 1,
    "name": "Makabe UDUN",
    "name_alt": [],
@@ -30795,7 +31147,7 @@
    "honours": [],
    "id": "C00198",
    "locality": null,
-   "n_descendants": 69,
+   "n_descendants": 473,
    "n_students": 1,
    "name": "Kantoku Uechi",
    "name_alt": [],
@@ -30825,7 +31177,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "C00200",
    "locality": null,
@@ -30859,7 +31211,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -30932,7 +31284,7 @@
    "honours": [],
    "id": "C00206",
    "locality": null,
-   "n_descendants": 440,
+   "n_descendants": 441,
    "n_students": 2,
    "name": "Karyu Uku",
    "name_alt": [],
@@ -31091,7 +31443,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "C00211",
    "locality": null,
@@ -31190,7 +31542,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "C00214",
    "locality": null,
@@ -32047,7 +32399,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "C00245",
    "locality": null,
@@ -32081,7 +32433,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 9,
+   "generation": 10,
    "honours": [],
    "id": "C00246",
    "locality": null,
@@ -32252,7 +32604,7 @@
    "honours": [],
    "id": "C00251",
    "locality": null,
-   "n_descendants": 440,
+   "n_descendants": 441,
    "n_students": 2,
    "name": "Kishin Teruya",
    "name_alt": [
@@ -32753,7 +33105,7 @@
    "honours": [],
    "id": "C00268",
    "locality": null,
-   "n_descendants": 756,
+   "n_descendants": 771,
    "n_students": 1,
    "name": "Kojo PECHIN",
    "name_alt": [],
@@ -32786,7 +33138,7 @@
    "honours": [],
    "id": "C00269",
    "locality": null,
-   "n_descendants": 757,
+   "n_descendants": 772,
    "n_students": 1,
    "name": "Kojo UEKATA",
    "name_alt": [],
@@ -33223,7 +33575,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -33722,7 +34074,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -33857,7 +34209,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 11,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -34331,7 +34683,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "C00342",
    "locality": null,
@@ -34738,7 +35090,7 @@
    "honours": [],
    "id": "C00354",
    "locality": null,
-   "n_descendants": 74,
+   "n_descendants": 415,
    "n_students": 1,
    "name": "Tawata Pechin",
    "name_alt": [],
@@ -35264,8 +35616,8 @@
    "honours": [],
    "id": "C00373",
    "locality": null,
-   "n_descendants": 73,
-   "n_students": 2,
+   "n_descendants": 414,
+   "n_students": 3,
    "name": "Moden Yabiku",
    "name_alt": [],
    "name_ascii": "Moden Yabiku",
@@ -35625,7 +35977,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 11,
    "honours": [],
    "id": "C00409",
    "locality": null,
@@ -35950,7 +36302,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "C00440",
    "locality": null,
@@ -36116,7 +36468,7 @@
    "honours": [],
    "id": "C00449",
    "locality": null,
-   "n_descendants": 196,
+   "n_descendants": 491,
    "n_students": 12,
    "name": "Sanda Chinen",
    "name_alt": [],
@@ -36151,7 +36503,7 @@
    "honours": [],
    "id": "C00450",
    "locality": null,
-   "n_descendants": 96,
+   "n_descendants": 437,
    "n_students": 3,
    "name": "Sanda Kanagusuku",
    "name_alt": [
@@ -36446,7 +36798,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -36741,7 +37093,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "C00492",
    "locality": null,
@@ -37230,7 +37582,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "C00513",
    "locality": null,
@@ -37495,7 +37847,7 @@
    "honours": [],
    "id": "C00522",
    "locality": null,
-   "n_descendants": 755,
+   "n_descendants": 770,
    "n_students": 2,
    "name": "Shoi Sai",
    "name_alt": [],
@@ -37685,7 +38037,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -37788,7 +38140,7 @@
    "honours": [],
    "id": "C00564",
    "locality": null,
-   "n_descendants": 689,
+   "n_descendants": 704,
    "n_students": 3,
    "name": "Taitei Kojo",
    "name_alt": [],
@@ -37849,7 +38201,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -38179,7 +38531,7 @@
    "honours": [],
    "id": "C00604",
    "locality": null,
-   "n_descendants": 369,
+   "n_descendants": 370,
    "n_students": 2,
    "name": "Tokumine Pechin",
    "name_alt": [],
@@ -38673,7 +39025,7 @@
    "honours": [],
    "id": "C00639",
    "locality": null,
-   "n_descendants": 846,
+   "n_descendants": 857,
    "n_students": 7,
    "name": "Wai Shin Zan",
    "name_alt": [
@@ -38741,7 +39093,7 @@
    "honours": [],
    "id": "C00646",
    "locality": null,
-   "n_descendants": 715,
+   "n_descendants": 826,
    "n_students": 1,
    "name": "Yashichiro Ijuin",
    "name_alt": [],
@@ -38929,7 +39281,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "C00653",
    "locality": null,
@@ -39532,7 +39884,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -40610,7 +40962,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 8,
+   "generation": 12,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -40683,7 +41035,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -40792,7 +41144,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -40899,7 +41251,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -41119,7 +41471,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -42973,7 +43325,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "J0104",
    "locality": "Tokyo",
@@ -42988,38 +43340,6 @@
    "qid": null,
    "styles": [
     "kenryo-ryu"
-   ],
-   "wikipedia_url": null
-  },
-  {
-   "active_from": null,
-   "active_from_estimated": false,
-   "birth_year": null,
-   "connected": false,
-   "death_year": null,
-   "flags": {
-    "added_by_research": true,
-    "legendary": false,
-    "merged_from": [],
-    "needs_review": true,
-    "wrong_entity": false,
-    "years_nulled": []
-   },
-   "generation": null,
-   "honours": [],
-   "id": "J0105",
-   "locality": "Shuri, Okinawa",
-   "n_descendants": 0,
-   "n_students": 0,
-   "name": "Ryoko Soeishi",
-   "name_alt": [],
-   "name_ascii": "Ryoko Soeishi",
-   "name_native": "添石良行",
-   "name_romaji": null,
-   "primary_style": "ryukyu-kobudo",
-   "qid": null,
-   "styles": [
-    "ryukyu-kobudo"
    ],
    "wikipedia_url": null
   },
@@ -43069,7 +43389,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "J0107",
    "locality": "Okinawa (Kubagawa, Naha)",
@@ -43265,7 +43585,7 @@
    "honours": [],
    "id": "J0113",
    "locality": "Ryukyu Kingdom, Okinawa",
-   "n_descendants": 197,
+   "n_descendants": 492,
    "n_students": 1,
    "name": "Aburaya Yamagusuku",
    "name_alt": [],
@@ -43293,7 +43613,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "J0114",
    "locality": "Ryugasaki, Ibaraki, Japan",
@@ -43359,7 +43679,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "J0116",
    "locality": "Nagasaki Prefecture; Tokyo",
@@ -43392,7 +43712,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "J0117",
    "locality": "Tokyo",
@@ -43424,7 +43744,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 11,
    "honours": [],
    "id": "J0118",
    "locality": "Tokyo",
@@ -43456,7 +43776,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "J0119",
    "locality": null,
@@ -43488,7 +43808,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 11,
    "honours": [],
    "id": "J0120",
    "locality": "Nikkō, Tochigi Prefecture; Tokyo",
@@ -43520,7 +43840,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "J0121",
    "locality": "Hachiōji, Tokyo",
@@ -43552,7 +43872,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "J0122",
    "locality": "Hachiōji, Tokyo",
@@ -43840,7 +44160,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 9,
+   "generation": 10,
    "honours": [],
    "id": "J0131",
    "locality": null,
@@ -43872,7 +44192,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 9,
+   "generation": 10,
    "honours": [],
    "id": "J0132",
    "locality": null,
@@ -43904,7 +44224,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 9,
+   "generation": 10,
    "honours": [],
    "id": "J0133",
    "locality": null,
@@ -44512,7 +44832,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "J0152",
    "locality": "Korea; Vietnam, Malaysia, Singapore, Indonesia, Philippines,",
@@ -44545,7 +44865,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "J0153",
    "locality": "Daegu, Korea; Atlanta, Georgia, USA",
@@ -44577,7 +44897,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "J0154",
    "locality": "Seoul",
@@ -44609,7 +44929,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "J0155",
    "locality": "Seoul; Brooklyn, New York",
@@ -44641,7 +44961,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "J0156",
    "locality": "Seoul",
@@ -44674,7 +44994,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "J0157",
    "locality": "Korea; Vietnam",
@@ -44708,7 +45028,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "J0158",
    "locality": "Korea",
@@ -44742,7 +45062,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "J0159",
    "locality": "Korea",
@@ -44776,7 +45096,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "J0160",
    "locality": "Korea",
@@ -44810,7 +45130,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "J0161",
    "locality": "Seoul",
@@ -44842,7 +45162,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "J0162",
    "locality": "Seoul; Kansas City, Missouri",
@@ -44874,7 +45194,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "J0163",
    "locality": "Seoul",
@@ -45004,7 +45324,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "J0167",
    "locality": "Seoul",
@@ -45036,7 +45356,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "J0168",
    "locality": "Seoul",
@@ -45069,7 +45389,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "J0169",
    "locality": "Seoul",
@@ -45102,7 +45422,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "J0170",
    "locality": "Seoul",
@@ -45135,7 +45455,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 14,
+   "generation": 15,
    "honours": [],
    "id": "J0171",
    "locality": "Seoul",
@@ -45167,7 +45487,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "J0172",
    "locality": "Seoul (Yongsan)",
@@ -45263,7 +45583,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "J0175",
    "locality": "Jeju Island, Korea; Canada; UK",
@@ -45329,7 +45649,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "J0177",
    "locality": "Korea; Germany",
@@ -45714,7 +46034,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "J0189",
    "locality": "Shizuoka, Japan; later France",
@@ -45865,9 +46185,9 @@
   {
    "active_from": null,
    "active_from_estimated": false,
-   "birth_year": null,
-   "connected": false,
-   "death_year": null,
+   "birth_year": 1862,
+   "connected": true,
+   "death_year": 1921,
    "flags": {
     "added_by_research": true,
     "legendary": false,
@@ -45876,12 +46196,12 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": null,
+   "generation": 0,
    "honours": [],
    "id": "KN005",
    "locality": null,
-   "n_descendants": 0,
-   "n_students": 0,
+   "n_descendants": 84,
+   "n_students": 1,
    "name": "Kanegawa Gimu",
    "name_alt": [],
    "name_ascii": "Kanegawa Gimu",
@@ -45897,9 +46217,9 @@
   {
    "active_from": null,
    "active_from_estimated": false,
-   "birth_year": null,
+   "birth_year": 1780,
    "connected": true,
-   "death_year": null,
+   "death_year": 1841,
    "flags": {
     "added_by_research": true,
     "legendary": false,
@@ -45912,7 +46232,7 @@
    "honours": [],
    "id": "KN006",
    "locality": null,
-   "n_descendants": 198,
+   "n_descendants": 493,
    "n_students": 1,
    "name": "Chinen Shikiyanaka",
    "name_alt": [],
@@ -45961,9 +46281,9 @@
   {
    "active_from": null,
    "active_from_estimated": false,
-   "birth_year": null,
-   "connected": false,
-   "death_year": null,
+   "birth_year": 1846,
+   "connected": true,
+   "death_year": 1920,
    "flags": {
     "added_by_research": true,
     "legendary": false,
@@ -45972,12 +46292,12 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": null,
+   "generation": 0,
    "honours": [],
    "id": "KN008",
    "locality": null,
-   "n_descendants": 0,
-   "n_students": 0,
+   "n_descendants": 414,
+   "n_students": 1,
    "name": "Sueyoshi",
    "name_alt": [],
    "name_ascii": "Sueyoshi",
@@ -46057,9 +46377,9 @@
   {
    "active_from": null,
    "active_from_estimated": false,
-   "birth_year": null,
-   "connected": false,
-   "death_year": null,
+   "birth_year": 1851,
+   "connected": true,
+   "death_year": 1920,
    "flags": {
     "added_by_research": true,
     "legendary": false,
@@ -46068,12 +46388,12 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": null,
+   "generation": 0,
    "honours": [],
    "id": "KN011",
    "locality": null,
-   "n_descendants": 0,
-   "n_students": 0,
+   "n_descendants": 414,
+   "n_students": 1,
    "name": "Tawada Shinboku",
    "name_alt": [],
    "name_ascii": "Tawada Shinboku",
@@ -46089,9 +46409,9 @@
   {
    "active_from": null,
    "active_from_estimated": false,
-   "birth_year": null,
-   "connected": false,
-   "death_year": null,
+   "birth_year": 1887,
+   "connected": true,
+   "death_year": 1937,
    "flags": {
     "added_by_research": true,
     "legendary": false,
@@ -46100,12 +46420,12 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": null,
+   "generation": 0,
    "honours": [],
    "id": "KP001",
    "locality": null,
-   "n_descendants": 0,
-   "n_students": 0,
+   "n_descendants": 615,
+   "n_students": 4,
    "name": "Tang Daiji",
    "name_alt": [],
    "name_ascii": "Tang Daiji",
@@ -46360,24 +46680,29 @@
    "active_from": null,
    "active_from_estimated": false,
    "birth_year": 1852,
-   "connected": false,
+   "connected": true,
    "death_year": 1925,
    "flags": {
     "added_by_research": true,
     "legendary": false,
-    "merged_from": [],
+    "merged_from": [
+     "J0105",
+     "N0224"
+    ],
     "needs_review": true,
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": null,
+   "generation": 0,
    "honours": [],
    "id": "KP010",
-   "locality": null,
-   "n_descendants": 0,
-   "n_students": 0,
+   "locality": "Shuri, Okinawa",
+   "n_descendants": 38,
+   "n_students": 1,
    "name": "Ryuko Shiishi",
-   "name_alt": [],
+   "name_alt": [
+    "Ryoko Soeishi"
+   ],
    "name_ascii": "Ryuko Shiishi",
    "name_native": "添石良行",
    "name_romaji": null,
@@ -46780,7 +47105,7 @@
    "active_from": null,
    "active_from_estimated": false,
    "birth_year": 1886,
-   "connected": false,
+   "connected": true,
    "death_year": 1940,
    "flags": {
     "added_by_research": true,
@@ -46790,12 +47115,12 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": null,
+   "generation": 0,
    "honours": [],
    "id": "KP024",
    "locality": null,
-   "n_descendants": 0,
-   "n_students": 0,
+   "n_descendants": 615,
+   "n_students": 4,
    "name": "Wu Xiangui",
    "name_alt": [],
    "name_ascii": "Wu Xiangui",
@@ -46899,6 +47224,186 @@
   {
    "active_from": null,
    "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 4,
+   "honours": [],
+   "id": "N0018",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Ginowan Denuchi",
+   "name_alt": [],
+   "name_ascii": "Ginowan Denuchi",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1906,
+   "connected": true,
+   "death_year": 1977,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 10,
+   "honours": [],
+   "id": "N0022",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Sawayama Masaru",
+   "name_alt": [],
+   "name_ascii": "Sawayama Masaru",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 10,
+   "honours": [],
+   "id": "N0023",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Seiki Hiroshi",
+   "name_alt": [],
+   "name_ascii": "Seiki Hiroshi",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 10,
+   "honours": [],
+   "id": "N0024",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Fujitani Masatoshi",
+   "name_alt": [],
+   "name_ascii": "Fujitani Masatoshi",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 10,
+   "honours": [],
+   "id": "N0025",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Fuji Kozo",
+   "name_alt": [],
+   "name_ascii": "Fuji Kozo",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 10,
+   "honours": [],
+   "id": "N0026",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Abe Iwao",
+   "name_alt": [],
+   "name_ascii": "Abe Iwao",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
    "birth_year": 1557,
    "connected": true,
    "death_year": 1644,
@@ -46910,7 +47415,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 0,
+   "generation": 10,
    "honours": [],
    "id": "N0027",
    "locality": null,
@@ -46940,7 +47445,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 0,
+   "generation": 10,
    "honours": [],
    "id": "N0028",
    "locality": null,
@@ -46970,7 +47475,37 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 8,
+   "generation": 10,
+   "honours": [],
+   "id": "N0029",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Kimura Kempe",
+   "name_alt": [],
+   "name_ascii": "Kimura Kempe",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 12,
    "honours": [],
    "id": "N0030",
    "locality": null,
@@ -47180,7 +47715,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 1,
+   "generation": 11,
    "honours": [],
    "id": "N0061",
    "locality": null,
@@ -47540,7 +48075,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "N0117",
    "locality": null,
@@ -47570,7 +48105,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "N0119",
    "locality": null,
@@ -47600,7 +48135,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "N0120",
    "locality": null,
@@ -47630,7 +48165,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "N0121",
    "locality": null,
@@ -47660,7 +48195,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 8,
+   "generation": 12,
    "honours": [],
    "id": "N0122",
    "locality": null,
@@ -47934,7 +48469,7 @@
    "honours": [],
    "id": "N0155",
    "locality": null,
-   "n_descendants": 106,
+   "n_descendants": 107,
    "n_students": 2,
    "name": "Ansei Misato",
    "name_alt": [],
@@ -48020,7 +48555,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 11,
    "honours": [],
    "id": "N0167",
    "locality": null,
@@ -48050,7 +48585,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 14,
    "honours": [],
    "id": "N0169",
    "locality": null,
@@ -48264,7 +48799,7 @@
    "honours": [],
    "id": "N0202",
    "locality": null,
-   "n_descendants": 310,
+   "n_descendants": 321,
    "n_students": 1,
    "name": "Gifuku Funakoshi",
    "name_alt": [],
@@ -48384,7 +48919,7 @@
    "honours": [],
    "id": "N0222",
    "locality": null,
-   "n_descendants": 406,
+   "n_descendants": 610,
    "n_students": 1,
    "name": "Miao Xing",
    "name_alt": [],
@@ -48427,36 +48962,6 @@
    "wikipedia_url": null
   },
   {
-   "active_from": null,
-   "active_from_estimated": false,
-   "birth_year": null,
-   "connected": true,
-   "death_year": null,
-   "flags": {
-    "added_by_research": true,
-    "legendary": false,
-    "merged_from": [],
-    "needs_review": true,
-    "wrong_entity": false,
-    "years_nulled": []
-   },
-   "generation": 0,
-   "honours": [],
-   "id": "N0224",
-   "locality": null,
-   "n_descendants": 38,
-   "n_students": 1,
-   "name": "Ryuko Shiishi",
-   "name_alt": [],
-   "name_ascii": "Ryuko Shiishi",
-   "name_native": null,
-   "name_romaji": null,
-   "primary_style": null,
-   "qid": null,
-   "styles": [],
-   "wikipedia_url": null
-  },
-  {
    "active_from": 1957,
    "active_from_estimated": true,
    "birth_year": 1932,
@@ -48470,7 +48975,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "Q1046410",
    "locality": null,
@@ -48622,8 +49127,8 @@
    "honours": [],
    "id": "Q1071733",
    "locality": "Shuri",
-   "n_descendants": 248,
-   "n_students": 21,
+   "n_descendants": 249,
+   "n_students": 22,
    "name": "Choshin Chibana",
    "name_alt": [],
    "name_ascii": "Choshin Chibana",
@@ -48691,7 +49196,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 14,
+   "generation": 15,
    "honours": [],
    "id": "Q110022261",
    "locality": null,
@@ -49433,7 +49938,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "Q1246030",
    "locality": null,
@@ -49469,7 +49974,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q124766",
    "locality": null,
@@ -49546,7 +50051,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "Q1335481",
    "locality": null,
@@ -49589,7 +50094,7 @@
    "honours": [],
    "id": "Q1336547",
    "locality": "Shuri",
-   "n_descendants": 734,
+   "n_descendants": 846,
    "n_students": 1,
    "name": "Takahara Peichin",
    "name_alt": [
@@ -49697,7 +50202,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q1360025",
    "locality": null,
@@ -49771,7 +50276,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q1473967",
    "locality": null,
@@ -49884,7 +50389,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "Q15845014",
    "locality": null,
@@ -49919,7 +50424,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "Q15845016",
    "locality": null,
@@ -49954,7 +50459,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "Q15845020",
    "locality": null,
@@ -49989,7 +50494,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "Q15845021",
    "locality": null,
@@ -50024,7 +50529,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "Q15845023",
    "locality": null,
@@ -50059,7 +50564,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "Q15845024",
    "locality": null,
@@ -50094,7 +50599,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q15845026",
    "locality": null,
@@ -50126,7 +50631,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q15845027",
    "locality": null,
@@ -50158,7 +50663,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "Q15845028",
    "locality": null,
@@ -50193,7 +50698,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q15845030",
    "locality": null,
@@ -50228,7 +50733,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q15845032",
    "locality": null,
@@ -50263,7 +50768,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q15845033",
    "locality": null,
@@ -50298,7 +50803,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q15845034",
    "locality": null,
@@ -50333,7 +50838,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q15845035",
    "locality": null,
@@ -50368,7 +50873,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q15845038",
    "locality": null,
@@ -50403,7 +50908,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q15845041",
    "locality": null,
@@ -50439,7 +50944,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q15845047",
    "locality": null,
@@ -50474,7 +50979,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q15845053",
    "locality": null,
@@ -50631,7 +51136,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "Q15987280",
    "locality": null,
@@ -50665,7 +51170,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q15987564",
    "locality": null,
@@ -50737,7 +51242,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q15987736",
    "locality": null,
@@ -50771,7 +51276,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q15987804",
    "locality": null,
@@ -50804,7 +51309,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q15987806",
    "locality": null,
@@ -50920,7 +51425,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 11,
    "honours": [],
    "id": "Q16089695",
    "locality": "Shuri",
@@ -51101,7 +51606,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "Q1678211",
    "locality": null,
@@ -51181,7 +51686,7 @@
    "honours": [],
    "id": "Q16907056",
    "locality": null,
-   "n_descendants": 688,
+   "n_descendants": 703,
    "n_students": 1,
    "name": "Xie Zongxiang",
    "name_alt": [],
@@ -51320,7 +51825,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q1737900",
    "locality": null,
@@ -51658,7 +52163,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 7,
+   "generation": 11,
    "honours": [],
    "id": "Q1908088",
    "locality": "Naha",
@@ -51695,7 +52200,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 12,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -51781,7 +52286,7 @@
    "honours": [],
    "id": "Q1929108",
    "locality": null,
-   "n_descendants": 737,
+   "n_descendants": 849,
    "n_students": 3,
    "name": "Kusanku",
    "name_alt": [],
@@ -51812,7 +52317,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 14,
+   "generation": 15,
    "honours": [],
    "id": "Q19325706",
    "locality": null,
@@ -51846,7 +52351,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q1937515",
    "locality": null,
@@ -51881,7 +52386,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 11,
    "honours": [],
    "id": "Q1937662",
    "locality": null,
@@ -51960,7 +52465,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 13,
    "honours": [],
    "id": "Q2025214",
    "locality": null,
@@ -51997,7 +52502,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 15,
+   "generation": 16,
    "honours": [],
    "id": "Q2079584",
    "locality": null,
@@ -52145,8 +52650,8 @@
    "honours": [],
    "id": "Q221121",
    "locality": "Shuri",
-   "n_descendants": 405,
-   "n_students": 27,
+   "n_descendants": 609,
+   "n_students": 28,
    "name": "Chojun Miyagi",
    "name_alt": [],
    "name_ascii": "Chojun Miyagi",
@@ -52289,7 +52794,7 @@
    "honours": [],
    "id": "Q2393877",
    "locality": "Shuri",
-   "n_descendants": 207,
+   "n_descendants": 208,
    "n_students": 13,
    "name": "Chotoku Kyan",
    "name_alt": [],
@@ -52394,8 +52899,8 @@
    "honours": [],
    "id": "Q2473562",
    "locality": "Naha",
-   "n_descendants": 68,
-   "n_students": 6,
+   "n_descendants": 472,
+   "n_students": 7,
    "name": "Kanbun Uechi",
    "name_alt": [],
    "name_ascii": "Kanbun Uechi",
@@ -52434,7 +52939,7 @@
    "honours": [],
    "id": "Q251784",
    "locality": null,
-   "n_descendants": 689,
+   "n_descendants": 804,
    "n_students": 3,
    "name": "Annan",
    "name_alt": [
@@ -52546,7 +53051,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q2619054",
    "locality": null,
@@ -52726,7 +53231,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 14,
+   "generation": 15,
    "honours": [],
    "id": "Q2673",
    "locality": null,
@@ -52960,7 +53465,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 14,
+   "generation": 15,
    "honours": [],
    "id": "Q29043185",
    "locality": null,
@@ -52993,7 +53498,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q29043333",
    "locality": null,
@@ -53030,7 +53535,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q2911640",
    "locality": null,
@@ -53066,7 +53571,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q2915906",
    "locality": null,
@@ -53177,7 +53682,7 @@
    "honours": [],
    "id": "Q3028499",
    "locality": "Tomari",
-   "n_descendants": 435,
+   "n_descendants": 436,
    "n_students": 11,
    "name": "Kosaku Matsumora",
    "name_alt": [],
@@ -53244,7 +53749,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 14,
+   "generation": 15,
    "honours": [],
    "id": "Q3035513",
    "locality": null,
@@ -53741,7 +54246,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q3317210",
    "locality": "Shuri",
@@ -53811,7 +54316,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "Q348074",
    "locality": null,
@@ -53851,7 +54356,7 @@
    "honours": [],
    "id": "Q3482287",
    "locality": "Shuri",
-   "n_descendants": 175,
+   "n_descendants": 176,
    "n_students": 8,
    "name": "Shinpan Gusukuma",
    "name_alt": [],
@@ -53925,7 +54430,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 15,
+   "generation": 16,
    "honours": [],
    "id": "Q3518915",
    "locality": null,
@@ -53959,7 +54464,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q3519204",
    "locality": null,
@@ -54060,7 +54565,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 11,
    "honours": [],
    "id": "Q356335",
    "locality": null,
@@ -54138,8 +54643,8 @@
    "honours": [],
    "id": "Q3772405",
    "locality": "Shuri",
-   "n_descendants": 23,
-   "n_students": 10,
+   "n_descendants": 24,
+   "n_students": 11,
    "name": "Kanken Toyama",
    "name_alt": [
     "Kanken Oyadomari",
@@ -54181,7 +54686,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q381799",
    "locality": null,
@@ -54215,7 +54720,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 14,
+   "generation": 15,
    "honours": [],
    "id": "Q3840266",
    "locality": null,
@@ -54249,7 +54754,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "Q384558",
    "locality": null,
@@ -54661,11 +55166,11 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 9,
+   "generation": 10,
    "honours": [],
    "id": "Q41105",
    "locality": "Shuri",
-   "n_descendants": 309,
+   "n_descendants": 320,
    "n_students": 35,
    "name": "Gichin Funakoshi",
    "name_alt": [],
@@ -54810,7 +55315,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "Q4353136",
    "locality": null,
@@ -54913,12 +55418,12 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 8,
+   "generation": 9,
    "honours": [],
    "id": "Q453505",
    "locality": "Shuri",
-   "n_descendants": 368,
-   "n_students": 21,
+   "n_descendants": 413,
+   "n_students": 30,
    "name": "Kenwa Mabuni",
    "name_alt": [],
    "name_ascii": "Kenwa Mabuni",
@@ -55056,7 +55561,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "Q470591",
    "locality": null,
@@ -55128,7 +55633,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 14,
+   "generation": 15,
    "honours": [],
    "id": "Q4731883",
    "locality": null,
@@ -55322,7 +55827,7 @@
    "honours": [],
    "id": "Q4807592",
    "locality": null,
-   "n_descendants": 722,
+   "n_descendants": 833,
    "n_students": 3,
    "name": "Ason",
    "name_alt": [],
@@ -55624,7 +56129,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 14,
+   "generation": 15,
    "honours": [],
    "id": "Q5228927",
    "locality": null,
@@ -55662,8 +56167,8 @@
    "honours": [],
    "id": "Q527422",
    "locality": "Shuri",
-   "n_descendants": 669,
-   "n_students": 20,
+   "n_descendants": 786,
+   "n_students": 21,
    "name": "Anko Itosu",
    "name_alt": [],
    "name_ascii": "Anko Itosu",
@@ -55693,7 +56198,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 14,
+   "generation": 15,
    "honours": [],
    "id": "Q527659",
    "locality": "Shuri",
@@ -55947,7 +56452,7 @@
    "honours": [],
    "id": "Q542989",
    "locality": "Shuri",
-   "n_descendants": 735,
+   "n_descendants": 847,
    "n_students": 1,
    "name": "Chatan Yara",
    "name_alt": [],
@@ -55979,7 +56484,7 @@
      "death_year=1949<birth"
     ]
    },
-   "generation": 14,
+   "generation": 15,
    "honours": [],
    "id": "Q5485463",
    "locality": null,
@@ -56013,7 +56518,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "Q5490474",
    "locality": null,
@@ -56088,7 +56593,7 @@
    "honours": [],
    "id": "Q557301",
    "locality": "Shuri",
-   "n_descendants": 105,
+   "n_descendants": 106,
    "n_students": 4,
    "name": "Ankichi Arakaki",
    "name_alt": [],
@@ -56341,7 +56846,7 @@
      "death_year=1939<birth"
     ]
    },
-   "generation": 14,
+   "generation": 15,
    "honours": [],
    "id": "Q5668035",
    "locality": null,
@@ -56446,7 +56951,7 @@
    "honours": [],
    "id": "Q584466",
    "locality": "Shuri",
-   "n_descendants": 743,
+   "n_descendants": 758,
    "n_students": 5,
    "name": "Seisho Arakaki",
    "name_alt": [
@@ -56460,7 +56965,6 @@
    "styles": [
     "te",
     "okinawan-kobudo",
-    "naha-te",
     "karate-generic"
    ],
    "wikipedia_url": "https://en.wikipedia.org/wiki/Arakaki_Seish%C5%8D"
@@ -56514,7 +57018,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 11,
    "honours": [],
    "id": "Q6078918",
    "locality": null,
@@ -56764,7 +57268,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 15,
+   "generation": 16,
    "honours": [],
    "id": "Q6266828",
    "locality": null,
@@ -56796,7 +57300,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 11,
    "honours": [],
    "id": "Q628761",
    "locality": "Shuri",
@@ -56908,7 +57412,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "Q6381580",
    "locality": null,
@@ -57089,7 +57593,7 @@
    "honours": [],
    "id": "Q6426547",
    "locality": "Tomari",
-   "n_descendants": 212,
+   "n_descendants": 213,
    "n_students": 4,
    "name": "Kokan Oyadomari",
    "name_alt": [],
@@ -57265,7 +57769,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q665589",
    "locality": null,
@@ -57368,7 +57872,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 9,
+   "generation": 10,
    "honours": [],
    "id": "Q6753487",
    "locality": null,
@@ -57858,7 +58362,7 @@
    "honours": [],
    "id": "Q699236",
    "locality": "Shuri",
-   "n_descendants": 687,
+   "n_descendants": 702,
    "n_students": 11,
    "name": "Kanryo Higaonna",
    "name_alt": [
@@ -57867,10 +58371,9 @@
    "name_ascii": "Higaonna Kanryo",
    "name_native": "東恩納寛量",
    "name_romaji": "Kanryō Higaonna",
-   "primary_style": "naha-te",
+   "primary_style": "shuri-te",
    "qid": "Q699236",
    "styles": [
-    "naha-te",
     "shuri-te",
     "chinese-martial-arts",
     "fujian-white-crane",
@@ -57965,8 +58468,8 @@
    "honours": [],
    "id": "Q705617",
    "locality": "Shuri",
-   "n_descendants": 190,
-   "n_students": 9,
+   "n_descendants": 556,
+   "n_students": 10,
    "name": "Chomo Hanashiro",
    "name_alt": [],
    "name_ascii": "Chomo Hanashiro",
@@ -58112,7 +58615,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "Q709520",
    "locality": null,
@@ -58149,7 +58652,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 15,
+   "generation": 16,
    "honours": [],
    "id": "Q7143413",
    "locality": null,
@@ -58217,7 +58720,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 14,
+   "generation": 15,
    "honours": [],
    "id": "Q7151260",
    "locality": null,
@@ -58253,7 +58756,7 @@
    "honours": [],
    "id": "Q715769",
    "locality": "Shuri",
-   "n_descendants": 714,
+   "n_descendants": 825,
    "n_students": 17,
    "name": "Sokon Matsumura",
    "name_alt": [
@@ -58287,7 +58790,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "Q716133",
    "locality": "Shuri",
@@ -58468,7 +58971,7 @@
    "honours": [],
    "id": "Q722028",
    "locality": "Shuri",
-   "n_descendants": 102,
+   "n_descendants": 103,
    "n_students": 7,
    "name": "Kentsu Yabu",
    "name_alt": [],
@@ -58502,14 +59005,14 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 10,
+   "generation": 11,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
    "id": "Q723832",
    "locality": "Naha",
-   "n_descendants": 72,
-   "n_students": 13,
+   "n_descendants": 83,
+   "n_students": 15,
    "name": "Shinken Taira",
    "name_alt": [
     "Taira Shinken"
@@ -58544,7 +59047,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 14,
+   "generation": 15,
    "honours": [],
    "id": "Q72716",
    "locality": null,
@@ -58659,7 +59162,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 14,
    "honours": [],
    "id": "Q7328577",
    "locality": null,
@@ -58767,7 +59270,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q7366021",
    "locality": null,
@@ -58803,7 +59306,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 15,
+   "generation": 16,
    "honours": [],
    "id": "Q7373041",
    "locality": null,
@@ -58876,7 +59379,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 14,
+   "generation": 15,
    "honours": [],
    "id": "Q7397534",
    "locality": null,
@@ -59216,7 +59719,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 15,
+   "generation": 16,
    "honours": [],
    "id": "Q7535789",
    "locality": null,
@@ -59359,7 +59862,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "Q7678008",
    "locality": null,
@@ -59429,7 +59932,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 14,
+   "generation": 15,
    "honours": [],
    "id": "Q7800728",
    "locality": null,
@@ -59724,7 +60227,7 @@
    "honours": [],
    "id": "Q8031976",
    "locality": null,
-   "n_descendants": 736,
+   "n_descendants": 848,
    "n_students": 1,
    "name": "Wong Chung-Yoh",
    "name_alt": [],
@@ -59818,7 +60321,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q8062088",
    "locality": null,
@@ -59891,7 +60394,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 14,
    "honours": [],
    "id": "Q896129",
    "locality": null,
@@ -59927,7 +60430,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "Q9096235",
    "locality": null,
@@ -60079,8 +60582,8 @@
    "honours": [],
    "id": "Q921673",
    "locality": "Shuri",
-   "n_descendants": 733,
-   "n_students": 4,
+   "n_descendants": 845,
+   "n_students": 5,
    "name": "Kanga Sakukawa",
    "name_alt": [
     "Sakugawa Kangi"
@@ -60114,7 +60617,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 12,
+   "generation": 13,
    "honours": [],
    "id": "Q922328",
    "locality": null,
@@ -60220,7 +60723,7 @@
    "honours": [],
    "id": "Q954330",
    "locality": "Naha",
-   "n_descendants": 851,
+   "n_descendants": 862,
    "n_students": 8,
    "name": "Ryu Ryu Ko",
    "name_alt": [],
@@ -60231,7 +60734,6 @@
    "qid": "Q954330",
    "styles": [
     "fujian-white-crane",
-    "naha-te",
     "karate-generic",
     "okinawan-kobudo",
     "kung-fu"
@@ -60362,7 +60864,7 @@
    "honours": [],
    "id": "Q99517310",
    "locality": "Naha",
-   "n_descendants": 209,
+   "n_descendants": 210,
    "n_students": 2,
    "name": "Chofu Kyan",
    "name_alt": [],
@@ -60427,8 +60929,8 @@
    "honours": [],
    "id": "W0002",
    "locality": null,
-   "n_descendants": 8,
-   "n_students": 2,
+   "n_descendants": 9,
+   "n_students": 3,
    "name": "Hiroshi Kinjo",
    "name_alt": [
     "Kinjo Hiroshi"
@@ -60617,7 +61119,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 11,
+   "generation": 12,
    "honours": [],
    "id": "W0008",
    "locality": null,
@@ -60831,7 +61333,7 @@
    "honours": [],
    "id": "W0015",
    "locality": null,
-   "n_descendants": 670,
+   "n_descendants": 787,
    "n_students": 1,
    "name": "Bushi Nagahama",
    "name_alt": [],
@@ -61142,7 +61644,7 @@
    "honours": [],
    "id": "W0025",
    "locality": null,
-   "n_descendants": 11,
+   "n_descendants": 12,
    "n_students": 2,
    "name": "Chotoku Maeshiro",
    "name_alt": [
