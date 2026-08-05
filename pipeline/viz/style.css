@@ -87,8 +87,16 @@ body { overflow: hidden; }
 .island-cap { fill: var(--muted); font-size: 11.5px; font-style: italic; }
 
 .edge { fill: none; }   /* stroke set per-edge (family tint) as an attribute */
-.edge.secondary { stroke-dasharray: 3 4; }
+/* Two different things were both being drawn as "a broken line", and where an
+   edge was both, whichever rule came last silently won. They are now distinct
+   patterns, and the combination is stated rather than left to source order.
+   Dash-dot means the study is documented but did not carry the style: Kenko
+   Nakaima really did learn Itosu-line karate from Oshiro Chojo and
+   Matsumura-line from Yabu Kentsu, and kept teaching his grandfather's
+   Ryuei-ryu regardless. */
+.edge.secondary { stroke-dasharray: 7 2.5 1.5 2.5; }
 .edge.conf-low { stroke-dasharray: 1.5 5; }
+.edge.secondary.conf-low { stroke-dasharray: 5 2.5 1 2.5; stroke-opacity: .16; }
 /* selection: the lineage's own edges at full strength, direct ones in accent,
    everything off the lineage ghosted to a whisper */
 .edge.onpath { stroke-opacity: .8; stroke-width: 1.8; }
@@ -325,6 +333,7 @@ body { overflow: hidden; }
 #keypanel .d-close { top: 7px; right: 8px; }
 .prim-toggle { display: flex; gap: 6px; align-items: center; font-size: 12px;
   color: var(--ink-2); margin: 4px 0 2px; cursor: pointer; }
+.basis-guess { color: var(--warn); }
 #detail h2 { font-size: 17px; line-height: 1.25; padding-right: 30px; }
 #detail .native-big { font-size: 15px; color: var(--ink-2); margin-top: 1px; }
 #detail .romaji { font-size: 12.5px; color: var(--muted); font-style: italic; }

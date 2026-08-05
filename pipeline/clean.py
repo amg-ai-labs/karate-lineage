@@ -577,17 +577,75 @@ def main():
         parents[e["target"]].append(e["source"])
     connected = set(children) | set(parents)
 
-    # primary teacher: highest confidence, then earliest-born teacher, then id
+    # Which teacher carried the style. A solid line on the chart asserts exactly
+    # that, so it should not be decided by "whichever teacher we are surest of,
+    # tie-broken by age", which is what the old rule did. Order of authority:
+    #
+    #   1. a researched ruling (primary=yes/no on the edge row)
+    #   2. the teacher whose own style sits on the student's style chain, when
+    #      exactly one teacher qualifies. A student teaching Ryuei-ryu took it
+    #      from the Ryuei-ryu teacher, whatever the other links say.
+    #   3. failing both, the old heuristic, so a student with no style recorded
+    #      still gets one solid line rather than none.
+    #
+    # The rest stay as documented study that did not carry the style: kept,
+    # drawn dash-dot, and excluded from a style-bearing lineage walk.
+    def style_chain(sid):
+        out, cur, hops = [], sid, 0
+        while cur and cur in canon and hops < 10:
+            out.append(cur)
+            cur = canon[cur].get("parent")
+            hops += 1
+        return out
+
     edge_by_target = defaultdict(list)
     for e in edges:
         edge_by_target[e["target"]].append(e)
+    prim_stats = {"ruled": 0, "by_style": 0, "heuristic": 0, "single": 0}
     for t, incoming in edge_by_target.items():
         incoming.sort(key=lambda e: (-CONF_RANK[e["confidence"]],
                                      live.get(e["source"], {}).get("birth_year") or 9999, e["source"]))
-        for i, e in enumerate(incoming):
-            e["is_primary"] = i == 0
+        if len(incoming) == 1:
+            incoming[0]["is_primary"] = True
+            incoming[0]["primary_basis"] = "sole"
+            prim_stats["single"] += 1
+            continue
+        ruled = [e for e in incoming if str(e.get("primary", "")).lower() in ("yes", "true", "1")]
+        chosen, basis = None, "assumed"
+        if len(ruled) == 1:
+            chosen, basis = ruled[0], "ruled"
+            prim_stats["ruled"] += 1
+        else:
+            st = (live.get(t) or {}).get("primary_style")
+            # A placeholder style is not a style. Norisato Nakaima and Wai Shin Zan
+            # both carry "karate-generic", and matching on that displaced Ryu Ryu Ko
+            # as the source of Ryuei-ryu, which is the one thing every account agrees on.
+            if st and st not in GENERIC:
+                anc = set(style_chain(st)) - GENERIC
+                def tstyle(e):
+                    v = (live.get(e["source"]) or {}).get("primary_style") or ""
+                    return "" if v in GENERIC else v
+                match = [e for e in incoming
+                         if (tstyle(e) and tstyle(e) in anc)
+                         or (tstyle(e) and st in set(style_chain(tstyle(e))))]
+                if len(match) == 1:
+                    chosen, basis = match[0], "style"
+                    prim_stats["by_style"] += 1
+        if chosen is None:
+            chosen = incoming[0]
+            prim_stats["heuristic"] += 1
+        for e in incoming:
+            e["is_primary"] = e is chosen
+            # Say how the call was made. Where it is "assumed", the chart is
+            # showing a best guess, and a reader is entitled to know that before
+            # citing it. These are the rows worth researching next.
+            e["primary_basis"] = basis if e is chosen else ("secondary_" + basis)
     for e in edges:
         e.setdefault("is_primary", True)
+    print(f"Style-bearing teacher: {prim_stats['single']} had only one teacher; of those with "
+          f"several, {prim_stats['ruled']} settled by a researched ruling, "
+          f"{prim_stats['by_style']} by matching the student's own style, "
+          f"{prim_stats['heuristic']} left to confidence and age.")
 
     # generation = longest path from any root, via iterative topological DP
     indeg = {n: 0 for n in connected}

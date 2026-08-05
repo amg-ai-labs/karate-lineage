@@ -483,7 +483,7 @@ function showEdgeTip(e, ev) {
   const d1 = document.createElement("div"); d1.className = "tname";
   d1.textContent = `${s.name} taught ${t.name}`;
   const d2 = document.createElement("div"); d2.className = "tsub";
-  d2.textContent = `${e.confidence} confidence${e.primary ? "" : " · secondary lineage"}`;
+  d2.textContent = `${e.confidence} confidence${e.primary ? "" : " · studied under, style not carried"}`;
   tip.append(d1, d2);
   // raw source URLs are curator-only, and belong in the panel (click), not a hover
   if (curator() && (e.evidence || []).length) {
@@ -1074,6 +1074,17 @@ for (const k of KATA) {
   }
 }
 function kataFor(name) { return kataByPerson.get(name) || []; }
+// Say on what basis a line was called style-bearing, so a guess reads as a guess
+const PBASIS = {
+  sole: "their only recorded teacher",
+  ruled: "settled by research",
+  style: "the teacher whose style they went on to teach",
+  assumed: "assumed: no single teacher matches their style, so this is the best-supported guess",
+  secondary_sole: "", secondary_ruled: "supplementary study, settled by research",
+  secondary_style: "supplementary study: the style came from another teacher",
+  secondary_assumed: "supplementary study, though which teacher carried the style is not settled",
+};
+function primaryBasis(e) { return PBASIS[e.pbasis] || ""; }
 // the people a kata names, resolved to nodes actually on the chart
 const nodeByName = new Map();
 for (const n of DATA.nodes) {
@@ -1556,12 +1567,17 @@ function renderKey() {
     d.appendChild(s); keyPanel.appendChild(d);
   };
   row(line({}), "Solid.",
-      "The style-bearing line: the teacher whose system the student went on to carry.");
-  row(line({ dash: "3 4" }), "Dashed.",
-      "Secondary study. Real and documented, but it did not carry the style. "
-      + "Kenkō Nakaima studied under Yabu Kentsū, yet kept his grandfather's Ryūei-ryū unaltered.");
+      "The style-bearing line: the teacher whose system the student went on to carry. "
+      + "Where a student had several teachers and none matches the style they taught, this is "
+      + "the best-supported reading rather than a settled one, and the link says so when opened.");
+  row(line({ dash: "7 2.5 1.5 2.5" }), "Dash-dot.",
+      "Studied under, but did not carry the style. Kenkō Nakaima learned Itosu-line karate "
+      + "from Ōshiro Chōjo and Matsumura-line from Yabu Kentsū, and went on teaching his "
+      + "grandfather's Ryūei-ryū unaltered. Both facts are true and both are drawn.");
   row(line({ dash: "1.5 5" }), "Dotted.",
       "Low confidence: oral tradition, contested, or inferred from indirect evidence.");
+  row(line({ dash: "5 2.5 1 2.5", op: 0.5 }), "Faint dash-dot.",
+      "Both: supplementary study, and thinly evidenced at that.");
   row(line({ stroke: "var(--accent)", w: 2 }), "Blue.",
       "A direct teacher or student of the person you have selected.");
   row(line({ op: 0.28 }), "Faint.",
@@ -2532,8 +2548,15 @@ function openEdgeDetail(e) {
   panel.appendChild(h);
   const sub = document.createElement("div"); sub.className = "romaji";
   sub.textContent = "teacher → student · " + e.confidence + " confidence"
-    + (e.primary ? "" : " · secondary line");
+    + (e.primary ? "" : " · studied under, style not carried");
   panel.appendChild(sub);
+  const basis = primaryBasis(e);
+  if (basis) {
+    const bd = document.createElement("div"); bd.className = "edit-note";
+    bd.textContent = (e.primary ? "Drawn as the style-bearing line: " : "") + basis + ".";
+    if (String(e.pbasis || "").indexOf("assumed") >= 0) bd.classList.add("basis-guess");
+    panel.appendChild(bd);
+  }
 
   const nav = document.createElement("div"); nav.style.margin = "10px 0";
   for (const [p, lbl] of [[s, "teacher"], [t, "student"]]) {

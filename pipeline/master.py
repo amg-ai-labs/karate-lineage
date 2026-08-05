@@ -172,6 +172,7 @@ for e in sorted(lin["edges"], key=lambda e: (N[e["source"]]["name"], N[e["target
         "teacher_id": e["source"], "teacher": N[e["source"]]["name"],
         "student_id": e["target"], "student": N[e["target"]]["name"],
         "confidence": e["confidence"], "primary": "yes" if e["is_primary"] else "",
+        "primary_basis": e.get("primary_basis", ""),
         "evidence": " | ".join(e.get("evidence") or []),
     })
 

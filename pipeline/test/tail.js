@@ -248,7 +248,7 @@ try {
   (function () {
     renderKey();
     var t = document.getElementById("keypanel").textContent;
-    for (const w of ["Solid", "Dashed", "Dotted", "Blue", "Red", "Hue"])
+    for (const w of ["Solid", "Dash-dot", "Dotted", "Blue", "Red", "Hue"])
       if (t.indexOf(w) < 0) throw new Error("key does not explain: " + w);
     document.getElementById("keypanel").hidden = true;
     console.log("key: explains solid, dashed, dotted, blue, faint, red, hue and rings");

@@ -509,6 +509,7 @@ def main():
         "nodes": [],
         "edges": [{"source": e["source"], "target": e["target"],
                    "primary": e["is_primary"], "confidence": e["confidence"],
+                   "pbasis": e.get("primary_basis", ""),
                    "evidence": e["evidence"]} for e in edges],
     }
     for nid, n in sorted(nodes.items()):
