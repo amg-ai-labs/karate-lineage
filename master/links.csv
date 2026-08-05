@@ -24,12 +24,12 @@ Q557301,Ankichi Arakaki,Q3772405,Kanken Toyama,low,,secondary_assumed,research:h
 Q557301,Ankichi Arakaki,Q2149940,Richard Kim,medium,,secondary_assumed,infobox:students
 Q557301,Ankichi Arakaki,Q1963468,Shoshin Nagamine,high,,secondary_assumed,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802
 Q557301,Ankichi Arakaki,C00350,Taro Shimabuku,high,,secondary_assumed,research:http://web.archive.org/web/20240224182119/https://ryukyu-bugei.com/?p=3104
-Q721201,Anko Azato,Q1147708,Choki Motobu,low,,secondary_style,research:https://medium.com/@motobu715/motobu-ch%C5%8Dki-is-tomari-te-1c70d1dc4e2c
+Q721201,Anko Azato,Q1147708,Choki Motobu,low,,secondary_assumed,research:https://medium.com/@motobu715/motobu-ch%C5%8Dki-is-tomari-te-1c70d1dc4e2c
 Q721201,Anko Azato,Q41105,Gichin Funakoshi,high,yes,assumed,infobox:students | infobox:teacher | text_pattern:taught | wikidata:P1066 | wikidata:P802
 Q527422,Anko Itosu,C00003,Anbun Tokuda,high,yes,assumed,research:https://note.com/motoburyu/n/n29dffb7866f6 | research:https://www.d3b.jp/npcolumn/7625
 Q527422,Anko Itosu,C00025,Chojo Oshiro,medium,,secondary_assumed,book:Bishop p.109
 Q527422,Anko Itosu,Q221121,Chojun Miyagi,medium,,secondary_assumed,"book:Toguchi, Okinawan Goju-Ryu (Shorei-Kan) p.15"
-Q527422,Anko Itosu,Q1147708,Choki Motobu,high,,secondary_style,infobox:students | infobox:teacher | research:https://en.wikipedia.org/wiki/Motobu_Ch%C5%8Dki | research:https://en.wikipedia.org/wiki/Motobu_Ch%C5%8Dy%C5%AB
+Q527422,Anko Itosu,Q1147708,Choki Motobu,high,,secondary_assumed,infobox:students | infobox:teacher | research:https://en.wikipedia.org/wiki/Motobu_Ch%C5%8Dki | research:https://en.wikipedia.org/wiki/Motobu_Ch%C5%8Dy%C5%AB
 Q527422,Anko Itosu,Q705617,Chomo Hanashiro,high,yes,assumed,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802
 Q527422,Anko Itosu,Q1071733,Choshin Chibana,high,yes,style,infobox:students | infobox:teacher | text_pattern:learned_from | wikidata:P1066 | wikidata:P802
 Q527422,Anko Itosu,Q2393877,Chotoku Kyan,medium,,secondary_assumed,"book:Nagamine, Tales of Okinawa's Great Masters PDF PAGE 72"
@@ -231,7 +231,7 @@ W0025,Chotoku Maeshiro,W0002,Hiroshi Kinjo,high,,secondary_style,research:https:
 W0025,Chotoku Maeshiro,C00201,Masahiro Nakamoto,high,,secondary_style,research:https://ryukyu-bugei.com/?p=3954
 A0053,Chotoku Omine,A0061,Joseph Carbonara,medium,yes,assumed,research:https://ominekarate.com/?p=240
 Q706389,Choyu Motobu,Q221121,Chojun Miyagi,medium,,secondary_assumed,https://www.motobu-ryu.org/english/motobu-udundi/motobu-choyu/
-Q706389,Choyu Motobu,Q1147708,Choki Motobu,medium,,secondary_style,book:Bishop p.88
+Q706389,Choyu Motobu,Q1147708,Choki Motobu,medium,,secondary_assumed,book:Bishop p.88
 Q706389,Choyu Motobu,A0219,Chomo Motobu,medium,,secondary_style,research:https://ja.wikipedia.org/wiki/本部朝勇
 Q706389,Choyu Motobu,C00037,Chomo Motobu,low,yes,assumed,research:https://www.motobu-ryu.org/本部御殿手/本部御殿手宗家/本部朝勇/ | research:https://ja.wikipedia.org/wiki/本部御殿
 Q706389,Choyu Motobu,Q2393877,Chotoku Kyan,low,,secondary_assumed,https://www.motobu-ryu.org/english/motobu-udundi/motobu-choyu/
@@ -900,7 +900,7 @@ Q1620643,Kori Hisataka,Q1584213,Masayuki Hisataka,high,yes,style,wikidata:P1066
 Q1620643,Kori Hisataka,A0215,Shigeru Ishino,medium,yes,sole,research:https://en.wikipedia.org/wiki/K%C5%8Dri_Hisataka | research:https://en.wikipedia.org/wiki/Shunji_Watanabe
 Q1620643,Kori Hisataka,Q6519507,Shunji Watanabe,high,yes,sole,infobox:students | wikidata:P802
 Q3028499,Kosaku Matsumora,W0018,Bokuhitsu Nakazato,high,yes,sole,research:https://ryukyu-bugei.com/?p=7351
-Q3028499,Kosaku Matsumora,Q1147708,Choki Motobu,high,yes,style,infobox:students | infobox:teacher | research:https://en.wikipedia.org/wiki/Motobu_Ch%C5%8Dki | research:https://en.wikipedia.org/wiki/Motobu_Ch%C5%8Dy%C5%AB | wikidata:P1066 | wikidata:P802
+Q3028499,Kosaku Matsumora,Q1147708,Choki Motobu,high,,secondary_assumed,infobox:students | infobox:teacher | research:https://en.wikipedia.org/wiki/Motobu_Ch%C5%8Dki | research:https://en.wikipedia.org/wiki/Motobu_Ch%C5%8Dy%C5%AB | wikidata:P1066 | wikidata:P802
 Q3028499,Kosaku Matsumora,Q2393877,Chotoku Kyan,high,,secondary_assumed,infobox:students | infobox:teacher | text_pattern:taught
 Q3028499,Kosaku Matsumora,Q706389,Choyu Motobu,medium,,secondary_assumed,infobox:teacher | research:https://en.wikipedia.org/wiki/Motobu_Ch%C5%8Dy%C5%AB | text_pattern:learned_from
 Q3028499,Kosaku Matsumora,N0128,Giki Yamazato,medium,yes,sole,book:Nagamine/Cramer/Guarelli PDF PAGE 63
@@ -1193,7 +1193,7 @@ C00444,Saburo Uehara,C00348,Takenobu Uehara,low,,secondary_assumed,research:http
 C00444,Saburo Uehara,J0039,Yoshitsune Senaga,medium,,secondary_assumed,research:http://karate-k.ru/yoshitsune-senaga-1
 J0126,Sadao Ayase,J0125,Tetsuo Narikawa,high,yes,sole,research:https://ja.wikipedia.org/wiki/玄制流
 C00263,Saikyo Kojo,C00107,Kafu Kojo,high,,secondary_assumed,research:https://simonechierchini.com/2020/04/29/kojo-ryu-karate-lo-stile-fantasma-di-okinawa/ | research:https://koshinkan.org/478-2/ | research:https://ja.wikipedia.org/wiki/%E6%B9%96%E5%9F%8E%E6%B5%81
-A0030,Sakuma Pechin,Q1147708,Choki Motobu,medium,,secondary_style,research:https://en.wikipedia.org/wiki/Motobu_Ch%C5%8Dki
+A0030,Sakuma Pechin,Q1147708,Choki Motobu,medium,,secondary_assumed,research:https://en.wikipedia.org/wiki/Motobu_Ch%C5%8Dki
 C00449,Sanda Chinen,C00025,Chojo Oshiro,high,yes,assumed,research:https://www.koryu-uchinadi.com/yamane-ryu/
 C00449,Sanda Chinen,J0095,Chotoku Zukeran,high,yes,sole,research:https://www.okinawatimes.co.jp/articles/-/844605
 C00449,Sanda Chinen,J0112,Jinsaburo Higa,high,yes,sole,research:https://kobudo-shinbukan.jp/
@@ -1591,7 +1591,7 @@ Q715769,Sokon Matsumura,Q721201,Anko Azato,high,yes,sole,infobox:students | info
 Q715769,Sokon Matsumura,Q527422,Anko Itosu,high,yes,style,infobox:students | infobox:teacher | research:https://en.wikipedia.org/wiki/Matsumura_S%C5%8Dkon | research:https://www.kanazawa.ch/karate-do/grosse-meiste/sokon-matsumura.html | text_context:teacher_keyword | wikidata:P1066 | wikidata:P802
 Q715769,Sokon Matsumura,Q99517310,Chofu Kyan,high,yes,sole,wikidata:P802
 Q715769,Sokon Matsumura,C00657,Chogi Yoshimura,high,yes,assumed,research:https://ja.wikipedia.org/wiki/%E6%9D%BE%E6%9D%91%E5%AE%97%E6%A3%8D | research:https://ja.wikipedia.org/wiki/%E7%BE%A9%E6%9D%91%E6%9C%9D%E7%BE%A9
-Q715769,Sokon Matsumura,Q1147708,Choki Motobu,high,,secondary_style,infobox:students | infobox:teacher | research:https://en.wikipedia.org/wiki/Motobu_Ch%C5%8Dki | wikidata:P1066 | wikidata:P802
+Q715769,Sokon Matsumura,Q1147708,Choki Motobu,high,yes,assumed,infobox:students | infobox:teacher | research:https://en.wikipedia.org/wiki/Motobu_Ch%C5%8Dki | wikidata:P1066 | wikidata:P802
 Q715769,Sokon Matsumura,Q705617,Chomo Hanashiro,medium,,secondary_assumed,infobox:students | infobox:teacher
 Q715769,Sokon Matsumura,Q2393877,Chotoku Kyan,high,yes,assumed,infobox:students | infobox:teacher | wikidata:P1066 | wikidata:P802
 Q715769,Sokon Matsumura,Q706389,Choyu Motobu,high,yes,assumed,infobox:students | infobox:teacher | research:https://en.wikipedia.org/wiki/Motobu_Ch%C5%8Dy%C5%AB | wikidata:P1066 | wikidata:P802
@@ -1713,7 +1713,7 @@ Q3519204,Tetsuji Murakami,Q1335481,Henry Plee,medium,yes,assumed,infobox:student
 Q3519204,Tetsuji Murakami,R0050,Jürgen Seydel,medium,yes,ruled,https://en.wikipedia.org/wiki/Jürgen_Seydel | https://www.karate-hessen.de/seite/de/landesverband/286/-/Geschichte_Karate_in_Deutschland.html
 Q3519204,Tetsuji Murakami,Q19325706,Vernon Bell,medium,,secondary_assumed,infobox:students
 R0111,Tim Rodgers,R0112,Angel Lemus,high,yes,sole,https://zkkrkarate.com/angel-lemus-sensei-bio/ | https://zentokukai.com/about-us/
-C00604,Tokumine Pechin,Q1147708,Choki Motobu,medium,,secondary_style,book:Bishop p.86
+C00604,Tokumine Pechin,Q1147708,Choki Motobu,medium,,secondary_assumed,book:Bishop p.86
 C00604,Tokumine Pechin,Q2393877,Chotoku Kyan,high,,secondary_assumed,research:https://en.wikipedia.org/wiki/Ch%C5%8Dtoku_Kyan
 C00605,Tokusaburo Matsuda,Q2473562,Kanbun Uechi,medium,,secondary_ruled,https://en.wikipedia.org/wiki/Kanbun_Uechi | https://fightingarts.com/uechi-ryu-karate-a-short-history-part-1/
 C00606,Tomei Tsuha,C00471,Seijin Inamine,high,,secondary_assumed,book:Bishop p.104

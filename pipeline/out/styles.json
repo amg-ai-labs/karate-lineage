@@ -2343,16 +2343,16 @@
     "motobu-ryu",
     "motoburyu"
    ],
-   "family": "tomari-te",
+   "family": "shuri-te",
    "founded": 1922,
    "founder": "Motobu Chōki",
    "id": "motobu-ryu",
    "label": "Motobu-Ryu",
-   "parent": "tomari-te"
+   "parent": "shuri-te"
   },
   {
    "aliases": [],
-   "family": "tomari-te",
+   "family": "shuri-te",
    "founded": 1961,
    "founder": "Uehara Seikichi (上原清吉, 1904-2004)",
    "id": "motobu-ryu-kobujutsu-kyokai",
@@ -2372,7 +2372,7 @@
     "motobu-udundi",
     "本部御殿手"
    ],
-   "family": "tomari-te",
+   "family": "shuri-te",
    "founded": null,
    "founder": "Motobu Chōhei (1st sōke, 17th century)",
    "id": "motobu-udundi",
@@ -2384,7 +2384,7 @@
     "Motobu Udundi Kobujutsu Kyōkai (本部御殿手古武術協会)",
     "本部御殿手古武術協会"
    ],
-   "family": "tomari-te",
+   "family": "shuri-te",
    "founded": 1970,
    "founder": null,
    "id": "motobu-udundi-kobujutsu-kyokai",
@@ -2396,7 +2396,7 @@
     "Okinawa Motobu Udundi Karate Kobudō Kyōkai (沖縄本部御殿手空手古武道協会)",
     "沖縄本部御殿手空手古武道協会"
    ],
-   "family": "tomari-te",
+   "family": "shuri-te",
    "founded": 2012,
    "founder": null,
    "id": "motobu-udundi-kyokai",
@@ -2405,7 +2405,7 @@
   },
   {
    "aliases": [],
-   "family": "tomari-te",
+   "family": "shuri-te",
    "founded": null,
    "founder": "Shiroma Seihan / Kiyonori (城間清範, 1941-2012)",
    "id": "motobu-udundi-moidi-shiroma-ha",

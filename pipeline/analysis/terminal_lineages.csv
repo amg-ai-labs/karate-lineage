@@ -15,7 +15,7 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,J0187,Yukio Tani,谷幸雄,1880,1950,,other,0,0,0,0,0,1,4,
 ,0,J0120,Hoan Kosugi,小杉放菴,1881,1964,,japanese,0,0,0,0,0,1,9,
 ,0,W0022,Tokuda Antei,,1884,1979,,other,0,0,0,0,0,1,8,
-,0,A0219,Chomo Motobu,本部朝茂,1890,1945,,tomari-te,0,0,0,0,0,3,11,
+,0,A0219,Chomo Motobu,本部朝茂,1890,1945,,shuri-te,0,0,0,0,0,3,11,
 ,0,Q4340844,Vasili Oshchepkov,Василий Ощепков,1893,1937,,chinese,0,0,0,0,0,1,9,
 ,0,C00072,Genwa Nakasone,仲宗根源和,1895,1978,,other,0,0,0,0,0,1,12,
 ,0,W0016,Hisateru Miyagi,,1895,,,other,0,0,0,0,0,2,7,
@@ -150,7 +150,7 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,A0223,Sherman Harrill,,1941,2002,,shuri-te,0,0,0,0,0,1,10,
 ,0,R0078,Shigetoshi Senaha,,1941,,,naha-te,0,0,0,0,0,1,5,
 ,0,Q16266721,Shingo Ohgami,大神真吾,1941,2019,,japanese,0,0,0,0,0,1,10,
-,0,J0028,Shiroma Kiyonori (Seihan),城間清範,1941,2012,,tomari-te,0,0,0,0,0,1,2,Hanshi 10th dan — Okinawa Karate News register (2018)
+,0,J0028,Shiroma Kiyonori (Seihan),城間清範,1941,2012,,shuri-te,0,0,0,0,0,1,2,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,Q3984846,Teruo Chinen,知念輝夫,1941,2015,,naha-te,0,0,0,0,0,2,12,
 ,0,Q7808402,Tino Ceberano,,1941,,,naha-te,0,0,0,0,0,1,7,
 ,0,J0003,Anyu Shinjo,新城安勇,1942,,,naha-te,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
@@ -436,7 +436,7 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,R0169,Greg Lindquist,,,,,shuri-te,0,0,0,0,0,1,3,
 ,0,A0102,Hajimu Takashima,,,,,japanese,0,0,0,0,0,1,10,
 ,0,C00092,Harumi Takami,,,,,other,0,0,0,0,0,1,6,
-,0,J0090,Harumitsu Kinjo,金城春光,,,,tomari-te,0,0,0,0,0,1,2,
+,0,J0090,Harumitsu Kinjo,金城春光,,,,shuri-te,0,0,0,0,0,1,2,
 ,0,C00093,Haruo Tamaki,,,,,other,0,0,0,0,0,1,8,
 ,0,A0080,Haruyoshi Yamada,,,,,japanese,0,0,0,0,0,1,3,
 ,0,R0152,Hidenori Ashihara,芦原英典,,,,kyokushin,0,0,0,0,0,1,7,
@@ -604,7 +604,7 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,C00339,Masami Nashiro,,,,,other,0,0,0,0,0,1,7,
 ,0,C00340,Masamitsu Kinjo,,,,,other,0,0,0,0,0,1,4,
 ,0,C00341,Masanao Miyazato,,,,,other,0,0,0,0,0,1,5,
-,0,J0088,Masanobu Ishikawa,石川正信,,,,tomari-te,0,0,0,0,0,1,2,
+,0,J0088,Masanobu Ishikawa,石川正信,,,,shuri-te,0,0,0,0,0,1,2,
 ,0,J0004,Masanobu Miyahira,宮平昌信,,,,kobudo,0,0,0,0,0,1,8,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,B0027,Masanori Ishikawa,,,,,shuri-te,0,0,0,0,0,1,6,
 ,0,B0019,Masao Kobayashi,,,,,shuri-te,0,0,0,0,0,1,6,
@@ -628,10 +628,10 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,C00371,Mitsuo Miyazato,,,,,other,0,0,0,0,0,1,1,
 ,0,C00374,Morimasa Arakaki,,,,,other,0,0,0,0,0,1,1,
 ,0,C00375,Morinobu Maeshiro,眞栄城守信,,,,other,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
-,0,R0173,Moritoshi Ikeda,池田守利,,,,tomari-te,0,0,0,0,0,1,2,
+,0,R0173,Moritoshi Ikeda,池田守利,,,,shuri-te,0,0,0,0,0,1,2,
 ,0,R0209,Myung Jae-nam,,,1999,,korean,0,0,0,0,0,1,1,
 ,0,C00385,Nanko Minei,,,,,other,0,0,0,0,0,1,6,Hanshi 10th dan — Okinawa Karate News register (2018)
-,0,A0220,Naoki Motobu,本部朝行,,,,tomari-te,0,0,0,0,0,2,3,
+,0,A0220,Naoki Motobu,本部朝行,,,,shuri-te,0,0,0,0,0,2,3,
 ,0,R0008,Naoki Omi,,,,,japanese,0,0,0,0,0,1,3,
 ,0,A0170,Naoyuki Chitose,,,,,japanese,0,0,0,0,0,1,1,
 ,0,C00388,Natsukichi Shimabuku,,,,,other,0,0,0,0,0,1,4,
@@ -715,7 +715,7 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,C00511,Shinkichi Nakamura,,,,,other,0,0,0,0,0,1,4,
 ,0,C00512,Shinsaku Minami,,,,,other,0,0,0,0,0,1,6,
 ,0,C00513,Shinsei Omine,,,,,other,0,0,0,0,0,2,9,
-,0,J0086,Shinsuke Moromizato,諸見里真助,,,,tomari-te,0,0,0,0,0,1,2,
+,0,J0086,Shinsuke Moromizato,諸見里真助,,,,shuri-te,0,0,0,0,0,1,2,
 ,0,J0050,Shintoku Gushiken,具志堅新徳,,,,naha-te,0,0,0,0,0,1,1,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00517,Shinyei Kaneshima,,,,,shuri-te,0,0,0,0,0,3,17,
 ,0,N0040,Shinzou Ishida,,,,,other,0,0,0,0,0,1,9,
@@ -733,8 +733,8 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,N0122,T. Omiya,,,,,other,0,0,0,0,0,1,6,
 ,0,C00335,Tadashi Nakagawa,,,,,other,0,0,0,0,0,1,6,
 ,0,W0008,Takamura Seiko,,,,,other,0,0,0,0,0,1,7,
-,0,W0004,Takano Genjuro,,,,,tomari-te,0,0,0,0,0,1,9,
-,0,B0020,Takao Miyagi,,,,,tomari-te,0,0,0,0,0,1,2,
+,0,W0004,Takano Genjuro,,,,,shuri-te,0,0,0,0,0,1,9,
+,0,B0020,Takao Miyagi,,,,,shuri-te,0,0,0,0,0,1,2,
 ,0,C00565,Takao Nohara,,,,,other,0,0,0,0,0,1,2,
 ,0,A0140,Takashi Shinjo,,,,,naha-te,0,0,0,0,0,1,1,
 ,0,C00568,Takasuga Kitamura,,,,,other,0,0,0,0,0,1,6,
@@ -745,7 +745,7 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,C00573,Takeshi Naito,,,,,other,0,0,0,0,0,3,6,
 ,0,J0143,Takeshi Nakazato,仲里武思,,,,shuri-te,0,0,0,0,0,1,2,
 ,0,A0224,Takeshi Shimoda,下田武,,,,japanese,0,0,0,0,0,1,9,
-,0,J0087,Takeshi Uehara,上原健志,,,,tomari-te,0,0,0,0,0,1,2,
+,0,J0087,Takeshi Uehara,上原健志,,,,shuri-te,0,0,0,0,0,1,2,
 ,0,A0033,Takeshi Uema,上間建,,,,shuri-te,0,0,0,0,0,2,2,
 ,0,R0039,Taketo Okuda,,,2022,,japanese,0,0,0,0,0,1,7,
 ,0,C00575,Takeyuki Kinjo,,,,,other,0,0,0,0,0,1,3,

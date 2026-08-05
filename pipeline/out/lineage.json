@@ -962,7 +962,7 @@
    "inferred_flip": false,
    "is_primary": false,
    "primary": "",
-   "primary_basis": "secondary_style",
+   "primary_basis": "secondary_assumed",
    "source": "A0030",
    "target": "Q1147708"
   },
@@ -6525,7 +6525,7 @@
    "inferred_flip": false,
    "is_primary": false,
    "primary": "",
-   "primary_basis": "secondary_style",
+   "primary_basis": "secondary_assumed",
    "source": "C00604",
    "target": "Q1147708"
   },
@@ -15426,9 +15426,9 @@
    ],
    "id": "Q3028499->Q1147708",
    "inferred_flip": false,
-   "is_primary": true,
+   "is_primary": false,
    "primary": "",
-   "primary_basis": "style",
+   "primary_basis": "secondary_assumed",
    "source": "Q3028499",
    "target": "Q1147708"
   },
@@ -20371,7 +20371,7 @@
    "inferred_flip": false,
    "is_primary": false,
    "primary": "",
-   "primary_basis": "secondary_style",
+   "primary_basis": "secondary_assumed",
    "source": "Q527422",
    "target": "Q1147708"
   },
@@ -22298,7 +22298,7 @@
    "inferred_flip": false,
    "is_primary": false,
    "primary": "",
-   "primary_basis": "secondary_style",
+   "primary_basis": "secondary_assumed",
    "source": "Q706389",
    "target": "Q1147708"
   },
@@ -22700,9 +22700,9 @@
    ],
    "id": "Q715769->Q1147708",
    "inferred_flip": false,
-   "is_primary": false,
+   "is_primary": true,
    "primary": "",
-   "primary_basis": "secondary_style",
+   "primary_basis": "assumed",
    "source": "Q715769",
    "target": "Q1147708"
   },
@@ -23033,7 +23033,7 @@
    "inferred_flip": false,
    "is_primary": false,
    "primary": "",
-   "primary_basis": "secondary_style",
+   "primary_basis": "secondary_assumed",
    "source": "Q721201",
    "target": "Q1147708"
   },
@@ -25590,7 +25590,7 @@
    "orphans": 161
   },
   "pipeline_version": "1.0.0",
-  "source_hash": "cc1fee98ec133a3d"
+  "source_hash": "a763a551e154b45b"
  },
  "nodes": [
   {
