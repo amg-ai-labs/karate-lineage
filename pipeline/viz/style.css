@@ -204,6 +204,11 @@ body { overflow: hidden; }
 .kata-disputed { color: var(--warn, #a2601a); font-size: 11.5px; margin-top: 2px; }
 .kata-style { display: block; font-size: 11px; color: var(--muted); margin: 0 0 2px 14px; }
 .kata-styleh { font-size: 12px; font-weight: 600; margin: 7px 0 2px 8px; }
+.rel-head { font-size: 11px; text-transform: uppercase; letter-spacing: .05em;
+  color: var(--muted); margin: 9px 0 0; font-weight: 700; }
+.rel-sub { font-size: 11px; color: var(--muted); font-style: italic; margin-bottom: 3px; }
+.kata-rel { font-size: 12px; margin: 2px 0 3px 8px; }
+.kata-relnote { font-size: 11px; color: var(--ink-2); line-height: 1.4; margin-left: 2px; }
 .order-pick { display: inline-flex; gap: 0; margin: 0 0 8px; }
 .order-pick .ord { font-size: 11.5px; padding: 3px 9px; border-radius: 0; }
 .order-pick .ord:first-child { border-radius: 7px 0 0 7px; }

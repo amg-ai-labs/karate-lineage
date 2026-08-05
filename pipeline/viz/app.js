@@ -1078,6 +1078,36 @@ for (const k of KATA) {
   }
 }
 function kataFor(name) { return kataByPerson.get(name) || []; }
+// How the kata relate to one another. The client asked for the distinctions to
+// be explicit, so each is labelled rather than lumped into "related".
+const REL_LABEL = {
+  same: ["The same kata under another name",
+         "identical or near-identical; the difference is the name, not the form"],
+  variant: ["Close variants",
+            "one form read differently by different schools"],
+  derived_from: ["Derived from",
+                 "a later reworking of an earlier kata"],
+  derivative_of_this: ["Derivatives of this",
+                       "later kata reworked from this one"],
+  namesake: ["Different kata sharing this name",
+             "genuinely distinct forms that happen to share a name"],
+  cognate: ["Probable common ancestry",
+            "neither derived from the other; both descend from something older"],
+  uncertain: ["Related, but the nature is unsettled",
+              "a relationship is asserted; the evidence does not say which kind"],
+};
+const relBySource = new Map();
+for (const k of KATA) {
+  for (const r of (k.relations || [])) {
+    if (!relBySource.has(k.name)) relBySource.set(k.name, []);
+    relBySource.get(k.name).push(r);
+    // a derivation is worth seeing from the parent's side too
+    const inv = r.relation === "derived_from" ? "derivative_of_this" : r.relation;
+    if (!relBySource.has(r.to)) relBySource.set(r.to, []);
+    relBySource.get(r.to).push({ ...r, to: k.name, relation: inv, inverse: true });
+  }
+}
+function relationsFor(name) { return relBySource.get(name) || []; }
 // Say on what basis a line was called style-bearing, so a guess reads as a guess
 const PBASIS = {
   sole: "their only recorded teacher",
@@ -1253,6 +1283,40 @@ function renderKataPanel(back) {
         const e = document.createElement("div"); e.className = "kata-disputed";
         e.textContent = "⚠ Attribution disputed or not independently confirmed.";
         d.appendChild(e);
+      }
+      // How this kata stands to the others, grouped so the kind of relationship
+      // is legible at a glance rather than buried in prose.
+      const rels = relationsFor(k.name);
+      if (rels.length) {
+        const order = ["same", "variant", "derived_from", "derivative_of_this",
+                       "cognate", "namesake", "uncertain"];
+        for (const kind of order) {
+          const group = rels.filter(r => r.relation === kind);
+          if (!group.length) continue;
+          const h = document.createElement("div"); h.className = "rel-head";
+          h.textContent = (REL_LABEL[kind] || [kind])[0];
+          d.appendChild(h);
+          const sub = document.createElement("div"); sub.className = "rel-sub";
+          sub.textContent = (REL_LABEL[kind] || ["", ""])[1];
+          d.appendChild(sub);
+          for (const r of group) {
+            const row = document.createElement("div"); row.className = "kata-rel";
+            const b = document.createElement("button"); b.className = "linklike";
+            b.textContent = r.to;
+            b.onclick = () => openKata(r.to, { label: k.name, open: () => openKata(k.name) });
+            row.appendChild(b);
+            const meta = document.createElement("span"); meta.className = "conf";
+            meta.textContent = " · " + (r.confidence || "")
+              + (r.verifier === "confirmed" ? "" : " (unsettled)");
+            row.appendChild(meta);
+            if (r.note) {
+              const nt = document.createElement("div"); nt.className = "kata-relnote";
+              nt.textContent = r.note;
+              row.appendChild(nt);
+            }
+            d.appendChild(row);
+          }
+        }
       }
       // A kata's chart is the people who carried it: creator, modifiers and
       // transmitters, plus the teaching chain that actually joins them.
