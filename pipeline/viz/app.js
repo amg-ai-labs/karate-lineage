@@ -1018,6 +1018,10 @@ const FAM_ORDER = [
   ["te", "Te (antecedents)"], ["chinese", "Chinese antecedents"], ["other", "Other"],
 ];
 const styleByIdEarly = new Map(DATA.styles.map(s => [s.id, s]));
+// placeholders, not styles: matching on these says nothing about a lineage
+const GENERIC_STYLES = new Set(["karate-generic", "okinawan-karate-generic",
+  "japanese-karate-generic", "martial-arts-generic", "korean-martial-arts",
+  "scrape-artefact"]);
 // depth-first walk of one originating group's styles, alphabetical among siblings
 function familyStyleTree(fid) {
   const kids = new Map();
@@ -1855,6 +1859,45 @@ function openStyleDetail(sid, back) {
   add("People", mem.length + (mem.length === 1 ? " recorded" : " recorded, including sub-styles"));
   panel.appendChild(dl);
 
+  // Who passed through this style without carrying it away. A style's influence
+  // is not only its own members: Shorin-ryu reached Kenyu Chinen through Shugoro
+  // Nakazato even though Chinen is filed under Matayoshi kobudo, and that is
+  // part of what Shorin-ryu did.
+  const memSet = new Set(mem);
+  const visitors = [];
+  for (const e of DATA.edges) {
+    if (e.primary || !memSet.has(e.source) || memSet.has(e.target)) continue;
+    const st2 = byId.get(e.target);
+    if (!st2) continue;
+    visitors.push({ who: st2, via: byId.get(e.source), e });
+  }
+  if (visitors.length) {
+    const h4v = document.createElement("h4");
+    h4v.textContent = "Also studied here (" + visitors.length + ")";
+    panel.appendChild(h4v);
+    const nv = document.createElement("div"); nv.className = "edit-note";
+    nv.textContent = "People who trained under someone of this style but went on to carry "
+      + "another. Real transmission, and part of this style's reach.";
+    panel.appendChild(nv);
+    visitors.sort((a, b) => (a.who.birth || 9999) - (b.who.birth || 9999));
+    for (const { who, via, e } of visitors.slice(0, 40)) {
+      const row = document.createElement("div"); row.className = "rel";
+      const b = document.createElement("button"); b.className = "linklike";
+      b.textContent = eff(who).name;
+      b.onclick = () => openDetail(who.id, { label: st.label, open: () => openStyleDetail(sid) });
+      const meta = document.createElement("span"); meta.className = "conf";
+      meta.textContent = "under " + eff(via).name
+        + (who.styleLabel ? " · carries " + who.styleLabel : "");
+      row.append(b, meta);
+      panel.appendChild(row);
+    }
+    if (visitors.length > 40) {
+      const more = document.createElement("div"); more.className = "edit-note";
+      more.textContent = "…and " + (visitors.length - 40) + " more.";
+      panel.appendChild(more);
+    }
+  }
+
   // kata of this style, marking those inherited from a parent style
   const ks = kataForStyle(sid);
   if (ks.length) {
@@ -2207,13 +2250,68 @@ function openDetail(id, back) {
     for (const sid of n.styles) {
       const s = DATA.styles.find(x => x.id === sid);
       const chip = document.createElement("span"); chip.className = "chip";
+      chip.title = "Open this style";
       const dot = document.createElement("span"); dot.className = "dot";
       dot.style.background = styleColour(sid);
       chip.appendChild(dot);
-      chip.appendChild(document.createTextNode(s ? s.label : sid));
+      const b = document.createElement("button"); b.className = "linklike";
+      b.textContent = s ? s.label : sid;
+      b.onclick = () => openStyleDetail(sid, { label: eff(n).name, open: () => openDetail(id) });
+      chip.appendChild(b);
       wrap.appendChild(chip);
     }
     panel.appendChild(wrap);
+  }
+
+  // What else they studied, and what it connects them to. Kenko Nakaima's
+  // Itosu-line and Matsumura-line study is a fact about him even though he kept
+  // teaching Ryuei-ryu, and Kenyu Chinen's Shorin-ryu under Nakazato is a fact
+  // about him even though the dataset files him under Matayoshi kobudo. The
+  // links already carry this; it was simply never shown.
+  // Grouped by teacher, because that is how it happened: one period of study
+  // under one person, who may hold several styles. A teacher whose own style is
+  // only a placeholder is still listed, since the study is the fact and the
+  // missing style tag is our gap, not an absence of transmission.
+  const alsoStudied = [];
+  for (const e of (parentsOf.get(id) || [])) {
+    if (e.primary) continue;
+    const t = byId.get(e.source);
+    if (!t) continue;
+    const sids = (t.styles || []).filter(sid => (n.styles || []).indexOf(sid) < 0
+      && styleByIdMap.has(sid) && !GENERIC_STYLES.has(sid));
+    alsoStudied.push({ via: t, e, sids });
+  }
+  if (alsoStudied.length) {
+    const h4 = document.createElement("h4");
+    h4.textContent = "Also studied (" + alsoStudied.length + ")"; panel.appendChild(h4);
+    const note = document.createElement("div"); note.className = "edit-note";
+    note.textContent = "Documented study that did not carry their own style. Drawn dash-dot "
+      + "on the chart, and kept because it happened.";
+    panel.appendChild(note);
+    alsoStudied.sort((a, b) => (a.via.birth || 9999) - (b.via.birth || 9999));
+    for (const { via, e, sids } of alsoStudied) {
+      const row = document.createElement("div"); row.className = "rel";
+      const b = document.createElement("button"); b.className = "linklike";
+      b.textContent = eff(via).name;
+      b.onclick = () => openDetail(via.id, { label: eff(n).name, open: () => openDetail(id) });
+      row.appendChild(b);
+      const meta = document.createElement("span"); meta.className = "conf";
+      if (sids.length) {
+        meta.appendChild(document.createTextNode("· "));
+        sids.forEach((sid, i) => {
+          if (i) meta.appendChild(document.createTextNode(", "));
+          const sb = document.createElement("button"); sb.className = "linklike";
+          sb.textContent = styleByIdMap.get(sid).label;
+          sb.onclick = () => openStyleDetail(sid, { label: eff(n).name, open: () => openDetail(id) });
+          meta.appendChild(sb);
+        });
+      } else {
+        meta.appendChild(document.createTextNode("· style not recorded for this teacher"));
+      }
+      meta.appendChild(document.createTextNode(" · " + e.confidence));
+      row.appendChild(meta);
+      panel.appendChild(row);
+    }
   }
 
   // kata this person originated, brought, modified, renamed or transmitted

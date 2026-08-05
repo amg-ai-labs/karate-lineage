@@ -20047,12 +20047,12 @@
   "counts": {
    "connected": 1111,
    "edges": 1587,
-   "nodes": 1284,
+   "nodes": 1283,
    "open_review_items": 0,
-   "orphans": 173
+   "orphans": 172
   },
   "pipeline_version": "1.0.0",
-  "source_hash": "66a1843203d700ed"
+  "source_hash": "b7975739021d951a"
  },
  "nodes": [
   {
@@ -48176,36 +48176,6 @@
   {
    "active_from": null,
    "active_from_estimated": false,
-   "birth_year": 1852,
-   "connected": false,
-   "death_year": 1930,
-   "flags": {
-    "added_by_research": true,
-    "legendary": false,
-    "merged_from": [],
-    "needs_review": true,
-    "wrong_entity": false,
-    "years_nulled": []
-   },
-   "generation": null,
-   "honours": [],
-   "id": "KP007",
-   "locality": null,
-   "n_descendants": 0,
-   "n_students": 0,
-   "name": "Xie Zhongxiang",
-   "name_alt": [],
-   "name_ascii": "Xie Zhongxiang",
-   "name_native": "謝崇祥",
-   "name_romaji": null,
-   "primary_style": null,
-   "qid": null,
-   "styles": [],
-   "wikipedia_url": null
-  },
-  {
-   "active_from": null,
-   "active_from_estimated": false,
    "birth_year": null,
    "connected": false,
    "death_year": null,
@@ -53264,7 +53234,9 @@
    "flags": {
     "added_by_research": false,
     "legendary": false,
-    "merged_from": [],
+    "merged_from": [
+     "KP007"
+    ],
     "needs_review": false,
     "wrong_entity": false,
     "years_nulled": []
@@ -53276,7 +53248,9 @@
    "n_descendants": 703,
    "n_students": 1,
    "name": "Xie Zongxiang",
-   "name_alt": [],
+   "name_alt": [
+    "Xie Zhongxiang"
+   ],
    "name_ascii": "Xie Zongxiang",
    "name_native": "謝崇祥",
    "name_romaji": null,
