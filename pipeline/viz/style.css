@@ -395,13 +395,11 @@ body { overflow: hidden; }
 /* the toast sits clear of an open story card */
 .touring #toast { bottom: 210px; }
 
-/* generation picker in the publish block */
-.gen-pick { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
-.gen-pick label { font-size: 11px; color: var(--muted); text-transform: uppercase;
-  letter-spacing: .05em; }
-.gen-b { font-size: 12.5px; border: 1px solid var(--panel-ring); border-radius: 6px;
-  padding: 2px 8px; text-decoration: none; color: var(--ink); background: var(--surface); }
-.gen-b.on { background: var(--accent); color: #fff; border-color: var(--accent); font-weight: 600; }
-.gen-count { font-size: 11px; color: var(--muted); margin-left: auto; }
+/* generation picker in the publish block: one control, four panels */
+.gen-pick { display: block; margin-top: 8px; }
+.gen-pick label { display: block; font-size: 11px; color: var(--muted);
+  text-transform: uppercase; letter-spacing: .05em; }
+.gen-pick .rk-select { margin: 3px 0 2px; }
+.gen-count { font-size: 11px; color: var(--muted); margin: 0 0 2px; }
 .st-i { font-size: 12px; margin-left: 2px; }
 .conf.disputed { color: var(--warn); }

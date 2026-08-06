@@ -134,6 +134,26 @@ try {
   var dtxt = det.textContent;
   if (dtxt.indexOf("Likely creator") < 0 && dtxt.indexOf("Lineage") < 0)
     throw new Error("kata detail shows no person: " + dtxt.slice(0, 120));
+  // the kata chart takes generations too, which it did not before: nought is the
+  // people credited, higher numbers follow the kata down to who inherited it
+  (function () {
+    var kk = DATA.kata.filter(k => kataPeopleIds(k).length >= 2)
+                      .sort((a, b) => kataPeopleIds(b).length - kataPeopleIds(a).length)[0];
+    if (!kk) throw new Error("no kata has two credited people to chart");
+    kataOpen.clear(); kataOpen.add(kk.name); kataQuery = kk.name;
+    renderKataPanel();
+    var pick = document.getElementById("katapanel").querySelector(".gen-pick select");
+    if (!pick) throw new Error("kata chart has no generation control: " + kk.name);
+    var core = connectionSet(kataPeopleIds(kk)).ids;
+    var one = expandDown(core, 1).length, all = expandDown(core, Infinity).length;
+    if (one < core.length || all < one)
+      throw new Error("kata generations do not grow: " + core.length + "/" + one + "/" + all);
+    var labels = Array.from(pick.querySelectorAll("option")).map(o => o.textContent);
+    if (labels.indexOf("The people credited only") < 0)
+      throw new Error("kata generation options wrong: " + labels.join(" | "));
+    console.log("kata generations for " + kk.name + ": credited=" + core.length
+      + " +1gen=" + one + " all=" + all + ", " + labels.length + " options");
+  })();
   kataQuery = ""; kataOpen.clear();
   console.log("kata detail block for " + chinto.name + ": " + dtxt.slice(0, 70).replace(/\s+/g, " "));
 
@@ -226,9 +246,15 @@ try {
     if (!cp.querySelectorAll(".cx-path").length) throw new Error("no path shown");
     var cs = connectionSet([a.id, b.id]);
     if (cs.ids.length < p.length) throw new Error("sub-graph smaller than the path");
+    // the chain widens by generations, which is the question asked after "how"
+    var cpick = cp.querySelector(".gen-pick select");
+    if (!cpick) throw new Error("connection chart has no generation control");
+    var wide = expandDown(cs.ids, 1).length;
+    if (wide <= cs.ids.length)
+      throw new Error("widening the chain added nobody: " + cs.ids.length + " then " + wide);
     cxPeople = [];
     console.log("connect: " + p.map(i => (byId.get(i) || {}).name).join(" - ")
-      + " (" + cs.ids.length + " in the sub-graph)");
+      + " (" + cs.ids.length + " in the sub-graph, " + wide + " one generation wider)");
   })();
 
   // KATA charts: a kata exports the people who carried it

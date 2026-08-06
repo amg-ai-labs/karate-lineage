@@ -588,6 +588,95 @@ function lineageDepth(id, dir) {
   return d;
 }
 
+// Growing a set of people by generations of students. A person's chart starts
+// from one person and lineageSet does it; a kata's chart and a connection chart
+// start from a whole set, which is a different walk.
+function expandDown(coreIds, gens) {
+  const seen = new Set(coreIds);
+  if (!gens) return [...seen];
+  let front = [...seen];
+  for (let g = 0; g < gens && front.length; g++) {
+    const next = [];
+    for (const id of front)
+      for (const e of (childrenOf.get(id) || [])) {
+        if (linePrimaryOnly && !e.primary) continue;
+        if (!seen.has(e.target)) { seen.add(e.target); next.push(e.target); }
+      }
+    front = next;
+  }
+  return [...seen];
+}
+function deepestBelow(ids) {
+  let best = 0;
+  for (const id of ids) best = Math.max(best, lineageDepth(id, "down"));
+  return best;
+}
+
+/* One generation control for the whole application.
+
+   There were two of these, built differently, and two charts that had none.
+   The person panel used a row of buttons and a prompt() for anything past five;
+   the style panel used a dropdown; the kata chart and the connection chart
+   exported whatever they happened to hold. A single control means the same
+   question is asked the same way everywhere, and answered by one piece of code.
+
+   cfg.labelFor(g) names a depth, cfg.allLabel names the whole thing, and
+   cfg.describe(v) says what the current choice actually selects, which is the
+   part that stops the number being abstract. */
+function genPicker(cfg) {
+  const min = cfg.min === undefined ? 1 : cfg.min;
+  const max = Math.max(min, cfg.max || min);
+  let value = cfg.initial === undefined ? Infinity : cfg.initial;
+  if (value !== Infinity) value = Math.max(min, Math.min(max, value));
+
+  const box = document.createElement("div"); box.className = "gen-pick";
+  const lab = document.createElement("label");
+  lab.textContent = cfg.label || "Generations";
+  const sel = document.createElement("select"); sel.className = "rk-select";
+  sel.setAttribute("aria-label", cfg.label || "Generations to include");
+  const count = document.createElement("div"); count.className = "edit-note gen-count";
+
+  function build() {
+    sel.textContent = "";
+    const shown = [];
+    for (let g = min; g <= Math.min(max, 12); g++) shown.push(g);
+    if (value !== Infinity && shown.indexOf(value) < 0) shown.push(value);
+    shown.sort((a, b) => a - b);
+    for (const g of shown) {
+      const o = document.createElement("option");
+      o.value = String(g); o.textContent = cfg.labelFor(g);
+      sel.appendChild(o);
+    }
+    const o = document.createElement("option");
+    o.value = "Infinity"; o.textContent = cfg.allLabel; sel.appendChild(o);
+    if (max > 12) {
+      const t = document.createElement("option");
+      t.value = "n"; t.textContent = "a number I type…"; sel.appendChild(t);
+    }
+    sel.value = String(value);
+  }
+  function paint() { count.textContent = cfg.describe(value); }
+
+  sel.onchange = () => {
+    if (sel.value === "n") {
+      const typed = prompt("How many generations? (" + min + " to " + max + ")", String(max));
+      if (typed !== null) {
+        const k = parseInt(typed, 10);
+        if (!isNaN(k)) value = Math.max(min, Math.min(max, k));
+      }
+    } else value = sel.value === "Infinity" ? Infinity : parseInt(sel.value, 10);
+    build(); paint();
+    if (cfg.onchange) cfg.onchange(value);
+  };
+  build(); paint();
+  box.append(lab, sel, count);
+  return { el: box, value: () => value, refresh: () => { build(); paint(); } };
+}
+// how a chosen depth reads in an export credit line
+function genTag(v) {
+  return v === Infinity ? "" : v + " generation" + (v === 1 ? "" : "s");
+}
+
 function applyFilters() {
   const focusSet = state.focus ? lineageSet(state.focus, state.dir) : null;
   for (const n of placed) {
@@ -1347,6 +1436,28 @@ function renderKataPanel(back) {
       // transmitters, plus the teaching chain that actually joins them.
       const kIds = kataPeopleIds(k);
       {
+        // The kata's own chart is the people credited with it and the teaching
+        // that joins them. How far the kata then travelled is a separate
+        // question, and the generation control is how it gets asked: nought
+        // draws the credited circle, one adds everyone they taught, and so on.
+        const kCore = kIds.length ? connectionSet(kIds).ids : [];
+        const kMax = kCore.length ? deepestBelow(kCore) : 0;
+        let kGen = 0;
+        const kIdsFor = g => expandDown(kCore, g);
+        const kPick = kCore.length && kMax ? genPicker({
+          min: 0, max: kMax, initial: 0, label: "Onward transmission",
+          labelFor: g => g === 0 ? "The people credited only"
+                                 : "plus " + g + " generation" + (g === 1 ? "" : "s") + " of students",
+          allLabel: "everyone who inherited it",
+          describe: v => {
+            const n = kIdsFor(v).length;
+            return n + (n === 1 ? " person" : " people") + " in this chart"
+                   + (v === 0 ? "" : ", " + (n - kCore.length) + " of them downstream") + ".";
+          },
+          onchange: v => { kGen = v; },
+        }) : null;
+        if (kPick) d.appendChild(kPick.el);
+
         const ex = document.createElement("div");
         ex.style.cssText = "display:flex;gap:6px;flex-wrap:wrap;margin-top:6px";
         for (const [lbl, fmt] of exportFormats(
@@ -1358,12 +1469,13 @@ function renderKataPanel(back) {
             // Every kata exports, whether or not anyone on the chart is credited
             // with it: with people, the chart is their transmission; without, it
             // is the styles that practise it, and failing that the record itself.
-            const { ids } = kIds.length ? connectionSet(kIds) : { ids: [] };
+            const ids = kIdsFor(kGen);
             if (ids.length) {
               if (fmt === "csv" || fmt === "json" || fmt === "graphml")
                 return exportSubset(ids, k.name, fmt);
               return exportClade(ids, "The transmission of " + k.name, fmt,
-                                 [k.era, k.provenance].filter(Boolean).join(" · ").slice(0, 120));
+                                 [k.era, k.provenance, genTag(kGen)].filter(Boolean)
+                                   .join(" · ").slice(0, 120));
             }
             const styleIds = (k.style_ids || []).flatMap(sid => styleMembers(sid));
             const uniq = [...new Set(styleIds)];
@@ -1626,6 +1738,28 @@ function renderConnect() {
   sum.textContent = ids.length + " people in the connecting sub-graph.";
   cxPanel.appendChild(sum);
 
+  // The chain answers "how are these two related". Widening it by a generation
+  // or two answers the question people ask next, which is who else sits around
+  // that chain, and it is the same control the other three charts use.
+  const cxMax = deepestBelow(ids);
+  let cxGen = 0;
+  const cxIdsFor = g => expandDown(ids, g);
+  if (cxMax) {
+    const pick = genPicker({
+      min: 0, max: cxMax, initial: 0, label: "Around the chain",
+      labelFor: g => g === 0 ? "The chain only"
+                             : "plus " + g + " generation" + (g === 1 ? "" : "s") + " of students",
+      allLabel: "everyone downstream of it",
+      describe: v => {
+        const n = cxIdsFor(v).length;
+        return n + (n === 1 ? " person" : " people") + " in this chart"
+               + (v === 0 ? "." : ", " + (n - ids.length) + " added around the chain.");
+      },
+      onchange: v => { cxGen = v; },
+    });
+    cxPanel.appendChild(pick.el);
+  }
+
   const wrap = document.createElement("div");
   wrap.style.cssText = "display:flex;gap:6px;flex-wrap:wrap;margin-top:6px";
   for (const [lbl, fmt] of exportFormats(
@@ -1634,9 +1768,11 @@ function renderConnect() {
     const b = document.createElement("button"); b.className = "btn"; b.textContent = lbl;
     const label = cxPeople.map(id => eff(byId.get(id)).name).join(" and ");
     b.onclick = () => {
+      const out = cxIdsFor(cxGen);
       if (fmt === "csv" || fmt === "json" || fmt === "graphml")
-        return exportSubset(ids, label, fmt);
-      exportClade(ids, label, fmt, "the chain connecting them");
+        return exportSubset(out, label, fmt);
+      exportClade(out, label, fmt,
+                  ["the chain connecting them", genTag(cxGen)].filter(Boolean).join(" · "));
     };
     wrap.appendChild(b);
   }
@@ -2068,36 +2204,21 @@ function openStyleDetail(sid, back) {
   const roots = members.filter(id => !(parentsOf.get(id) || [])
     .some(e => members.indexOf(e.source) >= 0));
   let stChosen = Infinity;
-  const gsel = document.createElement("select"); gsel.className = "rk-select";
-  const stDepth = (() => {
-    let best = 0;
-    for (const r of roots) best = Math.max(best, lineageDepth(r, "down"));
-    return Math.max(best, 1);
-  })();
-  const opts = [["Everyone in this style", Infinity]];
-  for (let g = 1; g <= Math.min(stDepth, 12); g++)
-    opts.push([g === 1 ? "The heads only" : g + " generations from the head", g]);
-  for (const [lbl, v] of opts) {
-    const o = document.createElement("option");
-    o.value = String(v); o.textContent = lbl; gsel.appendChild(o);
-  }
-  gsel.value = "Infinity";
-  const count = document.createElement("div"); count.className = "edit-note";
-  function stIds() {
-    if (stChosen === Infinity) return members;
+  const stDepth = Math.max(deepestBelow(roots), 1);
+  function stIdsAt(v) {
+    if (v === Infinity) return members;
     const keep = new Set();
-    for (const r of roots) for (const id of lineageSet(r, "down", stChosen - 1)) keep.add(id);
+    for (const r of roots) for (const id of lineageSet(r, "down", v - 1)) keep.add(id);
     return members.filter(id => keep.has(id));
   }
-  function paintCount() {
-    const n = stIds().length;
-    count.textContent = n + " of " + members.length + " people in this chart.";
-  }
-  gsel.onchange = () => {
-    stChosen = gsel.value === "Infinity" ? Infinity : parseInt(gsel.value, 10);
-    paintCount();
-  };
-  panel.appendChild(gsel); panel.appendChild(count); paintCount();
+  const stIds = () => stIdsAt(stChosen);
+  panel.appendChild(genPicker({
+    min: 1, max: stDepth, initial: Infinity, label: "Generations",
+    labelFor: g => g === 1 ? "The heads only" : g + " generations from the head",
+    allLabel: "everyone in this style",
+    describe: v => stIdsAt(v).length + " of " + members.length + " people in this chart.",
+    onchange: v => { stChosen = v; },
+  }).el);
 
   const wrap = document.createElement("div");
   wrap.style.cssText = "display:flex;gap:6px;flex-wrap:wrap";
@@ -2693,46 +2814,26 @@ function openDetail(id, back) {
     // How many teaching generations to include. A whole clade is usually far too
     // big to read on a page; one or two generations is the figure people want.
     const maxD = lineageDepth(id, state.dir);
-    const gsel = document.createElement("div"); gsel.className = "gen-pick";
-    const gLab = document.createElement("label"); gLab.textContent = "Generations";
-    gsel.appendChild(gLab);
-    const opts = [];
-    for (let k = 1; k <= Math.min(maxD, 5); k++) opts.push([String(k), k]);
-    if (maxD > 5) opts.push(["n…", "n"]);
-    opts.push(["all", Infinity]);
     let chosen = Math.min(2, maxD);                  // a readable default
-    const counts = document.createElement("span"); counts.className = "gen-count";
-    const btns = [];
-    const paint = () => {
-      btns.forEach(b => b.classList.toggle("on", b._v === chosen));
-      const nn = lineageSet(id, state.dir, chosen).size;
+    const gpick = genPicker({
+      min: 1, max: maxD, initial: chosen, label: "Generations",
+      labelFor: g => g === 1 ? "1 generation" : g + " generations",
+      allLabel: "the whole lineage",
       // Say which links are being counted. Supplementary study is a short cut
       // through the graph, so counting every link puts people a generation
       // earlier than their own line would: Funakoshi's second generation is 156
       // people by every link and 95 by the style-bearing ones alone.
-      const all = linePrimaryOnly ? lineageSet(id, state.dir, chosen, false).size : nn;
-      counts.textContent = nn + (nn === 1 ? " person" : " people")
-        + (chosen === Infinity ? " (whole lineage)" : "")
-        + (linePrimaryOnly ? " by style-bearing links" + (all > nn ? ", " + all + " by every link" : "")
-                           : "");
-    };
-    for (const [lbl, v] of opts) {
-      const b = document.createElement("button");
-      b.className = "linklike gen-b"; b.textContent = lbl; b._v = v;
-      b.onclick = () => {
-        if (v === "n") {
-          const t = prompt("How many teaching generations? (1–" + maxD + ")", String(maxD));
-          if (t === null) return;
-          const k = Math.max(1, Math.min(maxD, parseInt(t, 10) || 1));
-          chosen = k; b.textContent = "n=" + k; b._v = k;
-        } else chosen = v;
-        paint();
-      };
-      btns.push(b); gsel.appendChild(b);
-    }
-    gsel.appendChild(counts);
-    panel.appendChild(gsel);
-    paint();
+      describe: v => {
+        const nn = lineageSet(id, state.dir, v).size;
+        const all = linePrimaryOnly ? lineageSet(id, state.dir, v, false).size : nn;
+        return nn + (nn === 1 ? " person" : " people")
+          + (v === Infinity ? " (whole lineage)" : "")
+          + (linePrimaryOnly ? " by style-bearing links"
+             + (all > nn ? ", " + all + " by every link" : "") : "");
+      },
+      onchange: v => { chosen = v; },
+    });
+    panel.appendChild(gpick.el);
 
     const wrap = document.createElement("div"); wrap.style.display = "flex";
     wrap.style.gap = "6px"; wrap.style.flexWrap = "wrap"; wrap.style.marginTop = "6px";

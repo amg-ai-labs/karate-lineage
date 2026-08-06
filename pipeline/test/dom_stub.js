@@ -71,17 +71,56 @@ El.prototype.cloneNode = function (deep) {
   if (deep) for (var k of this.children) c.appendChild(k.cloneNode(true));
   return c;
 };
+/* Selectors: a tag, a class, an attribute, compounds of those, descendant
+   chains ("a b c") and comma-separated alternatives. The earlier version
+   understood one simple selector and returned nothing for anything else, so a
+   test asking for ".gen-pick select" passed by finding no control to check. A
+   stub that answers "no" to a question it did not understand is worse than one
+   that throws, so unknown syntax now throws. */
+function matcher(token) {
+  var parts = token.match(/^([a-zA-Z][\w-]*)?((?:[.#][\w-]+)*)((?:\[[^\]]+\])*)$/);
+  if (!parts) throw new Error("dom_stub: unsupported selector token " + JSON.stringify(token));
+  var tag = parts[1] ? parts[1].toUpperCase() : null;
+  var classes = [], ids = [];
+  (parts[2] || "").replace(/([.#])([\w-]+)/g, function (_, k, v) {
+    (k === "." ? classes : ids).push(v); return "";
+  });
+  var attrs = [];
+  (parts[3] || "").replace(/\[([^\]]+)\]/g, function (_, body) {
+    var m = body.match(/^([\w-]+)(?:(\*?=)"?([^"\]]*)"?)?$/);
+    if (!m) throw new Error("dom_stub: unsupported attribute selector [" + body + "]");
+    attrs.push(m); return "";
+  });
+  return function (e) {
+    if (tag && e.tagName !== tag) return false;
+    for (var c of classes) if (!e._cls.has(c)) return false;
+    for (var i of ids) if (e.attrs.id !== i && e.id !== i) return false;
+    for (var a of attrs) {
+      var v = e.attrs[a[1]];
+      if (a[2] === undefined) { if (v === undefined) return false; continue; }
+      v = String(v === undefined ? "" : v);
+      if (a[2] === "=" ? v !== a[3] : v.indexOf(a[3]) < 0) return false;
+    }
+    return true;
+  };
+}
 El.prototype.querySelectorAll = function (sel) {
   var out = [];
-  var test;
-  if (sel[0] === ".") { var cls = sel.slice(1); test = e => e._cls.has(cls); }
-  else if (sel[0] === "[") {
-    var m = sel.match(/^\[(\w+)\*="(.*)"\]$/);
-    test = m ? (e => String(e.attrs[m[1]] || "").indexOf(m[2]) >= 0) : (() => false);
-  } else { var tg = sel.toUpperCase(); test = e => e.tagName === tg; }
-  (function walk(e) {
-    for (var c of e.children) { if (test(c)) out.push(c); walk(c); }
-  })(this);
+  for (var alt of String(sel).split(",")) {
+    var tokens = alt.trim().split(/\s+/).filter(Boolean);
+    if (!tokens.length) continue;
+    var tests = tokens.map(matcher);
+    var level = [this];
+    for (var i = 0; i < tests.length; i++) {
+      var next = [], test = tests[i];
+      for (var root of level)
+        (function walk(e) {
+          for (var c of e.children) { if (test(c)) next.push(c); walk(c); }
+        })(root);
+      level = next;
+    }
+    for (var el of level) if (out.indexOf(el) < 0) out.push(el);
+  }
   return out;
 };
 El.prototype.querySelector = function (sel) {
