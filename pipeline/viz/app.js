@@ -1306,8 +1306,11 @@ function renderKataPanel(back) {
             b.onclick = () => openKata(r.to, { label: k.name, open: () => openKata(k.name) });
             row.appendChild(b);
             const meta = document.createElement("span"); meta.className = "conf";
+            // "unsettled" must be readable from the public payload too, where the
+            // verifier field is stripped, so key it off the claim itself: a low
+            // confidence or an explicitly uncertain label is what makes it unsettled.
             meta.textContent = " · " + (r.confidence || "")
-              + (r.verifier === "confirmed" ? "" : " (unsettled)");
+              + (r.confidence === "low" || kind === "uncertain" ? " · unsettled" : "");
             row.appendChild(meta);
             if (r.note) {
               const nt = document.createElement("div"); nt.className = "kata-relnote";
@@ -1918,6 +1921,9 @@ function openStyleDetail(sid, back) {
       : lvl === 3 ? "Sub-sub-style" : "Sub-style, level " + lvl);
   add("Founder", st.founder);
   add("Founded", st.founded);
+  // Several of these schools are not karate alone, and saying so is more honest
+  // than filing them as karate and losing the other half.
+  add("Hybrid with", st.hybrid);
   if (st.parent && styleByIdMap.get(st.parent))
     add(GROUP_IDS.has(st.parent) ? "Sits directly under" : "Branch of",
         styleByIdMap.get(st.parent).label);

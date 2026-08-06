@@ -17,10 +17,10 @@ Bassai Dai,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,Passai lineage b
 Bassai Dai,Gigo Funakoshi,Gigo Funakoshi,Q628761,yes,modified,Passai lineage by the mid-19th century; Shotokan name adopted 1935,yes
 Bassai Dai,Masatoshi Nakayama,Masatoshi Nakayama,Q384558,yes,standardised,Passai lineage by the mid-19th century; Shotokan name adopted 1935,yes
 Bassai Dai,Anko Itosu,"Anko Itosu (the version Funakoshi learned), then Gigo Funakoshi and the JKA",Q527422,yes,modified,Passai lineage by the mid-19th century; Shotokan name adopted 1935,yes
-Bassai Sho,Anko Itosu,Anko Itosu,Q527422,yes,created,Itosu creation c. 1900s; Shotokan name adopted 1935,
-Bassai Sho,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,Itosu creation c. 1900s; Shotokan name adopted 1935,
-Bassai Sho,Masatoshi Nakayama,Masatoshi Nakayama,Q384558,yes,standardised,Itosu creation c. 1900s; Shotokan name adopted 1935,
-Bassai Sho,Masatoshi Nakayama,Masatoshi Nakayama and the JKA technical committee,Q384558,yes,modified,Itosu creation c. 1900s; Shotokan name adopted 1935,
+Bassai Sho,Anko Itosu,Anko Itosu,Q527422,yes,created,Itosu creation c. 1900s; Shotokan name adopted 1935,yes
+Bassai Sho,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,Itosu creation c. 1900s; Shotokan name adopted 1935,yes
+Bassai Sho,Masatoshi Nakayama,Masatoshi Nakayama,Q384558,yes,standardised,Itosu creation c. 1900s; Shotokan name adopted 1935,yes
+Bassai Sho,Masatoshi Nakayama,Masatoshi Nakayama and the JKA technical committee,Q384558,yes,modified,Itosu creation c. 1900s; Shotokan name adopted 1935,yes
 Chinto (Wado-ryu),Sokon Matsumura,attributed to Sokon Matsumura (folklore); Wado adaptation by Hironori Otsuka,Q715769,yes,originated,"Wado version 1930s (declared among the nine official kata, 1977)",yes
 Chinto (Wado-ryu),Sokon Matsumura,Sokon Matsumura,Q715769,yes,created,"Wado version 1930s (declared among the nine official kata, 1977)",yes
 Chinto (Wado-ryu),Hironori Otsuka,Hironori Otsuka,Q386415,yes,standardised,"Wado version 1930s (declared among the nine official kata, 1977)",yes
@@ -715,6 +715,7 @@ Bassai,Sokon Matsumura,Sokon Matsumura,Q715769,yes,standardised,Passai 18th-19th
 Bassai,Won Kuk Lee,Won Kuk Lee,Q9096235,yes,brought,Passai 18th-19th century; in Korea from mid-1940s,
 Bassai,Hwang Kee,Hwang Kee,A0001,yes,brought,Passai 18th-19th century; in Korea from mid-1940s,
 Bassai,Byung Jick Ro,Byung Jick Ro,A0151,yes,brought,Passai 18th-19th century; in Korea from mid-1940s,
+Bassai,Hwang Kee,Hwang Kee (Moo Duk Kwan); Lee Won-kuk (Chung Do Kwan),A0001,yes,modified,Passai 18th-19th century; in Korea from mid-1940s,
 Bigak,Kukkiwon and Asian Taekwondo Union joint development committee,Kukkiwon and Asian Taekwondo Union joint development committee,,"group or body, not an individual",originated,Announced September 2016,
 Bigak,Kukkiwon technical committee,Kukkiwon technical committee (individual authors not published),,"group or body, not an individual",created,Announced September 2016,
 Bigak,Kukkiwon technical committee,Kukkiwon technical committee,,"group or body, not an individual",modified,Announced September 2016,
@@ -1288,7 +1289,7 @@ Tsuki no Kata,Seigo Tada,Seigo Tada,Q7446692,yes,created,mid-20th century (Seigo
 Tsuki no Kata,Tadashi Nakamura,Tadashi Nakamura,Q706955,yes,brought,mid-20th century (Seigokan founded 1945); in Kyokushin by the 1960s-70s,
 Yantsu,Unknown,uncertain; plausibly adapted by Mas Oyama from the kata Ansan/Hansan of Motobu-ha Shito-ryu,,originator not recorded,originated,Kyokushin form standardised 1950s-60s,
 Yantsu,Mas Oyama,Mas Oyama,Q294548,yes,standardised,Kyokushin form standardised 1950s-60s,
-Anan,Ryu Ryu Ko,Ru Ru Ko of Fuzhou (transmitted); ultimate creator unknown,Q954330,yes,originated,Qing-era China; brought to Okinawa c. 1840s,yes
+Anan,Ryu Ryu Ko,Ryu Ryu Ko of Fuzhou; ultimate creator unknown,Q954330,yes,originated,Qing-era China; brought to Okinawa c. 1840s,yes
 Anan,Ryu Ryu Ko,Ryu Ryu Ko,Q954330,yes,transmitted,Qing-era China; brought to Okinawa c. 1840s,yes
 Anan,Norisato Nakaima,Norisato Nakaima,C00244,yes,brought,Qing-era China; brought to Okinawa c. 1840s,yes
 Anan,Kenko Nakaima,Kenko Nakaima,C00232,yes,standardised,Qing-era China; brought to Okinawa c. 1840s,yes
@@ -1300,6 +1301,8 @@ Anan Dai,Tsuguo Sakumoto,"Tsuguo Sakumoto, expanding the Ryuei-ryu Anan",C00625,
 Anan Dai,Kenko Nakaima,Kenko Nakaima,C00232,yes,standardised,late 20th century (expanded competition version of Anan),yes
 Anan Dai,Tsuguo Sakumoto,Tsuguo Sakumoto,C00625,yes,modified,late 20th century (expanded competition version of Anan),yes
 Anan Dai,Norisato Nakaima,Norisato Nakaima,C00244,yes,brought,late 20th century (expanded competition version of Anan),yes
+Aragaki no Seisan,Unknown,"Unknown Chinese source; brought to Okinawa or composed by Aragaki Seisho (Tsuji Pechin, 1840-1918/1920) of Kume",,originator not recorded,originated,demonstrated 24 March 1867; the earliest dated appearance of Seisan anywhere,yes
+Aragaki no Seisan,Tsuyoshi Chitose,Tsuyoshi Chitose (Chito-ryu recension); Ryusho Sakagami and Kenwa Mabuni for the Shito-ryu holdings of Aragaki's kata,Q135222893,yes,modified,demonstrated 24 March 1867; the earliest dated appearance of Seisan anywhere,yes
 Byakko,Meitoku Yagi,Meitoku Yagi,Q16016038,yes,created,Second half of the 20th century (Meibukan),yes
 Byakko,Meitatsu Yagi,Meitatsu Yagi,Q6810356,yes,standardised,Second half of the 20th century (Meibukan),yes
 Byakko,Meitetsu Yagi,Meitetsu Yagi,A0134,yes,standardised,Second half of the 20th century (Meibukan),yes
@@ -1316,6 +1319,7 @@ Chikan,Saikyo Kojo,Saikyo Kojo,C00263,yes,modified,"imported into the Kojo famil
 Chikan,Kojo UEKATA,Kojo UEKATA,C00269,yes,brought,"imported into the Kojo family style in the fourth generation, i.e. within the lifetime of Kaho Kojo (1849-1925)",yes
 Chikan,Kafu Kojo,Kafu Kojo,C00107,yes,standardised,"imported into the Kojo family style in the fourth generation, i.e. within the lifetime of Kaho Kojo (1849-1925)",yes
 Chikan,Kaho Kojo,"Kaho Kojo, who imported and fitted the kata to the family curriculum; Saikyo Kojo (1873-1941) subsequently introduced material from other Okinawan styles, sumo and sai-jutsu into the family style",C00108,yes,modified,"imported into the Kojo family style in the fourth generation, i.e. within the lifetime of Kaho Kojo (1849-1925)",yes
+Empi Ha,Peter Urban,Peter Urban,Q115091,yes,created,second half of the 20th century,yes
 Fukyugata Ni,Chojun Miyagi,Chojun Miyagi,Q221121,yes,created,1940 (Cramer: 1941),yes
 Fukyugata Ni,Shoshin Nagamine,Shoshin Nagamine,Q1963468,yes,transmitted,1940 (Cramer: 1941),yes
 Gekiha Dai Ichi,Seikichi Toguchi,Seikichi Toguchi,Q3954660,yes,created,c. 1950s-1960s,
@@ -1377,6 +1381,7 @@ Hakutsuru Heiho Shodan no Koto,Gokenki,Gokenki,C00084,yes,brought,Qing-era Fujia
 Hakutsuru Heiho Shodan no Koto,Shinko Matayoshi,Shinko Matayoshi,Q1908088,yes,transmitted,Qing-era Fujian; in Okinawa c. 1912-1940 via Go Kenki,yes
 Hakutsuru Heiho Shodan no Koto,Shinpo Matayoshi,Shinpo Matayoshi,Q1908090,yes,transmitted,Qing-era Fujian; in Okinawa c. 1912-1940 via Go Kenki,yes
 Hakutsuru Heiho Shodan no Koto,Shinko Matayoshi,"Shinko Matayoshi, then Shinpo Matayoshi",Q1908088,yes,modified,Qing-era Fujian; in Okinawa c. 1912-1940 via Go Kenki,yes
+Han,Peter Urban,Peter Urban,Q115091,yes,created,second half of the 20th century,yes
 Happoren,Gokenki,"Go Kenki (Wu Xianhui), Fujian white crane boxer resident in Naha",C00084,yes,originated,Qing-era Fujian; brought to Okinawa c. 1912 when Go Kenki settled in Naha; taught there until his death in 1940,yes
 Happoren,Gokenki,Gokenki,C00084,yes,brought,Qing-era Fujian; brought to Okinawa c. 1912 when Go Kenki settled in Naha; taught there until his death in 1940,yes
 Happoren,Kenwa Mabuni,Kenwa Mabuni,Q453505,yes,standardised,Qing-era Fujian; brought to Okinawa c. 1912 when Go Kenki settled in Naha; taught there until his death in 1940,yes
@@ -1389,7 +1394,7 @@ Haufa,Gokenki,Gokenki,C00084,yes,brought,early to mid 20th century in Okinawa,ye
 Haufa,Kanki Izumigawa,Kanki Izumigawa,Q16006586,yes,transmitted,early to mid 20th century in Okinawa,yes
 Haufa,Shogo Kuniba,Shogo Kuniba,Q3959901,yes,standardised,early to mid 20th century in Okinawa,yes
 Haufa,Shogo Kuniba,Shogo Kuniba / Motobu-ha Shito-ryu competition form,Q3959901,yes,modified,early to mid 20th century in Okinawa,yes
-Heiku,Ryu Ryu Ko,Ru Ru Ko of Fuzhou (transmitted); ultimate creator unknown,Q954330,yes,originated,Qing-era China; brought to Okinawa c. 1840s,yes
+Heiku,Ryu Ryu Ko,Ryu Ryu Ko of Fuzhou; ultimate creator unknown,Q954330,yes,originated,Qing-era China; brought to Okinawa c. 1840s,yes
 Heiku,Ryu Ryu Ko,Ryu Ryu Ko,Q954330,yes,transmitted,Qing-era China; brought to Okinawa c. 1840s,yes
 Heiku,Norisato Nakaima,Norisato Nakaima,C00244,yes,brought,Qing-era China; brought to Okinawa c. 1840s,yes
 Heiku,Kenko Nakaima,Kenko Nakaima,C00232,yes,standardised,Qing-era China; brought to Okinawa c. 1840s,yes
@@ -1419,6 +1424,8 @@ Kakuha Dai Ni,Seikichi Toguchi,Seikichi Toguchi — created outright,Q3954660,ye
 Kakuho,Gokenki,Gokenki (Wu Xianhui),C00084,yes,originated,brought to Okinawa c. 1912-1940,yes
 Kakuho,Gokenki,Gokenki,C00084,yes,brought,brought to Okinawa c. 1912-1940,yes
 Kakuho,Iken Tokashiki,Tokashiki Iken,A0212,yes,transmitted,brought to Okinawa c. 1912-1940,yes
+Kan'yu Seisan,Kanyu Higaonna,"Higaonna Kan'yu (1849-1922, 'Higaonna East')",C00202,yes,originated,19th century Naha; transmitted into To'on-ryu from 1934,yes
+Kan'yu Seisan,Juhatsu Kyoda,Juhatsu Kyoda; Shigekazu Kanzaki,A0012,yes,modified,19th century Naha; transmitted into To'on-ryu from 1934,yes
 Kiso Ichi and Ni,Juhatsu Kyoda,Juhatsu Kyoda,A0012,yes,created,formalised by Kyoda between 1934 and 1968,yes
 Koho,Kingai,"Kingai, Chinese master in Fuzhou",KP002,yes,originated,"Chinese origin, undated; brought to Okinawa by Shinko Matayoshi c. 1911-1934",yes
 Koho,Shinko Matayoshi,Shinko Matayoshi,Q1908088,yes,brought,"Chinese origin, undated; brought to Okinawa by Shinko Matayoshi c. 1911-1934",yes
@@ -1447,10 +1454,10 @@ Nijikken,Unknown,unknown; Kojo family transmission,,originator not recorded,orig
 Nijikken,Kaho Kojo,Kaho Kojo,C00108,yes,brought,family transmission; documented 20th century,yes
 Nijikken,Shuren Kojo,Shuren Kojo,C00542,yes,transmitted,family transmission; documented 20th century,yes
 Nijikken,Unknown,unknown,,originator not recorded,modified,family transmission; documented 20th century,yes
-Niseishi (Ryuei-ryu),Ryu Ryu Ko,Ryu Ryu Ko (transmitted; ultimate creator unknown),Q954330,yes,originated,Qing-era China; brought to Okinawa c. 1840s,yes
+Niseishi (Ryuei-ryu),Ryu Ryu Ko,Ryu Ryu Ko,Q954330,yes,originated,Qing-era China; brought to Okinawa c. 1840s,yes
 Niseishi (Ryuei-ryu),Norisato Nakaima,Norisato Nakaima,C00244,yes,brought,Qing-era China; brought to Okinawa c. 1840s,yes
 Niseishi (Ryuei-ryu),Kenko Nakaima,Kenko Nakaima,C00232,yes,standardised,Qing-era China; brought to Okinawa c. 1840s,yes
-Ohan,Ryu Ryu Ko,Ru Ru Ko of Fuzhou (transmitted); ultimate creator unknown,Q954330,yes,originated,Qing-era China; brought to Okinawa c. 1840s,yes
+Ohan,Ryu Ryu Ko,Ryu Ryu Ko of Fuzhou; ultimate creator unknown,Q954330,yes,originated,Qing-era China; brought to Okinawa c. 1840s,yes
 Ohan,Ryu Ryu Ko,Ryu Ryu Ko,Q954330,yes,transmitted,Qing-era China; brought to Okinawa c. 1840s,yes
 Ohan,Norisato Nakaima,Norisato Nakaima,C00244,yes,brought,Qing-era China; brought to Okinawa c. 1840s,yes
 Ohan,Kenko Nakaima,Kenko Nakaima,C00232,yes,standardised,Qing-era China; brought to Okinawa c. 1840s,yes
@@ -1462,26 +1469,27 @@ Okan,Kingai,"Kingai, Chinese master in Fuzhou who taught Shinko Matayoshi; epony
 Okan,Shinko Matayoshi,Shinko Matayoshi,Q1908088,yes,brought,"Chinese origin, undated; brought to Okinawa by Shinko Matayoshi from his Fuzhou training, c. 1911-1934",yes
 Okan,Shinpo Matayoshi,Shinpo Matayoshi,Q1908090,yes,standardised,"Chinese origin, undated; brought to Okinawa by Shinko Matayoshi from his Fuzhou training, c. 1911-1934",yes
 Okan,Shinpo Matayoshi,Shinpo Matayoshi (codification within the Kodokan syllabus),Q1908090,yes,modified,"Chinese origin, undated; brought to Okinawa by Shinko Matayoshi from his Fuzhou training, c. 1911-1934",yes
-Pachu,Ryu Ryu Ko,Ru Ru Ko of Fuzhou (transmitted); ultimate creator unknown,Q954330,yes,originated,Qing-era China; brought to Okinawa c. 1840s,yes
+Pachu,Ryu Ryu Ko,Ryu Ryu Ko of Fuzhou; ultimate creator unknown,Q954330,yes,originated,Qing-era China; brought to Okinawa c. 1840s,yes
 Pachu,Ryu Ryu Ko,Ryu Ryu Ko,Q954330,yes,transmitted,Qing-era China; brought to Okinawa c. 1840s,yes
 Pachu,Norisato Nakaima,Norisato Nakaima,C00244,yes,brought,Qing-era China; brought to Okinawa c. 1840s,yes
 Pachu,Kenko Nakaima,Kenko Nakaima,C00232,yes,standardised,Qing-era China; brought to Okinawa c. 1840s,yes
 Pachu,Teruo Hayashi,Teruo Hayashi,C00586,yes,brought,Qing-era China; brought to Okinawa c. 1840s,yes
 Pachu,Kenko Nakaima,Kenko Nakaima; Teruo Hayashi carried it into Hayashi-ha Shito-ryu,C00232,yes,modified,Qing-era China; brought to Okinawa c. 1840s,yes
-Paiho,Ryu Ryu Ko,Ru Ru Ko of Fuzhou (transmitted); ultimate creator unknown,Q954330,yes,originated,Qing-era China; brought to Okinawa c. 1840s,yes
+Paiho,Ryu Ryu Ko,Ryu Ryu Ko of Fuzhou; ultimate creator unknown,Q954330,yes,originated,Qing-era China; brought to Okinawa c. 1840s,yes
 Paiho,Ryu Ryu Ko,Ryu Ryu Ko,Q954330,yes,transmitted,Qing-era China; brought to Okinawa c. 1840s,yes
 Paiho,Norisato Nakaima,Norisato Nakaima,C00244,yes,brought,Qing-era China; brought to Okinawa c. 1840s,yes
 Paiho,Kenko Nakaima,Kenko Nakaima,C00232,yes,standardised,Qing-era China; brought to Okinawa c. 1840s,yes
-Paiku,Ryu Ryu Ko,Ru Ru Ko of Fuzhou (transmitted); ultimate creator unknown,Q954330,yes,originated,Qing-era China; brought to Okinawa c. 1840s,yes
+Paiku,Ryu Ryu Ko,Ryu Ryu Ko of Fuzhou; ultimate creator unknown,Q954330,yes,originated,Qing-era China; brought to Okinawa c. 1840s,yes
 Paiku,Ryu Ryu Ko,Ryu Ryu Ko,Q954330,yes,transmitted,Qing-era China; brought to Okinawa c. 1840s,yes
 Paiku,Norisato Nakaima,Norisato Nakaima,C00244,yes,brought,Qing-era China; brought to Okinawa c. 1840s,yes
 Paiku,Kenko Nakaima,Kenko Nakaima,C00232,yes,standardised,Qing-era China; brought to Okinawa c. 1840s,yes
 Paiku,Tsuguo Sakumoto,Tsuguo Sakumoto,C00625,yes,standardised,Qing-era China; brought to Okinawa c. 1840s,yes
 Paiku,Teruo Hayashi,Teruo Hayashi,C00586,yes,brought,Qing-era China; brought to Okinawa c. 1840s,yes
 Paiku,Kenko Nakaima,Kenko Nakaima and Tsuguo Sakumoto,C00232,yes,modified,Qing-era China; brought to Okinawa c. 1840s,yes
-Pechurin,Ryu Ryu Ko,Ryu Ryu Ko (transmitted; ultimate creator unknown),Q954330,yes,originated,transmitted from Higaonna Kanryo between 1902 and 1915,yes
+Pechurin,Ryu Ryu Ko,Ryu Ryu Ko,Q954330,yes,originated,transmitted from Higaonna Kanryo between 1902 and 1915,yes
 Pechurin,Kanryo Higaonna,Kanryo Higaonna,Q699236,yes,transmitted,transmitted from Higaonna Kanryo between 1902 and 1915,yes
 Pechurin,Juhatsu Kyoda,Juhatsu Kyoda,A0012,yes,brought,transmitted from Higaonna Kanryo between 1902 and 1915,yes
+Pechurin Dai,"asserted, unverifiable","asserted, unverifiable",,NO — person missing,originated,not established,yes
 Peichurin,Unknown,Unknown Fujian original; transmitted to Okinawa through Ryu Ryu Ko's teaching of Higaonna Kanryo,,originator not recorded,originated,Qing-era Fujian; taught in Naha from c. 1880s-1900s; preserved in To'on-ryu from c. 1902 onwards,yes
 Peichurin,Ryu Ryu Ko,Ryu Ryu Ko,Q954330,yes,transmitted,Qing-era Fujian; taught in Naha from c. 1880s-1900s; preserved in To'on-ryu from c. 1902 onwards,yes
 Peichurin,Kanryo Higaonna,Kanryo Higaonna,Q699236,yes,brought,Qing-era Fujian; taught in Naha from c. 1880s-1900s; preserved in To'on-ryu from c. 1902 onwards,yes
@@ -1503,7 +1511,7 @@ Sanchin,Kanbun Uechi,Kanbun Uechi,Q2473562,yes,brought,Qing-era China; taught in
 Sanchin,Juhatsu Kyoda,Juhatsu Kyoda,A0012,yes,modified,Qing-era China; taught in Naha from c. 1880s,yes
 Sanchin,Chojun Miyagi,Chojun Miyagi,Q221121,yes,modified,Qing-era China; taught in Naha from c. 1880s,yes
 Sanchin,Chojun Miyagi,"Chojun Miyagi, who converted the open-hand nukite to closed fists, removed the turns, and slowed the breathing to produce the Goju-ryu form. Juhatsu Kyoda is credited by some accounts with making the closed-fist change first",Q221121,yes,modified,Qing-era China; taught in Naha from c. 1880s,yes
-Sanchin (Ryuei-ryu),Ryu Ryu Ko,Ryu Ryu Ko (transmitted; ultimate creator unknown),Q954330,yes,originated,brought from Fuzhou c. 1839-1850,yes
+Sanchin (Ryuei-ryu),Ryu Ryu Ko,Ryu Ryu Ko,Q954330,yes,originated,brought from Fuzhou c. 1839-1850,yes
 Sanchin (Ryuei-ryu),Norisato Nakaima,Norisato Nakaima,C00244,yes,brought,brought from Fuzhou c. 1839-1850,yes
 Sanchin (Ryuei-ryu),Kenchu Nakaima,Kenchu Nakaima,C00075,yes,transmitted,brought from Fuzhou c. 1839-1850,yes
 Sanchin (Ryuei-ryu),Kenko Nakaima,Kenko Nakaima,C00232,yes,standardised,brought from Fuzhou c. 1839-1850,yes
@@ -1529,7 +1537,7 @@ Seipai,Chojun Miyagi,Chojun Miyagi,Q221121,yes,standardised,Qing-era China; in N
 Seiryu (Meibukan),Meitoku Yagi,Meitoku Yagi,Q16016038,yes,created,Second half of the 20th century (Meibukan),yes
 Seiryu (Meibukan),Meitatsu Yagi,Meitatsu Yagi,Q6810356,yes,standardised,Second half of the 20th century (Meibukan),yes
 Seiryu (Meibukan),Meitoku Yagi,"Meitoku Yagi, with later codification attributed in part to his sons",Q16016038,yes,modified,Second half of the 20th century (Meibukan),yes
-Seisan (Ryuei-ryu),Ryu Ryu Ko,Ryu Ryu Ko (transmitted; ultimate creator unknown),Q954330,yes,originated,brought from Fuzhou c. 1839-1850,yes
+Seisan (Ryuei-ryu),Ryu Ryu Ko,Ryu Ryu Ko,Q954330,yes,originated,brought from Fuzhou c. 1839-1850,yes
 Seisan (Ryuei-ryu),Norisato Nakaima,Norisato Nakaima,C00244,yes,brought,brought from Fuzhou c. 1839-1850,yes
 Seisan (Ryuei-ryu),Kenko Nakaima,Kenko Nakaima,C00232,yes,standardised,brought from Fuzhou c. 1839-1850,yes
 Seisan (Ryuei-ryu),Tsuguo Sakumoto,Tsuguo Sakumoto,C00625,yes,transmitted,brought from Fuzhou c. 1839-1850,yes
@@ -1543,10 +1551,11 @@ Sepai,Unknown,Unknown Chinese originator; transmitted to Kanryo Higaonna in Fuzh
 Sepai,Ryu Ryu Ko,Ryu Ryu Ko,Q954330,yes,transmitted,late 19th to early 20th century,yes
 Sepai,Kanryo Higaonna,Kanryo Higaonna,Q699236,yes,brought,late 19th to early 20th century,yes
 Sepai,Chojun Miyagi,Chojun Miyagi,Q221121,yes,standardised,late 19th to early 20th century,yes
-Sesan,Ryu Ryu Ko,Ryu Ryu Ko (transmitted; ultimate creator unknown),Q954330,yes,originated,Qing-era China; Okinawa from c. 1880s,yes
+Sesan,Ryu Ryu Ko,Ryu Ryu Ko,Q954330,yes,originated,Qing-era China; Okinawa from c. 1880s,yes
 Sesan,Kanryo Higaonna,Kanryo Higaonna,Q699236,yes,brought,Qing-era China; Okinawa from c. 1880s,yes
 Sesan,Juhatsu Kyoda,Juhatsu Kyoda,A0012,yes,standardised,Qing-era China; Okinawa from c. 1880s,yes
 Sesan,Norisato Nakaima,Norisato Nakaima,C00244,yes,brought,Qing-era China; Okinawa from c. 1880s,yes
+Sesan,Kanryo Higaonna,"Kanryo Higaonna; Chojun Miyagi, who fixed its late position in the post-war Goju sequence",Q699236,yes,modified,Qing-era China; Okinawa from c. 1880s,yes
 Shiho Uke,Juhatsu Kyoda,Juhatsu Kyoda,A0012,yes,created,formalised by Kyoda between 1934 and 1968,yes
 Shisochin,Unknown,"Unknown. Standardly credited to Ryu Ryu Ko's teaching of Kanryo Higaonna, but a competing account holds that a version was already circulating on Okinawa through Seisho Aragaki",,originator not recorded,originated,late 19th to early 20th century,yes
 Shisochin,Ryu Ryu Ko,Ryu Ryu Ko,Q954330,yes,transmitted,late 19th to early 20th century,yes
@@ -1589,6 +1598,8 @@ Tsuruho,Gokenki,Gokenki,C00084,yes,brought,Qing-era Fujian; in Okinawa c. 1912-1
 Tsuruho,Shinko Matayoshi,Shinko Matayoshi,Q1908088,yes,transmitted,Qing-era Fujian; in Okinawa c. 1912-1940 via Go Kenki,yes
 Tsuruho,Shinpo Matayoshi,Shinpo Matayoshi,Q1908090,yes,transmitted,Qing-era Fujian; in Okinawa c. 1912-1940 via Go Kenki,yes
 Tsuruho,Shinko Matayoshi,"Shinko Matayoshi, then Shinpo Matayoshi",Q1908088,yes,modified,Qing-era Fujian; in Okinawa c. 1912-1940 via Go Kenki,yes
+Urban Kururunfa,Peter Urban,Peter Urban,Q115091,yes,created,second half of the 20th century,yes
+Urban Taikyoku,Peter Urban,Peter Urban,Q115091,yes,created,second half of the 20th century,yes
 Chibana Kūsankū,Chibana Chōshō,Chibana Chōshō (1847–1927),R0259,yes,originated,transmitted 1914,yes
 Chibana Kūsankū,Kanken Toyama,Kanken Tōyama,Q3772405,yes,modified,transmitted 1914,yes
 Chinen Bo Kihon Ichi,Kenyu Chinen,Chinen Kenyu,C00245,yes,originated,late 20th century,yes
@@ -1650,6 +1661,8 @@ Itosu Rohai Shodan,Anko Itosu,"Anko Itosu, reworking the Tomari Rohai of the Mat
 Itosu Rohai Shodan,Anko Itosu,Anko Itosu,Q527422,yes,created,c. 1900-1907,
 Itosu Rohai Shodan,Kenwa Mabuni,Kenwa Mabuni,Q453505,yes,standardised,c. 1900-1907,
 Itosu Rohai Shodan,Kenwa Mabuni,"Kenwa Mabuni, who fixed the Shito-ryu recension",Q453505,yes,modified,c. 1900-1907,
+Itosu no Passai,Anko Itosu,Anko Itosu (1831-1915),Q527422,yes,originated,c. 1890s-1900s,yes
+Itosu no Passai,"Itosu himself, repeatedly","Itosu himself, repeatedly; then Chibana Choshin, Kenwa Mabuni and Gichin Funakoshi in their separate redactions",,NO — person missing,modified,c. 1890s-1900s,yes
 Jiin,Unknown,"An unnamed shipwrecked Chinese martial artist from Annan, who according to Gichin Funakoshi (reporting Anko Azato's account in a 1914 Ryukyu Shimpo article) taught the kata to the Tomari-te teacher Gikei Yamazato",,originator not recorded,originated,19th century; first documentary trace 1914,yes
 Jiin,Annan,Annan (stranded Chinese martial artist),Q251784,yes,created,19th century; first documentary trace 1914,yes
 Jiin,Gikei Yamazato,Gikei Yamazato,KP006,yes,transmitted,19th century; first documentary trace 1914,yes
@@ -1693,8 +1706,11 @@ Matsumura Rohai,Sokon Matsumura,Sokon Matsumura (traditional attribution within 
 Matsumura Rohai,Sokon Matsumura,Sokon Matsumura,Q715769,yes,created,claimed mid-19th century; public from the mid-20th century,yes
 Matsumura Rohai,Nabe Matsumura,Nabe Matsumura,Q6956791,yes,transmitted,claimed mid-19th century; public from the mid-20th century,yes
 Matsumura Rohai,Hohan Soken,Hohan Soken,Q3139173,yes,standardised,claimed mid-19th century; public from the mid-20th century,yes
-Matsumura no Passai,Sokon Matsumura,Sokon Matsumura,Q715769,yes,created,mid-19th century,
-Matsumura no Passai,Hohan Soken,Hohan Soken,Q3139173,yes,standardised,mid-19th century,
+Matsumura Seisan,Sokon Matsumura,Attributed to Sokon Matsumura (1809-1898) by tradition; the attribution is unevidenced,Q715769,yes,originated,attributed to the 19th century; documented in Shito-ryu only from the post-war period,yes
+Matsumura Seisan,Ryusho Sakagami,"Ryusho Sakagami, who added it to the Itosu-kai list after learning it from Tsuchiya of the Shudokan; Hohan Soken for the Matsumura Seito line via Nabe Matsumura",C00440,yes,modified,attributed to the 19th century; documented in Shito-ryu only from the post-war period,yes
+Matsumura no Passai,Sokon Matsumura,Sokon Matsumura,Q715769,yes,created,mid-19th century,yes
+Matsumura no Passai,Hohan Soken,Hohan Soken,Q3139173,yes,standardised,mid-19th century,yes
+Matsumura no Passai,Nabe Matsumura,"Nabe Matsumura, then Hohan Soken, who made the Matsumura Seito line public from 1952",Q6956791,yes,modified,mid-19th century,yes
 Myojo,Kenwa Mabuni,Kenwa Mabuni,Q453505,yes,created,c. 1940s,
 Myojo,Kenei Mabuni,Kenei Mabuni,Q727360,yes,transmitted,c. 1940s,
 Naifanchin Nidan,Anko Itosu,Anko Itosu,Q527422,yes,created,c. 1900,
@@ -1737,8 +1753,9 @@ Passai,Anko Itosu,Anko Itosu,Q527422,yes,standardised,by the mid-19th century; n
 Passai,Chotoku Kyan,Chotoku Kyan,Q2393877,yes,modified,by the mid-19th century; no documentation earlier than the Matsumura/Oyadomari generation,yes
 Passai,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,by the mid-19th century; no documentation earlier than the Matsumura/Oyadomari generation,yes
 Passai,Anko Itosu,"Anko Itosu, who fixed the Passai Dai form used in the school syllabus and composed Passai Sho as a companion; Gichin Funakoshi, who renamed it Bassai for Japan",Q527422,yes,modified,by the mid-19th century; no documentation earlier than the Matsumura/Oyadomari generation,yes
-Passai Sho,Anko Itosu,Anko Itosu,Q527422,yes,created,late 19th century,
-Passai Sho,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,late 19th century,
+Passai Dai,Unknown,"n/a: a label, not a composition",,originator not recorded,originated,name in use from the late 19th century,yes
+Passai Sho,Anko Itosu,Anko Itosu,Q527422,yes,created,late 19th century,yes
+Passai Sho,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,late 19th century,yes
 Pinan,Anko Itosu,Anko Itosu,Q527422,yes,created,1904-1907 (introduced into Okinawan school physical education),yes
 Pinan,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,1904-1907 (introduced into Okinawan school physical education),yes
 Pinan,Gichin Funakoshi,Gichin Funakoshi (Q41105) by renaming and reordering,Q41105,yes,modified,1904-1907 (introduced into Okinawan school physical education),yes
@@ -1770,6 +1787,8 @@ Seisan,Kanbun Uechi,Kanbun Uechi,Q2473562,yes,brought,19th century or earlier; d
 Seisan,Chojun Miyagi,Chojun Miyagi,Q221121,yes,standardised,19th century or earlier; demonstrated publicly on Okinawa by 1867,yes
 Seisan,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,19th century or earlier; demonstrated publicly on Okinawa by 1867,yes
 Seisan,Sokon Matsumura,"Sokon Matsumura and then Chotoku Kyan for the Shuri/Shorin stream; Kanryo Higaonna and Chojun Miyagi for the Naha stream; Kanbun Uechi for the Pangai-noon stream; Gichin Funakoshi, who renamed his version Hangetsu",Q715769,yes,modified,19th century or earlier; demonstrated publicly on Okinawa by 1867,yes
+Seisan (Isshin-ryu),Unknown,Unknown; received via Chotoku Kyan,,originator not recorded,originated,"Kyan's form, 19th century; Isshin-ryu recension from 1956",yes
+Seisan (Isshin-ryu),Tatsuo Shimabuku,Tatsuo Shimabuku,Q27363,yes,modified,"Kyan's form, 19th century; Isshin-ryu recension from 1956",yes
 Shiho Kusanku,Anko Itosu,Anko Itosu (attributed),Q527422,yes,originated,c. 1900s,
 Shiho Kusanku,Anko Itosu,Anko Itosu,Q527422,yes,created,c. 1900s,
 Shiho Kusanku,Kenwa Mabuni,Kenwa Mabuni,Q453505,yes,standardised,c. 1900s,
@@ -1807,6 +1826,8 @@ Tachimura no Passai,Soko Kishimoto,Soko Kishimoto,C00550,yes,brought,late 18th t
 Tachimura no Passai,Seitoku Higa,Seitoku Higa,C00494,yes,brought,late 18th to 19th century; Tachimura to Kishimoto transmission late 19th century,yes
 Tachimura no Passai,Kiyohiko Higa,Kiyohiko Higa,C00253,yes,standardised,late 18th to 19th century; Tachimura to Kishimoto transmission late 19th century,yes
 Tachimura no Passai,Tachimura no Peichin,Tachimura no Peichin; Soko Kishimoto; codified in the Bugeikan by Seitoku Higa and Kiyohiko Higa,A0018,yes,modified,late 18th to 19th century; Tachimura to Kishimoto transmission late 19th century,yes
+Tawada no Passai,Tawada Shinboku,"Tawada Chikudun Pechin Shinboku of Tunjumui, Shuri, said to be a student of Sokon Matsumura",KN011,yes,originated,mid-19th century,yes
+Tawada no Passai,Choshin Chibana,"Chibana Choshin, who preserved it on Itosu's instruction and named it Passai Dai",Q1071733,yes,modified,mid-19th century,yes
 Unshu,Seisho Arakaki,Seisho Arakaki (Aragaki),Q584466,yes,originated,19th century,yes
 Unshu,Seisho Arakaki,Seisho Arakaki,Q584466,yes,created,19th century,yes
 Unshu,Kenwa Mabuni,Kenwa Mabuni,Q453505,yes,standardised,19th century,yes
@@ -1848,6 +1869,8 @@ Jion,Anko Itosu,"Anko Itosu, then Gichin Funakoshi and the JKA; Otsuka for Wado"
 "Kasshindi (Ichi, Ni, San)",Seikichi Uehara,Seikichi Uehara,C00478,yes,created,created by Uehara in the mid-20th century; transmitted to Motobu Chosei from 1976,yes
 "Kasshindi (Ichi, Ni, San)",Choyu Motobu,Choyu Motobu,Q706389,yes,transmitted,created by Uehara in the mid-20th century; transmitted to Motobu Chosei from 1976,yes
 "Kasshindi (Ichi, Ni, San)",Chosei Motobu,Chosei Motobu,A0028,yes,transmitted,created by Uehara in the mid-20th century; transmitted to Motobu Chosei from 1976,yes
+Kyan no Passai,Chotoku Kyan,"Chotoku Kyan (1870-1945), reworking Oyadomari no Passai",Q2393877,yes,originated,late 19th to early 20th century,yes
+Kyan no Passai,Zenryo Shimabukuro,Zenryo Shimabukuro (Seibukan) and Joen Nakazato (Shorinji-ryu) in their separate lines,Q189805,yes,modified,late 19th to early 20th century,yes
 Mekata (Anji-kata no Mekata),"No individual originator is recorded. Held by the Motobu Udundi tradition to be the palace art of the Motobu Udun, the Motobu princely household, transmitted within the family rather than composed by any one person","No individual originator is recorded. Held by the Motobu Udundi tradition to be the palace art of the Motobu Udun, the Motobu princely household, transmitted within the family rather than composed by any one person",,"group or body, not an individual",originated,claimed Ryukyu Kingdom era (17th-19th century); documented only in the 20th century,yes
 Mekata (Anji-kata no Mekata),Choyu Motobu,Choyu Motobu,Q706389,yes,brought,claimed Ryukyu Kingdom era (17th-19th century); documented only in the 20th century,yes
 Mekata (Anji-kata no Mekata),Seikichi Uehara,Seikichi Uehara,C00478,yes,standardised,claimed Ryukyu Kingdom era (17th-19th century); documented only in the 20th century,yes
@@ -1917,6 +1940,8 @@ Tomari Rohai,Kodatsu Iha,Kodatsu Iha,C00261,yes,brought,19th century,yes
 Tomari Rohai,Shoshin Nagamine,Shoshin Nagamine,Q1963468,yes,standardised,19th century,yes
 Tomari Rohai,Gichin Funakoshi,Gichin Funakoshi,Q41105,yes,renamed,19th century,yes
 Tomari Rohai,Anko Itosu,"Anko Itosu, who derived Rohai Shodan, Nidan and Sandan from this form for the school syllabus; Kodatsu Iha and Shoshin Nagamine preserved the Tomari original; Funakoshi's Meikyo derives from the Itosu branch",Q527422,yes,modified,19th century,yes
+Tomari Seisan,Unknown,"Unknown; Chinese source form. Kinjo Hiroshi suspects it may be the 'cross-over' Okinawan representation of old Chinese quanfa, possibly the Aragaki or Kume version.",,originator not recorded,originated,documented 1930 in Kenpo Gaisetsu; transmission 19th century,yes
+Tomari Seisan,Kosaku Matsumora,Kosaku Matsumora or Kokan Oyadomari at the head of the chain (accounts differ); Kodatsu Iha; Chojo Oshiro; Hiroshi Kinjo,Q3028499,yes,modified,documented 1930 in Kenpo Gaisetsu; transmission 19th century,yes
 Wando,Unknown,"Unknown. Grouped in the Tomari tradition with Wanshu and Wankan as a set of three sharing a common lineage, which by implication routes it to the same 1683 Wang Ji tradition, but nothing is documented",,originator not recorded,originated,19th century (attributed),yes
 Wando,Kosaku Matsumora,Kosaku Matsumora,Q3028499,yes,brought,19th century (attributed),yes
 Wando,Kodatsu Iha,Kodatsu Iha,C00261,yes,transmitted,19th century (attributed),yes

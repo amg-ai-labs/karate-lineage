@@ -471,6 +471,10 @@ def main():
             founded = int(fy) if fy.isdigit() and 1600 <= int(fy) <= 2026 else None
             canon[cid] = {"id": cid, "label": r["label"], "parent": r.get("parent", "") or None,
                           "family": r.get("family", "other"), "founder": r.get("founder", "") or None,
+                          # the other tradition a style is a hybrid of, where it is one:
+                          # Wado-ryu is karate AND Shindo Yoshin-ryu jujutsu, and saying so
+                          # is more honest than filing it as karate and losing the jujutsu
+                          "hybrid_with": r.get("hybrid_with", "") or None,
                           "founded": founded, "aliases": []}
             if founded:
                 STYLE_FOUNDED.setdefault(cid, founded)

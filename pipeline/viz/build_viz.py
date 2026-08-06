@@ -503,6 +503,7 @@ def main():
         "styles": [{"id": s["id"], "label": s["label"], "parent": s["parent"],
                     "famRaw": raw_family.get(s["id"], "other"),
                     "founder": s.get("founder") or "", "founded": s.get("founded") or "",
+                    "hybrid": s.get("hybrid_with") or "",
                     "family": colours[s["id"]]["family"]} for s in styles],
         "bands": bands,
         "blocks": blocks,
@@ -569,6 +570,11 @@ def main():
         k.pop("sources", None)
         if k.get("note"):                             # internal verifier remarks
             k["note"] = k["note"].split("[Verifier:")[0].strip()
+        # kata relations carry their own citations, and stripping only the
+        # kata-level sources left those in the published payload
+        for r in (k.get("relations") or []):
+            r.pop("sources", None)
+            r.pop("verifier", None)
     pub_html = render(pub)
     for folder in ("website", "docs"):
         site = TARGET.parent / folder / "index.html"

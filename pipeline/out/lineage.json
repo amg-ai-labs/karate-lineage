@@ -25585,12 +25585,12 @@
   "counts": {
    "connected": 1297,
    "edges": 1882,
-   "nodes": 1458,
+   "nodes": 1459,
    "open_review_items": 0,
-   "orphans": 161
+   "orphans": 162
   },
   "pipeline_version": "1.0.0",
-  "source_hash": "a763a551e154b45b"
+  "source_hash": "f5019690de01a190"
  },
  "nodes": [
   {
@@ -46891,6 +46891,39 @@
    "styles": [
     "karate-generic",
     "shorin-ryu-seibukan"
+   ],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": false,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": null,
+   "honours": [],
+   "id": "C9000",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Meiji Suzuki",
+   "name_alt": [],
+   "name_ascii": "Meiji Suzuki",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": "mugendo",
+   "qid": null,
+   "styles": [
+    "mugendo",
+    "wado-ryu"
    ],
    "wikipedia_url": null
   },

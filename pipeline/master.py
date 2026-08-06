@@ -183,6 +183,7 @@ for s in sorted(sty, key=lambda s: (s.get("family", ""), s["id"])):
     styles.append({
         "id": s["id"], "label": s["label"], "parent": s.get("parent") or "",
         "family": s.get("family", ""), "founder": s.get("founder") or "",
+        "hybrid_with": s.get("hybrid_with") or "",
         "founded": s.get("founded") or "", "ancestry": chain(s["id"]),
         "n_people": len(members),
         "aliases": "; ".join(s.get("aliases") or []),
