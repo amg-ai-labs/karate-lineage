@@ -22,9 +22,13 @@ permissions:
   id-token: write
 
 # One deployment at a time; a newer push replaces one that is still waiting.
+# A deployment must be allowed to finish. Cancelling one in flight when a new
+# push arrives is right for a test suite and wrong for a deploy: it leaves the
+# site on the previous version and reports a cancellation, which is exactly what
+# happened here, an 8.3 minute run killed by the next push.
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   publish:
