@@ -402,4 +402,12 @@ body { overflow: hidden; }
 .gen-pick .rk-select { margin: 3px 0 2px; }
 .gen-count { font-size: 11px; color: var(--muted); margin: 0 0 2px; }
 .st-i { font-size: 12px; margin-left: 2px; }
+
+/* recording a kata relationship from the panel */
+.rel-x { margin-left: 6px; color: var(--muted); font-size: 11px; }
+.rel-x:hover { color: var(--warn); }
+.rel-flagged { color: var(--warn); }
+.rel-editor { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--grid); }
+.rel-editor .rk-select, .rel-editor .kata-search { width: 100%; margin: 4px 0; }
+.rel-editor .btn { margin-top: 4px; }
 .conf.disputed { color: var(--warn); }

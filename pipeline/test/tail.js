@@ -154,6 +154,49 @@ try {
     console.log("kata generations for " + kk.name + ": credited=" + core.length
       + " +1gen=" + one + " all=" + all + ", " + labels.length + " options");
   })();
+  // relationships: mirrored once (not twice), siblings surfaced, and recordable
+  (function () {
+    var dup = [];
+    DATA.kata.forEach(function (k) {
+      var seen = {};
+      (k.relations || []).forEach(function (r) {
+        var key = r.relation + ">" + r.to;
+        if (seen[key]) dup.push(k.name + " " + key);
+        seen[key] = 1;
+        if (r.to === k.name) dup.push(k.name + " relates to itself");
+      });
+    });
+    if (dup.length) throw new Error("duplicated kata relations: " + dup.slice(0, 4).join(", "));
+
+    var sib = DATA.kata.filter(k => (k.siblings || []).length);
+    if (sib.length < 40) throw new Error("only " + sib.length + " kata carry siblings");
+    var s0 = sib.find(k => k.name.indexOf("Heian") === 0) || sib[0];
+    kataOpen.clear(); kataOpen.add(s0.name); kataQuery = s0.name; renderKataPanel();
+    var stxt = document.getElementById("katapanel").querySelector(".kata-detail").textContent;
+    if (stxt.indexOf("Written with the same characters") < 0)
+      throw new Error("siblings not shown for " + s0.name);
+
+    // a merge really removed the duplicate rows and kept the name searchable
+    ["Bassai (Wado-ryu)", "Matsumura Bassai", "Tomari Bassai"].forEach(function (gone) {
+      if (DATA.kata.some(k => k.name === gone))
+        throw new Error(gone + " should have been merged away");
+    });
+    var keep = DATA.kata.find(k => k.name === "Passai (Wado-ryu)");
+    if (!keep || (keep.variants || []).indexOf("Bassai (Wado-ryu)") < 0)
+      throw new Error("the merged name is no longer findable as a variant");
+
+    // and a reader can record a relationship that exports as a pipeline row
+    var before = kataRelEdits.length;
+    kataRelEdits.push({ from: s0.name, to: s0.siblings[0], relation: "variant",
+                        confidence: "medium", note: "smoke", status: "proposed" });
+    var files = [], _d = download; download = function (n) { files.push(n); };
+    exportEdits(); download = _d;
+    kataRelEdits.length = before;
+    if (files.indexOf("kata_relations.csv") < 0)
+      throw new Error("recorded relationship did not export: " + files.join(", "));
+    console.log("kata relations: " + DATA.kata.reduce((n, k) => n + (k.relations || []).length, 0)
+      + " rows, " + sib.length + " kata with siblings, 3 duplicates merged, corrections export");
+  })();
   kataQuery = ""; kataOpen.clear();
   console.log("kata detail block for " + chinto.name + ": " + dtxt.slice(0, 70).replace(/\s+/g, " "));
 

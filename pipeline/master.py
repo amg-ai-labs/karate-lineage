@@ -11,16 +11,20 @@ decision can be reversed by flipping one status field.
 
   python3 pipeline/master.py          (called automatically by build.py)
 """
-import csv, json, re, unicodedata
+import csv, json, re, sys, unicodedata
 from pathlib import Path
 
 K = Path(__file__).resolve().parent.parent
 OUT = K / "master"
 OUT.mkdir(exist_ok=True)
+sys.path.insert(0, str(K / "pipeline"))
+import kata as kata_module                                    # noqa: E402
 
 lin = json.load(open(K / "pipeline/out/lineage.json", encoding="utf-8"))
 sty = json.load(open(K / "pipeline/out/styles.json", encoding="utf-8"))["styles"]
-kata = json.load(open(K / "pipeline/out/kata.json", encoding="utf-8"))
+# the same enriched view the site is built from, so the tables cannot disagree
+kata_review = []
+kata, kata_stats = kata_module.load(report=kata_review)
 N = {n["id"]: n for n in lin["nodes"]}
 S = {s["id"]: s for s in sty}
 
@@ -203,9 +207,25 @@ for k in sorted(kata, key=lambda k: (k.get("family", ""), k["name"])):
         "modifier": k.get("modifier", ""), "modified_era": k.get("modified_era", ""),
         "introduced_by": "; ".join(f"{p['name']} ({p['role']})" for p in (k.get("introduced_by") or [])),
         "disputed": "yes" if k.get("disputed") else "",
+        "merged_from": "; ".join(k.get("merged_from") or []),
+        "same_characters_as": "; ".join(k.get("siblings") or []),
+        "related_to": "; ".join(f"{r['relation']} {r['to']}"
+                                for r in (k.get("relations") or []) if not r.get("implied")),
         "provenance": k.get("provenance", "") or k.get("note", ""),
         "sources": " | ".join(k.get("sources") or []),
     })
+
+# 4b. kata relationships as their own table: which forms are the same, which are
+# variants, which are derivatives, and which merely share a name
+krel = []
+for k in sorted(kata, key=lambda k: k["name"]):
+    for r in (k.get("relations") or []):
+        krel.append({
+            "kata": k["name"], "relation": r["relation"], "other_kata": r["to"],
+            "confidence": r.get("confidence", ""),
+            "stated_or_mirrored": "mirrored" if r.get("implied") else "stated",
+            "note": r.get("note", ""), "sources": " | ".join(r.get("sources") or []),
+        })
 
 # 5. kata <-> person, the mapping the client asked for as its own table
 kp = []
@@ -231,6 +251,16 @@ n2 = w("links.csv", list(links[0].keys()), links)
 n3 = w("styles.csv", list(styles[0].keys()), styles)
 n4 = w("kata.csv", list(krows[0].keys()), krows)
 n5 = w("kata_people.csv", list(kp[0].keys()), kp)
+n6 = w("kata_relations.csv", list(krel[0].keys()), krel)
+# the groups that share their characters with no relation recorded are the
+# research queue, so the build states them rather than leaving them implicit
+REVIEW = K / "pipeline" / "review"
+REVIEW.mkdir(exist_ok=True)
+with open(REVIEW / "06_kata_relations.csv", "w", encoding="utf-8", newline="") as f:
+    wr = csv.DictWriter(f, fieldnames=["native", "kata", "question", "override_file"])
+    wr.writeheader()
+    for r in sorted(kata_review, key=lambda r: r["native"]):
+        wr.writerow(r)
 missing = sum(1 for r in kp if r["in_dataset"].startswith("NO"))
 resolved = sum(1 for r in kp if r["in_dataset"] == "yes")
 groups = sum(1 for r in kp if r["in_dataset"].startswith("group"))
@@ -247,6 +277,7 @@ generated from the same data, so these files and the site never drift apart.
 | `styles.csv` | {n3} | every style with its ancestry back to the originating group |
 | `kata.csv` | {n4} | every kata: meaning, era, originator, modifier, provenance |
 | `kata_people.csv` | {n5} | kata mapped to the people who made or carried them |
+| `kata_relations.csv` | {n6} | which kata are the same form, variants, derivatives or namesakes |
 
 `links.csv` is a standard edge list and `people.csv` a node list, so the pair
 imports directly into Gephi, Cytoscape, R (igraph) or NetworkX.
@@ -259,6 +290,16 @@ reversible by setting its `status` to `rejected`. To see how a figure changed:
 **Kata attributions still needing a person:** {missing} of {n5} rows are marked
 `NO — person missing`, meaning the kata credits someone who is not yet in the
 dataset. Those are the gaps to research next.
+
+**Kata relationships:** {n6} rows, of which {kata_stats['implied']} are the
+mirror of a claim recorded on the other kata. {kata_stats['merged']} rows were
+merged away as the same kata under two romanisations.
+{kata_stats['sibling_groups']} groups of kata share their native characters, and
+{kata_stats['unstated']} of those groups have no relation recorded between their
+members: they are listed in `pipeline/review/06_kata_relations.csv`.
 """, encoding="utf-8")
 print(f"master/: {n1} people, {n2} links, {n3} styles, {n4} kata, {n5} kata-person links "
       f"({resolved} resolved to a person, {groups} to a body, {missing} still missing)")
+print(f"kata relations: {n6} rows ({kata_stats['implied']} mirrored), "
+      f"{kata_stats['merged']} duplicates merged, {kata_stats['unstated']} groups "
+      f"awaiting a stated relation (review/06_kata_relations.csv)")

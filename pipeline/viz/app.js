@@ -33,11 +33,13 @@ const EDITS_KEY = "karate-name-edits";
 const FLAGS_KEY = "karate-edge-flags";
 const EADDS_KEY = "karate-edge-adds";
 const RM_KEY = "karate-person-removals";
-let edits = {}, edgeFlags = {}, edgeAdds = [], removals = {};
+const KREL_KEY = "karate-kata-relations";
+let edits = {}, edgeFlags = {}, edgeAdds = [], removals = {}, kataRelEdits = [];
 try { edits = JSON.parse(localStorage.getItem(EDITS_KEY) || "{}"); } catch (_) {}
 try { edgeFlags = JSON.parse(localStorage.getItem(FLAGS_KEY) || "{}"); } catch (_) {}
 try { edgeAdds = JSON.parse(localStorage.getItem(EADDS_KEY) || "[]"); } catch (_) {}
 try { removals = JSON.parse(localStorage.getItem(RM_KEY) || "{}"); } catch (_) {}
+try { kataRelEdits = JSON.parse(localStorage.getItem(KREL_KEY) || "[]"); } catch (_) {}
 // Some browsers refuse storage to a page opened as a local file, and private
 // windows can refuse it too. Corrections must never be lost silently: keep them
 // in memory regardless, and say once that they will not survive a reload.
@@ -48,6 +50,7 @@ function saveCorrections() {
     localStorage.setItem(FLAGS_KEY, JSON.stringify(edgeFlags));
     localStorage.setItem(EADDS_KEY, JSON.stringify(edgeAdds));
     localStorage.setItem(RM_KEY, JSON.stringify(removals));
+    localStorage.setItem(KREL_KEY, JSON.stringify(kataRelEdits));
   } catch (_) {
     if (!storageWarned) {
       storageWarned = true;
@@ -1176,8 +1179,8 @@ const REL_LABEL = {
             "one form read differently by different schools"],
   derived_from: ["Derived from",
                  "a later reworking of an earlier kata"],
-  derivative_of_this: ["Derivatives of this",
-                       "later kata reworked from this one"],
+  ancestor_of: ["Derivatives of this",
+                "later kata reworked from this one"],
   namesake: ["Different kata sharing this name",
              "genuinely distinct forms that happen to share a name"],
   cognate: ["Probable common ancestry",
@@ -1185,18 +1188,87 @@ const REL_LABEL = {
   uncertain: ["Related, but the nature is unsettled",
               "a relationship is asserted; the evidence does not say which kind"],
 };
+// Mirroring happens in pipeline/kata.py, so the master tables and this page
+// agree about what is on record. Doing it here as well produced each relation
+// twice. What arrives is already both directions, the mirrored half flagged.
 const relBySource = new Map();
-for (const k of KATA) {
-  for (const r of (k.relations || [])) {
-    if (!relBySource.has(k.name)) relBySource.set(k.name, []);
-    relBySource.get(k.name).push(r);
-    // a derivation is worth seeing from the parent's side too
-    const inv = r.relation === "derived_from" ? "derivative_of_this" : r.relation;
-    if (!relBySource.has(r.to)) relBySource.set(r.to, []);
-    relBySource.get(r.to).push({ ...r, to: k.name, relation: inv, inverse: true });
-  }
-}
+for (const k of KATA) if ((k.relations || []).length) relBySource.set(k.name, k.relations);
 function relationsFor(name) { return relBySource.get(name) || []; }
+
+/* Recording a relationship in the browser. Thirty-four groups of kata share
+   their characters with nothing yet written about how they stand, and the
+   people who know the answer are not going to edit a CSV. A relationship
+   recorded here exports as a kata_relations.csv row, the same file the
+   pipeline reads, so a correction goes back into the data rather than
+   staying an annotation on a web page. */
+function flagKataRelation(from, to, relation) {
+  const at = kataRelEdits.findIndex(e => e.from === from && e.to === to && e.status === "rejected");
+  if (at >= 0) kataRelEdits.splice(at, 1);
+  else kataRelEdits.push({ from: from, to: to, relation: relation, status: "rejected",
+                           note: "marked wrong by a reader" });
+  saveCorrections();
+  openKata(from);
+}
+function kataRelationEditor(k) {
+  const box = document.createElement("div"); box.className = "rel-editor";
+  const head = document.createElement("div"); head.className = "rel-sub";
+  head.textContent = "Know how this kata stands to another? Record it, and Export → "
+    + "“Expert corrections” writes it as a kata_relations.csv row.";
+  box.appendChild(head);
+
+  const kind = document.createElement("select"); kind.className = "rk-select";
+  for (const [v, lbl] of [["same", "is the same kata as"], ["variant", "is a close variant of"],
+                          ["derived_from", "is derived from"], ["ancestor_of", "is the source of"],
+                          ["cognate", "shares an ancestor with"],
+                          ["namesake", "only shares a name with"],
+                          ["uncertain", "is related, but unsettled how"]]) {
+    const o = document.createElement("option"); o.value = v; o.textContent = lbl;
+    kind.appendChild(o);
+  }
+  const target = document.createElement("input");
+  target.className = "kata-search"; target.type = "search";
+  target.placeholder = "the other kata…";
+  const hits = document.createElement("div"); hits.className = "cx-results";
+  let chosen = "";
+  target.oninput = () => {
+    hits.textContent = ""; chosen = "";
+    const q = deMacron(target.value.trim()).toLowerCase();
+    if (q.length < 2) return;
+    for (const other of KATA.filter(x => x.name !== k.name
+          && deMacron(x.name).toLowerCase().indexOf(q) >= 0).slice(0, 6)) {
+      const b = document.createElement("button");
+      b.className = "linklike"; b.style.display = "block"; b.textContent = other.name;
+      b.onclick = () => { chosen = other.name; target.value = other.name; hits.textContent = ""; };
+      hits.appendChild(b);
+    }
+  };
+  const why = document.createElement("input");
+  why.className = "kata-search"; why.type = "text";
+  why.placeholder = "why, and on what evidence (optional)";
+  const go = document.createElement("button");
+  go.className = "btn"; go.textContent = "Record it";
+  go.onclick = () => {
+    const to = chosen || target.value.trim();
+    if (!to || !KATA.some(x => x.name === to)) {
+      toast("Pick the other kata from the list, so the row names a kata that exists.");
+      return;
+    }
+    kataRelEdits.push({ from: k.name, to: to, relation: kind.value,
+                        confidence: "medium", note: why.value.trim(), status: "proposed" });
+    saveCorrections();
+    toast("Recorded: " + k.name + " " + kind.options[kind.selectedIndex].textContent + " " + to);
+    openKata(k.name);
+  };
+  box.append(kind, target, hits, why, go);
+  const mine = kataRelEdits.filter(e => e.from === k.name || e.to === k.name);
+  if (mine.length) {
+    const n = document.createElement("div"); n.className = "edit-note";
+    n.textContent = mine.length + " unexported correction" + (mine.length === 1 ? "" : "s")
+      + " on this kata.";
+    box.appendChild(n);
+  }
+  return box;
+}
 // A kata nobody on the chart practises still has a record worth exporting.
 function exportKataRecord(k, fmt) {
   const styles = (k.style_ids || []).map(id => (styleByIdMap.get(id) || {}).label || id);
@@ -1397,9 +1469,42 @@ function renderKataPanel(back) {
       }
       // How this kata stands to the others, grouped so the kind of relationship
       // is legible at a glance rather than buried in prose.
+      // Kata written with the same characters are redactions of one form. That
+      // is a fact about the record rather than a research finding, so it is
+      // shown even where nobody has yet written down how the two stand.
+      if ((k.siblings || []).length) {
+        const h = document.createElement("div"); h.className = "rel-head";
+        h.textContent = "Written with the same characters" + (k.native ? " (" + k.native + ")" : "");
+        d.appendChild(h);
+        const sub = document.createElement("div"); sub.className = "rel-sub";
+        const stated = new Set(relationsFor(k.name).map(r => r.to));
+        const unstated = k.siblings.filter(s => !stated.has(s));
+        sub.textContent = unstated.length
+          ? "the reading differs by school; how these stand to one another is not yet recorded"
+          : "the reading differs by school";
+        d.appendChild(sub);
+        for (const s of k.siblings) {
+          const row = document.createElement("div"); row.className = "kata-rel";
+          const b = document.createElement("button"); b.className = "linklike"; b.textContent = s;
+          b.onclick = () => openKata(s, { label: k.name, open: () => openKata(k.name) });
+          row.appendChild(b);
+          if (!stated.has(s)) {
+            const meta = document.createElement("span"); meta.className = "conf";
+            meta.textContent = " · relationship not yet recorded";
+            row.appendChild(meta);
+          }
+          d.appendChild(row);
+        }
+      }
+      if ((k.merged_from || []).length) {
+        const m = document.createElement("div"); m.className = "rel-sub";
+        m.textContent = "Also held under " + k.merged_from.join(", ")
+          + ", merged into this record as one kata.";
+        d.appendChild(m);
+      }
       const rels = relationsFor(k.name);
       if (rels.length) {
-        const order = ["same", "variant", "derived_from", "derivative_of_this",
+        const order = ["same", "variant", "derived_from", "ancestor_of",
                        "cognate", "namesake", "uncertain"];
         for (const kind of order) {
           const group = rels.filter(r => r.relation === kind);
@@ -1421,8 +1526,21 @@ function renderKataPanel(back) {
             // verifier field is stripped, so key it off the claim itself: a low
             // confidence or an explicitly uncertain label is what makes it unsettled.
             meta.textContent = " · " + (r.confidence || "")
-              + (r.confidence === "low" || kind === "uncertain" ? " · unsettled" : "");
+              + (r.confidence === "low" || kind === "uncertain" ? " · unsettled" : "")
+              + (r.implied ? " · recorded on " + r.to : "");
             row.appendChild(meta);
+            if (!r.implied) {
+              const x = document.createElement("button");
+              x.className = "linklike rel-x"; x.textContent = "✕";
+              x.title = "Record that this relationship is wrong";
+              x.onclick = () => flagKataRelation(k.name, r.to, r.relation);
+              row.appendChild(x);
+            }
+            if (kataRelEdits.some(e => e.from === k.name && e.to === r.to && e.status === "rejected")) {
+              const w = document.createElement("span"); w.className = "conf rel-flagged";
+              w.textContent = " · you marked this wrong";
+              row.appendChild(w);
+            }
             if (r.note) {
               const nt = document.createElement("div"); nt.className = "kata-relnote";
               nt.textContent = r.note;
@@ -1432,6 +1550,7 @@ function renderKataPanel(back) {
           }
         }
       }
+      d.appendChild(kataRelationEditor(k));
       // A kata's chart is the people who carried it: creator, modifiers and
       // transmitters, plus the teaching chain that actually joins them.
       const kIds = kataPeopleIds(k);
@@ -3552,6 +3671,12 @@ function exportEdits() {
                 stamp + (r.note ? ": " + r.note : ""), "proposed"]);
   }
   if (vrows.length > 1) files.push({ name: "node_verdicts.csv", blob: csv(vrows) });
+
+  const krows = [["from", "to", "relation", "confidence", "note", "sources", "status"]];
+  for (const r of kataRelEdits)
+    krows.push([r.from, r.to, r.relation, r.confidence || "medium",
+                stamp + (r.note ? ": " + r.note : ""), "", r.status || "proposed"]);
+  if (krows.length > 1) files.push({ name: "kata_relations.csv", blob: csv(krows) });
 
   if (!files.length) { alert("No corrections stored yet. Click a person or a line to make some."); return; }
   files.forEach((f, i) => setTimeout(() => download(f.name, f.blob), i * 500));

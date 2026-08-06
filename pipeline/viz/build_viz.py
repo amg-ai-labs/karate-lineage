@@ -22,7 +22,9 @@ OUT = HERE.parent / "out"
 TARGET = HERE.parent.parent / "karate-cladogram.html"
 
 sys.path.insert(0, str(HERE))
+sys.path.insert(0, str(HERE.parent))
 import gate                                    # noqa: E402  (path set above)
+import kata as kata_module                     # noqa: E402
 KEYFILE = gate.KEYFILE
 
 ROW_H = 46               # vertical slot per person within a column
@@ -384,8 +386,7 @@ def layout_component(comp_ids, nodes, edges):
 def main():
     lineage = json.load(open(OUT / "lineage.json", encoding="utf-8"))
     styles = json.load(open(OUT / "styles.json", encoding="utf-8"))["styles"]
-    kata_path = OUT / "kata.json"
-    kata = json.load(open(kata_path, encoding="utf-8")) if kata_path.exists() else []
+    kata = kata_module.load(OUT, OUT.parent / "overrides")[0] if (OUT / "kata.json").exists() else []
     rank_path = OUT / "rankings.json"
     rankings = json.load(open(rank_path, encoding="utf-8")) if rank_path.exists() else None
     style_by_id = {s["id"]: s for s in styles}

@@ -8,8 +8,9 @@ generated from the same data, so these files and the site never drift apart.
 | `people.csv` | 1459 | every person, dates, styles, honours, connectivity |
 | `links.csv` | 1881 | every teacher-to-student link, graded, with its sources |
 | `styles.csv` | 388 | every style with its ancestry back to the originating group |
-| `kata.csv` | 496 | every kata: meaning, era, originator, modifier, provenance |
-| `kata_people.csv` | 2006 | kata mapped to the people who made or carried them |
+| `kata.csv` | 493 | every kata: meaning, era, originator, modifier, provenance |
+| `kata_people.csv` | 1994 | kata mapped to the people who made or carried them |
+| `kata_relations.csv` | 102 | which kata are the same form, variants, derivatives or namesakes |
 
 `links.csv` is a standard edge list and `people.csv` a node list, so the pair
 imports directly into Gephi, Cytoscape, R (igraph) or NetworkX.
@@ -19,6 +20,13 @@ a row in `pipeline/overrides/`, each carrying a reason and a source, and each
 reversible by setting its `status` to `rejected`. To see how a figure changed:
 `git log -p master/people.csv`.
 
-**Kata attributions still needing a person:** 30 of 2006 rows are marked
+**Kata attributions still needing a person:** 30 of 1994 rows are marked
 `NO — person missing`, meaning the kata credits someone who is not yet in the
 dataset. Those are the gaps to research next.
+
+**Kata relationships:** 102 rows, of which 51 are the
+mirror of a claim recorded on the other kata. 3 rows were
+merged away as the same kata under two romanisations.
+37 groups of kata share their native characters, and
+34 of those groups have no relation recorded between their
+members: they are listed in `pipeline/review/06_kata_relations.csv`.

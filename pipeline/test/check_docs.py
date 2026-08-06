@@ -19,6 +19,8 @@ from pathlib import Path
 
 K = Path(__file__).resolve().parent.parent.parent
 OUT = K / "pipeline" / "out"
+sys.path.insert(0, str(K / "pipeline"))
+import kata as kata_module                                          # noqa: E402
 
 
 def figures():
@@ -37,7 +39,9 @@ def figures():
         "bishop": sum(1 for e in edges
                       if any("Bishop" in s for s in (e.get("evidence") or []))),
         "styles": len(json.loads((OUT / "styles.json").read_text(encoding="utf-8"))["styles"]),
-        "kata": len(json.loads((OUT / "kata.json").read_text(encoding="utf-8"))),
+        # the enriched view, which is what the site and the master tables show:
+        # the raw file still holds the rows that were merged away as duplicates
+        "kata": len(kata_module.load()[0]),
         "overrides": sum(len(list(csv.reader(open(f, encoding="utf-8")))) - 1
                          for f in sorted(glob.glob(str(K / "pipeline/overrides/*.csv")))),
     }
