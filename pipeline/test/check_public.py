@@ -14,10 +14,19 @@ K = Path(__file__).resolve().parent.parent.parent
 FORBIDDEN_FIELDS = {"edges": "evidence", "nodes": "wiki", "kata": "sources"}
 fails = []
 
+# docs/ is what GitHub Pages serves and must always be present. website/ is the
+# same bytes kept on disk for a drag-and-drop host; it is gitignored, so it is
+# absent from a fresh checkout and from CI, where demanding it fails the build
+# for a file that was never meant to be committed.
+REQUIRED = {"docs/index.html"}
 for name in ("docs/index.html", "website/index.html"):
     f = K / name
     if not f.exists():
-        fails.append(f"{name}: missing"); continue
+        if name in REQUIRED:
+            fails.append(f"{name}: missing")
+        else:
+            print(f"{name}: absent (local mirror, not tracked)")
+        continue
     h = f.read_text(encoding="utf-8")
     m = re.search(r'<script id="data" type="application/json">(.*?)</script>', h, re.S)
     if not m:
