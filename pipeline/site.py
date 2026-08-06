@@ -322,25 +322,21 @@ DEFAULT_CONTENT = {
                       "is his vision and follows on from his book Warrior Origins.",
         "karate": "He has trained for four decades and across many styles of karate, "
                   "and holds a sixth dan in Okinawan Gōjū-ryū.",
-        "origins": "In Warrior Origins he took the question quantitatively, applying network "
-                   "theory to the martial arts and using kata as the unit of comparison: "
-                   "where two schools perform a form alike and where they part company, "
-                   "treated as a measure of the distance between the styles themselves. What "
-                   "comes out is a phylogenetic tree of styles drawn from kata as phenotypes. "
-                   "This cladogram is the other half of that same question. Not how the forms "
-                   "resemble one another, but who taught whom.",
-        "project": "He built this lineage map of karate, kobudō and the Korean arts to make "
-                   "that journey legible, and to make it transparent: to follow the art "
-                   "through the people who carried it, with every claim showing the evidence "
-                   "behind it and every contested claim left marked as contested rather than "
-                   "smoothed away. The site is for anyone with an interest in the martial "
-                   "arts and in how karate has evolved and is practised, in all its forms, "
-                   "and not for specialists alone.",
-        "role": "He is a clinician-scientist, a surgeon by training, and leads on artificial "
-                "intelligence at Imperial College London's Institute of Global Health "
-                "Innovation. He has published more than seven hundred peer-reviewed papers, "
-                "holds an h-index above eighty, and has supervised more than seventy doctoral "
-                "students. Operations and clinical signs carry his name.",
+        "origins": "He is the author of Warrior Origins, in which he applied network theory "
+                   "to better understand the evolution of karate through the similarities and "
+                   "differences in kata performance, taken as a measure of the differences "
+                   "between styles, thereby creating a phylogenetic tree of styles through "
+                   "kata phenotypes.",
+        "project": "He created this lineage map of karate, kobudō and the Korean arts to "
+                   "offer transparency and understanding of the journey of karate over time "
+                   "through its luminaries, and created this website for all those interested "
+                   "in the martial arts and in the evolution and practice of karate in all "
+                   "its forms.",
+        "role": "He is a clinician, a surgeon, and a scientist at Imperial College London, "
+                "with more than seven hundred peer-reviewed publications, an h-index above "
+                "eighty, and more than seventy PhD students supervised. He is lead for "
+                "artificial intelligence at the Institute of Global Health Innovation, and "
+                "has operations and clinical signs eponymously named after him.",
     },
     "contact": {
         "standfirst": "Corrections are welcome, and the more specific they are the better.",
