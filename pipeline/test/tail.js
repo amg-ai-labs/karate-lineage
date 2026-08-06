@@ -299,6 +299,28 @@ try {
     console.log("tab documents: " + files.join(", "));
   })();
 
+  // THE KEY belongs in the application and never on a figure: a book plate
+  // wants the lineage, not a row of swatches and four dash patterns.
+  (function () {
+    renderKey();
+    var kt = document.getElementById("keypanel").textContent;
+    ["Solid.", "Dash-dot.", "Dotted.", "Red.", "Colour"].forEach(function (bit) {
+      if (kt.indexOf(bit) < 0) throw new Error("the key does not explain " + bit);
+    });
+    if (kt.indexOf("proposal, not a verdict") < 0)
+      throw new Error("the key does not say a red line is a proposal");
+    document.getElementById("keypanel").hidden = true;
+
+    var built = buildExportSVG({ ids: null });
+    var svg = new XMLSerializer().serializeToString(built.out);
+    var families = DATA.families.map(f => f.label).filter(l => svg.indexOf(l) >= 0);
+    if (families.length)
+      throw new Error("the exported figure still carries a key: " + families.join(", "));
+    if (svg.indexOf("trained-from dates estimated") < 0)
+      throw new Error("the exported figure lost its footnote");
+    console.log("key: in the app (" + kt.length + " chars), absent from the figure");
+  })();
+
   // The by-tradition style list must open on Shuri-te, the largest tradition,
   // not on whichever group happens to sort first.
   (function () {

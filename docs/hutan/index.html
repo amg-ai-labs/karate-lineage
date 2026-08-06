@@ -2559,6 +2559,20 @@ document.getElementById("keybtn").onclick = () => {
   if (!keyPanel.hidden) { keyPanel.hidden = true; return; }
   renderKey();
 };
+/* A chart whose lines carry four distinct meanings cannot rely on the reader
+   finding a button. The key opens by itself the first time this browser sees
+   the page, and then stays out of the way; it is never drawn on an exported
+   figure, where it would compete with the lineage on the page. */
+(function () {
+  const SEEN = "karate-key-seen";
+  let seen = null;
+  try { seen = localStorage.getItem(SEEN); } catch (_) { seen = "1"; }
+  if (seen) return;
+  setTimeout(() => {
+    renderKey();
+    try { localStorage.setItem(SEEN, "1"); } catch (_) {}
+  }, 900);
+})();
 function renderKey() {
   keyPanel.innerHTML = ""; keyPanel.hidden = false;
   const x = document.createElement("button");
@@ -2605,7 +2619,10 @@ function renderKey() {
   row(line({ op: 0.28 }), "Faint.",
       "Off the selected lineage. Still there, pushed back so the line you asked for reads.");
   row(line({ stroke: "#d4483f", dash: "4 3" }), "Red.",
-      "You have flagged this link as wrong. It exports with your corrections.");
+      "A link you have marked as wrong in this browser. It is a proposal, not a verdict: "
+      + "the line stays drawn until the correction is exported and applied to the data, at "
+      + "which point it disappears altogether. Nothing is published in red. A link the "
+      + "project itself has judged wrong is not drawn faintly, it is removed.");
   const h2 = document.createElement("h3"); h2.textContent = "Colour";
   keyPanel.appendChild(h2);
   const sw = (fill) => {
@@ -3928,17 +3945,11 @@ function buildExportSVG(opts) {
   clone.querySelectorAll('[style*="pointer-events:stroke"]').forEach(x => x.remove());
   haloUnderneath(clone);
   out.appendChild(clone);
-  // legend
-  let lx = PAD, ly = H - 30;
-  const counts = {};
-  for (const n of placed) if (!ids || ids.has(n.id)) counts[n.family] = 1;
-  for (const f of DATA.families) {
-    if (!counts[f.id] || state.familiesOff.has(f.id)) continue;
-    el("circle", { cx: lx + 5, cy: ly - 4, r: 5, fill: themeDark() ? f.dark : f.light }, out);
-    const t = el("text", { x: lx + 15, y: ly, "font-size": 11.5, fill: cssVar("--ink-2") }, out);
-    t.textContent = f.label;
-    lx += 15 + f.label.length * 6.4 + 22;
-  }
+  // No key on the figure. A book plate wants the lineage and nothing competing
+  // with it; a row of swatches and four dash patterns along the foot is clutter
+  // at the size these are printed. The key lives in the application, where it
+  // can be read at leisure, and a caption in the book can carry whatever of it
+  // the figure actually needs.
   const foot = el("text", { x: W - PAD, y: H - 30, "font-size": 10.5, "text-anchor": "end",
                             fill: cssVar("--muted") }, out);
   foot.textContent = "* trained-from dates estimated (birth + 25)"

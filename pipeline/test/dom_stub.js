@@ -258,7 +258,34 @@ function getComputedStyle(el) {
     },
   };
 }
-function XMLSerializer() { this.serializeToString = function () { return "<svg/>"; }; }
+/* A real serialiser. It used to return the literal string "<svg/>" for any
+   input, which meant every assertion about what an exported figure contains
+   passed by finding nothing at all: the test that checked the key had been
+   removed from a poster would have passed just as happily if the key were
+   still there. Attributes, nesting and text, with the escaping a browser does. */
+function XMLSerializer() {
+  var esc = function (s, attr) {
+    s = String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return attr ? s.replace(/"/g, "&quot;") : s;
+  };
+  var ser = function (n) {
+    // text nodes are El("#text") here, carrying their content in _text
+    if (n.tagName === "#TEXT") return esc(n._text);
+    var tag = (n.tagName || "div").toLowerCase();
+    var out = "<" + tag;
+    for (var k in n.attrs) {
+      if (n.attrs[k] === undefined || n.attrs[k] === null) continue;
+      out += " " + k + '="' + esc(n.attrs[k], true) + '"';
+    }
+    if (n._cls && n._cls.size) out += ' class="' + esc([...n._cls].join(" "), true) + '"';
+    var kids = (n.children || []).map(ser).join("");
+    var own = n._text ? esc(n._text) : "";
+    if (!kids && !own) return out + "/>";
+    return out + ">" + own + kids + "</" + tag + ">";
+  };
+  this.serializeToString = function (node) { return node ? ser(node) : ""; };
+}
 function Blob(parts, opts) {
   var n = 0;
   for (var i = 0; i < (parts || []).length; i++) {
