@@ -313,6 +313,10 @@ DEFAULT_CONTENT = {
     },
     "about": {
         "caption": "Hutan Ashrafian training in London.",
+        "h_karate": "The martial artist",
+        "h_origins": "Karate evolution through the appraisal of kata",
+        "h_project": "Why this site exists",
+        "h_role": "The clinician and the scientist",
         "standfirst": "Hutan Ashrafian is a surgeon and scientist at Imperial College "
                       "London, and a martial artist of forty years' standing. This project "
                       "is his idea.",
@@ -509,16 +513,16 @@ they are.</p>
   <figcaption>{ed("about", "caption", A["caption"], tag="span")}</figcaption>
 </figure>
 
-<h2>The martial artist</h2>
+{ed("about", "h_karate", A["h_karate"], tag="h2")}
 {ed("about", "karate", A["karate"])}
 
-<h2>Kata as a measure of descent</h2>
+{ed("about", "h_origins", A["h_origins"], tag="h2")}
 {ed("about", "origins", A["origins"])}
 
-<h2>Why this site exists</h2>
+{ed("about", "h_project", A["h_project"], tag="h2")}
 {ed("about", "project", A["project"])}
 
-<h2>The clinician and the scientist</h2>
+{ed("about", "h_role", A["h_role"], tag="h2")}
 {ed("about", "role", A["role"])}
 
 <p>His Imperial College profile is
