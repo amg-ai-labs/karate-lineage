@@ -224,7 +224,38 @@ try {
                 "katapanel", "statspanel", "connectpanel"]
       .filter(id => !document.getElementById(id).hidden);
     if (open.length !== 1) throw new Error("panels open at once: " + open.join(", "));
-    console.log("panels: one at a time, kata opens from a person and returns");
+    // Escape closes what is open before it touches the selection: it used to
+    // clear the selection and leave the panel sitting over the chart
+    selectNode(th.id);
+    openDetail(th.id);
+    fireKey("Escape");
+    if (!document.getElementById("detail").hidden)
+      throw new Error("Escape left the panel open");
+    if (!state.focus) throw new Error("Escape cleared the selection as well as the panel");
+    fireKey("Escape");
+    if (state.focus) throw new Error("a second Escape did not clear the selection");
+    console.log("panels: one at a time, kata opens from a person and returns, Escape closes");
+  })();
+
+  // KEYBOARD: every advertised shortcut opens what it claims to. None of this
+  // could be tested before, because the stub dropped window listeners.
+  (function () {
+    var want = { s: "stylepanel", k: "katapanel", a: "statspanel",
+                 c: "connectpanel", t: "tablepanel" };
+    var opened = [];
+    for (var key in want) {
+      fireKey("Escape");
+      fireKey(key);
+      var p = document.getElementById(want[key]);
+      if (p.hidden) throw new Error("key '" + key + "' did not open " + want[key]);
+      opened.push(key + "→" + want[key].replace("panel", ""));
+    }
+    fireKey("Escape");
+    // typing in a field must not be read as a shortcut
+    fireKey("t", { target: { tagName: "INPUT" } });
+    if (!document.getElementById("tablepanel").hidden)
+      throw new Error("a keystroke in a text field was taken as a shortcut");
+    console.log("keyboard: " + opened.join(", ") + "; shortcuts ignored inside a field");
   })();
 
   // IMAGE EXPORT is the curator's alone; the public build offers data only

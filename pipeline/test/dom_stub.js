@@ -195,7 +195,24 @@ function matchMedia() { return { matches: false, addEventListener: function () {
 function MutationObserver() { this.observe = function () {}; }
 var localStorage = { _s: {}, getItem: function (k) { return this._s[k] || null; },
   setItem: function (k, v) { this._s[k] = String(v); }, removeItem: function (k) { delete this._s[k]; } };
-function addEventListener() {}
+/* Window-level listeners were dropped on the floor, so every keyboard shortcut
+   in the application was untestable and untested. They are recorded now, and
+   fireKey() delivers a keydown the way a browser would. */
+var _globalListeners = {};
+function addEventListener(type, fn) {
+  (_globalListeners[type] = _globalListeners[type] || []).push(fn);
+}
+function fireKey(key, opts) {
+  var ev = {
+    key: key, shiftKey: false, metaKey: false, ctrlKey: false, altKey: false,
+    target: { tagName: "BODY" },
+    preventDefault: function () { this.defaultPrevented = true; },
+    stopPropagation: function () {},
+  };
+  for (var k in (opts || {})) ev[k] = opts[k];
+  for (var f of (_globalListeners.keydown || [])) f(ev);
+  return ev;
+}
 var location = { hash: "", reload: function () {} };
 var performance = { now: function () { return Date.now(); } };
 function setTimeout(f) { f(); return 0; }

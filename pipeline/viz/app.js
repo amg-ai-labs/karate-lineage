@@ -763,6 +763,12 @@ document.getElementById("hidelow").onchange = ev => { state.hideLow = ev.target.
 addEventListener("keydown", ev => {
   if (ev.key === "Escape") {
     hideMenus();
+    // Escape undoes one thing at a time, outermost first. It used to clear the
+    // selection while leaving the kata or style panel sitting open over the
+    // chart, which reads as a key that did nothing.
+    const open = PANEL_IDS.map(id => document.getElementById(id))
+      .filter(p => p && !p.hidden);
+    if (open.length) { open.forEach(p => { p.hidden = true; }); return; }
     if (state.isolated) document.getElementById("clearfocus").click();
     else clearSelection();
     return;

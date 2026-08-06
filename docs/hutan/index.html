@@ -549,7 +549,7 @@ body.locked #app { visibility: hidden; }
     <svg id="canvas" role="img" aria-label="Karate lineage cladogram"></svg>
     <div id="genruler" aria-hidden="true"></div>
     <div id="minimap" aria-label="Overview map"><svg id="minisvg"></svg></div>
-    <div id="hint" hidden>Scroll to pan · ⇧-scroll moves along the timeline · pinch or ⌘-scroll to zoom · arrow keys pan · +/− zoom · F fits · R returns to your selection · / searches · S styles · K kata · A analytics · C connect · T table · ? key · click any name</div>
+    <div id="hint" hidden>Scroll to pan · ⇧-scroll moves along the timeline · pinch or ⌘-scroll to zoom · arrow keys pan · +/− zoom · F fits · R returns to your selection · / searches · S styles · K kata · A analytics · C connect · T table · ? key · Esc closes · click any name</div>
     <div id="tourcard" hidden>
       <div id="tourprogress"></div>
       <h3 id="tourtitle"></h3>
@@ -1364,6 +1364,12 @@ document.getElementById("hidelow").onchange = ev => { state.hideLow = ev.target.
 addEventListener("keydown", ev => {
   if (ev.key === "Escape") {
     hideMenus();
+    // Escape undoes one thing at a time, outermost first. It used to clear the
+    // selection while leaving the kata or style panel sitting open over the
+    // chart, which reads as a key that did nothing.
+    const open = PANEL_IDS.map(id => document.getElementById(id))
+      .filter(p => p && !p.hidden);
+    if (open.length) { open.forEach(p => { p.hidden = true; }); return; }
     if (state.isolated) document.getElementById("clearfocus").click();
     else clearSelection();
     return;
