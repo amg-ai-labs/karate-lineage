@@ -64,6 +64,10 @@ td.num, th.num { text-align: right; }
 .gap b { color: #d03b3b; }
 footer { border-top: 1px solid #e1e0d9; margin-top: 48px; padding-top: 18px;
   font-size: 13px; color: #898781; }
+figure { margin: 0 0 30px; }
+figure img { width: 100%; height: auto; display: block; border-radius: 8px;
+  background: #f0efe9; }
+figcaption { font-size: 13.5px; color: #898781; margin-top: 8px; }
 .cta { display: inline-block; background: #2a78d6; color: #fff; text-decoration: none;
   padding: 10px 18px; border-radius: 7px; font-size: 15px; font-weight: 600; margin: 6px 0 10px; }
 @media (prefers-color-scheme: dark) {
@@ -73,6 +77,7 @@ footer { border-top: 1px solid #e1e0d9; margin-top: 48px; padding-top: 18px;
   .standfirst, .note, td { color: #c3c2b7; }
   td, th { border-bottom-color: #2c2c2a; } th { border-bottom-color: #383835; }
   .note { border-left-color: #383835; } footer { border-top-color: #2c2c2a; }
+  figure img { background: #1a1a19; } figcaption { color: #898781; }
   h1, h2, h3 { color: #fff; }
 }
 """
@@ -214,6 +219,7 @@ DEFAULT_CONTENT = {
                    "chart itself.",
     },
     "about": {
+        "caption": "Hutan Ashrafian training in London.",
         "standfirst": "Professor Hutan Ashrafian, of the Institute of Global Health "
                       "Innovation at Imperial College London, is the co-author of this "
                       "project.",
@@ -384,6 +390,13 @@ they are.</p>
     about = f"""
 <h1>Hutan Ashrafian</h1>
 {ed("about", "standfirst", A["standfirst"], cls="standfirst")}
+
+<figure>
+  <img src="../img/hutan-training.jpg" width="1100" height="939" loading="lazy"
+       alt="Hutan Ashrafian in a white karategi and black belt, standing in a guard
+            position on snow-covered ground, with a city skyline behind him.">
+  <figcaption>{ed("about", "caption", A["caption"], tag="span")}</figcaption>
+</figure>
 
 <div class="note gap"><b>Parts of this page are still a frame rather than a biography.</b>
 A page about a real person should not be assembled from a language model's recollection, so
