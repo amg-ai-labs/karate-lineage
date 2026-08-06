@@ -20,6 +20,9 @@
     "project": "He created this lineage map of karate, kobudō and the Korean arts to offer transparency and understanding of the journey of karate over time through its luminaries, and created this website for all those interested in the martial arts and in the evolution and practice of karate in all its forms.",
     "role": "He is a clinician, a surgeon, and a scientist at Imperial College London, with more than seven hundred peer-reviewed publications, an h-index above eighty, and more than seventy PhD students supervised. He is lead for artificial intelligence at the Institute of Global Health Innovation, and has operations and clinical signs eponymously named after him."
   },
+  "site": {
+    "domain": ""
+  },
   "contact": {
     "standfirst": "Corrections are welcome, and the more specific they are the better.",
     "corrections": "If something here is wrong and you know the material, the most useful thing you can send is the claim, the correction, and where the correction comes from. A claim with no source is not a weak claim, it is not a claim: it will be recorded at low confidence or not at all. Page references from books are ideal, and Japanese, Okinawan, Chinese and Korean sources are especially welcome.",

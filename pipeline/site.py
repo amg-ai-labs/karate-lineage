@@ -272,6 +272,12 @@ def table(headers, rows, numeric=()):
 
 
 
+# The custom domain. Set it here (or in pipeline/site_content.json) and every
+# build writes docs/CNAME. With GitHub Actions publishing, the domain is
+# otherwise held only in the repository settings, and a later deploy can drop it:
+# carrying it in the artefact is what makes it survive.
+DOMAIN = ""
+
 DEFAULT_CONTENT = {
     "history": {
         "standfirst": "Karate's history is usually told as a lineage chart on a dojo wall. "
@@ -337,6 +343,9 @@ DEFAULT_CONTENT = {
                 "eighty, and more than seventy PhD students supervised. He is lead for "
                 "artificial intelligence at the Institute of Global Health Innovation, and "
                 "has operations and clinical signs eponymously named after him.",
+    },
+    "site": {
+        "domain": "",
     },
     "contact": {
         "standfirst": "Corrections are welcome, and the more specific they are the better.",
@@ -566,6 +575,15 @@ better to name the route than to imply one.</p>
             d.mkdir(parents=True, exist_ok=True)
             (d / "index.html").write_text((OUT / sub / "index.html").read_text(encoding="utf-8"),
                                           encoding="utf-8")
+    domain = (C.get("site") or {}).get("domain") or DOMAIN
+    cname = OUT / "CNAME"
+    if domain:
+        cname.write_text(domain.strip() + "\n", encoding="utf-8")
+        (K / "website" / "CNAME").write_text(domain.strip() + "\n", encoding="utf-8")
+        print(f"wrote docs/CNAME for {domain.strip()}")
+    elif cname.exists():
+        cname.unlink()
+
     print(f"wrote docs/history/ and docs/about/ ({len(fam_rows)} originating groups, "
           f"{len(founders)} dated style foundings)")
 
