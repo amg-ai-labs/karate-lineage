@@ -258,20 +258,70 @@ try {
     console.log("keyboard: " + opened.join(", ") + "; shortcuts ignored inside a field");
   })();
 
-  // IMAGE EXPORT is the curator's alone; the public build offers data only
+  // ALL output is the curator's: images and data alike. The published site is
+  // for reading, and keeps only the corrections a reader typed themselves.
   (function () {
     var imgs = ["svg", "pdf", "png", "png2", "png4", "jpg", "jpg4", "tiff"];
+    var data = ["csv", "json", "graphml", "html"];
     previewPublic = true;
     if (canExportImages()) throw new Error("public build still offers image export");
-    var pub = exportFormats(imgs.map(f => [f, f]));
-    if (pub.length) throw new Error("public export offers images: " + pub.map(p => p[1]).join(","));
-    var pubData = exportFormats([["CSV", "csv"], ["GraphML", "graphml"]]);
-    if (pubData.length !== 2) throw new Error("public build lost its data exports");
+    if (canExportData()) throw new Error("public build still offers data export");
+    var pub = exportFormats(imgs.concat(data).map(f => [f, f]));
+    if (pub.length) throw new Error("public export still offers: " + pub.map(p => p[1]).join(","));
     previewPublic = false;
     if (!canExportImages()) throw new Error("curator build lost image export");
-    if (exportFormats(imgs.map(f => [f, f])).length !== imgs.length)
-      throw new Error("curator build is missing image formats");
-    console.log("image export: curator " + imgs.length + " formats, public 0 (data still 2)");
+    var cur = exportFormats(imgs.concat(data).map(f => [f, f]));
+    if (cur.length !== imgs.length + data.length)
+      throw new Error("curator build is missing formats: " + cur.length);
+    console.log("output gating: curator " + cur.length + " formats (" + imgs.length
+      + " image, " + data.length + " data), public none");
+  })();
+
+  // THE TABS AS DOCUMENTS: the kata list and the style list each export as a
+  // print-resolution page, not merely as a route to individual entries.
+  (function () {
+    renderKataPanel();
+    var kp = document.getElementById("katapanel");
+    var kb = kp.querySelectorAll(".btn").filter(b => /TIFF|PDF|HTML/.test(b.textContent));
+    if (kb.length < 3)
+      throw new Error("the kata tab offers no print formats: " + kb.length);
+    var files = [], _d = download; download = function (n) { files.push(n); };
+    kp.querySelectorAll(".btn").filter(b => b.textContent === "CSV")[0].fire("click");
+    kp.querySelectorAll(".btn").filter(b => b.textContent === "HTML")[0].fire("click");
+    kp.querySelectorAll(".btn").filter(b => /SVG/.test(b.textContent))[0].fire("click");
+    renderStylePanel();
+    var sp = document.getElementById("stylepanel");
+    var sb = sp.querySelectorAll(".btn").filter(b => b.textContent === "CSV");
+    if (!sb.length) throw new Error("the style list does not export");
+    sb[0].fire("click");
+    download = _d;
+    if (files.length < 4) throw new Error("tab exports produced nothing: " + files.join(", "));
+    console.log("tab documents: " + files.join(", "));
+  })();
+
+  // The by-tradition style list must open on Shuri-te, the largest tradition,
+  // not on whichever group happens to sort first.
+  (function () {
+    styleOrder = "cat"; renderStylePanel();
+    var txt = document.getElementById("stylepanel").textContent;
+    var first = ["Shuri-te", "Naha-te", "Tomari-te", "Uechi-R"].map(g => txt.indexOf(g));
+    if (first[0] < 0) throw new Error("Shuri-te missing from the by-tradition list");
+    if (first[3] >= 0 && first[3] < first[0])
+      throw new Error("the by-tradition list opens on Uechi-Ryu, not Shuri-te");
+    console.log("style list by tradition opens on Shuri-te");
+  })();
+
+  // Analytics must go as deep as the reader asks, not stop at a built-in fifty.
+  (function () {
+    if (typeof RANK === "undefined" || !RANK) return;
+    rankLimit = 10; renderStatsPanel();
+    var ten = document.getElementById("statspanel").querySelectorAll(".rk-rank").length;
+    rankLimit = 250; renderStatsPanel();
+    var many = document.getElementById("statspanel").querySelectorAll(".rk-rank").length;
+    rankLimit = 50;
+    if (ten !== 10) throw new Error("analytics 'first 10' gave " + ten);
+    if (many <= 50) throw new Error("analytics cannot go past fifty: " + many);
+    console.log("analytics depth: 10 -> " + ten + " rows, 250 -> " + many + " rows");
   })();
 
   // STYLE-BEARING LINE: the client's Sakumoto case

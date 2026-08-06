@@ -50,10 +50,13 @@ def boot(pl, label, fails):
     else:
         print(f"  {label}: {m.group(1)} nodes rendered, curator={m.group(2)}, "
               f"image export={m.group(3)} ({m.group(4)} of 4 formats offered)")
-        # the published copy must never offer a figure export, only data
-        if m.group(2) == "false" and (m.group(3) != "false" or m.group(4) != "1"):
-            fails.append(f"{label}: public build offers image export")
-            print(f"  FAIL: {label} is public but offers image export")
+        # The published copy offers no export at all, figure or data. It used to
+        # keep the data formats; the client's instruction is that output is the
+        # curator's alone, so the expected count here is zero, not one.
+        if m.group(2) == "false" and (m.group(3) != "false" or m.group(4) != "0"):
+            fails.append(f"{label}: public build still offers an export "
+                         f"(images={m.group(3)}, formats={m.group(4)})")
+            print(f"  FAIL: {label} is public but still offers an export")
 
 
 fails = []
