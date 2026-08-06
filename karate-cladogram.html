@@ -1361,6 +1361,23 @@ function isolateLayout(ids, compact) {
     (layers[g] = layers[g] || []).push(id);
   }
   for (let i = 0; i < layers.length; i++) layers[i] = layers[i] || [];
+  // A printed figure inherited the decade columns, and a busy decade holds
+  // hundreds of people, so the figure came out as a ribbon: Chojun Miyagi's 761
+  // descendants measured 4997 by 9627 and were LESS dense than the map they came
+  // from. Splitting an over-long column into side-by-side lanes turns that
+  // height into width and gives a shape that fits a page.
+  if (compact) {
+    const CAP = Math.max(18, Math.min(48, Math.round(Math.sqrt(ids.length * 2.2))));
+    const split = [];
+    for (const l of layers) {
+      if (l.length <= CAP) { split.push(l); continue; }
+      const lanes = Math.ceil(l.length / CAP);
+      const per = Math.ceil(l.length / lanes);
+      for (let i = 0; i < l.length; i += per) split.push(l.slice(i, i + per));
+    }
+    layers.length = 0;
+    for (const l of split) layers.push(l);
+  }
   const pIdx = new Map();
   const reindex = () => layers.forEach(l => l.forEach((v, i) => pIdx.set(v, i)));
   reindex();

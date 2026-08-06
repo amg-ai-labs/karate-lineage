@@ -309,6 +309,38 @@ try {
       + "curator keeps all three");
   })();
 
+  // THE FIGURE MUST BE DENSER THAN THE MAP, not merely a different shape.
+  // The compact pass inherited the decade columns, so a busy decade made the
+  // figure a tall ribbon: 761 people came out 4997 by 9627 and LESS dense than
+  // the chart they came from. Asserted on real clades, not a toy one.
+  (function () {
+    function box(ids, src) {
+      var a = 1e9, b = 1e9, c = -1e9, d = -1e9;
+      ids.forEach(function (i) { var p = src.get(i); if (!p) return;
+        a = Math.min(a, p.x); b = Math.min(b, p.y);
+        c = Math.max(c, p.x); d = Math.max(d, p.y); });
+      return { w: c - a, h: d - b };
+    }
+    var out = [];
+    ["Chojun Miyagi", "Gichin Funakoshi", "Anko Itosu"].forEach(function (name) {
+      var n = DATA.nodes.find(x => x.name === name);
+      if (!n) return;
+      var ids = [...lineageSet(n.id, "down")].filter(i => pos.has(i));
+      if (ids.length < 100) return;
+      var m = box(ids, pos), f = box(ids, isolateLayout(ids, true));
+      var tighter = Math.round(100 - ((f.w * f.h) / (m.w * m.h)) * 100);
+      var ratio = f.h / f.w;
+      if (tighter < 25)
+        throw new Error(name + ": figure only " + tighter + "% tighter than the map");
+      if (ratio > 1.6)
+        throw new Error(name + ": figure is a ribbon, 1:" + ratio.toFixed(2));
+      out.push(name.split(" ").pop() + " " + Math.round(f.w) + "x" + Math.round(f.h)
+        + " (" + tighter + "% tighter)");
+    });
+    if (out.length < 3) throw new Error("clade density unchecked: " + out.length + " clades");
+    console.log("figure density: " + out.join(", "));
+  })();
+
   // EVERY SURFACE MUST OFFER TIFF, JPEG AND PDF AT PRINT RESOLUTION.
   // Stated as a hard requirement, so a panel added later without them fails the
   // build rather than being discovered in use.
