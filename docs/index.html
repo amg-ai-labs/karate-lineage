@@ -925,6 +925,10 @@ const IMAGE_FMTS = new Set(["svg", "pdf", "png", "png2", "png4", "jpg", "jpg4", 
    letting an expert edit in the browser. */
 function canExportImages() { return curator(); }
 function canExportData() { return curator(); }
+// Editing is a curator capability too. The published page is for reading:
+// search it, follow a lineage, open a style or a kata, read the analytics. It
+// cannot change the record, and it cannot take anything away.
+function canEdit() { return curator(); }
 function exportFormats(pairs) {
   return canExportData() ? pairs : [];
 }
@@ -2108,7 +2112,7 @@ function renderKataPanel(back) {
               + (r.confidence === "low" || kind === "uncertain" ? " · unsettled" : "")
               + (r.implied ? " · recorded on " + r.to : "");
             row.appendChild(meta);
-            if (!r.implied) {
+            if (!r.implied && canEdit()) {
               const x = document.createElement("button");
               x.className = "linklike rel-x"; x.textContent = "✕";
               x.title = "Record that this relationship is wrong";
@@ -2129,7 +2133,7 @@ function renderKataPanel(back) {
           }
         }
       }
-      d.appendChild(kataRelationEditor(k));
+      if (canEdit()) d.appendChild(kataRelationEditor(k));
       // A kata's chart is the people who carried it: creator, modifiers and
       // transmitters, plus the teaching chain that actually joins them.
       const kIds = kataPeopleIds(k);
@@ -3374,6 +3378,7 @@ function openDetail(id, back) {
       const yrs = of2.birth ? ` (${of2.birth}–${of2.death || ""})` : "";
       conf.textContent = yrs + "  · " + e.confidence;
       const flag = document.createElement("button"); flag.className = "linklike relflag";
+      flag.hidden = !canEdit();
       const paint = () => {
         row.classList.toggle("flagged", !!edgeFlags[key]);
         flag.textContent = edgeFlags[key] ? "restore" : "✕";
@@ -3401,6 +3406,7 @@ function openDetail(id, back) {
       row.append(sp, rm);
       panel.appendChild(row);
     }
+    if (!canEdit()) return;          // proposing a new link is an edit
     const addRow = document.createElement("div"); addRow.className = "rel-add";
     const inp = document.createElement("input");
     inp.placeholder = "add " + (title === "Teachers" ? "a teacher" : "a student") + "…";
@@ -3441,7 +3447,8 @@ function openDetail(id, back) {
     panel.appendChild(d);
   }
 
-  /* --- expert editing: names and dates --- */
+  /* --- expert editing: names and dates. Curator only, like every output. --- */
+  if (!canEdit()) return;
   const h4 = document.createElement("h4"); h4.textContent = "Edit this record"; panel.appendChild(h4);
   const grid = document.createElement("div"); grid.className = "edit-grid";
   const mk = (label, key, val, placeholder) => {
@@ -3800,10 +3807,10 @@ function visiblePeople() {
 const expBtn = document.getElementById("exportbtn"), expMenu = document.getElementById("exportmenu");
 expBtn.onclick = ev => {
   ev.stopPropagation();
-  // On the published site the menu keeps only the reader's own corrections.
-  const MINE = new Set(["edits", "adds"]);
+  // A published build offers nothing: no figures, no data, no corrections,
+  // because it cannot make corrections either.
   for (const b of expMenu.querySelectorAll("button"))
-    b.hidden = !canExportData() && !MINE.has(String(b.dataset.x || ""));
+    b.hidden = !canExportData();
   expMenu.hidden = !expMenu.hidden;
 };
 document.addEventListener("click", () => { expMenu.hidden = true; });
@@ -4745,6 +4752,19 @@ if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
 }
 setTimeout(userMoved, 9000);   // hint fades on its own eventually
 
+// The toolbar must not offer what the build cannot do: on a published copy the
+// export menu is empty and there is nothing to edit or add, so the three
+// buttons go rather than sit there disabled.
+if (!canEdit()) {
+  for (const id of ["editmode", "addperson"]) {
+    const b = document.getElementById(id);
+    if (b) b.hidden = true;
+  }
+}
+if (!canExportData()) {
+  const w = document.getElementById("exportwrap");
+  if (w) w.hidden = true;
+}
 // make the current mode visible, so curator view is never mistaken for the public site
 if (curator()) {
   setTimeout(() => toast("Curator copy: sources are visible here and are not in the published "

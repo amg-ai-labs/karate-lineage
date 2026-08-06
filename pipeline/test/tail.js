@@ -277,6 +277,38 @@ try {
       + " image, " + data.length + " data), public none");
   })();
 
+  // THE PUBLIC PAGE IS READ-ONLY. It searches, browses, filters and reads;
+  // it cannot change the record and it cannot take anything away.
+  (function () {
+    var person = DATA.nodes.find(n => n.name === "Chojun Miyagi") || placed[0];
+    previewPublic = true;
+    if (canEdit()) throw new Error("the public build still allows editing");
+    openDetail(person.id);
+    var pub = document.getElementById("detail");
+    if (pub.textContent.indexOf("Edit this record") >= 0)
+      throw new Error("the public person panel still offers an edit form");
+    // the checkbox that switches to the style-bearing line is a view control,
+    // not an edit, so count only the fields that would change the record
+    var writable = pub.querySelectorAll("input").filter(i => i.type !== "checkbox");
+    if (writable.length)
+      throw new Error("the public person panel still has " + writable.length + " editable fields");
+    renderKataPanel();
+    if (document.getElementById("katapanel").textContent.indexOf("Record it") >= 0)
+      throw new Error("the public kata panel still records relationships");
+    previewPublic = false;
+    openDetail(person.id);
+    var cur = document.getElementById("detail");
+    if (cur.textContent.indexOf("Edit this record") < 0)
+      throw new Error("the curator build lost its edit form");
+    if (cur.querySelectorAll("input").filter(i => i.type !== "checkbox").length < 5)
+      throw new Error("the curator build lost its editable fields");
+    renderKataPanel();
+    if (document.getElementById("katapanel").textContent.indexOf("Record it") < 0)
+      throw new Error("the curator build lost the relationship recorder");
+    console.log("read-only public: no edit form, no fields, no relationship recorder; "
+      + "curator keeps all three");
+  })();
+
   // THE TABS AS DOCUMENTS: the kata list and the style list each export as a
   // print-resolution page, not merely as a route to individual entries.
   (function () {

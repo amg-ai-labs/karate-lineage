@@ -42,7 +42,7 @@ Some of what the audit threw out: Richard Kim's claimed teacher was a namesake; 
 - **Read the analytics**: eight separate measures of connectivity (reach, prominent students, students taught, teachers studied under, diversity of those teachers, stylistic spread, depth of line) plus the lineages that ended with their holder. The measures are reported separately, never combined into one score, and each states its method.
 - **Export a publication-grade chart** of any person's clade or any style's clade, at a chosen number of generations, as vector SVG, print PDF (300 dpi), TIFF, JPG or PNG. The chart is re-laid out compactly for print, so it carries no empty space. The image above was produced this way.
 - **Export the data** for any person, style or sub-style as CSV (a node table and an edge table), JSON, or GraphML that opens directly in Gephi, Cytoscape or yEd.
-- **Correct the data in the browser.** Names, dates, teachers and students can be edited, added or flagged, and the corrections export as CSVs that feed straight back into the pipeline. This is how domain experts contribute without touching code.
+- **Correct the data in the browser**, on the curator's copy. Names, dates, teachers, students and kata relationships can be edited, added or flagged, and the corrections export as CSVs that feed straight back into the pipeline. The published site is read-only: it searches, browses and reads, and offers no export and no edit.
 
 ## How it is built
 
@@ -80,12 +80,12 @@ Pure standard-library Python 3.9 and vanilla JavaScript. No frameworks, no build
 
 Four things come out of every build:
 
-| File | Sources | Image export | Who opens it |
-|---|---|---|---|
-| `karate-cladogram.html` | Full evidence layer | Yes | The curator, locally |
-| `docs/index.html`, `website/index.html` | **Removed at build time** | No | Everyone, on the web |
-| `docs/hutan/index.html` | Full, **encrypted** | Yes | One reader, with the passphrase |
-| `master/*.csv` | Full, in `evidence` columns | n/a | Anyone wanting the raw tables |
+| File | Sources | Export | Editing | Who opens it |
+|---|---|---|---|---|
+| `karate-cladogram.html` | Full evidence layer | All formats | Yes | The curator, locally |
+| `docs/index.html`, `website/index.html` | **Removed at build time** | **None** | **No** | Everyone, on the web |
+| `docs/hutan/index.html` | Full, **encrypted** | All formats | Yes | One reader, with the passphrase |
+| `master/*.csv` | Full, in `evidence` columns | n/a | n/a | Anyone wanting the raw tables |
 
 The evidence layer is stripped from the payload itself rather than merely hidden in the interface, because hiding is cosmetic when anyone can read a page's source. The page needs no switch: it shows sources when the build it came from carries them. `pipeline/test/check_public.py` asserts that separation on every build.
 
