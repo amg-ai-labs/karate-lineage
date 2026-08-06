@@ -411,3 +411,8 @@ body { overflow: hidden; }
 .rel-editor .rk-select, .rel-editor .kata-search { width: 100%; margin: 4px 0; }
 .rel-editor .btn { margin-top: 4px; }
 .conf.disputed { color: var(--warn); }
+
+/* the rest of the site, from the chart's title block */
+#sitenav { display: flex; gap: 14px; margin-top: 3px; }
+#sitenav a { font-size: 11.5px; color: var(--muted); text-decoration: none; }
+#sitenav a:hover { color: var(--accent); }

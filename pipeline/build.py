@@ -15,6 +15,7 @@ STEPS = [
     (HERE / "analysis" / "rankings.py", ["--json", "--csv"]),
     (HERE / "viz" / "build_viz.py", []),
     (HERE / "master.py", []),
+    (HERE / "site.py", []),
 ]
 for script, args in STEPS:
     r = subprocess.run([sys.executable, str(script)] + args)
