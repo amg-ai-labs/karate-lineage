@@ -13,12 +13,17 @@ flow top-left to bottom-right. Pure stdlib.
 
 import json
 import re
+import sys
 from collections import defaultdict
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 OUT = HERE.parent / "out"
 TARGET = HERE.parent.parent / "karate-cladogram.html"
+
+sys.path.insert(0, str(HERE))
+import gate                                    # noqa: E402  (path set above)
+KEYFILE = gate.KEYFILE
 
 ROW_H = 46               # vertical slot per person within a column
 GAP = 10                 # extra min gap between slots (soft)
@@ -587,6 +592,62 @@ def main():
           f"{sum(1 for n in payload['nodes'] if 'x' in n)} placed nodes, "
           f"{len(edges)} edges, {len(blocks)} blocks")
     print(f"wrote docs/ and website/ index.html ({pkb} KB, public: evidence layer removed)")
+
+    write_gated(payload, template, app, css)
+
+
+def write_gated(payload, template, app, css):
+    """The curator build again, at /hutan, with its payload encrypted.
+
+    The public site and the curator's local file are the two ends of the
+    original design. This is the third case the design did not have: one other
+    person needs the full copy, over the web, from a public repository. A quiet
+    path would not do it, because the file is in the repo and one inbound link
+    puts it in a search index, so the payload itself is encrypted and the path
+    is only where it lives. Same app, same data as karate-cladogram.html."""
+    if not KEYFILE.exists():
+        print("no pipeline/curator_key.txt: skipping the gated /hutan build")
+        return
+    passphrase = KEYFILE.read_text(encoding="utf-8").strip()
+    if not passphrase:
+        print("pipeline/curator_key.txt is empty: skipping the gated /hutan build")
+        return
+
+    data_js = json.dumps(payload, ensure_ascii=False, separators=(",", ":"), sort_keys=True)
+    blob, packed = gate.encrypt(data_js.encode("utf-8"), passphrase)
+    # The build verifies its own output rather than trusting it: a page that
+    # cannot be decrypted is indistinguishable, from the outside, from a page
+    # whose passphrase the reader has typed wrongly.
+    assert gate.decrypt(blob, passphrase).decode("utf-8") == data_js, \
+        "gated payload failed to round-trip"
+
+    page = (template
+            .replace("/*__STYLE__*/", css + "\n" + (HERE / "gate.css").read_text(encoding="utf-8"))
+            .replace("__DATA_JSON__", "")
+            .replace("/*__APP__*/", "")
+            .replace("<title>The Lineage of Karate &amp; Taekwondo</title>",
+                     "<title>The Lineage of Karate &amp; Taekwondo — curator copy</title>")
+            .replace('<meta name="viewport" content="width=device-width, initial-scale=1">',
+                     '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+                     '<meta name="robots" content="noindex, nofollow">')
+            .replace("<body>", '<body class="locked">'))
+    # app source travels as inert text and is executed by the gate after the
+    # data exists, since app.js reads #data on its first line
+    if "</script" in app:
+        raise SystemExit("app.js contains '</script', which cannot be embedded as text")
+    tail = ((HERE / "gate.html").read_text(encoding="utf-8")
+            + '<script id="appsrc" type="text/plain">' + app + "</script>\n"
+            + '<script id="blob" type="text/plain">' + blob + "</script>\n"
+            + "<script>\n" + (HERE / "gate.js").read_text(encoding="utf-8") + "\n</script>\n")
+    page = page.replace("</body>", tail + "</body>")
+
+    for folder in ("website", "docs"):
+        site = TARGET.parent / folder / "hutan" / "index.html"
+        site.parent.mkdir(parents=True, exist_ok=True)
+        site.write_text(page, encoding="utf-8")
+    print(f"wrote docs/hutan/ and website/hutan/ index.html "
+          f"({len(page.encode()) // 1024} KB, encrypted: {packed // 1024} KB of payload "
+          f"behind {gate.ITERATIONS:,} PBKDF2 rounds)")
 
 
 if __name__ == "__main__":

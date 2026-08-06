@@ -19643,19 +19643,6 @@
    "evidence": [
     "book:McCarthy, Koryu Uchinadi vol.2 p.47"
    ],
-   "id": "Q453505->N0028",
-   "inferred_flip": false,
-   "is_primary": true,
-   "primary": "",
-   "primary_basis": "sole",
-   "source": "Q453505",
-   "target": "N0028"
-  },
-  {
-   "confidence": "low",
-   "evidence": [
-    "book:McCarthy, Koryu Uchinadi vol.2 p.47"
-   ],
    "id": "Q453505->N0029",
    "inferred_flip": false,
    "is_primary": true,
@@ -19663,6 +19650,32 @@
    "primary_basis": "sole",
    "source": "Q453505",
    "target": "N0029"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.47"
+   ],
+   "id": "Q453505->N0225",
+   "inferred_flip": false,
+   "is_primary": true,
+   "primary": "",
+   "primary_basis": "sole",
+   "source": "Q453505",
+   "target": "N0225"
+  },
+  {
+   "confidence": "low",
+   "evidence": [
+    "book:McCarthy, Koryu Uchinadi vol.2 p.47"
+   ],
+   "id": "Q453505->N0226",
+   "inferred_flip": false,
+   "is_primary": true,
+   "primary": "",
+   "primary_basis": "sole",
+   "source": "Q453505",
+   "target": "N0226"
   },
   {
    "confidence": "high",
@@ -19846,6 +19859,21 @@
    "primary_basis": "secondary_ruled",
    "source": "Q453505",
    "target": "R0023"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "https://ja.wikipedia.org/wiki/%E7%A5%9E%E5%82%B3%E4%B8%8D%E5%8B%95%E6%B5%81_(%E7%9C%9F%E5%A6%99%E6%B5%81%E7%B3%BB)",
+    "https://www.martialtalk.com/threads/mabuni-and-jujutsu.26393/",
+    "https://ja.wikipedia.org/wiki/%E6%91%A9%E6%96%87%E4%BB%81%E8%B3%A2%E5%92%8C"
+   ],
+   "id": "Q453505->R0240",
+   "inferred_flip": false,
+   "is_primary": true,
+   "primary": "no",
+   "primary_basis": "sole",
+   "source": "Q453505",
+   "target": "R0240"
   },
   {
    "confidence": "medium",
@@ -25373,20 +25401,6 @@
   {
    "confidence": "medium",
    "evidence": [
-    "https://www.martialtalk.com/threads/mabuni-and-jujutsu.26393/",
-    "https://www.karatebyjesse.com/legends-of-karate-mabuni-kenwa-and-his-shito-ryu-pt-2/"
-   ],
-   "id": "R0240->Q453505",
-   "inferred_flip": false,
-   "is_primary": false,
-   "primary": "no",
-   "primary_basis": "secondary_assumed",
-   "source": "R0240",
-   "target": "Q453505"
-  },
-  {
-   "confidence": "medium",
-   "evidence": [
     "https://en.wikipedia.org/wiki/Kanbun_Uechi"
    ],
    "id": "R0250->A0007",
@@ -25557,14 +25571,14 @@
  ],
  "meta": {
   "counts": {
-   "connected": 1295,
-   "edges": 1880,
-   "nodes": 1457,
+   "connected": 1297,
+   "edges": 1881,
+   "nodes": 1459,
    "open_review_items": 0,
    "orphans": 162
   },
   "pipeline_version": "1.0.0",
-  "source_hash": "1440bd593c73d164"
+  "source_hash": "5c6301ee4fa5dc86"
  },
  "nodes": [
   {
@@ -25790,7 +25804,7 @@
    "honours": [],
    "id": "A0007",
    "locality": null,
-   "n_descendants": 616,
+   "n_descendants": 592,
    "n_students": 1,
    "name": "Shu Shiwa (Zhou Zihe)",
    "name_alt": [
@@ -26502,7 +26516,7 @@
    "honours": [],
    "id": "A0029",
    "locality": null,
-   "n_descendants": 906,
+   "n_descendants": 904,
    "n_students": 1,
    "name": "Choshin Motobu",
    "name_alt": [
@@ -29534,7 +29548,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [],
    "id": "A0121",
    "locality": null,
@@ -29567,7 +29581,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [],
    "id": "A0122",
    "locality": null,
@@ -29600,7 +29614,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -29635,7 +29649,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [],
    "id": "A0124",
    "locality": null,
@@ -29672,7 +29686,7 @@
    "honours": [],
    "id": "A0125",
    "locality": null,
-   "n_descendants": 594,
+   "n_descendants": 596,
    "n_students": 1,
    "name": "Umikana Chinen",
    "name_alt": [
@@ -30947,7 +30961,7 @@
    "honours": [],
    "id": "A0165",
    "locality": null,
-   "n_descendants": 909,
+   "n_descendants": 907,
    "n_students": 1,
    "name": "Choei Motobu",
    "name_alt": [],
@@ -30979,7 +30993,7 @@
    "honours": [],
    "id": "A0166",
    "locality": null,
-   "n_descendants": 908,
+   "n_descendants": 906,
    "n_students": 1,
    "name": "Chotoku Inohama",
    "name_alt": [],
@@ -31584,7 +31598,7 @@
    "honours": [],
    "id": "A0184",
    "locality": null,
-   "n_descendants": 852,
+   "n_descendants": 851,
    "n_students": 1,
    "name": "Fang Zhong",
    "name_alt": [],
@@ -31616,7 +31630,7 @@
    "honours": [],
    "id": "A0185",
    "locality": null,
-   "n_descendants": 851,
+   "n_descendants": 850,
    "n_students": 2,
    "name": "Fang Qiniang",
    "name_alt": [],
@@ -31648,7 +31662,7 @@
    "honours": [],
    "id": "A0186",
    "locality": null,
-   "n_descendants": 850,
+   "n_descendants": 849,
    "n_students": 1,
    "name": "Zeng Si",
    "name_alt": [],
@@ -31680,7 +31694,7 @@
    "honours": [],
    "id": "A0187",
    "locality": null,
-   "n_descendants": 849,
+   "n_descendants": 848,
    "n_students": 1,
    "name": "Zheng Li",
    "name_alt": [],
@@ -31713,7 +31727,7 @@
    "honours": [],
    "id": "A0188",
    "locality": null,
-   "n_descendants": 848,
+   "n_descendants": 847,
    "n_students": 1,
    "name": "Lin Shixian",
    "name_alt": [],
@@ -31745,7 +31759,7 @@
    "honours": [],
    "id": "A0189",
    "locality": null,
-   "n_descendants": 847,
+   "n_descendants": 846,
    "n_students": 1,
    "name": "Pan Yuba (Lin Dachong)",
    "name_alt": [
@@ -31779,7 +31793,7 @@
    "honours": [],
    "id": "A0190",
    "locality": null,
-   "n_descendants": 616,
+   "n_descendants": 592,
    "n_students": 1,
    "name": "Zheng Bugong",
    "name_alt": [],
@@ -32326,7 +32340,7 @@
    "honours": [],
    "id": "A0207",
    "locality": null,
-   "n_descendants": 915,
+   "n_descendants": 913,
    "n_students": 1,
    "name": "Chohei Motobu",
    "name_alt": [
@@ -32360,7 +32374,7 @@
    "honours": [],
    "id": "A0208",
    "locality": null,
-   "n_descendants": 914,
+   "n_descendants": 912,
    "n_students": 1,
    "name": "Chokan Motobu",
    "name_alt": [
@@ -32394,7 +32408,7 @@
    "honours": [],
    "id": "A0209",
    "locality": null,
-   "n_descendants": 913,
+   "n_descendants": 911,
    "n_students": 1,
    "name": "Chochi Motobu",
    "name_alt": [
@@ -32428,7 +32442,7 @@
    "honours": [],
    "id": "A0210",
    "locality": null,
-   "n_descendants": 912,
+   "n_descendants": 910,
    "n_students": 1,
    "name": "Choryu Motobu",
    "name_alt": [
@@ -33354,7 +33368,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -33674,7 +33688,7 @@
    "honours": [],
    "id": "B0012",
    "locality": null,
-   "n_descendants": 933,
+   "n_descendants": 935,
    "n_students": 1,
    "name": "Shiroma (Gusukuma) of Tomari",
    "name_alt": [],
@@ -34236,7 +34250,7 @@
    "honours": [],
    "id": "B0030",
    "locality": null,
-   "n_descendants": 596,
+   "n_descendants": 598,
    "n_students": 1,
    "name": "Soeishi",
    "name_alt": [],
@@ -34757,7 +34771,7 @@
    "honours": [],
    "id": "C00020",
    "locality": null,
-   "n_descendants": 910,
+   "n_descendants": 908,
    "n_students": 1,
    "name": "Chokyu Motobu",
    "name_alt": [],
@@ -34919,7 +34933,7 @@
    "honours": [],
    "id": "C00028",
    "locality": null,
-   "n_descendants": 911,
+   "n_descendants": 909,
    "n_students": 1,
    "name": "Choko Motobu",
    "name_alt": [],
@@ -35301,7 +35315,7 @@
    "honours": [],
    "id": "C00042",
    "locality": null,
-   "n_descendants": 907,
+   "n_descendants": 905,
    "n_students": 1,
    "name": "Chosho Motobu",
    "name_alt": [],
@@ -35467,7 +35481,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 17,
+   "generation": 15,
    "honours": [],
    "id": "C00057",
    "locality": null,
@@ -35974,7 +35988,7 @@
    "honours": [],
    "id": "C00084",
    "locality": null,
-   "n_descendants": 770,
+   "n_descendants": 772,
    "n_students": 6,
    "name": "Gokenki",
    "name_alt": [],
@@ -36172,7 +36186,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [],
    "id": "C00093",
    "locality": null,
@@ -36654,7 +36668,7 @@
    "honours": [],
    "id": "C00108",
    "locality": null,
-   "n_descendants": 624,
+   "n_descendants": 600,
    "n_students": 5,
    "name": "Kaho Kojo",
    "name_alt": [],
@@ -37180,7 +37194,7 @@
    "honours": [],
    "id": "C00141",
    "locality": null,
-   "n_descendants": 625,
+   "n_descendants": 601,
    "n_students": 1,
    "name": "Isei Kojo",
    "name_alt": [],
@@ -37245,7 +37259,7 @@
    "honours": [],
    "id": "C00145",
    "locality": null,
-   "n_descendants": 1046,
+   "n_descendants": 1048,
    "n_students": 6,
    "name": "Iwah",
    "name_alt": [],
@@ -37605,7 +37619,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [],
    "id": "C00165",
    "locality": null,
@@ -38186,7 +38200,7 @@
    "honours": [],
    "id": "C00196",
    "locality": null,
-   "n_descendants": 616,
+   "n_descendants": 592,
    "n_students": 1,
    "name": "Makabe UDUN",
    "name_alt": [],
@@ -38251,7 +38265,7 @@
    "honours": [],
    "id": "C00198",
    "locality": null,
-   "n_descendants": 616,
+   "n_descendants": 592,
    "n_students": 1,
    "name": "Kantoku Uechi",
    "name_alt": [],
@@ -38388,7 +38402,7 @@
    "honours": [],
    "id": "C00206",
    "locality": null,
-   "n_descendants": 930,
+   "n_descendants": 929,
    "n_students": 2,
    "name": "Karyu Uku",
    "name_alt": [],
@@ -38646,7 +38660,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [],
    "id": "C00214",
    "locality": null,
@@ -38968,7 +38982,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -39708,7 +39722,7 @@
    "honours": [],
    "id": "C00251",
    "locality": null,
-   "n_descendants": 930,
+   "n_descendants": 929,
    "n_students": 2,
    "name": "Kishin Teruya",
    "name_alt": [
@@ -40209,7 +40223,7 @@
    "honours": [],
    "id": "C00268",
    "locality": null,
-   "n_descendants": 918,
+   "n_descendants": 917,
    "n_students": 1,
    "name": "Kojo PECHIN",
    "name_alt": [],
@@ -40242,7 +40256,7 @@
    "honours": [],
    "id": "C00269",
    "locality": null,
-   "n_descendants": 919,
+   "n_descendants": 918,
    "n_students": 1,
    "name": "Kojo UEKATA",
    "name_alt": [],
@@ -40679,7 +40693,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -42197,7 +42211,7 @@
    "honours": [],
    "id": "C00354",
    "locality": null,
-   "n_descendants": 554,
+   "n_descendants": 525,
    "n_students": 1,
    "name": "Tawata Pechin",
    "name_alt": [],
@@ -42723,7 +42737,7 @@
    "honours": [],
    "id": "C00373",
    "locality": null,
-   "n_descendants": 553,
+   "n_descendants": 524,
    "n_students": 3,
    "name": "Moden Yabiku",
    "name_alt": [],
@@ -43575,7 +43589,7 @@
    "honours": [],
    "id": "C00449",
    "locality": null,
-   "n_descendants": 593,
+   "n_descendants": 595,
    "n_students": 12,
    "name": "Sanda Chinen",
    "name_alt": [],
@@ -43610,7 +43624,7 @@
    "honours": [],
    "id": "C00450",
    "locality": null,
-   "n_descendants": 580,
+   "n_descendants": 551,
    "n_students": 4,
    "name": "Sanda Kanagusuku",
    "name_alt": [
@@ -43905,7 +43919,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -44200,7 +44214,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [],
    "id": "C00492",
    "locality": null,
@@ -44689,7 +44703,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [],
    "id": "C00513",
    "locality": null,
@@ -44954,7 +44968,7 @@
    "honours": [],
    "id": "C00522",
    "locality": null,
-   "n_descendants": 917,
+   "n_descendants": 916,
    "n_students": 2,
    "name": "Shoi Sai",
    "name_alt": [],
@@ -45144,7 +45158,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -45247,7 +45261,7 @@
    "honours": [],
    "id": "C00564",
    "locality": null,
-   "n_descendants": 847,
+   "n_descendants": 846,
    "n_students": 3,
    "name": "Taitei Kojo",
    "name_alt": [],
@@ -45308,7 +45322,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -45670,7 +45684,7 @@
    "honours": [],
    "id": "C00605",
    "locality": null,
-   "n_descendants": 616,
+   "n_descendants": 592,
    "n_students": 1,
    "name": "Tokusaburo Matsuda",
    "name_alt": [],
@@ -46132,7 +46146,7 @@
    "honours": [],
    "id": "C00639",
    "locality": null,
-   "n_descendants": 1007,
+   "n_descendants": 1009,
    "n_students": 7,
    "name": "Wai Shin Zan",
    "name_alt": [
@@ -46200,7 +46214,7 @@
    "honours": [],
    "id": "C00646",
    "locality": null,
-   "n_descendants": 976,
+   "n_descendants": 978,
    "n_students": 1,
    "name": "Yashichiro Ijuin",
    "name_alt": [],
@@ -46388,7 +46402,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [],
    "id": "C00653",
    "locality": null,
@@ -47024,7 +47038,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -48103,7 +48117,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 15,
+   "generation": 8,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -48285,7 +48299,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -50726,7 +50740,7 @@
    "honours": [],
    "id": "J0113",
    "locality": "Ryukyu Kingdom, Okinawa",
-   "n_descendants": 594,
+   "n_descendants": 596,
    "n_students": 1,
    "name": "Aburaya Yamagusuku",
    "name_alt": [],
@@ -50754,7 +50768,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [],
    "id": "J0114",
    "locality": "Ryugasaki, Ibaraki, Japan",
@@ -53277,7 +53291,7 @@
    "honours": [],
    "id": "KN003",
    "locality": null,
-   "n_descendants": 596,
+   "n_descendants": 598,
    "n_students": 1,
    "name": "Soeishi Ryotoku",
    "name_alt": [],
@@ -53373,7 +53387,7 @@
    "honours": [],
    "id": "KN006",
    "locality": null,
-   "n_descendants": 595,
+   "n_descendants": 597,
    "n_students": 1,
    "name": "Chinen Shikiyanaka",
    "name_alt": [],
@@ -53437,7 +53451,7 @@
    "honours": [],
    "id": "KN008",
    "locality": null,
-   "n_descendants": 554,
+   "n_descendants": 525,
    "n_students": 2,
    "name": "Sueyoshi",
    "name_alt": [],
@@ -53533,7 +53547,7 @@
    "honours": [],
    "id": "KN011",
    "locality": null,
-   "n_descendants": 671,
+   "n_descendants": 643,
    "n_students": 2,
    "name": "Tawada Shinboku",
    "name_alt": [],
@@ -53565,7 +53579,7 @@
    "honours": [],
    "id": "KP001",
    "locality": null,
-   "n_descendants": 770,
+   "n_descendants": 772,
    "n_students": 4,
    "name": "Tang Daiji",
    "name_alt": [],
@@ -53750,7 +53764,7 @@
    "honours": [],
    "id": "KP008",
    "locality": null,
-   "n_descendants": 908,
+   "n_descendants": 907,
    "n_students": 3,
    "name": "Wai Shinzan",
    "name_alt": [],
@@ -54237,7 +54251,7 @@
    "honours": [],
    "id": "KP024",
    "locality": null,
-   "n_descendants": 770,
+   "n_descendants": 772,
    "n_students": 4,
    "name": "Wu Xiangui",
    "name_alt": [],
@@ -54535,7 +54549,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 13,
+   "generation": 0,
    "honours": [],
    "id": "N0028",
    "locality": null,
@@ -54595,7 +54609,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 15,
+   "generation": 9,
    "honours": [],
    "id": "N0030",
    "locality": null,
@@ -55135,7 +55149,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [],
    "id": "N0117",
    "locality": null,
@@ -55165,7 +55179,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [],
    "id": "N0119",
    "locality": null,
@@ -55195,7 +55209,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [],
    "id": "N0120",
    "locality": null,
@@ -55225,7 +55239,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 16,
+   "generation": 14,
    "honours": [],
    "id": "N0121",
    "locality": null,
@@ -55255,7 +55269,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 15,
+   "generation": 8,
    "honours": [],
    "id": "N0122",
    "locality": null,
@@ -55645,7 +55659,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 17,
+   "generation": 15,
    "honours": [],
    "id": "N0169",
    "locality": null,
@@ -55979,7 +55993,7 @@
    "honours": [],
    "id": "N0222",
    "locality": null,
-   "n_descendants": 763,
+   "n_descendants": 761,
    "n_students": 1,
    "name": "Miao Xing",
    "name_alt": [],
@@ -56016,6 +56030,66 @@
    "name": "Jiao Gui Wu",
    "name_alt": [],
    "name_ascii": "Jiao Gui Wu",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": null,
+   "connected": true,
+   "death_year": null,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 13,
+   "honours": [],
+   "id": "N0225",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Takayama Teruo",
+   "name_alt": [],
+   "name_ascii": "Takayama Teruo",
+   "name_native": null,
+   "name_romaji": null,
+   "primary_style": null,
+   "qid": null,
+   "styles": [],
+   "wikipedia_url": null
+  },
+  {
+   "active_from": null,
+   "active_from_estimated": false,
+   "birth_year": 1909,
+   "connected": true,
+   "death_year": 1977,
+   "flags": {
+    "added_by_research": true,
+    "legendary": false,
+    "merged_from": [],
+    "needs_review": true,
+    "wrong_entity": false,
+    "years_nulled": []
+   },
+   "generation": 13,
+   "honours": [],
+   "id": "N0226",
+   "locality": null,
+   "n_descendants": 0,
+   "n_students": 0,
+   "name": "Tomoyori Ryusei",
+   "name_alt": [],
+   "name_ascii": "Tomoyori Ryusei",
    "name_native": null,
    "name_romaji": null,
    "primary_style": null,
@@ -57156,7 +57230,7 @@
    "honours": [],
    "id": "Q1336547",
    "locality": "Shuri",
-   "n_descendants": 996,
+   "n_descendants": 998,
    "n_students": 1,
    "name": "Takahara Peichin",
    "name_alt": [
@@ -58750,7 +58824,7 @@
    "honours": [],
    "id": "Q16907056",
    "locality": null,
-   "n_descendants": 846,
+   "n_descendants": 845,
    "n_students": 1,
    "name": "Xie Zongxiang",
    "name_alt": [
@@ -59229,7 +59303,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 14,
+   "generation": 7,
    "honours": [],
    "id": "Q1908088",
    "locality": "Naha",
@@ -59266,7 +59340,7 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 15,
+   "generation": 13,
    "honours": [
     "Hanshi 10th dan — Okinawa Karate News register (2018)"
    ],
@@ -59352,7 +59426,7 @@
    "honours": [],
    "id": "Q1929108",
    "locality": null,
-   "n_descendants": 999,
+   "n_descendants": 1001,
    "n_students": 3,
    "name": "Kusanku",
    "name_alt": [],
@@ -59716,7 +59790,7 @@
    "honours": [],
    "id": "Q221121",
    "locality": "Shuri",
-   "n_descendants": 762,
+   "n_descendants": 760,
    "n_students": 30,
    "name": "Chojun Miyagi",
    "name_alt": [],
@@ -59965,7 +60039,7 @@
    "honours": [],
    "id": "Q2473562",
    "locality": "Naha",
-   "n_descendants": 615,
+   "n_descendants": 591,
    "n_students": 7,
    "name": "Kanbun Uechi",
    "name_alt": [],
@@ -60005,7 +60079,7 @@
    "honours": [],
    "id": "Q251784",
    "locality": null,
-   "n_descendants": 950,
+   "n_descendants": 952,
    "n_students": 3,
    "name": "Annan",
    "name_alt": [
@@ -60748,7 +60822,7 @@
    "honours": [],
    "id": "Q3028499",
    "locality": "Tomari",
-   "n_descendants": 925,
+   "n_descendants": 924,
    "n_students": 11,
    "name": "Kosaku Matsumora",
    "name_alt": [],
@@ -62489,8 +62563,8 @@
    "honours": [],
    "id": "Q453505",
    "locality": "Shuri",
-   "n_descendants": 552,
-   "n_students": 33,
+   "n_descendants": 523,
+   "n_students": 35,
    "name": "Kenwa Mabuni",
    "name_alt": [],
    "name_ascii": "Kenwa Mabuni",
@@ -62894,7 +62968,7 @@
    "honours": [],
    "id": "Q4807592",
    "locality": null,
-   "n_descendants": 983,
+   "n_descendants": 985,
    "n_students": 3,
    "name": "Ason",
    "name_alt": [],
@@ -63234,7 +63308,7 @@
    "honours": [],
    "id": "Q527422",
    "locality": "Shuri",
-   "n_descendants": 932,
+   "n_descendants": 934,
    "n_students": 21,
    "name": "Anko Itosu",
    "name_alt": [],
@@ -63519,7 +63593,7 @@
    "honours": [],
    "id": "Q542989",
    "locality": "Shuri",
-   "n_descendants": 997,
+   "n_descendants": 999,
    "n_students": 1,
    "name": "Chatan Yara",
    "name_alt": [],
@@ -64018,7 +64092,7 @@
    "honours": [],
    "id": "Q584466",
    "locality": "Shuri",
-   "n_descendants": 905,
+   "n_descendants": 904,
    "n_students": 5,
    "name": "Seisho Arakaki",
    "name_alt": [
@@ -65429,7 +65503,7 @@
    "honours": [],
    "id": "Q699236",
    "locality": "Shuri",
-   "n_descendants": 845,
+   "n_descendants": 844,
    "n_students": 11,
    "name": "Kanryo Higaonna",
    "name_alt": [
@@ -65535,7 +65609,7 @@
    "honours": [],
    "id": "Q705617",
    "locality": "Shuri",
-   "n_descendants": 713,
+   "n_descendants": 686,
    "n_students": 11,
    "name": "Chomo Hanashiro",
    "name_alt": [],
@@ -65574,7 +65648,7 @@
    "honours": [],
    "id": "Q706389",
    "locality": "Shuri",
-   "n_descendants": 905,
+   "n_descendants": 903,
    "n_students": 11,
    "name": "Choyu Motobu",
    "name_alt": [
@@ -65823,7 +65897,7 @@
    "honours": [],
    "id": "Q715769",
    "locality": "Shuri",
-   "n_descendants": 975,
+   "n_descendants": 977,
    "n_students": 18,
    "name": "Sokon Matsumura",
    "name_alt": [
@@ -66713,7 +66787,7 @@
    "honours": [],
    "id": "Q7446788",
    "locality": "Shuri",
-   "n_descendants": 553,
+   "n_descendants": 524,
    "n_students": 6,
    "name": "Seiko Fujita",
    "name_alt": [],
@@ -67294,7 +67368,7 @@
    "honours": [],
    "id": "Q8031976",
    "locality": null,
-   "n_descendants": 998,
+   "n_descendants": 1000,
    "n_students": 1,
    "name": "Wong Chung-Yoh",
    "name_alt": [],
@@ -67649,7 +67723,7 @@
    "honours": [],
    "id": "Q921673",
    "locality": "Shuri",
-   "n_descendants": 995,
+   "n_descendants": 997,
    "n_students": 5,
    "name": "Kanga Sakukawa",
    "name_alt": [
@@ -67790,7 +67864,7 @@
    "honours": [],
    "id": "Q954330",
    "locality": "Naha",
-   "n_descendants": 1012,
+   "n_descendants": 1014,
    "n_students": 9,
    "name": "Ryu Ryu Ko",
    "name_alt": [],
@@ -73249,12 +73323,12 @@
     "wrong_entity": false,
     "years_nulled": []
    },
-   "generation": 0,
+   "generation": 13,
    "honours": [],
    "id": "R0240",
    "locality": "Renseikan dōjō, Shinagawa, Tokyo",
-   "n_descendants": 553,
-   "n_students": 2,
+   "n_descendants": 12,
+   "n_students": 1,
    "name": "Ueno Takashi",
    "name_alt": [],
    "name_ascii": "Ueno Takashi",
@@ -73465,7 +73539,7 @@
    "honours": [],
    "id": "R0250",
    "locality": null,
-   "n_descendants": 617,
+   "n_descendants": 593,
    "n_students": 1,
    "name": "Li Zhaobei",
    "name_alt": [],
@@ -73495,7 +73569,7 @@
    "honours": [],
    "id": "R0251",
    "locality": null,
-   "n_descendants": 617,
+   "n_descendants": 593,
    "n_students": 1,
    "name": "Ke Xidi",
    "name_alt": [],
@@ -73525,7 +73599,7 @@
    "honours": [],
    "id": "R0252",
    "locality": null,
-   "n_descendants": 616,
+   "n_descendants": 592,
    "n_students": 1,
    "name": "Zheng Xianji",
    "name_alt": [],
@@ -74053,7 +74127,7 @@
    "honours": [],
    "id": "W0015",
    "locality": null,
-   "n_descendants": 933,
+   "n_descendants": 935,
    "n_students": 1,
    "name": "Bushi Nagahama",
    "name_alt": [],

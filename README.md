@@ -1,6 +1,6 @@
 # The Lineage of Karate and Taekwondo
 
-An interactive cladogram of who taught whom in karate, kobudō and taekwondo: **1,459 people, 1,882 instructor-to-student links, 388 styles and 496 kata**, spanning nineteen generations from the Okinawan *te* of the 1600s to practitioners born in the 1990s.
+An interactive cladogram of who taught whom in karate, kobudō and taekwondo: **1,459 people, 1,881 instructor-to-student links, 388 styles and 496 kata**, spanning nineteen generations from the Okinawan *te* of the 1600s to practitioners born in the 1990s.
 
 Every link carries its sources. Every disputed claim is marked as disputed.
 
@@ -23,10 +23,10 @@ The result is a single connected tree rather than a set of competing family myth
 | Confidence | Links | What it means |
 |---|---:|---|
 | High | 1,012 | First-hand testimony, an interview, or a primary record |
-| Medium | 671 | Documented in published histories or a style's own records |
+| Medium | 670 | Documented in published histories or a style's own records |
 | Low | 199 | Oral tradition, contested, or inferred from indirect evidence |
 
-**285 links cite Mark Bishop's *Okinawan Karate: Teachers, Styles and Secret Techniques*.** Bishop interviewed the Okinawan masters directly in the 1970s and 80s, so his first-hand statements are treated as primary evidence and his relayed traditions are graded lower. The book itself is not redistributed here; it is cited by page.
+**287 links cite Mark Bishop's *Okinawan Karate: Teachers, Styles and Secret Techniques*.** Bishop interviewed the Okinawan masters directly in the 1970s and 80s, so his first-hand statements are treated as primary evidence and his relayed traditions are graded lower. The book itself is not redistributed here; it is cited by page.
 
 The dataset began as a Wikipedia and Wikidata scrape, but little of it now rests there. It has been through a multilingual research pass (Japanese, Korean and Chinese sources), a historian's audit of every edge and every person, a four-level style taxonomy, eight books (Mark Bishop's *Okinawan Karate*; Shoshin Nagamine's *Tales of Okinawa's Great Masters* and *Essence of Okinawan Karate-Do*; Mark Cramer's *The History of Karate*; Andrea Guarelli's *Okinawan Kobudo*; Patrick McCarthy's *Koryu Uchinadi* volumes 1 and 2, the first of which is Taira Shinken's *Ryukyu Kobudo Taikan* in translation; and Seikichi Toguchi's *Okinawan Goju-Ryu*), the online scholarship of Andreas Quast and Motobu Naoki, and the Okinawa Karate News hanshi 10th-dan register (2018), whose 146 masters are all reconciled into the dataset. Corrections that survived that process live in [`pipeline/overrides/`](pipeline/overrides/), 5,950 rows deep, each carrying a reason and its sources.
 
@@ -73,17 +73,20 @@ Rebuild everything with:
 python3 pipeline/build.py
 ```
 
-Pure standard-library Python 3.9 and vanilla JavaScript. No frameworks, no build step, no `node_modules`. The build is deterministic: the same inputs produce a byte-identical output every time. Three headless test suites run against the built page: `run_smoke.py` exercises every interactive feature, `check_public.py` asserts the published copy carries no evidence layer, and `check_both_builds.py` renders five different payload shapes to catch a build that only works on the curator's machine.
+Pure standard-library Python 3.9 and vanilla JavaScript. No frameworks, no build step, no `node_modules`. The build is deterministic: the same inputs produce a byte-identical output every time, the encrypted copy included. Five headless test suites run against the built page: `run_smoke.py` exercises every interactive feature, `check_public.py` asserts the published copy carries no evidence layer and the gated copy carries nothing legible, `check_both_builds.py` renders five different payload shapes to catch a build that only works on the curator's machine, `check_gate.py` checks the gated page's cipher against the Python that wrote it, and `check_docs.py` asserts that the figures quoted in this file still match the data.
 
-Three things come out of every build:
+Four things come out of every build:
 
-| File | Sources | Editing | Who opens it |
+| File | Sources | Image export | Who opens it |
 |---|---|---|---|
-| `karate-cladogram.html` | Full evidence layer | Yes, exports corrections | The curator, locally |
-| `docs/index.html`, `website/index.html` | **Removed at build time** | Yes, exports corrections | Everyone, on the web |
-| `master/*.csv` | Full, in `evidence` columns | Open in Excel, R, anything | Anyone wanting the raw tables |
+| `karate-cladogram.html` | Full evidence layer | Yes | The curator, locally |
+| `docs/index.html`, `website/index.html` | **Removed at build time** | No | Everyone, on the web |
+| `docs/hutan/index.html` | Full, **encrypted** | Yes | One reader, with the passphrase |
+| `master/*.csv` | Full, in `evidence` columns | n/a | Anyone wanting the raw tables |
 
 The evidence layer is stripped from the payload itself rather than merely hidden in the interface, because hiding is cosmetic when anyone can read a page's source. The page needs no switch: it shows sources when the build it came from carries them. `pipeline/test/check_public.py` asserts that separation on every build.
+
+The third row is the same curator build reached over the web. A quiet path would not protect it, since the file sits in a public repository and one inbound link puts it in a search index, so the payload is encrypted rather than merely hidden: PBKDF2-HMAC-SHA256 at 310,000 rounds, a SHA-256 keystream and an HMAC tag, all set out in [`pipeline/viz/gate.py`](pipeline/viz/gate.py). The passphrase lives in `pipeline/curator_key.txt`, which git ignores; without that file the build simply omits the gated copy. `pipeline/test/check_gate.py` runs the page's JavaScript against vectors from the Python that encrypted it, because a hand-written cipher that is wrong by one bit fails exactly like a mistyped passphrase.
 
 The source CSVs are never edited. Every change is a row in an override file with a `status` column (`proposed`, `confirmed`, `rejected`, `needs_decision`), so any decision can be reversed and every claim can be traced back to whoever made it and why. `pipeline/review/` is regenerated on each build and is where the pipeline reports what it changed and what it wants a human to rule on.
 
@@ -91,9 +94,9 @@ The source CSVs are never edited. Every change is a row in an override file with
 
 Stated plainly, because a lineage dataset that claims certainty is lying:
 
-- **161 people are not linked** to the main tree. Where no reliable chain exists, none is invented.
+- **162 people are not linked** to the main tree. Where no reliable chain exists, none is invented.
 - **Eight dates were contested** between primary sources (Bishop; Quast's documentary work) and the Wikidata consensus. Each carries a recorded ruling with its rationale in `pipeline/overrides/year_fixes.csv` (two adopted, six kept), reversible like every other decision.
-- **633 people have no recorded birth year.** Where they can be placed from their teachers and students, the chart shows an estimated cohort, marked "c. 1890 (est.)".
+- **722 people have no recorded birth year.** Where they can be placed from their teachers and students, the chart shows an estimated cohort, marked "c. 1890 (est.)".
 - **The early lineages are oral tradition.** Kūsankū, Chatan Yara and their contemporaries are recorded as they are transmitted, at low confidence, not as established fact.
 - "Trained from" dates are birth + 25 estimates and are marked with an asterisk throughout.
 

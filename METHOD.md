@@ -35,6 +35,6 @@ A **style cannot predate its founding.** Kūsankū was tagged with Isshin-ryū, 
 
 ## What is deliberately not done
 
-No link is invented to tidy the picture. 69 people remain unattached because no reliable chain to them exists, and a plausible-looking guess would be worse than an honest gap. The Tsuken kobudō pair, the Azerbaijani chain and a handful of Western practitioners sit outside the main tree for exactly this reason.
+No link is invented to tidy the picture. 162 people remain unattached because no reliable chain to them exists, and a plausible-looking guess would be worse than an honest gap. The Tsuken kobudō pair, the Azerbaijani chain and a handful of Western practitioners sit outside the main tree for exactly this reason.
 
 Contested dates are not resolved by fiat. Where a primary source and the scholarly consensus disagree, both are recorded and the disagreement is put in front of a human.

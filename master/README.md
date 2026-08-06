@@ -5,8 +5,8 @@ generated from the same data, so these files and the site never drift apart.
 
 | file | rows | what it is |
 |---|---:|---|
-| `people.csv` | 1457 | every person, dates, styles, honours, connectivity |
-| `links.csv` | 1880 | every teacher-to-student link, graded, with its sources |
+| `people.csv` | 1459 | every person, dates, styles, honours, connectivity |
+| `links.csv` | 1881 | every teacher-to-student link, graded, with its sources |
 | `styles.csv` | 388 | every style with its ancestry back to the originating group |
 | `kata.csv` | 496 | every kata: meaning, era, originator, modifier, provenance |
 | `kata_people.csv` | 2006 | kata mapped to the people who made or carried them |

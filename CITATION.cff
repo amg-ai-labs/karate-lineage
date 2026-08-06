@@ -8,9 +8,9 @@ authors:
     affiliation: "Institute of Global Health Innovation, Imperial College London"
 abstract: >-
   A source-checked instructor-to-student cladogram of karate, kobudo and
-  taekwondo: 973 people, 1,264 links and 187 styles across seventeen
-  generations. Every link is graded by evidence strength and carries its
-  sources; contested claims are recorded as contested.
+  taekwondo: 1,459 people, 1,881 links, 388 styles and 496 kata across
+  nineteen generations. Every link is graded by evidence strength and carries
+  its sources; contested claims are recorded as contested.
 keywords:
   - karate
   - taekwondo
@@ -20,4 +20,4 @@ keywords:
   - Okinawa
 license: CC-BY-4.0
 repository-code: "https://github.com/amg-ai-labs/karate-lineage"
-date-released: 2026-07-13
+date-released: 2026-08-06

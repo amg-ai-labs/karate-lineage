@@ -31,6 +31,7 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,C00018,Choboku Takamine,高嶺朝睦,1908,,,other,0,0,0,0,0,1,8,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,KP021,Eiichi Eriguchi,江里口栄一,1908,2003,,other,0,0,0,0,0,1,10,
 ,0,C00045,Genkai Nakaima,仲井真元楷,1908,1984,,other,0,0,0,0,0,1,9,
+,0,N0226,Tomoyori Ryusei,,1909,1977,,other,0,0,0,0,0,1,9,
 ,0,Q460890,Keiko Fukuda,福田敬子,1913,2013,,te,0,0,0,0,0,1,9,
 ,0,A0131,Eiko Kaneshi,,1914,,,shuri-te,0,0,0,0,0,1,10,
 ,0,R0256,Thomas Miyashiro,,1915,1977,,other,0,0,0,0,0,4,18,
@@ -738,6 +739,7 @@ inherited,branch_reach,id,name,native,born,died,style,family,reach,direct,promin
 ,0,A0140,Takashi Shinjo,,,,,naha-te,0,0,0,0,0,1,1,
 ,0,C00568,Takasuga Kitamura,,,,,other,0,0,0,0,0,1,6,
 ,0,A0065,Takaya Yabiku,,,,,shuri-te,0,0,0,0,0,1,7,
+,0,N0225,Takayama Teruo,,,,,other,0,0,0,0,0,1,9,
 ,0,J0124,Takehiro Konishi,小西健裕,,,,japanese,0,0,0,0,0,1,7,
 ,0,C00348,Takenobu Uehara,上原武信,,,,other,0,0,0,0,0,2,4,Hanshi 10th dan — Okinawa Karate News register (2018)
 ,0,C00572,Takeo Hiyagon,,,,,other,0,0,0,0,0,1,4,

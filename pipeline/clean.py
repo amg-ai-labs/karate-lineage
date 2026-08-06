@@ -146,6 +146,22 @@ def main():
         }
 
     # ---------- 1b. researched node additions ----------
+    # An id used twice is silent data loss: the second row is skipped by the
+    # "already in nodes" test below, and any edge naming that id attaches to
+    # whichever person won. That is how "Kenwa Mabuni taught Ying Jin" reached
+    # a published build. Two independent bakes each numbered from N0001, so the
+    # collision is a structural risk, not a typo. Surface it loudly.
+    seen_add = {}
+    for r in ovr_node_add:
+        prev = seen_add.get(r["node_id"])
+        if prev is not None and prev != r.get("name", ""):
+            quality.append({"kind": "duplicate_override_id", "node_id": r["node_id"],
+                            "name": r.get("name", ""),
+                            "detail": f"node_additions.csv reuses {r['node_id']} for "
+                                      f"{prev!r} and {r.get('name','')!r}; the second row is "
+                                      f"dropped and edges naming it attach to the first"})
+        seen_add[r["node_id"]] = r.get("name", "")
+
     for r in ovr_node_add:
         if r["status"] == "needs_decision":
             decisions.append({"kind": "node_addition", "who": r.get("name", ""),

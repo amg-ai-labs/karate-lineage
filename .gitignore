@@ -11,6 +11,11 @@ books/*.txt
 # serves. Kept on disk by the build, but no need for two copies in the repo.
 website/
 
+# The passphrase for the gated /hutan build. The encrypted page is committed;
+# the key to it is not. Lose this file and the passphrase is unrecoverable:
+# generate a new one and rebuild, which republishes under the new key.
+pipeline/curator_key.txt
+
 # macOS
 .DS_Store
 ._*

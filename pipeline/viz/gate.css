@@ -1,0 +1,58 @@
+/* The unlock screen for the gated curator build. Self-contained: it has to
+   render correctly before any data exists, and it is removed once it does. */
+body.locked { overflow: hidden; }
+body.locked #app { visibility: hidden; }
+
+#gate {
+  position: fixed; inset: 0; z-index: 200;
+  display: flex; align-items: center; justify-content: center; padding: 24px;
+  font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #f9f9f7; color: #0b0b0b;
+}
+#gatecard {
+  width: 100%; max-width: 420px;
+  background: #ffffff; border: 1px solid rgba(11, 11, 11, .14);
+  border-radius: 10px; padding: 26px 26px 22px;
+  box-shadow: 0 1px 2px rgba(11, 11, 11, .05), 0 8px 28px rgba(11, 11, 11, .07);
+}
+#gatecard h1 { font-size: 17px; font-weight: 700; letter-spacing: -.01em; margin: 0 0 6px; }
+#gatecard p { font-size: 12.5px; color: #52514e; margin: 0 0 18px; }
+#gateform { display: flex; flex-direction: column; gap: 10px; }
+#gatepw {
+  font: inherit; font-size: 14px; color: inherit;
+  padding: 9px 11px; border: 1px solid rgba(11, 11, 11, .22);
+  border-radius: 6px; background: #fcfcfb; width: 100%;
+}
+#gatepw:focus { outline: 2px solid #2a78d6; outline-offset: -1px; border-color: transparent; }
+#gatego {
+  font: inherit; font-size: 13px; font-weight: 600; color: #ffffff;
+  background: #2a78d6; border: 1px solid #2a78d6; border-radius: 6px;
+  padding: 9px 14px; cursor: pointer;
+}
+#gatego:hover { background: #2168bd; }
+#gatego:disabled { opacity: .6; cursor: default; }
+#gateopts { display: flex; align-items: center; gap: 7px; font-size: 12px; color: #52514e; }
+#gateerr { font-size: 12.5px; color: #d03b3b; min-height: 1.2em; }
+#gatenote { font-size: 11.5px; color: #898781; margin: 16px 0 0; line-height: 1.5; }
+#gate.checking #gatecard { opacity: .45; transition: opacity .12s; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) #gate { background: #0d0d0d; color: #ffffff; }
+  :root:not([data-theme="light"]) #gatecard {
+    background: #222221; border-color: rgba(255, 255, 255, .16);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, .5); }
+  :root:not([data-theme="light"]) #gatecard p,
+  :root:not([data-theme="light"]) #gateopts { color: #c3c2b7; }
+  :root:not([data-theme="light"]) #gatepw {
+    background: #1a1a19; color: #ffffff; border-color: rgba(255, 255, 255, .22); }
+  :root:not([data-theme="light"]) #gatego { background: #3987e5; border-color: #3987e5; color: #0b0b0b; }
+}
+:root[data-theme="dark"] #gate { background: #0d0d0d; color: #ffffff; }
+:root[data-theme="dark"] #gatecard {
+  background: #222221; border-color: rgba(255, 255, 255, .16);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .5); }
+:root[data-theme="dark"] #gatecard p,
+:root[data-theme="dark"] #gateopts { color: #c3c2b7; }
+:root[data-theme="dark"] #gatepw {
+  background: #1a1a19; color: #ffffff; border-color: rgba(255, 255, 255, .22); }
+:root[data-theme="dark"] #gatego { background: #3987e5; border-color: #3987e5; color: #0b0b0b; }
