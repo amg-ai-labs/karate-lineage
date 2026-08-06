@@ -39,6 +39,9 @@ jobs:
       - name: Check the published copy carries no evidence layer and no exports
         run: python3 pipeline/test/check_public.py
 
+      - name: Check every internal link resolves
+        run: python3 pipeline/test/check_links.py
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3

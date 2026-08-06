@@ -555,7 +555,12 @@ def main():
                 .replace("__DATA_JSON__", data_js.replace("</", "<\\/"))
                 .replace("/*__APP__*/", app))
 
-    html = render(payload)
+    # The site pages live under docs/. Each copy of the chart sits at a
+    # different depth relative to them, so the navigation prefix is per-copy:
+    # the curator's file is beside docs/, the published page is inside it, and
+    # the gated copy is one level further down. A single href cannot serve all
+    # three, which is why the links worked from exactly one of them.
+    html = render(payload).replace("__SITE__", "docs/")
     TARGET.write_text(html, encoding="utf-8")
 
     # The published copies are built WITHOUT the evidence layer. Hiding sources in
@@ -581,7 +586,7 @@ def main():
         for r in (k.get("relations") or []):
             r.pop("sources", None)
             r.pop("verifier", None)
-    pub_html = render(pub)
+    pub_html = render(pub).replace("__SITE__", "")
     for folder in ("website", "docs"):
         site = TARGET.parent / folder / "index.html"
         site.parent.mkdir(exist_ok=True)
@@ -631,7 +636,8 @@ def write_gated(payload, template, app, css):
             .replace('<meta name="viewport" content="width=device-width, initial-scale=1">',
                      '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
                      '<meta name="robots" content="noindex, nofollow">')
-            .replace("<body>", '<body class="locked">'))
+            .replace("<body>", '<body class="locked">')
+            .replace("__SITE__", "../"))
     # app source travels as inert text and is executed by the gate after the
     # data exists, since app.js reads #data on its first line
     if "</script" in app:

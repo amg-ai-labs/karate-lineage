@@ -76,7 +76,7 @@ Rebuild everything with:
 python3 pipeline/build.py
 ```
 
-Pure standard-library Python 3.9 and vanilla JavaScript. No frameworks, no build step, no `node_modules`. The build is deterministic: the same inputs produce a byte-identical output every time, the encrypted copy included. Five headless test suites run against the built page: `run_smoke.py` exercises every interactive feature, `check_public.py` asserts the published copy carries no evidence layer and the gated copy carries nothing legible, `check_both_builds.py` renders five different payload shapes to catch a build that only works on the curator's machine, `check_gate.py` checks the gated page's cipher against the Python that wrote it, and `check_docs.py` asserts that the figures quoted in this file still match the data.
+Pure standard-library Python 3.9 and vanilla JavaScript. No frameworks, no build step, no `node_modules`. The build is deterministic: the same inputs produce a byte-identical output every time, the encrypted copy included. Six headless test suites run against the built page: `run_smoke.py` exercises every interactive feature, `check_public.py` asserts the published copy carries no evidence layer and the gated copy carries nothing legible, `check_both_builds.py` renders five different payload shapes to catch a build that only works on the curator's machine, `check_gate.py` checks the gated page's cipher against the Python that wrote it, `check_docs.py` asserts that the figures quoted in this file still match the data, and `check_links.py` asserts that every internal link on every page resolves and that no public page advertises the curator copy.
 
 Four things come out of every build:
 
