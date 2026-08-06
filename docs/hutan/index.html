@@ -2856,15 +2856,28 @@ function renderStatsPanel() {
     });
     wrap.appendChild(t);
   }
-  function downloadTable() {
-    const cols = ["rank", "name", "dates", "style", "family"].concat(RANK.keys);
-    const rows = [cols].concat(current.map((r, i) =>
-      [rankMeasure === "__terminal" ? "" : i + 1, r.name, r.dates, r.style, r.family]
-        .concat(RANK.keys.map(k => r.v[k]))));
+  function rankingTable() {
+    const measure = RANK.measures.find(x => x.key === rankMeasure);
+    const cols = ["Rank", "Person", "Dates", "Style"].concat(currentCols.map(c => c.replace(/_/g, " ")));
     const label = (rankMeasure === "__terminal" ? "terminal-lineages" : rankMeasure)
       + (rankScope ? "-in-" + slugify(rankScope) : "");
-    saveCSV(rows, "karate-analytics-" + label + ".csv");
+    return {
+      title: rankMeasure === "__terminal"
+        ? "Lineages that ended with their holder"
+        : (measure ? measure.title : "Ranking"),
+      subtitle: current.length + " of " + rankTotal + " ranked"
+        + (rankScope ? ", within " + ((styleByIdMap.get(rankScope) || {}).label || rankScope)
+                       + " and its sub-styles" : "")
+        + (measure && measure.note ? ". " + measure.note : ""),
+      headers: cols,
+      rows: current.map((r, i) => [rankMeasure === "__terminal" ? "" : String(i + 1),
+                                   r.name, r.dates, r.style]
+        .concat(currentCols.map(c => String(r.v[c] === undefined ? "" : r.v[c])))),
+      fname: "karate-analytics-" + label,
+    };
   }
+  function downloadTable() { exportTable(rankingTable(), "csv"); }
+  statsPanel.appendChild(tableExportRow(rankingTable));
   draw();
 }
 
@@ -3820,6 +3833,15 @@ function renderListPanel(p, people, blurb) {
   const h = document.createElement("h2"); h.style.fontSize = "15px"; h.textContent = blurb;
   p.appendChild(h);
   const inp = document.createElement("input"); inp.placeholder = "Filter…"; p.appendChild(inp);
+  p.appendChild(tableExportRow(() => ({
+    title: blurb,
+    subtitle: people.length + (people.length === 1 ? " person" : " people"),
+    headers: ["Person", "Native", "Born", "Died", "Style", "Students", "Descendants"],
+    rows: people.map(n => { const f = eff(n); return [
+      f.name, f.native || "", f.birth || "", f.death || "",
+      n.styleLabel || "", String(n.students || 0), String(n.desc || 0)]; }),
+    fname: "karate-" + slugify(blurb),
+  })));
   const list = document.createElement("div"); p.appendChild(list);
   const draw = q => {
     list.innerHTML = "";

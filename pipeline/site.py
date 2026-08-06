@@ -103,6 +103,19 @@ footer { max-width: 46rem; margin: 72px auto 0; padding-top: 22px;
 footer a { color: var(--muted); }
 footer a:hover { color: var(--link); }
 
+[data-key].editing { outline: 1px dashed var(--rule-2); outline-offset: 6px;
+  border-radius: 2px; }
+[data-key].editing:focus { outline: 1px solid var(--link); }
+#editbar { margin: 40px 0 0; padding: 22px 0 0; border-top: 1px solid var(--rule); }
+.ed-tally { font-size: 14px; color: var(--muted); margin: 0 0 12px; }
+.ed-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.ed-btn { font: inherit; font-size: 15px; color: var(--ink); background: none;
+  border: 1px solid var(--rule-2); border-radius: 3px; padding: 9px 16px; cursor: pointer; }
+.ed-btn:hover { border-color: var(--ink); }
+.ed-btn.primary { border-color: var(--ink); font-weight: 560; }
+.ed-help { font-size: 14px; color: var(--muted); margin: 14px 0 0; max-width: 36em; }
+.ed-open { float: right; }
+
 @media (max-width: 620px) {
   body { font-size: 16px; }
   main { padding: 40px 20px 64px; }
@@ -114,34 +127,65 @@ footer a:hover { color: var(--link); }
 
 
 EDIT_JS = """<script>
-/* Editing the prose from the page. Add #edit to the address to turn every
-   passage into a text box. Nothing is saved to the site, which is static and
-   has no server: the button downloads site_content.json, and dropping that
-   file into pipeline/ and rebuilding is what publishes it. That is the same
-   route every correction in this project takes. */
+/* Editing the prose from the page itself.
+
+   Static site, no server, so nothing here writes to the web. What it does do is
+   keep your edits in this browser while you work, so you can rewrite a passage,
+   reload, come back tomorrow and still see it. When you are content, one button
+   downloads site_content.json; dropping that into pipeline/ and rebuilding is
+   what publishes it. Same route as every data correction in this project. */
 (function () {
+  var KEY = "karate-site-edits";
+  var store = {};
+  try { store = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) {}
   var on = location.hash.indexOf("edit") >= 0;
   var bar = document.getElementById("editbar");
-  function paint() {
-    bar.hidden = !on;
+  var fields = [].slice.call(document.querySelectorAll("[data-key]"));
+
+  // apply anything already edited in this browser, whether or not editing is on
+  fields.forEach(function (el) {
+    if (store[el.dataset.key] !== undefined) el.textContent = store[el.dataset.key];
+  });
+
+  function save() {
+    fields.forEach(function (el) {
+      var base = el.dataset.original;
+      var now = el.innerText.trim();
+      if (now === base) delete store[el.dataset.key];
+      else store[el.dataset.key] = now;
+    });
+    try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) {}
+    count();
+  }
+  var tally;
+  function count() {
+    if (!tally) return;
+    var n = Object.keys(store).length;
+    tally.textContent = n
+      ? n + (n === 1 ? " passage" : " passages") + " rewritten in this browser, not yet published."
+      : "No changes yet. Click any passage and type.";
+  }
+
+  function build() {
     bar.textContent = "";
-    document.querySelectorAll("[data-key]").forEach(function (el) {
+    bar.hidden = !on;
+    fields.forEach(function (el) {
+      if (el.dataset.original === undefined) el.dataset.original = el.innerText.trim();
       el.contentEditable = on ? "true" : "false";
-      el.style.outline = on ? "1px dashed #2a78d6" : "";
-      el.style.padding = on ? "2px 4px" : "";
+      el.classList.toggle("editing", on);
+      if (on && !el._wired) { el._wired = true; el.addEventListener("input", save); }
     });
     if (!on) return;
-    var msg = document.createElement("p");
-    msg.style.cssText = "font-size:14px;color:#52514e;margin:0 0 8px";
-    msg.textContent = "Editing this page. The dashed passages are editable. "
-      + "Nothing here changes the site until the file is exported and the site rebuilt.";
-    var b = document.createElement("button");
-    b.textContent = "Download the edited text";
-    b.style.cssText = "font:inherit;font-size:14px;font-weight:600;color:#fff;"
-      + "background:#2a78d6;border:0;border-radius:7px;padding:9px 16px;cursor:pointer";
-    b.onclick = function () {
+    tally = document.createElement("p"); tally.className = "ed-tally";
+    var row = document.createElement("div"); row.className = "ed-row";
+    function btn(label, fn, primary) {
+      var b = document.createElement("button");
+      b.className = "ed-btn" + (primary ? " primary" : "");
+      b.textContent = label; b.onclick = fn; row.appendChild(b); return b;
+    }
+    btn("Download the edited text", function () {
       var out = JSON.parse(document.getElementById("content").textContent);
-      document.querySelectorAll("[data-key]").forEach(function (el) {
+      fields.forEach(function (el) {
         var path = el.dataset.key.split(".");
         var node = out;
         for (var i = 0; i < path.length - 1; i++) node = node[path[i]];
@@ -150,20 +194,39 @@ EDIT_JS = """<script>
       var a = document.createElement("a");
       a.href = URL.createObjectURL(new Blob([JSON.stringify(out, null, 2)],
         { type: "application/json" }));
-      a.download = "site_content.json";
-      a.click();
-    };
-    bar.style.cssText = "border:1px solid #e1e0d9;border-radius:8px;padding:14px 16px;"
-      + "margin:24px 0 0;background:#f9f9f7";
-    bar.append(msg, b);
+      a.download = "site_content.json"; a.click();
+    }, true);
+    btn("Revert this page", function () {
+      fields.forEach(function (el) {
+        el.textContent = el.dataset.original;
+        delete store[el.dataset.key];
+      });
+      try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) {}
+      count();
+    });
+    btn("Done", function () { location.hash = ""; });
+    var help = document.createElement("p"); help.className = "ed-help";
+    help.textContent = "Click any outlined passage and rewrite it. Your changes stay in "
+      + "this browser as you work. To publish them, download the file and give it to me, "
+      + "or drop it into pipeline/ and rebuild.";
+    bar.append(tally, row, help);
+    count();
   }
+
   addEventListener("hashchange", function () {
-    on = location.hash.indexOf("edit") >= 0; paint();
+    on = location.hash.indexOf("edit") >= 0; build();
   });
-  paint();
+  build();
+
+  // a way in that does not require knowing about the hash
+  var f = document.querySelector("footer");
+  if (f) {
+    var link = document.createElement("a");
+    link.href = "#edit"; link.className = "ed-open"; link.textContent = "Edit this page";
+    f.append(document.createTextNode(" "), link);
+  }
 })();
-</script>
-"""
+</script>"""
 
 
 def esc(s):

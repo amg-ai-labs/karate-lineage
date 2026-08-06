@@ -309,6 +309,40 @@ try {
       + "curator keeps all three");
   })();
 
+  // EVERY SURFACE MUST OFFER TIFF, JPEG AND PDF AT PRINT RESOLUTION.
+  // Stated as a hard requirement, so a panel added later without them fails the
+  // build rather than being discovered in use.
+  (function () {
+    var want = ["PDF", "TIFF", "JPG"];
+    var person = DATA.nodes.find(n => n.name === "Chojun Miyagi") || placed[0];
+    var kk = DATA.kata.filter(k => kataPeopleIds(k).length >= 2)[0];
+    var a = DATA.nodes.find(n => n.name === "Chojun Miyagi");
+    var b = DATA.nodes.find(n => n.name === "Gichin Funakoshi");
+    var surfaces = [
+      ["person panel", function () { openDetail(person.id); return "detail"; }],
+      ["style detail", function () { openStyleDetail("goju-ryu"); return "detail"; }],
+      ["style list", function () { renderStylePanel(); return "stylepanel"; }],
+      ["kata tab", function () { kataQuery = ""; kataOpen.clear(); renderKataPanel(); return "katapanel"; }],
+      ["kata entry", function () { kataOpen.clear(); kataOpen.add(kk.name); kataQuery = kk.name;
+                                   renderKataPanel(); return "katapanel"; }],
+      ["analytics", function () { renderStatsPanel(); return "statspanel"; }],
+      ["table view", function () { renderListPanel(document.getElementById("tablepanel"),
+                                     placed.slice(0, 40), "Visible people"); return "tablepanel"; }],
+      ["connections", function () { cxPeople = [a.id, b.id]; renderConnect(); return "connectpanel"; }],
+    ];
+    var missing = [];
+    surfaces.forEach(function (s) {
+      var id = s[1]();
+      var labels = document.getElementById(id).querySelectorAll(".btn").map(x => x.textContent);
+      want.forEach(function (fmt) {
+        if (!labels.some(l => l.indexOf(fmt) >= 0)) missing.push(s[0] + " has no " + fmt);
+      });
+    });
+    cxPeople = []; kataQuery = ""; kataOpen.clear();
+    if (missing.length) throw new Error("print formats missing: " + missing.join("; "));
+    console.log("print formats: PDF, TIFF and JPG on all " + surfaces.length + " surfaces");
+  })();
+
   // THE TABS AS DOCUMENTS: the kata list and the style list each export as a
   // print-resolution page, not merely as a route to individual entries.
   (function () {
