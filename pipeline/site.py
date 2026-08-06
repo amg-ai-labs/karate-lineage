@@ -319,7 +319,7 @@ DEFAULT_CONTENT = {
         "h_role": "The clinician and the scientist",
         "standfirst": "Hutan Ashrafian is a surgeon and scientist at Imperial College "
                       "London, and a martial artist of forty years' standing. This project "
-                      "is his idea.",
+                      "is his vision and follows on from his book Warrior Origins.",
         "karate": "He has trained for four decades and across many styles of karate, "
                   "and holds a sixth dan in Okinawan Gōjū-ryū.",
         "origins": "In Warrior Origins he took the question quantitatively, applying network "
