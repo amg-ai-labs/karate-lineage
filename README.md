@@ -4,7 +4,7 @@ An interactive cladogram of who taught whom in karate, kobudō and taekwondo: **
 
 Every link carries its sources. Every disputed claim is marked as disputed.
 
-**[▶ Open the interactive cladogram](https://amg-ai-labs.github.io/karate-lineage/)**
+**[▶ Open the interactive cladogram](https://karate.institute)**
 
 ![The lineage of Chōjun Miyagi](docs/img/miyagi-clade.png)
 
@@ -105,7 +105,7 @@ Stated plainly, because a lineage dataset that claims certainty is lying:
 
 ## Contributing a correction
 
-If you know this material and something here is wrong, the fastest route is to open the [interactive chart](https://amg-ai-labs.github.io/karate-lineage/), fix it in the panel, then use **Export → Expert corrections** to download the CSVs and attach them to an issue. Please include a source. Claims without one will be recorded at low confidence or not at all.
+If you know this material and something here is wrong, the fastest route is to open the [interactive chart](https://karate.institute), fix it in the panel, then use **Export → Expert corrections** to download the CSVs and attach them to an issue. Please include a source. Claims without one will be recorded at low confidence or not at all.
 
 ## Licence and citation
 

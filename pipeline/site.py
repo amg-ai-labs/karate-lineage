@@ -276,7 +276,7 @@ def table(headers, rows, numeric=()):
 # build writes docs/CNAME. With GitHub Actions publishing, the domain is
 # otherwise held only in the repository settings, and a later deploy can drop it:
 # carrying it in the artefact is what makes it survive.
-DOMAIN = ""
+DOMAIN = "karate.institute"
 
 DEFAULT_CONTENT = {
     "history": {
@@ -345,7 +345,7 @@ DEFAULT_CONTENT = {
                 "has operations and clinical signs eponymously named after him.",
     },
     "site": {
-        "domain": "",
+        "domain": "karate.institute",
     },
     "contact": {
         "standfirst": "Corrections are welcome, and the more specific they are the better.",
