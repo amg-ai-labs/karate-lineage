@@ -299,7 +299,19 @@ function Blob(parts, opts) {
   }).join("");
 }
 Blob.prototype.text = function () { return Promise.resolve(this._text); };
-Blob.prototype.arrayBuffer = function () { return Promise.resolve(new ArrayBuffer(8)); };
+/* A real Promise never settles here: JavaScriptCore under osascript has no
+   event loop to drain the microtask queue, so any export that awaited a blob
+   silently did nothing and the test saw no file. That is why the PDF path was
+   the one export nobody could prove. This returns a synchronous thenable, so
+   the chain completes in-line and the assertion is real. The bytes are the
+   blob's own, not a stub, so pdfFromJPEG receives something of the right size. */
+Blob.prototype.arrayBuffer = function () {
+  var text = this._text || "";
+  var buf = new ArrayBuffer(Math.max(text.length, 8));
+  var view = new Uint8Array(buf);
+  for (var i = 0; i < text.length; i++) view[i] = text.charCodeAt(i) & 255;
+  return { then: function (fn) { return { then: function () {} , _v: fn(buf) }; } };
+};
 var URL = { createObjectURL: function () { return "blob:x"; }, revokeObjectURL: function () {} };
 function TextEncoder() { this.encode = function (s) {
   var a = new Uint8Array(String(s).length);
