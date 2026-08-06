@@ -1,0 +1,35 @@
+# Netlify, connected straight to this repository.
+#
+# GitHub Pages built this site in three seconds and then failed, four times in
+# one day, inside its own deploy step: seven commits were pushed and none of
+# them ever reached the web. There is nothing to build here, so a host that
+# simply copies a folder is the right tool.
+#
+# Connect once at app.netlify.com: Add new site, Import an existing project,
+# pick amg-ai-labs/karate-lineage. These settings are read from this file, so
+# there is nothing to type. Every push then publishes in seconds, and the
+# custom domain is set under Domain management.
+
+[build]
+  publish = "docs"
+  command = ""
+
+# Long-lived assets are the two clade images; the pages themselves must never
+# be cached, or a rebuild would leave readers on the previous version, which is
+# the failure this whole file exists to end.
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "no-cache, must-revalidate"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# The curator copy is encrypted, but it should not be indexed either.
+[[headers]]
+  for = "/hutan/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    Cache-Control = "no-cache, must-revalidate"

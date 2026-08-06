@@ -1,0 +1,49 @@
+# Publish docs/ to GitHub Pages without the legacy Jekyll pipeline.
+#
+# The default "pages build and deployment" workflow built this site in three
+# seconds and then hung for exactly ten minutes in its deploy step, four times
+# in one day, so seven pushed commits never reached the web. This replaces it
+# with an explicit upload and deploy, a concurrency group so queued pushes
+# supersede rather than deadlock, and a timeout that fails fast instead of
+# burning ten minutes.
+#
+# To use it: Settings, Pages, Build and deployment, Source: GitHub Actions.
+
+name: Publish the site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; a newer push replaces one that is still waiting.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check the published copy carries no evidence layer and no exports
+        run: python3 pipeline/test/check_public.py
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
