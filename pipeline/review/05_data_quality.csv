@@ -52,6 +52,8 @@ anachronistic_style,Q1908088,Shinko Matayoshi,"style 'matayoshi-kobudo' (founded
 anachronistic_style,J0109,Shintoku Matayoshi,"style 'matayoshi-kobudo' (founded c.1960) postdates their lifespan 1786-None; tag dropped (ancestry, not membership)"
 anachronistic_style,A0007,Shu Shiwa (Zhou Zihe),"style 'uechi-ryu' (founded c.1940) postdates their lifespan 1874-1926; tag dropped (ancestry, not membership)"
 cycle_broken,Q453505,Kenwa Mabuni,cycle [Kenwa Mabuni -> Ueno Takashi -> Kenwa Mabuni] broken by dropping lowest-confidence edge Kenwa Mabuni -> Ueno Takashi (medium); review direction manually
+dangling_edge,,,N0027 -> N0061 endpoint missing
+dangling_edge,,,Q453505 -> N0027 endpoint missing
 death_before_birth,Q5485463,Frank Brennan,"death 1949 < birth 1960, death nulled"
 death_before_birth,Q5668035,Harry Cook,"death 1939 < birth 1949, death nulled"
 self_loop_dropped,Q921673,Kanga Sakukawa,edge to self removed

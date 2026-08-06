@@ -1,7 +1,7 @@
 id,name,name_native,name_romaji,birth_year,death_year,trained_from_est,locality,styles,primary_style,family,generation,n_students,n_descendants,connected,honours,legendary,added_by_research,wikipedia_url
 Q106668612,Aaron Banks,,,1928,2013,1953,,te,te,te,14,0,0,yes,,,,https://en.wikipedia.org/wiki/Aaron_Banks
 N0026,Abe Iwao,,,,,,,,,,13,0,0,yes,,,yes,
-J0113,Aburaya Yamagusuku,油屋山城,,,,,"Ryukyu Kingdom, Okinawa",okinawan-kobudo,okinawan-kobudo,kobudo,2,1,596,yes,,,yes,
+J0113,Aburaya Yamagusuku,油屋山城,,,,,"Ryukyu Kingdom, Okinawa",okinawan-kobudo,okinawan-kobudo,kobudo,2,1,594,yes,,,yes,
 J0183,Ademir da Costa,アデミール・ダ・コスタ,,1961,,,Brazil,kyokushin,kyokushin,kyokushin,19,1,1,yes,,,yes,
 A0230,Adriano Emperado,,,1926,2009,,,kenpo|kajukenbo|kara-ho-kempo,kenpo,kenpo,2,1,1,yes,,,yes,https://en.wikipedia.org/wiki/Adriano_Directo_Emperado
 J0166,Ahn Hak-seon,안학선,,,,,Seoul,ji-do-kwan,ji-do-kwan,korean,18,0,0,yes,,,yes,
@@ -35,9 +35,9 @@ Q557301,Ankichi Arakaki,新垣安吉,,1899,1927,1924,Shuri,karate-generic|okinaw
 C00005,Ankichi Miyazato,,,,,,,karate-generic,karate-generic,other,16,0,0,yes,,,,
 C00006,Ankichi Nakamura,,,,,,,karate-generic,karate-generic,other,16,0,0,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,
 Q721201,Anko Azato,安里安恒,Ankō Azato,1828,1914,1852,Shuri,shuri-te|jigen-ryu|karate-generic|te,shuri-te,shuri-te,5,2,602,yes,,,,https://en.wikipedia.org/wiki/Ank%C5%8D_Asato
-Q527422,Anko Itosu,糸洲安恒,Ankō Itosu,1831,1915,1856,Shuri,shuri-te|karate-generic|te|okinawan-karate-generic,shuri-te,shuri-te,5,21,934,yes,,,,https://en.wikipedia.org/wiki/Ank%C5%8D_Itosu
+Q527422,Anko Itosu,糸洲安恒,Ankō Itosu,1831,1915,1856,Shuri,shuri-te|karate-generic|te|okinawan-karate-generic,shuri-te,shuri-te,5,21,932,yes,,,,https://en.wikipedia.org/wiki/Ank%C5%8D_Itosu
 R0197,Anko Sadoyama,佐渡山安恒,,,,,Okinawa,shuri-te|genseiryu,shuri-te,shuri-te,0,1,5,yes,,,yes,
-Q251784,Annan,,,,,,,te,te,te,0,3,952,yes,,,,https://en.wikipedia.org/wiki/Anan
+Q251784,Annan,,,,,,,te,te,te,0,3,950,yes,,,,https://en.wikipedia.org/wiki/Anan
 W0028,Ansei Arakaki,,Arakaki Ansei,,,,,,,,12,0,0,yes,,,yes,
 N0155,Ansei Misato,,,,,,,,,,0,2,123,yes,,,yes,
 Q4770567,Ansei Ueshiro,宇江城安盛,,1933,2002,1958,Shuri,matsubayashi-ryu|karate-generic|okinawan-kobudo|shorin-ryu|shuri-te|tomari-te|kobayashi-shorin-ryu|ueshiro-shorin-ryu,matsubayashi-ryu,shuri-te,15,3,3,yes,,,,https://en.wikipedia.org/wiki/Matsubayashi-ry%C5%AB
@@ -46,7 +46,7 @@ J0003,Anyu Shinjo,新城安勇,Shinjo Anyu,1942,,,,goju-ryu|jundokan,goju-ryu,na
 B0021,Arakaki no TANMEI,,,,,,,,,,,0,0,,,,yes,
 A0191,Arata Kinjo,金城新,,1991,,,,,,,15,0,0,yes,,,yes,https://ja.wikipedia.org/wiki/%E9%87%91%E5%9F%8E%E6%96%B0
 Q4785266,Arcenio James Advincula,,,1938,,1963,Naha,isshin-ryu|goju-ryu|shorin-ryu|uechi-ryu|ryukyu-kobudo|okinawan-kobudo|isshin-ryu-kobudo|isshin-ryu-uika,isshin-ryu,shuri-te,16,0,0,yes,,,,https://en.wikipedia.org/wiki/Arcenio_James_Advincula
-Q4807592,Ason,,,,,,,te|katori-shinto-ryu,katori-shinto-ryu,other,0,3,985,yes,,,,https://en.wikipedia.org/wiki/Ason
+Q4807592,Ason,,,,,,,te|katori-shinto-ryu,katori-shinto-ryu,other,0,3,983,yes,,,,https://en.wikipedia.org/wiki/Ason
 Q2869852,Atsuko Wakai,若井敦子,,1971,,1996,,goju-ryu|shito-ryu|goju-kai|japanese-karate-generic|karate-generic|shukokai,goju-ryu,naha-te,17,0,0,yes,,,,https://en.wikipedia.org/wiki/Atsuko_Wakai
 R0048,Atsuo Hiruma,,,1941,,,"Kanagawa, Japan; Spain and France",shotokai,shotokai,japanese,16,0,0,yes,,,yes,
 Q18413638,Atsuo Yamashita,,,,,1917,,wado-ryu|karate-generic|te,wado-ryu,japanese,15,0,0,yes,,,,https://fr.wikipedia.org/wiki/Atsuo_Yamashita
@@ -73,7 +73,7 @@ N0137,Bunshiro Nagamine,,,1977,,,,,,,,0,0,,,,yes,
 C00012,Bus Martin,,,,,,,karate-generic,karate-generic,other,17,0,0,yes,,,,
 J0097,Busen Arakawa,荒川武仙,,,,,Japan (mainland),senbukan,senbukan,naha-te,14,0,0,yes,,,yes,
 B0013,Bushi Kunishi,,,,,,,,,,,0,0,,,,yes,
-W0015,Bushi Nagahama,,,,,,,,,,2,1,935,yes,,,yes,
+W0015,Bushi Nagahama,,,,,,,,,,2,1,933,yes,,,yes,
 A0151,Byung Jick Ro,노병직,Ro Byung-jick,1919,2015,,,taekwondo|shotokan|korean-martial-arts|song-moo-kwan,taekwondo,korean,14,0,0,yes,,,yes,https://en.wikipedia.org/wiki/Song_Moo_Kwan
 N0030,C. Iraha,,,,,,,,,,15,0,0,yes,,,yes,
 A0111,C. Michial Jones,,,,,,,seidokan,seidokan,shuri-te,18,0,0,yes,,,yes,
@@ -83,22 +83,22 @@ R0054,Caylor Adkins,,,1934,,,"Thief River Falls, Minnesota; Long Beach and Los A
 R0176,Cecil T. Patterson,,,1930,2002,,"Sevierville, Tennessee, United States",wado-ryu,wado-ryu,japanese,15,0,0,yes,,,yes,
 B0004,Ch'en Yu-an,,,,,,,,,,0,1,2,yes,,,yes,
 J0176,Chang Ung,장웅,,1938,2026,,"Pyongyang, DPRK",itf-chang-ung|itf-taekwondo,itf-chang-ung,korean,,0,0,,,,yes,
-Q542989,Chatan Yara,北谷屋良,,1668,1756,1693,Shuri,karate-generic|okinawan-karate-generic|te,te,te,1,1,999,yes,,yes,,https://en.wikipedia.org/wiki/Chatan_Yara
+Q542989,Chatan Yara,北谷屋良,,1668,1756,1693,Shuri,karate-generic|okinawan-karate-generic|te,te,te,1,1,997,yes,,yes,,https://en.wikipedia.org/wiki/Chatan_Yara
 R0259,Chibana Chōshō,知念? — surname 知花; given name 朝章-type reading Chōshō,,1847,1927,,Shuri Tōnokura,,,,0,1,30,yes,,,yes,
 C00013,Chihan Yohena,,,,,,,karate-generic,karate-generic,other,13,0,0,yes,,,,
 C00015,Chiko Yohena,,,,,,,karate-generic,karate-generic,other,17,0,0,yes,,,,
-KN006,Chinen Shikiyanaka,知念志喜屋仲,,1780,1841,,,okinawan-kobudo,okinawan-kobudo,kobudo,1,1,597,yes,,,yes,
+KN006,Chinen Shikiyanaka,知念志喜屋仲,,1780,1841,,,okinawan-kobudo,okinawan-kobudo,kobudo,1,1,595,yes,,,yes,
 R0211,Chinil Chang,,,,2018,,"South Korea, then New York, USA",hapkido,hapkido,korean,2,0,0,yes,,,yes,
 C00016,Chinsaku Kinjo,,,,,,,karate-generic,karate-generic,other,0,1,1,yes,,,,
 KN001,Chinto,チントー,,,,,,te,te,te,,0,0,,,,yes,
 C00017,Chobi Kishaba,,,,,,,karate-generic,karate-generic,other,,0,0,,,,,
 C00018,Choboku Takamine,高嶺朝睦,,1908,,,,karate-generic,karate-generic,other,13,0,0,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,
-A0209,Chochi Motobu,本部按司朝智,Motobu Chochi,,,,,motobu-udundi,motobu-udundi,shuri-te,2,1,915,yes,,,yes,https://ja.wikipedia.org/wiki/本部御殿
-A0165,Choei Motobu,本部朝英,,,,,,motobu-udundi,motobu-udundi,shuri-te,6,1,911,yes,,,yes,
+A0209,Chochi Motobu,本部按司朝智,Motobu Chochi,,,,,motobu-udundi,motobu-udundi,shuri-te,2,1,913,yes,,,yes,https://ja.wikipedia.org/wiki/本部御殿
+A0165,Choei Motobu,本部朝英,,,,,,motobu-udundi,motobu-udundi,shuri-te,6,1,909,yes,,,yes,
 Q99517310,Chofu Kyan,喜屋武朝扶,Chōfu Kyan,1839,1910,1864,Naha,te|karate-generic,te,te,5,2,243,yes,,,,https://ja.wikipedia.org/wiki/%E5%96%9C%E5%B1%8B%E6%AD%A6%E6%9C%9D%E6%89%B6
 Q5103850,Chogi Kishaba,喜舎場朝義,Chōgi Kishaba,1934,2017,1959,,okinawan-karate-generic|goju-ryu|yamanni-ryu|okinawan-kobudo|karate-generic|te|yamanni-chinen-ryu-rbkd,goju-ryu,naha-te,16,4,4,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,https://en.wikipedia.org/wiki/Chogi_Kishaba
 C00657,Chogi Yoshimura,義村朝義,,1866,1945,,,karate-generic,karate-generic,other,8,0,0,yes,,,,
-A0207,Chohei Motobu,本部王子朝平,Motobu Chohei,1655,1687,,,motobu-udundi,motobu-udundi,shuri-te,0,1,917,yes,,,yes,https://ja.wikipedia.org/wiki/本部御殿
+A0207,Chohei Motobu,本部王子朝平,Motobu Chohei,1655,1687,,,motobu-udundi,motobu-udundi,shuri-te,0,1,915,yes,,,yes,https://ja.wikipedia.org/wiki/本部御殿
 N0054,Chohitsu Kyan,,,,,,,,,,6,0,0,yes,,,yes,
 N0210,Choho Giwan,,,,1875,,,,,,,0,0,,,,yes,
 A0182,Choi Chang-keun,최창근,,1940,,,,taekwondo|korean-martial-arts|itf-taekwondo,taekwondo,korean,15,0,0,yes,,,yes,https://en.wikipedia.org/wiki/Choi_Chang-keun
@@ -109,33 +109,33 @@ J0178,Choi Yong-sool,최용술,,1899,1986,,"Yeongdong, North Chungcheong; Daegu"
 C00024,Chojin Kuba,久場長仁,,1904,1989,,,karate-generic,karate-generic,other,7,2,90,yes,,,,
 A0078,Chojiro Tani,谷長治郎,,1921,1998,,,shukokai|shito-ryu|goju-ryu,shukokai,japanese,13,11,24,yes,,,yes,https://en.wikipedia.org/wiki/Ch%C5%8Djir%C5%8D_Tani
 C00025,Chojo Oshiro,大城朝恕,,1887,1935,,,karate-generic,karate-generic,other,6,7,186,yes,,,,
-Q221121,Chojun Miyagi,宮城長順,Chōjun Miyagi,1888,1953,1913,Shuri,goju-ryu|fujian-white-crane|karate-generic|naha-te|kyokushin|shuri-te|chinese-martial-arts|dai-nippon-butokukai|goju-kai,goju-ryu,naha-te,11,30,764,yes,,,,https://en.wikipedia.org/wiki/Ch%C5%8Djun_Miyagi
-A0208,Chokan Motobu,本部按司朝完,Motobu Chokan,,,,,motobu-udundi,motobu-udundi,shuri-te,1,1,916,yes,,,yes,https://ja.wikipedia.org/wiki/本部御殿
+Q221121,Chojun Miyagi,宮城長順,Chōjun Miyagi,1888,1953,1913,Shuri,goju-ryu|fujian-white-crane|karate-generic|naha-te|kyokushin|shuri-te|chinese-martial-arts|dai-nippon-butokukai|goju-kai,goju-ryu,naha-te,11,30,762,yes,,,,https://en.wikipedia.org/wiki/Ch%C5%8Djun_Miyagi
+A0208,Chokan Motobu,本部按司朝完,Motobu Chokan,,,,,motobu-udundi,motobu-udundi,shuri-te,1,1,914,yes,,,yes,https://ja.wikipedia.org/wiki/本部御殿
 Q5104212,Chokei Kishaba,喜舎場朝啓,Chōkei Kishaba,1929,2000,1954,,shorin-ryu|yamanni-ryu|karate-generic|okinawan-karate-generic|shorin-ryu-kishaba-juku|te,shorin-ryu,shuri-te,16,1,1,yes,,,,https://en.wikipedia.org/wiki/Chokei_Kishaba
 C00026,Choken Makabe,真壁朝顕,,1769,1823,,,karate-generic,karate-generic,other,4,0,0,yes,,,,
 Q1147708,Choki Motobu,本部朝基,Chōki Motobu,1870,1944,1895,Shuri,motobu-ryu|shuri-te|tomari-te|shorin-ryu|wado-ryu|matsubayashi-ryu|scrape-artefact|karate-generic|kenpo,motobu-ryu,shuri-te,11,21,345,yes,,,,https://en.wikipedia.org/wiki/Motobu_Ch%C5%8Dki
-C00028,Choko Motobu,本部朝恒,Motobu Chōkō,,,,,karate-generic,karate-generic,other,4,1,913,yes,,,,
+C00028,Choko Motobu,本部朝恒,Motobu Chōkō,,,,,karate-generic,karate-generic,other,4,1,911,yes,,,,
 KP003,Chokuho Agena,安慶名朝比呼,,,,,,,,,0,1,44,yes,,,yes,
 N0140,Chokuho Agena,,,,,,,,,,0,1,44,yes,,,yes,
-C00020,Chokyu Motobu,本部朝救,Motobu Chōkyū,1741,1814,,,karate-generic,karate-generic,other,5,1,912,yes,,,,
+C00020,Chokyu Motobu,本部朝救,Motobu Chōkyū,1741,1814,,,karate-generic,karate-generic,other,5,1,910,yes,,,,
 C00021,Chomei Motobu,本部朝明,Motobu Chōmei,1885,1956,,,karate-generic,karate-generic,other,0,1,2,yes,,,,
-Q705617,Chomo Hanashiro,花城長茂,Chōmo Hanashiro,1869,1945,1894,Shuri,shotokan|karate-generic|shorin-ryu|shito-ryu|chito-ryu|shuri-te|okinawan-karate-generic|te,shotokan,japanese,6,11,715,yes,,,,https://en.wikipedia.org/wiki/Ch%C5%8Dmo_Hanashiro
+Q705617,Chomo Hanashiro,花城長茂,Chōmo Hanashiro,1869,1945,1894,Shuri,shotokan|karate-generic|shorin-ryu|shito-ryu|chito-ryu|shuri-te|okinawan-karate-generic|te,shotokan,japanese,6,11,713,yes,,,,https://en.wikipedia.org/wiki/Ch%C5%8Dmo_Hanashiro
 A0219,Chomo Motobu,本部朝茂,Motobu Chomo,1890,1945,,,motobu-udundi,motobu-udundi,shuri-te,12,0,0,yes,,,yes,https://ja.wikipedia.org/wiki/本部朝勇
 C00037,Chomo Motobu,本部朝茂,,,1945,,,karate-generic,karate-generic,other,12,0,0,yes,,,,
-A0210,Choryu Motobu,本部王子朝隆,Motobu Choryu,,,,,motobu-udundi,motobu-udundi,shuri-te,3,1,914,yes,,,yes,https://ja.wikipedia.org/wiki/本部御殿
+A0210,Choryu Motobu,本部王子朝隆,Motobu Choryu,,,,,motobu-udundi,motobu-udundi,shuri-te,3,1,912,yes,,,yes,https://ja.wikipedia.org/wiki/本部御殿
 A0028,Chosei Motobu,本部朝正,,1925,,,,motobu-ryu|motobu-udundi|karate-generic,motobu-ryu,shuri-te,13,1,1,yes,,,yes,https://en.wikipedia.org/wiki/Motobu-ry%C5%AB
 C00038,Choshin Ahagon,,,,,,,karate-generic,karate-generic,other,17,0,0,yes,,,,
 Q1071733,Choshin Chibana,知花朝信,Chōshin Chibana,1885,1969,1910,Shuri,shorin-ryu|matsubayashi-ryu|karate-generic|kobayashi-shorin-ryu|okinawan-karate-generic|shobayashi-shorin-ryu|shorin-ryu-shubukan|shorin-ryu-kyudokan|shorin-ryu-seibukan,shorin-ryu,shuri-te,6,25,293,yes,,,,https://en.wikipedia.org/wiki/Ch%C5%8Dshin_Chibana
-A0029,Choshin Motobu,本部朝真,Motobu Choshin,,,,,motobu-udundi|te,motobu-udundi,shuri-te,9,1,908,yes,,,yes,https://en.wikipedia.org/wiki/House_of_Motobu
-C00042,Chosho Motobu,本部朝章,Motobu Chōshō,,,,,karate-generic,karate-generic,other,8,1,909,yes,,,,
-A0166,Chotoku Inohama,伊野波朝徳,,,,,,motobu-udundi,motobu-udundi,shuri-te,7,1,910,yes,,,yes,
+A0029,Choshin Motobu,本部朝真,Motobu Choshin,,,,,motobu-udundi|te,motobu-udundi,shuri-te,9,1,906,yes,,,yes,https://en.wikipedia.org/wiki/House_of_Motobu
+C00042,Chosho Motobu,本部朝章,Motobu Chōshō,,,,,karate-generic,karate-generic,other,8,1,907,yes,,,,
+A0166,Chotoku Inohama,伊野波朝徳,,,,,,motobu-udundi,motobu-udundi,shuri-te,7,1,908,yes,,,yes,
 Q2393877,Chotoku Kyan,喜屋武朝徳,Chōtoku Kyan,1870,1945,1895,Shuri,shorin-ryu|tomari-te|chito-ryu|shuri-te|scrape-artefact|japanese-karate-generic|karate-generic|okinawan-karate-generic|te,shorin-ryu,shuri-te,11,13,241,yes,,,,https://en.wikipedia.org/wiki/Ch%C5%8Dtoku_Kyan
 W0025,Chotoku Maeshiro,,Maeshiro Chotoku,1909,1979,,,,,,7,2,13,yes,,,yes,
 A0053,Chotoku Omine,大嶺朝徳,,1929,1975,,,matsubayashi-ryu,matsubayashi-ryu,shuri-te,15,1,2,yes,,,yes,
 J0095,Chotoku Zukeran,瑞慶覧朝徳,,,,,Okinawa,yamanni-ryu,yamanni-ryu,kobudo,6,0,0,yes,,,yes,
 KP005,Choun Oyakata,朝雲親方,,,,,,,,,,0,0,,,,yes,
 C00044,Choyu Kiyuna,喜友名朝有,,,,,,karate-generic,karate-generic,other,13,0,0,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,
-Q706389,Choyu Motobu,本部朝勇,Chōyū Motobu,1865,1928,1882,Shuri,shuri-te|motobu-ryu|scrape-artefact|karate-generic|kenpo|motobu-udundi|te,shuri-te,shuri-te,10,11,907,yes,,,,https://en.wikipedia.org/wiki/Motobu_Ch%C5%8Dy%C5%AB
+Q706389,Choyu Motobu,本部朝勇,Chōyū Motobu,1865,1928,1882,Shuri,shuri-te|motobu-ryu|scrape-artefact|karate-generic|kenpo|motobu-udundi|te,shuri-te,shuri-te,10,11,905,yes,,,,https://en.wikipedia.org/wiki/Motobu_Ch%C5%8Dy%C5%AB
 Q15987180,Chozo Nakama,名嘉真朝増,Chōzō Nakama,1899,1982,1924,Shuri,kobayashi-shorin-ryu|shorin-ryu|karate-generic|okinawan-karate-generic|te,kobayashi-shorin-ryu,shuri-te,13,6,19,yes,,,,https://en.wikipedia.org/wiki/Chozo_Nakama
 A0083,Chris Thompson,,,,,,,shukokai|shito-ryu|kimura-shukokai,shukokai,japanese,15,0,0,yes,,,yes,
 Q1082144,Christian Tissier,,,1951,,1976,,aikido|te,aikido,other,17,0,0,yes,,,,https://en.wikipedia.org/wiki/Christian_Tissier
@@ -193,8 +193,8 @@ C00036,Emory Turner,,,,,,,karate-generic,karate-generic,other,17,0,0,yes,,,,
 C00055,Ernest Estrada,,,,,,,karate-generic,karate-generic,other,17,0,0,yes,,,,
 R0068,Ernie Molyneux,,,,,,England,iogkf|goju-ryu,iogkf,naha-te,15,0,0,yes,,,yes,
 A0147,Ewerton Teixeira,,,1982,,,,kyokushin,kyokushin,kyokushin,19,0,0,yes,,,yes,https://en.wikipedia.org/wiki/Ewerton_Teixeira
-A0185,Fang Qiniang,方七娘,,,,,,fujian-white-crane,fujian-white-crane,chinese,1,2,853,yes,,,yes,https://zh.wikipedia.org/wiki/方七娘
-A0184,Fang Zhong,方種,,,,,,chinese-martial-arts,chinese-martial-arts,chinese,0,1,854,yes,,,yes,https://zh.wikipedia.org/wiki/永春白鶴拳
+A0185,Fang Qiniang,方七娘,,,,,,fujian-white-crane,fujian-white-crane,chinese,1,2,851,yes,,,yes,https://zh.wikipedia.org/wiki/方七娘
+A0184,Fang Zhong,方種,,,,,,chinese-martial-arts,chinese-martial-arts,chinese,0,1,852,yes,,,yes,https://zh.wikipedia.org/wiki/永春白鶴拳
 N0167,Fasajiro Takagi,,,,,,,,,,14,0,0,yes,,,yes,
 A0200,Fizuli Musayev,Füzuli Musayev,,1962,,,,karate-generic,karate-generic,other,1,1,1,yes,,,yes,
 Q3081845,Francisco Filho,,,1971,,1996,,karate-generic|kyokushin,kyokushin,kyokushin,20,0,0,yes,,,,https://en.wikipedia.org/wiki/Francisco_Filho
@@ -243,7 +243,7 @@ J0017,Giyu Gibo,儀保宜裕,Gibo Giyu,1938,,,,kobayashi-shorin-ryu|shorin-ryu-s
 A0146,Glaube Feitosa,,,1973,,,,kyokushin,kyokushin,kyokushin,19,0,0,yes,,,yes,https://en.wikipedia.org/wiki/Glaube_Feitosa
 A0110,Glenn Capistrant,,,,,,,seidokan,seidokan,shuri-te,17,0,0,yes,,,yes,
 Q268880,Gogen Yamaguchi,山口剛玄,Gōgen Yamaguchi,1909,1989,1934,,goju-kai|goju-ryu|kyokushin|shotokan|japanese-karate-generic|karate-generic|ikga,goju-kai,naha-te,12,13,99,yes,,,,https://en.wikipedia.org/wiki/G%C5%8Dgen_Yamaguchi
-C00084,Gokenki,呉賢貴,Go Kenki (Wu Xianhui),1886,1940,,,karate-generic|whooping-crane,whooping-crane,chinese,0,6,772,yes,,,,
+C00084,Gokenki,呉賢貴,Go Kenki (Wu Xianhui),1886,1940,,,karate-generic|whooping-crane,whooping-crane,chinese,0,6,770,yes,,,,
 C00085,Gosei Yamaguchi,,,1935,,,,karate-generic|goju-kai-usa,goju-kai-usa,naha-te,13,0,0,yes,,,,
 A0136,Gosen Yamaguchi,,,1940,1990,,,goju-kai|goju-ryu,goju-kai,naha-te,13,0,0,yes,,,yes,
 C00086,Goshi Yamaguchi,山口剛史,,1942,,,,karate-generic|goju-kai|ikga,goju-kai,naha-te,13,2,2,yes,,,,
@@ -363,13 +363,13 @@ Q6078918,Isao Obata,小畑功,,1904,1976,1929,,shotokan|karate-generic|japanese-
 C00089,Isao Oshiro,,,,,,,karate-generic,karate-generic,other,17,0,0,yes,,,,
 J0015,Isao Shima,島勇夫,Shima Isao,,,,,matsubayashi-ryu,matsubayashi-ryu,shuri-te,15,0,0,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,yes,
 R0122,Isao Toma,,,,,,Okinawa,matsumura-seito,matsumura-seito,shuri-te,7,0,0,yes,,,yes,
-C00141,Isei Kojo,湖城以正,Kojo Isei,1832,1891,,,karate-generic|kojo-ryu,kojo-ryu,te,3,1,627,yes,,,,
+C00141,Isei Kojo,湖城以正,Kojo Isei,1832,1891,,,karate-generic|kojo-ryu,kojo-ryu,te,3,1,625,yes,,,,
 J0024,Ishimine Chōshin,伊志嶺朝信,,,,,,goju-ryu,goju-ryu,naha-te,13,0,0,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,yes,
 A0236,Ishimine Pechin,石嶺親雲上,,1812,1892,,Shuri,shuri-te|ishimine-ryu,shuri-te,shuri-te,5,1,2,yes,,,yes,
 J0093,Isho Kojo,湖城以昌,,1848,1910,,"Kume village, Naha",kojo-ryu,kojo-ryu,te,,0,0,,,,yes,
 C00142,Isoroku Katagiri,,,,,,,karate-generic,karate-generic,other,15,0,0,yes,,,,
 W0024,Isshun Yonamine,,Yonamine Isshun,,,,,,,,,0,0,,,,yes,
-C00145,Iwah,,,,,,,karate-generic,karate-generic,other,0,6,1048,yes,,,,
+C00145,Iwah,,,,,,,karate-generic,karate-generic,other,0,6,1046,yes,,,,
 A0047,Iwao Tamotsu,保巖,Tamotsu Iwao,1948,2016,,,shorinji-ryu-renshinkan,shorinji-ryu-renshinkan,shuri-te,14,0,0,yes,,,yes,
 R0107,Iwao Tome,,,,,,"Tomigusuku, Okinawa",matsubayashi-ryu,matsubayashi-ryu,shuri-te,17,0,0,yes,,,yes,
 R0220,J. Pat Burleson,,,,,,"Fort Worth, Texas, USA",chung-do-kwan|jhoon-rhee-taekwondo,chung-do-kwan,korean,18,0,0,yes,,,yes,
@@ -444,33 +444,33 @@ C00103,Jushin Kohama,,,,,,,karate-generic,karate-generic,other,7,0,0,yes,,,,
 C00104,Jushin Toma,,,,,,,karate-generic,karate-generic,other,19,0,0,yes,,,,
 R0050,Jürgen Seydel,,,1917,2008,,"Bad Homburg vor der Höhe, Germany",shotokan,shotokan,japanese,18,0,0,yes,,,yes,
 C00107,Kafu Kojo,湖城嘉富,,1909,1996,,,karate-generic|kojo-ryu,kojo-ryu,te,7,4,4,yes,,,,
-C00108,Kaho Kojo,湖城嘉宝,,1849,1925,,,karate-generic|kojo-ryu,kojo-ryu,te,4,5,626,yes,,,,
+C00108,Kaho Kojo,湖城嘉宝,,1849,1925,,,karate-generic|kojo-ryu,kojo-ryu,te,4,5,624,yes,,,,
 A0127,Kaishu Isa,,,,,,,ufuchiku-kobujutsu|shorin-ryu,ufuchiku-kobujutsu,kobudo,12,0,0,yes,,,yes,
 N0179,Kaiyo Uto,,,1896,,,,,,,,0,0,,,,yes,
 C00173,Kama Higa,,,,,,,karate-generic,karate-generic,other,6,1,1,yes,,,,
 C00174,Kamesuke Higaonna,東恩納亀助,,1905,1968,,,karate-generic,karate-generic,other,12,1,1,yes,,,,
 C00111,Kanaa Kanagusuku,,,,,,,karate-generic,karate-generic,other,,0,0,,,,,
 C00176,Kanbun Izumigawa,泉川寛文,Izumikawa Kanbun,1942,1982,,,karate-generic|senbukan|goju-ryu,senbukan,naha-te,14,1,1,yes,,,,
-Q2473562,Kanbun Uechi,上地完文,,1877,1948,1902,Naha,uechi-ryu|shito-ryu|chinese-martial-arts|scrape-artefact|karate-generic|kenpo|kung-fu|okinawan-karate-generic|te,uechi-ryu,uechi-ryu,6,7,617,yes,,,,https://en.wikipedia.org/wiki/Kanbun_Uechi
+Q2473562,Kanbun Uechi,上地完文,,1877,1948,1902,Naha,uechi-ryu|shito-ryu|chinese-martial-arts|scrape-artefact|karate-generic|kenpo|kung-fu|okinawan-karate-generic|te,uechi-ryu,uechi-ryu,6,7,615,yes,,,,https://en.wikipedia.org/wiki/Kanbun_Uechi
 KN005,Kanegawa Gimu,兼川,,1862,1921,,,okinawan-kobudo,okinawan-kobudo,kobudo,0,1,170,yes,,,yes,
 W0026,Kanegawa no Gibu,,,,,,,,,,,0,0,,,,yes,
 Q1728269,Kanei Uechi,上地完英,Kan'ei Uechi,1911,1991,1936,,uechi-ryu|karate-generic|okinawan-karate-generic|te,uechi-ryu,uechi-ryu,7,59,71,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,https://en.wikipedia.org/wiki/Kanei_Uechi
 B0011,Kanei Uechi (Shito-ryu),,,1904,1993,,,shito-ryu,shito-ryu,japanese,13,0,0,yes,,,yes,
 J0155,Kang Suh-chong,강서종,,,,,"Seoul; Brooklyn, New York",chung-do-kwan,chung-do-kwan,korean,16,0,0,yes,,,yes,
-Q921673,Kanga Sakukawa,佐久川寛賀,,1733,1815,1811,Shuri,shuri-te|chuan-fa|chinese-martial-arts|karate-generic|okinawan-karate-generic|te,shuri-te,shuri-te,3,5,997,yes,,yes,,https://en.wikipedia.org/wiki/Sakugawa_Kanga
+Q921673,Kanga Sakukawa,佐久川寛賀,,1733,1815,1811,Shuri,shuri-te|chuan-fa|chinese-martial-arts|karate-generic|okinawan-karate-generic|te,shuri-te,shuri-te,3,5,995,yes,,yes,,https://en.wikipedia.org/wiki/Sakugawa_Kanga
 KP022,Kanken Oyadomari,,,,,,,,,,,0,0,,,,yes,
 Q3772405,Kanken Toyama,遠山寛賢,Toyama Kanken,1888,1966,1913,Shuri,shudokan|chinese-martial-arts|shuri-te|goju-ryu|shito-ryu|shorin-ryu|naha-te|tomari-te|chuan-fa|karate-generic|te|toyama-ryu,shudokan,shuri-te,13,11,29,yes,,,,https://en.wikipedia.org/wiki/Kanken_T%C5%8Dyama
 Q16006586,Kanki Izumigawa,泉川寛喜,,1908,1967,1933,Naha,goju-ryu|senbukan|ryukyu-kobudo|naha-te|dai-nippon-butokukai|karate-generic|okinawan-karate-generic|te,goju-ryu,naha-te,13,9,10,yes,,,,https://en.wikipedia.org/wiki/Kanki_Izumigawa
 C00117,Kanmei Uechi,上地完明,,1941,2015,,,karate-generic|uechi-ryu|uechi-ryu-karate-do-kyokai,uechi-ryu,uechi-ryu,8,1,1,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,
-Q699236,Kanryo Higaonna,東恩納寛量,Kanryō Higaonna,1853,1915,1878,Shuri,shuri-te|chinese-martial-arts|fujian-white-crane|karate-generic|kung-fu|okinawan-karate-generic|scrape-artefact|te,shuri-te,shuri-te,7,11,847,yes,,,,https://en.wikipedia.org/wiki/Higaonna_Kanry%C5%8D
+Q699236,Kanryo Higaonna,東恩納寛量,Kanryō Higaonna,1853,1915,1878,Shuri,shuri-te|chinese-martial-arts|fujian-white-crane|karate-generic|kung-fu|okinawan-karate-generic|scrape-artefact|te,shuri-te,shuri-te,7,11,845,yes,,,,https://en.wikipedia.org/wiki/Higaonna_Kanry%C5%8D
 C00197,Kansei Uechi,,,,,,,karate-generic|uechi-ryu,uechi-ryu,uechi-ryu,8,0,0,yes,,,,
 A0129,Kantoku Izumikawa,,,,,,,okinawan-kobudo|ufuchiku-kobujutsu,okinawan-kobudo,kobudo,2,2,13,yes,,,yes,
-C00198,Kantoku Uechi,上地完得,,,,,,karate-generic,karate-generic,other,0,1,618,yes,,,,
+C00198,Kantoku Uechi,上地完得,,,,,,karate-generic,karate-generic,other,0,1,616,yes,,,,
 C00202,Kanyu Higaonna,東恩納寛裕,Higaonna Kanyu,1849,1922,,,karate-generic,karate-generic,other,0,1,20,yes,,,,
 B0028,Kanzo Nakandakari,,,,,,,,,,0,1,7,yes,,,yes,
 C00105,Kaoru Kinjo,,,,,,,karate-generic,karate-generic,other,15,0,0,yes,,,,
 C00106,Kaoru Kojo,,,,,,,karate-generic,karate-generic,other,,0,0,,,,,
-C00206,Karyu Uku,宇久嘉隆,Uku Karyu,1800,1850,,,karate-generic,karate-generic,other,0,2,932,yes,,,,
+C00206,Karyu Uku,宇久嘉隆,Uku Karyu,1800,1850,,,karate-generic,karate-generic,other,0,2,930,yes,,,,
 C00207,Kasei Shimabuku,,,,,,,karate-generic,karate-generic,other,13,0,0,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,
 C00208,Kata Yamashiro,,,,,,,karate-generic,karate-generic,other,8,0,0,yes,,,,
 Q6378060,Katsuaki Sato,佐藤勝昭,Katsuaki Satō,1946,,1971,,kyokushin|karate-generic|satojuku|te,kyokushin,kyokushin,18,2,4,yes,,,,https://en.wikipedia.org/wiki/Katsuaki_Sat%C5%8D
@@ -508,7 +508,7 @@ A0144,Kazuya Higa,,,,,,,goju-ryu|jundokan,goju-ryu,naha-te,13,0,0,yes,,,yes,
 J0081,Kazuya Kanzaki,神崎和也,,1928,2018,,"Miyako-machi, Fukuoka (b.); Beppu, Ōita",toon-ryu,toon-ryu,naha-te,10,2,2,yes,,,yes,
 Q2636225,Kazuyoshi Ishii,石井和義,,1953,,1978,,seidokaikan|karate-generic|kyokushin|japanese-karate-generic|seidokan|te,seidokaikan,kyokushin,19,4,8,yes,,,,https://en.wikipedia.org/wiki/Kazuyoshi_Ishii
 R0137,Kazuyuki Hasegawa,長谷川一幸,,1948,,,Tokushima,kyokushin,kyokushin,kyokushin,16,0,0,yes,,,yes,
-R0251,Ke Xidi,,,,,,,,,,0,1,619,yes,,,yes,
+R0251,Ke Xidi,,,,,,,,,,0,1,617,yes,,,yes,
 A0087,Kei Tsumura,,,,,,,shito-ryu|itosu-ryu,shito-ryu,japanese,16,0,0,yes,,,yes,
 Q1737900,Keigo Abe,阿部圭吾,,1938,2019,1963,,shotokan|karate-generic|shito-ryu|japanese-karate-generic|te|jska,shotokan,japanese,16,2,2,yes,,,,https://en.wikipedia.org/wiki/Keigo_Abe
 B0010,Keihan Ono,,,,,,,karate-generic,karate-generic,other,,0,0,,,,yes,
@@ -558,7 +558,7 @@ J0077,Kensuke Ohama,大浜賢助,,,,,Okinawa,shuri-te|okinawan-kobudo|okinawan-k
 C00147,Kentoku Kaneshiro,,,,,,,karate-generic,karate-generic,other,12,0,0,yes,,,,
 Q722028,Kentsu Yabu,屋部憲通,Kentsū Yabu,1866,1937,1891,Shuri,shuri-te|tomari-te|karate-generic|kenpo|motobu-ryu|okinawan-karate-generic|te,shuri-te,shuri-te,6,8,126,yes,,,,https://en.wikipedia.org/wiki/Kents%C5%AB_Yabu
 B0026,Kenwa Kanna,,,,,,,,,,,0,0,,,,yes,
-Q453505,Kenwa Mabuni,摩文仁賢和,,1889,1952,1914,Shuri,shito-ryu|goju-ryu|shotokan|wado-ryu|naha-te|shuri-te|karate-generic|okinawan-karate-generic|shindo-jinen-ryu,shito-ryu,japanese,12,34,554,yes,,,,https://en.wikipedia.org/wiki/Kenwa_Mabuni
+Q453505,Kenwa Mabuni,摩文仁賢和,,1889,1952,1914,Shuri,shito-ryu|goju-ryu|shotokan|wado-ryu|naha-te|shuri-te|karate-generic|okinawan-karate-generic|shindo-jinen-ryu,shito-ryu,japanese,12,33,552,yes,,,,https://en.wikipedia.org/wiki/Kenwa_Mabuni
 C00245,Kenyu Chinen,知念賢祐,,1944,2024,,,karate-generic|matayoshi-kobudo|world-oshukai,matayoshi-kobudo,kobudo,17,5,5,yes,,,,
 A0090,Kenyu Mabuni,摩文仁賢雄,,1951,,,,shito-ryu|dento-shito-ryu,shito-ryu,japanese,16,0,0,yes,,,yes,
 C00246,Kenzo Mabuni,摩文仁賢三,,1927,2005,,,karate-generic|shito-ryu,shito-ryu,japanese,13,1,1,yes,,,,
@@ -583,7 +583,7 @@ W0020,Kin Ryojin and Kin Ryosho,,,1873,1936,,,,,,6,0,0,yes,,,yes,
 KP002,Kingai,金硬,,,,,,,,,0,1,44,yes,,,yes,
 J0033,Kinjō Kenpo,金城憲保,,,,,,okinawan-karate-generic,okinawan-karate-generic,other,,0,0,,Hanshi 10th dan — Okinawa Karate News register (2018),,yes,
 J0020,Kinjō Yoshitaka,金城嘉孝,,1953,,,,goju-ryu|tomari-te,goju-ryu,naha-te,15,0,0,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,yes,
-C00251,Kishin Teruya,照屋規箴,,1804,1864,,,karate-generic,karate-generic,other,0,2,932,yes,,,,
+C00251,Kishin Teruya,照屋規箴,,1804,1864,,,karate-generic,karate-generic,other,0,2,930,yes,,,,
 A0120,Kisho Inoue,井上貴勝,,1954,,,,ryukyu-kobudo|ryukyu-kobujutsu-hozon-shinko-kai,ryukyu-kobudo,kobudo,16,0,0,yes,,,yes,
 A0235,Kisshomaru Ueshiba,植芝吉祥丸,,1921,1999,,,aikido,aikido,other,2,1,1,yes,,,yes,https://en.wikipedia.org/wiki/Kisshomaru_Ueshiba
 C00250,Kisuke Higa,,,,,,,karate-generic,karate-generic,other,6,1,16,yes,,,,
@@ -620,8 +620,8 @@ R0246,Koja Shōshin,,,,,,,,,,15,0,0,yes,,,yes,
 Q15845016,Koji Chubachi,中鉢孝治,Kōji Chūbachi,1987,,2012,,shotokan|karate-generic|japanese-karate-generic|te,shotokan,japanese,17,0,0,yes,,,,https://en.wikipedia.org/wiki/Koji_Chubachi
 Q15845028,Koji Ogata,尾方弘二,Kōji Ogata,1968,,1993,,shotokan|karate-generic|japanese-karate-generic|te,shotokan,japanese,17,0,0,yes,,,,https://en.wikipedia.org/wiki/Koji_Ogata
 C00267,Koji Oshiro,,,,,,,karate-generic,karate-generic,other,,0,0,,,,,
-C00268,Kojo PECHIN,,,,,,,karate-generic|kojo-ryu,kojo-ryu,te,1,1,920,yes,,,,
-C00269,Kojo UEKATA,蔡肇功,Sai Choko (Kojo Ueekata),1656,1737,,,karate-generic|kojo-ryu,kojo-ryu,te,0,1,921,yes,,,,
+C00268,Kojo PECHIN,,,,,,,karate-generic|kojo-ryu,kojo-ryu,te,1,1,918,yes,,,,
+C00269,Kojo UEKATA,蔡肇功,Sai Choko (Kojo Ueekata),1656,1737,,,karate-generic|kojo-ryu,kojo-ryu,te,0,1,919,yes,,,,
 C00270,Kojun Makishi,,,,,,,karate-generic,karate-generic,other,17,0,0,yes,,,,
 Q6426547,Kokan Oyadomari,親泊興寛,Kōkan Oyadomari,1827,1905,1852,Tomari,karate-generic|tomari-te|scrape-artefact|okinawan-karate-generic|te,tomari-te,tomari-te,1,4,246,yes,,,,https://en.wikipedia.org/wiki/Kokan_Oyadomari
 C00282,Koki Miyagi,,,,,,,karate-generic,karate-generic,other,16,0,0,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,
@@ -634,7 +634,7 @@ A0183,Kong Young-il,공영일,,1943,,,,taekwondo|korean-martial-arts|itf-taekwon
 C00178,Konin Oyadomari,,,,,,,karate-generic,karate-generic,other,2,1,1,yes,,,,
 C00179,Koragwa Tsuken,,,,,,,karate-generic,karate-generic,other,,0,0,,,,,
 Q1620643,Kori Hisataka,久高幸利,Kōri Hisataka,1907,1988,1932,Shuri,shorinjiryu-kenkokan|goju-ryu|okinawan-kobudo|chinese-martial-arts|karate-generic|kenpo,shorinjiryu-kenkokan,shuri-te,12,4,4,yes,,,,https://en.wikipedia.org/wiki/K%C5%8Dri_Hisataka
-Q3028499,Kosaku Matsumora,松茂良興作,Kōsaku Matsumora,1829,1898,1854,Tomari,tomari-te|karate-generic|scrape-artefact|okinawan-karate-generic|te,tomari-te,tomari-te,5,11,927,yes,,,,https://en.wikipedia.org/wiki/K%C5%8Dsaku_Matsumora
+Q3028499,Kosaku Matsumora,松茂良興作,Kōsaku Matsumora,1829,1898,1854,Tomari,tomari-te|karate-generic|scrape-artefact|okinawan-karate-generic|te,tomari-te,tomari-te,5,11,925,yes,,,,https://en.wikipedia.org/wiki/K%C5%8Dsaku_Matsumora
 C00285,Kosei Kokuba,國場幸盛,Kokuba Kosei,1900,1959,,,karate-generic,karate-generic,other,13,3,19,yes,,,,
 Q276730,Kosei Nishihira,西平向盛,Kōsei Nishihira,1942,2007,1967,,isshin-ryu|shorin-ryu|okinawan-kobudo|karate-generic|okinawan-karate-generic|matsumura-seito|te,isshin-ryu,shuri-te,7,5,5,yes,,,,https://en.wikipedia.org/wiki/Kosei_Nishihira
 C00296,Koshin Iha,伊波康進,,1925,2012,,,karate-generic|jundokan|okinawa-goju-ryu-kyokai|goju-ryu,jundokan,naha-te,13,2,3,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,
@@ -660,7 +660,7 @@ C00189,Kunio Higa,,,,,,,karate-generic,karate-generic,other,15,0,0,yes,,,,
 C00190,Kunio Sunagawa,,,,,,,karate-generic,karate-generic,other,,0,0,,,,,
 R0021,Kunio Tatsuno,辰野邦夫,,,1999,,Japan,motobu-ha-shito-ryu,motobu-ha-shito-ryu,japanese,17,0,0,yes,,,yes,
 J0148,Kunio Uehara,上原邦男,,,,,Okinawa,shorin-ryu,shorin-ryu,shuri-te,,0,0,,,,yes,
-Q1929108,Kusanku,公相君,Kūsankū,,,1695,,chinese-martial-arts|karate-generic|kenpo|te,chinese-martial-arts,chinese,0,3,1001,yes,,yes,,https://en.wikipedia.org/wiki/K%C5%ABsank%C5%AB
+Q1929108,Kusanku,公相君,Kūsankū,,,1695,,chinese-martial-arts|karate-generic|kenpo|te,chinese-martial-arts,chinese,0,3,999,yes,,yes,,https://en.wikipedia.org/wiki/K%C5%ABsank%C5%AB
 J0161,Kwak Kuen-sik,곽근식,,,,,Seoul,chung-do-kwan,chung-do-kwan,korean,16,0,0,yes,,,yes,
 KP015,Kwak Kun-sik,,,,,,,,,,,0,0,,,,yes,
 J0177,Kwon Jae-hwa,권재화,,,,,Korea; Germany,itf-taekwondo,itf-taekwondo,korean,15,0,0,yes,,,yes,
@@ -686,8 +686,8 @@ J0174,Lee Soon-ho,이순호,,,,,"Little Rock, Arkansas, USA",songahm-taekwondo,s
 KP016,Lee Yong-sup,,,,,,,,,,,0,0,,,,yes,
 A0173,Lee Yong-woo,이용우,,,2006,,,taekwondo|korean-martial-arts|jung-do-kwan,taekwondo,korean,16,0,0,yes,,,yes,https://en.wikipedia.org/wiki/Kwan_(martial_arts)
 Q64929894,Leona Pettas,レオナ・ペタス,,1992,,2017,,kyokushin|karate-generic|te|shinkyokushin,kyokushin,kyokushin,17,0,0,yes,,,,https://en.wikipedia.org/wiki/Leona_Pettas
-R0250,Li Zhaobei,,,,,,,,,,0,1,619,yes,,,yes,
-A0188,Lin Shixian,林世咸,,,,,,fujian-white-crane,fujian-white-crane,chinese,4,1,850,yes,,,yes,https://zh.wikipedia.org/zh-hant/鳴鶴拳
+R0250,Li Zhaobei,,,,,,,,,,0,1,617,yes,,,yes,
+A0188,Lin Shixian,林世咸,,,,,,fujian-white-crane,fujian-white-crane,chinese,4,1,848,yes,,,yes,https://zh.wikipedia.org/zh-hant/鳴鶴拳
 A0084,Lionel Marinus,,,,,,,shukokai|shito-ryu|kimura-shukokai,shukokai,japanese,15,0,0,yes,,,yes,
 Q3257815,Loek Hollander,,,1938,2020,1963,,kyokushin|karate-generic|te,kyokushin,kyokushin,17,1,1,yes,,,,https://en.wikipedia.org/wiki/Loek_Hollander
 R0118,Loren Engelby,,,,,,United States,kenshinkan|matsumura-seito,kenshinkan,shuri-te,15,0,0,yes,,,yes,
@@ -700,7 +700,7 @@ N0041,Magii Komesu,,,,1918,,,,,,,0,0,,,,yes,
 N0108,Magonojo Terao,,,,,,,,,,1,0,0,yes,,,yes,
 Q15845014,Mai Shiina,椎名舞,,1988,,2013,,shotokan|karate-generic|japanese-karate-generic|te,shotokan,japanese,17,0,0,yes,,,,https://en.wikipedia.org/wiki/Mai_Shiina
 C00317,Maiya Arakachi,,,,,,,karate-generic,karate-generic,other,,0,0,,,,,
-C00196,Makabe UDUN,真壁ウドゥン,Makabe Choken,,,,,karate-generic,karate-generic,other,0,1,618,yes,,,,
+C00196,Makabe UDUN,真壁ウドゥン,Makabe Choken,,,,,karate-generic,karate-generic,other,0,1,616,yes,,,,
 Q6739958,Makoto Nakamura,中村誠,,,,1995,,te|kyokushin,kyokushin,kyokushin,20,0,0,yes,,,,https://en.wikipedia.org/wiki/Makoto_Nakamura
 C00320,Makoto Tanizoe,,,,,,,karate-generic,karate-generic,other,13,0,0,yes,,,,
 Q11263313,Makoto Uehara,上原誠,,1982,,2007,,shidokan|karate-generic|te,shidokan,kyokushin,18,0,0,yes,,,,https://en.wikipedia.org/wiki/Makoto_Uehara
@@ -784,7 +784,7 @@ A0134,Meitetsu Yagi,八木明哲,,1949,2024,,,goju-ryu|meibukan,goju-ryu,naha-te
 Q16016038,Meitoku Yagi,八木明徳,,1912,2003,1937,Naha,goju-ryu|karate-generic|meibukan|okinawan-karate-generic|te,goju-ryu,naha-te,12,16,30,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,https://en.wikipedia.org/wiki/Meitoku_Yagi
 C00364,Meiyu Kinjo,,,,,,,karate-generic,karate-generic,other,,0,0,,,,,
 C00365,Meiyu Takara,,,,,,,karate-generic,karate-generic,other,13,0,0,yes,,,,
-N0222,Miao Xing,妙興,,1891,1927,,,luohan-quan,luohan-quan,chinese,0,1,765,yes,,,yes,
+N0222,Miao Xing,妙興,,1891,1927,,,luohan-quan,luohan-quan,chinese,0,1,763,yes,,,yes,
 Q6830460,Michael G Foster,,Michael G. Foster,1940,2021,1965,,yoshukai|goju-ryu|chito-ryu|okinawan-kobudo|japanese-karate-generic|karate-generic|te|yoshukai-international,yoshukai,japanese,14,0,0,yes,,,,https://en.wikipedia.org/wiki/Michael_G._Foster
 A0160,Michael Gneck,,,,,,,shorin-ryu,shorin-ryu,shuri-te,0,1,1,yes,,,yes,
 Q6832665,Michael McDonald,,,1965,,1990,,te,te,te,21,0,0,yes,,,,https://en.wikipedia.org/wiki/Michael_McDonald
@@ -816,7 +816,7 @@ Q3317210,Mitsusuke Harada,原田満祐,,1928,2021,1953,Shuri,shotokai|karate-gen
 Q2456537,Mitsuyo Maeda,前田光世,,1878,1941,1903,,te,te,te,2,0,0,yes,,,,https://en.wikipedia.org/wiki/Mitsuyo_Maeda
 W0023,Miyake Sango,,,,,,,,,,,0,0,,,,yes,
 Q6884566,Miyuki Miura,三浦美幸,,1949,,1974,,shotokan|karate-generic|kyokushin|japanese-karate-generic|te|world-oyama,shotokan,japanese,18,0,0,yes,,,,https://en.wikipedia.org/wiki/Miyuki_Miura
-C00373,Moden Yabiku,屋比久孟伝,,1878,1941,,,karate-generic|ryukyu-kobujutsu-kenkyukai,ryukyu-kobujutsu-kenkyukai,kobudo,6,3,555,yes,,,,
+C00373,Moden Yabiku,屋比久孟伝,,1878,1941,,,karate-generic|ryukyu-kobujutsu-kenkyukai,ryukyu-kobujutsu-kenkyukai,kobudo,6,3,553,yes,,,,
 Q182130,Morihei Ueshiba,植芝盛平,,1883,1969,1908,,daito-ryu|karate-generic|kito-ryu|shinkage-ryu|te|tenjin-shinyo-ryu|scrape-artefact|yagyu-shingan-ryu,daito-ryu,other,1,7,52,yes,,,,https://en.wikipedia.org/wiki/Morihei_Ueshiba
 C00374,Morimasa Arakaki,,,,,,,karate-generic,karate-generic,other,14,0,0,yes,,,,
 C00375,Morinobu Maeshiro,眞栄城守信,,,,,,karate-generic,karate-generic,other,13,0,0,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,
@@ -880,7 +880,7 @@ B0022,One-Eyed Toguchi,,,,,,,tomari-te,tomari-te,tomari-te,0,1,1,yes,,,yes,
 C00409,Osamu Ozawa,,,1925,1998,,,karate-generic,karate-generic,other,14,0,0,yes,,,,
 A0034,Oscar Higa,,,1945,,,,shorin-ryu-kyudokan|kobayashi-shorin-ryu,shorin-ryu-kyudokan,shuri-te,20,0,0,yes,,,yes,https://it.wikipedia.org/wiki/Oscar_Higa
 Q3357770,Otti Roethof,,,1950,,1975,,karate-generic|te,te,te,17,0,0,yes,,,,https://en.wikipedia.org/wiki/Otti_Roethof
-A0189,Pan Yuba (Lin Dachong),林達崇,,,,,,fujian-white-crane,fujian-white-crane,chinese,5,1,849,yes,,,yes,https://zh.wikipedia.org/zh-hant/鳴鶴拳
+A0189,Pan Yuba (Lin Dachong),林達崇,,,,,,fujian-white-crane,fujian-white-crane,chinese,5,1,847,yes,,,yes,https://zh.wikipedia.org/zh-hant/鳴鶴拳
 Q110022261,Paolo Biotti Natoli,,,,,,,shotokan,shotokan,japanese,18,0,0,yes,,,,
 A0174,Park Chul-hee,박철희,,1933,2016,,,taekwondo|korean-martial-arts|kang-duk-won,taekwondo,korean,15,1,1,yes,,,yes,https://en.wikipedia.org/wiki/Kang_Duk_Won
 J0163,Park Hae-man,박해만,,,,,Seoul,chung-do-kwan|kukki-taekwondo,chung-do-kwan,korean,16,0,0,yes,,,yes,
@@ -935,7 +935,7 @@ C00437,Ryosho Goya,,,,,,,karate-generic,karate-generic,other,17,0,0,yes,,,,
 Q15845020,Ryosuke Shimizu,志水亮介,Ryōsuke Shimizu,1980,,2005,,shotokan|karate-generic|japanese-karate-generic|te,shotokan,japanese,17,0,0,yes,,,,https://en.wikipedia.org/wiki/Ryosuke_Shimizu
 B0008,Ryotaro Kanai,,,,,,,,,,,0,0,,,,yes,
 R0015,Ryozo Tsukada,,,,,,France,sankukai,sankukai,japanese,15,0,0,yes,,,yes,
-Q954330,Ryu Ryu Ko,ルールーコウ,Ryū Ryū Ko,,,1877,Naha,fujian-white-crane|karate-generic|okinawan-kobudo|kung-fu,fujian-white-crane,chinese,0,9,1014,yes,,yes,,https://en.wikipedia.org/wiki/Ry%C5%AB_Ry%C5%AB_Ko
+Q954330,Ryu Ryu Ko,ルールーコウ,Ryū Ryū Ko,,,1877,Naha,fujian-white-crane|karate-generic|okinawan-kobudo|kung-fu,fujian-white-crane,chinese,0,9,1012,yes,,yes,,https://en.wikipedia.org/wiki/Ry%C5%AB_Ry%C5%AB_Ko
 R0082,Ryugo Sakai,,,1932,2002,,born Kagoshima prefecture; Okinawa from 1949,shoreikan|goju-ryu|ryushinkaikan,shoreikan,naha-te,14,0,0,yes,,,yes,
 KP010,Ryuko Shiishi,添石良行,,1852,1925,,"Shuri, Okinawa",,,,0,1,44,yes,,,yes,
 C00438,Ryuko Tomoyose,友寄隆宏,,1928,2019,,,karate-generic|shohei-ryu,shohei-ryu,uechi-ryu,8,1,2,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,
@@ -961,8 +961,8 @@ Q3276775,Sakujiro Yokoyama,横山作次郎,Sakujirō Yokoyama,1864,1912,1889,,te
 A0030,Sakuma Pechin,佐久間親雲上 (Motobu Chōki writes 佐久間; the family page title uses 佐久真),,1830,,,,shuri-te|te,shuri-te,shuri-te,0,1,346,yes,,,yes,
 R0020,Sakura Kokumai,,,1992,,,"Honolulu, Hawaii, USA",shito-ryu|inoue-ha-shito-ryu,shito-ryu,japanese,17,0,0,yes,,,yes,
 J0186,Sam Greco,サム・グレコ,,1967,,,"Melbourne, Australia",kyokushin|seidokaikan,kyokushin,kyokushin,20,0,0,yes,,,yes,
-C00449,Sanda Chinen,知念三良,Chinen Saburo (Sanda),1842,1925,,,karate-generic|yamanni-ryu,yamanni-ryu,kobudo,5,12,595,yes,,,,
-C00450,Sanda Kanagusuku,金城大筑,Kinjo Ufuchiku,1841,1921,,,karate-generic|okinawan-kobudo|ufuchiku-kobujutsu,okinawan-kobudo,kobudo,0,4,582,yes,,,,
+C00449,Sanda Chinen,知念三良,Chinen Saburo (Sanda),1842,1925,,,karate-generic|yamanni-ryu,yamanni-ryu,kobudo,5,12,593,yes,,,,
+C00450,Sanda Kanagusuku,金城大筑,Kinjo Ufuchiku,1841,1921,,,karate-generic|okinawan-kobudo|ufuchiku-kobujutsu,okinawan-kobudo,kobudo,0,4,580,yes,,,,
 A0203,Sandra Sanchez,,,1981,,,,shito-ryu,shito-ryu,japanese,18,0,0,yes,,,yes,https://en.wikipedia.org/wiki/Sandra_S%C3%A1nchez
 Q7418861,Sannosuke Ueshima,上島三之助,,1893,1987,1918,Shuri,kushin-ryu|judo|goju-ryu|shorin-ryu|shuri-te|tomari-te|japanese-karate-generic|karate-generic|okinawan-karate-generic,kushin-ryu,japanese,14,1,1,yes,,,,https://en.wikipedia.org/wiki/Sannosuke_Ueshima
 J0103,Sanra Kinjo,金城真三良,,,,,Okinawa,shorinjiryu-kenkokan,shorinjiryu-kenkokan,shuri-te,0,1,5,yes,,,yes,
@@ -1009,7 +1009,7 @@ Q7446770,Seikichi Iha,伊波清吉,,1932,,1957,,shorin-ryu-shidokan|karate-gener
 Q15987278,Seikichi Odo,,,1926,2002,1951,Shuri,kenpo|okinawan-kobudo|isshin-ryu|shorin-ryu|chito-ryu|karate-generic|te|ryukyu-hon-kenpo,kenpo,kenpo,16,1,1,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,https://en.wikipedia.org/wiki/Seikichi_Odo
 Q3954660,Seikichi Toguchi,渡口政吉,,1917,1998,1942,Naha,goju-ryu|karate-generic|okinawan-karate-generic|shoreikan|te,goju-ryu,naha-te,13,8,13,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,https://en.wikipedia.org/wiki/Seikichi_Toguchi
 C00478,Seikichi Uehara,上原清吉,,1904,2004,,,karate-generic|motobu-udundi,motobu-udundi,shuri-te,11,22,53,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,
-Q7446788,Seiko Fujita,藤田西湖,,1898,1966,1923,Shuri,koga-ryu|kenpo|okinawan-kobudo|nanban-satto-ryu|shingetsu-ryu|shinto-muso-ryu|te,koga-ryu,other,0,6,555,yes,,,,https://en.wikipedia.org/wiki/Seiko_Fujita
+Q7446788,Seiko Fujita,藤田西湖,,1898,1966,1923,Shuri,koga-ryu|kenpo|okinawan-kobudo|nanban-satto-ryu|shingetsu-ryu|shinto-muso-ryu|te,koga-ryu,other,0,6,553,yes,,,,https://en.wikipedia.org/wiki/Seiko_Fujita
 A0132,Seiko Fukuchi,福地清幸,,1919,1975,,,goju-ryu|shodokan-goju-ryu,goju-ryu,naha-te,13,2,3,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,yes,
 C00481,Seiko Goya,,,,,,,karate-generic,karate-generic,other,13,0,0,yes,,,,
 C00483,Seiko Itokazu,,,,,,,karate-generic|uechi-ryu,uechi-ryu,uechi-ryu,16,0,0,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,
@@ -1023,7 +1023,7 @@ C00064,Seiryo Shinjo,新城清良,,1908,1976,,,karate-generic|uechi-ryu,uechi-ry
 C00486,Seisaburo Miyagi,,,,,,,karate-generic,karate-generic,other,8,0,0,yes,,,,
 C00487,Seishin Arashiro,,,,,,,karate-generic,karate-generic,other,13,0,0,yes,,,,
 C00488,Seishin Shirado,,,,,,,karate-generic,karate-generic,other,8,0,0,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,
-Q584466,Seisho Arakaki,新垣世璋,Seishō Arakaki,1840,1918,1865,Shuri,te|okinawan-kobudo|karate-generic,okinawan-kobudo,kobudo,2,5,907,yes,,,,https://en.wikipedia.org/wiki/Arakaki_Seish%C5%8D
+Q584466,Seisho Arakaki,新垣世璋,Seishō Arakaki,1840,1918,1865,Shuri,te|okinawan-kobudo|karate-generic,okinawan-kobudo,kobudo,2,5,905,yes,,,,https://en.wikipedia.org/wiki/Arakaki_Seish%C5%8D
 C00489,Seisho Hanashiro,,,,,,,karate-generic,karate-generic,other,13,0,0,yes,,,,
 A0121,Seisho Itokazu,糸数盛昌,,1945,,,,matayoshi-kobudo|kingai-ryu,matayoshi-kobudo,kobudo,16,0,0,yes,,,yes,
 C00490,Seisho Kuniyoshi,,,,,,,karate-generic,karate-generic,other,13,0,0,yes,,,,
@@ -1080,7 +1080,6 @@ B0031,Shingo Araki,,,,,,,,,,0,1,7,yes,,,yes,
 B0017,Shingo Hayashi,林伸伍,,,,,,kojo-ryu,kojo-ryu,te,8,0,0,yes,,,yes,
 Q16266721,Shingo Ohgami,大神真吾,Shingo Ōgami,1941,2019,1966,,wado-ryu|karate-generic|okinawan-kobudo|te,wado-ryu,japanese,15,0,0,yes,,,,https://fr.wikipedia.org/wiki/Shingo_Ohgami
 J0136,Shinji Michihara,道原伸司,,,,,,wado-ryu,wado-ryu,japanese,15,0,0,yes,,,yes,
-N0027,Shinjō Gima,儀間真常; Chinese name 麻平衡 Má Pínghéng,,1557,1644,,,,,,13,1,1,yes,,,yes,
 Q723832,Shinken Taira,平信賢,,1897,1970,1923,Naha,okinawan-kobudo|ryukyu-kobudo|nihon-kobudo|karate-generic|okinawan-karate-generic|te|ryukyu-kobujutsu-kenkyukai,okinawan-kobudo,kobudo,14,17,169,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,https://en.wikipedia.org/wiki/Taira_Shinken
 C00509,Shinkichi Ishimine,,,,,,,karate-generic,karate-generic,other,13,0,0,yes,,,,
 C00510,Shinkichi Kuniyoshi,国吉真吉,,1848,1926,,,karate-generic|honshin-ryu,honshin-ryu,te,2,2,52,yes,,,,
@@ -1106,7 +1105,7 @@ N0040,Shinzou Ishida,,,,,,,,,,12,0,0,yes,,,yes,
 A0162,Shiohira Peichin (Shionja),潮平親雲上,,1710,,,,,,,1,0,0,yes,,,yes,
 R0040,Shiro Asano,,,1939,2026,,"Shinjuku, Tokyo, Japan; Nottingham, England",skif,skif,japanese,20,0,0,yes,,,yes,
 Q2637587,Shiro Saigo,西郷四郎,Shirō Saigō,1866,1922,1891,,daito-ryu|te|yoshin-ryu,daito-ryu,other,2,0,0,yes,,,,https://en.wikipedia.org/wiki/Shiro_Saigo
-B0012,Shiroma (Gusukuma) of Tomari,,,,,,,tomari-te,tomari-te,tomari-te,1,1,935,yes,,,yes,
+B0012,Shiroma (Gusukuma) of Tomari,,,,,,,tomari-te,tomari-te,tomari-te,1,1,933,yes,,,yes,
 R0096,Shiroma Akiyoshi,,,1942,,,Okinawa,shorin-ryu-shidokan,shorin-ryu-shidokan,shuri-te,14,0,0,yes,,,yes,
 J0028,Shiroma Kiyonori (Seihan),城間清範,,1941,2012,,,motobu-udundi,motobu-udundi,shuri-te,12,0,0,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,yes,
 W0010,Shirotaru,,,,,,,,,,,0,0,,,,yes,
@@ -1115,7 +1114,7 @@ Q535906,Sho Kosugi,ショー・コスギ,,1948,,1973,,shito-ryu|shotokan|okinawa
 C00521,Shoei Miyazato,,,,,,,karate-generic,karate-generic,other,13,0,0,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,
 N0076,Shoei Nakamura,,,1945,,,,,,,,0,0,,,,yes,
 Q3959901,Shogo Kuniba,国場将豪,Shōgō Kuniba,1935,1992,1960,,shito-ryu|shorin-ryu|okinawan-kobudo|japanese-karate-generic|karate-generic|motobu-ha-shito-ryu|mugai-ryu|te|kuniba-ha,shito-ryu,japanese,16,5,9,yes,,,,https://en.wikipedia.org/wiki/Sh%C5%8Dg%C5%8D_Kuniba
-C00522,Shoi Sai,蔡昌偉,,1816,1906,,,karate-generic,karate-generic,other,2,2,919,yes,,,,
+C00522,Shoi Sai,蔡昌偉,,1816,1906,,,karate-generic,karate-generic,other,2,2,917,yes,,,,
 C00523,Shoji Arasaki,,,,,,,karate-generic,karate-generic,other,8,0,0,yes,,,,
 Q716152,Shoji Nishio,西尾昭二,Shōji Nishio,1927,2005,1952,,aikido|karate-generic|hozoin-ryu|muso-jikiden-eishin-ryu|shindo-jinen-ryu|shinto-muso-ryu|te,aikido,other,15,0,0,yes,,,,https://en.wikipedia.org/wiki/Shoji_Nishio
 R0037,Shojiro Koyama,,,1935,2021,,"Japan; Phoenix, Arizona, United States",jka,jka,japanese,16,0,0,yes,,,yes,
@@ -1128,7 +1127,7 @@ N0062,Shoshin Miyahira,,,,,,,,,,,0,0,,,,yes,
 Q1963468,Shoshin Nagamine,長嶺将真,Shōshin Nagamine,1907,1997,1932,Shuri,matsubayashi-ryu|isshin-ryu|shorin-ryu|karate-generic|okinawan-karate-generic|te,matsubayashi-ryu,shuri-te,14,45,89,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,https://en.wikipedia.org/wiki/Sh%C5%8Dshin_Nagamine
 N0096,Shoshu Nagamine,,,1897,,,,,,,6,0,0,yes,,,yes,
 KN010,Shoun,松雲,,,,,,okinawan-kobudo,okinawan-kobudo,kobudo,,0,0,,,,yes,
-A0007,Shu Shiwa (Zhou Zihe),周子和,Zhou Zihe,1874,1926,,,kung-fu|chinese-martial-arts|karate-generic|huzunquan,kung-fu,chinese,1,1,618,yes,,,yes,
+A0007,Shu Shiwa (Zhou Zihe),周子和,Zhou Zihe,1874,1926,,,kung-fu|chinese-martial-arts|karate-generic|huzunquan,kung-fu,chinese,1,1,616,yes,,,yes,
 C00531,Shuei Sakiyama,,,,,,,karate-generic,karate-generic,other,8,0,0,yes,,,,
 Q3482635,Shugoro Nakazato,仲里周五郎,Shūgorō Nakazato,1920,2016,1944,Shuri,shorin-ryu|shorin-ryu-shorinkan|karate-generic|okinawan-karate-generic|te|okinawan-kobudo,shorin-ryu,shuri-te,16,35,77,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,https://en.wikipedia.org/wiki/Sh%C5%ABgor%C5%8D_Nakazato
 J0001,Shuichi Aragaki,新垣修一,Aragaki Shuichi,1929,2021,,,goju-ryu,goju-ryu,naha-te,13,0,0,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,yes,
@@ -1141,16 +1140,15 @@ R0218,Sihak Henry Cho,,,1934,2012,,"Seoul, then New York City, USA",ji-do-kwan,j
 Q7535789,Skipper Mullins,,,1946,2020,1970,,taekwondo|karate-generic|te,taekwondo,korean,19,0,0,yes,,,,https://en.wikipedia.org/wiki/Skipper_Mullins
 A0217,So Nei Chu,曹寧柱,,1908,,,,goju-ryu|goju-kai,goju-ryu,naha-te,13,1,84,yes,,,yes,
 A0228,So Nei-chu,曺寧柱,,1908,1996,,,goju-ryu|goju-kai,goju-ryu,naha-te,0,1,84,yes,,,yes,
-B0030,Soeishi,,,1772,1825,,,,,,0,1,598,yes,,,yes,
-KN003,Soeishi Ryotoku,祖栄志良徳,,,,,,okinawan-kobudo,okinawan-kobudo,kobudo,0,1,598,yes,,,yes,
+B0030,Soeishi,,,1772,1825,,,,,,0,1,596,yes,,,yes,
+KN003,Soeishi Ryotoku,祖栄志良徳,,,,,,okinawan-kobudo,okinawan-kobudo,kobudo,0,1,596,yes,,,yes,
 C00549,Sogen Sakiyama,,,,,,,karate-generic,karate-generic,other,12,1,90,yes,,,,
 J0069,Soichiro Higashi,東壮一郎,,,,,Japan (Kyushu International University 九州国際大学),dai-nippon-butokukai|chishin-ryu-heiho,dai-nippon-butokukai,other,1,0,0,yes,,,yes,
 A0233,Sokaku Takeda,武田惣角,,1859,1943,,,daito-ryu,daito-ryu,other,0,2,64,yes,,,yes,https://en.wikipedia.org/wiki/Sokaku_Takeda
-N0061,Sokan Noguni,野國總管,,,,,,,,,14,0,0,yes,,,yes,
 A0213,Sokishi Shinzato,,,,,,,shorin-ryu,shorin-ryu,shuri-te,0,1,10,yes,,,yes,
 C00550,Soko Kishimoto,岸本祖孝,,1862,1945,,,karate-generic|kishimoto-di,kishimoto-di,shuri-te,5,2,12,yes,,,,
 C00330,Soko Toguchi,,,,,,,karate-generic,karate-generic,other,17,0,0,yes,,,,
-Q715769,Sokon Matsumura,松村宗棍,Sōkon Matsumura,1809,1899,1834,Shuri,shuri-te|okinawan-kobudo|tomari-te|chuan-fa|jigen-ryu,shuri-te,shuri-te,4,18,977,yes,,,,https://en.wikipedia.org/wiki/S%C5%8Dkon_Matsumura
+Q715769,Sokon Matsumura,松村宗棍,Sōkon Matsumura,1809,1899,1834,Shuri,shuri-te|okinawan-kobudo|tomari-te|chuan-fa|jigen-ryu,shuri-te,shuri-te,4,18,975,yes,,,,https://en.wikipedia.org/wiki/S%C5%8Dkon_Matsumura
 A0024,Sokuichi Gibu,儀武息一,,1941,2012,,,shorin-ryu|shorin-ryu-shorinkan|kobayashi-shorin-ryu,shorin-ryu,shuri-te,17,2,2,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,yes,
 A0150,Son Duk-sung (Duk Sung Son),손덕성 (孫德成),,1922,2011,,,taekwondo|tang-soo-do|korean-martial-arts|chung-do-kwan,taekwondo,korean,17,1,1,yes,,,yes,https://en.wikipedia.org/wiki/Son_Duk-sung
 J0180,Song Deok-gi,,,1893,1987,,"Jongno-gu, Seoul",,,,1,1,1,yes,,,yes,
@@ -1166,7 +1164,7 @@ R0051,Steve Cattle,,,1947,1995,,"York and Liverpool, England",kase-ha,kase-ha,ja
 A0076,Steve Watson,,,,,,,matsumura-seito,matsumura-seito,shuri-te,8,0,0,yes,,,yes,
 Q7614483,Steven Bellamy,,,1950,,1975,,karate-generic|goju-ryu|wado-ryu|okinawan-kobudo|shinto-muso-ryu|muso-shinden-ryu|te,goju-ryu,naha-te,14,0,0,yes,,,,https://en.wikipedia.org/wiki/Steven_Bellamy
 N0172,Su Yinghan,,,,,,,,,,0,1,1,yes,,,yes,
-KN008,Sueyoshi,末吉,,1846,1920,,,okinawan-kobudo,okinawan-kobudo,kobudo,0,2,556,yes,,,yes,
+KN008,Sueyoshi,末吉,,1846,1920,,,okinawan-kobudo,okinawan-kobudo,kobudo,0,2,554,yes,,,yes,
 C00076,Sugaya Ueshima,上島菅,,,,,,karate-generic,karate-generic,other,0,1,2,yes,,,,
 Q982540,Sumiyuki Kotani,小谷澄之,,1903,1991,1928,,te,te,te,2,0,0,yes,,,,https://en.wikipedia.org/wiki/Sumiyuki_Kotani
 C00333,Susumu Tamamura,,,,,,,karate-generic,karate-generic,other,8,0,0,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,
@@ -1179,8 +1177,8 @@ C00335,Tadashi Nakagawa,,,,,,,karate-generic,karate-generic,other,15,0,0,yes,,,,
 Q706955,Tadashi Nakamura,中村忠,,1942,2019,1967,,te|seido-juku,seido-juku,kyokushin,17,2,13,yes,,,,https://en.wikipedia.org/wiki/Tadashi_Nakamura
 Q2025214,Tadashi Yamashita,,,1942,,1967,,kobayashi-shorin-ryu|matayoshi-kobudo|shorin-ryu|okinawan-kobudo|karate-generic|kung-fu,kobayashi-shorin-ryu,shuri-te,17,1,1,yes,,,,https://en.wikipedia.org/wiki/Tadashi_Yamashita
 Q1360025,Taiji Kase,加瀬泰治,,1929,2004,1954,,shotokan|karate-generic|japanese-karate-generic|te|kase-ha,shotokan,japanese,16,7,21,yes,,,,https://en.wikipedia.org/wiki/Taiji_Kase
-C00564,Taitei Kojo,湖城大禎,,1837,1917,,,karate-generic|kojo-ryu,kojo-ryu,te,3,3,849,yes,,,,
-Q1336547,Takahara Peichin,高原親雲上,Pēchin Takahara,1684,1760,1709,Shuri,chuan-fa|japanese-karate-generic|karate-generic|te,chuan-fa,chinese,2,1,998,yes,,yes,,https://en.wikipedia.org/wiki/Peichin_Takahara
+C00564,Taitei Kojo,湖城大禎,,1837,1917,,,karate-generic|kojo-ryu,kojo-ryu,te,3,3,847,yes,,,,
+Q1336547,Takahara Peichin,高原親雲上,Pēchin Takahara,1684,1760,1709,Shuri,chuan-fa|japanese-karate-generic|karate-generic|te,chuan-fa,chinese,2,1,996,yes,,yes,,https://en.wikipedia.org/wiki/Peichin_Takahara
 A0159,Takaji Shimizu,清水隆次,,1896,1978,,,shinto-muso-ryu|nihon-kobudo,shinto-muso-ryu,other,0,2,2,yes,,,yes,https://en.wikipedia.org/wiki/Takaji_Shimizu
 J0133,Takamasa Tomoyose,友寄隆正,,,,,,kenyu-ryu,kenyu-ryu,japanese,13,1,10,yes,,,yes,
 W0008,Takamura Seiko,,,,,,,,,,15,0,0,yes,,,yes,
@@ -1220,7 +1218,7 @@ Q15845032,Takuya Taniyama,谷山卓也,,1965,,1990,,shotokan|karate-generic|japa
 A0192,Takuya Uemura,上村拓也,,1992,,,,,,,15,0,0,yes,,,yes,https://ja.wikipedia.org/wiki/%E4%B8%8A%E6%9D%91%E6%8B%93%E4%B9%9F
 W0013,Tamagusuku Seiju,,,1868,1945,,,,,,,0,0,,,,yes,
 W0014,Tamotsu Sachie,,,1923,2016,,,,,,,0,0,,,,yes,
-KP001,Tang Daiji,唐大基,,1887,1937,,,huzunquan,huzunquan,chinese,0,4,772,yes,,,yes,
+KP001,Tang Daiji,唐大基,,1887,1937,,,huzunquan,huzunquan,chinese,0,4,770,yes,,,yes,
 C00349,Tankichi Nagamine,,,,,,,karate-generic,karate-generic,other,19,0,0,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,
 N0158,Tanouye Rotaishi,,,,,,,,,,0,1,90,yes,,,yes,
 J0188,Taro Miyake,三宅多留次,,1881,1935,,"Okayama, Japan; London; Seattle, USA",judo,judo,other,,0,0,,,,yes,
@@ -1236,9 +1234,9 @@ Q11474560,Tatsuya Iwasaki,岩崎達也,,1969,,1994,,te,te,te,17,0,0,yes,,,,https
 Q4353136,Tatsuya Naka,中達也,,1964,,1989,,shotokan|karate-generic|japanese-karate-generic|te|jka,shotokan,japanese,17,0,0,yes,,,,https://en.wikipedia.org/wiki/Tatsuya_Naka
 W0017,Tawada 'Meganto' Shinboku,,,1814,1848,,,,,,,0,0,,,,yes,
 W0005,Tawada (of Shuri),,,,,,,,,,,0,0,,,,yes,
-KN011,Tawada Shinboku,多和田真牧,,1851,1920,,,okinawan-kobudo,okinawan-kobudo,kobudo,5,2,673,yes,,,yes,
+KN011,Tawada Shinboku,多和田真牧,,1851,1920,,,okinawan-kobudo,okinawan-kobudo,kobudo,5,2,671,yes,,,yes,
 W0009,Tawada Shinjun,,,,,,,,,,,0,0,,,,yes,
-C00354,Tawata Pechin,多和田親雲上,,,,,,karate-generic|okinawan-kobudo,okinawan-kobudo,kobudo,5,1,556,yes,,,,
+C00354,Tawata Pechin,多和田親雲上,,,,,,karate-generic|okinawan-kobudo,okinawan-kobudo,kobudo,5,1,554,yes,,,,
 C00582,Teamaai Uehara,,,,,,,karate-generic,karate-generic,other,8,0,0,yes,,,,
 C00355,Teiichi Nakamura,,,,,,,karate-generic,karate-generic,other,0,1,47,yes,,,,
 C00356,Teikichi China,,,,,,,karate-generic,karate-generic,other,14,0,0,yes,,,,
@@ -1274,7 +1272,7 @@ C00119,Toju Kosho,,,,,,,karate-generic,karate-generic,other,,0,0,,,,,
 R0002,Tokio Hisatomi,,,1927,2013,,"Mitsui-gun, Fukuoka, then Kurume, Japan",shito-kai|shito-ryu,shito-kai,japanese,13,0,0,yes,,,yes,
 W0022,Tokuda Antei,,,1884,1979,,,,,,8,0,0,yes,,,yes,
 C00604,Tokumine Pechin,徳嶺親雲上,,,,,,karate-generic,karate-generic,other,0,2,445,yes,,,,
-C00605,Tokusaburo Matsuda,松田徳三郎,,1877,1931,,,karate-generic,karate-generic,other,5,1,618,yes,,,,
+C00605,Tokusaburo Matsuda,松田徳三郎,,1877,1931,,,karate-generic,karate-generic,other,5,1,616,yes,,,,
 J0019,Tokuyama Yoshinori (usually romanised Yoshiki Tokuyama),徳山良規,,1946,,,,shudokan|kobayashi-shorin-ryu,shudokan,shuri-te,14,0,0,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,yes,
 C00606,Tomei Tsuha,,,,,,,karate-generic,karate-generic,other,13,1,1,yes,,,,
 Q15987806,Tomio Imamura,今村富雄,,1958,,1983,,shotokan|karate-generic|japanese-karate-generic|te,shotokan,japanese,16,0,0,yes,,,,https://en.wikipedia.org/wiki/Tomio_Imamura
@@ -1326,18 +1324,18 @@ Q135222893,Tsuyoshi Chitose,千歳剛直,,1898,1984,1923,Shuri,chito-ryu|karate-
 Q11486455,Tsuyoshi Hiroshige,廣重毅,,1947,2018,1972,,kyokushin|karate-generic|kyokushin-kan|shinkyokushin|te,kyokushin,kyokushin,16,6,6,yes,,,,https://en.wikipedia.org/wiki/Tsuyoshi_Hiroshige
 C00634,Tung Chin,,,,,,,karate-generic,karate-generic,other,1,1,1,yes,,,,
 J0026,Tōyama Zenshū,當山全秋,,1936,,,,goju-ryu|shoreikan,goju-ryu,naha-te,14,0,0,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,yes,
-R0240,Ueno Takashi,上野貴,,1899,1976,,"Renseikan dōjō, Shinagawa, Tokyo",shindo-tenshin-ryu,shindo-tenshin-ryu,other,0,2,555,yes,,,yes,
+R0240,Ueno Takashi,上野貴,,1899,1976,,"Renseikan dōjō, Shinagawa, Tokyo",shindo-tenshin-ryu,shindo-tenshin-ryu,other,0,2,553,yes,,,yes,
 A0156,Uhm Woon-kyu,엄운규,,1929,2017,,,taekwondo|korean-martial-arts|chung-do-kwan|kukki-taekwondo,taekwondo,korean,17,1,1,yes,,,yes,https://en.wikipedia.org/wiki/Chung_Do_Kwan
 A0221,Uhugushiku,,,,,,,okinawan-kobudo|ryu-te,okinawan-kobudo,kobudo,0,1,6,yes,,,yes,https://en.wikipedia.org/wiki/Ry%C5%AB-te
 A0114,Ulf Karlsson,,,,,,,kishimoto-di|shuri-te|taido,kishimoto-di,shuri-te,18,1,1,yes,,,yes,
-A0125,Umikana Chinen,知念,Chinen Umikana,1797,1881,,,yamanni-ryu|okinawan-kobudo,yamanni-ryu,kobudo,4,1,596,yes,,,yes,
+A0125,Umikana Chinen,知念,Chinen Umikana,1797,1881,,,yamanni-ryu|okinawan-kobudo,yamanni-ryu,kobudo,4,1,594,yes,,,yes,
 C00636,Unta Kanagusuku,,,,,,,karate-generic,karate-generic,other,,0,0,,,,,
 C00637,Ushi Komesu,,,,,,,karate-generic,karate-generic,other,1,1,39,yes,,,,
 Q4340844,Vasili Oshchepkov,Василий Ощепков,,1893,1937,1917,,chinese-martial-arts|scrape-artefact|te,chinese-martial-arts,chinese,2,0,0,yes,,,,https://en.wikipedia.org/wiki/Vasili_Oshchepkov
 Q19325706,Vernon Bell,,,1922,2004,1947,,karate-generic|yoseikan-budo|te,yoseikan-budo,other,18,0,0,yes,,,,https://en.wikipedia.org/wiki/Vernon_Bell
 Q7924865,Vic Moore,,,1943,,1968,Shuri,shuri-ryu|chito-ryu|kenpo|shotokan|goju-ryu|karate-generic,shuri-ryu,shuri-te,16,0,0,yes,,,,https://en.wikipedia.org/wiki/Vic_Moore
-C00639,Wai Shin Zan,魏新賢,,,,,,karate-generic,karate-generic,other,1,7,1009,yes,,,,
-KP008,Wai Shinzan,魏新賢,,,,,,whooping-crane,whooping-crane,chinese,0,3,910,yes,,,yes,
+C00639,Wai Shin Zan,魏新賢,,,,,,karate-generic,karate-generic,other,1,7,1007,yes,,,,
+KP008,Wai Shinzan,魏新賢,,,,,,whooping-crane,whooping-crane,chinese,0,3,908,yes,,,yes,
 A0222,Wakinaguri,,,,,,,kenpo,kenpo,kenpo,0,1,6,yes,,,yes,https://en.wikipedia.org/wiki/Ry%C5%AB-te
 A0045,Walter Dailey,,,,,,,shorin-ryu-seibukan,shorin-ryu-seibukan,shuri-te,15,0,0,yes,,,yes,
 C00641,Wang Ji,汪楫,,1636,1699,,,karate-generic,karate-generic,other,,0,0,,,yes,,
@@ -1350,18 +1348,18 @@ J0182,William Oliver,ウィリアム・オリバー,,1952,2005,,"New York, USA",
 J0067,William Stockey,,,,,,"Fairfax, Virginia, USA",bushin-kan|dai-nippon-butokukai,bushin-kan,japanese,1,0,0,yes,,,yes,
 Q8021897,Willie Williams,,,1951,2019,1976,,karate-generic|te|kyokushin,kyokushin,kyokushin,18,0,0,yes,,,,https://en.wikipedia.org/wiki/Willie_Williams
 Q9096235,Won Kuk Lee,이원국,,1907,2003,1932,,shotokan|karate-generic|taekwondo|tang-soo-do|chuan-fa|korean-martial-arts|te|chung-do-kwan,shotokan,japanese,15,16,33,yes,,,,https://en.wikipedia.org/wiki/Won-kuk_Lee
-Q8031976,Wong Chung-Yoh,,,,,,,karate-generic,karate-generic,other,0,1,1000,yes,,yes,,
+Q8031976,Wong Chung-Yoh,,,,,,,karate-generic,karate-generic,other,0,1,998,yes,,yes,,
 KP019,Woo Jae-lim,,,,,,,,,,,0,0,,,,yes,
 J0158,Woo Jong-lim,우종림,,,,,Korea,chung-do-kwan|oh-do-kwan|itf-taekwondo,chung-do-kwan,korean,16,0,0,yes,,,yes,
-KP024,Wu Xiangui,呉賢貴,,1886,1940,,,whooping-crane,whooping-crane,chinese,0,4,772,yes,,,yes,
+KP024,Wu Xiangui,呉賢貴,,1886,1940,,,whooping-crane,whooping-crane,chinese,0,4,770,yes,,,yes,
 Q539362,Xhavit Bajrami,,,1975,,2000,,seidokaikan|karate-generic|te,seidokaikan,kyokushin,21,0,0,yes,,,,https://en.wikipedia.org/wiki/Xhavit_Bajrami
-Q16907056,Xie Zongxiang,謝崇祥,,1852,1930,1877,,goju-ryu|karate-generic|te|whooping-crane,goju-ryu,naha-te,6,1,848,yes,,,,https://de.wikipedia.org/wiki/Xie_Zongxiang
+Q16907056,Xie Zongxiang,謝崇祥,,1852,1930,1877,,goju-ryu|karate-generic|te|whooping-crane,goju-ryu,naha-te,6,1,846,yes,,,,https://de.wikipedia.org/wiki/Xie_Zongxiang
 KP014,Yaka,,,,,,,,,,,0,0,,,,yes,
 B0018,Yamada (of Tomari),,,,,,,tomari-te,tomari-te,tomari-te,,0,0,,,,yes,
 A0229,Yang Kuk-jin,양국진,,,,,,chinese-martial-arts,chinese-martial-arts,chinese,0,1,12,yes,,,yes,
 J0014,Yara Choi,屋良朝意,,1915,2014,,,tomari-te,tomari-te,tomari-te,15,0,0,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,yes,
 KP012,Yaraguwa,屋良小,,,,,,,,,,0,0,,,,yes,
-C00646,Yashichiro Ijuin,,,,,,,karate-generic,karate-generic,other,0,1,978,yes,,,,
+C00646,Yashichiro Ijuin,,,,,,,karate-generic,karate-generic,other,0,1,976,yes,,,,
 R0104,Yasuharu Makishi,,,1939,2013,,Okinawa,matsubayashi-ryu,matsubayashi-ryu,shuri-te,15,0,0,yes,,,yes,
 Q4340863,Yasuhiko Oyama,大山泰彦,Yasuhiko Ōyama,1942,,1967,,kyokushin|karate-generic|te|world-oyama,kyokushin,kyokushin,18,1,2,yes,,,,https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B1%B1%E6%B3%B0%E5%BD%A6
 A0169,Yasuhiro Chitose,,,,,,,chito-ryu,chito-ryu,japanese,13,1,1,yes,,,yes,
@@ -1449,12 +1447,12 @@ R0140,Yuzo Goda,郷田勇三,,1940,,,Tokyo (Jōtō branch),iko-1,iko-1,kyokushin
 A0048,Yuzo Tamotsu,保勇三,,1957,,,,shorinji-ryu-renshinkan,shorinji-ryu-renshinkan,shuri-te,14,0,0,yes,,,yes,
 R0083,Yuzuru Oshiro,,,,,,Okinawa,shodokan-goju-ryu|goju-ryu,shodokan-goju-ryu,naha-te,0,1,1,yes,,,yes,
 A0122,Zenei Oshiro,大城善栄,,1953,,,,matayoshi-kobudo|goju-ryu,matayoshi-kobudo,kobudo,16,0,0,yes,,,yes,
-A0186,Zeng Si,曾四,,,,,,fujian-white-crane,fujian-white-crane,chinese,2,1,852,yes,,,yes,https://zh.wikipedia.org/wiki/方七娘
+A0186,Zeng Si,曾四,,,,,,fujian-white-crane,fujian-white-crane,chinese,2,1,850,yes,,,yes,https://zh.wikipedia.org/wiki/方七娘
 A0043,Zenji Shimabukuro,,,,,,,shorin-ryu-seibukan,shorin-ryu-seibukan,shuri-te,14,0,0,yes,,,yes,
 C00672,Zenpo Shimabukuro,島袋善保,,1943,,,,karate-generic|shorin-ryu-seibukan,shorin-ryu-seibukan,shuri-te,14,7,7,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,
 Q189805,Zenryo Shimabukuro,島袋善良,Zenryō Shimabukuro,1909,1969,1934,Shuri,shorin-ryu|karate-generic|kobayashi-shorin-ryu|okinawan-karate-generic|shorin-ryu-seibukan|te|chubu-shorin-ryu,shorin-ryu,shuri-te,12,14,52,yes,Hanshi 10th dan — Okinawa Karate News register (2018),,,https://en.wikipedia.org/wiki/Zenry%C5%8D_Shimabukuro
 A0042,Zenshun Shimabukuro,島袋善俊,,,,,,shorin-ryu-seibukan,shorin-ryu-seibukan,shuri-te,15,0,0,yes,,,yes,
-A0190,Zheng Bugong,鄭步恭,,,,,,kung-fu|chinese-martial-arts,kung-fu,chinese,0,1,618,yes,,,yes,https://zh.wikipedia.org/zh-hans/虎尊拳
-A0187,Zheng Li,鄭禮,,,,,,fujian-white-crane|flying-crane,fujian-white-crane,chinese,3,1,851,yes,,,yes,https://zh.wikipedia.org/wiki/永春白鶴拳
-R0252,Zheng Xianji,郑仙纪,,1854,1929,,,huzunquan,huzunquan,chinese,0,1,618,yes,,,yes,
+A0190,Zheng Bugong,鄭步恭,,,,,,kung-fu|chinese-martial-arts,kung-fu,chinese,0,1,616,yes,,,yes,https://zh.wikipedia.org/zh-hans/虎尊拳
+A0187,Zheng Li,鄭禮,,,,,,fujian-white-crane|flying-crane,fujian-white-crane,chinese,3,1,849,yes,,,yes,https://zh.wikipedia.org/wiki/永春白鶴拳
+R0252,Zheng Xianji,郑仙纪,,1854,1929,,,huzunquan,huzunquan,chinese,0,1,616,yes,,,yes,
 J0012,Ōshiro Masatoshi,大城マサトシ,,,,,,okinawan-karate-generic,okinawan-karate-generic,other,,0,0,,Hanshi 10th dan — Okinawa Karate News register (2018),,yes,

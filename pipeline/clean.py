@@ -589,6 +589,38 @@ def main():
         parents[e["target"]].append(e["source"])
     connected = set(children) | set(parents)
 
+    # A student cannot predate their teacher. The existing guard only caught a
+    # teacher who died before the student was born, which let through the reverse:
+    # Kenwa Mabuni (1889-1952) recorded as teaching Gima Shinjo (1557-1644), who
+    # was in fact a 17th-century agricultural official and not a martial artist
+    # at all. Both directions are checked now.
+    impossible = []
+    for e in list(edges):
+        s_n, t_n = live.get(e["source"]) or {}, live.get(e["target"]) or {}
+        sb, tb = s_n.get("birth_year"), t_n.get("birth_year")
+        sd, td = s_n.get("death_year"), t_n.get("death_year")
+        why = ""
+        # A YOUNGER teacher is perfectly possible: Carlos Machado really did teach
+        # Chuck Norris, 23 years his senior. Only a gap no lifetime can bridge is
+        # an error, so the test is 50 years, not any inversion at all.
+        if sb and tb and sb - tb > 50:
+            why = f"student born {tb}, teacher born {sb}: {sb - tb} years apart"
+        elif sd and tb and tb > sd:
+            why = f"teacher died {sd}, student born {tb}"
+        elif td and sb and sb > td:
+            why = f"student died {td}, teacher born {sb}"
+        if why:
+            impossible.append((e, why))
+    for e, why in impossible:
+        edges.remove(e)
+        quality.append({"kind": "impossible_chronology",
+                        "node_id": e["source"], "name": (live.get(e["source"]) or {}).get("name_ascii", ""),
+                        "detail": f"{(live.get(e['source']) or {}).get('name_ascii','?')} -> "
+                                  f"{(live.get(e['target']) or {}).get('name_ascii','?')}: {why}; edge dropped"})
+    if impossible:
+        print(f"Dropped {len(impossible)} chronologically impossible edges "
+              f"(see review/05_data_quality.csv).")
+
     # Which teacher carried the style. A solid line on the chart asserts exactly
     # that, so it should not be decided by "whichever teacher we are surest of,
     # tie-broken by age", which is what the old rule did. Order of authority:

@@ -1108,6 +1108,28 @@ for (const k of KATA) {
   }
 }
 function relationsFor(name) { return relBySource.get(name) || []; }
+// A kata nobody on the chart practises still has a record worth exporting.
+function exportKataRecord(k, fmt) {
+  const styles = (k.style_ids || []).map(id => (styleByIdMap.get(id) || {}).label || id);
+  const rels = relationsFor(k.name).map(r => r.relation + ": " + r.to);
+  if (fmt === "json") {
+    download("kata-" + slugify(k.name) + ".json",
+      new Blob([JSON.stringify(k, null, 1)], { type: "application/json" }));
+  } else {
+    const rows = [["field", "value"]];
+    for (const [f, v] of [["name", k.name], ["native", k.native], ["family", k.family],
+                          ["level", k.level], ["meaning", k.meaning], ["era", k.era],
+                          ["creator", k.origin_person], ["modifier", k.modifier],
+                          ["modified", k.modified_era], ["renamed from", k.renamed_from],
+                          ["provenance", k.provenance], ["styles", styles.join("; ")],
+                          ["relations", rels.join("; ")], ["disputed", k.disputed ? "yes" : ""],
+                          ["note", k.note]]) {
+      if (v) rows.push([f, String(v)]);
+    }
+    saveCSV(rows, "kata-" + slugify(k.name) + ".csv");
+  }
+  toast("Exported the record for " + k.name + ".");
+}
 // Say on what basis a line was called style-bearing, so a guess reads as a guess
 const PBASIS = {
   sole: "their only recorded teacher",
@@ -1324,7 +1346,7 @@ function renderKataPanel(back) {
       // A kata's chart is the people who carried it: creator, modifiers and
       // transmitters, plus the teaching chain that actually joins them.
       const kIds = kataPeopleIds(k);
-      if (kIds.length) {
+      {
         const ex = document.createElement("div");
         ex.style.cssText = "display:flex;gap:6px;flex-wrap:wrap;margin-top:6px";
         for (const [lbl, fmt] of exportFormats(
@@ -1333,18 +1355,37 @@ function renderKataPanel(back) {
           const b = document.createElement("button");
           b.className = "btn"; b.textContent = lbl;
           b.onclick = () => {
-            const { ids } = connectionSet(kIds);
-            if (!ids.length) { toast("Nobody on the chart is credited with this kata."); return; }
+            // Every kata exports, whether or not anyone on the chart is credited
+            // with it: with people, the chart is their transmission; without, it
+            // is the styles that practise it, and failing that the record itself.
+            const { ids } = kIds.length ? connectionSet(kIds) : { ids: [] };
+            if (ids.length) {
+              if (fmt === "csv" || fmt === "json" || fmt === "graphml")
+                return exportSubset(ids, k.name, fmt);
+              return exportClade(ids, "The transmission of " + k.name, fmt,
+                                 [k.era, k.provenance].filter(Boolean).join(" · ").slice(0, 120));
+            }
+            const styleIds = (k.style_ids || []).flatMap(sid => styleMembers(sid));
+            const uniq = [...new Set(styleIds)];
+            if (uniq.length) {
+              if (fmt === "csv" || fmt === "json" || fmt === "graphml")
+                return exportSubset(uniq, k.name, fmt);
+              return exportClade(uniq, "The styles that practise " + k.name, fmt,
+                                 [k.era, k.level].filter(Boolean).join(" · "));
+            }
             if (fmt === "csv" || fmt === "json" || fmt === "graphml")
-              return exportSubset(ids, k.name, fmt);
-            exportClade(ids, "The transmission of " + k.name, fmt,
-                        [k.era, k.provenance].filter(Boolean).join(" · ").slice(0, 120));
+              return exportKataRecord(k, fmt);
+            toast("No one on the chart practises " + k.name + " yet, so there is no "
+                  + "chart to draw. The record exports as CSV or JSON.");
           };
           ex.appendChild(b);
         }
         d.appendChild(ex);
         const en = document.createElement("div"); en.className = "edit-note";
-        en.textContent = kIds.length + " people on the chart are credited with this kata"
+        en.textContent = (kIds.length
+          ? kIds.length + " people on the chart are credited with this kata"
+          : "Nobody on the chart is credited with this kata; the chart falls back to "
+            + "the styles that practise it")
           + (canExportImages() ? "." : "; chart images come from the curator's copy.");
         d.appendChild(en);
       }
@@ -2141,8 +2182,9 @@ function renderStylePanel() {
   stylePanel.appendChild(panelCloseBtn(stylePanel));
   const h = document.createElement("h3"); h.textContent = "Style tree"; stylePanel.appendChild(h);
   const note = document.createElement("div"); note.className = "edit-note";
-  note.textContent = "Originating group → style → sub-style → sub-sub-style. Click a name to "
-    + "filter the canvas (its sub-styles come too), ⓘ for the style's own page, ⬇ for a poster.";
+  note.textContent = "Originating group → style → sub-style. Click a name to open its "
+    + "sub-styles and filter the canvas, ⓘ for the style's own page, ⬇ for a chart. "
+    + "Styles shown faint are documented but have nobody linked to them yet.";
   stylePanel.appendChild(note);
   const find = document.createElement("input");
   find.className = "kata-search"; find.type = "search";
@@ -2180,7 +2222,8 @@ function renderStylePanel() {
     row.style.paddingLeft = (depth * 14) + "px";
     // every documented style is listed, practised or not; siblings alphabetical
     const kids = (styleKids.get(sid) || []).slice()
-      .sort((a, b) => label(a).localeCompare(label(b)));
+      .sort((a, b) => styleMembers(b).length - styleMembers(a).length
+                   || label(a).localeCompare(label(b)));
     const chev = document.createElement("button"); chev.className = "linklike st-chev";
     chev.textContent = kids.length ? (styleOpen.has(sid) ? "▾" : "▸") : "·";
     if (kids.length) chev.onclick = () => {
@@ -2192,7 +2235,14 @@ function renderStylePanel() {
     nameB.title = styleProvenance(sid)
       || (c ? "Filter the canvas to this style and its sub-styles"
             : "Documented style; no practitioners linked in the dataset yet");
-    if (c) nameB.onclick = () => { setStyleFilter(state.style === sid ? "" : sid); renderStylePanel(); };
+    nameB.onclick = () => {
+      // Clicking a style should show what is under it. It used to only filter the
+      // canvas, so a click on Shuri-te appeared to do nothing but redraw the map.
+      if (kids.length && !styleOpen.has(sid)) styleOpen.add(sid);
+      else if (kids.length && styleOpen.has(sid) && state.style === sid) styleOpen.delete(sid);
+      if (c) setStyleFilter(state.style === sid ? "" : sid);
+      renderStylePanel();
+    };
     const meta = document.createElement("span"); meta.className = "st-meta";
     meta.textContent = styleProvenance(sid);
     const cnt = document.createElement("span"); cnt.className = "st-count";
@@ -2223,7 +2273,12 @@ function renderStylePanel() {
               && (!s.parent || !styleByIdMap.has(s.parent)
                   || (styleByIdMap.get(s.parent) || {}).famRaw !== fid))
       .map(s => s.id)
-      .sort((a, b) => label(a).localeCompare(label(b)));
+      // The group's own trunk first, then the styles people actually practise,
+      // then the documented-but-empty shells. Opening the panel onto a greyed-out
+      // Renbukan, as it did, tells the reader nothing about Shuri-te.
+      .sort((a, b) => (a === fid ? -1 : b === fid ? 1 : 0)
+                   || styleMembers(b).length - styleMembers(a).length
+                   || label(a).localeCompare(label(b)));
     if (!tops.length) continue;
     const fh = document.createElement("div"); fh.className = "st-fam";
     const dot = document.createElement("span"); dot.className = "dot";
@@ -2586,8 +2641,35 @@ function openDetail(id, back) {
     w.textContent = "⚑ Flagged for removal — exported as a node_verdicts.csv row.";
     panel.appendChild(w);
   }
-  if (pos.has(id) && n.connected) {
+  if (true) {
     const h4p = document.createElement("h4"); h4p.textContent = "Publish"; panel.appendChild(h4p);
+    if (!pos.has(id) || !n.connected) {
+      // An unlinked person still deserves an export: their own record, and any
+      // relatives we do hold. Silently offering nothing was the wrong answer.
+      const solo = document.createElement("div");
+      solo.style.cssText = "display:flex;gap:6px;flex-wrap:wrap";
+      for (const [lbl, fmt] of exportFormats(
+            [["⬇ SVG", "svg"], ["PDF", "pdf"], ["PNG", "png"], ["JPG", "jpg"],
+             ["TIFF", "tiff"], ["CSV", "csv"], ["JSON", "json"], ["GraphML", "graphml"]])) {
+        const b = document.createElement("button"); b.className = "btn"; b.textContent = lbl;
+        b.onclick = () => {
+          const ids = [...lineageSet(id, "both")].filter(i => byId.has(i));
+          if (fmt === "csv" || fmt === "json" || fmt === "graphml")
+            return exportSubset(ids.length ? ids : [id], eff(n).name, fmt);
+          if (ids.length > 1) return exportClade(ids, eff(n).name, fmt, "");
+          toast(eff(n).name + " has no recorded teacher or student, so there is no chart "
+                + "to draw. The record exports as CSV or JSON.");
+        };
+        solo.appendChild(b);
+      }
+      panel.appendChild(solo);
+      const sn = document.createElement("div"); sn.className = "edit-note";
+      sn.textContent = n.connected ? "Not placed on the current view."
+                                   : "Not yet linked to the tree; exports carry the record itself.";
+      panel.appendChild(sn);
+    }
+  }
+  if (pos.has(id) && n.connected) {
 
     // Follow only the links that carried a style, or every documented link.
     // The difference is not cosmetic: a teacher's supplementary study drags a
