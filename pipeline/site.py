@@ -320,11 +320,8 @@ DEFAULT_CONTENT = {
         "standfirst": "Hutan Ashrafian is a surgeon and scientist at Imperial College "
                       "London, and a martial artist of forty years' standing. This project "
                       "is his idea.",
-        "karate": "He has trained for four decades and across many styles of karate, and "
-                  "holds the sixth dan in Okinawan Gōjū-ryū. That is the vantage point this "
-                  "project is built from. It is long enough in the art to have watched the "
-                  "same kata taught differently in different rooms, and to know how much of "
-                  "what is said about lineage is repeated rather than checked.",
+        "karate": "He has trained for four decades and across many styles of karate, "
+                  "and holds a sixth dan in Okinawan Gōjū-ryū.",
         "origins": "In Warrior Origins he took the question quantitatively, applying network "
                    "theory to the martial arts and using kata as the unit of comparison: "
                    "where two schools perform a form alike and where they part company, "
